@@ -48,3 +48,25 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+```
+      "eas": {
+        "projectId": "1929e595-9ff8-4ca7-a545-5e0ef4ee39d0"
+      }
+```
+
+```
+{
+  "cli": {
+    "version": ">= 16.28.0"
+  },
+  "build": {
+    "apk": {
+      "android": {
+        "buildType": "apk"
+      },
+      "distribution": "internal"
+    }
+  }
+}
+```# hpcl-go

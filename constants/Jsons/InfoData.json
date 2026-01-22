@@ -1,0 +1,1385 @@
+{
+	"E20": {
+		"title": "E20 MS",
+		"subTitle": "Motor Fuel",
+		"description": "Motor Spirit (also known as Motor Gasoline) is a distillate fraction, normally boiling within the range 30°C to 210°C. It is a complex mixture composed of relatively volatile hydrocarbons (alkanes, alkenes and aromatics with typical carbon chain length of C5 to C10) that vary widely in their physical and chemical properties. ",
+		"specifications": [
+			{ "property": "Product Name", "value": "E20 MS" },
+			{ "property": "Appearance", "value": "Visual, B& C" },
+			{ "property": "Colour", "value": "Visual, Orange (MG95)" },
+			{ "property": "Density at 15°C, kg/m³", "value": "720-775" },
+			{
+				"property": "Distillation % evaporated at 70°C (E 70°C), % v/v",
+				"value": "10-60"
+			},
+			{
+				"property": "Distillation % evaporated at 100°C (E 100°C), % v/v",
+				"value": "45-78"
+			},
+			{
+				"property": "Distillation % evaporated at 150°C (E 150°C), % v/v",
+				"value": "Min 85"
+			},
+			{
+				"property": "Distillation Final Boiling Point, °C Max",
+				"value": "210"
+			},
+			{ "property": "Distillation Residue, % by volume, Max", "value": "2.0" },
+			{ "property": "Research octane number (RON), Min", "value": "95.0" },
+			{ "property": "Gum content (solvent washed), g/m³, Max", "value": "40" },
+			{ "property": "Total sulphur, mg/kg, Max", "value": "10" },
+			{ "property": "Lead content (as Pb), g/l, Max", "value": "0.005" },
+			{
+				"property": "Reid vapour pressure (RVP) at 37.8 °C, kPa, Max",
+				"value": "70"
+			},
+			{ "property": "Vapour lock index (VLI), Max", "value": "1100" },
+			{ "property": "Benzene content, % by volume, Max", "value": "1" },
+			{
+				"property": "Copper strip corrosion (3 h at 50 °C), Max",
+				"value": "Class 1"
+			},
+			{
+				"property": "Water tolerance of motor gasoline-alcohol blends, temperature for phase separation, °C, Max",
+				"value": "10 (other months) / 0 (winter)"
+			},
+			{
+				"property": "Engine intake system cleanliness",
+				"value": "Report-MFA used"
+			},
+			{ "property": "Olefin content, % by volume, Max", "value": "18" },
+			{ "property": "Oxidation stability, minutes, Min", "value": "360" },
+			{ "property": "Aromatics content, % by volume, Max", "value": "35" },
+			{ "property": "Oxygen content, % by mass, Max", "value": "7.7" },
+			{ "property": "Ethanol content, percent v/v", "value": "19-20" },
+			{
+				"property": "Oxygenates percent by volume, Max",
+				"value": "15 (Ethers containing 5 or more ‘C’ atoms per molecule such as MTBE, ETBE or TAME) / Not permitted (Any other oxygenates)"
+			},
+			{
+				"property": "Motor Gasoline Content, % v/v",
+				"value": "100 – Ethanol Content and stabilizing agents/additives"
+			},
+			{ "property": "Water Content, mg/kg, Max", "value": "3000" }
+		],
+		"appData": "Primarily used in transportation (Cars, Sport Utility Vehicles, Motorcycles and Scooters).",
+		"packaging": ["Bulk", "Retail"],
+		"SBU": "SOD/I&C/RETAIL",
+		"industrial": "Transport",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["MS POWER 95"]
+	},
+	"HSD": {
+		"title": "High Speed Diesel",
+		"subTitle": "Motor Fuel",
+		"description": "High-Speed Diesel (HSD), also known as Automotive Diesel Fuel, is produced from the fractional distillation of crude oil between 200°C and 400°C resulting in a mixture of carbon chains and is composed of saturated hydrocarbons and aromatic hydrocarbons.",
+		"specifications": [
+			{ "property": "Product Name", "value": "HSD (High Speed Diesel)" },
+			{ "property": "Appearance", "value": "Visual, B& C" },
+			{
+				"property": "Total Acid Number (TAN), mg of KOH/g, Max",
+				"value": "0.20"
+			},
+			{ "property": "Ash, % by mass, Max", "value": "0.01" },
+			{
+				"property": "Carbon residue (Ramsbottom or micro) on 10 % residue, % by mass, Max",
+				"value": "0.30"
+			},
+			{ "property": "Cetane number, Min", "value": "51" },
+			{ "property": "Cetane index, Min", "value": "46" },
+			{
+				"property": "Pour point, °C, Max",
+				"value": "3°C (Winter) / 15°C (Summer)"
+			},
+			{
+				"property": "Copper strip corrosion (3 h at 50 °C), Max",
+				"value": "Not worse than No. 1"
+			},
+			{
+				"property": "Distillation, 95 percent v/v, recovery, °C, Max",
+				"value": "360"
+			},
+			{ "property": "Flash point, Abel, °C, Min", "value": "35" },
+			{ "property": "Kinematic Viscosity @ 40°C, cSt", "value": "2.0 to 4.5" },
+			{ "property": "Total contamination, mg/kg, Max", "value": "24" },
+			{ "property": "Density at 15°C, kg/m³", "value": "810-845" },
+			{ "property": "Total sulphur, mg/kg, Max", "value": "10" },
+			{ "property": "Water content, mg/kg, Max", "value": "200" },
+			{
+				"property": "Cold Filter Plugging Point (CFPP), °C, Max",
+				"value": "6°C (Winter)/ 18°C (Summer)"
+			},
+			{ "property": "Oxidation stability, g/m³, Max", "value": "25" },
+			{ "property": "Oxidation stability, minutes, Min", "value": "60" },
+			{
+				"property": "Oxidation stability (for diesel fuel having FAME content of above 2 percent v/v), hours, Min",
+				"value": "20"
+			},
+			{
+				"property": "Oxidation stability (for diesel fuel having FAME content of above 2 percent v/v), minutes, Min",
+				"value": "60"
+			},
+			{
+				"property": "Polycyclic Aromatic Hydrocarbon (PAH), % by mass, Max",
+				"value": "8"
+			},
+			{
+				"property": "Lubricity, wear scar diameter (wsd) at 60 ºC, μm, Max",
+				"value": "460"
+			},
+			{ "property": "FAME content, % v/v, Max", "value": "7.0" }
+		],
+		"appData": "HSD is commonly used as a fuel in medium and high-speed compression ignition engine in commercial vehicle, stationery diesel engines, locomotive and pumps etc. It is also used as fuel in power generation (DG sets), agriculture and construction machinery.",
+		"packaging": ["Bulk"],
+		"SBU": "SOD/I&C/RETAIL",
+		"industrial": "Transport, Manufacturing, Agriculture",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["HP TURBOJET"]
+	},
+	"Ethanol": {
+		"title": "Ethanol",
+		"subTitle": "FUEL ADDITIVE FOR MS",
+		"description": "Ethanol meant for E20 blending having purity of min. 99.5% and other components including water max. 0.5%. Anhydrous Ethanol is known as Ethyl Alcohol, is a clear, colourless and homogenous liquid with high purity, also known as Absolute Alcohol. Anhydrous Ethanol is categorized into 1G and 2G, based on its source of raw material used. 1G Ethanol produced from raw materials viz. sugarcane juice, molasses, damaged food grains. 2G Ethanol are generally made from biomass. 1G Ethanol is produced by subsidiary unit HPCL-Biofuel Ltd.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "Ethanol"
+			},
+			{ "property": "Appearance", "value": "Visual, B& C" },
+			{
+				"property": "Relative density at 15.6/15.6 °C, Max",
+				"value": "0.7961 (1G) / 0.7965 (2G/OGF)"
+			},
+			{
+				"property": "Ethanol, percent, v/v, Min. (excluding denaturant)",
+				"value": "99.5 (1G)/ 98 (2G/OGF)"
+			},
+			{
+				"property": "Methanol, percent, v/v, Max",
+				"value": "0.5 (1G, 2G/OGF)"
+			},
+			{
+				"property": "Higher saturated alcohols (C3-C5), percent, v/v, Max",
+				"value": "1.5 (2G/OGF)"
+			},
+			{ "property": "Boiling point, °C, Min", "value": "To report (2G/OGF)" },
+			{
+				"property": "Residue on evaporation, percent by mass, Max",
+				"value": "0.005 (1G, 2G/OGF)"
+			},
+			{
+				"property": "Acidity (as CH3 COOH), mg/kg, Max",
+				"value": "30 (1G, 2G/OGF)"
+			},
+			{ "property": "Alkalinity, mg/kg, Max", "value": "Nil (1G, 2G/OGF)" },
+			{
+				"property": "Aldehyde (as CH3 CHO) content, mg/l, Max",
+				"value": "60 (1G, 2G/OGF)"
+			},
+			{
+				"property": "Electrical conductivity, µS/m, Max",
+				"value": "300 (1G) / 500 (2G/OGF)"
+			},
+			{ "property": "Copper, mg/kg, Max", "value": "0.1 (1G, 2G/OGF)" },
+			{ "property": "pHe", "value": "6.5 – 8.0 (2G/OGF)" },
+			{ "property": "Inorganic chloride, mg/kg, Max", "value": "3.0 (2G/OGF)" },
+			{
+				"property": "Sulfur content, mg/kg, Max",
+				"value": "10.0 (1G, 2G/OGF)"
+			},
+			{ "property": "Sulphate content, mg/kg, Max", "value": "4 (2G/OGF)" },
+			{
+				"property": "Water content, percent v/v, Max",
+				"value": "to report (1G) / 0.3 (2G/OGF)"
+			},
+			{
+				"property": "Hydrocarbons, percent v/v",
+				"value": "to report (2G/OGF)"
+			},
+			{ "property": "Miscibility with water", "value": "Miscible (1G, 2G/OGF)" }
+		],
+		"appData": "Ethanol is an environment friendly fuel used for blending with Motor Spirit (MS).",
+		"packaging": ["Bulk"],
+		"SBU": "SOD",
+		"industrial": "Chemical Feedstock, Biofuel & pharmaceuticals",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"Kerosene": {
+		"title": "Kerosene",
+		"subTitle": "Fuel",
+		"description": "Kerosene is distillate fractions of crude oil in the boiling range of 150-250°C. It is a complex mixture of hydrocarbons from crude oil distillation, primarily containing alkanes (paraffins), cycloalkanes (naphthenes) and some aromatics like alkylbenzenes. ",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "Kerosene"
+			},
+			{ "property": "Appearance", "value": "Visual, B& C" },
+			{ "property": "Acidity, inorganic", "value": "Nil" },
+			{ "property": "Char Value, mg/kg of oil consumed, Max", "value": "20" },
+			{ "property": "Bloom on glass Chimney", "value": "Not darker than grey" },
+			{
+				"property": "Colour Saybolt (in case of undyed Kerosene), Min",
+				"value": "10"
+			},
+			{
+				"property": "Colour Visual (in case of dyed Kerosene)",
+				"value": "Blue"
+			},
+			{
+				"property": "Copper strip corrosion (3 h at 50 °C), Max",
+				"value": "Not worse than No. 1"
+			},
+			{
+				"property": "Density at 15°C, kg/m³",
+				"value": "Not limited, but to be reported"
+			},
+			{
+				"property": "Distillation Percent recovered below 200°C, percent (v/v), Min",
+				"value": "20"
+			},
+			{ "property": "Final boiling point, °C, Max", "value": "300" },
+			{ "property": "Flash point (Abel), °C, Min", "value": "35" },
+			{ "property": "Smoke Point, mm, Min", "value": "18" },
+			{
+				"property": "Total Sulphur Content, percent, m/m, Max",
+				"value": "0.10 (Grade A) / 0.20 (Grade B)"
+			}
+		],
+		"appData": "Kerosene is used in many industrial applications like heating, cleaning and as thinner. It is also used for lighting lamps in areas where electricity is not available. \nKerosene with ultra-low sulfur content upto 10 mg/kg is used as pipeline compatible plug material (PCK) in multi-product pipeline operations in Petroleum Industry. Chemical industry uses kerosene as a petroleum solvent and in pesticide industry.",
+		"packaging": ["-"],
+		"SBU": "SOD/RETAIL",
+		"industrial": "Domestic Use, Petroleum Industry. Chemical Industry & Pesticide industry",
+		"documentation": "",
+		"alternatives": [],
+		"related": ["-"]
+	},
+
+	"ATF": {
+		"title": "Aviation Turbine Fuel A-1",
+		"subTitle": "AVIATION FUEL",
+		"description": "Aviation Turbine Fuel is a colorless, combustible, straight-run petroleum distillate, kerosene-based fuel. Kerosene makes up the majority of Jet A-1, with trace amounts of additives.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "ATF (Jet A-1) (Aviation Turbine Fuel Jet A-1)"
+			},
+			{ "property": "Appearance", "value": "Visual, B& C" },
+			{ "property": "Colour (Saybolt)", "value": "Report" },
+			{
+				"property": "Particulate contamination at point of manufacture, mg/l, Max",
+				"value": "1.0"
+			},
+			{
+				"property": "Particulate, cumulative channel particle counts at point of manufacture",
+				"value": "≥ 4 μm(c): Report, ≥6 μm(c): Report, ≥14 μm(c): Report, ≥21 μm(c): Report, ≥25 μm(c): Report, ≥30 μm(c): Report"
+			},
+			{ "property": "Total acidity, mg KOH/g, Max", "value": "0.015" },
+			{ "property": "Aromatics, % by volume, Max", "value": "25.0" },
+			{ "property": "Total Aromatics, % by volume, Max", "value": "26.5" },
+			{
+				"property": "Total sulphur, % by mass, Max",
+				"value": "0.30 (Defence 0.25)"
+			},
+			{ "property": "Sulphur mercaptan, percent m/m, Max", "value": "0.0030" },
+			{ "property": "Doctor Test", "value": "Negative" },
+			{
+				"property": "Refining components at the point of manufacture",
+				"value": "Non Hydro processed Components: Report, Mildly Hydro processed Components: Report, Severely Hydro processed Components: Report, Synthetic Components: Report"
+			},
+			{
+				"property": "Distillation Initial Boiling Point °C",
+				"value": "Report"
+			},
+			{
+				"property": "Distillation 10 percent recovery °C, v/v, Max",
+				"value": "205.0"
+			},
+			{
+				"property": "Distillation 50 percent recovery °C, v/v",
+				"value": "Report"
+			},
+			{
+				"property": "Distillation 95 percent v/v recovery, °C",
+				"value": "Report"
+			},
+			{
+				"property": "Distillation Final boiling point, °C, Max",
+				"value": "300"
+			},
+			{ "property": "Distillation residue, % v/v, Max", "value": "1.5" },
+			{ "property": "Distillation loss, % v/v, Max", "value": "1.5" },
+			{ "property": "Flash point, Abel, °C, Min", "value": "38" },
+			{ "property": "Density at 15°C, kg/m³", "value": "775-840" },
+			{ "property": "Freezing Point °C, Max", "value": "minus 47" },
+			{
+				"property": "Kinematic Viscosity @ minus 20°C, cSt, Max",
+				"value": "8.000"
+			},
+			{ "property": "Specific energy, MJ/kg, Min", "value": "42.80" },
+			{ "property": "Smoke point, mm, Min", "value": "25.0 / 18.0" },
+			{ "property": "& Naphthalenes, percent v/v, Max", "value": "3.00" },
+			{
+				"property": "Copper strip corrosion (2 h at 100 °C)",
+				"value": "Not worse than No. 1"
+			},
+			{
+				"property": "Silver strip corrosion (4 h at 50 °C), Max",
+				"value": "0 at Refinery / 1 at Delivery Point"
+			},
+			{
+				"property": "Thermal Stability, JFTOT at Control Temperature of 260°C",
+				"value": "Filter pressure differential, mm Hg, Max 25; Tube rating visual (VTR) <3, No ‘Peacock’ or ‘Abnormal’ OR Annex C ITR/Annex D ETR, average over area 2.5 mm², Max 85"
+			},
+			{ "property": "Existent gum, mg/100 ml, Max", "value": "7" },
+			{ "property": "Water reaction: Interface rating, Max", "value": "1b" },
+			{
+				"property": "Micro-separometer rating at point of manufacture",
+				"value": "MSEP without SDA, Min 85; MSEP with SDA, Min 70"
+			},
+			{ "property": "Electrical conductivity, pS/m", "value": "50 to 600" },
+			{ "property": "Wear scar diameter, mm, Max", "value": "0.85" },
+			{ "property": "Fatty Acid Methyl Ester, mg/kg, Max", "value": "50" }
+		],
+		"appData": "ATF Jet A-1 is used for aircrafts (Military jets) and Civil Aviation sector worldwide. It is a higher quality fuel subjected to stringent Quality Control norms set by DGCA and DGAQA.",
+		"packaging": ["Bulk"],
+		"SBU": "AVIATION/SOD",
+		"industrial": "Aviation ",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"LAN": {
+		"title": "Low Aromatic Naphtha",
+		"subTitle": "INDUSTRIAL FEEDSTOCK/FUEL",
+		"description": "Petroleum naphtha is a complex mixture of hydrocarbons, primarily C5–C8 alkanes (paraffins), cycloparaffins, and aromatics, with specific compositions varying significantly based on the crude oil source and refining process. It contains higher percentage of paraffins and low percentage of aromatic hydrocarbons (such as benzene, toluene, and xylene). It also contains sulfur compounds.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "Low Aromatic Naphtha"
+			},
+			{ "property": "Appearance", "value": "Visual, B& C" },
+			{ "property": "Colour (Saybolt)", "value": "Report" },
+			{ "property": "Density at 15 °C, kg/m³", "value": "620 - 800" },
+			{ "property": "Total sulphur, mass percent, Max", "value": "1.0" },
+			{
+				"property": "Distillation Initial boiling point, °C, Min",
+				"value": "25"
+			},
+			{
+				"property": "Distillation 90 percent v/v recovery, °C, Max",
+				"value": "190"
+			},
+			{
+				"property": "Distillation Final boiling point, °C, Max",
+				"value": "205"
+			},
+			{
+				"property": "Reid vapour pressure at 37.8 °C, kPa, Max",
+				"value": "97"
+			},
+			{ "property": "Residue on evaporation, mg/100 ml", "value": "To report" },
+			{ "property": "Total paraffins, percent by volume, Min", "value": "25" },
+			{ "property": "Olefins, percent by volume, Max", "value": "40" },
+			{
+				"property": "Naphthenes and aromatics, percent by volume",
+				"value": "To report"
+			}
+		],
+		"appData": "Naphtha is used by refineries in blending of petroleum products, isomerization, reforming, and in the production of value-added products. Naphtha serves as a primary feedstock for the production of gasoline. It is also a crucial component in the manufacturing of various petrochemical products, including plastics, fertilizers, and synthetic fibres. Naphtha is a key raw material for the production of various plastics, including polyethylene (PE), polypropylene (PP), and polystyrene (PS).",
+		"packaging": ["Bulk"],
+		"SBU": "I&C",
+		"industrial": "Manufacturing Industry & Petrochemical Industry",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"HEXANE": {
+		"title": "FOOD GRADE HEXANE",
+		"subTitle": "PROCESS SOLVENT",
+		"description": "Food Grade Hexane is a highly purified petroleum distillate fraction that contains a high proportion of n-hexane with boiling range of 63 to 70°C. It is a clear colourless liquid with distinct odour, free from sediment, suspended matter and moisture. ",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "FOOD GRADE HEXANE"
+			},
+			{ "property": "Density at 20°C, kg/m³", "value": "660.0 to 687.0" },
+			{ "property": "Refractive Index η20D", "value": "1.375-1.384" },
+			{
+				"property": "Distillation Initial Boiling Point, °C, Min",
+				"value": "63"
+			},
+			{ "property": "Distilled between 64-70°C, % vol., Min", "value": "95" },
+			{ "property": "Non-volatile residue, g/100 ml, Max", "value": "0.0005" },
+			{
+				"property": "Reaction of non-volatile residue",
+				"value": "Neutral to methyl orange (pH indicator)"
+			},
+			{ "property": "Sulphur content, mg/kg, Max", "value": "5" },
+			{ "property": "Lead, as Pb, mg/kg, Max", "value": "1" },
+			{ "property": "Benzene content, percent (v/v), Max", "value": "0.05" },
+			{ "property": "Aromatics, percent (v/v), Max", "value": "0.07" },
+			{
+				"property": "Polycyclic aromatic hydrocarbons",
+				"value": "To pass the test"
+			},
+			{ "property": "Saturates, percent by mass, Min", "value": "98.5" },
+			{ "property": "Color-Saybolt, Min", "value": "+30" },
+			{
+				"property": "Copper strip corrosion (3 h at 50 °C)",
+				"value": "Not worse than No. 1"
+			},
+			{ "property": "Doctor Test", "value": "Negative" }
+		],
+		"appData": "Food Grade Hexane is used in Food processing industry as a solvent to extract edible oils with minimum harmful residue to meet strict purity standards set by statutory bodies such as FSSAI. It is also used in Drug and Pharmaceuticals industry for drug extraction and as a cleaning agent.",
+		"packaging": ["Bulk"],
+		"SBU": "I&C",
+		"industrial": "Food, Pharmaceutical",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"1425": {
+		"title": "Solvent 1425",
+		"subTitle": "PROCESS SOLVENT",
+		"description": "Solvent 1425 is a petroleum-derived industrial solvent having a complex mixture of petroleum hydrocarbons that vary widely in their physical and chemical properties with boiling range between 50 - 120°C. Solvent 1425 is having strong solvency power due to its wide chemical composition. Solvent 1425 is having higher evaporation rate that improves efficiency of the solvent.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "Solvent 1425"
+			},
+			{ "property": "Colour (Saybolt), Min", "value": "+25" },
+			{ "property": "Density at 15°C, g/ml", "value": "To be Reported" },
+			{
+				"property": "Distillation Initial boiling point, °C, Min",
+				"value": "50"
+			},
+			{
+				"property": "Distillation 50 % by volume recovered at, °C",
+				"value": "To be Reported"
+			},
+			{
+				"property": "Distillation 95 % by volume recovered at, °C",
+				"value": "To be Reported"
+			},
+			{ "property": "Distillation Dry point, °C, Max", "value": "120" },
+			{ "property": "Aromatic content, percent by volume, Max", "value": "35" },
+			{
+				"property": "Copper strip corrosion (3 h at 50 °C)",
+				"value": "Not worse than No. 1"
+			},
+			{ "property": "Residue on evaporation, mg/100 ml, Max", "value": "5" }
+		],
+		"appData": " Solvent 1425 is a potent degreaser, effectively removing oil, grease, wax, and tar from various surfaces. It is commonly used in cleaning engines, parts and tools. Solvent 1425 finds application in the paint and coatings industry. It is used for diluting paints, varnishes, and lacquers to adjust viscosity and improve application. Solvent 1425 as a cleaning and degreasing agent in leather and rubber industry.",
+		"packaging": ["Bulk"],
+		"SBU": "I&C",
+		"industrial": "Paint & Rubber industry",
+		"documentation": "",
+		"alternatives": [],
+		"related": ["-"]
+	},
+
+	"MTO": {
+		"title": "Mineral Turpentine Oil",
+		"subTitle": "PROCESS SOLVENT",
+		"description": "Solvent 2445, commonly referred to as MTO, is a petroleum-derived aliphatic hydrocarbon solvent obtained from the middle distillate/naphtha range. It is a water-white, highly volatile, low-viscosity solvent used extensively in paints, adhesives, and chemical industries. It has boiling range between 125 - 240°C.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "Mineral Turpentine Oil"
+			},
+			{ "property": "Colour (Saybolt), Min", "value": "+21" },
+			{ "property": "Density at 15°C, g/ml", "value": "To be Reported" },
+			{ "property": "Odour", "value": "Acceptable" },
+			{ "property": "Flash point (Abel), °C, Min", "value": "30" },
+			{
+				"property": "Distillation Initial boiling point, °C, Min",
+				"value": "125"
+			},
+			{
+				"property": "Distillation 50 % by volume recovered at, °C",
+				"value": "To be Reported"
+			},
+			{
+				"property": "Distillation 95 % by volume recovered at, °C",
+				"value": "To be Reported"
+			},
+			{
+				"property": "Distillation final boiling point, °C, Max",
+				"value": "240"
+			},
+			{ "property": "Aromatic content, percent by volume, Max", "value": "40" },
+			{
+				"property": "Copper strip corrosion (3 h at 50 °C)",
+				"value": "Not worse than No. 1"
+			},
+			{ "property": "Residue on evaporation, mg/100 ml, Max", "value": "5" }
+		],
+		"appData": "Solvent 2445's high solvency power, low toxicity, moderate evaporation rate, and inertness make it a valuable substance in various cleaning, degreasing, and dissolving processes. Its unique properties make it an essential component in the formulation of paints, adhesives, inks, and numerous other products.",
+		"packaging": ["Bulk"],
+		"SBU": "I&C",
+		"industrial": "Paint industry",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"FO": {
+		"title": "MV2 Grade",
+		"subTitle": "Industrial FUEL",
+		"description": "Fuel oil is a dark viscous residual fuels obtained by blending mainly heavier components from crude distillation unit. It is generally consisted of heavy petroleum product. Efficiency and type of fuel oil widely varies depending on kinematic viscosity and sulphur content.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "FO (MV2 Grade)"
+			},
+			{ "property": "Acidity, inorganic", "value": "Nil" },
+			{ "property": "Ash, percent by mass, Max", "value": "0.1" },
+			{ "property": "Carbon residue, mass percent, Max", "value": "18" },
+			{
+				"property": "Gross calorific value",
+				"value": "Not limited, but to be reported"
+			},
+			{
+				"property": "Density at 15°C kg/m³ or Relative density at 15.6/15.6°C",
+				"value": "Not limited, but to be reported"
+			},
+			{
+				"property": "Flash point (Pensky Martens, closed), °C, Min",
+				"value": "66"
+			},
+			{ "property": "Kinematic viscosity at 50°C, cSt", "value": "125 - 180" },
+			{ "property": "Sediment, percent by mass, Max", "value": "0.25" },
+			{ "property": "Sulphur, total, percent by mass, Max", "value": "4.0" },
+			{ "property": "Water content, percent by volume, Max", "value": "1.0" }
+		],
+		"appData": "Fuel oil is used as a backup fuel for power generation in facilities where a reliable power supply is crucial. It is used in thermal power plants for boiler start up. It serves as a contingency option during periods of fuel shortages or interruptions in primary fuel sources. Fuel oil is used in various industrial applications for heating purposes. Cement and Steel plants use fuel oil as a source of energy in furnaces for high heat processes.",
+		"packaging": ["Bulk"],
+		"SBU": "I&C/SOD",
+		"industrial": "Power, Marine, Manufacturing (Steel, Cement, Glass, Ceramic Industries)",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"LDO": {
+		"title": "Heating Oil (LDO)",
+		"subTitle": "INDUSTRIAL FUEL",
+		"description": "Heating Oil also known as Light Diesel Oil (LDO) consists of medium length chains of hydrogen and carbon mainly alkanes, cycloalkanes, aromatics and oils. Basically, Heating oil is termed for medium commercial extracts from crude oil. It is either distilled or residual fraction of various oils that is extracted while distillation. It has a lower flash point compared to heavier Fuel Oil (FO), for easier ignition. ",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "Heating Oil (LDO)"
+			},
+			{ "property": "Acid number, mg KOH/gm, Max", "value": "0.5" },
+			{ "property": "Ash, percent by mass, Max", "value": "0.02" },
+			{
+				"property": "Carbon residue on whole samples, percent by mass, Max",
+				"value": "1.5"
+			},
+			{
+				"property": "Pour Point, °C, Max",
+				"value": "12 (Winter) / 21 (Summer)"
+			},
+			{
+				"property": "Copper strip corrosion (3 h at 100 °C)",
+				"value": "Not worse than No. 2"
+			},
+			{ "property": "Flash point, Pensky Martens, °C, Min", "value": "66.0" },
+			{
+				"property": "Kinematic viscosity at 40 °C, mm²/sec",
+				"value": "2.5 - 15.0"
+			},
+			{ "property": "Sediment, percent by mass, Max", "value": "0.10" },
+			{ "property": "Density at 15 °C, kg/m³", "value": "To Report" },
+			{ "property": "Water content, percent by volume, Max", "value": "0.25" },
+			{ "property": "Total sulphur, % by mass", "value": "0.005 - 1.50" }
+		],
+		"appData": "FLDO is known for its efficient combustion properties. This fuel is free flowing in nature. \nIt finds extensive use in industries such as manufacturing, power generation, and heating systems. It is commonly used in boilers, furnaces, and other equipment that require a steady and controlled source of heat. ",
+		"packaging": ["Bulk"],
+		"SBU": "I&C/SOD",
+		"industrial": "Power, Manufacturing, Construction & mining",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"HFHSD": {
+		"title": "High Flash High Speed Diesel Distillate Marine Fuel",
+		"subTitle": "MARINE FUEL",
+		"description": "High Flash High Speed Diesel (HFHSD) is a special grade of diesel fuel with flash point (Min. 66°C) significantly higher than that of HSD (Min. 35°C). It consists of hydrocarbons with carbon numbers predominantly in the range of C9 to C28, with a boiling range of approximately 150°C to 400°C. It is produced by refining middle-distillate fractions to meet stringent safety and performance specifications IS 16731(ISO 8217).",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "High Flash High Speed Diesel Distillate Marine Fuel"
+			},
+			{
+				"property": "Kinematic viscosity at 40 °C, mm²/s",
+				"value": "2.000-6.000"
+			},
+			{ "property": "Density at 15 °C, kg/m³, Max", "value": "890.0" },
+			{ "property": "Cetane Index, Min", "value": "40" },
+			{ "property": "Sulfur, mass %, Max", "value": "1.00" },
+			{ "property": "Flash point, °C, Min", "value": "60" },
+			{ "property": "Hydrogen sulfide, mg/kg, Max", "value": "2.00" },
+			{ "property": "Acid number, mg KOH/g, Max", "value": "0.5" },
+			{ "property": "Oxidation stability, g/m³, Max", "value": "25" },
+			{
+				"property": "Carbon residue (micro method on 10 % volume distillation residue), mass %, Max",
+				"value": "0.30"
+			},
+			{ "property": "Cloud Point, °C", "value": "Report" },
+			{ "property": "Cold filter plugging point, °C", "value": "Report" },
+			{
+				"property": "Pour Point (upper), °C, Max",
+				"value": "-6 (Winter) / 0 (Summer)"
+			},
+			{ "property": "Appearance", "value": "Visual, Clear & Bright" },
+			{ "property": "Ash, mass %, Max", "value": "0.010" },
+			{
+				"property": "Lubricity, corrected wear scar diameter (WSD) at 60 °C, μm, Max",
+				"value": "520"
+			}
+		],
+		"appData": "HFHSD is mainly manufactured for non-automotive applications. It is mainly applicable for marine use by Indian Navy, Merchant Ships, fishing vessels etc. where a high flash point diesel is required.",
+		"packaging": ["Bulk"],
+		"SBU": "I&C/SOD",
+		"industrial": " Marine",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"VLSFO": {
+		"title": "Very Low Sulfur Fuel Oil",
+		"subTitle": "MARINE FUEL",
+		"description": "VLSFO is a type of marine fuel that complies with the International Maritime Organization (IMO) – Marine Oil Pollution Control (MARPOL) regulations to reduce sulphur emissions from ships. It is generally blended from different refinery streams to achieve low sulfur levels while maintaining suitable viscosity and energy content for ship engines. VLSFO is a cleaner marine fuel with very low sulfur content (0.5% by wt. max./as per statutory norms) and prescribed limit of element content in fuel (Na, V, Al, Si, Ca, Zn, P).",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "Very Low Sulfur Fuel Oil"
+			},
+			{
+				"property": "Kinematic viscosity at 50 °C, mm²/s, Max",
+				"value": "380"
+			},
+			{ "property": "Density at 15 °C, kg/m³, Max", "value": "991" },
+			{ "property": "CCAI, Max", "value": "870" },
+			{ "property": "Sulfur, mass %", "value": "Statutory requirements" },
+			{ "property": "Flash point, °C, Min", "value": "60.0" },
+			{ "property": "Hydrogen sulfide, mg/kg, Max", "value": "2.00" },
+			{ "property": "Acid number, mg KOH/g, Max", "value": "2.5" },
+			{ "property": "Total sediment – aged, mass %, Max", "value": "0.10" },
+			{
+				"property": "Carbon residue – micro method, mass %, Max",
+				"value": "18.00"
+			},
+			{
+				"property": "Pour Point (upper), °C, Max",
+				"value": "30 (Winter) / 30 (Summer)"
+			},
+			{ "property": "Water, volume %, Max", "value": "0.50" },
+			{ "property": "Ash, mass %, Max", "value": "1.00" },
+			{ "property": "Vanadium, mg/kg, Max", "value": "350" },
+			{ "property": "Sodium, mg/kg, Max", "value": "100" },
+			{ "property": "Aluminium plus Silicon, mg/kg, Max", "value": "60" },
+			{ "property": "Calcium, mg/kg", "value": "Max >30" },
+			{ "property": "Zinc, mg/kg", "value": "Max >30" },
+			{ "property": "Phosphorus, mg/kg", "value": "Max >15" }
+		],
+		"appData": "VLSFO is primarily used as a marine fuel in ships to comply with IMO regulations. VLSFO is used in various types of vessels, including container ships, bulk carriers, etc.",
+		"packaging": ["Bulk"],
+		"SBU": "I&C/SOD",
+		"industrial": "Power, Marine",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"LSHS": {
+		"title": "Low Sulphur Heavy Stock",
+		"subTitle": "Industrial FUEL",
+		"description": "Low Sulphur Heavy Stock (LSHS) is a dense, viscous residual product from crude oil distillation, featuring a black, thick liquid form with Low Sulfur (Max. 1.8%) content as per customer requirement.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "LSHS (Low Sulphur Heavy Stock)"
+			},
+			{
+				"property": "Pour point, °C, Max",
+				"value": "66 (Grade 1) / 72 (Grade 2)"
+			},
+			{ "property": "Flash point, °C, Min", "value": "66 (Grade 1 & Grade 2)" },
+			{
+				"property": "Kinematic viscosity at 100 °C, Max",
+				"value": "100 (Grade 1 & Grade 2)"
+			},
+			{
+				"property": "Density at 15 °C or Relative density at 15 °C",
+				"value": "To be reported (Grade 1 & Grade 2)"
+			},
+			{
+				"property": "Gross calorific value, kcal/kg",
+				"value": "To be reported (Grade 1 & Grade 2)"
+			},
+			{
+				"property": "Acidity, inorganic, mg KOH/g",
+				"value": "Nil (Grade 1 & Grade 2)"
+			},
+			{
+				"property": "Ash, percent by mass, Max",
+				"value": "0.1 (Grade 1 & Grade 2)"
+			},
+			{
+				"property": "Sediment, percent by mass, Max",
+				"value": "0.25 (Grade 1 & Grade 2)"
+			},
+			{
+				"property": "Sulphur, total, percent by mass, Max",
+				"value": "1.0 (Grade 1) / 1.5 (Grade 2)"
+			},
+			{
+				"property": "Water content, percent by volume, Max",
+				"value": "1.0 (Grade 1 & Grade 2)"
+			}
+		],
+		"appData": "LSHS is used mainly in heavy industry, steel plants, and power plants as fuel. LSHS is mainly used in steel production and where the finished product to be heated are likely to get contaminated with sulfur.",
+		"packaging": ["Bulk"],
+		"SBU": "I&C",
+		"industrial": "Power, Manufacturing (Steel Plant)",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"VG-10": {
+		"title": "Paving Bitumen (VG10)",
+		"subTitle": "ROAD CONSTRUCTION MATERIAL",
+		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties. ",
+		"specifications": [
+			{
+				"property": "Penetration at 25°C, 100 g, 5 s, 0.1 mm, Min",
+				"value": "80"
+			},
+			{ "property": "Absolute viscosity at 60°C, Poises", "value": "800-1200" },
+			{ "property": "Kinematic viscosity at 135°C, cSt, Min", "value": "250" },
+			{
+				"property": "Flash point (Cleveland open cup), °C, Min",
+				"value": "220"
+			},
+			{
+				"property": "Solubility in trichloroethylene, percent, Min",
+				"value": "99.0"
+			},
+			{ "property": "Softening point (Ring & Ball), °C, Min", "value": "40" },
+			{
+				"property": "Residue from rolling thin film oven test",
+				"value": "Viscosity ratio at 60°C, Max 4.0; Ductility at 25°C, cm, Min 75"
+			}
+		],
+		"SBU": "I&C",
+		"industrial": "Construction of Roads, Highways, Tarmac",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
+		"packaging": ["Bulk"],
+		"related": ["-"]
+	},
+	"VG-30": {
+		"title": "Paving Bitumen (VG30)",
+		"subTitle": "ROAD CONSTRUCTION MATERIAL",
+		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
+		"specifications": [
+			{ "property": "Product Name", "value": "Paving Bitumen VG30" },
+			{
+				"property": "Penetration at 25°C, 100 g, 5 s, 0.1 mm, Min",
+				"value": "45"
+			},
+			{
+				"property": "Absolute viscosity at 60°C, Poises",
+				"value": "2400-3200"
+			},
+			{ "property": "Kinematic viscosity at 135°C, cSt, Min", "value": "350" },
+			{
+				"property": "Flash point (Cleveland open cup), °C, Min",
+				"value": "220"
+			},
+			{
+				"property": "Solubility in trichloroethylene, percent, Min",
+				"value": "99.0"
+			},
+			{ "property": "Softening point (Ring & Ball), °C, Min", "value": "47" },
+			{
+				"property": "Residue from rolling thin film oven test",
+				"value": "Viscosity ratio at 60°C, Max 4.0; Ductility at 25°C, cm, Min 40"
+			}
+		],
+		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
+		"packaging": ["Bulk"],
+		"related": ["-"],
+		"SBU": "I&C",
+		"industrial": "Construction of Roads, Highways, Tarmac",
+		"documentation": "-",
+		"alternatives": ["-"]
+	},
+	"VG-40": {
+		"title": "Paving Bitumen (VG40)",
+		"subTitle": "ROAD CONSTRUCTION MATERIAL",
+		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
+		"specifications": [
+			{ "property": "Product Name", "value": "Paving Bitumen VG40" },
+			{
+				"property": "Penetration at 25°C, 100 g, 5 s, 0.1 mm, Min",
+				"value": "35"
+			},
+			{
+				"property": "Absolute viscosity at 60°C, Poises",
+				"value": "3200-4800"
+			},
+			{ "property": "Kinematic viscosity at 135°C, cSt, Min", "value": "400" },
+			{
+				"property": "Flash point (Cleveland open cup), °C, Min",
+				"value": "220"
+			},
+			{
+				"property": "Solubility in trichloroethylene, percent, Min",
+				"value": "99.0"
+			},
+			{ "property": "Softening point (Ring & Ball), °C, Min", "value": "50" },
+			{
+				"property": "Residue from rolling thin film oven test",
+				"value": "Viscosity ratio at 60°C, Max 4.0; Ductility at 25°C, cm, Min 25"
+			}
+		],
+		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
+		"packaging": ["Bulk"],
+		"SBU": "I&C",
+		"industrial": "Construction of Roads, Highways, Tarmac",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"150GR-1": {
+		"title": "150 SN (GR I) LUBES",
+		"subTitle": "Base Oil",
+		"description": "Virgin Mineral base oil containing less than 90% saturates and/or greater than 0.03% sulphur with Viscosity Index greater than or equal to 80 and less than 120. Used for finished lubricants depending on the properties.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "150 SN (GR I)"
+			},
+			{ "property": "Appearance", "value": "B&C" },
+			{ "property": "Flash Point, °C, Min", "value": "200" },
+			{ "property": "Copper Strip Corrosion", "value": "Not worse than 1" },
+			{ "property": "Pour Point, °C, Max", "value": "-1" },
+			{ "property": "Viscosity Index, Min", "value": "95" },
+			{ "property": "Kinematic Viscosity at 40°C, cSt", "value": "28-32" }
+		],
+		"appData": "Base oils are being used for finished lubricants depending on the properties.",
+		"packaging": ["Barrel", "Bulk"],
+		"SBU": "LUBES",
+		"industrial": "Industrial/Automotive/Specialties",
+		"documentation": "",
+		"alternatives": [
+			"150 SN",
+			"Elasto 245",
+			"Alprol N32",
+			"Metaquench 39",
+			"Miljute 32",
+			"Inkol 32",
+			"Texol 32",
+			"Sulpha coat oil"
+		],
+		"related": [""]
+	},
+
+	"500GR-1": {
+		"title": "500 N (GR I)",
+		"subTitle": "Base Oil",
+		"description": "Virgin Mineral base oil containing less than 90% saturates and/or greater than 0.03% sulphur with Viscosity Index greater than or equal to 80 and less than 120. Used for finished lubricants depending on the properties.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "500 N (GR I) LUBES"
+			},
+			{ "property": "Appearance", "value": "B&C" },
+			{ "property": "Flash Point, °C, Min", "value": "224" },
+			{ "property": "Copper Strip Corrosion", "value": "Not worse than 1" },
+			{ "property": "Pour Point, °C, Max", "value": "-1" },
+			{ "property": "Viscosity Index, Min", "value": "95" },
+			{ "property": "Kinematic Viscosity at 100°C, cSt", "value": "9.5-11.5" }
+		],
+		"appData": "Base oils are being used for finished lubricants depending on the properties.",
+		"packaging": ["Barrel", "Bulk"],
+		"SBU": "LUBES",
+		"industrial": "Industrial/Automotive/Specialties",
+		"documentation": "",
+		"alternatives": [
+			"500 N",
+			"Alprol N100",
+			"Yantrol 100",
+			"Miljute 100",
+			"Inkol 100"
+		],
+		"related": [""]
+	},
+
+	"2500BRF": {
+		"title": "Stock 2500 BRF (150 BS) (GR I)",
+		"subTitle": "Base Oil",
+		"description": "Virgin Mineral base oil containing less than 90% saturates and/or greater than 0.03% sulphur with Viscosity Index greater than or equal to 80 and less than 120. Used for finished lubricants depending on the properties.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "Stock 2500 BRF (150 BS) (GR I) LUBES"
+			},
+			{ "property": "Appearance", "value": "B&C" },
+			{ "property": "Flash Point, °C, Min", "value": "288" },
+			{ "property": "Copper Strip Corrosion", "value": "Not worse than 1" },
+			{ "property": "Viscosity Index, Min", "value": "95" },
+			{ "property": "Kinematic Viscosity at 100°C, cSt", "value": "29-35" }
+		],
+		"appData": "Base oils are being used for finished lubricants depending on the properties.",
+		"packaging": ["Barrel", "Bulk"],
+		"SBU": "LUBES",
+		"industrial": "Industrial/Automotive/Specialties",
+		"documentation": "",
+		"alternatives": [
+			"Stock 2500 BRF (150 BS)",
+			"Elasto 215",
+			"All Purpose Gold",
+			"Miljute 460"
+		],
+		"related": [""]
+	},
+
+	"75SM": {
+		"title": "75 SM (GR II) LUBES",
+		"subTitle": "Base Oil",
+		"description": "Virgin Mineral base oil containing greater than or equal to 90% saturates and less than or equal to 0.03% sulphur with Viscosity Index greater than or equal to 80 and less than 120. Used for finished lubricants depending on the properties.",
+		"specifications": [
+			{ "property": "Product Name", "value": "75 SM (GR II) LUBES" },
+			{ "property": "Appearance", "value": "B&C" },
+			{ "property": "Flash Point, °C, Min", "value": "162" },
+			{ "property": "Copper Strip Corrosion", "value": "Not worse than 1" },
+			{ "property": "Viscosity Index, Min", "value": "102" },
+			{ "property": "Kinematic Viscosity at 40°C, cSt", "value": "9.5-13" }
+		],
+		"appData": "Base oils are being used for finished lubricants depending on the properties.",
+		"packaging": ["Barrel", "Bulk"],
+		"SBU": "LUBES",
+		"industrial": "Industrial/Automotive/Specialties",
+		"documentation": "",
+		"alternatives": [
+			"75 SM Spindle Oil",
+			"Alprol Super N12",
+			"Miljute Super N12"
+		],
+		"related": [""]
+	},
+
+	"150GR-2": {
+		"title": "150 SN (GR II) LUBES",
+		"subTitle": "Base Oil",
+		"description": "Virgin Mineral base oil containing greater than or equal to 90% saturates and less than or equal to 0.03% sulphur with Viscosity Index greater than or equal to 80 and less than 120. Used for finished lubricants depending on the properties.",
+		"specifications": [
+			{ "property": "Product Name", "value": "150 SN (GR II) LUBES" },
+			{ "property": "Appearance", "value": "B&C" },
+			{ "property": "Flash Point, °C, Min", "value": "200" },
+			{ "property": "Copper Strip Corrosion", "value": "Not worse than 1" },
+			{ "property": "Pour Point, °C, Max", "value": "-12" },
+			{ "property": "Viscosity Index, Min", "value": "102" },
+			{ "property": "Kinematic Viscosity at 40°C, cSt", "value": "28-33" },
+			{ "property": "Sulphur Content, ppm, Max", "value": "300" }
+		],
+		"appData": "Base oils are being used for finished lubricants depending on the properties.",
+		"packaging": ["Barrel", "Bulk"],
+		"SBU": "LUBES",
+		"industrial": "Industrial/Automotive/Specialties",
+		"documentation": "",
+		"alternatives": ["150 SN", "Alprol Super N32", "Witeol 15"],
+		"related": [""]
+	},
+
+	"500SN": {
+		"title": "500 SN (GR II) LUBES",
+		"subTitle": "Base Oil",
+		"description": "Virgin Mineral base oil containing greater than or equal to 90% saturates and less than or equal to 0.03% sulphur with Viscosity Index greater than or equal to 80 and less than 120. Used for finished lubricants depending on the properties.",
+		"specifications": [
+			{ "property": "Product Name", "value": "500 SN (GR II) LUBES" },
+			{ "property": "Appearance", "value": "B&C" },
+			{ "property": "Flash Point, °C, Min", "value": "232" },
+			{ "property": "Copper Strip Corrosion", "value": "Not worse than 1" },
+			{ "property": "Pour Point, °C, Max", "value": "-12" },
+			{ "property": "Viscosity Index, Min", "value": "100" },
+			{ "property": "Kinematic Viscosity at 100°C, cSt", "value": "10-12" },
+			{ "property": "Sulphur Content, ppm, Max", "value": "300" }
+		],
+		"appData": "Base oils are being used for finished lubricants depending on the properties.",
+		"packaging": ["Barrel", "Bulk"],
+		"SBU": "LUBES",
+		"industrial": "Industrial/Automotive/Specialties",
+		"documentation": "",
+		"alternatives": ["500 SN", "Alprol Super N 100", "Witeol Special"],
+		"related": [""]
+	},
+
+	"CBFS": {
+		"title": "CBFS",
+		"subTitle": "SPECIALITY",
+		"description": "CBFS stands for Carbon Black Feedstock composition, rich in aromatics like naphthalene. There are two types of CBFS: High BMCI type and General type. BMCI (Bureau of Mines Co-relation Index) measures the degree yield of Carbon Black. The higher the number, the better the yield. Sulphur content in CBFS reduces the effect of BMCI value.",
+		"specifications": [
+			{ "property": "Product Name", "value": "CBFS" },
+			{ "property": "Density at 15 °C, g/cc", "value": "1.080-1.120" },
+			{ "property": "API Gravity", "value": "-5 to 2" },
+			{ "property": "Viscosity SUS @100°C, SUS", "value": "50-100" },
+			{ "property": "Sulphur content, wt %", "value": "Max 3.5" },
+			{ "property": "BMCI", "value": "Min 120" },
+			{ "property": "Asphaltenes, wt %", "value": "Max 6.0" },
+			{ "property": "n-Pentane Insoluble, %", "value": "Report" },
+			{ "property": "Toluene Insoluble, %", "value": "Report" },
+			{ "property": "Ash Content, wt %", "value": "Report" },
+			{ "property": "Water Content, %", "value": "Max 0.5" },
+			{ "property": "Flash point (COC), °C", "value": "Min 100" },
+			{ "property": "Pour point, °C", "value": "Max 66" }
+		],
+		"appData": "Primary use as a reinforcing agent in tires, belts, hoses, improving strength and wear resistance.",
+		"packaging": ["Bulk"],
+		"SBU": "SOD/I&C",
+		"industrial": "Tyre Manufacturing",
+		"documentation": "",
+		"alternatives": [],
+		"related": [""]
+	},
+
+	"HYT-500": {
+		"title": "HYTHERM 500",
+		"subTitle": "Thermic Fluid",
+		"description": "The product is manufactured from petroleum stocks produced by special refining process in which the thermally unstable components are removed. HYTHERM 500 is recommended in service involving a maximum bulk oil temperature of 290°C. Benefits include excellent oxidation & chemical stability, good heat transfer properties, low volatility, and non-corrosive and non-toxic.",
+		"specifications": [
+			{ "property": "Product Name", "value": "HYTHERM 500" },
+			{ "property": "Kinematic Viscosity @ 40°C, cSt", "value": "27-35" },
+			{ "property": "Flash Point (COC), °C, Min", "value": "204" },
+			{ "property": "Viscosity Index", "value": "95" },
+			{ "property": "Pour Point, °C, Max", "value": "0" },
+			{
+				"property": "Copper Strip Corrosion 3Hr @ 100°C (ASTM)",
+				"value": "Max 1"
+			},
+			{ "property": "Neutralisation Number, mg KOH/g, Max", "value": "0.15" },
+			{ "property": "Specific Heat Kcal/Kg °C at 260°C", "value": "0.731" },
+			{ "property": "Specific Heat Kcal/Kg °C at 280°C", "value": "0.751" },
+			{ "property": "Specific Heat Kcal/Kg °C at 300°C", "value": "0.772" },
+			{
+				"property": "Thermal Conductivity Kcal/Hr-Mt °C at 260°C",
+				"value": "0.097"
+			},
+			{
+				"property": "Thermal Conductivity Kcal/Hr-Mt °C at 280°C",
+				"value": "0.096"
+			},
+			{
+				"property": "Thermal Conductivity Kcal/Hr-Mt °C at 300°C",
+				"value": "0.095"
+			}
+		],
+		"appData": "All types of heat transfer applications. This grade finds extensive application in textile, pharmaceuticals, chemical, and processing industries.",
+		"packaging": ["Barrel", "Bulk"],
+		"SBU": "LUBE",
+		"industrial": "Textile, Pharmaceuticals, Chemical and Processing Industries",
+		"documentation": "",
+		"alternatives": [],
+		"related": [""]
+	},
+
+	"HYT-600": {
+		"title": "HYTHERM 600",
+		"subTitle": "Thermic Fluid",
+		"description": "This grade is derived from the finest quality petroleum base stocks and is fortified with high-performance additives to enhance performance at higher temperatures. Features include: ability to provide superior performance in indirect closed fluid heat transfer systems up to 320°C, increased life, reduced oxidation and thermal degradation, minimal fouling and deposit formation, hence sustained heat transfer characteristics.",
+		"specifications": [
+			{ "property": "Product Name", "value": "HYTHERM 600" },
+			{ "property": "Kinematic Viscosity @ 40°C, cSt", "value": "27-35" },
+			{ "property": "Flash Point (COC), °C, Min", "value": "220" },
+			{ "property": "Viscosity Index", "value": "100" },
+			{ "property": "Pour Point, °C, Max", "value": "0" },
+			{
+				"property": "Copper Strip Corrosion 3Hr @ 100°C (ASTM)",
+				"value": "Max 1"
+			},
+			{ "property": "Neutralisation Number mg KOH/g, Max", "value": "0.15" },
+			{ "property": "Specific Heat Kcal/Kg °C at 260°C", "value": "0.741" },
+			{ "property": "Specific Heat Kcal/Kg °C at 280°C", "value": "0.761" },
+			{ "property": "Specific Heat Kcal/Kg °C at 300°C", "value": "0.791" },
+			{
+				"property": "Thermal Conductivity Kcal/Hr-Mt °C at 260°C",
+				"value": "0.100"
+			},
+			{
+				"property": "Thermal Conductivity Kcal/Hr-Mt °C at 280°C",
+				"value": "0.099"
+			},
+			{
+				"property": "Thermal Conductivity Kcal/Hr-Mt °C at 300°C",
+				"value": "0.097"
+			}
+		],
+		"appData": "All types of heat transfer applications. This grade finds extensive application in textile, pharmaceuticals, chemical and processing industries.",
+		"packaging": ["Barrel", "Bulk"],
+		"SBU": "LUBE",
+		"industrial": "Textile, Pharmaceuticals, Chemical and Processing Industries",
+		"documentation": "",
+		"alternatives": [],
+		"related": [""]
+	},
+
+	"DEF": {
+		"title": "HP Diesel Exhaust Fluid (DEF)",
+		"subTitle": "Motor Fuel / Lubes",
+		"description": "DEF, most commonly refers to Diesel Exhaust Fluid, is a crucial non-toxic liquid (32.5% urea, 67.5% deionized water) used in modern diesel engines with Selective Catalytic Reduction (SCR) systems to convert harmful Nitrogen Oxides (NOx) into harmless nitrogen and water, meeting latest emission standards.",
+		"specifications": [
+			{ "property": "Product Name", "value": "HP Diesel Exhaust Fluid (DEF)" },
+			{ "property": "Aldehyde Content", "value": "5 ppm max" },
+			{ "property": "Alkalinity as NH3", "value": "0.2% max" },
+			{ "property": "Biuret Test", "value": "0.3% max" },
+			{ "property": "Density at 20°C", "value": "1087-1093 kg/m3" },
+			{ "property": "Insoluble", "value": "20 mg/kg max" },
+			{ "property": "Refractive Index at 20°C", "value": "1.3814-1.3843" },
+			{ "property": "Urea Content", "value": "31.8-33.2%" },
+			{ "property": "Phosphate Content", "value": "0.5 mg/kg" },
+			{ "property": "Aluminium Content", "value": "0.5 mg/kg" },
+			{ "property": "Calcium Content", "value": "0.5 mg/kg" },
+			{ "property": "Chromium Content", "value": "0.2 mg/kg" },
+			{ "property": "Nickel Content", "value": "0.2 mg/kg" },
+			{ "property": "Copper Content", "value": "0.2 mg/kg" },
+			{ "property": "Zinc Content", "value": "0.2 mg/kg" },
+			{ "property": "Iron Content", "value": "0.5 mg/kg" },
+			{ "property": "Potassium Content", "value": "0.5 mg/kg" },
+			{ "property": "Magnesium Content", "value": "0.5 mg/kg" },
+			{ "property": "Sodium Content", "value": "0.5 mg/kg" }
+		],
+		"appData": "HP DEF is recommended for modern Commercial Vehicles (Trucks & Buses), Diesel SUVs and any other BS IV / VI or Euro IV/V/VI compliant diesel engines employing SCR / EGR-SCR technology for NOx reduction.",
+		"packaging": ["Barrel", "20 liter bucket", "5 liter can"],
+		"SBU": "Lubes",
+		"industrial": "Diesel Vehicles / Transportation",
+		"documentation": "Yes, attached",
+		"alternatives": ["TATA MOTORS HP GENUINE DEF (Rebrand of HP DEF)"],
+		"related": [
+			"Valvoline Cummins Genuine DEF",
+			"Gulf AL Diesel Exhaust Fluid",
+			"Velvex",
+			"Power Oil AdBlue",
+			"IOC Clearblue",
+			"MAK AdBlue"
+		]
+	},
+
+	"Lubricant": {
+		"title": "HP KISAN SHAKTI",
+		"subTitle": "Agriculture Oils",
+		"description": "HP KISAN SHAKTI is an engine oil developed for agricultural Pump-Sets running on Diesel, Kerosene or Light Diesel Oil (LDO). The product is made from paraffinic base stocks and fortified with select additives to deliver performance benefits in the pump-sets used in agriculture and farming activities. The superior additive chemistry not only ensures greater protection of the engine against wear and rust, its balanced detergency helps to keep the engine clean and trouble free for longer service intervals.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "HP KISAN SHAKTI"
+			},
+			{
+				"property": "Kinematic Viscosity @ 100°C",
+				"value": "cSt 15"
+			},
+			{
+				"property": "Viscosity Index",
+				"value": "110"
+			},
+			{ "property": "Pour Point", "value": "°C -21" }
+		],
+		"appData": "HP KISAN SHAKTI is recommended for all types of agricultural and farm equipment like Pumpsets, Tractors, Powertillers, Harvesters & DG sets requiring good quality Diesel Engine Oils. \nHP KISAN SHAKTI can also be used in petrol engines to render satisfactory performance.",
+		"packaging": ["Barrel", "Bulk", "Carton"],
+		"SBU": "",
+		"industrial": "",
+		"documentation": "",
+		"alternatives": [],
+		"related": ["HP PUMPSET OIL"]
+	},
+
+	"HPGas": {
+		"title": "HP GAS (LPG)",
+		"subTitle": "Domestic / Commercial / Industrial Fuel / Free trade LPG",
+		"description": "HP GAS (LPG) is a clean, efficient, and high-calorific gaseous fuel comprising mainly of mixture of Propane (C₃H₈) and Butane (C₄H₁₀). It is colourless, odourless in natural form (odorized with Ethyl Mercaptan for safety), non-toxic. HP GAS is produced during petroleum refining and gas processing.",
+		"specifications": [
+			{ "property": "Product Name", "value": "HP GAS (LPG)" },
+			{
+				"property": "Composition",
+				"value": "Propane / Butane mixture as per IS 4576"
+			},
+			{ "property": "Vapour Pressure @ 40°C", "value": "520 to 1050 kPa" },
+			{ "property": "Odorant", "value": "Ethyl Mercaptan" },
+			{ "property": "Free Water Content", "value": "Nil" },
+			{ "property": "C5 Hydrocarbons and Heavier", "value": "2.5% Max" },
+			{ "property": "Total Volatile Sulphur", "value": "140 mg/kg max" },
+			{ "property": "Compliance", "value": "IS 4576" }
+		],
+		"appData": "Cooking fuel (domestic & commercial), Industrial heating, drying & processing, Metal cutting & brazing, Fuel for LPG-based gensets, vaporizers & furnaces.",
+		"packaging": ["Cylinders", "Bulk", "Rail"],
+		"SBU": "LPG",
+		"industrial": "Domestic households, Hotels & restaurants, Small & large industries, Commercial kitchens, Construction & fabrication units",
+		"documentation": "Yes, attached",
+		"alternatives": ["HP RAZOR", "HP FLAME PLUS", "HP DOLPHIN", "HP POWERLIFT"],
+		"related": ["IOCL Indane LPG", "BPCL Bharatgas"]
+	},
+
+	"HGFP": {
+		"title": "HP GAS FLAME PLUS",
+		"subTitle": "Commercial LPG",
+		"description": "HP GAS FLAME PLUS is LPG fortified with an additive to enhance the combustion properties of LPG. The additive increases the flame temperature and improves the combustion kinetics of propane/butane, resulting in quicker heating, reduced gas consumption, reduced process time, and more savings for the customers.",
+		"specifications": [
+			{ "property": "Product Name", "value": "HP GAS FLAME PLUS" },
+			{ "property": "Boiling Point/Range °C", "value": "> -40" },
+			{ "property": "Physical State", "value": "Gas at 15 °C and 1 atm" },
+			{ "property": "Appearance", "value": "Colourless" },
+			{ "property": "Odour", "value": "Mercaptan added as an odouriser" },
+			{ "property": "Vapour Density (Air = 1)", "value": "1.5" },
+			{ "property": "Solubility in water @ 30°C", "value": "Slight" },
+			{
+				"property": "Solubility in Organic Solvents",
+				"value": "Yes, including Alcohol"
+			},
+			{
+				"property": "Specific Gravity (Water = 1)",
+				"value": "0.51-0.58 at 50 °C"
+			},
+			{ "property": "Flammability", "value": "Yes" },
+			{ "property": "LEL", "value": "1.9%" },
+			{ "property": "UEL", "value": "9.5%" },
+			{ "property": "TDG Flammability", "value": "2" },
+			{ "property": "Flash Point °C", "value": "-104.4" },
+			{
+				"property": "Auto Ignition Temperature °C",
+				"value": "466.1 Propane / 405 Butane"
+			}
+		],
+		"appData": "Hospitality (hotels, restaurants, canteens), bakeries, food processing, and various industries.",
+		"packaging": ["Cylinders", "Bulk", "Rail"],
+		"SBU": "LPG",
+		"industrial": "Commercial use for heating and processing applications",
+		"documentation": "Yes, attached",
+		"alternatives": ["HP RAZOR", "HP DOLPHIN", "HP POWERLIFT"],
+		"related": ["-"]
+	},
+
+	"TansformerOil": {
+		"title": "TRANSFORMER OIL",
+		"subTitle": "Transformer Oil",
+		"description": "Mineral insulating Oils for transformer and similat electrical equipment where normal oxidaton reristance is required. HP Transformeroil is designed for human safety and free from carcinogenic Polychlorinated Bi-Phenyls (PCB) and Poly aromatic hydrocarbon (PAH).",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "TRANSFORMER OIL"
+			},
+			{
+				"property": "Viscosity at –30°C, IS 1448 (Part 25), Max",
+				"value": "1800 mm²/s"
+			},
+			{
+				"property": "Viscosity at 40°C, IS 1448 (Part 25), Max",
+				"value": "12 mm²/s"
+			},
+			{ "property": "Water content, IEC 60814, Max", "value": "40 mg/kg" },
+			{ "property": "Breakdown voltage, IS 6792, Min", "value": "70 kV" },
+			{ "property": "Acidity, IEC 62021-1, Max", "value": "0.01 mg KOH/g" },
+			{
+				"property": "Density at 20°C, IS 1448 (Part 16), Max",
+				"value": "0.895 g/ml"
+			},
+			{ "property": "DDF at 90°C, IS 16086, Max", "value": "0.005" },
+			{ "property": "Corrosive sulphur, DIN 51353", "value": "Not corrosive" },
+			{
+				"property": "Potentially corrosive sulphur, IS 16310",
+				"value": "Not corrosive"
+			},
+			{ "property": "Flash point, IS 1448 (Part 21), Min", "value": "135°C" },
+			{ "property": "PCA content, IP 346, Max", "value": "3%" },
+			{
+				"property": "PCB content, IS 16082",
+				"value": "Not detectable (< 2 mg/kg)"
+			}
+		],
+		"appData": "HP Transformer Oil is recommended for Electric Transformers,Switch gears,Circuit breakers which require insulating fluids having very high oxidation stability and excellent ageing properties resulting in long product life.",
+		"packaging": ["Cylinders", "Bulk"],
+		"SBU": "Lubes",
+		"industrial": "Power Plants",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+
+	"MV2": {
+		"title": "FO (MV2 Grade)",
+		"subTitle": "INDUSTRIAL FUEL",
+		"description": "Fuel oil is a dark viscous residual fuels obtained by blending mainly heavier components from crude distillation unit. It is generally consisted of heavy petroleum product. Efficiency and type of fuel oil widely varies depending on kinematic viscosity and sulphur content.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "FO (MV2 Grade)"
+			},
+			{
+				"property": "Carbon residue, mass percent",
+				"value": "Max 18"
+			},
+			{
+				"property": "Flash point (Pensky Martens (closed), °C",
+				"value": "Max 66"
+			},
+			{
+				"property": "Kinematic viscosity in centistokes at 50°C",
+				"value": "125 - 180"
+			}
+		],
+
+		"appData": "LDO is known for its efficient combustion properties. This fuel is free flowing in nature. It is largely an industrial fuel. It finds extensive use in industries such as manufacturing, power generation, and heating systems. It is commonly used in boilers, furnaces, and other equipment that require a steady and controlled source of heat. ",
+		"packaging": ["Bulk"],
+		"SBU": "",
+		"industrial": "",
+		"documentation": "",
+		"alternatives": [],
+		"related": ["-"]
+	},
+
+	"Data": {
+		"title": "",
+		"subTitle": "",
+		"description": "",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": ""
+			},
+			{
+				"property": "",
+				"value": ""
+			},
+			{
+				"property": "",
+				"value": ""
+			},
+			{
+				"property": "",
+				"value": ""
+			}
+		],
+		"appData": "",
+		"packaging": [""],
+		"SBU": "",
+		"industrial": "",
+		"documentation": "",
+		"alternatives": [],
+		"related": [""]
+	}
+}

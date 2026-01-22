@@ -1,0 +1,33 @@
+{
+	"BitumenData": [
+		{ "name": "Paving VG10", "data": "HPCL0016" },
+		{ "name": "Paving VG30", "data": "HPCL0017" },
+		{ "name": "Paving VG40", "data": "HPCL0018" }
+	],
+	"motorFuelData": [
+		{ "name": "E20 MS", "data": "HPCL0001" },
+		{ "name": "High Speed Diesel", "data": "HPCL0002" },
+		{ "name": "Ethanol", "data": "HPCL0003" },
+		{ "name": "Kerosene", "data": "HPCL0004" },
+		{ "name": "ATF (Jet A-1)", "data": "HPCL0005" }
+	],
+	"industrialLiquidData": [
+		{ "name": "Low Sulphur Heavy Stock", "data": "HPCL0015" },
+		{ "name": "Jute Batching Oil", "data": "HPCL0184" }
+	],
+	"SolventsData": [
+		{ "name": "Low Aromatic Naphtha", "data": "HPCL0007" },
+		{ "name": "Food Grade HEXANE", "data": "HPCL0008" },
+		{ "name": "Solvent 1425", "data": "HPCL0009" },
+		{ "name": "Solvent 2445", "data": "HPCL0010" }
+	],
+	"LPGData": [
+		{ "name": "HP GAS", "data": "HPCL0031" },
+		{ "name": "HP GAS FLAME PLUS", "data": "HPCL0032" }
+	],
+	"BulkFuelData": [
+		{ "name": "NV2 Grade", "data": "HPCL0011" },
+		{ "name": "Heating Oil", "data": "HPCL0012" },
+		{ "name": "Distillate Marine Fuel", "data": "HPCL0013" }
+	]
+}

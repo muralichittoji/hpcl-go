@@ -1,0 +1,359 @@
+{
+	"home": ["Motor Fuels", "Lubricants", "LPG", "Industrial Fuels"],
+	"homeScreen": [
+		{
+			"name": "Motor Fuels",
+			"screen": "FuelsHome",
+			"icon": "../Images/icons/fuel_icon.png"
+		},
+		{
+			"name": "Lubricants",
+			"screen": "LubricantsScreen",
+			"icon": "../Images/icons/oilcan-solid.png"
+		},
+		{
+			"name": "LPG",
+			"screen": "LpgScreen",
+			"icon": "../Images/icons/cylinder.png"
+		},
+		{
+			"name": "Industrial Fuels",
+			"screen": "IndustrialScreen",
+			"icon": "../Images/icons/CRMB.png"
+		}
+	],
+	"acknoledgetment": ["Product Finder", "Knowledge Center"],
+	"quickHelp": [
+		{
+			"name": "Product Finder",
+			"screen": "ProductFinder",
+			"icon": "search"
+		},
+		{
+			"name": "Knowledge Center",
+			"screen": "KnowledgeCenter",
+			"icon": "book"
+		}
+	],
+
+	"industrial": [
+		"Bitumen",
+		"Bulk Fuels",
+		"Solvents",
+		"Industrial Liquids",
+		"Petrochemical"
+	],
+
+	"IndustrialScreen": [{ "name": "Bitumen", "Screen": "/Page" }],
+
+	"Knowledge": [
+		"Bitumen & Roads",
+		"Fire & Combustion",
+		"Lubricants & Maintenance",
+		"Safety & Heading"
+	],
+	"lubricants": [
+		"Transformer Oil",
+		"Base Oil",
+		"Speciality",
+		"Motor Fuel",
+		"Coolant",
+		"Process Oils",
+		"Thermic Fluids",
+		"Metal Drawing",
+		"Rolling Oils",
+		"Rust Preventives",
+		"Others",
+		"ENKLO",
+		"Compressor Oils",
+		"Turbine Oils",
+		"Sugar Mill Oils",
+		"Greases",
+		"Steel"
+	],
+	"Base_Oil": [
+		"500GR-1",
+		"500GR-2",
+		"150GR-1",
+		"150GR-2",
+		"75GR-1",
+		"75GR-2"
+	],
+	"Bitumen": ["VG-10", "VG-30", "VG-40"],
+	"BitumenData": [
+		{ "name": "Paving VG10", "data": "HPCL0016" },
+		{ "name": "Paving VG30", "data": "HPCL0017" },
+		{ "name": "Paving VG40", "data": "HPCL0018" }
+	],
+	"MotorFuels": ["E20", "HSD", "ATF", "Ethanol", "Kerosene"],
+	"motorFuelData": [
+		{ "name": "E20 MS", "data": "HPCL0001" },
+		{ "name": "High Speed Diesel", "data": "HPCL0002" },
+		{ "name": "Ethanol", "data": "HPCL0003" },
+		{ "name": "Kerosene", "data": "HPCL0004" },
+		{ "name": "ATF (Jet A-1)", "data": "HPCL0005" }
+	],
+	"industrialLiquidData": [
+		{ "name": "Low Sulphur Heavy Stock", "data": "HPCL0015" },
+		{ "name": "Jute Batching Oil", "data": "HPCL0184" }
+	],
+	"IndusLiquids": ["LSHS"],
+	"Solvents": ["LAN", "HEXANE", "1425", "MTO"],
+	"SolventsData": [
+		{ "name": "Low Aromatic Naphtha", "data": "HPCL0007" },
+		{ "name": "Food Grade HEXANE", "data": "HPCL0008" },
+		{ "name": "Solvent 1425", "data": "HPCL0009" },
+		{ "name": "Solvent 2445", "data": "HPCL0010" }
+	],
+	"LPG": ["HPGas", "HGFP"],
+	"LPGData": [
+		{ "name": "HP GAS", "data": "HPCL0031" },
+		{ "name": "HP GAS FLAME PLUS", "data": "HPCL0032" }
+	],
+	"BulkFuel": ["FO", "LDO", "HFHSD"],
+	"BulkFuelData": [
+		{ "name": "NV2 Grade", "data": "HPCL0011" },
+		{ "name": "Heating Oil", "data": "HPCL0012" },
+		{ "name": "Distillate Marine Fuel", "data": "HPCL0013" }
+	],
+
+	"Comparison": [
+		"VG-10",
+		"VG-30",
+		"VG-40",
+		"E20",
+		"HSD",
+		"ATF",
+		"Ethanol",
+		"Kerosene",
+		"LSHS",
+		"LAN",
+		"HEXANE",
+		"1425",
+		"MTO",
+		"LPG",
+		"FO",
+		"LDO",
+		"HFHSD"
+	],
+	"products": [
+		{ "id": 1, "label": "Paving Bitumen (VG-10)", "value": "VG-10" },
+		{ "id": 2, "label": "Paving Bitumen (VG-30)", "value": "VG-30" },
+		{ "id": 3, "label": "Paving Bitumen (VG-40)", "value": "VG-40" },
+		{ "id": 4, "label": "E20 MS", "value": "E20" },
+		{ "id": 5, "label": "High Speed Diesel (HSD)", "value": "HSD" },
+		{ "id": 6, "label": "Aviation Turbine Fuel", "value": "ATF" },
+		{ "id": 7, "label": "Ethanol", "value": "Ethanol" },
+		{ "id": 8, "label": "Kerosene", "value": "Kerosene" },
+		{ "id": 9, "label": "Low Sulphur Heavy Stock", "value": "LSHS" },
+		{ "id": 10, "label": "Low Aromatic Naphtha", "value": "LAN" },
+		{ "id": 11, "label": "FOOD GRADE HEXANE", "value": "HEXANE" },
+		{ "id": 12, "label": "Solvent 1425", "value": "1425" },
+		{ "id": 13, "label": "Mineral Turpentine Oil", "value": "MTO" },
+		{ "id": 14, "label": "Liquefied Petroleum Gas", "value": "LPG" },
+		{ "id": 15, "label": "FO (MV2 Grade)", "value": "FO" },
+		{ "id": 16, "label": "Heating Oil (LDO)", "value": "LDO" },
+		{
+			"id": 17,
+			"label": "High Flash High Speed Diesel Distillate Marine Fuel",
+			"value": "HFHSD"
+		},
+		{
+			"id": 18,
+			"label": "Very Low Sulfur Fuel Oil",
+			"value": "VLSFO"
+		}
+	],
+	"industrySet": [
+		"Roads / Highways",
+		"Transportation & Logistics",
+		"Construction & Infrastructure",
+		"Manufacturing & Industrial Processing",
+		"Power & Utilities",
+		"Marine & Shipping",
+		"Paints, Coatings & Chemicals",
+		"Food & Pharma"
+	],
+
+	"applicationSet": [
+		"Road Surfacing",
+		"Pavement Construction",
+		"Road Maintenance & Repair",
+		"Surface Dressing",
+		"Commercial Vehicle Fuel",
+		"Fleet Operations",
+		"Long-Haul Transport",
+		"Construction Equipment Fuel",
+		"Temporary Power Generation",
+		"Industrial Heating",
+		"Furnace & Boiler Fuel",
+		"Industrial Process Heating",
+		"Machinery Cleaning & Degreasing",
+		"DG Set Fuel",
+		"Captive Power Generation",
+		"Backup Power Supply",
+		"Marine Main Engine Fuel",
+		"Marine Auxiliary Engine Fuel",
+		"Paint & Coating Thinner",
+		"Industrial Solvent Use",
+		"Chemical Processing",
+		"Extraction Process"
+	],
+
+	"operatingConditionSet": [
+		"Hot climate, Heavy traffic",
+		"Cold climate, Low traffic",
+		"Very heavy traffic, Extreme load",
+		"Hot climate",
+		"Cold climate",
+		"Moderate climate",
+		"Low traffic",
+		"Medium traffic",
+		"Heavy load, Long haul",
+		"Emission sensitive",
+		"Continuous operation",
+		"High performance required",
+		"Heavy duty, Rugged use",
+		"Continuous running",
+		"Higher flash point required",
+		"High flash point required",
+		"Cost-sensitive",
+		"Stable combustion required",
+		"Industrial grade acceptable",
+		"High flash point",
+		"Intermittent use",
+		"IMO sulphur compliance",
+		"Cost optimization",
+		"Low aromatic requirement",
+		"Controlled evaporation",
+		"Food-grade mandatory"
+	],
+
+	"eligibleRecommendedProductSet": [
+		"VG-30",
+		"VG-10",
+		"VG-40",
+		"VG-10 / VG-30",
+		"HSD",
+		"HFHSD",
+		"LDO",
+		"LSHS",
+		"FO (MV2)",
+		"LAN / Solvent 1425",
+		"VLSFO (RMG 380)",
+		"MTO / Solvent 2445",
+		"LAN",
+		"Solvent 1425",
+		"Food Grade Hexane"
+	],
+
+	"PICKER_DATA": {
+		"Roads / Highways": {
+			"Road Surfacing": {
+				"Hot climate, Heavy traffic": ["VG-30"],
+				"Cold climate, Low traffic": ["VG-10"],
+				"Very heavy traffic, Extreme load": ["VG-40"]
+			},
+			"Pavement Construction": {
+				"Hot climate": ["VG-30"],
+				"Cold climate": ["VG-10"]
+			},
+			"Road Maintenance & Repair": {
+				"Moderate climate": ["VG-10 / VG-30"]
+			},
+			"Surface Dressing": {
+				"Low traffic": ["VG-10"],
+				"Medium traffic": ["VG-30"]
+			}
+		},
+
+		"Transportation & Logistics": {
+			"Commercial Vehicle Fuel": {
+				"Heavy load, Long haul": ["HSD"],
+				"Emission sensitive": ["HFHSD"]
+			},
+			"Fleet Operations": {
+				"Continuous operation": ["HSD"]
+			},
+			"Long-Haul Transport": {
+				"High performance required": ["HFHSD"]
+			}
+		},
+
+		"Construction & Infrastructure": {
+			"Construction Equipment Fuel": {
+				"Heavy duty, Rugged use": ["HSD"],
+				"Emission sensitive": ["HFHSD"]
+			},
+			"Temporary Power Generation": {
+				"Continuous running": ["HSD"]
+			},
+			"Industrial Heating": {
+				"Higher flash point required": ["LDO"]
+			}
+		},
+
+		"Manufacturing & Industrial Processing": {
+			"Furnace & Boiler Fuel": {
+				"High flash point required": ["LSHS"],
+				"Cost-sensitive": ["FO (MV2)"]
+			},
+			"Industrial Process Heating": {
+				"Stable combustion required": ["LSHS"]
+			},
+			"Machinery Cleaning & Degreasing": {
+				"Industrial grade acceptable": ["LAN / 1425"]
+			}
+		},
+
+		"Power & Utilities": {
+			"DG Set Fuel": {
+				"Continuous operation": ["HSD"],
+				"Emission sensitive": ["HFHSD"]
+			},
+			"Captive Power Generation": {
+				"High flash point": ["LSHS"]
+			},
+			"Backup Power Supply": {
+				"Intermittent use": ["HSD"]
+			}
+		},
+
+		"Marine & Shipping": {
+			"Marine Main Engine Fuel": {
+				"IMO sulphur compliance": ["VLSFO (RMG 380)"]
+			},
+			"Marine Auxiliary Engine Fuel": {
+				"High flash point": ["LSHS"],
+				"Cost optimization": ["FO (MV2)"]
+			}
+		},
+
+		"Paints, Coatings & Chemicals": {
+			"Paint & Coating Thinner": {
+				"Industrial grade acceptable": ["MTO / Solvent 2445"]
+			},
+			"Industrial Solvent Use": {
+				"Low aromatic requirement": ["LAN"]
+			},
+			"Chemical Processing": {
+				"Controlled evaporation": ["1425"]
+			}
+		},
+
+		"Food & Pharma": {
+			"Extraction Process": {
+				"Food-grade mandatory": ["Food Grade Hexane"]
+			}
+		}
+	},
+
+	"android": [
+		"cd android",
+		"./gradlew clean",
+		"./gradlew assembleRelease",
+		"android/app/build/outputs/apk/release/app-release.apk",
+		"./gradlew assembleDebug",
+		"android/app/build/outputs/apk/debug/app-debug.apk"
+	]
+}
