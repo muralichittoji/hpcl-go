@@ -46,6 +46,9 @@ const ProductFinder = () => {
 	const [applicationOpen, setApplicationOpen] = useState(false);
 	const [application, setApplication] = useState<string | null>(null);
 
+	const [loading, setLoading] = useState(false);
+	const [slowNet, setSlowNet] = useState(false);
+
 	const applicationItems = useMemo(() => {
 		if (!industry) return [];
 		return Object.keys(pickerData[industry] ?? {}).map((item) => ({
@@ -82,8 +85,8 @@ const ProductFinder = () => {
 	/* -------------------- UI -------------------- */
 	return (
 		<View style={styles.container}>
-			<Header caption="Product Finder" />
-			<InputSearch />
+			<Header caption={"Product \n Finder"} />
+			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} />
 
 			<ScrollView
 				keyboardShouldPersistTaps="handled"
@@ -146,7 +149,7 @@ const ProductFinder = () => {
 					{products.map((product) => (
 						<LinearGradient
 							key={product}
-							colors={["#1D4ED8", "#0EA5E9"]}
+							colors={[Colors.blueDeep, Colors.blueLight]}
 							style={styles.productCard}
 						>
 							<Text style={styles.productTitle}>{product}</Text>

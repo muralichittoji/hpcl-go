@@ -1,6 +1,7 @@
 {
 	"HPCL0001": {
 		"id": 1,
+		"MSDS": "MS_PDF",
 		"title": "E20 MS",
 		"subTitle": "MOTOR FUEL",
 		"description": "Motor Spirit (also known as Motor Gasoline) is a distillate fraction, normally boiling within the range 30\u00b0C to 210\u00b0C. It is a complex mixture composed of relatively volatile hydrocarbons (alkanes, alkenes and aromatics with typical carbon chain length of C5 to C10) that vary widely in their physical and chemical properties.",
@@ -120,6 +121,7 @@
 	},
 	"HPCL0002": {
 		"id": 2,
+		"MSDS": "HSD_PDF",
 		"title": "HSD (High Speed Diesel )",
 		"subTitle": "MOTOR FUEL",
 		"description": "High-Speed Diesel (HSD), also known as Automotive Diesel Fuel, is produced from the fractional distillation of crude oil between 200\u00b0C and 400\u00b0C resulting in a mixture of carbon chains and is composed of saturated hydrocarbons and aromatic hydrocarbons.",
@@ -227,6 +229,7 @@
 	},
 	"HPCL0003": {
 		"id": 3,
+		"MSDS": "MS_PDF",
 		"title": "Ethanol",
 		"subTitle": "FUEL ADDITIVE FOR MS",
 		"description": "Ethanol meant for E20 blending having purity of min. 99.5% and other components including water max. 0.5%. Anhydrous Ethanol is known as Ethyl Alcohol, is a clear, colourless and homogenous liquid with high purity, also known as Absolute Alcohol. \nAnhydrous Ethanol is categorized into 1G and 2G, based on its source of raw material used. 1G Ethanol produced from raw materials viz. sugarcane juice, molasses, damaged food grains. 2G Ethanol are generally made from biomass. 1G Ethanol is produced by subsidiary unit HPCL-Biofuel Ltd.",
@@ -318,6 +321,7 @@
 	},
 	"HPCL0004": {
 		"id": 4,
+		"MSDS": "KEROSENE_PDF",
 		"title": "Kerosene",
 		"subTitle": "FUEL",
 		"description": "Kerosene is distillate fractions of crude oil in the boiling range of 150-250\u00b0C. It is a complex mixture of hydrocarbons from crude oil distillation, primarily containing alkanes (paraffins), cycloalkanes (naphthenes) and some aromatics like alkylbenzenes.",
@@ -385,6 +389,7 @@
 	},
 	"HPCL0005": {
 		"id": 5,
+		"MSDS": "ATF_PDF",
 		"title": "ATF (Jet A-1) (Aviation Turbine Fuel Jet A-1)",
 		"subTitle": "AVIATION FUEL",
 		"description": "Aviation Turbine Fuel is a colorless, combustible, straight-run petroleum distillate, kerosene-based fuel. Kerosene makes up the majority of Jet A-1, with trace amounts of additives.",
@@ -492,6 +497,7 @@
 	},
 	"HPCL0006": {
 		"id": 6,
+		"MSDS": "LPG_PDF",
 		"title": "LPG (Liquefied Petroleum Gas)",
 		"subTitle": "COOKING GAS",
 		"description": "Liquefied Petroleum Gas (LPG) is a mixture of propane and butane derived from petroleum which are gaseous at normal ambient temperature and atmospheric pressure but gets condensed to the liquid state at normal ambient temperature by the application of moderate pressure.",
@@ -563,6 +569,7 @@
 	},
 	"HPCL0007": {
 		"id": 7,
+		"MSDS": "NAPHTHA_PDF",
 		"title": "LAN (Low Aromatic Naphtha)",
 		"subTitle": "INDUSTRIAL FEEDSTOCK/FUEL",
 		"description": "Petroleum naphtha is a complex mixture of hydrocarbons, primarily C5\u2013C8 alkanes (paraffins), cycloparaffins, and aromatics, with specific compositions varying significantly based on the crude oil source and refining process. It contains higher percentage of paraffins and low percentage of aromatic hydrocarbons (such as benzene, toluene, and xylene). It also contains sulfur compounds.",
@@ -626,6 +633,7 @@
 	},
 	"HPCL0008": {
 		"id": 8,
+		"MSDS": "HEXANE_PDF",
 		"title": "FOOD GRADE HEXANE",
 		"subTitle": "PROCESS SOLVENT",
 		"description": "Food Grade Hexane is a highly purified petroleum distillate fraction that contains a high proportion of n-hexane with boiling range of 63 to 70\u00b0C. It is a clear colourless liquid with distinct odour, free from sediment, suspended matter and moisture.",
@@ -701,6 +709,7 @@
 	},
 	"HPCL0009": {
 		"id": 9,
+		"MSDS": "SOLVENT_1425_PDF",
 		"title": "Solvent 1425",
 		"subTitle": "PROCESS SOLVENT",
 		"description": "Solvent 1425 is a petroleum-derived industrial solvent having a complex mixture of petroleum hydrocarbons that vary widely in their physical and chemical properties with boiling range between 50 - 120\u00b0C. Solvent 1425 is having strong solvency power due to its wide chemical composition. Solvent 1425 is having higher evaporation rate that improves efficiency of the solvent.",
@@ -752,6 +761,7 @@
 	},
 	"HPCL0010": {
 		"id": 10,
+		"MSDS": "SOLVENT_2445_PDF",
 		"title": "MTO (Mineral Turpentine Oil) / Solvent 2445",
 		"subTitle": "PROCESS SOLVENT",
 		"description": "Solvent 2445, commonly referred to as MTO, is a petroleum-derived aliphatic hydrocarbon solvent obtained from the middle distillate/naphtha range. It is a water-white, highly volatile, low-viscosity solvent used extensively in paints, adhesives, and chemical industries. It has boiling range between 125 - 240\u00b0C.",
@@ -811,6 +821,7 @@
 	},
 	"HPCL0011": {
 		"id": 11,
+		"MSDS": "",
 		"title": "FO (MV2 Grade)",
 		"subTitle": "INDUSTRIAL FUEL",
 		"description": "Fuel oil is a dark viscous residual fuels obtained by blending mainly heavier components from crude distillation unit. It is generally consisted of heavy petroleum product. Efficiency and type of fuel oil widely varies depending on kinematic viscosity and sulphur content.",
@@ -866,6 +877,7 @@
 	},
 	"HPCL0012": {
 		"id": 12,
+		"MSDS": "LDO_PDF",
 		"title": "Heating Oil (LDO)",
 		"subTitle": "INDUSTRIAL FUEL",
 		"description": "Heating Oil also known as Light Diesel Oil (LDO) consists of medium length chains of hydrogen and carbon mainly alkanes, cycloalkanes, aromatics and oils. Basically, Heating oil is termed for medium commercial extracts from crude oil. It is either distilled or residual fraction of various oils that is extracted while distillation. It has a lower flash point compared to heavier Fuel Oil (FO), for easier ignition.",
@@ -925,6 +937,7 @@
 	},
 	"HPCL0013": {
 		"id": 13,
+		"MSDS": "HFHSD_PDF",
 		"title": "HFHSD (High Flash High Speed Diesel - Distillate Marine Fuel )",
 		"subTitle": "MARINE FUEL",
 		"description": "High Flash High Speed Diesel (HFHSD) is a special grade of diesel fuel with flash point (Min. 66\u00b0C) significantly higher than that of HSD (Min. 35\u00b0C). It consists of hydrocarbons with carbon numbers predominantly in the range of C9 to C28, with a boiling range of approximately 150\u00b0C to 400\u00b0C. It is produced by refining middle-distillate fractions to meet stringent safety and performance specifications IS 16731(ISO 8217).",
@@ -1000,6 +1013,7 @@
 	},
 	"HPCL0014": {
 		"id": 14,
+		"MSDS": "LSFO_LSHSFO_VLSFO_PDF",
 		"title": "VLSFO (Very Low Sulfur Fuel Oil) RMG380",
 		"subTitle": "MARINE FUEL",
 		"description": "VLSFO is a type of marine fuel that complies with the International Maritime Organization (IMO) \u2013 Marine Oil Pollution Control (MARPOL) regulations to reduce sulphur emissions from ships. It is generally blended from different refinery streams to achieve low sulfur levels while maintaining suitable viscosity and energy content for ship engines. VLSFO is a cleaner marine fuel with very low sulfur content (0.5% by wt. max./as per statutory norms) and prescribed limit of element content in fuel (Na, V, Al, Si, Ca, Zn, P).",
@@ -1087,6 +1101,7 @@
 	},
 	"HPCL0015": {
 		"id": 15,
+		"MSDS": "LSHS_PDF",
 		"title": "LSHS (Low Sulphur Heavy Stock)",
 		"subTitle": "INDUSTRIAL FUEL",
 		"description": "Low Sulphur Heavy Stock (LSHS) is a dense, viscous residual product from crude oil distillation, featuring a black, thick liquid form with Low Sulfur (Max. 1.8%) content as per customer requirement.",
@@ -1142,6 +1157,7 @@
 	},
 	"HPCL0016": {
 		"id": 16,
+		"MSDS": "BITUMEN_PDF",
 		"title": "Paving Bitumen (VG10)",
 		"subTitle": "ROAD CONSTRUCTION MATERIAL",
 		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
@@ -1189,6 +1205,7 @@
 	},
 	"HPCL0017": {
 		"id": 17,
+		"MSDS": "VG30_PDF",
 		"title": "Paving Bitumen (VG30)",
 		"subTitle": "ROAD CONSTRUCTION MATERIAL",
 		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
@@ -1236,6 +1253,7 @@
 	},
 	"HPCL0018": {
 		"id": 18,
+		"MSDS": "VG40_PDF",
 		"title": "Paving Bitumen (VG40)",
 		"subTitle": "ROAD CONSTRUCTION MATERIAL",
 		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
@@ -1283,41 +1301,38 @@
 	},
 	"HPCL0019": {
 		"id": 19,
-		"title": "TRANSFORMER OIL",
-		"subTitle": "Transformer Oil",
-		"description": "Mineral insulating Oils for transformer and similat electrical equipment where normal oxidaton reristance is required. HP Transformeroil is designed for human safety and free from carcinogenic Polychlorinated Bi-Phenyls (PCB) and Poly aromatic hydrocarbon (PAH).",
+		"MSDS": "",
+		"title": "HP TRANSFORMER OIL I",
+		"subTitle": "Inhibited Transformer Oil (IS:12463 / IS:335 Type II)",
+		"description": "HP TRANSFORMER OIL I is an inhibited type insulating transformer oil formulated to meet IS:12463 and IS:335-2018 Type II specifications. It provides excellent dielectric strength, oxidation stability and long service life for transformers and switchgear equipment.",
+
 		"specifications": [
-			{
-				"property": "Viscosity at \u201330\u00b0C IS 1448 (Part 25) 1800 mm2/s",
-				"value": "Max;                                                                                                     Viscosity at 40\u00b0C IS 1448 (Part 25) 12 mm2/s, Max;                                                                                        Water content IEC 60814 40 mg/kg , Max"
-			},
-			{
-				"property": "Breakdown voltage IS 6792 70 kV )",
-				"value": "Min                                                                                                        Acidity IEC 62021-1 0.01 mg KOH/g, Max"
-			},
-			{
-				"property": "Density at 20\u00b0C IS 1448 (Part 16) 0.895 g/ml",
-				"value": "Max"
-			},
-			{
-				"property": "DDF at 90\u00b0C IS 16086 0.005",
-				"value": "Max                                                                                                                 Corrosive sulphur                  DIN 51353                   Not corrosive"
-			},
-			{
-				"property": "Potentially corrosive sulphur IS 16310                    Not corrosive                                                                        Flash point IS 1448 (Part 21) 135\u00b0C",
-				"value": "Min                                                                                                                   PCA content IP 346 3%, Max                                                                                                                                    PCB content IS 16082 Not detectable ( < 2 mg/kg)"
-			}
+			{ "property": "Appearance", "value": "Clear & Transparent" },
+			{ "property": "Density @ 29.5°C (g/cc)", "value": "0.8279" },
+			{ "property": "Kinematic Viscosity @ 27°C (cSt)", "value": "16.46" },
+			{ "property": "Kinematic Viscosity @ 40°C (cSt)", "value": "11.76" },
+			{ "property": "Flash Point (PMCC, °C)", "value": "148" },
+			{ "property": "Pour Point (°C)", "value": "-18" },
+			{ "property": "Breakdown Voltage (kV)", "value": "72" },
+			{ "property": "Resistivity @ 90°C (ohm-cm)", "value": "750 × 10¹²" },
+			{ "property": "Water Content (ppm)", "value": "9" },
+			{ "property": "Oxidation Inhibitor (% wt)", "value": "0.26" }
 		],
-		"appData": "HP Transformer Oil is recommended for Electric Transformers,Switch gears,Circuit breakers which require insulating fluids having very high oxidation stability and excellent ageing properties resulting in long product life.",
-		"packaging": ["210 ltr", "Bulk"],
+
+		"appData": "Recommended for power transformers, distribution transformers, switchgear and other oil-filled electrical equipment requiring inhibited insulating oils with high dielectric strength and oxidation resistance.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
 		"SBU": "Lubes",
-		"industrial": "Power Plants",
+		"industrial": "Industrial Oil",
+
 		"documentation": "",
 		"alternatives": [],
 		"related": []
 	},
 	"HPCL0020": {
 		"id": 20,
+		"MSDS": "",
 		"title": "75 SM (GR I)",
 		"subTitle": "Base Oil",
 		"description": "Virgin Mineral base oil containing less than 90 percent saturates and /or greater than 0.03 percent sulphur and have Viscosity Index greater than or equal to 80 and lesss than 120 .",
@@ -1352,13 +1367,14 @@
 		"packaging": ["210 lts", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Industrial/Automotive /Specialties",
-		"documentation": "",
-		"alternatives": [],
+		"documentation": "-",
+		"alternatives": ["-"],
 		"related": ["75 SM Spindle oil, Spintek 5, Alprol N12, Miljute 12"]
 	},
 	"HPCL0021": {
 		"id": 21,
-		"title": "150 SN (GR I)",
+		"MSDS": "GRI_150N_PDF",
+		"title": "150 N (GR I)",
 		"subTitle": "Base Oil",
 		"description": "Virgin Mineral base oil containing less than 90 percent saturates and /or greater than 0.03 percent sulphur and have Viscosity Index greater than or equal to 80 and lesss than 120 .",
 		"specifications": [
@@ -1391,14 +1407,15 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Industrial/Automotive /Specialties",
-		"documentation": "",
-		"alternatives": [],
+		"documentation": "-",
+		"alternatives": ["-"],
 		"related": [
 			"150 SN/ Elasto 245,Alprol N32,Metaquench 39, Miljute 32,Inkol 32, Texol32,Miljute 32,Sulpha coat oil"
 		]
 	},
 	"HPCL0022": {
 		"id": 22,
+		"MSDS": "500N_PDF",
 		"title": "500 N (GR I)",
 		"subTitle": "Base Oil",
 		"description": "Virgin Mineral base oil containing less than 90 percent saturates and /or greater than 0.03 percent sulphur and have Viscosity Index greater than or equal to 80 and lesss than 120 .",
@@ -1432,13 +1449,14 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial/Automotive /Specialties",
-		"documentation": "",
-		"alternatives": [],
+		"documentation": "-",
+		"alternatives": ["-"],
 		"related": ["500 N/ Alprol N100,Yantrol 100,Miljute 100, Inkol 100"]
 	},
 	"HPCL0023": {
 		"id": 23,
-		"title": "Stock 2500 BRF(150 BS)  (GR I)",
+		"MSDS": "BRF150BS_PDF",
+		"title": "Stock 2500 BRF(150 BS) (GR I)",
 		"subTitle": "Base Oil",
 		"description": "Virgin Mineral base oil containing less than 90 percent saturates and /or greater than 0.03 percent sulphur and have Viscosity Index greater than or equal to 80 and lesss than 120 .",
 		"specifications": [
@@ -1467,14 +1485,15 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial/Automotive /Specialties",
-		"documentation": "",
-		"alternatives": [],
+		"documentation": "-",
+		"alternatives": ["-"],
 		"related": [
 			"Stock 2500 BRF(150 BS)/ Elasto 215/All purpose GoldMiljute 460"
 		]
 	},
 	"HPCL0024": {
 		"id": 24,
+		"MSDS": "",
 		"title": "75 SM (GRII)",
 		"subTitle": "Base Oil",
 		"description": "Virgin Mineral base oil containing greater than or equal to 90 percent saturates and less than or equal to 0.03 percent sulphur and have Viscosity Index greater than or equal to 80 and lesss than 120 .",
@@ -1504,12 +1523,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "lubes",
 		"industrial": "Industrial/Automotive /Specialties",
-		"documentation": "",
-		"alternatives": [],
+		"documentation": "-",
+		"alternatives": ["-"],
 		"related": ["75 SM Spindle oil, Alprol Super N12,Miljute Super N12"]
 	},
 	"HPCL0025": {
 		"id": 25,
+		"MSDS": "GRII_150SN_PDF",
 		"title": "150 SN (GRII)",
 		"subTitle": "Base Oil",
 		"description": "Virgin Mineral base oil containing greater than or equal to 90 percent saturates and less than or equal to 0.03 percent sulphur and have Viscosity Index greater than or equal to 80 and lesss than 120 .",
@@ -1547,12 +1567,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "lubes",
 		"industrial": "Industrial/Automotive /Specialties",
-		"documentation": "",
-		"alternatives": [],
+		"documentation": "-",
+		"alternatives": ["-"],
 		"related": ["150 SN/Alprol Super N32/Witeol 15"]
 	},
 	"HPCL0026": {
 		"id": 26,
+		"MSDS": "500SN_PDF",
 		"title": "500 SN (GRII)",
 		"subTitle": "Base Oil",
 		"description": "Virgin Mineral base oil containing greater than or equal to 90 percent saturates and less than or equal to 0.03 percent sulphur and have Viscosity Index greater than or equal to 80 and lesss than 120 .",
@@ -1590,12 +1611,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "lubes",
 		"industrial": "Industrial/Automotive /Specialties",
-		"documentation": "",
-		"alternatives": [],
+		"documentation": "-",
+		"alternatives": ["-"],
 		"related": ["500 SN/Alprol Super N 100/Witeol Special"]
 	},
 	"HPCL0027": {
 		"id": 27,
+		"MSDS": "",
 		"title": "CBFS",
 		"subTitle": "SPECIALITY",
 		"description": "CBFS Stands for Carbon Black Feedstock composition, rich in aromatics like naphthalene. There are two types of CBFS viz. High BMCI type and General type. \"BMCI\" (Bureau of Mines Co-relation Index) effectively measures the degree yield of Carbon Black. The higher the number, the better the yield of Carbon Black. Sulphur content in CBFS reduces the effect of BMCI value.",
@@ -1653,12 +1675,13 @@
 		"packaging": ["Bulk"],
 		"SBU": "SOD/ I&C",
 		"industrial": "Tyre, Manufacturing",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0028": {
 		"id": 28,
+		"MSDS": "",
 		"title": "HYTHERM 500",
 		"subTitle": "THERMIC FLUIDS",
 		"description": "The product is manufactured from petroleum stocks produced by special re\ufb01ning process in which the thermally unstable components are removed. HYTHERM 500 is recommended in service involving a maximum bulk oil temperature of 290\u00b0C. In addition, it has the following bene\ufb01ts a)Excellent oxidation & chemical stability b)Good heat transfer properties c) Low volatility & d) Non-corrosive and non-toxic",
@@ -1718,10 +1741,11 @@
 		"industrial": "Textile, pharmaceuticals, chemical and processing industries.",
 		"documentation": "-",
 		"alternatives": ["-"],
-		"related": []
+		"related": ["-"]
 	},
 	"HPCL0029": {
 		"id": 29,
+		"MSDS": "",
 		"title": "HYTHERM 600",
 		"subTitle": "THERMIC FLUIDS",
 		"description": "This grade is derived from the \ufb01nest quality petroleum base stocks and is forti\ufb01ed with high performance additives to enhance performance at higher temperatures. It has the following outstanding features a) Ability to provide superior performance in indirect closed \ufb02uid heat transfer system up to bulk operating temperature up to 320\u00b0C b) Increased life, reduced oxidation and thermal degradation & c) Minimal fouling and deposit formation on heat transfer surface. Hence sustained heat transfer characteristics",
@@ -1781,10 +1805,11 @@
 		"industrial": "Textile, pharmaceuticals, chemical and processing industries.",
 		"documentation": "-",
 		"alternatives": ["-"],
-		"related": []
+		"related": ["-"]
 	},
 	"HPCL0030": {
 		"id": 30,
+		"MSDS": "",
 		"title": "HP Diesel Exhaust Fluid (DEF)",
 		"subTitle": "Motor Fuel",
 		"description": "DEF, most commonly refers to Diesel Exhaust Fluid, is a crucial non-toxic liquid (32.5% urea, 67.5% deionized water) used in modern diesel engines with Selective Catalytic Reduction (SCR) systems to convert harmful Nitrogen Oxides (NOx) into harmless nitrogen and water, meeting latest emission standards.",
@@ -1874,6 +1899,7 @@
 	},
 	"HPCL0031": {
 		"id": 31,
+		"MSDS": "",
 		"title": "HP GAS",
 		"subTitle": "Domestic / Commercial / Industrial Fuel/Free trade LPG",
 		"description": "HP GAS (LPG) is a clean, efficient, and high-calorific gaseous fuel comprising mainly of mixture of  Propane (C\u2083H\u2088) and Butane (C\u2084H\u2081\u2080) . It is colourless, odourless in natural form (odorized with Ethyl Mercaptan for safety), non-toxic. HP GAS is produced during petroleum refining and gas processing",
@@ -1932,6 +1958,7 @@
 	},
 	"HPCL0032": {
 		"id": 32,
+		"MSDS": "FLAME_PLUS_PDF",
 		"title": "HP GAS FLAME PLUS",
 		"subTitle": "Commercial",
 		"description": "HP GAS FLAME PLUS is LPG fortified with an additive to enhance the combustion properties of LPG. The additive increases the flame temperature and also improves the combustion kinetics of propane/butane and flame properties, thereby resulting in quicker heating, reduced gas consumption, reduced process time and hence more savings for the customers.",
@@ -1998,11 +2025,12 @@
 		"SBU": "LPG",
 		"industrial": "hospitality (hotels, restaurants, canteens), bakeries, food processing, and various industries etc",
 		"documentation": "Yes ,attached",
-		"alternatives": [],
+		"alternatives": ["-"],
 		"related": ["HP RAZOR,HP DOLPHIN,HP POWERLIFT"]
 	},
 	"HPCL0033": {
 		"id": 33,
+		"MSDS": "",
 		"title": "HP ROLMET 7",
 		"subTitle": "ROLLING OILS",
 		"description": "HP ROLMET 7 is a neat cold rolling oil for use in Cold rolling of stainless steels requiring high degree of \u201cBA Finish\u201d (Bright Annealing) , very smooth surface Texture with spot free \ufb01nish.\n\nHP ROLMET 7 is made out of highly re\ufb01ned low viscosity base oil having ultra-low sulfur and aromatic content. This oil contains carefully selected additive chemistry intended to give superior performance of high VI, Rust prevention, besides Non staining characteristics .\n\nThe oil provides optimum co-ef\ufb01cient of friction between the roll bites depending upon the type of metal surface, roll diameter, rolling speed and percentage reduction.",
@@ -2042,6 +2070,7 @@
 	},
 	"HPCL0034": {
 		"id": 34,
+		"MSDS": "",
 		"title": "HP ROLMET V 45",
 		"subTitle": "ROLLING OILS",
 		"description": "HP ROLMET V 45 is compounded rolling oil specially designed for rolling of both ferrous and non-ferrous metals. Particularly useful for cold rolling of carbon and alloy steel, brass and copper.",
@@ -2073,6 +2102,7 @@
 	},
 	"HPCL0035": {
 		"id": 35,
+		"MSDS": "",
 		"title": "HP ROLMET V 45, V 55",
 		"subTitle": "ROLLING OILS",
 		"description": "HP ROLMET V 55 is a higher viscosity oil for rolling of both ferrous and non-ferrous metals.",
@@ -2100,6 +2130,7 @@
 	},
 	"HPCL0036": {
 		"id": 36,
+		"MSDS": "",
 		"title": "HP ROLMET N34",
 		"subTitle": "ROLLING OILS",
 		"description": "Non staining rolling oil specially designed for rolling of copper and copper alloys useful in multi roller mills as a bearing lubricant as well.",
@@ -2131,6 +2162,7 @@
 	},
 	"HPCL0037": {
 		"id": 37,
+		"MSDS": "",
 		"title": "HP ROLMET 40",
 		"subTitle": "ROLLING OILS",
 		"description": "Rolling oil specially designed for rolling of both ferrous and non-ferrous metals suitable for usage in sendzimer mills.",
@@ -2162,6 +2194,7 @@
 	},
 	"HPCL0038": {
 		"id": 38,
+		"MSDS": "",
 		"title": "HP METAQUENCH 39",
 		"subTitle": "SPECIALITY",
 		"description": "These are blends of refined base oils and contain no additives. METAQUENCH 39 is recommended for general purpose quenching of components and is particularly suitable for quenching of cyanided parts.",
@@ -2186,13 +2219,14 @@
 		"appData": "General purpose quenching oil of all components including cyanided parts",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0039": {
 		"id": 39,
+		"MSDS": "",
 		"title": "HP METAQUENCH 40",
 		"subTitle": "SPECIALITY",
 		"description": "These are blends of refined base oils and contain no additives. METAQUENCH 40 is suitable in situations when lower quenching speed is desired.",
@@ -2217,13 +2251,14 @@
 		"appData": "General purpose quenching oil of all components.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0040": {
 		"id": 40,
+		"MSDS": "",
 		"title": "HP METAQUENCH 42",
 		"subTitle": "SPECIALITY",
 		"description": "General purpose quenching oil of all components. However, this oil is not suitable for quenching cyanided parts.",
@@ -2252,13 +2287,14 @@
 		"appData": "General purpose quenching oil of all components. However, this oil is not suitable for quenching cyanided parts.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0041": {
 		"id": 41,
+		"MSDS": "",
 		"title": "HP METAQUENCH 43",
 		"subTitle": "SPECIALITY",
 		"description": "This is an additive type of quenching oil with good dispersant properties and excellent heat transfer characteristics.",
@@ -2291,13 +2327,14 @@
 		"appData": "General purpose quenching oil of all components. Suitable for applications where dirt accumulation on the metal is a bane.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0042": {
 		"id": 42,
+		"MSDS": "",
 		"title": "HP METAQUENCH 44",
 		"subTitle": "SPECIALITY",
 		"description": "Quenching oil with excellent dispersant properties. The oil is fortified with carefully selected dispersant to provide minimum quench distortion. Cooling rates are markedly faster enabling achievement of higher surface hardness.",
@@ -2326,13 +2363,14 @@
 		"appData": "General purpose quenching oil of all components. Suitable for applications where dirt accumulation on the metal is a bane and where higher surface hardness is required.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0043": {
 		"id": 43,
+		"MSDS": "",
 		"title": "HP METAQUENCH 44 H",
 		"subTitle": "SPECIALITY",
 		"description": "METAQUENCH 44 H is a premium low viscosity quenching oil based upon specialty solvent-refined base oil to minimize oxidation and ensure consistent performance under the most arduous operating conditions.",
@@ -2361,13 +2399,14 @@
 		"appData": "METAQUENCH 44 H finds wide use as a quenching oil for varied applications where faster quenching rate is essential.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0044": {
 		"id": 44,
+		"MSDS": "",
 		"title": "HP METAQUENCH 45",
 		"subTitle": "SPECIALITY",
 		"description": "METAQUENCH 45 is the Quenching oil for meeting very fast quenching requirement with excellent dispersant properties. The high quality paraffinic oil is fortified with carefully selected dispersant to provide minimum Quench distortion. The additive system prevents build-up of sludge and dirt.",
@@ -2397,16 +2436,17 @@
 				"value": "95"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0045": {
 		"id": 45,
+		"MSDS": "",
 		"title": "HP METAQUENCH 85",
 		"subTitle": "SPECIALITY",
 		"description": "This is a marquenching oil suitable for maintaining the quenching bath at temperatures between 150-220\u00b0C.",
@@ -2435,13 +2475,14 @@
 		"appData": "Suitable for mass production of high precision, high quality products such as bearing races gears and other components.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0046": {
 		"id": 46,
+		"MSDS": "",
 		"title": "HP METAQUENCH 86",
 		"subTitle": "SPECIALITY",
 		"description": "Marquenching oil suitable for usage for bath temperatures 150 to 220 \u00b0C. Recommended for all marquenching operations which require a high quench speed oil.",
@@ -2470,13 +2511,14 @@
 		"appData": "Suitable for mass production of high precision, high quality products such as bearing races gears and shafts.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0047": {
 		"id": 47,
+		"MSDS": "",
 		"title": "HP METAQUENCH 87",
 		"subTitle": "SPECIALITY",
 		"description": "METAQUENCH 87 involves new generation base stocks with optimized viscosity characteristics. This product gives lower deposits extremely low sludge and carryover.",
@@ -2501,13 +2543,14 @@
 		"appData": "It is recommended for the mass production of high precision, high quality products such as bearing races, automotive gears and transmission components.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0048": {
 		"id": 48,
+		"MSDS": "",
 		"title": "HP METAQUENCH 88",
 		"subTitle": "SPECIALITY",
 		"description": "Metaquench 88 is a hot quenching oil with exceptional ageing stability coupled with distortion control\nproperties .",
@@ -2545,16 +2588,17 @@
 				"value": "0.5"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0049": {
 		"id": 49,
+		"MSDS": "",
 		"title": "HP KOOLKUT 40",
 		"subTitle": "SPECIALITY",
 		"description": "This is general-purpose emulsifiable oil and forms milky white emulsion.",
@@ -2591,13 +2635,14 @@
 		"appData": "Suitable for all metals for machining operations where emulsifiable oil are normally used. The recommended concentration is between 5 to 10 % depending on the severity of machining.\nSometimes used successfully for even grinding operations.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0050": {
 		"id": 50,
+		"MSDS": "",
 		"title": "HP KOOLKUT 40 MS",
 		"subTitle": "SPECIALITY",
 		"description": "KOOLKUT 40 MS is a water miscible mineral oil based metal cutting fluid which forms a milky white\ntight emulsion.",
@@ -2634,13 +2679,14 @@
 		"appData": "KOOLKUT 40 MS is suitable for machining operations for all metals except magnesium where emulsifiable oils are normally used.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0051": {
 		"id": 51,
+		"MSDS": "",
 		"title": "HP KOOLKUT 40 M",
 		"subTitle": "SPECIALITY",
 		"description": "KOOLKUT 40 M is a water miscible mineral oil based metal cutting fluid which forms a milky\nwhite emulsion.",
@@ -2677,13 +2723,14 @@
 		"appData": "KOOLKUT 40 M is suitable for all metals for machining operations where emulsifiable oil are\nnormally recommended.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0052": {
 		"id": 52,
+		"MSDS": "",
 		"title": "HP KOOLKUT 60",
 		"subTitle": "SPECIALITY",
 		"description": "General purpose emulsifiable cutting oil forming a translucent emulsion. The ultra-fine dispersion of the oil globules reduces grinding wheel clogging and low oil content emulsion may be used safely\nwithout loss of non-corrosive properties.",
@@ -2716,13 +2763,14 @@
 		"appData": "Suitable for all metals for machining operations where emulsifiable oils are normally used.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0053": {
 		"id": 53,
+		"MSDS": "",
 		"title": "HP KOOLKUT EP 66",
 		"subTitle": "SPECIALITY",
 		"description": "General purpose emulsifiable cutting oil forming a yellowish emulsion with EP characteristics for\nmoderate to heavy duty applications",
@@ -2755,13 +2803,14 @@
 		"appData": "Its main application is with high-speed steel tools in practically all major cutting processes and on\nmost metals, including difficult alloy steel. It is more effective than ordinary emulsifiable oils in\nextending tool life.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0054": {
 		"id": 54,
+		"MSDS": "",
 		"title": "HP KOOLKUT EP 67",
 		"subTitle": "SPECIALITY",
 		"description": "HP KOOLKUT EP 67 is a premium emulsifiable cutting oil with EP characteristics for moderate to\nheavy duty applications. Recommended as a coolant in Stainless steel rolling.",
@@ -2786,13 +2835,14 @@
 		"appData": "Its main application is with high speed steel tools in practically all major cutting processes and on most metals, including difficult alloy steel. More effective than ordinary emusifiable oils in extending tool life.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0055": {
 		"id": 55,
+		"MSDS": "",
 		"title": "HP KOOLKUT EP 68",
 		"subTitle": "SPECIALITY",
 		"description": "KOOLKUT EP 68 is a water miscible mineral oil based premium metal cutting fluid containing\nChlorinated EP agents and forms a milky white emulsion.",
@@ -2833,13 +2883,14 @@
 		"appData": "Suitable for all metals for machining operations where emulsifiable oils are normally used.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0056": {
 		"id": 56,
+		"MSDS": "",
 		"title": "HP KOOLKUT EP 681",
 		"subTitle": "SPECIALITY",
 		"description": "KOOLKUT EP 681 is a water miscible mineral oil based premium metal cutting fluid containing\nbalanced proportions of Chlorinated EP agents and suitable Esters for imparting superior Lubricity.\nThe product forms a milky white to translucent emulsion.",
@@ -2880,13 +2931,14 @@
 		"appData": "KOOLKUT EP 681 is a heavy duty Steel & Aluminum machining fluid for use on Ferrous & Non-Ferrous metals in wide range of applications like Machining, Turning, Tapping, Drilling, Milling,\nGrooving etc. It is more effective than ordinary emulsifiable oils in extending tool life.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0057": {
 		"id": 57,
+		"MSDS": "",
 		"title": "HP KOOLKUT 70",
 		"subTitle": "SPECIALITY",
 		"description": "HP KOOLKUT 70 is a premium Water soluble solution type grinding fluid. It contains no fat or oil\ncomponent and has excellent anti corrosion property.",
@@ -2915,13 +2967,14 @@
 		"appData": "HP KOOLKUT 70 is a coolant specifically designed for grinding and high speed machining where rust prevention of machined parts is important.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0058": {
 		"id": 58,
+		"MSDS": "",
 		"title": "HP KOOLKUT 80",
 		"subTitle": "SPECIALITY",
 		"description": "Superior emulsifiable cutting oil forming a white milky emulsion having longer life. The product\nforms biostable emulsions facilitating easier handling and disposal.",
@@ -2958,13 +3011,14 @@
 		"appData": "Suitable for all metals for machining operations where emulsifiable oils are normally used. The\nrecommended concentration is between 3 to 5% depending on the severity of machining. Product\ncan be used successfully even for grinding operations.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0059": {
 		"id": 59,
+		"MSDS": "",
 		"title": "HP SYNTHKOOL 100",
 		"subTitle": "SPECIALITY",
 		"description": "Semi-synthetic cutting fluid consisting of carefully selected rust preventive additives and other\nperformance improvers, supplied in solution form. SYNTHAKOOL 100  is totally synthetic.",
@@ -2993,13 +3047,14 @@
 		"appData": "Recommended concentration in the ratio of 2-4% in water. The resultant solution provides exceptional anti-rust & cooling properties when used in grinding and other high speed machining operations. It is highly resistant to bacterial attack and provides long life in use.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0060": {
 		"id": 60,
+		"MSDS": "",
 		"title": "HP SYNTHKOOL 101",
 		"subTitle": "SPECIALITY",
 		"description": "Semi-synthetic cutting fluid consisting of carefully selected rust preventive additives and other\nperformance improvers, supplied in solution form.",
@@ -3020,13 +3075,14 @@
 		"appData": "Recommended concentration in the ratio of 2-4% in water. The resultant solution provides\nexceptional anti-rust & cooling properties when used in grinding and other high speed machining\noperations. It is highly resistant to bacterial attack and provides long life in use.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0061": {
 		"id": 61,
+		"MSDS": "",
 		"title": "HP SYNTHKOOL 102",
 		"subTitle": "SPECIALITY",
 		"description": "Semi-synthetic cutting fluid consisting of carefully selected rust preventive additives and other\nperformance improvers, supplied in solution form. SYNTHAKOOL  102 is totally synthetic.",
@@ -3047,13 +3103,14 @@
 		"appData": "Recommended concentration in the ratio of 2-4% in water. The resultant solution provides exceptional anti-rust & cooling properties when used in grinding and other high speed machining operations. It is highly resistant to bacterial attack and provides long life in use.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0062": {
 		"id": 62,
+		"MSDS": "",
 		"title": "HP SYNTHKOOL 24121",
 		"subTitle": "SPECIALITY",
 		"description": "HP SYNTHKOOL 24121 is a low mineral oil containing, water miscible semi synthetic type cutting\nfluid blended with high performing lubricity additives.",
@@ -3083,16 +3140,17 @@
 				"value": "9.0"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0063": {
 		"id": 63,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 12",
 		"subTitle": "SPECIALITY",
 		"description": "It is a high performance cutting and neat grinding oil based on specially selected, thermally stable\nbase oils. TRIMOFIN 12 provides a consistent level of grinding performance as well as guaranteeing\nexcellent lubrication and cooling. It gives good grinding performance with control on stray mist.",
@@ -3126,16 +3184,17 @@
 				"value": "11 - 13"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0064": {
 		"id": 64,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 14",
 		"subTitle": "SPECIALITY",
 		"description": "Oiliness type straight cutting oils. Blends of refined mineral oils and additives improve wetting\ncharacteristics. These oils are of non-staining type.",
@@ -3160,13 +3219,14 @@
 		"appData": "These oils are suitable for machining nonferrous metals and light machining and free cutting of\nsteels.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0065": {
 		"id": 65,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 15",
 		"subTitle": "SPECIALITY",
 		"description": "Oiliness type straight cutting oils. Blends of refined mineral oils and additives improve wetting\ncharacteristics. These oils are of non-staining type.",
@@ -3191,13 +3251,14 @@
 		"appData": "These oils are suitable for machining nonferrous metals and light machining and free cutting of\nsteels.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0066": {
 		"id": 66,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 16",
 		"subTitle": "SPECIALITY",
 		"description": "Oiliness type straight cutting oils. Blends of refined mineral oils and additives improve wetting\ncharacteristics. These oils are of non-staining type.",
@@ -3226,13 +3287,14 @@
 		"appData": "These oils are suitable for machining nonferrous metals and light machining and free cutting of\nsteels.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0067": {
 		"id": 67,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 18",
 		"subTitle": "SPECIALITY",
 		"description": "Oiliness type straight cutting oils. Blends of refined mineral oils and additives improve wetting\ncharacteristics. These oils are of non-staining type.",
@@ -3261,13 +3323,14 @@
 		"appData": "These oils are suitable for machining nonferrous metals and light machining and free cutting of\nsteels.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0068": {
 		"id": 68,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 19",
 		"subTitle": "SPECIALITY",
 		"description": "This low viscosity product is used as a honing oil and is used for honing operations in automobile\nplants.",
@@ -3301,16 +3364,17 @@
 				"value": "25 - 30"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0069": {
 		"id": 69,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 20",
 		"subTitle": "SPECIALITY",
 		"description": "Non staining type straight cutting oil treated with chlorinated EP additive. This oil has low viscosity\nand is light in colour.",
@@ -3335,13 +3399,14 @@
 		"appData": "Product is recommended for use in automobile, bearing and watch industries for honing, lapping and\nsuper finishing operations of ferrous and non-ferrous metals.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0070": {
 		"id": 70,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 21",
 		"subTitle": "SPECIALITY",
 		"description": "Non staining type straight cutting oil treated with chlorinated EP additive and fortified with oiliness\nadditives. Suitable for light and medium conditions.",
@@ -3382,13 +3447,14 @@
 		"appData": "Suitable for machining operation in mild steels, carbon steels, nickel steels and manganese steels.\nThe product is also suitable for copper and aluminum and their alloys.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0071": {
 		"id": 71,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 22",
 		"subTitle": "SPECIALITY",
 		"description": "Compounded low viscosity neat cutting oil specially designed for bearing industry guaranteeing super surface finish.",
@@ -3418,16 +3484,17 @@
 				"value": "Yes"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0072": {
 		"id": 72,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 23",
 		"subTitle": "SPECIALITY",
 		"description": "Non staining type straight cutting oil treated with EP additives and fortified with oiliness additives. Suitable for use in high speed automatic machine tools.",
@@ -3468,13 +3535,14 @@
 		"appData": "Suitable for use in high speed automatic machine tools steels. The product is suitable for ferrous and\nnon-ferrous metals.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0073": {
 		"id": 73,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 25",
 		"subTitle": "SPECIALITY",
 		"description": "Non staining type straight cutting oil treated with EP additives and fortified with oiliness additives. Suitable for use in high speed automatic machine tools. Trimofin 25 contains more potent EP additives.",
@@ -3491,13 +3559,14 @@
 		"appData": "Suitable for use in high speed automatic machine tools steels. The product is suitable for ferrous and\nnon-ferrous metals.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0074": {
 		"id": 74,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 235",
 		"subTitle": "SPECIALITY",
 		"description": "TRIMOFIN 235 is a non-staining type chlorine free cutting, grinding, forming and stamping oil\nformulated with latest synthetic technology.",
@@ -3534,13 +3603,14 @@
 		"appData": "TRIMOFIN 235 is suitable for turning and machining copper, aluminum and carbon steels. It can also\nbe used for stamping and forming of thinner materials.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0075": {
 		"id": 75,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 23 DEF",
 		"subTitle": "SPECIALITY",
 		"description": "HP TRIMOFIN 23 DEF is a non-staining type sulphurized neat cutting oil suitable for machining of\nmedium alloyed steel and Non-Ferrous metals under light & medium duty conditions.",
@@ -3570,16 +3640,17 @@
 				"value": "Yes"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0076": {
 		"id": 76,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 26",
 		"subTitle": "SPECIALITY",
 		"description": "Non staining EP type straight cutting oil containing chlorine and inactive sulphur fortified with\noiliness additives.",
@@ -3612,13 +3683,14 @@
 		"appData": "Suitable for use in high speed automatic machine tools steels.the product is suitable for ferrous and\nnon ferrous metals.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0077": {
 		"id": 77,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 27",
 		"subTitle": "SPECIALITY",
 		"description": "Non staining EP type straight cutting oil containing chlorine and inactive sulphur fortified with\noiliness additives.",
@@ -3655,13 +3727,14 @@
 		"appData": "Suitable for usage in drilling type of operations and is found to be particularly useful on pull honing\noperations.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0078": {
 		"id": 78,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 54",
 		"subTitle": "SPECIALITY",
 		"description": "Staining EP type straight cutting oil containing active and inactive Sulphur fortified with oiliness\nadditives.",
@@ -3698,13 +3771,14 @@
 		"appData": "Low viscosity oils specially developed for deep hole drilling and precision grinding of all kinds of\nsteel. It is also suitable for usage in applications like thread rolling and other medium and heavy duty\nferrous metal machining.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0079": {
 		"id": 79,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 55",
 		"subTitle": "SPECIALITY",
 		"description": "Staining EP type straight cutting oil containing active sulphur and chlorine fortified with oiliness\nadditives possessing medium viscosity.",
@@ -3737,13 +3811,14 @@
 		"appData": "Medium viscosity oil specially developed for heavy duty applications like gear hobbing, thread cutting\netc. The oil is also suitable for all machining operations on high tensile steels and for less severe\noperations on stainless and shear resistant alloys.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0080": {
 		"id": 80,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 56",
 		"subTitle": "SPECIALITY",
 		"description": "Staining EP type straight cutting oil containing active sulphur and chlorine fortified with oiliness\nadditives possessing medium viscosity.",
@@ -3776,13 +3851,14 @@
 		"appData": "Medium viscosity oil suitable for heavy duty applications such as threading, broaching, tapping etc.\non ferrous metals.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0081": {
 		"id": 81,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 58",
 		"subTitle": "SPECIALITY",
 		"description": "Staining EP type straight cutting oil containing active Sulphur possessing medium viscosity. The\nproduct is dark in colour.",
@@ -3807,13 +3883,14 @@
 		"appData": "Medium viscosity oil suitable for heavy duty applications such as threading, broaching, tapping etc.\non ferrous metals.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0082": {
 		"id": 82,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 58 BR",
 		"subTitle": "SPECIALITY",
 		"description": "TRIMOFIN 58 BR is a light colored, active sulfur and chlorine containing metal machining oil designed for use in moderate to severe machining operations.",
@@ -3850,13 +3927,14 @@
 		"appData": "TRIMOFIN 58 BR is particularly suited for broaching, deep hole drilling, grinding, and other\noperations on Ferrous Metals & its alloys where a low viscosity cutting oil would be preferred.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0083": {
 		"id": 83,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 595",
 		"subTitle": "SPECIALITY",
 		"description": "HP TRIMOFIN 595 is a staining type neat cutting mineral oil containing high quality fat and active\nSulphur for imparting excellent extreme pressure properties",
@@ -3885,13 +3963,14 @@
 		"appData": "HP TRIMOFIN 595 is suitable for heavy duty applications like Boring, Deep Hole Drilling, Drawing and\nGrinding on ferrous metals.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0084": {
 		"id": 84,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 64",
 		"subTitle": "SPECIALITY",
 		"description": "These are special purpose broaching & grinding oils having enhanced EP properties. They contain\nactive sulfur.",
@@ -3925,16 +4004,17 @@
 				"value": "600"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0085": {
 		"id": 85,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 65",
 		"subTitle": "SPECIALITY",
 		"description": "These are special purpose broaching & grinding oils having enhanced EP properties. They contain\nactive sulfur.",
@@ -3968,16 +4048,17 @@
 				"value": "800"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0086": {
 		"id": 86,
+		"MSDS": "",
 		"title": "HP TRIMOFIN 66",
 		"subTitle": "SPECIALITY",
 		"description": "These are special purpose broaching & grinding oils having enhanced EP properties. They contain\nactive sulfur.",
@@ -4003,16 +4084,17 @@
 				"value": "800"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0087": {
 		"id": 87,
+		"MSDS": "",
 		"title": "HP TRIMOFIN AL",
 		"subTitle": "SPECIALITY",
 		"description": "Fully synthetic low viscosity oil suitable for cutting operations of Aluminum. This oil is specially\ndesigned for oil mist type cutting systems and where non-staining properties are required.",
@@ -4050,16 +4132,17 @@
 				"value": "20.0"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0088": {
 		"id": 88,
+		"MSDS": "",
 		"title": "HP TRIMOFIN GR",
 		"subTitle": "SPECIALITY",
 		"description": "Colourless, waterwhite aliphatic solvent, the low sulfur and low aromatic contents make it suitable\nfor use in wide range of applications like granite cutting , lapping , grinding and other surface finishing opeartions.",
@@ -4101,16 +4184,17 @@
 				"value": "3"
 			}
 		],
-		"appData": "",
+		"appData": "-",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0089": {
 		"id": 89,
+		"MSDS": "",
 		"title": "HP TRIMOL 225",
 		"subTitle": "SPECIALITY",
 		"description": "New generation metal working product blended with low viscosity refined mineral oil and potent\nchlorinated additive.",
@@ -4143,13 +4227,14 @@
 		"appData": "Recommended for all machining operations involving high speeds and low to moderate severity.",
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
-		"industrial": "",
+		"industrial": "-",
 		"documentation": "-",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
 	"HPCL0090": {
 		"id": 90,
+		"MSDS": "",
 		"title": "ELASTO 165",
 		"subTitle": "Highly Paraffinic Rubber Process Oil",
 		"description": "Highly paraffinic oil with low volatility and excellent ageing resistance",
@@ -4167,12 +4252,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Rubber manufacturing, automotive rubber",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0091": {
 		"id": 91,
+		"MSDS": "",
 		"title": "ELASTO 245",
 		"subTitle": "Paraffinic Rubber Process Oil",
 		"description": "Light-coloured paraffinic oil with good colour stability",
@@ -4190,12 +4276,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Tyres, footwear, sporting goods",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0092": {
 		"id": 92,
+		"MSDS": "",
 		"title": "ELASTO 255",
 		"subTitle": "Paraffinic Rubber Process Oil",
 		"description": "Low-viscosity paraffinic oil for shoe sole applications",
@@ -4213,12 +4300,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Footwear industry",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0093": {
 		"id": 93,
+		"MSDS": "",
 		"title": "ELASTO 215/216",
 		"subTitle": "High Viscosity Paraffinic RPO",
 		"description": "High viscosity oil with excellent heat aging resistance",
@@ -4236,12 +4324,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Industrial rubber goods",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0094": {
 		"id": 94,
+		"MSDS": "",
 		"title": "ELASTO 541",
 		"subTitle": "Naphthenic Rubber Process Oil",
 		"description": "General purpose naphthenic oil with good solvency",
@@ -4259,12 +4348,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Rubber & tyre industry",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0095": {
 		"id": 95,
+		"MSDS": "ELASTO710_PDF",
 		"title": "ELASTO 710",
 		"subTitle": "Aromatic Rubber Process Oil",
 		"description": "High solvency aromatic oil, dark colour",
@@ -4282,12 +4372,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Tyre & automotive rubber",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0096": {
 		"id": 96,
+		"MSDS": "ELASTO_SUPREME_PDF",
 		"title": "ELASTO SUPREME (TRAE)",
 		"subTitle": "Low PAH Aromatic RPO",
 		"description": "Residual aromatic extract (TRAE) type product which\nhas been designed to prevent damage to the environment and at the same time contribute to the high\nend performance of modern automobile tyre and Styrene Butadiene Rubber (SBR).",
@@ -4389,12 +4480,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Automotive tyre manufacturing",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0097": {
 		"id": 97,
+		"MSDS": "ELASTO_SUPREME_H_PDF",
 		"title": "ELASTO SUPREME H (RAE)",
 		"subTitle": "Residual Aromatic Extract directly obtained from refining process",
 		"description": "Environment friendly non-staining aromatic oil",
@@ -4436,12 +4528,13 @@
 		"packaging": ["210 ltr Barrel", "Bulk"],
 		"SBU": "LUBES",
 		"industrial": "Automotive tyres, rubber compounding",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0098": {
 		"id": 98,
+		"MSDS": "",
 		"title": "HYTHERM S",
 		"subTitle": "THERMIC FLUIDS",
 		"description": "Hytherm S is a premium quality Heat Transfer Oil speci\ufb01cally developed for heat transfer system where skin temperature goes up to 345\u00b0C and bulk temperatures up to 330\u00b0C. This product is derived from synthetic base stocks and is forti\ufb01ed with high performance additives to enhance the performance at higher temperature.",
@@ -4529,6 +4622,7 @@
 	},
 	"HPCL0099": {
 		"id": 99,
+		"MSDS": "",
 		"title": "HYTHERM 600 PLUS",
 		"subTitle": "THERMIC FLUIDS",
 		"description": "HYTHERM 600 PLUS is a premium quality Heat Transfer Oil blended using a combination of the highest quality mineral and synthetic base stocks and forti\ufb01ed with high performance additives for superior performance in indirect closed \ufb02uid heat transfer systems.",
@@ -4640,6 +4734,7 @@
 	},
 	"HPCL0100": {
 		"id": 100,
+		"MSDS": "",
 		"title": "RUSTOP 68, 173, 173 DW, 175, 179,184",
 		"subTitle": "RUST PREVENTIVES",
 		"description": "A premium solvent based rust preventive oil that forms an acid fume resistant \ufb01lm. Specially developed for steel industry for storing stacked and coiled steel strips in presence of humidity.",
@@ -4687,6 +4782,7 @@
 	},
 	"HPCL0101": {
 		"id": 101,
+		"MSDS": "",
 		"title": "RUSTOP 179 C",
 		"subTitle": "RUST PREVENTIVES",
 		"description": "Rustop 179 C is a premium solvent cut back type rust preventive with good dewatering properties.\nThe product, after evaporation of the solvent, leaves thin and transparent greasy \ufb01lm on the surface.",
@@ -4726,6 +4822,7 @@
 	},
 	"HPCL0102": {
 		"id": 102,
+		"MSDS": "",
 		"title": "RUSTOP 185",
 		"subTitle": "RUST PREVENTIVES",
 		"description": "Rustop 185 is a premium solvent cut back type rust preventive with good dewatering properties. The product, after evaporation of the solvent, leaves a thin waxy \ufb01lm on the surface.",
@@ -4769,6 +4866,7 @@
 	},
 	"HPCL0103": {
 		"id": 103,
+		"MSDS": "",
 		"title": "RUSTOP 273",
 		"subTitle": "RUST PREVENTIVES",
 		"description": "RUSTOP 273 is a premium quality rust preventive designed to protect metal surfaces from rust and corrosion. It is formulated using lightbodied petroleum solvents as cutback with polar rust preventing, water displacing and \ufb01ngerprint neutralising additives.",
@@ -4804,6 +4902,7 @@
 	},
 	"HPCL0104": {
 		"id": 104,
+		"MSDS": "",
 		"title": "RUSTOP 274, 275, 276, 282, 283",
 		"subTitle": "RUST PREVENTIVES",
 		"description": "RUSTOP 274 is a premium rust preventive oil used in \ufb01nal packing stage in critical applications such as in ball bearings. RUSTOP 275 A premium low viscosity rust preventive oil specially designed for usage in small bearings in order to enable easier penetration into deep interiors of a small bearing. RUSTOP 276 Premium quality solvent cut back type rust preventives useful under extreme conditions (severe salty atmosphere) capable of rust inhibition for extended periods. RUSTOP 282 is an oil based rust preventive having a higher \ufb01lm thickness. RUSTOP 283 is an Oil based rust preventive with excellent de watering characteristics.",
@@ -4847,6 +4946,7 @@
 	},
 	"HPCL0105": {
 		"id": 105,
+		"MSDS": "",
 		"title": "RUSTOP 285, 286, 287",
 		"subTitle": "RUST PREVENTIVES",
 		"description": "Premium quality oil \ufb01lm type rust preventives. They are lubricating oils containing soluble corrosion Inhibitors. RUSTOP 285 possesses moderate water displacement characteristics. RUSTOP 286 is oil type nondrying combination lubricant cum rust preventive.",
@@ -4878,6 +4978,7 @@
 	},
 	"HPCL0106": {
 		"id": 106,
+		"MSDS": "",
 		"title": "RUSTOP 387, 388,389",
 		"subTitle": "RUST PREVENTIVES",
 		"description": "RUSTOP 387, 388 are Greasy \ufb01lm type rust preventives. These products do not contain any solvents but contain rust preventing additives. RUSTOP 389 is semi \ufb02uid type of rust preventive recommended by certain forging industries for their \ufb01nished components.",
@@ -4905,6 +5006,7 @@
 	},
 	"HPCL0107": {
 		"id": 107,
+		"MSDS": "",
 		"title": "HP DRAWMET 15, 15S",
 		"subTitle": "METAL DRAWING",
 		"description": "A very important segment of the metal working industry is metal forming, in this process the metal instead of being cut or machined, is forced to \ufb02ow to acquire the desired dimensions by the use of the suitable mechanical equipment. Metal forming process includes operations like pressing, stamping, deep drawing, wire drawing, and tube drawing and forging. During these operations considerable amount of heat and stress and developed. Our DRAWMET grades are tailor made to satisfy the various requirements included in metal drawing/forging operations.",
@@ -4940,6 +5042,7 @@
 	},
 	"HPCL0108": {
 		"id": 108,
+		"MSDS": "",
 		"title": "HP DRAWMET 22",
 		"subTitle": "METAL DRAWING",
 		"description": "General purpose compound used for wire/tube drawing of carbon steels and dif\ufb01cult nonferrous alloys. The cream coloured paste consists of inert \ufb01llers to impart the requisite \ufb01lm strength.",
@@ -4967,6 +5070,7 @@
 	},
 	"HPCL0109": {
 		"id": 109,
+		"MSDS": "",
 		"title": "HP DRAWMET 44",
 		"subTitle": "METAL DRAWING",
 		"description": "Non staining, water-soluble cream coloured paste for \u201cdry on\u201d or emulsion application. It is manufactured with specially balanced mixture of soap and fat. The recommended dilution ratio with water is between i to 5 percent depending upon the gauge of wire to be drawn.",
@@ -5002,6 +5106,7 @@
 	},
 	"HPCL0110": {
 		"id": 110,
+		"MSDS": "",
 		"title": "HP DRAWMET 66",
 		"subTitle": "METAL DRAWING",
 		"description": "Lubricant specially developed for operations like die forging with marked ability to withstand high temperatures due to forti\ufb01cation with special additives.",
@@ -5037,6 +5142,7 @@
 	},
 	"HPCL0111": {
 		"id": 111,
+		"MSDS": "",
 		"title": "HP DRAWMET 81 CF",
 		"subTitle": "METAL DRAWING",
 		"description": "This is a semi synthetic chlorine free product can be used for boiler tube pipe bending operation. Can also be used for pilgering operation. It can withstand \ufb01ltration, centrifuging, etc.",
@@ -5076,6 +5182,7 @@
 	},
 	"HPCL0112": {
 		"id": 112,
+		"MSDS": "",
 		"title": "Shock absorber oil (T3)",
 		"subTitle": "Shock absorber oil specially formulated for Tenneco",
 		"description": "Shock absorber oil is\u00a0a specialized hydraulic fluid essential for consistent damping, vehicle control, and suspension longevity. Its main functions are to dampen vibrations, lubricate internal parts, and prevent foaming",
@@ -5123,6 +5230,7 @@
 	},
 	"HPCL0113": {
 		"id": 113,
+		"MSDS": "",
 		"title": "Koolguard Advance 1:1",
 		"subTitle": "Automotive coolant",
 		"description": "utomotive coolant (or antifreeze) is a vital fluid that circulates in your engine to regulate temperature, preventing overheating in summer and freezing in winter, while also protecting against corrosion, rust, and scale buildup in the cooling system. It's typically a mix of distilled water and glycol (ethylene or propylene) with special additives, designed to absorb engine heat, transfer it to the radiator, and release it into the air, ensuring optimal engine performance and longevity.",
@@ -5168,6 +5276,7 @@
 	},
 	"HPCL0114": {
 		"id": 114,
+		"MSDS": "",
 		"title": "SHOX OIL DC",
 		"subTitle": "Shock absorber oil specially formulated for M/S Duroshox",
 		"description": "Shock absorber oil is\u00a0a specialized hydraulic fluid essential for consistent damping, vehicle control, and suspension longevity. Its main functions are to dampen vibrations, lubricate internal parts, and prevent foaming",
@@ -5210,11 +5319,12 @@
 		"SBU": "LUBES",
 		"industrial": "Automotive",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0115": {
 		"id": 115,
+		"MSDS": "",
 		"title": "SAO E",
 		"subTitle": "Shock absorber oil specially formulated for M/S Endurance",
 		"description": "Shock absorber oil is\u00a0a specialized hydraulic fluid essential for consistent damping, vehicle control, and suspension longevity. Its main functions are to dampen vibrations, lubricate internal parts, and prevent foaming",
@@ -5256,10 +5366,11 @@
 		"alternatives": [
 			"Servo Shocab,MAK Front Fork Oil, fork oil exert motul,Waxpol Shock Absorber Oil"
 		],
-		"related": []
+		"related": ["-"]
 	},
 	"HPCL0116": {
 		"id": 116,
+		"MSDS": "",
 		"title": "GAB SHOX OIL AW",
 		"subTitle": "Shock absorber oil specially formulated for M/S Gabriel for all weather condition",
 		"description": "Shock absorber oil is\u00a0a specialized hydraulic fluid essential for consistent damping, vehicle control, and suspension longevity. Its main functions are to dampen vibrations, lubricate internal parts, and prevent foaming",
@@ -5302,11 +5413,12 @@
 		"SBU": "LUBES",
 		"industrial": "Automotive",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0117": {
 		"id": 117,
+		"MSDS": "",
 		"title": "SAO TELE (E)",
 		"subTitle": "Shock absorber oil specially formulated for M/S Endurance for telescopic absorber",
 		"description": "Shock absorber oil is\u00a0a specialized hydraulic fluid essential for consistent damping, vehicle control, and suspension longevity. Its main functions are to dampen vibrations, lubricate internal parts, and prevent foaming",
@@ -5345,11 +5457,12 @@
 		"SBU": "LUBES",
 		"industrial": "Automotive",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0118": {
 		"id": 118,
+		"MSDS": "",
 		"title": "SAO M",
 		"subTitle": "Shock absorber oil specially formulated for M/S Mando",
 		"description": "Shock absorber oil is\u00a0a specialized hydraulic fluid essential for consistent damping, vehicle control, and suspension longevity. Its main functions are to dampen vibrations, lubricate internal parts, and prevent foaming",
@@ -5395,10 +5508,11 @@
 		"alternatives": [
 			"Servo Shocab,MAK Front Fork Oil, fork oil exert motul,Waxpol Shock Absorber Oil"
 		],
-		"related": []
+		"related": ["-"]
 	},
 	"HPCL0119": {
 		"id": 119,
+		"MSDS": "",
 		"title": "KOOLGARD CLASSIC 1:7",
 		"subTitle": "Ready to use Coolant",
 		"description": "HP KOOLGARD CLASSIC 1:7 is a ready to use extended life automotive gasoline or diesel engine antifreeze and radiator coolant with superior anti corrosive properties.Can be directly poured in the radiators of automobiles as it is in ready to use form.",
@@ -5433,11 +5547,12 @@
 		"SBU": "LUBES",
 		"industrial": "Automotive",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0120": {
 		"id": 120,
+		"MSDS": "",
 		"title": "HP COOL (KOOLGARD)",
 		"subTitle": "coolant concentrate",
 		"description": "HP KOOLGARD is an engine coolant with Ethylene Glycol base for use in radiators. HP KOOLGARD is 100% concentrated product. It should be used in dilution ratio of 20 % to 50 % with water or as per vehicle manufacturer\u2019s recommendation",
@@ -5472,11 +5587,12 @@
 		"SBU": "LUBES",
 		"industrial": "Automotive",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0121": {
 		"id": 121,
+		"MSDS": "",
 		"title": "HP POWER KOOL - BULK",
 		"subTitle": "Radiator Coolant",
 		"description": "HP Powerkool is a new generation Radiator Coolant and Corrosion Inhibitor, specifically developed for IC Engines running in warm climate, thus not requiring Anti-freeze properties. Unlike the conventional anti-freeze radiator coolants, HP Powerkool is based on Organic Acid Technology and hence, it has the potency of a prolonged service life.",
@@ -5511,15 +5627,16 @@
 			}
 		],
 		"appData": "HP Powerkool recommended for use in Radiators of Heavy Commercial Vehicles running in warm climate, thus not requiring anti-freeze protection.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "LUBES",
 		"industrial": "Automotive",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0122": {
 		"id": 122,
+		"MSDS": "",
 		"title": "POWER KOOL RR",
 		"subTitle": "Advanced Radiator Coolant  for Locomotive Engines",
 		"description": "HP POWERKOOL RR is a new generation Radiator Coolant and Corrosion Inhibitor, specifically developed for Indian Railways. Unlike the conventional anti-freeze radiator coolants, HP Powerkool RR is based on Organic Acid Technology and hence, it has the potency of giving prolonged service life.",
@@ -5554,11 +5671,12 @@
 		"SBU": "LUBES",
 		"industrial": "Railway",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0123": {
 		"id": 123,
+		"MSDS": "",
 		"title": "HP THANDA RAJA - BULK",
 		"subTitle": "Ready to use Coolant",
 		"description": "HP THANDA RAJA is a ready to use radiator coolant with superior anti freeze & anti corrosive properties. HP THANDA RAJA can be directly poured in the radiators of automobiles as it is in ready to use form.",
@@ -5593,11 +5711,12 @@
 		"SBU": "LUBES",
 		"industrial": "Automative",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0124": {
 		"id": 124,
+		"MSDS": "",
 		"title": "HP CORRMIT (White Oils)",
 		"subTitle": "Corrosion Inhibitor",
 		"description": "Pipeline corrosion inhibitor forming protective film against water, CO2 & H2S.",
@@ -5627,12 +5746,13 @@
 		"packaging": ["Drums"],
 		"SBU": "Lubes",
 		"industrial": "Oil & Gas, Petroleum Pipelines",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0125": {
 		"id": 125,
+		"MSDS": "",
 		"title": "HP CEMOL 35",
 		"subTitle": "Concrete Mould Release Oil",
 		"description": "Resin and oil-based mould releasing agent for concrete moulds.",
@@ -5654,12 +5774,13 @@
 		"packaging": ["Drums"],
 		"SBU": "Lubes",
 		"industrial": "Construction, Infrastructure",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0126": {
 		"id": 126,
+		"MSDS": "",
 		"title": "HP CEMOL N35",
 		"subTitle": "Concrete Mould Release Oil",
 		"description": "High flash point mould release oil for concrete works.",
@@ -5685,12 +5806,13 @@
 		"packaging": ["Drums"],
 		"SBU": "Lubes",
 		"industrial": "Construction, Precast Concrete",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0127": {
 		"id": 127,
+		"MSDS": "",
 		"title": "HP GLAMOL 40",
 		"subTitle": "Glass Mould Release Oil",
 		"description": "High temperature glass mould release agent leaving no residue.",
@@ -5704,12 +5826,13 @@
 		"packaging": ["Drums"],
 		"SBU": "Lubes",
 		"industrial": "Glass Manufacturing, Ceramics",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0128": {
 		"id": 128,
+		"MSDS": "",
 		"title": "HP UNIPRO 36",
 		"subTitle": "Textile Coning Oil",
 		"description": "Rayon coning oil with emulsifier for easy removal.",
@@ -5743,12 +5866,13 @@
 		"packaging": ["Drums"],
 		"SBU": "Lubes",
 		"industrial": "Textile Industry",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0129": {
 		"id": 129,
+		"MSDS": "",
 		"title": "HP UNIPRO 37",
 		"subTitle": "Textile Finishing Oil",
 		"description": "Light coloured finishing oil forming stable milky emulsion.",
@@ -5782,12 +5906,13 @@
 		"packaging": ["Drums"],
 		"SBU": "Lubes",
 		"industrial": "Textile Processing",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0130": {
 		"id": 130,
+		"MSDS": "",
 		"title": "HP UNIPRO 38",
 		"subTitle": "Textile Finishing Oil",
 		"description": "Softening oil compatible with sizing ingredients.",
@@ -5821,12 +5946,13 @@
 		"packaging": ["Drums"],
 		"SBU": "Lubes",
 		"industrial": "Textile & Garments",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0131": {
 		"id": 131,
+		"MSDS": "",
 		"title": "HP CONKOTE",
 		"subTitle": "Conveyor Chain Lubricant",
 		"description": "Water soluble semi-solid grease like product for bottling plant conveyors.",
@@ -5852,12 +5978,13 @@
 		"packaging": ["Drums"],
 		"SBU": "Lubes",
 		"industrial": "LPG, Dairy, Soft Drink Plants",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0132": {
 		"id": 132,
+		"MSDS": "",
 		"title": "HP DEDUSTING OIL",
 		"subTitle": "Dust Suppression Oil",
 		"description": "Heavy oil used for suppressing fine dust in calcined coke processes.",
@@ -5887,14 +6014,15 @@
 		"packaging": ["Drums"],
 		"SBU": "Lubes",
 		"industrial": "Carbon, Electrode, Coke Industries",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0133": {
 		"id": 133,
+		"MSDS": "",
 		"title": "ENKLO Grades (Hydraulic & Circulating Oils )",
-		"subTitle": "ENKLO 22                                                                                                                                                                                                                                                                                       ENKLO 32                                                                                                                                                                                                                                                                                    ENKLO 46                                                                                                                                                                                                                                                                                               ENKLO 57                                                                                                                                                                                                                                                                                   ENKLO 68                                                                                                                                                                                                                                                                                          ENKLO 100                                                                                                                                                                                                                                                                                 ENKLO 121                                                                                                                                                                                                                                                                                         ENKLO 150                                                                                                                                                                                                                                                                                    ENKLO 176                                                                                                                                                                                                                                                                            ENKLO 220                                                                                                                                                                                                                                                                               ENKLO 320",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO grades designed for use in circulating systems are made from high viscosity index, chemically stable base stocks which are further fortified with antioxidants, anticorrosion, antiwear and antifoam additives. They meet the requirements of very high pressure systems and also of systems where high pump speeds are encountered.",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO 22" },
@@ -6022,14 +6150,15 @@
 		"packaging": ["26 LTR", "50 LTR", "210 lts", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0134": {
 		"id": 134,
+		"MSDS": "",
 		"title": "ENKLO HLP(SPECIAL PURPOSE ANTI-WEAR TYPE HYDRAULIC AND CIRCULATING OILS)",
-		"subTitle": "ENKLO  HLP 22                                                                                                                                                                                                                                                                                       ENKLO  HLP 32                                                                                                                                                                                                                                                                                    ENKLO  HLP 46                                                                                                                                                                                                                                                                                               ENKLO HLP 68                                                                                                                                                                                                                                                                            ENKLO HLP 100                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO HLP grades are premium quality lubricating oils formulated from highly refined base stocks and carefully selected additives. ENKLO HLP grades offer outstanding anti-wear properties, excellent oxidation stability and a high FZG rating.",
 		"specifications": [
 			{
@@ -6085,14 +6214,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0135": {
 		"id": 135,
+		"MSDS": "",
 		"title": "ENKLO HLP T((Hydraulic & Circulating Oils )",
-		"subTitle": "                                                                                                                                                                                                                                                                                                ENKLO HLP T 32                                                                                                                                                                                                                                                                                    ENKLO HLP T 46                                                                                                                                                                                                                                                                                               ENKLO HLP T 68                                                                                                                                                                                                                                                                           ",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO HLP T grades are premium quality lubricating oils formulated with turbine quality hydroprocessed base stock and carefully selected additives. ENKLO HL T grades offer outstanding anti-wear properties, excellent oxidation stability and a high FZG rating",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO HLP T 32" },
@@ -6147,14 +6277,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0136": {
 		"id": 136,
+		"MSDS": "",
 		"title": "ENKLO HLP T AH(Hydraulic & Circulating Oils )",
-		"subTitle": "                                                                                                                                                                                                                                                                                                ENKLO HLPT  AH 32                                                                                                                                                                                                                                                                                    ENKLO HLPT  AH 46                                                                                                                                                                                                                                                                                               ENKLO HLPT AH 68                                                                                                                                                                                                                                                                           ",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO HLP T AH grades are premium quality lubricating oils formulated with group II base stock and carefully selected additives. ENKLO HLP T AH grades offer outstanding anti-wear properties, excellent oxidation stability and a high FZG rating. The product is zinc free & ash free",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO HLPT AH 32" },
@@ -6197,14 +6328,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0137": {
 		"id": 137,
-		"title": "ENKLO HVLP  Series (Hydraulic & Circulating Oils )",
-		"subTitle": "                                                                                                                                                                                                                                                                                                ENKLO HVLP 15                                                                                                                                                                                                                                                                                  ENKLO HVLP 32                                                                                                                                                                                                                                                                                             ENKLO HVLP 46                                                                                                                                                                                                                                                                                   ENKLO HVLP 68",
+		"MSDS": "",
+		"title": "ENKLO HVLP Series (Hydraulic & Circulating Oils )",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO HVLP grades are premium quality lubricating oils formulated with high quality base stock and carefully selected additives. ENKLO HVLP grades offer outstanding high viscosity index, anti-wear properties, excellent oxidation stability and a high FZG rating",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO HVLP 15" },
@@ -6331,14 +6463,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0138": {
 		"id": 138,
+		"MSDS": "",
 		"title": "HYMAROL HLP T",
-		"subTitle": "HYMAROL HLP T 15                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     HYMAROL HLP T 22                                                                                                                                                                                                                                                                       HYMAROL HLP T 32                                                                                                                                                                                                                                                                             HYMAROL HLP T 46                                                                                                                                                                                                                                                                HYMAROL HLP T 68                                                                                                                                                                                                                                                                 HYMAROL HLP T 100                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ",
+		"subTitle": "Compressor Oils",
 		"description": "HYMAROL grades are premium quality lubricating oils formulated with high quality base stock and carefully selected additives. HYMAROL HLP grades offer outstanding high viscosity index, anti-wear properties, excellent oxidation stability and a high FZG Rating.",
 		"specifications": [
 			{ "property": "Product Name", "value": "HYMAROL HLP T 15" },
@@ -6417,14 +6550,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0139": {
 		"id": 139,
+		"MSDS": "",
 		"title": "ENKLO HVLP AH SERIES((Hydraulic & Circulating Oils )",
-		"subTitle": "                                                                                                                                                                                                                                                                                                ENKLO HVLP AH 15                                                                                                                                                                                                                                                                                  ENKLO HVLP AH 32                                                                                                                                                                                                                                                                                             ENKLO HVLP AH 46                                                                                                                                                                                                                                                                                   ENKLO HVLP AH 68",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO HVLP AH grades are premium quality lubricating oils formulated with high quality base stock and carefully selected additives. ENKLO HVLP AH grades offer outstanding high viscosity index, anti-wear properties, excellent oxidation stability and a high FZG rating.the product is zinc free and ashless. The use of Enklo HVLP AH fluids results in improved energy efficiency",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO HVLP 15" },
@@ -6555,14 +6689,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0140": {
 		"id": 140,
+		"MSDS": "",
 		"title": "ENKLO 46 PREMIUM",
-		"subTitle": "ENKLO 46 PREMIUM",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO 46 PREMIUM is blended from deep hydrofinished base stocks and select additives. The additives are designed for optimum compressor operation. The additives are used to enhance the oxidation stability, anti-rust characteristics, anti-wear properties of the oil. The oil has natural demulsification property, low foaming tendency and quick air release property.",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO 46 PREMIUM" },
@@ -6578,14 +6713,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0141": {
 		"id": 141,
+		"MSDS": "",
 		"title": "ENKLO 68 PREMIUM",
-		"subTitle": "ENKLO 68 PREMIUM",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO 68 PREMIUM is blended from deep hydrofinished base stocks and select additives. The additives are designed for optimum compressor operation. The additives are used to enhance the oxidation stability, anti-rust characteristics, anti-wear properties of the oil. The oil has natural demulsification property, low foaming tendency and quick air release property",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO 68 PREMIUM" },
@@ -6601,14 +6737,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0142": {
 		"id": 142,
+		"MSDS": "",
 		"title": "ENKLO HLP T PLUS(ISO VG 46 & ISO VG 68)",
-		"subTitle": "ENKLO HLP T 46 Plus                                                                                                                                                                                                                                                           ENKLO HLP T 68 Plus ",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO HLP T PLUS is a high performance hydraulic fluid based severely hydro treated base stocks. The unique anti wear additive system provides enhanced protection for components as compared to traditional hydraulic oil meeting DIN 51524 Part II (HLP) and Parker Denison HF-0. The additive system is thermally stable and resists hydrolysis in the combined presence of thermal, mechanical and chemical stress.ENKLO HLP T Plus series hydraulic oil has passed the demanding Bosch Rexroth RFT-APU-CL Closed Loop Axial Pump test. The test pump operation includes certain periods where pressure exceeds 500 bar with temperatures touching peak of 100 degrees C . The total duration of testing is 510 hours.\nENKLO HLP T Plus series also exceeds the requirement of DENISON HF-0 and has comfortably passed the Parker Denison Hybrid Pump test plus the EATON Vickers 35VQ25 Pump test. The product has excellent filterability.",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO HLP T 46 Plus" },
@@ -6629,14 +6766,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0143": {
 		"id": 143,
+		"MSDS": "",
 		"title": "ENKLO FRDU 46(FIRE RESISTANT HYDRAULIC FLUID )",
-		"subTitle": "ENKLO FRDU 46",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO FRDU grades are fire resistant hydraulic fluids based on organic ester. These fluids meet the HF-DU classification system as per European Mines Safety Commision. These fluids can replace phosphate esters in high temperature applications and are recommended as control governor fluids for steam and gas turbine. They do not have any seal compatibility issues which are inherent in phosphate ester fluids. The same seals used with mineral oils can be used with ENKLO FRDU 46. These fluids not only provide improved safety as compared to mineral oil but offer superior lubricity and antiwear properties as compared to invert emulsion (FRIE) fluids and also mineral oil based hydraulic fluids. While changing over from invert emulsion to FRDU based fluids care must be taken that there is no residual fluid or moisture present in the system. If necessary the line may be flushed with mineral oil to ensure that no traces of invert emulsion fluid remains in the system.",
 		"specifications": [
 			{ "property": "Appearance", "value": "Bright & Clear" },
@@ -6661,14 +6799,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0144": {
 		"id": 144,
+		"MSDS": "",
 		"title": "ENKLO FRDU 68(FIRE RESISTANT HYDRAULIC FLUID )",
-		"subTitle": "ENKLO FRDU 68",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO FRDU grades are fire resistant hydraulic fluids based on organic ester. These fluids meet the HFDU classification system as per European Mines Safety Commision. These fluids can replace phosphate esters in high temperature applications and are recommended as control governor fluids for steam and gas turbine. They do not have any seal compatibility issues which are inherent in phosphate ester fluids. The same seals used with mineral oils can be used with ENKLO FRDU 68. These fluids not only provide improved safety as compared to mineral oil but offer superior lubricity and antiwear properties as compared to invert emulsion (FRIE) fluids and also mineral oil based hydraulic fluids. While changing over from invert emulsion to FRDU based fluids care must be taken that there is no residual fluid or moisture present in the system. If necessary the line may be flushed with mineral oil to ensure that no traces of invert emulsion fluid remains in the system.",
 		"specifications": [
 			{ "property": "Kinematic Viscosity @ 40°C", "value": "67.07 cSt" },
@@ -6685,14 +6824,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0145": {
 		"id": 145,
+		"MSDS": "",
 		"title": "ENKLO FRPS 46(FIRE RESISTANT HYDRAULIC FLUID )",
-		"subTitle": "ENKLO FRPS 46",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO FRPS 46 is a Fire Resistant Hydraulic Fluid based on Trixilenyl phosphate ester technology. This product is meeting the BHEL specification for electro hydraulic fluid for governor control.",
 		"specifications": [
 			{
@@ -6728,14 +6868,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0146": {
 		"id": 146,
+		"MSDS": "",
 		"title": "ENKLO FRWG 46(FIRE RESISTANT HYDRAULIC FLUID )",
-		"subTitle": "ENKLO FRWG 46",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO FRWG is a hydraulic oil formulated from glycols for meeting the fire resistant requirements in fire prone areas in Steel, Mining, Die-Casting and Plastics industries. It is a true solution of glycols and water. This grade is composed of Polyalkylene Glycols, selected additives for wear reduction, corrosion inhibitors, anti-oxidants, anti-foamants and water. The operating temperature of the oil ranges from -20\u00b0C to +60\u00b0C. This oil is suitable for use in all low temperature applications without any chance of freezing and gelling. This oil meets IS: 10532 (part\u20133) \u2013 1993 and HF-C classification of European Mines Safety Commission.",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO FRWG 22" },
@@ -6799,14 +6940,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0147": {
 		"id": 147,
+		"MSDS": "",
 		"title": "ENKLO SYNTHETIC",
-		"subTitle": "ENKLO SYNTHETIC ",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO SYNTHETIC is top of the line premium quality hydraulic oil made from synthetic Base Stocks and ash less additives. This ensures excellent anti \u2013 oxidation properties and at the same time low varnish and sludge. This oil offers a longer drain period of 5000 hours with improved energy efficiency & equipment durability during use.",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO SYNTHETIC 46" },
@@ -6843,14 +6985,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0148": {
 		"id": 148,
+		"MSDS": "",
 		"title": "ENKLO 68 SUPER(Transparent Hydraulic Oil )",
-		"subTitle": "ENKLO 68 SUPER",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO 68 Super is a hydraulic fluid formulated to give a near transparent appearance and composed from hydro treated base stocks. The hydraulic oil has good antiwear additive system Meets IS:10522 Standard for antiwear hydraulic fluid.",
 		"specifications": [
 			{ "property": "Product Name", "value": "ENKLO 68 Super" },
@@ -6871,14 +7014,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0149": {
 		"id": 149,
+		"MSDS": "",
 		"title": "ENKLO HVLP EE",
-		"subTitle": "ENKLO HVLP EE",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO HVLP EE GRADES ARE PREMIUM QUALITY LUBRICATING OILS FORMULATED WITH HIGH QUALITY XHVI BASE STOCK AND CAREFULLY SELECTED ADDITIVES. ENKLO HVLP EE GRADES OFFER VERY-VERY HIGH VISCOSITY INDEX, ANTI-WEAR PROPERTIES, EXCELLENT OXIDATION STABILITY AND A HIGH FZG RATING.",
 		"specifications": [
 			{ "property": "Product Name", "value": "Grade 32" },
@@ -6907,14 +7051,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0150": {
 		"id": 150,
+		"MSDS": "",
 		"title": "ENKLO HVI PLUS 32(HYDRAULIC OIL FOR ARCTIC CONDITIONS)",
-		"subTitle": "ENKLO HVI PLUS 32",
+		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO HVI PLUS 32 is a ultra-high performance hydraulic fluid formulated with severely hydro treated base stocks. The unique zinc free and ash free anti wear additive system provides enhanced protection for components as compared to traditional hydraulic oil meeting DIN 51524 Part III (HVLP) and Parker Denison HF-0. The additive system is thermally stable and resists hydrolysis in the combined presence of thermal, mechanical and chemical stress. The product has very high shear stable viscosity index, which allows outstanding low-temperature properties. Demulsifying additives and is designed for excellent compatibility with nonferrous metals and a high wear protection. Fulfils the requirements according to DIN 51524-3: HVLP and ISO 6743-4: HV.",
 		"specifications": [
 			{ "property": "Product Name", "value": "Grade 32" },
@@ -6974,14 +7119,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0151": {
 		"id": 151,
+		"MSDS": "",
 		"title": "TURBINE OILS",
-		"subTitle": "TURBINOL 32\nTURBINOL 46\nTURBINOL 68",
+		"subTitle": "TURBINOL 32, 46, 68",
 		"description": "TURBINOL grades are premium quality lubricating oils designed to provide efficient and trouble-free service in precision industrial machinery having most exacting lubrication requirements. The excellence of TURBINOL grades is the combined result of selected stable base oils, efficient refining methods and effective additives.",
 		"specifications": [
 			{ "property": "Product Name", "value": "HPCL TURBINOL 32" },
@@ -7138,14 +7284,15 @@
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "Industrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0152": {
 		"id": 152,
+		"MSDS": "",
 		"title": "TURBINOL XT Series",
-		"subTitle": "TURBINOL  XT 32\nTURBINOL XT 46\nTURBINOL  XT68",
+		"subTitle": "TURBINOL  XT 32, 46, 68",
 		"description": "TURBINOL XT grades are premium quality lubricating oils designed to provide efficient and trouble-free service in precision industrial machinery having most exacting lubrication requirements. The excellence of TURBINOL XT grades is the combined result of selected stable base oils, efficient refining methods and effective additives.",
 		"specifications": [
 			{ "property": "Product Name", "value": "HPCL TURBINOL 32" },
@@ -7299,17 +7446,18 @@
 			}
 		],
 		"appData": "Recommended for lubrication of steam, gas & hydraulic turbines & can be used in hydraulic systems requiring very long life lubricant of outstanding properties. Specifically recommended for lubrication of geared turbines.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0153": {
 		"id": 153,
+		"MSDS": "",
 		"title": "TURBINOL LP Series",
-		"subTitle": "TURBINOL 32 LP\nTURBINOL 46 LP \nTURBINOL 68 LP",
+		"subTitle": "TURBINOL 32 LP, 46 LP, 68 LP",
 		"description": "Turbinol LP grades are premium quality lubricating oils designed to provide efficient and trouble-free service in precision industrial machinery having most exacting lubrication requirements. The excellence of Turbinol LP grades is the combined result of selected stable base oils, efficient refining methods and effective additives. The additives used are metal free and ashless.",
 		"specifications": [
 			{ "property": "Product Name", "value": "HPCL TURBINOL 32 LP" },
@@ -7445,15 +7593,16 @@
 			}
 		],
 		"appData": "Turbinol LP grades are premium quality lubricating oils designed to provide efficient and trouble-free service in precision industrial machinery having most exacting lubrication requirements",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0154": {
 		"id": 154,
+		"MSDS": "",
 		"title": "FILM OIL",
 		"subTitle": "HP FILM OIL 46\nHP FILM OIL 68\nHP FILM OIL 100\nHP FILM OIL 150\nHP FILM OIL 220",
 		"description": "HP FILM OILS are highly refined mineral oils suitable for oil film bearings used in steel plants. The product is blended from solvent extracted high viscosity index base stocks having excellent demulsibility characteristics. They also possess good oxidation and thermal stability.",
@@ -7539,17 +7688,18 @@
 			}
 		],
 		"appData": "HP FILM OIL grades are recommended for use in anti-friction bearings, plain bearings, drive gears and pinion of steel mills, where operating conditions are moderate. They are also suitable for use in circulation systems, where oils with high demulsibility characteristics are required.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0155": {
 		"id": 155,
+		"MSDS": "",
 		"title": "HP STEEL GRADES",
-		"subTitle": "HP STEEL 257\nHP STEEL 381\nHP STEEL 460\nHP STEEL 521\nHP STEEL 680",
+		"subTitle": "HP STEEL 257, 381, 460, 521, 680",
 		"description": "HP Steel Grades are premium quality heavy duty bearing and circulating oil. They have high viscosity index with superior oxidation and thermal stability. They meet the requirement of high demulsibility, low foaming, excellent rust protection and good film strength property to minimise wear in roll-neck bearings of steel mills.\nHP Steel Grades are blended from high quality paraffinic base oils having a high chemical stability. The quality of the oil is further enhanced by the presence of selected grades of anti-oxidants, anti-rust, demulsifier and defoamants. These oils are suitable for use in bearings under critical conditions of exposure to water at high pressure and extreme load conditions. These products have good wettability and high film strength providing extra rust protection and eliminate scuffing and scoring of the bearing.",
 		"specifications": [
 			{ "property": "Product Name", "value": "HP STEEL 257" },
@@ -7818,15 +7968,16 @@
 			{ "property": "Four Ball Weld Load", "value": "200 kg Max" }
 		],
 		"appData": "These oils are suitable for use in the Morgan Bearings of Steel Mills. Morgan Bearings are used in the Plate Mill, Wire Rod Mill, Merchant Mill, Blooming and Billet Mill, and Rail & Structural Mill. The various viscometrix of HP Steel Grades are available for these mills. The oils are also recommended for those places where the bearings are under heavy load and in the presence of water",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0156": {
 		"id": 156,
+		"MSDS": "",
 		"title": "HP STEEL 320 (BEARING OIL FOR STEEL PLANTS )",
 		"subTitle": "HP STEEL 320",
 		"description": "HP STEEL Grades are premium quality heavy duty bearing and circulating oil. They have high viscosity index with superior oxidation and thermal stability. They meet the requirement of high demulsibility, low foaming, excellent rust protection and good film strength property to minimize wear in roll-neck bearings of steel mills.",
@@ -7884,15 +8035,16 @@
 			{ "property": "Four Ball Weld Load", "value": "> 100 kg" }
 		],
 		"appData": ". These oils are suitable for use in bearings under critical conditions of exposure to water at high pressure and extreme load conditions. These products have good wettability and high film strength providing extra rust protection and eliminate scuffing and scoring of the bearing.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0157": {
 		"id": 157,
+		"MSDS": "",
 		"title": "HP STEEL EP 100 (BEARING OIL FOR STEEL PLANTS )",
 		"subTitle": "HP STEEL EP 100",
 		"description": "HP STEEL EP 100 is a specially formulated premium bearing and hydraulic oil to meet the specific requirements in steel plants. It meets extreme pressure and good demulsibility requirements in bearing lubrication.\n\nIt is blended from premium quality base stock and selected grades of anti-oxidants, anti-rust, demulsifier, defoamant, anti-rust and mild anti-wear additives. This oil is suitable for use in conditions where very good load bearing ability along with excellent demulsibility characteristics are critical requirements. This product has good wettability and high film strength providing extra rust protection and eliminating scuffing and scoring of the bearing. It has a good water separating ability which is retained at a high level during extended use in water quenching conditions.",
@@ -7954,17 +8106,18 @@
 			}
 		],
 		"appData": "This oil has very good and demulsibility characteristics and hence it is recommended for use in all Morgoil bearings in no-twist rod mills in Steel Plants. It is also recommended in applications where severe load conditions are encountered.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0160": {
 		"id": 160,
-		"title": "COMPRESSOR OILS",
-		"subTitle": "HYCOM 150 P",
+		"MSDS": "",
+		"title": "HYCOM 150 P",
+		"subTitle": "Compressor Oils",
 		"description": "It is blended out of highly refined turbine base stocks and special types of anti-oxidants, anti-rust, antifoam and demulsifier which do not react to any of the types of gases.",
 		"specifications": [
 			{ "property": "Appearance", "value": "Clear" },
@@ -7989,17 +8142,18 @@
 			{ "property": "Viscosity Index", "value": "100" }
 		],
 		"appData": "Specially developed for railway compressors.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0161": {
 		"id": 161,
-		"title": "COMPRESSOR OILS( HYCOM LS Series)",
-		"subTitle": "HYCOM LS 220\nHYCOM LS 320\nHYCOM LS 460",
+		"MSDS": "",
+		"title": "HYCOM LS Series",
+		"subTitle": "Compressor Oils",
 		"description": "HYCOM LS grades are low sulphur high viscosity oils which can be used in syn gas compressors of make like Cooper Bessemer, Nuovo Pignone etc. The product will is compatible with syn gas operation at high pressure and there will be minimum risk of oxidation. The risk of catalyst poisoning is eliminated as the product has a very low sulphur content. (<0.25% wt)",
 		"specifications": [
 			{ "property": "Product Name", "value": "HYCOM LS 220" },
@@ -8126,17 +8280,18 @@
 			{ "property": "% Viscosity Increase", "value": "2.7 %" }
 		],
 		"appData": "HYCOM LS grades are low sulphur high viscosity oils which can be used in syn gas compressors of make like Cooper Bessemer, Nuovo Pignone etc.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0164": {
 		"id": 164,
-		"title": "COMPRESSOR OILS( HYCOM TURBO SYN Series)",
-		"subTitle": "HYCOM TURBO SYN 10\nHYCOM TURBO SYN 15",
+		"MSDS": "",
+		"title": "HYCOM TURBO SYN Series",
+		"subTitle": "Compressor Oils",
 		"description": "HYCOM TURBO SYN 10 and 15 is made from advanced Group IV synthetic base stocks. The synthetic base stock is FDA Compliant.",
 		"specifications": [
 			{ "property": "Product Name", "value": "HYCOM TURBO SYN 32" },
@@ -8200,17 +8355,18 @@
 			{ "property": "FZG Test (A/8.3/90)", "value": "12 Pass" }
 		],
 		"appData": "HYCOM TURBO SYN 10 and 15 are synthetic seal oil for mechanical seal systems.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0163": {
 		"id": 163,
-		"title": "COMPRESSOR OILS( HYCOM  SYN Series)",
-		"subTitle": "HYCOM SYN 150",
+		"MSDS": "",
+		"title": "HYCOM  SYN Series",
+		"subTitle": "Compressor Oils",
 		"description": "HYCOM SYN series are synthetic compressor oils made from High Performance PAO type base stocks which are further enhanced with state of the art additive systems which ensure improved oxidation performance and long term solubility",
 		"specifications": [
 			{ "property": "Kinematic Viscosity @ 40°C", "value": "152 cSt" },
@@ -8272,17 +8428,18 @@
 			{ "property": "% Viscosity Increase", "value": "0.02 %" }
 		],
 		"appData": "These oils can be used for high pressure & high performance screw compressor, rotary compressor where improved performance against oxidation and enhanced cleanliness is needed.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0165": {
 		"id": 165,
-		"title": "COMPRESSOR OILS( HYCOM  SYN PE  Series)",
-		"subTitle": "HYCOM SYN PE 46\nHYCOM SYN PE 68\nHYCOM SYN PE 100",
+		"MSDS": "",
+		"title": "HYCOM  SYN PE  Series",
+		"subTitle": "Compressor Oils",
 		"description": "Available in ISO 46, 68 and 100 viscosity grades, HYCOM SYN PE fluids are formulated from synthetic Polyol Ester fluids combined with the latest additive technolog",
 		"specifications": [
 			{ "property": "Product Name", "value": "HYCOM SYN PE 46" },
@@ -8304,17 +8461,18 @@
 			{ "property": "Flash Point (COC)", "value": "270 °C" }
 		],
 		"appData": "These can be used in all compressors where discharge temperatures exceed 200 deg C",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0166": {
 		"id": 166,
-		"title": "COMPRESSOR OILS( HYCOM  PGE  Series)",
-		"subTitle": "HYCOM PGE 32\nHYCOM PGE 46\nHYCOM PGE 68",
+		"MSDS": "",
+		"title": "HYCOM  PGE  Series",
+		"subTitle": "Compressor Oils",
 		"description": "AHYCOM PGE Air compressor lubricants have been specially designed for use in rotary screw air compressors. HYCOM PGE compressor lubricants are a fully formulated, fully synthetic blend of polyalkylene glycol (PAG) and polyol ester and thus, take advantage of the excellent performance attributes of both classes of compound. In addition, due to the inherently high viscosity index of HYCOM PGE lubricants, no additional VI improvers are required in the formulation and so the products remain stable to shear forces and do not suffer any irreversible effects.",
 		"specifications": [
 			{ "property": "Product Name", "value": "HYCOM PGE 32" },
@@ -8342,17 +8500,18 @@
 			{ "property": "Flash Point (COC)", "value": "> 260 °C" }
 		],
 		"appData": "AHYCOM PGE Air compressor lubricants have been specially designed for use in rotary screw air compressors. HYCOM PGE compressor lubricants are a fully formulated, fully synthetic blend of polyalkylene glycol (PAG) and polyol ester and thus, take advantage of the excellent performance attributes of both classes of compound. In addition, due to the inherently high viscosity index of HYCOM PGE lubricants, no additional VI improvers are required in the formulation and so the products remain stable to shear forces and do not suffer any irreversible effects.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0167": {
 		"id": 167,
+		"MSDS": "",
 		"title": "HYCOM LS EXPO SERIES",
-		"subTitle": "HYCOM LS 320 EXPO\nHYCOM LS 460 EXPO",
+		"subTitle": "Compressor Oils",
 		"description": "HYCOM LS grades are ultra low sulphur high viscosity oils which can be used in syn gas/ LDPE compressors of make like Cooper Bessemer, Nuovo Pignone etc. The product will is compatible with syn gas operation at high pressure and there will be minimum risk of oxidation. The risk of catalyst poisoning is eliminated as the product has a very low sulphur content. (< 5 ppm )",
 		"specifications": [
 			{ "property": "Product Name", "value": "HYCOM LS 320 EXPO" },
@@ -8390,17 +8549,18 @@
 			{ "property": "BHT Content", "value": "≥ 2 % wt" }
 		],
 		"appData": "HYCOM LS grades are ultra low sulphur high viscosity oils which can be used in syn gas/ LDPE compressors of make like Cooper Bessemer, Nuovo Pignone etc.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0168": {
 		"id": 168,
-		"title": "PNEUMATIC TOOL OILS",
-		"subTitle": "NUMATIC 46 \nNUMATIC 100\nNUMATIC 220",
+		"MSDS": "",
+		"title": "NU-MATIC",
+		"subTitle": "NUMATC 46, 100, 220",
 		"description": "NU-MATIC is a line of first quality rock drill lubricants formulated for the lubrication of pneumatic tools. They have pronounced extreme-pressure and rust-preventive properties. They contain a tackiness agent to give good adhesive characteristics and an emulsifying agent that helps in forming highly stable emulsions in the presence of water. They are formulated to provide effective protection to metal surfaces against acidic corrosion.",
 		"specifications": [
 			{ "property": "Product Name", "value": "NU-MATIC 46" },
@@ -8431,15 +8591,16 @@
 			}
 		],
 		"appData": "These oils are recommended for lubrication of pneumatic equipment such as rock drills, jack hammers, stoppers, drifters, chippers, wagon drills, tempers & pavement breakers etc. They are also used in small in-plant pneumatic tools like grinders, filing tools, drills, tapers, impact wrenches, rivetters, hoists etc.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0173": {
 		"id": 173,
+		"MSDS": "",
 		"title": "SUGAR MILL ROLL BEARING OILS",
 		"subTitle": "CRUSHFINE 60 NB-II",
 		"description": "The lubricants used in these bearings are very high viscosity oils that can lubricate adequately under conditions of low speed, high operating pressures and shock loading. The lubricant must be designed with the correct properties to provide protection against shock loading, and agents to help protect against the corrosive action of the sugar juice",
@@ -8450,15 +8611,16 @@
 			}
 		],
 		"appData": "To take care of the cleanliness aspect and the environment HPCL has come out with a unique bitumen free lubricant for crushing mills, CRUSHFINE 60 NB-II from HPCL protects the bearings under high pressures and also the' corrosive' and washing properties of the cane Juice.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
 		"industrial": "FOR CRUSHING MILLS",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0174": {
 		"id": 174,
+		"MSDS": "",
 		"title": "MACHINERY OILS",
 		"subTitle": "WAYLUBE 32\nWAYLUBE 68\nWAYLUBE 220\nWAYLUBE N 68",
 		"description": "WAYLUBE grades have been formulated to impart special frictional characteristics that overcome the stick-slip motion, ordinarily associated with slow moving machine parts. They are also fortified with mild ep and rust preventive properties.",
@@ -8469,15 +8631,16 @@
 			}
 		],
 		"appData": "WAYLUBE N 68 is a combined hydraulic and machine toolway lubricant possessing adequate lubricity to eliminate stick-slip and chatter under moderate load condition and at the same time serves as hydraulic media in non-critical systems.WAYLUBE 68, 220 are recommended For slideway lubrication of planers, grinders, horizontal boring machines, shapers, jig borers etc, involving high precision work and are also recommended for lubrication of gears by oil can.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
 		"industrial": "Heavy Industries",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0176": {
 		"id": 176,
+		"MSDS": "",
 		"title": "WIRE ROPE LUBRICANTS",
 		"subTitle": "HP METWIRE NB",
 		"description": "HP METWIRE NB is produced from the highest quality petroleum fractions and is a non-bituminous base wire rope lubricant. In addition to having excellent lubricating properties, they contain selected additives to obtain sufficient chemical resistance; water displacing properties; excellent rust prevention, oxidation stability and penetration",
@@ -8488,15 +8651,16 @@
 			}
 		],
 		"appData": "Product can be applied by swabbing, drip lubrication, continuous bath, high pressure auto lubrication. Suitable for lubrication of wire ropes in cranes, draglines, overhead trolleys, pulley mechanisms, lifts.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
 		"industrial": "Wire Rope Industries",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0177": {
 		"id": 177,
+		"MSDS": "",
 		"title": "GENERAL PURPOSE MACHINERY OILS",
 		"subTitle": "YANTROL 32\nYANTROL 68\nYANTROL 100,\nYANTROL 150,\nYANTROL 220,\nYANTROL 320,\nYANTROL 460",
 		"description": "YANTROL grades are high quality lubricating oils intended for general lubrication of industrial machinery. They are manufactured from selected base stocks and fortified with additives like antiwear and antirust.",
@@ -8515,15 +8679,16 @@
 			}
 		],
 		"appData": "YANTROL grades are general purpose lubricants for \u2018once through\u2019 application situation in textile mills, paper mills and machine tools. The grades are used in steel mills.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0178": {
 		"id": 178,
+		"MSDS": "",
 		"title": "HP FLUSHING OIL",
 		"subTitle": "FLUSHING OIL ",
 		"description": "HP Flushing oil is an oil for removing of contaminants from a machine lubrication system. It has a low viscosity, which enables good flushing operation.",
@@ -8534,15 +8699,16 @@
 			}
 		],
 		"appData": "HP Flushing oil is an oil for removing of contaminants from a machine lubrication system.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
-		"industrial": "",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"industrial": "-",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0179": {
 		"id": 179,
+		"MSDS": "",
 		"title": "Cylinder Oil",
 		"subTitle": "Cyndol 680, Cyndol 1000, Cyndol 1500, Cyndol TC 460, Cyndol TC 530,  Cyndol TC 680",
 		"description": "Cyndol grades are recommended for cylinder lubrication of steam engines. They are formulated from specisally treated high viscosity index, heavy viscosity base syocks having enhanced lubricationg properties and thermal stability. They have excellent oiliness and film strength characteristic, maximum resistance to washing effect of moisture and excellent load carrying ability.",
@@ -8556,12 +8722,13 @@
 		"packaging": ["Barrel"],
 		"SBU": "Lubes",
 		"industrial": "Sugar Mills Industries",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0180": {
 		"id": 180,
+		"MSDS": "",
 		"title": "Stenter Oil",
 		"subTitle": "Stantrol 1",
 		"description": "Synthetic Lubricant used in textile and other industry for lubrication of chain drives and stentors. Particularly suitable as high temperature chain lubricant.",
@@ -8575,12 +8742,13 @@
 		"packaging": ["Barrel"],
 		"SBU": "Lubes",
 		"industrial": "Textile Industries",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0181": {
 		"id": 181,
+		"MSDS": "",
 		"title": "Automotive Greases",
 		"subTitle": "LITHON RR 3T",
 		"description": "Lithium saop greases suitable for lubricating various types of mechanical equipments. These are superior multipurpose greases, developed to meet the varied requirements of bearing manufactures. They are water-resistant and are corrosion inhibited with excellent oxidation and mechanical stability.",
@@ -8594,31 +8762,50 @@
 		"packaging": ["Barrel"],
 		"SBU": "Lubes",
 		"industrial": "Bearing Manufacturing Industries",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0182": {
 		"id": 182,
+		"MSDS": "",
 		"title": "Industrial Greases",
 		"subTitle": "LITHON M 2 PLUS",
 		"description": "Lithon M 2 Plus is a high quality Lithium based grease firtified with unique additives which impart extreme pressure performance under all conditions. It has special adhesion properties.",
 		"specifications": [
+			{ "property": "Appearance (Visual)", "value": "Smooth Grease" },
+			{ "property": "Density @ 20°C", "value": "0.9" },
+			{ "property": "Drop Point (Min)", "value": "188°C" },
+			{ "property": "Consistency @ 25°C, Worked (60 strokes)", "value": "278" },
+			{ "property": "Base Oil Kinematic Viscosity @ 40°C", "value": "270 cSt" },
+			{ "property": "Oil Separation @ 100°C, 30 hrs", "value": "1.5%" },
+			{ "property": "SKF Emcor Rust Test Rating", "value": "0.0" },
 			{
-				"property": "Appearnce (Visual), Density @ 20\u00b0 C",
-				"value": "0.9, Drop point: 188\u00b0 C Min, Consistency @ 25\u00b0 C , worked, 60 strokes: 278, Base oil KV @ 40\u00b0 C: 270, Oil separation @ 100\u00b0 C, 30 hours: 1.5, SKF Emcor Rust test rating: 0.0, Low temperature totque @ -20\u00b0 C initial break-away torque: 10000 g/cm, Torque after 20 minutes running time: 2200 g/cm, Oxidation stability @ 100\u00b0 C Drop in pressure, psi: 4, Four ball wear scar dia: 0.6 mm, Four ball weld load, kg: 400 kg"
-			}
+				"property": "Low Temp Torque @ -20°C (Break-away)",
+				"value": "10000 g·cm"
+			},
+			{
+				"property": "Low Temp Torque @ -20°C (After 20 min)",
+				"value": "2200 g·cm"
+			},
+			{
+				"property": "Oxidation Stability @ 100°C (Pressure Drop)",
+				"value": "4 psi"
+			},
+			{ "property": "Four Ball Wear Scar Dia", "value": "0.6 mm" },
+			{ "property": "Four Ball Weld Load", "value": "400 kg" }
 		],
 		"appData": "Lithon M 2 plus is a grease which is recommended for use in bearings located near blast furnace area",
 		"packaging": ["Barrel"],
 		"SBU": "Lubes",
 		"industrial": "Idustrial",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0183": {
 		"id": 183,
+		"MSDS": "",
 		"title": "GREASES",
 		"subTitle": "LITHON EP 1 / LITHON EP 2 / LITHON 3",
 		"description": "Lithon series of Lubricants are first quality, lithium soap greases suitable for lubricating various types of mechanical equipments. These are superior multipurpose greases, developed to meet the varied requirements of bearing manufacturers. They are water-resistant and are corrosion inhibited with excellent oxidation and mechanival stability.",
@@ -8632,12 +8819,13 @@
 		"packaging": ["Barrel"],
 		"SBU": "Lubes",
 		"industrial": "steel industries / paper mills",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0184": {
 		"id": 184,
+		"MSDS": "JBO_PDF",
 		"title": "Jute Batching Oil",
 		"subTitle": "Wash Oil",
 		"description": "JBO is a mineral oil fraction, generally mixed with water and emulsifiers. This is traditionally mineral based modern ecofriendly versions.  JBs applied to raw jute fibers to soften them and give cohesion during processing.",
@@ -8683,12 +8871,13 @@
 		"packaging": ["Barrel", "Bulk"],
 		"SBU": "I&C",
 		"industrial": "Steel industry",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0185": {
 		"id": 185,
+		"MSDS": "HOMOPOLYMER_PDF",
 		"title": "HM120A-MS",
 		"subTitle": "PP Homopolymer Injection moulding",
 		"description": "Polypropylene grade for manufacturing of injection moulded articles",
@@ -8722,12 +8911,13 @@
 		"packaging": ["25 kg Raffia woven sack bags"],
 		"SBU": "Petrochemical",
 		"industrial": "Household articles manufacturing industries",
-		"documentation": "",
+		"documentation": "-",
 		"alternatives": ["Reliance H110MAS"],
 		"related": ["-"]
 	},
 	"HPCL0186": {
 		"id": 186,
+		"MSDS": "",
 		"title": "HR033-MS",
 		"subTitle": "PP Homopolymer  Raffia",
 		"description": "Polypropylene grade for manufacturing of Raffia woven sack fabric/ bag manufacturing",
@@ -8761,12 +8951,13 @@
 		"packaging": ["25 kg Raffia woven sack bags"],
 		"SBU": "Petrochemical",
 		"industrial": "Cement Industries, Fertilizer industries, Food industries etc.",
-		"documentation": "",
+		"documentation": "-",
 		"alternatives": ["Reliance F19010"],
 		"related": ["-"]
 	},
 	"HPCL0187": {
 		"id": 187,
+		"MSDS": "LLDPE_PDF",
 		"title": "F01019S-MS",
 		"subTitle": "LLDPE Flim Slip 1MFI",
 		"description": "LLDPE grade for manufacturing of general packaging film, multilayer films, agricultural films etc",
@@ -8808,12 +8999,13 @@
 		"packaging": ["25 kg Raffia woven sack bags"],
 		"SBU": "Petrochemical",
 		"industrial": "Food industries, Manufacturing plants",
-		"documentation": "",
+		"documentation": "-",
 		"alternatives": ["Reliance F19010"],
 		"related": ["-"]
 	},
 	"HPCL0188": {
 		"id": 188,
+		"MSDS": "",
 		"title": "F02020-MS",
 		"subTitle": "LLDPE Flim Non slip 2MFI",
 		"description": "LLDPE grade for manufacturing of liners, agricultural films etc",
@@ -8859,12 +9051,13 @@
 		"packaging": ["25 kg Raffia woven sack bags"],
 		"SBU": "Petrochemical",
 		"industrial": "Food industries, Manufacturing plants",
-		"documentation": "",
+		"documentation": "-",
 		"alternatives": ["Reliance S030SG"],
 		"related": ["-"]
 	},
 	"HPCL0189": {
 		"id": 189,
+		"MSDS": "",
 		"title": "DPNG (Domestic PNG)",
 		"subTitle": "Natural Gas",
 		"description": "DPNG (Domestic Piped Natural Gas) is supplied through the city gas distribution network to residential households primarily for cooking. After pressure reduction through district regulating stations or through Decompression units,  DPNG is delivered at very low pressure, typically in the range of 20\u201330 milli bar.",
@@ -8879,11 +9072,12 @@
 		"SBU": "NG SBU",
 		"industrial": "Domestic Use",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0190": {
 		"id": 190,
+		"MSDS": "",
 		"title": "IPNG/CPNG(Industrial PNG/Commercial PNG)",
 		"subTitle": "Natural Gas",
 		"description": "IPNG/CPNG is supplied througyh City Gas distribution  via dedicated pipeline connections to industrial and commercial consumers such as factories, hotels, hospitals, and small and medium enterprises. After pressure reduction through DRS/SCU , it is delivered at medium to high pressure depending on process requirements, metered using high-capacity meters.",
@@ -8898,11 +9092,12 @@
 		"SBU": "NG SBU",
 		"industrial": "ceramics and tiles, glass manufacturing, steel re-rolling and metal processing units, textile processing and dyeing units, food processing industries such as bakeries, dairies, and edible oil units, pharmaceuticals and bulk drug manufacturing, chemicals and petrochemicals, paper and pulp mills, and rubber and plastic processing units. In addition, IPNG/CPNG is extensively used in hotels, hospitals, educational institutions, commercial kitchens, and laundries for boilers, furnaces, ovens, dryers, and steam generation.",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0191": {
 		"id": 191,
+		"MSDS": "",
 		"title": "CNG",
 		"subTitle": "Natural Gas",
 		"description": "CNG(Compressed Natural Gas)is Natural gas compressed to very high pressure, typically around 200\u2013250 bar, and stored in cylinders for use mainly as an automotive fuel . The supply to CNG stations not connected through gas pipeliness,  is made through cascade of cylinders mounted on trucks.",
@@ -8917,11 +9112,12 @@
 		"SBU": "NG SBU",
 		"industrial": "Transport Industry",
 		"documentation": "-",
-		"alternatives": [],
-		"related": []
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0192": {
 		"id": 192,
+		"MSDS": "",
 		"title": "LNG",
 		"subTitle": "Natural Gas",
 		"description": "Liquefied Natural Gas (LNG) is natural gas that has been cooled to approximately \u2013162\u00b0C, converting it from a gaseous state into a liquid. reducing its  volume by  600 times, enabling efficient storage and transportation over long distances where pipelines are not feasible. LNG is used as a fuel for power generation, industrial applications, and increasingly heavy-duty transport fuel. It is supplied from LNG terminals, to industrial storage facilities, through Cryogenic Tankers.",
@@ -8935,12 +9131,13 @@
 		"packaging": ["Stored and Transported in cryogenic tankers"],
 		"SBU": "NG SBU",
 		"industrial": "Industries Such as Glass manufacturers, Ceramics, Metals and Transpiration fuel for Heavy duty Vehicles",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0193": {
 		"id": 193,
+		"MSDS": "",
 		"title": "SUGAR MILL ROLL BEARING OILS",
 		"subTitle": "CRUSHWELL 1, 2, 3, 4, 5",
 		"description": "These oils are Sugar Mills lubricants manufactured from high viscosity lubricating oil base stocks and contain selected non-toxic mild EP and special compounding agents. These oils prevent wear and corrosion of bearings and have excellent resistance to leakage.",
@@ -8966,12 +9163,13 @@
 		"packaging": ["210 ltr", "Small pack"],
 		"SBU": "Lubes",
 		"industrial": "Sugar Mills",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0194": {
 		"id": 194,
+		"MSDS": "",
 		"title": "SUGAR MILL ROLL BEARING OILS",
 		"subTitle": "CRUSHFINE 40 NB",
 		"description": "The lubricants used in these bearings are very high viscosity oils that can lubricate adequately under conditions of low speed, high operating pressures and shock loading. The lubricant is designed with the correct properties to provide protection against shock loading and to help protect against the corrosive action of sugar juice.",
@@ -9005,12 +9203,13 @@
 		"packaging": ["210 ltr", "Small pack"],
 		"SBU": "Lubes",
 		"industrial": "Sugar Mills",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
 	},
 	"HPCL0195": {
 		"id": 195,
+		"MSDS": "",
 		"title": "SUGAR MILL ROLL BEARING OILS",
 		"subTitle": "CRUSHFINE 45 NB-II",
 		"description": "The lubricants used in these bearings are very high viscosity oils that can lubricate adequately under conditions of low speed, high operating pressures and shock loading. The lubricant must be designed with the correct properties to provide protection against shock loading and to help protect against the corrosive action of sugar juice.",
@@ -9033,9 +9232,1339 @@
 			}
 		],
 		"appData": "To take care of the cleanliness aspect and the environment, HPCL has developed a unique bitumen-free lubricant for crushing mills. CRUSHFINE 45 NB-II protects bearings under high pressures and against the corrosive and washing action of cane juice.",
-		"packaging": [],
+		"packaging": ["-"],
 		"SBU": "Lubes",
 		"industrial": "FOR CRUSHING MILLS",
+		"documentation": "-",
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+	"HPCL0196": {
+		"id": 196,
+		"title": "LLDPE Film Non-slip 2 MFI",
+		"MSDS": "",
+		"subTitle": "F02020-MS",
+		"description": "Linear Low Density Polyethylene (LLDPE) grade suitable for manufacturing liners, agricultural films and general purpose packaging films with good strength, clarity and impact resistance.",
+
+		"specifications": [
+			{ "property": "Product Code", "value": "3969267" },
+			{ "property": "Polymer Type", "value": "Propane LLDPE" },
+			{ "property": "Density of Resin @ 23°C", "value": "0.918 g/cc" },
+			{ "property": "MFI @ 190°C / 2.16 kg", "value": "2 g/10 min" },
+			{ "property": "Tensile Strength at Yield (MD/TD)", "value": "9 / 9 MPa" },
+			{
+				"property": "Tensile Strength at Break (MD/TD)",
+				"value": "29 / 22 MPa"
+			},
+			{ "property": "Elongation at Break (MD/TD)", "value": "650 / 760 %" },
+			{ "property": "Gloss @ 60°", "value": "95 GU" },
+			{ "property": "Haze", "value": "11 %" },
+			{ "property": "Dart Impact Strength", "value": "2.7 g/micron" },
+			{
+				"property": "Elmendorf Tear Strength (MD/TD)",
+				"value": "5.3 / 15.2 g/micron"
+			}
+		],
+
+		"appData": "Used for FMCG packaging films, industrial liners, agricultural films and flexible packaging applications.",
+
+		"packaging": ["25 kg Raffia woven sack bags"],
+
+		"SBU": "Polymer / Petrochemicals",
+
+		"industrial": "Food industries, Manufacturing plants, Packaging converters",
+
+		"documentation": "-",
+
+		"alternatives": ["Reliance S030SG"],
+
+		"related": ["-"]
+	},
+	"HPCL0197": {
+		"id": 197,
+		"MSDS": "",
+		"title": "DPNG (Domestic PNG)",
+		"subTitle": "Domestic Piped Natural Gas",
+		"description": "Domestic Piped Natural Gas supplied through the city gas distribution network to residential households for cooking and small domestic heating applications. Gas is pressure regulated through district regulating stations or decompression units and delivered at very low pressure (20–30 mbar) for safe household use.",
+
+		"specifications": [
+			{ "property": "Product Code", "value": "1739000" },
+			{ "property": "Fuel Type", "value": "Natural Gas" },
+			{ "property": "Primary Component", "value": "Methane (CH₄) 85–95 %" },
+			{
+				"property": "Other Hydrocarbons",
+				"value": "Ethane, Propane, Butane (trace quantities)"
+			},
+			{
+				"property": "Inert Gases",
+				"value": "Nitrogen (N₂), Carbon Dioxide (CO₂) within permissible limits"
+			},
+			{
+				"property": "Sulphur Content",
+				"value": "Very low / within statutory limits"
+			},
+			{
+				"property": "Odorant Added",
+				"value": "Ethyl Mercaptan ~10 ppm for leak detection"
+			},
+			{ "property": "Delivery Pressure", "value": "20–30 mbar" },
+			{ "property": "Gross Calorific Value", "value": "9,500–10,500 kcal/SCM" },
+			{ "property": "Flame Characteristic", "value": "Clean blue flame" },
+			{ "property": "Toxicity", "value": "Non-toxic" },
+			{ "property": "Relative Density", "value": "Lighter than air" }
+		],
+
+		"appData": "Used for cooking stoves, domestic geysers, and other small household heating appliances.",
+
+		"packaging": ["Supplied through city gas distribution pipeline network"],
+
+		"SBU": "NG SBU",
+
+		"industrial": "Domestic Residential Use",
+
+		"documentation": "-",
+
+		"alternatives": ["-"],
+
+		"related": ["-"]
+	},
+	"HPCL0198": {
+		"id": 198,
+		"MSDS": "",
+		"title": "PROPANE",
+		"subTitle": "LPG – Commercial / Industrial Fuel",
+		"description": "Propane (C₃H₈) is a highly volatile, clean-burning liquefied petroleum hydrocarbon gas used as an industrial and commercial fuel. It is colourless, odourless, and non-toxic in its natural state; an odorant such as Ethyl Mercaptan is added to facilitate leak detection and enhance operational safety. Propane has high vapour pressure and a low boiling point, ensuring reliable vaporisation even at low ambient temperatures, making it suitable for high-demand and cold-weather operations.",
+
+		"specifications": [
+			{ "property": "Chemical Formula", "value": "C₃H₈" },
+			{ "property": "Liquid Density @ 15°C", "value": "0.508" },
+			{
+				"property": "Co-efficient of Volumetric Expansion (/°C)",
+				"value": "0.0028 (-20 to +20°C); 0.0033 (0 to +40°C)"
+			},
+			{ "property": "Melting Point", "value": "-187°C" },
+			{ "property": "Critical Temperature", "value": "97°C" },
+			{ "property": "Auto-Ignition Temperature", "value": "481°C" },
+			{ "property": "Critical Pressure", "value": "43 ata (kg/cm²)" },
+			{ "property": "Boiling Point @ 760 mm Hg", "value": "-42.1°C" },
+			{
+				"property": "Vapour Pressure",
+				"value": "1.11 @-40°C, 2.4 @-20°C, 4.8 @0°C, 8.3 @+20°C, 14.0 @+40°C"
+			},
+			{
+				"property": "Latent Heat of Vaporisation (kcal/kg)",
+				"value": "96 @-20°C, 90 @0°C, 82 @+20°C"
+			},
+			{ "property": "Specific Heat @ 0°C", "value": "0.57 kcal/kg/°C" },
+			{ "property": "Relative Density (Air = 1)", "value": "1.561" },
+			{ "property": "Gas/Liquid Expansion Ratio", "value": "274" },
+			{ "property": "Flammability Limits", "value": "2.2 – 9.5 % v/v in air" }
+		],
+
+		"appData": "Industrial heating & furnaces, LPG-based gensets, metal cutting/brazing/welding, vaporizers & process heating, cold-climate fuel applications.",
+
+		"packaging": ["Bulk tankers", "Storage vessels"],
+
+		"SBU": "LPG",
+		"industrial": "Commercial & Industrial Fuel Applications",
+
+		"documentation": "-",
+
+		"alternatives": ["HP RAZOR", "HP DOLPHIN", "HP POWERLIFT"],
+
+		"related": ["-"]
+	},
+	"HPCL0199": {
+		"id": 199,
+		"MSDS": "",
+		"title": "BUTANE",
+		"subTitle": "LPG – Commercial / Industrial Fuel",
+		"description": "Butane (C₄H₁₀) is a clean-burning, liquefiable hydrocarbon gas primarily used as a fuel and blending component in LPG. It is colourless and odourless in its natural form; an odorant such as Ethyl Mercaptan is added for leak detection and safety. Butane has a lower vapour pressure compared to Propane and delivers a high calorific value, making it suitable for commercial and industrial applications under moderate ambient conditions.",
+
+		"specifications": [
+			{ "property": "Chemical Formula", "value": "C₄H₁₀" },
+			{ "property": "Liquid Density @ 15°C", "value": "0.584" },
+			{
+				"property": "Co-efficient of Volumetric Expansion (/°C)",
+				"value": "0.0018 (-20 to +20°C); 0.0020 (0 to +40°C)"
+			},
+			{ "property": "Melting Point", "value": "-137°C" },
+			{ "property": "Critical Temperature", "value": "152°C" },
+			{ "property": "Auto-Ignition Temperature", "value": "441°C" },
+			{ "property": "Critical Pressure", "value": "39 ata (kg/cm²)" },
+			{ "property": "Boiling Point @ 760 mm Hg", "value": "-0.5°C" },
+			{
+				"property": "Vapour Pressure",
+				"value": "0.17 @-40°C, 0.45 @-20°C, 1.04 @0°C, 2.1 @+20°C, 3.9 @+40°C"
+			},
+			{
+				"property": "Latent Heat of Vaporisation (kcal/kg)",
+				"value": "96 @-20°C, 92 @0°C, 87 @+20°C"
+			},
+			{ "property": "Specific Heat @ 0°C", "value": "0.54 kcal/kg/°C" },
+			{ "property": "Relative Density (Air = 1)", "value": "2.091" },
+			{ "property": "Gas/Liquid Expansion Ratio", "value": "230" },
+			{ "property": "Flammability Limits", "value": "1.8 – 8.5 % v/v in air" }
+		],
+
+		"appData": "Aerosol propellants, portable fuel cartridges for camping stoves and laboratory burners, specialty commercial kitchens operating at controlled indoor temperatures, laboratory and R&D applications, lighter fuel and specialty fuel cylinders.",
+
+		"packaging": ["Bulk tankers", "Storage vessels"],
+
+		"SBU": "LPG",
+		"industrial": "Manufacturing & Processing Industries; Aerosol & Chemical Industries; Refrigerant and Specialty Gas Applications",
+
+		"documentation": "-",
+
+		"alternatives": ["HP RAZOR", "HP DOLPHIN", "HP POWERLIFT"],
+
+		"related": ["-"]
+	},
+	"HPCL0200": {
+		"id": 200,
+		"MSDS": "",
+		"title": "CRUSHFINE 60 NB-I",
+		"subTitle": "High Temperature Chain Lubricant",
+		"description": "CRUSHFINE 60 NB-I is a unique bitumen-free industrial lubricant developed by HPCL for crushing mills. It protects bearings under high pressures and withstands the corrosive and washing action of cane juice while maintaining equipment cleanliness and environmental safety.",
+
+		"specifications": [
+			{ "property": "Kinematic Viscosity @ 100°C", "value": "60 – 65 cSt" },
+			{ "property": "Copper Corrosion", "value": "Pass" },
+			{ "property": "Density @ 29.5°C", "value": "0.898" }
+		],
+
+		"appData": "Crushing mills, high temperature chain lubrication, sugar mill bearings, heavy load and corrosive environments.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "-",
+
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+	"HPCL0201": {
+		"id": 201,
+		"MSDS": "",
+		"title": "LPG Industrial Speciality",
+		"subTitle": "Neat Cutting Fluid",
+		"description": "Compounded low viscosity neat cutting oil specially designed for the bearing industry, providing excellent lubrication and guaranteeing superior surface finish during machining operations.",
+
+		"specifications": [
+			{ "property": "Appearance", "value": "Clear" },
+			{ "property": "Density @ 29°C", "value": "826" },
+			{ "property": "Kinematic Viscosity @ 40°C", "value": "4 – 7 cSt" },
+			{ "property": "Flash Point (COC)", "value": "110 °C" },
+			{
+				"property": "Copper Strip Corrosion @ 100°C, 3 Hrs (Max)",
+				"value": "1"
+			},
+			{ "property": "Chlorine Content", "value": "Yes" }
+		],
+
+		"appData": "Bearing industry machining operations, neat cutting applications, precision metal cutting and finishing processes requiring superior surface finish.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Specialties",
+
+		"documentation": "-",
+
+		"alternatives": ["-"],
+		"related": ["-"]
+	},
+	"HPCL0202": {
+		"id": 202,
+		"MSDS": "",
+		"title": "HP Diesel Exhaust Fluid (DEF)",
+		"subTitle": "Neat Cutting Fluid",
+		"description": "Compounded low viscosity neat cutting oil specially designed for bearing industry, ensuring superior lubrication and excellent surface finish during machining operations.",
+
+		"specifications": [
+			{ "property": "Appearance", "value": "Clear" },
+			{ "property": "Density @ 29°C", "value": "826" },
+			{ "property": "Kinematic Viscosity @ 40°C", "value": "4 – 7 cSt" },
+			{ "property": "Flash Point (COC)", "value": "110 °C" },
+			{
+				"property": "Copper Strip Corrosion @ 100°C, 3 Hrs (Max)",
+				"value": "1"
+			},
+			{ "property": "Chlorine Content", "value": "Yes" }
+		],
+
+		"appData": "Bearing industry machining and neat cutting applications requiring high surface finish.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Specialties",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0203": {
+		"id": 203,
+		"MSDS": "",
+		"title": "HYCOM VDL",
+		"subTitle": "Compressor Oils",
+		"description": "HYCOM VDL T grades are high performance compressor oils recommended for rotary air compressors, screw compressors and vacuum pumps. These oils perform reliably up to 250°C air discharge temperatures and are also suitable for journal and anti-friction bearings in high-speed, high-temperature fan applications. HYCOM VDL T 100 is an ashless fluid suitable for high pressure boiler control valves.",
+
+		"specifications": [],
+
+		"appData": "Rotary air compressors, screw compressors, vacuum pumps, journal bearings, anti-friction bearings, high-speed fans, high-temperature operations, boiler control valves (ashless requirement).",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0204": {
+		"id": 204,
+		"MSDS": "",
+		"title": "HYCOM C Series",
+		"subTitle": "Compressor Oils",
+		"description": "HYCOM C grades are recommended for cylinder lubrication of single and multistage air compressors handling moist air. These oils provide excellent lubrication of piston rings, valves and cylinder liners. HYCOM C 460 features low sulphur content and is suitable for ammonia synthesis compressors in fertilizer plants.",
+
+		"specifications": [],
+
+		"appData": "Single and multistage air compressors, moist air compressors, piston compressors, cylinder lubrication systems, ammonia synthesis compressors in fertilizer plants.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0205": {
+		"id": 205,
+		"MSDS": "",
+		"title": "HYCOM LS SERIES",
+		"subTitle": "Compressor Oils",
+		"description": "HYCOM LS grades are low sulphur, high viscosity compressor oils recommended for synthesis gas compressors such as Cooper Bessemer, Nuovo Pignone and similar makes. These oils are compatible with high-pressure syn gas operations, offer excellent oxidation stability, and minimize the risk of catalyst poisoning due to their very low sulphur content (<0.25% wt).",
+
+		"specifications": [],
+
+		"appData": "Synthesis gas compressors, high pressure compressor systems, industrial gas processing plants, heavy-duty compressor applications.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0206": {
+		"id": 206,
+		"MSDS": "",
+		"title": "HYCOM TURBO SYN Series",
+		"subTitle": "Neat Cutting Fluid",
+		"description": "Compounded low viscosity neat cutting oil specially designed for the bearing industry, offering excellent lubrication and ensuring superior surface finish during machining and finishing operations.",
+
+		"specifications": [
+			{ "property": "Appearance", "value": "Clear" },
+			{ "property": "Density @ 29°C", "value": "826" },
+			{ "property": "Kinematic Viscosity @ 40°C", "value": "4 – 7 cSt" },
+			{ "property": "Flash Point (COC)", "value": "110 °C" },
+			{
+				"property": "Copper Strip Corrosion @ 100°C, 3 Hrs (Max)",
+				"value": "1"
+			},
+			{ "property": "Chlorine Content", "value": "Yes" }
+		],
+
+		"appData": "Bearing industry machining, neat cutting operations, precision metal cutting, and finishing applications requiring high surface quality.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Specialties",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0207": {
+		"id": 207,
+		"MSDS": "",
+		"title": "HYCOM SYN Series",
+		"subTitle": "Soluble Cutting Fluids",
+		"description": "General-purpose emulsifiable cutting oil that forms a stable milky white emulsion when mixed with water. Designed for effective cooling, lubrication and corrosion protection during machining operations.",
+		"specifications": [
+			{ "property": "Colour After Emulsification", "value": "Milky White" },
+			{ "property": "Kinematic Viscosity @ 40°C (Min)", "value": "20 cSt" },
+			{ "property": "Flash Point (COC) (Min)", "value": "150 °C" },
+			{ "property": "Copper Corrosion @ 100°C (Min)", "value": "1" },
+			{
+				"property": "Cast Iron Corrosion Test (20:1 Emulsion, 400 ppm Hard Water)",
+				"value": "0/1-1 (Max)"
+			},
+			{
+				"property": "Emulsion Test (400 ppm Hard Water, 5:1 & 20:1)",
+				"value": "Pass"
+			}
+		],
+
+		"appData": "Suitable for machining of all metals. Recommended concentration 5–10% depending on machining severity. Can also be used for light grinding operations.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Specialties",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0208": {
+		"id": 208,
+		"MSDS": "",
+		"title": "HYCOM LS EXPO Series",
+		"subTitle": "Compressor Oils",
+		"description": "HYCOM LS EXPO grades are ultra-low sulphur, high viscosity compressor oils designed for synthesis gas and LDPE compressors such as Cooper Bessemer, Nuovo Pignone and similar makes. These oils are compatible with high-pressure syn gas operations, provide excellent oxidation resistance, and virtually eliminate the risk of catalyst poisoning due to extremely low sulphur content (< 5 ppm).",
+
+		"specifications": [],
+
+		"appData": "Syn gas compressors, LDPE compressors, high-pressure compressor systems, gas processing plants, catalyst-sensitive applications.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0209": {
+		"id": 209,
+		"MSDS": "",
+		"title": "HP KISAN SHAKTI",
+		"subTitle": "Agriculture Oils",
+		"description": "HP KISAN SHAKTI is an engine oil developed for agricultural Pump-Sets running on Diesel, Kerosene or Light Diesel Oil (LDO). The product is made from paraffinic base stocks and fortified with select additives to deliver performance benefits in the pump-sets used in agriculture and farming activities. The superior additive chemistry not only ensures greater protection of the engine against wear and rust, its balanced detergency helps to keep the engine clean and trouble free for longer service intervals.",
+
+		"specifications": [],
+
+		"appData": "HP KISAN SHAKTI is recommended for all types of agricultural and farm equipment like Pumpsets, Tractors, Powertillers, Harvesters & DG sets requiring good quality Diesel Engine Oils. HP KISAN SHAKTI can also be used in petrol engines to render satisfactory performance.",
+
+		"packaging": [
+			"Available in multiple pack sizes",
+			"from small retail packs to bulk supply."
+		],
+
+		"SBU": "Lubes",
+		"industrial": "Automative Oils",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0210": {
+		"id": 210,
+		"MSDS": "",
+		"title": "HP KISAN SHAKTI UTTO",
+		"subTitle": "Universal Tractor Transmission Oil (UTTO)",
+		"description": "HP KISAN SHAKTI UTTO is a premium quality Universal Tractor Transmission Oil formulated from high quality hydrotreated base stocks and carefully selected additives. It is designed to deliver superior performance in transmission, hydraulic, final drive and PTO systems of modern tractors.",
+
+		"specifications": [],
+
+		"appData": "Recommended for tractors manufactured by major OEMs such as Mahindra & Mahindra, TAFE, Eicher, SAME, ITL, Swaraj, Escorts, John Deere, CNH and similar equipment. Also suitable for off-road and construction equipment requiring UTTO type transmission fluids.",
+
+		"packaging": ["Multiple pack sizes", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0211": {
+		"id": 211,
+		"MSDS": "",
+		"title": "HP KISAN TRACTOR OIL 20W-40",
+		"subTitle": "Tractor Engine Oil",
+		"description": "HP KISAN TRACTOR OIL 20W-40 is a good quality engine oil specifically designed to withstand the operational severity of Indian tractors in field usage. It is formulated with paraffinic base stocks and selected additives to provide reliable lubrication and satisfactory performance in earlier models of tractors. The product is particularly suitable for older diesel engines requiring lower detergency levels.",
+
+		"specifications": [],
+
+		"appData": "Recommended for earlier models of tractors of all makes, agricultural machinery and farm equipment operating under moderate to severe working conditions.",
+
+		"packaging": ["Multiple pack sizes", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0212": {
+		"id": 212,
+		"MSDS": "",
+		"title": "HP PUMPSET OIL",
+		"subTitle": "Diesel Engine Oil",
+		"description": "HP PUMPSET OIL is a good quality diesel engine oil specially designed for agricultural pump set engines. It is formulated to provide dependable lubrication and protection under continuous operating conditions and meets API CF/SF performance requirements.",
+
+		"specifications": [
+			{ "property": "Performance Level", "value": "API CF / SF" }
+		],
+
+		"appData": "Recommended for agricultural pump set diesel engines and similar stationary farm equipment operating under moderate to heavy duty conditions.",
+
+		"packaging": ["Multiple pack sizes", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0213": {
+		"id": 213,
+		"MSDS": "",
+		"title": "HP TRACTOR OIL 15W-40",
+		"subTitle": "Tractor Engine Oil",
+		"description": "HP TRACTOR OIL 15W-40 is a premium quality tractor engine oil formulated with high quality paraffinic base stocks and advanced additive technology. It offers excellent soot handling, protection against corrosive wear, thermal stability, piston cleanliness, valve train protection and resistance to oxidation, foaming and viscosity loss under severe operating conditions.",
+
+		"specifications": [
+			{ "property": "Kinematic Viscosity @ 100°C", "value": "15.3 cSt" },
+			{ "property": "Viscosity Index", "value": "120" },
+			{ "property": "Flash Point (COC)", "value": "210 °C" },
+			{ "property": "Pour Point", "value": "-24 °C" },
+			{ "property": "Total Base Number (TBN)", "value": "8 mg KOH/g" }
+		],
+
+		"appData": "Recommended for modern emission compliant TREM IIIA tractor engines from John Deere, Mahindra & Mahindra, Escorts, Sonalika (ITL), New Holland, HMT, TAFE etc. Also suitable for older tractors, construction equipment and DG sets.",
+
+		"packaging": ["Multiple pack sizes", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0214": {
+		"id": 214,
+		"MSDS": "",
+		"title": "HP WET BRAKE OIL",
+		"subTitle": "Universal Tractor Transmission Oil (UTTO)",
+		"description": "HP WET BRAKE OIL is a Universal Tractor Transmission Oil (UTTO) formulated with high quality base stocks and carefully selected additives. It delivers superior performance in transmission, hydraulic, final drive and PTO systems of tractors, ensuring smooth operation and protection under demanding agricultural conditions.",
+
+		"specifications": [
+			{ "property": "Kinematic Viscosity @ 100°C", "value": "10.0 – 11.5 cSt" },
+			{ "property": "Viscosity Index (Min)", "value": "100" },
+			{ "property": "Pour Point (Max)", "value": "-21 °C" },
+			{ "property": "Flash Point (COC) (Min)", "value": "180 °C" }
+		],
+
+		"appData": "Recommended for tractors from Eicher, Escorts, Mahindra & Mahindra, SAME, Swaraj, Sonalika, TAFE and similar makes. Suitable for off-road and construction equipment requiring UTTO type transmission fluid.",
+
+		"packaging": ["Multiple pack sizes", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0215": {
+		"id": 215,
+		"MSDS": "",
+		"title": "HP SUPERTRAN",
+		"subTitle": "Universal Tractor Transmission Oil (UTTO)",
+		"description": "HP SUPERTRAN grades are premium quality Universal Tractor Transmission Oils formulated from high quality hydro-treated base stocks and carefully selected additives. They are designed to deliver excellent performance in transmission, hydraulic, final drive and PTO systems of modern tractors under demanding agricultural and off-road conditions.",
+
+		"specifications": [
+			{
+				"property": "Product Type",
+				"value": "UTTO (Universal Tractor Transmission Oil)"
+			}
+		],
+
+		"appData": "Recommended for tractors manufactured by major OEMs such as Mahindra & Mahindra, TAFE, Eicher, SAME, Swaraj, Escorts, John Deere, ITL, CNH and similar makes. Also suitable for off-road and construction equipment requiring UTTO type transmission fluid.",
+
+		"packaging": ["Multiple pack sizes", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0216": {
+		"id": 216,
+		"MSDS": "",
+		"title": "HP SUPERTRAN HVI",
+		"subTitle": "Universal Tractor Transmission Oil (UTTO)",
+		"description": "HP SUPERTRAN HVI is a super-premium quality Universal Tractor Transmission Oil formulated with high quality hydrotreated base stocks and advanced additive technology. It is designed to deliver superior performance in transmission, hydraulic, final drive and PTO systems of modern tractors, offering improved viscosity stability and protection under severe operating conditions.",
+
+		"specifications": [
+			{
+				"property": "Product Type",
+				"value": "UTTO (Universal Tractor Transmission Oil)"
+			},
+			{ "property": "Performance Level", "value": "High Viscosity Index (HVI)" }
+		],
+
+		"appData": "Recommended for tractors manufactured by major OEMs such as Mahindra & Mahindra, TAFE, Eicher, SAME, Swaraj, Escorts, John Deere, ITL, CNH and similar makes. Also suitable for off-road and construction equipment requiring UTTO type transmission fluids.",
+
+		"packaging": ["Multiple pack sizes", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0217": {
+		"id": 217,
+		"MSDS": "",
+		"title": "HYCOM C 100, 150, 220, 320, 460",
+		"subTitle": "Compressor Oils",
+		"description": "HYCOM C grades are recommended for cylinder lubrication of single and multistage air compressors handling moist air. These oils provide excellent lubrication of piston rings, valves and cylinder liners. HYCOM C 460 features low sulphur content and is suitable for ammonia synthesis compressors used in fertilizer plants.",
+
+		"specifications": [],
+
+		"appData": "Single and multistage air compressors, moist air compressors, piston compressors, ammonia synthesis compressors in fertilizer plants.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0218": {
+		"id": 218,
+		"MSDS": "",
+		"title": "HYCOM TURBO SYN 10 / 15",
+		"subTitle": "Synthetic Seal Oils",
+		"description": "HYCOM TURBO SYN 10 and 15 are high performance synthetic seal oils formulated for mechanical seal systems. These products are manufactured using advanced Group IV synthetic base stocks and are FDA compliant, offering excellent thermal stability, low temperature performance and reliable sealing protection.",
+
+		"specifications": [
+			{ "property": "Appearance", "value": "Bright & Clear / Bright & Clear" },
+			{ "property": "Specific Gravity @ 15°C", "value": "0.81 / 0.82 g/cc" },
+			{ "property": "Viscosity @ 40°C", "value": "10 / 16.7 cSt" },
+			{ "property": "Viscosity Index", "value": "123 / 125" },
+			{ "property": "Pour Point", "value": "-54 / -54 °C" },
+			{ "property": "Flash Point", "value": ">160 / 215 °C" },
+			{
+				"property": "Base Oil Type",
+				"value": "Group IV Synthetic (FDA Compliant)"
+			}
+		],
+
+		"appData": "Mechanical seal systems, compressors, pumps and equipment requiring synthetic seal oils with excellent thermal stability and FDA compliant base stocks.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0219": {
+		"id": 219,
+		"MSDS": "",
+		"title": "HYCOM VDL T 32, 46, 68, 100, 150, 220, 320",
+		"subTitle": "Compressor Oils",
+		"description": "HYCOM VDL T grades are high performance compressor oils suitable for rotary air compressors, screw compressors and vacuum pumps. They provide reliable operation up to 250°C air discharge temperature and are also recommended for journal and antifriction bearings in high-speed, high-temperature fan applications. HYCOM VDL T 100 is an ashless fluid suitable for high pressure boiler control valves.",
+
+		"specifications": [],
+
+		"appData": "Rotary compressors, screw compressors, vacuum pumps, journal bearings, antifriction bearings, high-speed fans and high temperature industrial applications.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0220": {
+		"id": 220,
+		"MSDS": "",
+		"title": "CYNDOL GRADES",
+		"subTitle": "Cylinder Oils",
+		"description": "CYNDOL grades are specially formulated cylinder oils designed for lubrication of steam engine cylinders operating under highly superheated and wet saturated steam conditions. They also provide excellent performance in large slow moving industrial gears, plain bearings, calender bearings, sugar mill roller bearings and worm gears. Higher viscosity grades like CYNDOL 1000 and 1500 are also suitable for tempering and wire drawing applications.",
+
+		"specifications": [],
+
+		"appData": "Steam engines, slow moving gears, plain bearings, worm gears, calender bearings, sugar mill roller bearings, tempering and wire drawing operations.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0221": {
+		"id": 221,
+		"MSDS": "",
+		"title": "HP FILM OIL",
+		"subTitle": "Industrial Film Oil",
+		"description": "HP FILM OIL grades are high quality industrial lubricating oils recommended for anti-friction bearings, plain bearings, drive gears and pinions of steel mills operating under moderate conditions. They are also suitable for circulation systems where oils with excellent demulsibility characteristics are required.",
+
+		"specifications": [],
+
+		"appData": "Anti-friction bearings, plain bearings, steel mill drive gears, pinions and industrial circulation lubrication systems.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0222": {
+		"id": 222,
+		"MSDS": "",
+		"title": "YANTROL / YANTROL N SERIES",
+		"subTitle": "General Purpose Machinery Oils",
+		"description": "YANTROL grades are high quality lubricating oils intended for general lubrication of industrial machinery. They are manufactured from selected base stocks and fortified with antiwear and antirust additives. Specially developed for steel mill and general purpose industrial lubrication.",
+
+		"specifications": [
+			{ "property": "Product Type", "value": "General Purpose Machinery Oil" },
+			{ "property": "Base Oil Type", "value": "Selected Mineral Base Stocks" },
+			{ "property": "Additives", "value": "Antiwear & Antirust" },
+			{ "property": "Application Type", "value": "Once-through Lubrication" }
+		],
+
+		"appData": "Suitable for textile mills, paper mills, machine tools and steel mill general lubrication systems.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0223": {
+		"id": 223,
+		"MSDS": "",
+		"title": "WAYLUBE",
+		"subTitle": "Machine Tool Slideway & Hydraulic Oils",
+		"description": "WAYLUBE grades are specially formulated machine tool slideway lubricants designed to eliminate stick-slip motion and chatter in slow moving machine parts. They provide mild EP protection, rust prevention and can also function as combined hydraulic and way lubricants in non-critical systems.",
+
+		"specifications": [
+			{
+				"property": "Available Grades",
+				"value": "32, 68, 220, N68"
+			},
+			{
+				"property": "Kinematic Viscosity @ 40°C (cSt)",
+				"value": "29–33 | 62–68 | 200–220 | 62–68"
+			},
+			{
+				"property": "Viscosity Index (Min)",
+				"value": "90 (all grades)"
+			},
+			{
+				"property": "Flash Point COC (°C, Min)",
+				"value": "165 | 170 | 198 | 190"
+			},
+			{
+				"property": "Pour Point (°C, Max)",
+				"value": "-3 (all grades)"
+			}
+		],
+
+		"appData": "Recommended for slideway lubrication of planers, grinders, shapers, jig borers, horizontal boring machines and combined hydraulic & way lubrication systems. Meets Cincinnati Milacron P-47 thermal stability test.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0224": {
+		"id": 224,
+		"MSDS": "",
+		"title": "HYTAK",
+		"subTitle": "Open Gear, Chain & Wire Rope Lubricants",
+		"description": "HYTAK series are heavy, viscous, black petroleum based lubricants formulated for open gears, chains and wire ropes. They provide excellent film strength, high load carrying capability, strong tackiness and rust protection. Designed to remain in place under severe pressure and operating conditions.",
+
+		"specifications": [
+			{
+				"property": "Available Grades",
+				"value": "0, 1, 2, 5, F3, F4, F5"
+			},
+			{
+				"property": "Appearance",
+				"value": "Black viscous slightly tacky fluid"
+			},
+			{
+				"property": "Flash Point COC (°C, Min)",
+				"value": "240 | 230 | 230 | 230 | 252 | — | —"
+			},
+			{
+				"property": "Pour Point (°C)",
+				"value": "15 (all grades)"
+			},
+			{
+				"property": "Kinematic Viscosity @ 100°C (cSt)",
+				"value": "62–67 | 200–300 | 450–650 | 450–1200 | 1400–1600 | 1166–1590 | 2332–3180"
+			},
+			{
+				"property": "Copper Strip Corrosion @ 100°C (3 hrs)",
+				"value": "1 (all grades)"
+			}
+		],
+
+		"appData": "Recommended for lubrication of conventional open gears, cables and wire ropes. Heavier grades may require heating before application. F4 and F5 grades contain non-flammable solvent for easy cold application. Suitable for heavily loaded gears and severe service conditions.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0225": {
+		"id": 225,
+		"MSDS": "",
+		"title": "HYTAK 500 NB",
+		"subTitle": "Semi-Synthetic Open Gear Lubricant",
+		"description": "HYTAK 500 NB is a semi-synthetic, high viscosity open gear lubricant designed to form a thick Elasto Hydrodynamic Lubrication (EHL) film for superior load carrying capacity. It contains an advanced extreme pressure additive system to reduce operating temperature and improve efficiency. The product is clear, free from solids, heavy metals and toxic diluents, and is environmentally safer with very low PAH content.",
+
+		"specifications": [
+			{
+				"property": "Product Type",
+				"value": "Semi-Synthetic Open Gear Lubricant"
+			},
+			{ "property": "Film Formation", "value": "Thick EHL Film" },
+			{ "property": "Additives", "value": "Advanced Extreme Pressure Package" },
+			{ "property": "PAH Content (DMSO Extractables)", "value": "< 3% wt" },
+			{
+				"property": "Composition",
+				"value": "Free from solids, heavy metals & chlorinated solvents"
+			}
+		],
+
+		"appData": "Recommended for open gear drives of ball mills, rotary kilns, rotary barrel mixers and dryers.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0226": {
+		"id": 226,
+		"MSDS": "",
+		"title": "HYTAK 500 NB-1000",
+		"subTitle": "Semi-Synthetic Open Gear Lubricant",
+		"description": "HYTAK 500 NB-1000 is a clear, semi-synthetic open gear lubricant formulated to replace conventional black oils and graphite greases. It is free from solids, heavy metals and toxic diluents, offering safer and cleaner operation. The product improves lubrication reliability by eliminating grease separation and tubing blockages in centralized lubrication systems.",
+
+		"specifications": [
+			{
+				"property": "Product Type",
+				"value": "Semi-Synthetic Open Gear Lubricant"
+			},
+			{ "property": "Appearance", "value": "Clear" },
+			{
+				"property": "Composition",
+				"value": "Free from solids, heavy metals & chlorinated solvents"
+			},
+			{ "property": "PAH Content (DMSO Extractables)", "value": "< 3% wt" },
+			{
+				"property": "Application Method",
+				"value": "Immersion, Paddle Wheel, Circulation, Spray"
+			}
+		],
+
+		"appData": "Recommended for mill bearings, large girth gear drives and centralized lubrication systems in sugar and heavy industries. Provides cleaner and more reliable lubrication compared to graphite or black greases.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0227": {
+		"id": 227,
+		"MSDS": "",
+		"title": "SEETUL GRADES",
+		"subTitle": "Refrigeration Compressor Oils",
+		"description": "SEETUL grades are refrigeration compressor oils formulated from specially selected base stocks to provide low pour point, low floc point, dryness, good chemical stability and excellent solubility with liquified refrigerants. Designed for reliable lubrication in refrigeration systems.",
+
+		"specifications": [
+			{
+				"property": "Available Grades",
+				"value": "22, 32, 46, 68, 100, N32, N68"
+			},
+			{
+				"property": "Kinematic Viscosity @ 40°C (cSt)",
+				"value": "22 | 32 | 46 | 68 | 100 | 32 | 68"
+			},
+			{
+				"property": "Viscosity Index (Min)",
+				"value": "50 | 50 | 55 | 55 | 60 | 50 | 55"
+			},
+			{
+				"property": "Flash Point COC (°C, Min)",
+				"value": "150 | 160 | 160 | 170 | 200 | 160 | 170"
+			},
+			{
+				"property": "Pour Point (°C, Max)",
+				"value": "-36 | -30 | -27 | -26 | -26 | -38 | -27"
+			}
+		],
+
+		"appData": "Recommended for reciprocating and rotary refrigeration compressors using conventional refrigerants (except sulphur dioxide).",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0228": {
+		"id": 228,
+		"MSDS": "",
+		"title": "SEETUL N 68 (P)",
+		"subTitle": "Refrigeration Compressor Oil",
+		"description": "SEETUL N 68 (P) is a refrigeration compressor oil formulated from specially selected deep hydro-finished base stocks to provide low pour point, dryness and excellent chemical stability. Designed specifically for ammonia and carbon dioxide refrigeration systems.",
+
+		"specifications": [],
+
+		"appData": "Recommended for reciprocating and rotary refrigeration compressors using ammonia and carbon dioxide refrigerants. Not recommended for R-12, R-22 and other Freon refrigerants.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0229": {
+		"id": 229,
+		"MSDS": "",
+		"title": "SEETUL RFL GRADES",
+		"subTitle": "Polyalkylene Glycol Refrigeration Lubricants",
+		"description": "SEETUL RFL grades are advanced polyalkylene glycol (PAG) based refrigeration and air-conditioning lubricants designed for wide temperature compatibility with modern refrigerants. They offer excellent thermal stability, low temperature fluidity and high miscibility with refrigerants.",
+
+		"specifications": [
+			{
+				"property": "Available Grades",
+				"value": "16 | 11 | 9"
+			},
+			{
+				"property": "Appearance",
+				"value": "Clear, colourless liquid (all grades)"
+			},
+			{
+				"property": "Viscosity @ 40°C (cSt)",
+				"value": "16.0 | 11.5 | 9.0"
+			},
+			{
+				"property": "Viscosity @ 100°C (cSt)",
+				"value": "8.0 | 6.1 | 4.6"
+			},
+			{
+				"property": "Viscosity Index",
+				"value": "213 | 186 | 182"
+			},
+			{
+				"property": "Pour Point (°C)",
+				"value": "-44 | -45 | -51"
+			},
+			{
+				"property": "Flash Point COC (°C)",
+				"value": "248 | 262 | 212"
+			},
+			{
+				"property": "Total Acid Number (mg KOH/g)",
+				"value": "0.34 | <0.01 | 0.06"
+			},
+			{
+				"property": "Water Content (ppm)",
+				"value": "<1000 (all grades)"
+			},
+			{
+				"property": "Specific Gravity @ 20°C",
+				"value": "1.024 | 1.002 | 0.9954"
+			},
+			{
+				"property": "R-134a Compatibility",
+				"value": "Fully miscible & sealed tube stability pass"
+			}
+		],
+
+		"appData": "Recommended for modern refrigeration and air-conditioning compressors using R-134a and similar refrigerants requiring PAG based lubricants.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0230": {
+		"id": 230,
+		"MSDS": "",
+		"title": "SEETUL S 68",
+		"subTitle": "Fully Synthetic Refrigeration Compressor Oil (PAO Based)",
+		"description": "HPCL SEETUL S 68 is a fully synthetic refrigeration compressor lubricant formulated from polyalphaolefin (PAO) base fluids. It offers outstanding resistance to thermal and oxidative degradation, excellent low temperature fluidity and superior film strength under refrigerant pressure conditions. Designed for severe refrigeration and heat pump applications beyond the capability of conventional mineral oils.",
+
+		"specifications": [],
+
+		"appData": "Recommended for refrigeration compressors and heat pumps operating at very high temperatures or very low evaporator temperatures. Suitable for ammonia, carbon dioxide, HCFC (R-22) and CFC (R-12) refrigerants. Compatible with mineral oils. Not suitable for sulphur dioxide.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0231": {
+		"id": 231,
+		"MSDS": "",
+		"title": "SEETUL SE 68",
+		"subTitle": "Synthetic Ester Refrigeration Compressor Oil",
+		"description": "SEETUL SE 68 is a synthetic ester based refrigeration compressor lubricant designed specifically for compressors operating with HFC refrigerants such as R-134a. The product provides excellent lubricity, thermal stability and environmental compatibility. Its formulation ensures reliable performance where conventional mineral oils are unsuitable.",
+
+		"specifications": [],
+
+		"appData": "Recommended for refrigeration compressors and air-conditioning systems operating with HFC refrigerants such as R-134a where synthetic ester lubricants are required.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0232": {
+		"id": 232,
+		"MSDS": "",
+		"title": "SPINTEK",
+		"subTitle": "Spindle Oils",
+		"description": "SPINTEK grades are light viscosity spindle oils designed for lubrication of textile machinery, machine tools, spindle bearings, timing gears, centrifugal separators, positive displacement blowers and precision hydraulic systems. They provide smooth operation, low friction and reliable wear protection.",
+
+		"specifications": [
+			{
+				"property": "Available Grades",
+				"value": "5 | 10 | 12 | 15 | 22"
+			},
+			{
+				"property": "Kinematic Viscosity @ 40°C (cSt)",
+				"value": "5 | 10 | 12 | 15 | 22"
+			},
+			{
+				"property": "Viscosity Index (Min)",
+				"value": "85 (all grades)"
+			},
+			{
+				"property": "Flash Point COC (°C, Min)",
+				"value": "168 | 150 | 168 | 176 | 182"
+			},
+			{
+				"property": "Pour Point (°C, Max)",
+				"value": "-6 | -6 | -6 | -3 | -3"
+			}
+		],
+
+		"appData": "Recommended for textile machinery, spindle bearings, timing gears, centrifugal separators, positive displacement blowers and precision hydraulic systems in high speed equipment.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0233": {
+		"id": 233,
+		"MSDS": "",
+		"title": "SPINTEK 3",
+		"subTitle": "High Speed Spindle Oil",
+		"description": "SPINTEK 3 is a premium quality low viscosity spindle oil formulated from highly refined base oils with excellent chemical and oxidation stability. It is fortified with oxidation inhibitors, rust preventives and antiwear additives to ensure smooth operation, reduced friction and long bearing life in high speed precision machinery.",
+
+		"specifications": [
+			{ "property": "Appearance", "value": "Bright & Clear" },
+			{
+				"property": "Kinematic Viscosity @ 40°C (cSt)",
+				"value": "2.00 – 2.50"
+			},
+			{ "property": "Flash Point (PMC, °C, Min)", "value": "80" }
+		],
+
+		"appData": "Recommended for lubrication of textile and machine tools, spindle bearings, timing gears, centrifugal separators, positive displacement blowers and hydraulic systems of high precision machinery.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0234": {
+		"id": 234,
+		"MSDS": "",
+		"title": "SPINTEK EE SERIES",
+		"subTitle": "Energy Efficient Spindle Oils",
+		"description": "SPINTEK EE grades are energy-efficient premium spindle oils formulated from highly refined base stocks with excellent oxidation stability. Fortified with rust inhibitors and antiwear additives, they provide low friction, reduced energy consumption and reliable protection for high speed precision spindles.",
+
+		"specifications": [
+			{
+				"property": "Available Grades",
+				"value": "10 | 12 | 22"
+			},
+			{
+				"property": "Kinematic Viscosity @ 40°C (cSt)",
+				"value": "9.9 | 12 | 22"
+			},
+			{
+				"property": "Viscosity Index (Min)",
+				"value": "90 (all grades)"
+			},
+			{
+				"property": "Flash Point COC (°C, Min)",
+				"value": "150 | 154 | 160"
+			},
+			{
+				"property": "Pour Point (°C, Max)",
+				"value": "-6 | -6 | -3"
+			}
+		],
+
+		"appData": "Recommended for lubrication of textile and machine tools, spindle bearings, timing gears, centrifugal separators, positive displacement blowers and hydraulic systems. SPINTEK EE 12 grade is approved by ATIRA.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0235": {
+		"id": 235,
+		"MSDS": "",
+		"title": "SPINTEX SYN 2",
+		"subTitle": "Synthetic PAO Spindle Oil",
+		"description": "SPINTEX SYN 2 is a fully synthetic spindle oil formulated using Polyalphaolefin (PAO) base stocks. It is near water white, food grade and offers a very high viscosity index with excellent low temperature fluidity. Designed for hydrodynamic lubrication of high speed journals and spindles.",
+
+		"specifications": [
+			{ "property": "Appearance", "value": "Clear" },
+			{ "property": "Colour (ASTM D1500)", "value": "≤ 0.5" },
+			{
+				"property": "Kinematic Viscosity @ 40°C (cSt)",
+				"value": "Typical 5.1"
+			},
+			{ "property": "Kinematic Viscosity @ 100°C (cSt)", "value": "1.7 – 2.2" },
+			{ "property": "Flash Point COC (°C, Min)", "value": "150" },
+			{ "property": "Pour Point (°C)", "value": "-54" },
+			{
+				"property": "Base Oil Type",
+				"value": "Polyalphaolefin (PAO) – Synthetic, Food Grade"
+			}
+		],
+
+		"appData": "Recommended for hydrodynamic lubrication of high speed journals and spindles in precision and food processing equipment requiring synthetic, low temperature spindle oils.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0236": {
+		"id": 236,
+		"MSDS": "",
+		"title": "STANTROL 1,3",
+		"subTitle": "High Temperature Chain Lubricant",
+		"description": "STANTROL grades are synthetic lubricants developed for lubrication of chain drives and stenters in textile and other industries. They provide excellent thermal stability, corrosion protection and reliable lubrication at elevated operating temperatures up to 200°C.",
+
+		"specifications": [
+			{
+				"property": "Available Grades",
+				"value": "1 | 3"
+			},
+			{
+				"property": "Appearance",
+				"value": "Bright & Clear (both grades)"
+			},
+			{
+				"property": "Total Acidity (mg KOH/g, Max)",
+				"value": "1 | 1"
+			},
+			{
+				"property": "Colour ASTM (Max)",
+				"value": "1 | 1"
+			},
+			{
+				"property": "Copper Strip Corrosion @ 100°C",
+				"value": "1A | 1A"
+			},
+			{
+				"property": "Density @ 29.5°C (g/cc)",
+				"value": "0.96 | 0.96"
+			},
+			{
+				"property": "Flash Point COC (°C, Min)",
+				"value": "250 | 250"
+			},
+			{
+				"property": "Pour Point (°C, Max)",
+				"value": "-6 | -6"
+			},
+			{
+				"property": "Kinematic Viscosity @ 40°C (cSt)",
+				"value": "170 | 320"
+			},
+			{
+				"property": "Kinematic Viscosity @ 100°C (cSt)",
+				"value": "16–18 | 26–28"
+			},
+			{
+				"property": "Viscosity Index (Min)",
+				"value": "90 | 90"
+			}
+		],
+
+		"appData": "Recommended for lubrication of chains, chain drives and stenters operating at high temperatures up to 200°C in textile and other industrial applications.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0237": {
+		"id": 237,
+		"MSDS": "",
+		"title": "HP TRANSFORMER OILS",
+		"subTitle": "Electrical Insulating Transformer Oil",
+		"description": "HP TRANSFORMER OIL is a high quality insulating oil designed for safe and reliable operation of transformers and electrical equipment. The product is free from carcinogenic PCBs and PAHs and provides excellent dielectric strength, oxidation resistance and cooling performance.",
+
+		"specifications": [
+			{ "property": "Appearance", "value": "Clear & Transparent" },
+			{ "property": "Density @ 29.5°C (g/cc)", "value": "0.8279" },
+			{ "property": "Kinematic Viscosity @ 27°C (cSt)", "value": "16.46" },
+			{ "property": "Kinematic Viscosity @ 40°C (cSt)", "value": "11" },
+			{ "property": "Flash Point (PMCC, °C)", "value": "172" },
+			{ "property": "Pour Point (°C)", "value": "-18" },
+			{ "property": "Breakdown Voltage (kV)", "value": "72" },
+			{ "property": "Interfacial Tension (N/m)", "value": "0.044" },
+			{ "property": "Resistivity @ 90°C (ohm-cm)", "value": "750 × 10¹²" },
+			{ "property": "Water Content (ppm)", "value": "50" },
+			{ "property": "Oxidation Inhibitor", "value": "Absent" }
+		],
+
+		"appData": "Recommended for use in transformers, switchgear, circuit breakers and other oil-filled electrical equipment requiring high dielectric strength and reliable insulation performance.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL0238": {
+		"id": 238,
+		"MSDS": "",
+		"title": "TURBINOL",
+		"subTitle": "Turbine Oils (ISO VG 32 / 46 / 68)",
+		"description": "TURBINOL grades are premium quality lubricating oils designed to provide efficient and trouble-free service in precision industrial machinery having exacting lubrication requirements. Formulated with selected stable base oils and effective additives, they deliver excellent oxidation stability, rust protection, water separation and long service life in turbines and hydraulic systems.",
+
+		"specifications": [
+			{ "property": "ISO VG Grades", "value": "32 / 46 / 68" },
+			{
+				"property": "Kinematic Viscosity @ 40°C (cSt)",
+				"value": "31.26 / 45.63 / 65.3"
+			},
+			{ "property": "Viscosity Index", "value": "107 / 107 / 114" },
+			{ "property": "Flash Point (COC, °C)", "value": "220 / 220 / 228" },
+			{ "property": "Pour Point (°C)", "value": "-15 / -15 / -15" },
+			{
+				"property": "Neutralization No. TAN (mgKOH/g)",
+				"value": "0.1 / 0.09 / 0.09"
+			},
+			{ "property": "Oxidation Stability (TOST Life, hrs)", "value": ">7500" },
+			{ "property": "RPVOT (minutes)", "value": "1000" },
+			{ "property": "Rust Protection", "value": "Pass" },
+			{ "property": "Demulsibility @ 54°C", "value": "40-40-0" },
+			{ "property": "Foaming Tendency (Seq I/II/III)", "value": "0/0" },
+			{ "property": "FZG Load Stage", "value": "10" }
+		],
+
+		"appData": "Recommended for lubrication of steam, gas and hydraulic turbines. Also suitable for hydraulic systems requiring long life lubricants with excellent oxidation stability, rust protection and water separation characteristics.",
+
+		"packaging": ["Barrel", "Bulk Supply"],
+
+		"SBU": "Lubes",
+		"industrial": "Industrial Oil",
+
 		"documentation": "",
 		"alternatives": [],
 		"related": []

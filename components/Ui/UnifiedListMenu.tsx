@@ -33,7 +33,6 @@ type UnifiedListMenuProps = {
 	scrollable?: boolean;
 	showIcons?: boolean;
 	getIcons?: (item: any) => any;
-	png?: boolean;
 	showInfo?: boolean;
 	useItemName?: boolean;
 };
@@ -45,7 +44,6 @@ const UnifiedListMenu = ({
 	scrollable = false,
 	showIcons = false,
 	getIcons,
-	png = false,
 	showInfo = false,
 	useItemName = false,
 }: UnifiedListMenuProps) => {
@@ -97,6 +95,7 @@ const UnifiedListMenu = ({
 		<View style={styles.row}>
 			{items.map((item: any, index: number) => {
 				const last = isLastItem(index);
+				const png = item.iconType === "image";
 
 				const label = useItemName ? item.name : item.name;
 				const navigatePlace = item?.navigation
@@ -115,9 +114,10 @@ const UnifiedListMenu = ({
 							{
 								height: last ? itemHeight - 60 : itemHeight,
 								width: last ? width - 30 : width / columns + 45,
+								paddingHorizontal: 15,
 								backgroundColor: getBackgroundColor(index),
 								flexDirection: png && !last ? "column" : "row",
-								gap: 0,
+								gap: 10,
 								justifyContent: "center",
 								alignItems: "center",
 								alignSelf: last ? "center" : "auto",
@@ -139,7 +139,7 @@ const UnifiedListMenu = ({
 							)}
 
 						{item.iconType === "vector" && typeof item.icon === "string" && (
-							<FontAwesome name={item.icon} color="#fff" size={20} />
+							<FontAwesome name={item.icon} color="#fff" size={25} />
 						)}
 
 						{/* Info Button (Page 3) */}
@@ -163,7 +163,7 @@ const UnifiedListMenu = ({
 								{
 									fontSize: !useItemName
 										? Math.min(width * 0.055, 20)
-										: Math.min(width * 0.07, 30),
+										: Math.min(width * 0.07, 25),
 								},
 							]}
 						>
@@ -181,7 +181,7 @@ const UnifiedListMenu = ({
 				<ScrollView
 					ref={scrollRef}
 					showsVerticalScrollIndicator={false}
-					contentContainerStyle={{ paddingBottom: insets.bottom + 200 }}
+					contentContainerStyle={{ paddingBottom: insets.bottom + 250 }}
 				>
 					{Content}
 				</ScrollView>

@@ -1,15 +1,19 @@
+import CommonModal from "@/components/Ui/CommonModal";
 import Header from "@/components/Ui/Header";
 import InputSearch from "@/components/Ui/InputSearch";
+import LoadingOverlay from "@/components/Ui/LoadingOverlay";
 import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
 import newData from "@/constants/Jsons/newData.json";
 import { Colors } from "@/constants/theme";
 import { MaterialIcons } from "@expo/vector-icons";
 import { router, useLocalSearchParams } from "expo-router";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 const SubPage = () => {
 	const { title } = useLocalSearchParams<{ title: string }>();
+	const [slowNet, setSlowNet] = useState(false);
+	const [loading, setLoading] = useState(false);
 
 	const findCategory = (list: any[], name: string): any => {
 		for (const item of list) {
@@ -24,6 +28,7 @@ const SubPage = () => {
 	};
 
 	const data = findCategory(newData.homeScreen, title)?.data;
+	const titleName = findCategory(newData.homeScreen, title)?.title;
 
 	useEffect(() => {
 		if (data && data.length === 1) {
@@ -47,6 +52,10 @@ const SubPage = () => {
 		// If item has a direct route
 		if (item?.navigation) {
 			router.push({ pathname: item.navigation });
+			return;
+		}
+
+		if (Array.isArray(item?.data === "")) {
 			return;
 		}
 
@@ -84,9 +93,20 @@ const SubPage = () => {
 	return (
 		<View style={styles.container}>
 			<Header caption={title} />
-			<InputSearch />
+			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} />
 
-			{data.length > 0 ? (
+			<LoadingOverlay visible={loading} text="Analyzing..." />
+
+			<CommonModal
+				visible={slowNet}
+				title="Slow Internet"
+				message="Your connection is too slow. Please try again."
+				icon="speedometer-outline"
+				buttonText="Retry"
+				onPress={() => setSlowNet(false)}
+			/>
+
+			{data?.length > 0 ? (
 				<UnifiedListMenu
 					items={data}
 					navigate={navigate}
@@ -94,7 +114,6 @@ const SubPage = () => {
 					scrollable
 					showIcons={hasIcons}
 					useItemName={!hasIcons}
-					png
 				/>
 			) : (
 				<Text style={styles.emptyText}>

@@ -1,20 +1,14 @@
+import CommonModal from "@/components/Ui/CommonModal";
 import Header from "@/components/Ui/Header";
 import InputSearch from "@/components/Ui/InputSearch";
+import LoadingOverlay from "@/components/Ui/LoadingOverlay";
 import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
 import wholeData from "@/constants/Jsons/newData.json";
 import { Colors } from "@/constants/theme";
 import { router } from "expo-router";
-import * as SecureStore from "expo-secure-store";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-import {
-	Dimensions,
-	ScrollView,
-	StyleSheet,
-	Text,
-	TouchableOpacity,
-	View,
-} from "react-native";
+import { Dimensions, ScrollView, StyleSheet, Text, View } from "react-native";
 
 const { width } = Dimensions.get("window");
 
@@ -22,10 +16,10 @@ const HomeScreen = () => {
 	// Navigation
 	const navigate = (itemName: any) => {
 		switch (itemName) {
-			case "Knowledge Center":
+			case "Knowledge\nCenter":
 				router.push("/KnowledgeCenter");
 				break;
-			case "Product Finder":
+			case "Product\nFinder":
 				router.push("/ProductFinder");
 				break;
 			case "Explore More":
@@ -40,21 +34,23 @@ const HomeScreen = () => {
 		}
 	};
 
-	const [deviceUUID, setDeviceUUID] = useState<string | null>(null);
+	const [loading, setLoading] = useState(false);
+	const [slowNet, setSlowNet] = useState(false);
 
-	useEffect(() => {
-		const loadUUID = async () => {
-			const uuid = await SecureStore.getItemAsync("DEVICE_UUID");
-			setDeviceUUID(uuid);
-		};
+	// const [deviceUUID, setDeviceUUID] = useState<string | null>(null);
+	// useEffect(() => {
+	// 	const loadUUID = async () => {
+	// 		const uuid = await SecureStore.getItemAsync("DEVICE_UUID");
+	// 		setDeviceUUID(uuid);
+	// 	};
 
-		loadUUID();
-	}, []);
+	// 	loadUUID();
+	// }, []);
 
 	return (
 		<View style={styles.container}>
 			<Header caption={"Product \nCatalogue"} />
-			<InputSearch />
+			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} />
 			<ScrollView
 				contentContainerStyle={{
 					paddingBottom: 30,
@@ -65,7 +61,6 @@ const HomeScreen = () => {
 					<UnifiedListMenu
 						items={wholeData?.homeScreen}
 						navigate={navigate}
-						png
 						showIcons
 						itemHeight={170}
 					/>
@@ -79,10 +74,19 @@ const HomeScreen = () => {
 						itemHeight={70}
 					/>
 				</View>
-				<TouchableOpacity onPress={() => navigate("Explore More")}>
+				{/* <TouchableOpacity onPress={() => navigate("Explore More")}>
 					<Text style={styles.exploreBtn}>Explore More {"->"}</Text>
-				</TouchableOpacity>
+				</TouchableOpacity> */}
 			</ScrollView>
+			<LoadingOverlay visible={loading} text="Thinking..." />
+			<CommonModal
+				visible={slowNet}
+				title="Slow Internet"
+				message="Your connection is too slow. Please try again."
+				icon="speedometer-outline"
+				buttonText="Retry"
+				onPress={() => setSlowNet(false)}
+			/>
 		</View>
 	);
 };

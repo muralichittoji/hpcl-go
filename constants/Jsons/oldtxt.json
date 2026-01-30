@@ -1,0 +1,216 @@
+{
+	"olddata": [
+		{ "id": 1, "name": "Transformer Oil", "data": [] },
+		{
+			"speciality": []
+		},
+		{
+			"id": 4,
+			"name": "Process Oils",
+			"data": [
+				{ "name": "ELASTO 165", "data": "HPCL0090" },
+				{ "name": "ELASTO 245", "data": "HPCL0091" },
+				{ "name": "ELASTO 255", "data": "HPCL0092" },
+				{ "name": "ELASTO 215/216", "data": "HPCL0093" },
+				{ "name": "ELASTO 541", "data": "HPCL0094" },
+				{ "name": "ELASTO 710", "data": "HPCL0095" },
+				{ "name": "ELASTO SUPREME (TRAE)", "data": "HPCL0096" },
+				{ "name": "ELASTO SUPREME H (RAE)", "data": "HPCL0097" }
+			]
+		},
+
+		{
+			"id": 5,
+			"name": "Motor Fuel",
+			"data": [{ "name": "HP Diesel Exhaust Fluid", "data": "HPCL0030" }]
+		},
+		{
+			"id": 6,
+			"name": "Coolant",
+			"data": [
+				{ "name": "Koolguard Advance 1:1", "data": "HPCL0113" },
+				{ "name": "KOOLGARD CLASSIC 1:7", "data": "HPCL0119" },
+				{ "name": "HP COOL (KOOLGARD)", "data": "HPCL0120" },
+				{ "name": "HP POWER KOOL - BULK", "data": "HPCL0121" },
+				{ "name": "POWER KOOL RR", "data": "HPCL0122" },
+				{ "name": "HP THANDA RAJA - BULK", "data": "HPCL0123" }
+			]
+		},
+		{
+			"id": 5,
+			"name": "Industrial Lubricants",
+			"iconType": "image",
+			"icon": "OIL_ICON",
+			"data": [
+				{
+					"name": "Hydraulic Oil",
+					"data": ""
+				},
+
+				{
+					"name": "Turbine Oils",
+					"data": [
+						{ "name": "TURBINE OILS", "data": "HPCL0151" },
+						{ "name": "TURBINOL XT SERIES", "data": "HPCL0152" },
+						{ "name": "TURBINOL LP SERIES", "data": "HPCL0153" }
+					]
+				},
+				{
+					"name": "SUGAR MILL BEARING OILS",
+					"data": [
+						{ "name": "CRUSHWELL 1, 2, 3, 4, 5", "data": "HPCL0193" },
+						{ "name": "CRUSHFINE 60 NB-I", "data": "HPCL0200" },
+						{ "name": "CRUSHFINE 60 NB-II", "data": "HPCL0173" },
+						{ "name": "CRUSHFINE 40 NB", "data": "HPCL0194" },
+						{ "name": "CRUSHFINE 45 NB-II", "data": "HPCL0195" }
+					]
+				},
+				{
+					"name": "INDUSTRIAL GREASES",
+					"data": [{ "name": "INDUSTRIAL GREASES", "data": "HPCL0182" }]
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "Industrial Specialties Lubricant",
+			"iconType": "image",
+			"icon": "OIL_ICON",
+			"data": [
+				{
+					"name": "Queching Oils",
+					"data": [
+						{ "name": "HP METAQUENCH 39", "data": "HPCL0038" },
+						{ "name": "HP METAQUENCH 40", "data": "HPCL0039" },
+						{ "name": "HP METAQUENCH 42", "data": "HPCL0040" },
+						{ "name": "HP METAQUENCH 43", "data": "HPCL0041" },
+						{ "name": "HP METAQUENCH 44", "data": "HPCL0042" },
+						{ "name": "HP METAQUENCH 44 H", "data": "HPCL0043" },
+						{ "name": "HP METAQUENCH 45", "data": "HPCL0044" },
+						{ "name": "HP METAQUENCH 85", "data": "HPCL0045" },
+						{ "name": "HP METAQUENCH 86", "data": "HPCL0046" },
+						{ "name": "HP METAQUENCH 87", "data": "HPCL0047" },
+						{ "name": "HP METAQUENCH 88", "data": "HPCL0048" }
+					]
+				},
+				{
+					"name": "Metal Working Fluids",
+					"data": [
+						{
+							"name": "HP KOOLKUT",
+							"data": [
+								{ "name": "HP KOOLKUT 40", "data": "HPCL0049" },
+								{ "name": "HP KOOLKUT 40 MS", "data": "HPCL0050" },
+								{ "name": "HP KOOLKUT 40 M", "data": "HPCL0051" },
+								{ "name": "HP KOOLKUT 60", "data": "HPCL0052" },
+								{ "name": "HP KOOLKUT EP 66", "data": "HPCL0053" },
+								{ "name": "HP KOOLKUT EP 67", "data": "HPCL0054" },
+								{ "name": "HP KOOLKUT EP 68", "data": "HPCL0055" },
+								{ "name": "HP KOOLKUT EP 681", "data": "HPCL0056" },
+								{ "name": "HP KOOLKUT 70", "data": "HPCL0057" },
+								{ "name": "HP KOOLKUT 80", "data": "HPCL0058" }
+							]
+						},
+						{
+							"name": "HP SYNTHKOOL",
+							"data": [
+								{ "name": "HP SYNTHKOOL 100", "data": "HPCL0059" },
+								{ "name": "HP SYNTHKOOL 101", "data": "HPCL0060" },
+								{ "name": "HP SYNTHKOOL 102", "data": "HPCL0061" },
+								{ "name": "HP SYNTHKOOL 24121", "data": "HPCL0062" },
+								{ "name": "HP SYNTHKOOL 24121", "data": "HPCL0062" }
+							]
+						},
+						{
+							"name": "HP TRIMOFIN",
+							"data": [
+								{ "name": "HP TRIMOFIN 12", "data": "HPCL0063" },
+								{ "name": "HP TRIMOFIN 14", "data": "HPCL0064" },
+								{ "name": "HP TRIMOFIN 15", "data": "HPCL0065" },
+								{ "name": "HP TRIMOFIN 16", "data": "HPCL0066" },
+								{ "name": "HP TRIMOFIN 18", "data": "HPCL0067" },
+								{ "name": "HP TRIMOFIN 19", "data": "HPCL0068" },
+								{ "name": "HP TRIMOFIN 20", "data": "HPCL0069" },
+								{ "name": "HP TRIMOFIN 21", "data": "HPCL0070" },
+								{ "name": "HP TRIMOFIN 22", "data": "HPCL0071" },
+								{ "name": "HP TRIMOFIN 23", "data": "HPCL0072" },
+								{ "name": "HP TRIMOFIN 25", "data": "HPCL0073" },
+								{ "name": "HP TRIMOFIN 235", "data": "HPCL0074" },
+								{ "name": "HP TRIMOFIN 23 DEF", "data": "HPCL0075" },
+								{ "name": "HP TRIMOFIN 26", "data": "HPCL0076" },
+								{ "name": "HP TRIMOFIN 27", "data": "HPCL0077" },
+								{ "name": "HP TRIMOFIN 54", "data": "HPCL0078" },
+								{ "name": "HP TRIMOFIN 55", "data": "HPCL0079" },
+								{ "name": "HP TRIMOFIN 56", "data": "HPCL0080" },
+								{ "name": "HP TRIMOFIN 58", "data": "HPCL0081" },
+								{ "name": "HP TRIMOFIN 58 BR", "data": "HPCL0082" },
+								{ "name": "HP TRIMOFIN 595", "data": "HPCL0083" },
+								{ "name": "HP TRIMOFIN 64", "data": "HPCL0084" },
+								{ "name": "HP TRIMOFIN 65", "data": "HPCL0085" },
+								{ "name": "HP TRIMOFIN 66", "data": "HPCL0086" },
+								{ "name": "HP TRIMOFIN AL", "data": "HPCL0087" },
+								{ "name": "HP TRIMOFIN GR", "data": "HPCL0088" }
+							]
+						},
+						{
+							"name": "HP TRIMOL",
+							"data": [{ "name": "HP TRIMOL 225", "data": "HPCL0089" }]
+						}
+					]
+				},
+				{
+					"name": "Thermic Fluids",
+					"data": [
+						{ "name": "HYTHERM 500", "data": "HPCL0028" },
+						{ "name": "HYTHERM 600", "data": "HPCL0029" },
+						{ "name": "HYTHERM 600 PLUS", "data": "HPCL0099" },
+						{ "name": "HYTHERM S", "data": "HPCL0098" },
+						{ "name": "GAB SHOX OIL AW", "data": "HPCL0116" }
+					]
+				},
+				{
+					"name": "Metal Drawing",
+					"data": [
+						{ "name": "HP DRAWMET 15, 15S", "data": "HPCL0107" },
+						{ "name": "HP DRAWMET 22", "data": "HPCL0108" },
+						{ "name": "HP DRAWMET 44", "data": "HPCL0109" },
+						{ "name": "HP DRAWMET 66", "data": "HPCL0110" },
+						{ "name": "HP DRAWMET 81 CF", "data": "HPCL0111" }
+					]
+				},
+				{
+					"name": "Rolling Oils",
+					"data": [
+						{ "name": "HP ROLMET 7", "data": "HPCL0033" },
+						{ "name": "HP ROLMET V 45", "data": "HPCL0034" },
+						{ "name": "HP ROLMET V 45, V 55", "data": "HPCL0035" },
+						{ "name": "HP ROLMET N34", "data": "HPCL0036" },
+						{ "name": "HP ROLMET 40", "data": "HPCL0037" }
+					]
+				},
+				{
+					"name": "Rust Preventives",
+					"data": [
+						{
+							"name": "RUSTOP 68, 173, 173 DW, 175, 179,184",
+							"data": "HPCL0100"
+						},
+						{ "name": "RUSTOP 179 C", "data": "HPCL0101" },
+						{ "name": "RUSTOP 185", "data": "HPCL0102" },
+						{ "name": "RUSTOP 273", "data": "HPCL0103" },
+						{ "name": "RUSTOP 274, 275, 276, 282, 283", "data": "HPCL0104" },
+						{ "name": "RUSTOP 285, 286, 287", "data": "HPCL0105" },
+						{ "name": "RUSTOP 387, 388,389", "data": "HPCL0106" }
+					]
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "Lubricants (Steel Plants)",
+			"iconType": "image",
+			"icon": "OIL_ICON",
+			"data": []
+		}
+	]
+}

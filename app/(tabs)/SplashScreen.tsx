@@ -1,5 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { ALL_IMAGES } from "@/hooks/Allimages";
 import { getDeviceUUID } from "@/hooks/deviceUUID";
+import { loginUser } from "@/utils/authService";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import { useEffect, useRef, useState } from "react";
@@ -8,6 +10,8 @@ import * as Progress from "react-native-progress";
 
 export default function SplashScreen() {
 	const [progress, setProgress] = useState(0);
+	const [email] = useState("product_app@hpcl.co.in");
+	const [password] = useState("AdminforAPP#12345");
 	const blinkAnim = useRef(new Animated.Value(1)).current;
 
 	const testInternetSpeed = async () => {
@@ -25,7 +29,19 @@ export default function SplashScreen() {
 
 			return speed;
 		} catch (error) {
+			console.error(error);
 			return 0;
+		}
+	};
+
+	const handleLogin = async () => {
+		try {
+			await loginUser({
+				email,
+				password,
+			});
+		} catch (error) {
+			console.error("Login failed:", error);
 		}
 	};
 
@@ -57,6 +73,7 @@ export default function SplashScreen() {
 		};
 
 		checkSpeedAndStart();
+		handleLogin();
 
 		return () => clearInterval(progressInterval);
 	}, []);

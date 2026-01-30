@@ -38,29 +38,29 @@ const Header = ({
 				return (
 					<View style={styles.container}>
 						<Image
-							style={styles.headImage}
-							source={ALL_IMAGES.MASTER_LOGO}
+							style={styles.mainLogo}
+							source={ALL_IMAGES.MASTER}
 							resizeMode="contain"
 						/>
-						<View>
+						{/* <View>
 							<Text style={[styles.headText, { fontSize: 20 }]}>
 								हिंदुस्तान पेट्रोलियम कॉर्पोरेशन लिमिटेड
 							</Text>
 							<Text style={[styles.headText, { fontSize: 16 }]}>
-								Hindustan Petroleum Corporation Limited
+								Hindustan Petroleum Corporation Ltd
 							</Text>
 							<Text
 								style={[styles.headText, { fontSize: 20, fontWeight: "900" }]}
 							>
 								(A Maharatna Company)
 							</Text>
-						</View>
+						</View> */}
 					</View>
 				);
 			default:
 				return (
 					<Image
-						style={[{ width: "30%", height: 150 }]}
+						style={[{ width: "25%", height: 150 }]}
 						source={ALL_IMAGES.MASTER_LOGO}
 						resizeMode="contain"
 					/>
@@ -72,7 +72,16 @@ const Header = ({
 		<View style={getStyle()}>
 			{getHeader()}
 			<View style={{ width: "70%" }}>
-				{caption && <Text style={[styles.content]}>{caption}</Text>}
+				{caption && (
+					<Text
+						numberOfLines={2}
+						adjustsFontSizeToFit
+						minimumFontScale={0.65}
+						style={[styles.content]}
+					>
+						{caption}
+					</Text>
+				)}
 				{subCaption && <Text style={styles.subTitle}>{subCaption}</Text>}
 			</View>
 			<View style={styles.divider} />
@@ -89,8 +98,13 @@ const styles = StyleSheet.create({
 		padding: 5,
 		marginTop: 30,
 	},
+	mainLogo: {
+		width: "100%",
+		height: 210,
+		marginRight: 5,
+	},
 	headImage: {
-		width: "30%",
+		width: "25%",
 		height: 200,
 		marginRight: 5,
 	},

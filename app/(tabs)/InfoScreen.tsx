@@ -8,7 +8,6 @@ import ProductComparison from "@/components/Ui/Info/ProductComparison";
 import RelatedProducts from "@/components/Ui/Info/RelatedProducts";
 import SpecificationsCard from "@/components/Ui/Info/SpecificationsCard";
 
-import infoData from "@/constants/Jsons/InfoData.json";
 import devData from "@/constants/Jsons/devData.json";
 import { useLocalSearchParams } from "expo-router";
 import React, { useRef, useState } from "react";
@@ -21,10 +20,7 @@ const InfoScreen = ({ route }: any) => {
 	const params = useLocalSearchParams<{ name?: string }>();
 	const name = params.name;
 
-	const data = name
-		? (infoData[name as keyof typeof infoData] ??
-			devData[name as keyof typeof devData])
-		: undefined;
+	const data = name ? devData[name as keyof typeof devData] : undefined;
 
 	const [enquireOpen, setEnquireOpen] = useState(false);
 
@@ -58,17 +54,19 @@ const InfoScreen = ({ route }: any) => {
 						<View style={{ margin: 5 }}>
 							<Text style={styles.description}>{data.description}</Text>
 						</View>
+
 						<View>
 							<SpecificationsCard data={data.specifications} />
 						</View>
+
 						<View>
 							<AppIndustries data={data.appData} />
 						</View>
-						<View>
+						<View style={{ margin: 10 }}>
 							<PackagingSupply data={data.packaging} />
 						</View>
 						<View>
-							<DocumentsDownloads data={data.title} />
+							<DocumentsDownloads data={data} />
 						</View>
 						<View>
 							<RelatedProducts Packages={data.related} />

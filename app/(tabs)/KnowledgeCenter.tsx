@@ -3,7 +3,7 @@ import InputSearch from "@/components/Ui/InputSearch";
 import wholeData from "@/constants/Jsons/wholeData.json";
 import { Colors } from "@/constants/theme";
 import { router } from "expo-router";
-import React from "react";
+import React, { useState } from "react";
 import {
 	Dimensions,
 	Image,
@@ -31,6 +31,9 @@ const getColumns = () => {
 
 const KnowledgeCenter = () => {
 	const columns = getColumns();
+
+	const [loading, setLoading] = useState(false);
+	const [slowNet, setSlowNet] = useState(false);
 
 	const navigate = (itemName: string) => {
 		switch (itemName) {
@@ -90,8 +93,12 @@ const KnowledgeCenter = () => {
 
 	return (
 		<View style={styles.container}>
-			<Header caption="Knowledge Center" />
-			<InputSearch />
+			<Header caption={"Knowledge \n Center"} />
+			<InputSearch
+				setLoading={setLoading}
+				setSlowNet={setSlowNet}
+				placeHolder="Search"
+			/>
 			<View>
 				<View style={styles.row}>
 					{wholeData.Knowledge.map((item: any, index: number) => (

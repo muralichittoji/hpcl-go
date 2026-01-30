@@ -15,6 +15,7 @@ export default function HomeLayout() {
 				<Stack.Screen name="InfoScreen" options={{ headerShown: false }} />
 				<Stack.Screen name="SubPage" options={{ headerShown: false }} />
 				<Stack.Screen name="SampleData" options={{ headerShown: false }} />
+				<Stack.Screen name="result" options={{ headerShown: false }} />
 			</Stack>
 		</SafeAreaView>
 	);

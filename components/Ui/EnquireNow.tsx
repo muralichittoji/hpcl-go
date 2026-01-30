@@ -105,6 +105,7 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 							placeholder="Mobile Number"
 							placeholderTextColor={Colors.grayDeep}
 							value={mobile}
+							maxLength={10}
 							onChangeText={setMobile}
 							keyboardType="phone-pad"
 							style={styles.input}

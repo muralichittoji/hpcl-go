@@ -1,72 +1,124 @@
-# Welcome to your Expo app 👋
+# HPCL – Go
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+HPCL – Go is an **Expo-based mobile application** built for rapid development and real-time testing across devices using **Expo Go**, without requiring production builds (APK / IPA) during development.
 
-## Get started
+---
 
-1. Install dependencies
+## 📌 Project Overview
 
-   ```bash
-   npm install
-   ```
+- Built using **Expo** and **React Native**
+- Live preview on physical devices via **Expo Go**
+- No APK / IPA generation required during development
+- Designed for fast iteration and real-time testing
+- Supports **modular tagging** for structured and scalable content
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🌐 Data & Architecture Overview
 
-In the output, you'll find options to open the app in a
+The application follows a **remote-first, cache-driven architecture** powered by JSON-based backend content.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Data Loading Strategy
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- All application data is served from **JSON-based backend APIs**
+- On first launch, the app checks internet speed:
+  - If the internet speed is **greater than 1 Mbps**, data is fetched from the backend
+  - The fetched data is stored locally in cache
+- Once data is cached, the app no longer loads data directly from JSON APIs on startup
 
-## Get a fresh project
+---
 
-When you're ready, run:
+### Cache Management & Data Updates
+
+- After the initial data load, the app relies on **cached data**
+- A separate **update-check API** is periodically called to verify whether backend data has changed
+- If the update-check API returns `true`:
+  - The app re-fetches the complete dataset from the backend
+  - The existing cache is cleared and updated with the latest data
+- If the update-check API returns `false`:
+  - Cached data continues to be used without additional backend calls
+
+---
+
+### Offline Support
+
+- Once data is cached, the app can function **without an active internet connection**
+- This approach ensures better performance and usability in low or unstable network conditions
+
+---
+
+## 🔐 Device Identification
+
+- On every **fresh installation** of the app:
+  - A **UUID** is generated on the device
+  - The UUID is stored securely using secure storage
+- This UUID is used for device-level identification during API interactions
+
+---
+
+## 🏷️ Tags
+
+- expo
+- react-native
+- expo-go
+- offline-first
+- cache-management
+- json-driven
+- mobile-architecture
+
+## 🧠 Content Classification for LLM
+
+The application uses predefined tags to classify content before sending it to the LLM.  
+Each tag determines how the content should be processed and interpreted.
+
+---
+
+### 📤 Tag-1: Normal Search
+
+Used for standard application functionality such as:
+
+- Screens
+- Navigation
+- Forms
+- Business logic
+
+This tag represents regular app interactions and operational data.
+
+---
+
+### 📘 Tag-2: Knowledge Center
+
+Used specifically within the **Knowledge Center** screen for informational content, including:
+
+- FAQs
+- User guides
+- Tutorials
+- Static documentation screens
+
+This tag helps the LLM distinguish help and learning content from core application logic.
+
+---
+
+### 🖼️ Tag-4: Image Content (BASE64 Required)
+
+Content under this tag **must include images encoded in BASE64 format**.
+
+#### Use Cases:
+
+- Offline image rendering
+- APIs that do not support multipart uploads
+- Embedded or bundled assets
+
+⚠️ **Note:**  
+Images should be optimized **before** converting to BASE64 to minimize payload size and improve performance.
+
+---
+
+## 🛠 Environment Requirements
+
+Ensure the following dependencies are installed on your system:
 
 ```bash
-npm run reset-project
+Node.js v24
+Java 21 (LTS)
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-```
-      "eas": {
-        "projectId": "1929e595-9ff8-4ca7-a545-5e0ef4ee39d0"
-      }
-```
-
-```
-{
-  "cli": {
-    "version": ">= 16.28.0"
-  },
-  "build": {
-    "apk": {
-      "android": {
-        "buildType": "apk"
-      },
-      "distribution": "internal"
-    }
-  }
-}
-```# hpcl-go

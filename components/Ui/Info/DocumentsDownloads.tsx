@@ -1,37 +1,83 @@
+import { ALL_PDFS } from "@/hooks/ALL_PDFS";
+import { Asset } from "expo-asset";
+import * as FileSystem from "expo-file-system/legacy";
 import { router } from "expo-router";
+import * as Sharing from "expo-sharing";
 import React, { useState } from "react";
-import { Modal, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { WebView } from "react-native-webview";
+import {
+	ActivityIndicator,
+	Alert,
+	StyleSheet,
+	Text,
+	TouchableOpacity,
+	View,
+} from "react-native";
 
-const documents = [
-	// { title: "Product Data Sheet (PDS)", icon: "📄" },
-	{ title: "Material Safety Data Sheet (MSDS)", icon: "🛡️" },
-	// { title: "Brochure", icon: "📘" },
-];
+/* ---------------- DATA ---------------- */
+
+const documents = [{ title: "Material Safety Data Sheet (MSDS)", icon: "🛡️" }];
+
+/* ---------------- COMPONENT ---------------- */
 
 const DocumentsDownloads = ({ data }: any) => {
-	const [openPdf, setOpenPdf] = useState(false);
+	const [loading, setLoading] = useState(false);
 
-	const onDocumentPress = (title: string) => {
-		switch (title) {
-			case "Material Safety Data Sheet (MSDS)":
-				if (data === "E20 MS") {
-					setOpenPdf(true);
-				} else router.push("/SampleData");
-				break;
+	/* ---------------- OPEN MSDS PDF ---------------- */
 
-			default:
+	const openMsdsPdf = async () => {
+		try {
+			if (!data?.MSDS) {
 				router.push("/SampleData");
-				break;
+				return;
+			}
+
+			const pdfModule = ALL_PDFS[data.MSDS];
+			if (!pdfModule) {
+				router.push("/SampleData");
+				return;
+			}
+
+			setLoading(true);
+
+			const fileUri = FileSystem.documentDirectory + `${data.MSDS}.pdf`;
+
+			// ✅ Use cached file if already exists
+			const fileInfo = await FileSystem.getInfoAsync(fileUri);
+			if (!fileInfo.exists) {
+				const asset = Asset.fromModule(pdfModule);
+				await asset.downloadAsync();
+
+				await FileSystem.copyAsync({
+					from: asset.localUri!,
+					to: fileUri,
+				});
+			}
+
+			// ✅ Open using native viewer (iOS & Android)
+			await Sharing.shareAsync(fileUri, {
+				mimeType: "application/pdf",
+				UTI: "com.adobe.pdf", // iOS safe
+			});
+		} catch (error) {
+			console.log("MSDS open failed:", error);
+			Alert.alert("Error", "Unable to open MSDS file");
+		} finally {
+			setLoading(false);
 		}
 	};
 
-	const closeModal = () => {
-		setOpenPdf(false);
+	/* ---------------- CLICK HANDLER ---------------- */
+
+	const onDocumentPress = async (title: string) => {
+		if (title === "Material Safety Data Sheet (MSDS)") {
+			await openMsdsPdf();
+			return;
+		}
+
+		router.push("/SampleData");
 	};
 
-	const url =
-		"https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82ZmRlYzFmMDVkZDRlYzA1L0lRRGZYYTFOdnFDT1NhTVBNOWQ0Wlh5MUFaQTJNYnNkaUc0V3FVRXdIT2tXM3lVP2U9MmtwaDNX&cid=6FDEC1F05DD4EC05&id=6FDEC1F05DD4EC05%21s4dad5ddfa0be498ea30f33d778657cb5&parId=6FDEC1F05DD4EC05%21105&o=OneUp";
+	/* ---------------- UI ---------------- */
 
 	return (
 		<View style={styles.container}>
@@ -41,31 +87,12 @@ const DocumentsDownloads = ({ data }: any) => {
 				<Text style={styles.headerText}>Documents & Downloads</Text>
 			</View>
 
-			{openPdf && (
-				<View style={{ height: "70%" }}>
-					<Modal
-						visible={openPdf}
-						animationType="slide"
-						onRequestClose={closeModal}
-					>
-						<View style={{ flex: 1 }}>
-							<TouchableOpacity onPress={closeModal} style={styles.closeButton}>
-								<Text style={styles.closeText}>X</Text>
-							</TouchableOpacity>
-
-							<WebView
-								source={{ uri: url }}
-								javaScriptEnabled
-								domStorageEnabled
-								startInLoadingState
-								style={{ flex: 1 }}
-							/>
-						</View>
-					</Modal>
-				</View>
+			{/* Loader */}
+			{loading && (
+				<ActivityIndicator size="large" style={{ marginVertical: 20 }} />
 			)}
 
-			{/* List */}
+			{/* Documents list */}
 			{documents.map((item, index) => (
 				<TouchableOpacity
 					key={index}
@@ -75,6 +102,7 @@ const DocumentsDownloads = ({ data }: any) => {
 					<View style={styles.itemIcon}>
 						<Text style={styles.iconText}>{item.icon}</Text>
 					</View>
+
 					<Text style={styles.itemText}>{item.title}</Text>
 				</TouchableOpacity>
 			))}
@@ -84,66 +112,26 @@ const DocumentsDownloads = ({ data }: any) => {
 
 export default DocumentsDownloads;
 
+/* ---------------- STYLES ---------------- */
+
 const styles = StyleSheet.create({
 	container: {
 		backgroundColor: "#F0F9FF",
 		padding: 16,
 		borderRadius: 18,
 	},
-
-	closeButton: {
-		position: "absolute",
-		top: 45, // safe for status bar
-		right: 16,
-		zIndex: 10,
-		width: 32,
-		height: 32,
-		borderRadius: 16,
-		backgroundColor: "rgba(0,0,0,0.6)",
-		justifyContent: "center",
-		alignItems: "center",
-	},
-
-	closeText: {
-		color: "#fff",
-		fontSize: 18,
-		fontWeight: "700",
-	},
-
-	/* Header */
 	header: {
 		flexDirection: "row",
 		alignItems: "center",
 		justifyContent: "center",
 		marginBottom: 12,
 	},
-
-	modalOverlay: {
-		flex: 1,
-		justifyContent: "center",
-		alignItems: "center",
-		backgroundColor: "rgba(0,0,0,0.5)",
-	},
-	modalContent: {
-		width: "90%",
-		height: "80%",
-		backgroundColor: "white",
-		borderRadius: 10,
-		overflow: "hidden",
-	},
-
-	headerIcon: {
-		fontSize: 22,
-		marginRight: 8,
-	},
-
+	headerIcon: { fontSize: 22, marginRight: 8 },
 	headerText: {
 		fontSize: 18,
 		fontWeight: "700",
 		color: "#0F172A",
 	},
-
-	/* Items */
 	item: {
 		flexDirection: "row",
 		alignItems: "center",
@@ -152,7 +140,6 @@ const styles = StyleSheet.create({
 		borderRadius: 14,
 		marginBottom: 10,
 	},
-
 	itemIcon: {
 		width: 36,
 		height: 36,
@@ -162,12 +149,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		marginRight: 12,
 	},
-
-	iconText: {
-		fontSize: 16,
-		color: "#FFFFFF",
-	},
-
+	iconText: { fontSize: 16, color: "#FFFFFF" },
 	itemText: {
 		fontSize: 15,
 		fontWeight: "600",

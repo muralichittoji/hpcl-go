@@ -8,6 +8,7 @@ import {
 
 import Header from "@/components/Ui/Header";
 import { Colors } from "@/constants/theme";
+import { rf } from "@/utils/responsive";
 import { router } from "expo-router";
 import React from "react";
 
@@ -52,15 +53,15 @@ const styles = StyleSheet.create({
 	content: {
 		textAlign: "center",
 		color: Colors.blueDark,
-		fontSize: 45,
-		fontWeight: "500",
+		fontSize: 35,
+		fontWeight: "700",
 		margin: 10,
 	},
 	description: {
 		textAlign: "center",
 		color: "#555",
 		fontSize: 25,
-		fontWeight: "400",
+		fontWeight: "500",
 		margin: 20,
 	},
 	enterBtn: {
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
 	},
 	enterText: {
 		color: "white",
-		fontSize: 20,
+		fontSize: rf(25),
 		fontWeight: "600",
 	},
 	loginText: {

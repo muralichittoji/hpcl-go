@@ -6,13 +6,22 @@
 			"icon": "FUEL_ICON",
 			"name": "Motor Fuels",
 			"screen": "FuelsHome",
+			"title": "Motor \n Fuels",
 			"description": "Motor Fuels provides access to a range of petroleum and energy products designed for transportation and industrial use. This category includes high-performance petrol blends, diesel, aviation fuel, and essential fuels like ethanol and kerosene. Each fuel type is optimized to meet specific engine, efficiency, and regulatory requirements, ensuring reliable performance across road, air, and industrial applications.",
 			"data": [
 				{ "id": 1, "name": "E20 MS", "data": "HPCL0001" },
 				{ "id": 2, "name": "High Speed Diesel", "data": "HPCL0002" },
 				{ "id": 3, "name": "Ethanol", "data": "HPCL0003" },
-				{ "id": 4, "name": "Kerosene", "data": "HPCL0004" },
-				{ "id": 5, "name": "ATF (Jet A-1)", "data": "HPCL0005" }
+				{ "id": 4, "name": "Domestic Fuel", "data": "HPCL0004" },
+				{ "id": 5, "name": "Aviation Fuel", "data": "HPCL0005" },
+				{
+					"id": 6,
+					"name": "Special Motor Fuel",
+					"data": [
+						{ "id": 1, "name": "HP TURBOJET", "data": "HPCL0001" },
+						{ "id": 1, "name": "POWER 95  MS", "data": "HPCL0001" }
+					]
+				}
 			]
 		},
 
@@ -24,13 +33,39 @@
 			"screen": "LubricantsScreen",
 			"description": "Lubricants offers a comprehensive range of oils and greases designed to protect, enhance, and extend the life of engines and machinery. These products reduce friction, minimize wear, and ensure smooth operation across automotive, industrial, and commercial applications, even under demanding operating conditions.",
 			"data": [
-				{ "id": 1, "name": "Transformer Oil", "data": [] },
-				{ "id": 2, "name": "Base Oil", "data": [] },
+				{
+					"id": 1,
+					"name": "Automotive Oils",
+					"data": [
+						{ "name": "HP KISAN SHAKTI", "data": "HPCL0209" },
+						{ "name": "HP KISAN SHAKTI UTTO", "data": "HPCL0210" },
+						{ "name": "HP KISAN TRACTOR OIL 20W-40", "data": "HPCL0211" },
+						{ "name": "HP PUMPSET OIL", "data": "HPCL0212" },
+						{ "name": "HP TRACTOR OIL 15W-40", "data": "HPCL0213" },
+						{ "name": "HP WET BRAKE OIL", "data": "HPCL0214" },
+						{ "name": "HP SUPERTRAN", "data": "HPCL0215" },
+						{ "name": "HP SUPERTRAN HVI", "data": "HPCL0216" }
+					]
+				},
+				{
+					"id": 2,
+					"name": "Base Oil",
+					"data": [
+						{ "name": "75 SM (GR I)", "data": "HPCL0020" },
+						{ "name": "150 SN (GR I)", "data": "HPCL0021" },
+						{ "name": "500 N (GR I)", "data": "HPCL0022" },
+						{ "name": "Stock 2500 BRF(150 BS) (GR I)", "data": "HPCL0023" },
+						{ "name": "75 SM (GRII)", "data": "HPCL0024" },
+						{ "name": "150 SN (GRII)", "data": "HPCL0025" },
+						{ "name": "500 SN (GRII)", "data": "HPCL0026" }
+					]
+				},
 
 				{
 					"id": 3,
 					"name": "Speciality",
 					"data": [
+						{ "name": "CBFS", "data": "HPCL0027" },
 						{ "name": "HP METAQUENCH 39", "data": "HPCL0038" },
 						{ "name": "HP METAQUENCH 40", "data": "HPCL0039" },
 						{ "name": "HP METAQUENCH 42", "data": "HPCL0040" },
@@ -83,95 +118,147 @@
 						{ "name": "HP TRIMOFIN AL", "data": "HPCL0087" },
 						{ "name": "HP TRIMOFIN GR", "data": "HPCL0088" },
 						{ "name": "HP TRIMOL 225", "data": "HPCL0089" },
-						{ "name": "SHOCK ABSORBER OIL (T3)", "data": "HPCL0112" },
-						{ "name": "CBFS", "data": "HPCL0027" }
+						{ "name": "SHOCK ABSORBER OIL (T3)", "data": "HPCL0112" }
 					]
 				},
-
 				{
 					"id": 4,
-					"name": "Process Oils",
-					"data": [
-						{ "name": "ELASTO 165", "data": "HPCL0090" },
-						{ "name": "ELASTO 245", "data": "HPCL0091" },
-						{ "name": "ELASTO 255", "data": "HPCL0092" },
-						{ "name": "ELASTO 215/216", "data": "HPCL0093" },
-						{ "name": "ELASTO 541", "data": "HPCL0094" },
-						{ "name": "ELASTO 710", "data": "HPCL0095" },
-						{ "name": "ELASTO SUPREME (TRAE)", "data": "HPCL0096" },
-						{ "name": "ELASTO SUPREME H (RAE)", "data": "HPCL0097" }
-					]
-				},
-
-				{
-					"id": 5,
-					"name": "Motor Fuel",
-					"data": [{ "name": "HP Diesel Exhaust Fluid", "data": "HPCL0030" }]
-				},
-
-				{
-					"id": 6,
-					"name": "Coolant",
-					"data": [
-						{ "name": "Koolguard Advance 1:1", "data": "HPCL0113" },
-						{ "name": "KOOLGARD CLASSIC 1:7", "data": "HPCL0119" },
-						{ "name": "HP COOL (KOOLGARD)", "data": "HPCL0120" },
-						{ "name": "HP POWER KOOL - BULK", "data": "HPCL0121" },
-						{ "name": "POWER KOOL RR", "data": "HPCL0122" },
-						{ "name": "HP THANDA RAJA - BULK", "data": "HPCL0123" }
-					]
-				},
-
-				{
-					"id": 7,
-					"name": "Thermic Fluids",
-					"data": [
-						{ "name": "HYTHERM 500", "data": "HPCL0028" },
-						{ "name": "HYTHERM 600", "data": "HPCL0029" },
-						{ "name": "HYTHERM 600 PLUS", "data": "HPCL0099" },
-						{ "name": "HYTHERM S", "data": "HPCL0098" },
-						{ "name": "GAB SHOX OIL AW", "data": "HPCL0116" }
-					]
-				},
-
-				{
-					"id": 8,
-					"name": "Metal Drawing",
-					"data": [
-						{ "name": "HP DRAWMET 15, 15S", "data": "HPCL0107" },
-						{ "name": "HP DRAWMET 22", "data": "HPCL0108" },
-						{ "name": "HP DRAWMET 44", "data": "HPCL0109" },
-						{ "name": "HP DRAWMET 66", "data": "HPCL0110" },
-						{ "name": "HP DRAWMET 81 CF", "data": "HPCL0111" }
-					]
-				},
-
-				{
-					"id": 9,
-					"name": "Rolling Oils",
-					"data": [
-						{ "name": "HP ROLMET 7", "data": "HPCL0033" },
-						{ "name": "HP ROLMET V 45", "data": "HPCL0034" },
-						{ "name": "HP ROLMET V 45, V 55", "data": "HPCL0035" },
-						{ "name": "HP ROLMET N34", "data": "HPCL0036" },
-						{ "name": "HP ROLMET 40", "data": "HPCL0037" }
-					]
-				},
-
-				{
-					"id": 10,
-					"name": "Rust Preventives",
+					"name": "Industrial Oils",
 					"data": [
 						{
-							"name": "RUSTOP 68, 173, 173 DW, 175, 179,184",
-							"data": "HPCL0100"
+							"name": "COMPRESSOR OILS",
+							"data": [
+								{
+									"name": "HYCOM VDL T 32, 46, 68, 100, 150, 220, 320",
+									"data": "HPCL0219"
+								},
+								{ "name": "HYCOM TURBO SYN 10 / 15", "data": "HPCL0218" },
+								{
+									"name": "HYCOM C 100, 150, 220, 320, 460",
+									"data": "HPCL0217"
+								},
+								{ "name": "HYCOM 150 P", "data": "HPCL0160" },
+								{ "name": "HYCOM LS EXPO SERIES", "data": "HPCL0167" },
+								{ "name": "HYCOM VDL", "data": "HPCL0203" },
+								{ "name": "HYCOM C", "data": "HPCL0204" },
+								{ "name": "HYCOM LS Series", "data": "HPCL0205" },
+								{ "name": "HYCOM  SYN Series", "data": "HPCL0207" },
+								{ "name": "HYCOM TURBO SYN Series", "data": "HPCL0206" },
+								{ "name": "HYCOM  SYN PE  Series", "data": "HPCL0165" },
+								{ "name": "HYCOM  PGE  Series", "data": "HPCL0166" },
+								{ "name": "HYCOM LS EXPO SERIES", "data": "HPCL0208" }
+							]
 						},
-						{ "name": "RUSTOP 179 C", "data": "HPCL0101" },
-						{ "name": "RUSTOP 185", "data": "HPCL0102" },
-						{ "name": "RUSTOP 273", "data": "HPCL0103" },
-						{ "name": "RUSTOP 274, 275, 276, 282, 283", "data": "HPCL0104" },
-						{ "name": "RUSTOP 285, 286, 287", "data": "HPCL0105" },
-						{ "name": "RUSTOP 387, 388,389", "data": "HPCL0106" }
+						{
+							"id": 5,
+							"name": "Cylinder oil",
+							"data": [{ "name": "CYNDOL GRADES", "data": "HPCL0220" }]
+						},
+						{
+							"name": "FILM OIL",
+							"data": [
+								{ "name": "HP FILM OIL", "data": "HPCL0221" },
+								{
+									"name": "HP STEEL 320",
+									"data": "HPCL0156"
+								},
+								{
+									"name": "HP STEEL EP 100",
+									"data": "HPCL0157"
+								},
+								{ "name": "HP STEEL GRADES", "data": "HPCL0155" }
+							]
+						},
+						{
+							"name": "GENERAL PURPOSE MACHINERY OILS",
+							"data": [
+								{ "name": "HP FLUSHING OIL", "data": "HPCL0178" },
+								{ "name": "YANTROL / YANTROL N SERIES", "data": "HPCL0222" }
+							]
+						},
+						{
+							"name": "HYDRAULIC OILS",
+							"data": [
+								{ "name": "ENKLO Grades", "data": "HPCL0133" },
+								{ "name": "ENKLO HLP", "data": "HPCL0134" },
+								{ "name": "ENKLO HLP T", "data": "HPCL0135" },
+								{ "name": "ENKLO HLP T AH", "data": "HPCL0136" },
+								{ "name": "ENKLO HVLP Series", "data": "HPCL0137" },
+								{ "name": "ENKLO HVLP AH SERIES", "data": "HPCL0139" },
+								{ "name": "ENKLO 46 PREMIUM", "data": "HPCL0140" },
+								{ "name": "ENKLO 68 PREMIUM", "data": "HPCL0141" },
+								{ "name": "ENKLO HLP SPA_WTHACO", "data": "HPCL0134" },
+								{ "name": "ENKLO HLP T", "data": "HPCL0135" },
+								{ "name": "ENKLO HLP T AH", "data": "HPCL0136" },
+								{ "name": "ENKLO HLP T PLUS", "data": "HPCL0142" },
+								{ "name": "ENKLO HVLP AH SERIES", "data": "HPCL0139" },
+								{ "name": "ENKLO FRDU 46", "data": "HPCL0143" },
+								{ "name": "ENKLO FRDU 68", "data": "HPCL0144" },
+								{ "name": "ENKLO FRPS 46", "data": "HPCL0145" },
+								{ "name": "ENKLO FRWG 46", "data": "HPCL0146" },
+								{ "name": "ENKLO SYNTHETIC", "data": "HPCL0147" },
+								{ "name": "ENKLO 68 SUPER", "data": "HPCL0148" },
+								{ "name": "ENKLO HVLP EE", "data": "HPCL0149" },
+								{ "name": "ENKLO HVI PLUS 32", "data": "HPCL0150" }
+							]
+						},
+						{
+							"name": "MACHINERY OILS",
+							"data": [{ "name": "WAYLUBE", "data": "HPCL0223" }]
+						},
+						{
+							"name": "OPEN GEAR LUBRICANTS",
+							"data": [
+								{ "name": "HYTAK", "data": "HPCL0224" },
+								{ "name": "HYTAK 500 NB", "data": "HPCL0225" },
+								{ "name": "HYTAK 500 NB-1000", "data": "HPCL0226" }
+							]
+						},
+						{
+							"name": "Pneumatic tool oils",
+							"data": [{ "name": "NU-MATIC", "data": "HPCL0168" }]
+						},
+						{
+							"name": "REFRIGERATION COMPRESSOR OILS",
+							"data": [
+								{ "name": "SEETUL GRADES", "data": "HPCL0227" },
+								{ "name": "SEETUL N 68 (P)", "data": "HPCL0228" },
+								{ "name": "SEETUL RFL GRADES", "data": "HPCL0229" },
+								{ "name": "SEETUL S 68", "data": "HPCL0230" },
+								{ "name": "SEETUL SE 68", "data": "HPCL0231" }
+							]
+						},
+						{
+							"name": "SPINDLE OILS",
+							"data": [
+								{ "name": "SPINTEK", "data": "HPCL0232" },
+								{ "name": "SPINTEK 3", "data": "HPCL0233" },
+								{ "name": "SPINTEK EE SERIES", "data": "HPCL0234" },
+								{ "name": "SPINTEX SYN 2", "data": "HPCL0235" }
+							]
+						},
+						{
+							"name": "HIGH TEMPRATURE CHAIN LUBRICANT",
+							"data": [
+								{ "name": "STANTROL 1,3", "data": "HPCL0236" },
+								{ "name": "CRUSHWELL 1, 2, 3, 4, 5", "data": "HPCL0193" },
+								{ "name": "CRUSHFINE 60 NB-I", "data": "HPCL0200" },
+								{ "name": "CRUSHFINE 60 NB-II", "data": "HPCL0173" },
+								{ "name": "CRUSHFINE 40 NB", "data": "HPCL0194" },
+								{ "name": "CRUSHFINE 45 NB-II", "data": "HPCL0195" }
+							]
+						},
+						{
+							"name": "TRANSFORMER OILS",
+							"data": [
+								{ "name": "HP TRANSFORMER OIL I", "data": "HPCL0019" },
+								{ "name": "HP TRANSFORMER OILS", "data": "HPCL0237" }
+							]
+						},
+						{
+							"name": "TURBINE OILS",
+							"data": [{ "name": "TURBINOL", "data": "HPCL0238" }]
+						}
 					]
 				},
 
@@ -194,85 +281,16 @@
 						{ "name": "MACHINERY OILS", "data": "HPCL0174" },
 						{ "name": "WIRE ROPE LUBRICANTS", "data": "HPCL0176" },
 						{ "name": "GENERAL PURPOSE MACHINERY OILS", "data": "HPCL0177" },
-						{ "name": "HP FLUSHING OIL", "data": "HPCL0178" },
 						{ "name": "CYLINDER OIL", "data": "HPCL0179" },
 						{ "name": "STENTER OIL", "data": "HPCL0180" }
 					]
 				},
-
-				{
-					"id": 12,
-					"name": "ENKLO",
-					"data": [
-						{ "name": "ENKLO 46 PREMIUM", "data": "HPCL0140" },
-						{ "name": "ENKLO 68 PREMIUM", "data": "HPCL0141" },
-						{ "name": "ENKLO HLP SPA_WTHACO", "data": "HPCL0134" },
-						{ "name": "ENKLO HLP T", "data": "HPCL0135" },
-						{ "name": "ENKLO HLP T AH", "data": "HPCL0136" },
-						{ "name": "ENKLO HLP T PLUS", "data": "HPCL0142" },
-						{ "name": "ENKLO HVLP AH SERIES", "data": "HPCL0139" },
-						{ "name": "ENKLO FRDU 46", "data": "HPCL0143" },
-						{ "name": "ENKLO FRDU 68", "data": "HPCL0144" },
-						{ "name": "ENKLO FRPS 46", "data": "HPCL0145" },
-						{ "name": "ENKLO FRWG 46", "data": "HPCL0146" },
-						{ "name": "ENKLO SYNTHETIC", "data": "HPCL0147" },
-						{ "name": "ENKLO 68 SUPER", "data": "HPCL0148" },
-						{ "name": "ENKLO HVLP EE", "data": "HPCL0149" },
-						{ "name": "ENKLO HVI PLUS 32", "data": "HPCL0150" }
-					]
-				},
-
-				{
-					"id": 13,
-					"name": "Compressor Oils",
-					"data": [{ "name": "HYCOM LS EXPO SERIES", "data": "HPCL0167" }]
-				},
-
-				{
-					"id": 14,
-					"name": "Turbine Oils",
-					"data": [
-						{ "name": "TURBINE OILS", "data": "HPCL0151" },
-						{ "name": "TURBINOL XT SERIES", "data": "HPCL0152" },
-						{ "name": "TURBINOL LP SERIES", "data": "HPCL0153" }
-					]
-				},
-
-				{
-					"id": 15,
-					"name": "Sugar Mill Oils",
-					"data": [
-						{ "name": "CRUSHWELL 1, 2, 3, 4, 5", "data": "HPCL0193" },
-						{ "name": "CRUSHFINE 60 NB-I", "data": "HPCL0173" },
-						{ "name": "CRUSHFINE 60 NB-II", "data": "HPCL0173" },
-						{ "name": "CRUSHFINE 40 NB", "data": "HPCL0194" },
-						{ "name": "CRUSHFINE 45 NB-II", "data": "HPCL0195" }
-					]
-				},
-
 				{
 					"id": 16,
 					"name": "Greases",
 					"data": [
 						{ "name": "AUTOMOTIVE GREASES", "data": "HPCL0181" },
-						{ "name": "INDUSTRIAL GREASES", "data": "HPCL0182" },
 						{ "name": "GREASES", "data": "HPCL0183" }
-					]
-				},
-
-				{
-					"id": 17,
-					"name": "Steel",
-					"data": [
-						{ "name": "HP STEEL GRADES", "data": "HPCL0155" },
-						{
-							"name": "HP STEEL 320 (BEARING OIL FOR STEEL PLANTS )",
-							"data": "HPCL0156"
-						},
-						{
-							"name": "HP STEEL EP 100 (BEARING OIL FOR STEEL PLANTS )",
-							"data": "HPCL0157"
-						}
 					]
 				}
 			]
@@ -286,8 +304,17 @@
 			"screen": "LpgScreen",
 			"description": "LPG provides access to liquefied petroleum gas solutions for domestic, commercial, and industrial use. Known for its clean-burning and efficient properties, LPG supports cooking, heating, and various energy needs with reliable performance and enhanced safety standards.",
 			"data": [
-				{ "id": 1, "name": "HP GAS", "data": "HPCL0031" },
-				{ "id": 2, "name": "HP GAS FLAME PLUS", "data": "HPCL0032" }
+				{ "id": 1, "name": "LPG Domestic", "data": "HPCL0031" },
+				{
+					"id": 1,
+					"name": "LPG Industrial ",
+					"data": [
+						{ "name": "HP GAS FLAME PLUS", "data": "HPCL0032" },
+						{ "name": "Butane ", "data": "HPCL0199" },
+						{ "name": "Propane", "data": "HPCL0198" }
+					]
+				},
+				{ "id": 3, "name": "LPG Industrial speciality", "data": "HPCL0201" }
 			]
 		},
 
@@ -303,10 +330,11 @@
 					"id": 1,
 					"iconType": "image",
 					"icon": "DRUMS_ICON",
-					"name": "Paving Bitumen",
+					"name": "Industrial Construction",
 					"data": [
-						{ "name": "HP GAS", "data": "HPCL0031" },
-						{ "name": "HP GAS FLAME PLUS", "data": "HPCL0032" }
+						{ "name": "Bitumen VG10", "data": "HPCL0016" },
+						{ "name": "Bitumen VG30", "data": "HPCL0017" },
+						{ "name": "Bitumen VG40", "data": "HPCL0018" }
 					]
 				},
 				{
@@ -315,16 +343,16 @@
 					"icon": "BULK_TANK_ICON",
 					"name": "Bulk Fuels",
 					"data": [
-						{ "id": 1, "name": "NV2 Grade", "data": "HPCL0011" },
-						{ "id": 2, "name": "Heating Oil", "data": "HPCL0012" },
-						{ "id": 3, "name": "Distillate Marine Fuel", "data": "HPCL0013" }
+						{ "name": "NV2 Grade", "data": "HPCL0011" },
+						{ "name": "Heating Oil", "data": "HPCL0012" },
+						{ "name": "LSHS (Low Sulphur Heavy Stock)", "data": "HPCL0015" }
 					]
 				},
 				{
 					"id": 3,
 					"iconType": "image",
 					"icon": "SOLVENTS_ICON",
-					"name": "Solvents",
+					"name": "Industrial Process Solvent",
 					"data": [
 						{ "name": "Low Aromatic Naphtha", "data": "HPCL0007" },
 						{ "name": "Food Grade HEXANE", "data": "HPCL0008" },
@@ -336,11 +364,8 @@
 					"id": 4,
 					"iconType": "image",
 					"icon": "WATER_ICON",
-					"name": "Industrial Liquids",
-					"data": [
-						{ "id": 1, "name": "Low Sulphur Heavy Stock", "data": "HPCL0015" },
-						{ "id": 2, "name": "Jute Batching Oil", "data": "HPCL0184" }
-					]
+					"name": "Process Oil",
+					"data": [{ "name": "Jute Batching Oil", "data": "HPCL0184" }]
 				},
 				{
 					"id": 5,
@@ -353,6 +378,19 @@
 						{ "name": "F01019S-MS", "data": "HPCL0187" },
 						{ "name": "F02020-MS", "data": "HPCL0188" }
 					]
+				},
+				{
+					"id": 5,
+					"iconType": "image",
+					"icon": "DRUMS_ICON",
+					"name": "Marine Fuel",
+					"data": [
+						{ "name": "Distillate Marine Fuel", "data": "HPCL0013" },
+						{
+							"name": "VLSFO RMG380",
+							"data": "HPCL0014"
+						}
+					]
 				}
 			]
 		}
@@ -362,7 +400,7 @@
 			"id": 1,
 			"icon": "search",
 			"iconType": "vector",
-			"name": "Product Finder",
+			"name": "Product\nFinder",
 			"navigation": "ProductFinder"
 		},
 
@@ -370,7 +408,7 @@
 			"id": 2,
 			"icon": "book",
 			"iconType": "vector",
-			"name": "Knowledge Center",
+			"name": "Knowledge\nCenter",
 			"navigation": "KnowledgeCenter"
 		}
 	]

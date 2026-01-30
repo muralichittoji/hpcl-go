@@ -1,5 +1,6 @@
 export const ALL_IMAGES = {
 	MASTER_LOGO: require("@/assets/images/Master_Logo.png"),
+	MASTER: require("@/assets/images/logo.png"),
 	LIQUID_ICON: require("@/assets/images/icons/Location.png"),
 	LOCATION_ICON: require("@/assets/images/icons/Location.png"),
 	CYLINDER_ICON: require("@/assets/images/icons/cylinder.png"),
