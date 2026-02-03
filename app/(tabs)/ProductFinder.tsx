@@ -10,8 +10,10 @@ import {
 } from "react-native";
 import DropDownPicker from "react-native-dropdown-picker";
 
+import CommonModal from "@/components/Ui/CommonModal";
 import Header from "@/components/Ui/Header";
 import InputSearch from "@/components/Ui/InputSearch";
+import LoadingOverlay from "@/components/Ui/LoadingOverlay";
 import wholeData from "@/constants/Jsons/wholeData.json";
 import { Colors } from "@/constants/theme";
 
@@ -87,7 +89,16 @@ const ProductFinder = () => {
 		<View style={styles.container}>
 			<Header caption={"Product \n Finder"} />
 			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} />
+			<LoadingOverlay visible={loading} text="Analyzing..." />
 
+			<CommonModal
+				visible={slowNet}
+				title="Slow Internet"
+				message="Backend Servers are at full swing. Please try again."
+				icon="speedometer-outline"
+				buttonText="Retry"
+				onPress={() => setSlowNet(false)}
+			/>
 			<ScrollView
 				keyboardShouldPersistTaps="handled"
 				contentContainerStyle={{ paddingBottom: 60 }}

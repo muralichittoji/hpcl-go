@@ -1,10 +1,17 @@
+// Local JSON data used to populate modal info (Page 3)
 import devData from "@/constants/Jsons/devData.json";
+
+// App theme colors
 import { Colors } from "@/constants/theme";
+
+// Centralized image map (string key → require image)
 import { ALL_IMAGES } from "@/hooks/Allimages";
+
+// Vector icons
 import { FontAwesome } from "@expo/vector-icons";
+
 import React, { useRef, useState } from "react";
 import {
-	Dimensions,
 	Image,
 	Modal,
 	Pressable,
@@ -13,30 +20,31 @@ import {
 	Text,
 	TouchableOpacity,
 	View,
+	useWindowDimensions,
 } from "react-native";
+
+// Safe area handling (notch, home indicator, etc.)
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-const { width } = Dimensions.get("window");
-
-const getColumns = () => {
-	if (width < 350) return 2;
-	if (width < 600) return 3;
-	return 4;
-};
-
+/* -------------------------------------------------------------------------- */
+/*                                Props Type                                  */
+/* -------------------------------------------------------------------------- */
 type UnifiedListMenuProps = {
-	items: any[];
-	navigate: (item: any) => void;
-	itemHeight: number;
+	items: any[]; // List data to render
+	navigate: (item: any) => void; // Navigation handler
+	itemHeight: number; // Height of each tile
 
-	// Optional features
-	scrollable?: boolean;
-	showIcons?: boolean;
-	getIcons?: (item: any) => any;
-	showInfo?: boolean;
-	useItemName?: boolean;
+	// Optional feature flags
+	scrollable?: boolean; // Enable vertical scrolling
+	showIcons?: boolean; // Show icons (image/vector)
+	getIcons?: (item: any) => any; // Optional icon resolver
+	showInfo?: boolean; // Show info modal button
+	useItemName?: boolean; // Controls font sizing logic
 };
 
+/* -------------------------------------------------------------------------- */
+/*                              Main Component                                 */
+/* -------------------------------------------------------------------------- */
 const UnifiedListMenu = ({
 	items,
 	navigate,
@@ -47,12 +55,30 @@ const UnifiedListMenu = ({
 	showInfo = false,
 	useItemName = false,
 }: UnifiedListMenuProps) => {
+	// Safe-area padding
 	const insets = useSafeAreaInsets();
+
+	// ScrollView ref (future scroll control if needed)
 	const scrollRef = useRef<ScrollView>(null);
 
+	// Modal state
 	const [modalVisible, setModalVisible] = useState(false);
 	const [selectedItem, setSelectedItem] = useState<any>(null);
 
+	// Screen width for responsive layout
+	const { width } = useWindowDimensions();
+
+	// Layout constants
+	const MIN_ITEM_WIDTH = 160;
+	const SPACING = 15;
+
+	// Calculate number of columns based on screen width
+	const columns = Math.max(2, Math.floor(width / MIN_ITEM_WIDTH));
+
+	// Calculate item width dynamically
+	const itemWidth = (width - SPACING * (columns + 1)) / columns;
+
+	/* ---------------------------- Background Colors --------------------------- */
 	const backgroundColorSet = [
 		Colors.blueLight,
 		Colors.greenLight,
@@ -62,18 +88,24 @@ const UnifiedListMenu = ({
 		Colors.purple,
 	];
 
+	// Valid image keys from ALL_IMAGES
 	type ImageKey = keyof typeof ALL_IMAGES;
 
+	// Rotate background colors
 	const getBackgroundColor = (index: number) =>
 		backgroundColorSet[index % backgroundColorSet.length];
 
-	const columns = getColumns();
+	/* ---------------------- Odd item → full width logic ----------------------- */
 	const shouldPopup = items.length % 2 !== 0;
 
 	const isLastItem = (index: number) =>
 		shouldPopup && index === items.length - 1;
 
-	/* ---- Modal helpers (Page 3) ---- */
+	/* -------------------------------------------------------------------------- */
+	/*                           Modal helper functions                            */
+	/* -------------------------------------------------------------------------- */
+
+	// Fetch product object from JSON
 	const getProduct = (key?: string) =>
 		key ? (devData[key as keyof typeof devData] ?? null) : null;
 
@@ -86,18 +118,25 @@ const UnifiedListMenu = ({
 	const getSubTitle = (key?: string) =>
 		getProduct(key)?.subTitle ?? "No description available";
 
+	// Open info modal
 	const openInfo = (item: any) => {
 		setSelectedItem(item);
 		setModalVisible(true);
 	};
 
+	/* -------------------------------------------------------------------------- */
+	/*                                Menu Content                                 */
+	/* -------------------------------------------------------------------------- */
 	const Content = (
 		<View style={styles.row}>
 			{items.map((item: any, index: number) => {
 				const last = isLastItem(index);
 				const png = item.iconType === "image";
 
+				// Label text
 				const label = useItemName ? item.name : item.name;
+
+				// Decide navigation payload
 				const navigatePlace = item?.navigation
 					? item.name
 					: showInfo
@@ -112,19 +151,23 @@ const UnifiedListMenu = ({
 						style={[
 							styles.item,
 							{
+								// Full-width layout for last odd item
 								height: last ? itemHeight - 60 : itemHeight,
-								width: last ? width - 30 : width / columns + 45,
+								width: last ? width - 30 : itemWidth,
 								paddingHorizontal: 15,
 								backgroundColor: getBackgroundColor(index),
+
+								// Image tiles stack vertically
 								flexDirection: png && !last ? "column" : "row",
-								gap: 10,
+								gap: png ? 10 : 5,
+
 								justifyContent: "center",
 								alignItems: "center",
 								alignSelf: last ? "center" : "auto",
 							},
 						]}
 					>
-						{/* Icons (Page 1) */}
+						{/* -------------------------- Image Icon -------------------------- */}
 						{item.iconType === "image" &&
 							item.icon &&
 							ALL_IMAGES[item.icon as ImageKey] && (
@@ -132,20 +175,22 @@ const UnifiedListMenu = ({
 									source={ALL_IMAGES[item.icon as ImageKey]}
 									style={{
 										height: last ? 65 : 95,
-										width: last ? 65 : 95,
+										width: last ? 65 : 85,
 									}}
 									resizeMode="contain"
 								/>
 							)}
 
+						{/* -------------------------- Vector Icon ------------------------- */}
 						{item.iconType === "vector" && typeof item.icon === "string" && (
 							<FontAwesome name={item.icon} color="#fff" size={25} />
 						)}
 
-						{/* Info Button (Page 3) */}
+						{/* -------------------------- Info Button ------------------------- */}
 						{showInfo && (
 							<Pressable
 								onPress={() => openInfo(item)}
+								// Prevent navigation trigger
 								onPressIn={(e) => e.stopPropagation()}
 								style={styles.infoBtn}
 							>
@@ -153,7 +198,7 @@ const UnifiedListMenu = ({
 							</Pressable>
 						)}
 
-						{/* Text */}
+						{/* -------------------------- Label Text -------------------------- */}
 						<Text
 							numberOfLines={2}
 							adjustsFontSizeToFit
@@ -161,9 +206,10 @@ const UnifiedListMenu = ({
 							style={[
 								styles.text,
 								{
+									// Responsive font scaling
 									fontSize: !useItemName
 										? Math.min(width * 0.055, 20)
-										: Math.min(width * 0.07, 25),
+										: Math.min(width * 0.07, 23),
 								},
 							]}
 						>
@@ -175,8 +221,12 @@ const UnifiedListMenu = ({
 		</View>
 	);
 
+	/* -------------------------------------------------------------------------- */
+	/*                                   Render                                   */
+	/* -------------------------------------------------------------------------- */
 	return (
 		<View>
+			{/* Scrollable / Static Layout */}
 			{scrollable ? (
 				<ScrollView
 					ref={scrollRef}
@@ -189,7 +239,7 @@ const UnifiedListMenu = ({
 				Content
 			)}
 
-			{/* Modal (Page 3) */}
+			{/* ----------------------------- Info Modal ----------------------------- */}
 			{showInfo && (
 				<Modal
 					transparent
@@ -202,8 +252,11 @@ const UnifiedListMenu = ({
 							<Text style={styles.modalTitle}>
 								{getTitle(selectedItem?.data)}
 							</Text>
+
 							<Text>{getSubTitle(selectedItem?.data)}</Text>
+
 							<View style={styles.divider} />
+
 							<Text style={styles.modalDesc}>
 								{getDesc(selectedItem?.data)}
 							</Text>
@@ -224,10 +277,14 @@ const UnifiedListMenu = ({
 
 export default UnifiedListMenu;
 
+/* -------------------------------------------------------------------------- */
+/*                                   Styles                                   */
+/* -------------------------------------------------------------------------- */
+
 const styles = StyleSheet.create({
 	row: {
 		flexDirection: "row",
-		justifyContent: "space-around",
+		justifyContent: "flex-start",
 		flexWrap: "wrap",
 		marginHorizontal: 10,
 		marginBottom: 10,
@@ -247,7 +304,7 @@ const styles = StyleSheet.create({
 
 	text: {
 		color: "white",
-		fontWeight: "800",
+		fontWeight: "700",
 		textAlign: "center",
 	},
 

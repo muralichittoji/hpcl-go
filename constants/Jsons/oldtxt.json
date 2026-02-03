@@ -11,11 +11,54 @@
 				{ "name": "ELASTO 165", "data": "HPCL0090" },
 				{ "name": "ELASTO 245", "data": "HPCL0091" },
 				{ "name": "ELASTO 255", "data": "HPCL0092" },
-				{ "name": "ELASTO 215/216", "data": "HPCL0093" },
-				{ "name": "ELASTO 541", "data": "HPCL0094" },
-				{ "name": "ELASTO 710", "data": "HPCL0095" },
-				{ "name": "ELASTO SUPREME (TRAE)", "data": "HPCL0096" },
-				{ "name": "ELASTO SUPREME H (RAE)", "data": "HPCL0097" }
+				{ "name": "CBFS", "data": "HPCL0027" },
+				{ "name": "HP METAQUENCH 39", "data": "HPCL0038" },
+				{ "name": "HP KOOLKUT 40", "data": "HPCL0049" },
+				{ "name": "HP SYNTHKOOL 100", "data": "HPCL0059" },
+				{ "name": "HP SYNTHKOOL 101", "data": "HPCL0060" },
+				{ "name": "HP SYNTHKOOL 102", "data": "HPCL0061" },
+				{ "name": "HP TRIMOFIN 22", "data": "HPCL0071" },
+				{ "name": "HP TRIMOFIN 23", "data": "HPCL0072" },
+				{ "name": "HP TRIMOFIN 25", "data": "HPCL0073" },
+
+				{ "name": "HP TRIMOFIN 595", "data": "HPCL0083" },
+				{ "name": "HP TRIMOFIN 64", "data": "HPCL0084" },
+				{ "name": "HP TRIMOFIN 65", "data": "HPCL0085" },
+				{ "name": "HP TRIMOFIN 66", "data": "HPCL0086" },
+
+				{ "name": "SHOCK ABSORBER OIL (T3)", "data": "HPCL0112" }
+			]
+		},
+
+		{
+			"id": 11,
+			"name": "Others",
+			"data": [
+				{ "name": "HP CORRMIT (WHITE OILS)", "data": "HPCL0124" },
+				{ "name": "HP CEMOL 35", "data": "HPCL0125" },
+				{ "name": "HP CEMOL N35", "data": "HPCL0126" },
+				{ "name": "HP GLAMOL 40", "data": "HPCL0127" },
+				{ "name": "HP UNIPRO 36", "data": "HPCL0128" },
+				{ "name": "HP UNIPRO 37", "data": "HPCL0129" },
+				{ "name": "HP UNIPRO 38", "data": "HPCL0130" },
+				{ "name": "HP CONKOTE", "data": "HPCL0131" },
+				{ "name": "HP DEDUSTING OIL", "data": "HPCL0132" },
+				{ "name": "HYMAROL HLP T", "data": "HPCL0138" },
+				{ "name": "FILM OIL", "data": "HPCL0154" },
+				{ "name": "PNEUMATIC TOOL OILS", "data": "HPCL0168" },
+				{ "name": "MACHINERY OILS", "data": "HPCL0174" },
+				{ "name": "WIRE ROPE LUBRICANTS", "data": "HPCL0176" },
+				{ "name": "GENERAL PURPOSE MACHINERY OILS", "data": "HPCL0177" },
+				{ "name": "CYLINDER OIL", "data": "HPCL0179" },
+				{ "name": "STENTER OIL", "data": "HPCL0180" }
+			]
+		},
+		{
+			"id": 16,
+			"name": "Greases",
+			"data": [
+				{ "name": "AUTOMOTIVE GREASES", "data": "HPCL0181" },
+				{ "name": "GREASES", "data": "HPCL0183" }
 			]
 		},
 
@@ -181,10 +224,7 @@
 				{
 					"name": "Rolling Oils",
 					"data": [
-						{ "name": "HP ROLMET 7", "data": "HPCL0033" },
-						{ "name": "HP ROLMET V 45", "data": "HPCL0034" },
 						{ "name": "HP ROLMET V 45, V 55", "data": "HPCL0035" },
-						{ "name": "HP ROLMET N34", "data": "HPCL0036" },
 						{ "name": "HP ROLMET 40", "data": "HPCL0037" }
 					]
 				},

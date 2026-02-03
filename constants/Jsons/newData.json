@@ -65,60 +65,881 @@
 					"id": 3,
 					"name": "Speciality",
 					"data": [
-						{ "name": "CBFS", "data": "HPCL0027" },
-						{ "name": "HP METAQUENCH 39", "data": "HPCL0038" },
-						{ "name": "HP METAQUENCH 40", "data": "HPCL0039" },
-						{ "name": "HP METAQUENCH 42", "data": "HPCL0040" },
-						{ "name": "HP METAQUENCH 43", "data": "HPCL0041" },
-						{ "name": "HP METAQUENCH 44", "data": "HPCL0042" },
-						{ "name": "HP METAQUENCH 44 H", "data": "HPCL0043" },
-						{ "name": "HP METAQUENCH 45", "data": "HPCL0044" },
-						{ "name": "HP METAQUENCH 85", "data": "HPCL0045" },
-						{ "name": "HP METAQUENCH 86", "data": "HPCL0046" },
-						{ "name": "HP METAQUENCH 87", "data": "HPCL0047" },
-						{ "name": "HP METAQUENCH 88", "data": "HPCL0048" },
-						{ "name": "HP KOOLKUT 40", "data": "HPCL0049" },
-						{ "name": "HP KOOLKUT 40 MS", "data": "HPCL0050" },
-						{ "name": "HP KOOLKUT 40 M", "data": "HPCL0051" },
-						{ "name": "HP KOOLKUT 60", "data": "HPCL0052" },
-						{ "name": "HP KOOLKUT EP 66", "data": "HPCL0053" },
-						{ "name": "HP KOOLKUT EP 67", "data": "HPCL0054" },
-						{ "name": "HP KOOLKUT EP 68", "data": "HPCL0055" },
-						{ "name": "HP KOOLKUT EP 681", "data": "HPCL0056" },
-						{ "name": "HP KOOLKUT 70", "data": "HPCL0057" },
-						{ "name": "HP KOOLKUT 80", "data": "HPCL0058" },
-						{ "name": "HP SYNTHKOOL 100", "data": "HPCL0059" },
-						{ "name": "HP SYNTHKOOL 101", "data": "HPCL0060" },
-						{ "name": "HP SYNTHKOOL 102", "data": "HPCL0061" },
-						{ "name": "HP SYNTHKOOL 24121", "data": "HPCL0062" },
-						{ "name": "HP TRIMOFIN 12", "data": "HPCL0063" },
-						{ "name": "HP TRIMOFIN 14", "data": "HPCL0064" },
-						{ "name": "HP TRIMOFIN 15", "data": "HPCL0065" },
-						{ "name": "HP TRIMOFIN 16", "data": "HPCL0066" },
-						{ "name": "HP TRIMOFIN 18", "data": "HPCL0067" },
-						{ "name": "HP TRIMOFIN 19", "data": "HPCL0068" },
-						{ "name": "HP TRIMOFIN 20", "data": "HPCL0069" },
-						{ "name": "HP TRIMOFIN 21", "data": "HPCL0070" },
-						{ "name": "HP TRIMOFIN 22", "data": "HPCL0071" },
-						{ "name": "HP TRIMOFIN 23", "data": "HPCL0072" },
-						{ "name": "HP TRIMOFIN 25", "data": "HPCL0073" },
-						{ "name": "HP TRIMOFIN 235", "data": "HPCL0074" },
-						{ "name": "HP TRIMOFIN 23 DEF", "data": "HPCL0075" },
-						{ "name": "HP TRIMOFIN 26", "data": "HPCL0076" },
-						{ "name": "HP TRIMOFIN 27", "data": "HPCL0077" },
-						{ "name": "HP TRIMOFIN 54", "data": "HPCL0078" },
-						{ "name": "HP TRIMOFIN 55", "data": "HPCL0079" },
-						{ "name": "HP TRIMOFIN 56", "data": "HPCL0080" },
-						{ "name": "HP TRIMOFIN 58", "data": "HPCL0081" },
-						{ "name": "HP TRIMOFIN 58 BR", "data": "HPCL0082" },
-						{ "name": "HP TRIMOFIN 595", "data": "HPCL0083" },
-						{ "name": "HP TRIMOFIN 64", "data": "HPCL0084" },
-						{ "name": "HP TRIMOFIN 65", "data": "HPCL0085" },
-						{ "name": "HP TRIMOFIN 66", "data": "HPCL0086" },
-						{ "name": "HP TRIMOFIN AL", "data": "HPCL0087" },
-						{ "name": "HP TRIMOFIN GR", "data": "HPCL0088" },
-						{ "name": "HP TRIMOL 225", "data": "HPCL0089" },
-						{ "name": "SHOCK ABSORBER OIL (T3)", "data": "HPCL0112" }
+						{
+							"name": "METAL DRAWING COMPOUNDS",
+							"data": [
+								{ "name": "HP DRAWMET 15, 15S", "data": "HPCL0107" },
+								{ "name": "HP DRAWMET 22", "data": "HPCL0108" },
+								{ "name": "HP DRAWMET 44", "data": "HPCL0109" },
+								{ "name": "HP DRAWMET 66", "data": "HPCL0110" },
+								{ "name": "HP DRAWMET 81 CF", "data": "HPCL0111" }
+							]
+						},
+						{
+							"name": "SOLUBLE CUTTING FLUIDS",
+							"data": [
+								{ "name": "HYCOM SYN Series", "data": "HPCL0243" },
+								{ "name": "HP KOOLKUT 40 M", "data": "HPCL0051" },
+								{ "name": "HP KOOLKUT 60", "data": "HPCL0052" },
+								{ "name": "HP KOOLKUT 70", "data": "HPCL0057" },
+								{ "name": "HP KOOLKUT 80", "data": "HPCL0058" },
+								{ "name": "HP KOOLKUT EP 66", "data": "HPCL0053" },
+								{ "name": "HP KOOLKUT EP 67", "data": "HPCL0054" },
+								{ "name": "HP KOOLKUT EP 68", "data": "HPCL0055" },
+								{ "name": "HP KOOLKUT EP 681", "data": "HPCL0056" },
+								{ "name": "HP TRIMOFIN 12", "data": "HPCL0063" },
+								{ "name": "HP SYNTHKOOL 24121", "data": "HPCL0062" }
+							]
+						},
+						{
+							"name": "NEAT CUTTING FLUIDS",
+							"data": [
+								{ "name": "HP TRIMOFIN 14, 15, 16, 18", "data": "HPCL0244" },
+								{ "name": "HP TRIMOFIN 20", "data": "HPCL0069" },
+								{ "name": "HP TRIMOFIN 21", "data": "HPCL0070" },
+								{ "name": "HP TRIMOFIN 23 DEF", "data": "HPCL0075" },
+								{ "name": "HYCOM TURBO SYN Series", "data": "HPCL0206" },
+								{ "name": "HP TRIMOFIN 23, 25", "data": "HPCL0245" }
+							]
+						},
+						{
+							"name": "Metal Working Fluids",
+							"data": [
+								{ "name": "HP TRIMOFIN 235", "data": "HPCL0074" },
+								{ "name": "HP TRIMOFIN 26", "data": "HPCL0076" },
+								{ "name": "HP TRIMOFIN 27", "data": "HPCL0077" },
+								{ "name": "HP TRIMOFIN 54", "data": "HPCL0078" },
+								{ "name": "HP TRIMOFIN 55", "data": "HPCL0079" },
+								{ "name": "HP TRIMOFIN 56", "data": "HPCL0080" },
+								{ "name": "HP TRIMOFIN 58", "data": "HPCL0081" },
+								{ "name": "HP TRIMOFIN 58 BR", "data": "HPCL0082" },
+								{ "name": "HP TRIMOL 225", "data": "HPCL0089" },
+								{ "name": "HP KOOLKUT 40 MS", "data": "HPCL0050" },
+								{ "name": "HP TRIMOFIN 19", "data": "HPCL0068" },
+								{ "name": "HP KOOLKUT EP 68", "data": "HPCL0055" },
+								{ "name": "HP SYNTHKOOL 100, 101, 102", "data": "HPCL0246" },
+								{ "name": "HP TRIMOFIN 64, 65, 66", "data": "HPCL0247" },
+								{ "name": "HP TRIMOFIN AL", "data": "HPCL0087" },
+								{ "name": "HP TRIMOFIN GR", "data": "HPCL0088" }
+							]
+						},
+						{
+							"name": "MOULD OILS",
+							"data": [
+								{ "name": "CEMOL 35, N35", "data": "HPCL0248" },
+								{ "name": "CEMOL 40", "data": "HPCL0249" }
+							]
+						},
+						{
+							"name": "Quenching Oils",
+							"data": [
+								{ "name": "HP METAQUENCH 39, 40", "data": "HPCL0250" },
+								{ "name": "HP METAQUENCH 42", "data": "HPCL0040" },
+								{ "name": "HP METAQUENCH 43", "data": "HPCL0041" },
+								{ "name": "HP METAQUENCH 44", "data": "HPCL0042" },
+								{ "name": "HP METAQUENCH 45", "data": "HPCL0044" },
+								{ "name": "HP METAQUENCH 40", "data": "HPCL0039" },
+								{ "name": "HP METAQUENCH 44 H", "data": "HPCL0043" },
+								{ "name": "HP METAQUENCH 85", "data": "HPCL0045" },
+								{ "name": "HP METAQUENCH 86", "data": "HPCL0046" },
+								{ "name": "HP METAQUENCH 87", "data": "HPCL0047" },
+								{ "name": "HP METAQUENCH 88", "data": "HPCL0048" }
+							]
+						},
+						{
+							"name": "Rolling Oils",
+							"data": [
+								{ "name": "HP ROLMET 22 V 45 V 55", "data": "HPCL0251" },
+								{ "name": "HP ROLMET 7", "data": "HPCL0033" },
+								{ "name": "HP ROLMET V 45", "data": "HPCL0034" },
+								{ "name": "HP ROLMET N34", "data": "HPCL0036" }
+							]
+						},
+						{
+							"name": "RUBBER PROCESS OILS",
+							"data": [
+								{ "name": "ELASTO SUPREME (TRAE)", "data": "HPCL0096" },
+								{ "name": "ELASTO SUPREME H (RAE)", "data": "HPCL0097" },
+								{ "name": "HP ELASTO 165, 245, 255", "data": "HPCL0252" },
+								{ "name": "ELASTO 215/216", "data": "HPCL0093" },
+								{ "name": "ELASTO 541", "data": "HPCL0094" },
+								{ "name": "ELASTO 710", "data": "HPCL0095" },
+								{ "name": "" }
+							]
+						},
+						{
+							"name": "RUST PREVENTIVES",
+							"data": [
+								{
+									"name": "HP RUSTOP 285 286 287 387 388 389",
+									"data": "HPCL0253"
+								},
+								{ "name": "RUSTOP 179C", "data": "HPCL0254" },
+								{ "name": "RUSTOP 185", "data": "HPCL0255" },
+								{ "name": "RUSTOP 273", "data": "HPCL0256" },
+								{
+									"name": "RUSTOP 274, 275, 276, 282, 283",
+									"data": "HPCL0257"
+								},
+								{
+									"name": "RUSTOP 68, 173, 173 DW, 175, 179,184",
+									"data": "HPCL0258"
+								}
+							]
+						},
+						{
+							"name": "Hp Spray Oil",
+							"data": [
+								{
+									"name": "HP HMO Leaflet",
+									"data": "HPCL0259"
+								},
+								{
+									"name": "HP RUBBER SPRAY OIL",
+									"data": "HPCL0260"
+								},
+								{
+									"name": "HP Spray Oil Leaflet",
+									"data": "HPCL0261"
+								}
+							]
+						},
+						{
+							"name": "THERMIC-FLUIDS",
+							"data": [
+								{
+									"name": "HYTHERM 500 & 600",
+									"data": "HPCL0262"
+								},
+								{
+									"name": "HYTHERM 600 PLUS",
+									"data": "HPCL0263"
+								},
+								{
+									"name": "HYTHERM S",
+									"data": "HPCL0264"
+								}
+							]
+						},
+						{
+							"name": "Unipro Conkote Dedusting Oils",
+							"data": [
+								{
+									"name": "HP CONKOTE",
+									"data": "HPCL0265"
+								},
+								{
+									"name": "HP DEDUSTING OIL",
+									"data": "HPCL0266"
+								},
+								{
+									"name": "UNIPRO 36",
+									"data": "HPCL0267"
+								},
+								{
+									"name": "UNIPRO 37",
+									"data": "HPCL0268"
+								},
+								{
+									"name": "UNIPRO 38",
+									"data": "HPCL0269"
+								}
+							]
+						},
+						{
+							"name": "Diesel Exhaust Fluid",
+							"data": [
+								{
+									"name": "HP DEF",
+									"data": "HPCL0270"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "GREASES",
+					"data": [
+						{
+							"name": "AUTOMOTIVE GREASES",
+							"data": [
+								{
+									"name": "HP AP3 GREASE",
+									"data": "HPCL0271"
+								},
+								{
+									"name": "HP AP3 LONG LIFE GREASE",
+									"data": "HPCL0272"
+								},
+								{
+									"name": "HP CHASSIS GREASE",
+									"data": "HPCL0273"
+								},
+								{
+									"name": "HP CHASSIS GREASE (B)",
+									"data": "HPCL0274"
+								},
+								{
+									"name": "HP LITHON RR 3",
+									"data": "HPCL0275"
+								},
+								{
+									"name": "HP LITHON RR 3T",
+									"data": "HPCL0276"
+								},
+								{
+									"name": "HP MULTIPURPOSE GREASE 2, 3",
+									"data": "HPCL0277"
+								},
+								{
+									"name": "HP ULTRA LONG LIFE AP3 GREASE",
+									"data": "HPCL0278"
+								},
+								{
+									"name": "HP WHEEL BEARING GREASE",
+									"data": "HPCL0279"
+								}
+							]
+						},
+						{
+							"name": "INDUSTRIAL GREASES",
+							"data": [
+								{
+									"name": "HP ALPLEX 2",
+									"data": "HPCL0280"
+								},
+								{
+									"name": "HP AP3 LL (B)",
+									"data": "HPCL0281"
+								},
+								{
+									"name": "HP COPPER GREASE",
+									"data": "HPCL0282"
+								},
+								{
+									"name": "HP EEVEE GREASE",
+									"data": "HPCL0283"
+								},
+								{
+									"name": "HP EV GREASE",
+									"data": "HPCL0284"
+								},
+								{
+									"name": "HP EV HUB GREASE",
+									"data": "HPCL0285"
+								},
+								{
+									"name": "HP GIRTHLUB SI 0",
+									"data": "HPCL0286"
+								},
+								{
+									"name": "HTEMP GEARLUB DRI-0 GREASE",
+									"data": "HPCL0287"
+								},
+								{
+									"name": "LIMAPLEX EP TYPE GREASE",
+									"data": "HPCL0288"
+								},
+								{
+									"name": "LITHON",
+									"data": "HPCL0289"
+								},
+								{
+									"name": "LITHON EP 0 & EP 00",
+									"data": "HPCL0290"
+								},
+								{
+									"name": "LITHON EP-2 (S)",
+									"data": "HPCL0291"
+								},
+								{
+									"name": "LITHON EP-2 (STEEL) GREASE",
+									"data": "HPCL0292"
+								},
+								{
+									"name": "LITHON M1 PLUS",
+									"data": "HPCL0293"
+								},
+								{
+									"name": "Lithon M2 Plus",
+									"data": "HPCL0294"
+								},
+								{
+									"name": "LITHON OGL FLUID GREASE",
+									"data": "HPCL0295"
+								},
+								{
+									"name": "LITHON PD-0 FLUID GREASE",
+									"data": "HPCL0296"
+								},
+								{
+									"name": "LITHON RR 3 (S)/RR 3 (G) SERIES",
+									"data": "HPCL0297"
+								},
+								{
+									"name": "LITHON RR 3 B",
+									"data": "HPCL0298"
+								},
+								{
+									"name": "LITHON SYNTH EP1 GREASE",
+									"data": "HPCL0299"
+								},
+								{
+									"name": "LITHOPLEX HTX SERIES",
+									"data": "HPCL0300"
+								},
+								{
+									"name": "LITHOPLEX INDUSTRIAL GREASE",
+									"data": "HPCL0301"
+								},
+								{
+									"name": "PLUTEK 1, 2 (CALCIUM SOAP GREASES)",
+									"data": "HPCL0302"
+								},
+								{
+									"name": "PLUTEK 1-2500 GREASE",
+									"data": "HPCL0303"
+								},
+								{
+									"name": "TISONA",
+									"data": "HPCL0304"
+								},
+								{
+									"name": "TISONA SUPREME",
+									"data": "HPCL0305"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "MARINE OILS",
+					"data": [
+						{
+							"name": "Marine Applications",
+							"data": [
+								{
+									"name": "ATLANTA MARINE D 3005",
+									"data": "HPCL0306"
+								},
+								{
+									"name": "AURELIA TI 3030 & AURELIA TI 4030",
+									"data": "HPCL0307"
+								},
+								{
+									"name": "DISOLA M 3015 & DISOLA M 4015",
+									"data": "HPCL0308"
+								},
+								{
+									"name": "HYMAROL",
+									"data": "HPCL0309"
+								},
+								{
+									"name": "TALUSIA HR 70",
+									"data": "HPCL0310"
+								},
+								{
+									"name": "TALUSIA UNIVERSAL",
+									"data": "HPCL0311"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Automotive Oils",
+					"data": [
+						{
+							"name": "BRAKE FLUIDS",
+							"data": [
+								{
+									"name": "HP SUPER DUTY BRAKE FLUID DOT 3",
+									"data": "HPCL0312"
+								},
+								{
+									"name": "HP SUPER DUTY BRAKE FLUID DOT 4",
+									"data": "HPCL0313"
+								}
+							]
+						},
+						{
+							"name": "BS VI Grades",
+							"data": [
+								{
+									"name": "HP MILCY TURBO GEN6",
+									"data": "HPCL0314"
+								},
+								{
+									"name": "HP MILCY TURBO ULTRA",
+									"data": "HPCL0315"
+								},
+								{
+									"name": "HP MILCY TURBO ULTRA +",
+									"data": "HPCL0316"
+								},
+								{
+									"name": "HP NEOSYNTH GEN6",
+									"data": "HPCL0317"
+								},
+								{
+									"name": "HP RACER",
+									"data": "HPCL0318"
+								},
+								{
+									"name": "HP RACER SKUTEX",
+									"data": "HPCL0319"
+								},
+								{
+									"name": "HP RACER SPLENDID",
+									"data": "HPCL0320"
+								},
+								{
+									"name": "HP RACER SYNTH",
+									"data": "HPCL0321"
+								},
+								{
+									"name": "HP RACER SYNTH GEN6",
+									"data": "HPCL0322"
+								}
+							]
+						},
+						{
+							"name": "EV and Hybrid Range",
+							"data": [
+								{
+									"name": "HP EV BRAKE FLUID",
+									"data": "HPCL0323"
+								},
+								{
+									"name": "HP EV HUBGREASE",
+									"data": "HPCL0324"
+								},
+								{
+									"name": "HP EV KOOLGARD",
+									"data": "HPCL0325"
+								},
+								{
+									"name": "HP EV POLYGREASE",
+									"data": "HPCL0326"
+								},
+								{
+									"name": "HP EV STEERING FLUID",
+									"data": "HPCL0327"
+								},
+								{
+									"name": "HP EV TRANSMISSION FLUID",
+									"data": "HPCL0328"
+								}
+							]
+						},
+						{
+							"name": "GEAR and TRANSMISSION OILS",
+							"data": [
+								{
+									"name": "HP ATF 10",
+									"data": "HPCL0329"
+								},
+								{
+									"name": "HP ATF DEX II",
+									"data": "HPCL0330"
+								},
+								{
+									"name": "HP ATF DEX IID",
+									"data": "HPCL0331"
+								},
+								{
+									"name": "HP AUTO TRANSMISSION FLUID A",
+									"data": "HPCL0332"
+								},
+								{
+									"name": "HP Gear Drive EP 140",
+									"data": "HPCL0333"
+								},
+								{
+									"name": "HP Gear Drive EP 90",
+									"data": "HPCL0334"
+								},
+								{
+									"name": "HP GEAR DRIVE XP 85W 140",
+									"data": "HPCL0335"
+								},
+								{
+									"name": "HP GEAR OIL EP 75W 80",
+									"data": "HPCL0336"
+								},
+								{
+									"name": "HP GEAR OIL EP 75W 90 F",
+									"data": "HPCL0337"
+								},
+								{
+									"name": "HP GEAR OIL EP 80, 90, 140",
+									"data": "HPCL0338"
+								},
+								{
+									"name": "HP GEAR OIL EP 80W 90",
+									"data": "HPCL0339"
+								},
+								{
+									"name": "HP GEAR OIL XP 80W 140 LL T",
+									"data": "HPCL0340"
+								},
+								{
+									"name": "HP GEAR OIL XP 80W 90",
+									"data": "HPCL0341"
+								},
+								{
+									"name": "HP GEAR OIL XP 80W 90 LL T",
+									"data": "HPCL0342"
+								},
+								{
+									"name": "HP GEAR OIL XP 80W 90 T",
+									"data": "HPCL0343"
+								},
+								{
+									"name": "HP GEAR OIL XP 80W, 90, 140",
+									"data": "HPCL0344"
+								},
+								{
+									"name": "HP GEAR OIL XP 85W 140",
+									"data": "HPCL0345"
+								},
+								{
+									"name": "HP GEAR OIL XP 85W 140 (T)",
+									"data": "HPCL0346"
+								},
+								{
+									"name": "HP GEAR OIL XP 85W 140 (T2)",
+									"data": "HPCL0347"
+								},
+								{
+									"name": "HP GEAR OIL XP 85W 90",
+									"data": "HPCL0348"
+								},
+								{
+									"name": "HP GEAR OIL ZFL 80W",
+									"data": "HPCL0349"
+								},
+								{
+									"name": "HP GEAR OIL ZFL 80W 90",
+									"data": "HPCL0350"
+								},
+								{
+									"name": "HP GEAR OIL ZFL 80W 90 LS",
+									"data": "HPCL0351"
+								},
+								{
+									"name": "HP POWERFLO FD1-60",
+									"data": "HPCL0352"
+								},
+								{
+									"name": "HP POWERFLO TO-4",
+									"data": "HPCL0353"
+								},
+								{
+									"name": "HP POWERGLIDE C-3 10/30",
+									"data": "HPCL0354"
+								},
+								{
+									"name": "HP POWERGLIDE C-4 10/30",
+									"data": "HPCL0355"
+								},
+								{
+									"name": "HP POWERSYNTRAN",
+									"data": "HPCL0356"
+								}
+							]
+						},
+						{
+							"name": "HEAVY DUTY DIESEL ENGINE OILS",
+							"data": [
+								{
+									"name": "HP DIESELINO 15W-40T",
+									"data": "HPCL0357"
+								},
+								{
+									"name": "HP HDX+ 15W-40 CF-4",
+									"data": "HPCL0358"
+								},
+								{
+									"name": "HP HYLUBE LL 15W-40",
+									"data": "HPCL0359"
+								},
+								{
+									"name": "HP HYLUBE X-3 10W (KB), 30 (KB)",
+									"data": "HPCL0360"
+								},
+								{
+									"name": "HP KLT 15W-40",
+									"data": "HPCL0361"
+								},
+								{
+									"name": "HP LAAL GHODA 20W-40",
+									"data": "HPCL0362"
+								},
+								{
+									"name": "HP MILCY 15W-40 CF-4",
+									"data": "HPCL0363"
+								},
+								{
+									"name": "HP MILCY 15W40 CI-4",
+									"data": "HPCL0364"
+								},
+								{
+									"name": "HP MILCY EUROL 15W-40",
+									"data": "HPCL0365"
+								},
+								{
+									"name": "HP MILCY FLEET",
+									"data": "HPCL0366"
+								},
+								{
+									"name": "HP MILCY FORCE 15W-40",
+									"data": "HPCL0367"
+								},
+								{
+									"name": "HP MILCY FORCE PLUS 15W-40",
+									"data": "HPCL0368"
+								},
+								{
+									"name": "HP MILCY No.1",
+									"data": "HPCL0369"
+								},
+								{
+									"name": "HP MILCY NO.1 PLUS",
+									"data": "HPCL0370"
+								},
+								{
+									"name": "HP MILCY PICKUP",
+									"data": "HPCL0371"
+								},
+								{
+									"name": "HP MILCY PICKUP ULTRA",
+									"data": "HPCL0372"
+								},
+								{
+									"name": "HP MILCY POWER",
+									"data": "HPCL0373"
+								},
+								{
+									"name": "HP MILCY SL3 10W-40",
+									"data": "HPCL0374"
+								},
+								{
+									"name": "HP MILCY SUPER",
+									"data": "HPCL0375"
+								},
+								{
+									"name": "HP MILCY SYNTHETIC 15W-40",
+									"data": "HPCL0376"
+								},
+								{
+									"name": "HP MILCY TOP UP",
+									"data": "HPCL0377"
+								},
+								{
+									"name": "HP MILCY TURBO 15W-40",
+									"data": "HPCL0378"
+								},
+								{
+									"name": "HP MILCY TURBO SUPREME",
+									"data": "HPCL0379"
+								},
+								{
+									"name": "HP MILCY TURBO TECH 10W-30",
+									"data": "HPCL0380"
+								},
+								{
+									"name": "HP MILCY TURBO TECH 15W-40",
+									"data": "HPCL0381"
+								},
+								{
+									"name": "HP MILCY TURBO ULTRA+ 10W-40",
+									"data": "HPCL0382"
+								},
+								{
+									"name": "HP MILCY TURBOSTAR 15W-40",
+									"data": "HPCL0383"
+								},
+								{
+									"name": "HP MILCY TURBOSTAR 20W-50",
+									"data": "HPCL0384"
+								},
+								{
+									"name": "HP No.1",
+									"data": "HPCL0385"
+								},
+								{
+									"name": "HP NO.1 10W-30",
+									"data": "HPCL0386"
+								},
+								{
+									"name": "HP NO.1 10W-40",
+									"data": "HPCL0387"
+								},
+								{
+									"name": "HP X-3 10W KLT",
+									"data": "HPCL0388"
+								},
+								{
+									"name": "HP X-3 30 KLT",
+									"data": "HPCL0389"
+								},
+								{
+									"name": "HYLUBE CDKC 20W-40",
+									"data": "HPCL0390"
+								},
+								{
+									"name": "HYLUBE EXTRA 20W-40",
+									"data": "HPCL0391"
+								},
+								{
+									"name": "HYLUBE HDX MG",
+									"data": "HPCL0392"
+								},
+								{
+									"name": "HYLUBE MILCY 30, 40, 50",
+									"data": "HPCL0393"
+								},
+								{
+									"name": "HYLUBE X3 10W 30, 40 & 50",
+									"data": "HPCL0394"
+								}
+							]
+						},
+						{
+							"name": "Natural Gas And CNG Engine Oils",
+							"data": [
+								{
+									"name": "HP GASENOL 20W-50",
+									"data": "HPCL0395"
+								},
+								{
+									"name": "HP GREEN ENGINE OIL 15W-40 & 20W-50",
+									"data": "HPCL0396"
+								},
+								{
+									"name": "HP GREEN ENGINE OIL LL 20W-50",
+									"data": "HPCL0397"
+								},
+								{
+									"name": "HP LONG DRAIN CNG ENGINE OIL 15W-40",
+									"data": "HPCL0398"
+								},
+								{
+									"name": "HP MILCY CNG 15W-40",
+									"data": "HPCL0399"
+								},
+								{
+									"name": "HP NATURAL GAS ENGINE OIL A 40",
+									"data": "HPCL0400"
+								},
+								{
+									"name": "HP NATURAL GAS ENGINE OIL L 40 & L 15W-40",
+									"data": "HPCL0401"
+								},
+								{
+									"name": "HP NATURAL GAS ENGINE OIL M 40",
+									"data": "HPCL0402"
+								}
+							]
+						},
+						{
+							"name": "Outboatd Marine Oils",
+							"data": [
+								{
+									"name": "HP MARIGEN 4015 & 3015",
+									"data": "HPCL0403"
+								},
+								{
+									"name": "HP MATSYA BOAT OIL 2T",
+									"data": "HPCL0404"
+								},
+								{
+									"name": "HP MATSYAFED 2T",
+									"data": "HPCL0405"
+								},
+								{
+									"name": "HP MATSYAFED 2T PREMIUM",
+									"data": "HPCL0406"
+								},
+								{
+									"name": "HP MILCY MARINA",
+									"data": "HPCL0407"
+								}
+							]
+						},
+						{
+							"name": "THREE WHEELER ENGINE OILS",
+							"data": [
+								{
+									"name": "HP AUTO SHAKTI 20W-50",
+									"data": "HPCL0408"
+								},
+								{
+									"name": "HP CNG BOOSTER 20W-50",
+									"data": "HPCL0409"
+								},
+								{
+									"name": "THREE WHEELER ENGINE OILS RUNNING ON DIESEL",
+									"data": "HPCL0410"
+								}
+							]
+						},
+						{
+							"name": "Railroad ENGINE OILS",
+							"data": [
+								{
+									"name": "HP RAIL ROAD OIL 613",
+									"data": "HPCL0411"
+								},
+								{
+									"name": "HP RAIL ROAD OIL 713",
+									"data": "HPCL0412"
+								},
+								{
+									"name": "HP RAIL ROAD OIL 810M",
+									"data": "HPCL0413"
+								},
+								{
+									"name": "HP RAIL ROAD OIL 813M",
+									"data": "HPCL0414"
+								},
+								{
+									"name": "HP RAIL ROAD OIL 817M",
+									"data": "HPCL0415"
+								}
+							]
+						},
+						{
+							"name": "SHOCK ABSORBER and FRONT FORK OILS",
+							"data": [
+								{
+									"name": "SHOCK ABSORBER OILS",
+									"data": "HPCL0416"
+								}
+							]
+						},
+						{
+							"name": "TWO WHEELER ENGINE OILS",
+							"data": [
+								{
+									"name": "HP AIR FILTER OIL 20W-40",
+									"data": "HPCL0417"
+								},
+								{
+									"name": "HP Racer 15W-50",
+									"data": "HPCL0418"
+								},
+								{
+									"name": "HP RACER DUO 5W-30",
+									"data": "HPCL0419"
+								},
+								{
+									"name": "HP RACER GEN6",
+									"data": "HPCL0420"
+								}
+							]
+						}
 					]
 				},
 				{
@@ -257,40 +1078,18 @@
 						},
 						{
 							"name": "TURBINE OILS",
-							"data": [{ "name": "TURBINOL", "data": "HPCL0238" }]
+							"data": [
+								{ "name": "TURBINOL", "data": "HPCL0238" },
+								{ "name": "TURBINOL LP", "data": "HPCL0239" }
+							]
+						},
+						{
+							"name": "WIRE ROPE LUBRICANT",
+							"data": [
+								{ "name": "HP METWIRE NB", "data": "HPCL0176" },
+								{ "name": "Rodec 120", "data": "HPCL0241" }
+							]
 						}
-					]
-				},
-
-				{
-					"id": 11,
-					"name": "Others",
-					"data": [
-						{ "name": "HP CORRMIT (WHITE OILS)", "data": "HPCL0124" },
-						{ "name": "HP CEMOL 35", "data": "HPCL0125" },
-						{ "name": "HP CEMOL N35", "data": "HPCL0126" },
-						{ "name": "HP GLAMOL 40", "data": "HPCL0127" },
-						{ "name": "HP UNIPRO 36", "data": "HPCL0128" },
-						{ "name": "HP UNIPRO 37", "data": "HPCL0129" },
-						{ "name": "HP UNIPRO 38", "data": "HPCL0130" },
-						{ "name": "HP CONKOTE", "data": "HPCL0131" },
-						{ "name": "HP DEDUSTING OIL", "data": "HPCL0132" },
-						{ "name": "HYMAROL HLP T", "data": "HPCL0138" },
-						{ "name": "FILM OIL", "data": "HPCL0154" },
-						{ "name": "PNEUMATIC TOOL OILS", "data": "HPCL0168" },
-						{ "name": "MACHINERY OILS", "data": "HPCL0174" },
-						{ "name": "WIRE ROPE LUBRICANTS", "data": "HPCL0176" },
-						{ "name": "GENERAL PURPOSE MACHINERY OILS", "data": "HPCL0177" },
-						{ "name": "CYLINDER OIL", "data": "HPCL0179" },
-						{ "name": "STENTER OIL", "data": "HPCL0180" }
-					]
-				},
-				{
-					"id": 16,
-					"name": "Greases",
-					"data": [
-						{ "name": "AUTOMOTIVE GREASES", "data": "HPCL0181" },
-						{ "name": "GREASES", "data": "HPCL0183" }
 					]
 				}
 			]
@@ -382,7 +1181,7 @@
 				{
 					"id": 5,
 					"iconType": "image",
-					"icon": "DRUMS_ICON",
+					"icon": "FUEL_ICON",
 					"name": "Marine Fuel",
 					"data": [
 						{ "name": "Distillate Marine Fuel", "data": "HPCL0013" },

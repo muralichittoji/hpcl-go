@@ -3,52 +3,86 @@ import { Colors } from "@/constants/theme";
 import { rf } from "@/utils/responsive";
 import React from "react";
 import {
-	Dimensions,
+	KeyboardAvoidingView,
+	Platform,
+	ScrollView,
 	StyleSheet,
 	Text,
 	TextInput,
 	TouchableOpacity,
+	useWindowDimensions,
 	View,
 } from "react-native";
 
-const { width } = Dimensions.get("window");
-
 const LoginScreen = () => {
+	// Get current screen width (updates on orientation change / font scaling)
+	const { width } = useWindowDimensions();
+
 	return (
-		<View style={styles.container}>
-			<Header caption="" screen="Login" />
-			<Text style={styles.content}>Welcome to Login</Text>
-			<View style={styles.subContainer}>
-				<View style={{ width: width }}>
-					<TextInput
-						placeholder="Username/email"
-						placeholderTextColor={Colors.grayDeep}
-						style={styles.input}
-					/>
-					<TextInput
-						placeholder="Password"
-						placeholderTextColor={Colors.grayDeep}
-						style={styles.input}
-					/>
-					<TouchableOpacity style={styles.logBtn}>
-						<Text style={styles.logText}>Login</Text>
-					</TouchableOpacity>
+		// KeyboardAvoidingView shifts UI when keyboard opens
+		<KeyboardAvoidingView
+			style={{ flex: 1 }} // Must be flex:1, height breaks keyboard behavior
+			behavior={Platform.OS === "ios" ? "padding" : "height"} // iOS uses padding, Android uses height
+			keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0} // Offset for Header height (important!)
+		>
+			{/* ScrollView allows content to move when keyboard opens */}
+			<ScrollView
+				contentContainerStyle={{ flexGrow: 1 }} // Allows full height + scrolling
+				keyboardShouldPersistTaps="handled" // Keeps keyboard open while tapping inputs/buttons
+			>
+				<View style={[styles.container, { width }]}>
+					{/* App header */}
+					<Header caption="" screen="Login" />
+
+					{/* Screen title */}
+					<Text style={styles.content}>Welcome to Login</Text>
+
+					{/* Main form container */}
+					<View style={styles.subContainer}>
+						<View style={{ width }}>
+							{/* Username / Email input */}
+							<TextInput
+								placeholder="Username/email"
+								placeholderTextColor={Colors.grayDeep}
+								style={styles.input}
+							/>
+
+							{/* Password input */}
+							<TextInput
+								placeholder="Password"
+								placeholderTextColor={Colors.grayDeep}
+								style={styles.input}
+								secureTextEntry // Hides password text
+							/>
+
+							{/* Login button */}
+							<TouchableOpacity style={styles.logBtn}>
+								<Text style={styles.logText}>Login</Text>
+							</TouchableOpacity>
+						</View>
+
+						{/* Forgot password action */}
+						<TouchableOpacity style={styles.forgBtn}>
+							<Text style={styles.forgText}>Forgot Password ?</Text>
+						</TouchableOpacity>
+					</View>
 				</View>
-				<TouchableOpacity style={styles.forgBtn}>
-					<Text style={styles.forgText}>Forgot Password ?</Text>
-				</TouchableOpacity>
-			</View>
-		</View>
+			</ScrollView>
+		</KeyboardAvoidingView>
 	);
 };
 
 export default LoginScreen;
 
+/* -------------------------------------------------------------------------- */
+/*                                   Styles                                   */
+/* -------------------------------------------------------------------------- */
 const styles = StyleSheet.create({
 	container: {
-		height: "100%",
-		width: width,
+		flex: 1,
 	},
+
+	// Page title
 	content: {
 		color: Colors.blueDark,
 		fontSize: 35,
@@ -56,13 +90,15 @@ const styles = StyleSheet.create({
 		textAlign: "center",
 		margin: 5,
 	},
+
+	// Form wrapper
 	subContainer: {
-		width: width,
-		height: "65%",
-		display: "flex",
+		flex: 1,
 		justifyContent: "space-around",
 		alignItems: "center",
 	},
+
+	// Text inputs
 	input: {
 		width: "90%",
 		height: 50,
@@ -72,6 +108,8 @@ const styles = StyleSheet.create({
 		padding: 10,
 		fontSize: rf(20),
 	},
+
+	// Login button
 	logBtn: {
 		width: "90%",
 		margin: "5%",
@@ -80,6 +118,7 @@ const styles = StyleSheet.create({
 		padding: 5,
 		borderRadius: 10,
 	},
+
 	logText: {
 		fontSize: rf(25),
 		padding: 5,
@@ -87,12 +126,16 @@ const styles = StyleSheet.create({
 		color: Colors.white,
 		fontWeight: "600",
 	},
+
+	// Forgot password button
 	forgBtn: {
 		width: "90%",
 		margin: "5%",
 		height: 40,
-		padding: 5,
+		justifyContent: "center",
+		alignItems: "center",
 	},
+
 	forgText: {
 		fontSize: rf(20),
 		textAlign: "center",

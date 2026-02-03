@@ -1,39 +1,31 @@
+import CommonModal from "@/components/Ui/CommonModal";
 import Header from "@/components/Ui/Header";
 import InputSearch from "@/components/Ui/InputSearch";
+import LoadingOverlay from "@/components/Ui/LoadingOverlay";
 import wholeData from "@/constants/Jsons/wholeData.json";
 import { Colors } from "@/constants/theme";
+import { ALL_IMAGES } from "@/hooks/Allimages";
 import { router } from "expo-router";
 import React, { useState } from "react";
 import {
-	Dimensions,
 	Image,
 	StyleSheet,
 	Text,
 	TouchableOpacity,
+	useWindowDimensions,
 	View,
 } from "react-native";
 
-const BitumenIcon = "@/assets/images/icons/road-construction.png";
-const FireIcon = "@/assets/images/icons/fire-solid.png";
-const ShieldIcon = "@/assets/images/icons/shield-solid.png";
-const WaterIcon = "@/assets/images/icons/Waterproofing.png";
-
-const { width } = Dimensions.get("window");
-const getColumns = () => {
-	if (width < 350) {
-		return 2;
-	} else if (width < 600) {
-		return 3;
-	} else {
-		return 4;
-	}
-};
-
 const KnowledgeCenter = () => {
-	const columns = getColumns();
-
 	const [loading, setLoading] = useState(false);
 	const [slowNet, setSlowNet] = useState(false);
+
+	const { width } = useWindowDimensions();
+	const MIN_ITEM_WIDTH = 160;
+	const SPACING = 15;
+
+	const columns = Math.max(2, Math.floor(width / MIN_ITEM_WIDTH));
+	const itemWidth = (width - SPACING * (columns + 1)) / columns;
 
 	const navigate = (itemName: string) => {
 		switch (itemName) {
@@ -51,17 +43,18 @@ const KnowledgeCenter = () => {
 	const getIcons = (itemName: string) => {
 		switch (itemName) {
 			case "Bitumen & Roads":
-				return require(BitumenIcon);
+				return ALL_IMAGES.DRUMS_ICON;
 			case "Fire & Combustion":
-				return require(FireIcon);
+				return ALL_IMAGES.FIRE_ICON;
 			case "Lubricants & Maintenance":
-				return require(WaterIcon);
+				return ALL_IMAGES.LIQUID_ICON;
 			case "Safety & Heading":
-				return require(ShieldIcon);
+				return ALL_IMAGES.SHIELD_ICON;
 			default:
 				return "#D1D5DB";
 		}
 	};
+
 	const getBackgroundColor = (itemName: string) => {
 		switch (itemName) {
 			case "Bitumen & Roads":
@@ -99,6 +92,16 @@ const KnowledgeCenter = () => {
 				setSlowNet={setSlowNet}
 				placeHolder="Search"
 			/>
+			<LoadingOverlay visible={loading} text="Analyzing..." />
+
+			<CommonModal
+				visible={slowNet}
+				title="Slow Internet"
+				message="Backend Servers are at full swing. Please try again."
+				icon="speedometer-outline"
+				buttonText="Retry"
+				onPress={() => setSlowNet(false)}
+			/>
 			<View>
 				<View style={styles.row}>
 					{wholeData.Knowledge.map((item: any, index: number) => (
@@ -108,9 +111,8 @@ const KnowledgeCenter = () => {
 							style={[
 								styles.item,
 								{
-									height: 170,
-									width: width / columns + 50,
-
+									height: 180,
+									width: itemWidth,
 									flexDirection: "column",
 								},
 							]}
@@ -131,9 +133,9 @@ const KnowledgeCenter = () => {
 									width={60}
 								/>
 							</View>
-							<View style={{ paddingHorizontal: 20 }}>
+							<View style={{ paddingHorizontal: 5 }}>
 								<Text style={styles.text}>{item}</Text>
-								<Text>{getSubText(item)}</Text>
+								<Text style={{ fontWeight: "500" }}>{getSubText(item)}</Text>
 							</View>
 						</TouchableOpacity>
 					))}
@@ -152,7 +154,8 @@ const styles = StyleSheet.create({
 	subContainer: {
 		display: "flex",
 		flexDirection: "row",
-		justifyContent: "space-between",
+		justifyContent: "center",
+		gap: 20,
 		alignItems: "center",
 		marginHorizontal: 20,
 	},
@@ -169,12 +172,13 @@ const styles = StyleSheet.create({
 	},
 	row: {
 		flexDirection: "row",
-		justifyContent: "space-around",
-		marginBottom: 10,
+		justifyContent: "flex-start",
 		flexWrap: "wrap",
+		marginHorizontal: 10,
+		marginBottom: 10,
 	},
 	item: {
-		height: 170,
+		height: 190,
 		alignItems: "center",
 		backgroundColor: "#FFF",
 		margin: 5,

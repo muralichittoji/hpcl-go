@@ -61,13 +61,10 @@ const styles = StyleSheet.create({
 	},
 
 	itemText: {
-		fontSize: 16,
-		fontWeight: "600",
-		color: Colors.black,
+		fontSize: 18,
+		fontWeight: "700",
+		color: Colors.grayDeep,
 		paddingVertical: 6,
 		paddingHorizontal: 10,
-		borderWidth: 1,
-		borderColor: Colors.greenLight,
-		borderRadius: 6,
 	},
 });
