@@ -122,3 +122,39 @@ Ensure the following dependencies are installed on your system:
 Node.js v24
 Java 21 (LTS)
 ```
+
+## install the packages
+
+```bash
+cd code-folder
+# ex:hpcl-go
+npm install
+# this will install all the packages required
+```
+
+## Run the application
+
+```bash
+cd code-folder
+# ex:hpcl-go
+npx expo start -c
+
+# this will start the dev-server
+# initially it will open the deployement server
+
+s
+# will start the expo-go server
+# here we have two options you can open the app inside your mobile download expo go inside your mobile and connect to the same network or
+
+a
+# will will open the app inside android emulator
+```
+
+## Build the app
+
+```bash
+# insde hpcl-go
+cd android
+# make sure to delete the previous android/app/build/outputs/apk/, here deleted the release folder then use the command below
+./gradlew assembleRelease
+```

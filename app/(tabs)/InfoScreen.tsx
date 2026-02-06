@@ -6,6 +6,7 @@ import Header from "@/components/Ui/Header";
 
 // Info screen sections
 import AppIndustries from "@/components/Ui/Info/AppIndustries";
+import ComparisonCard from "@/components/Ui/Info/ComparisonCard";
 import DocumentsDownloads from "@/components/Ui/Info/DocumentsDownloads";
 import EnquiryShare from "@/components/Ui/Info/EnquiryShare";
 import PackagingSupply from "@/components/Ui/Info/PackagingSupply";
@@ -62,6 +63,8 @@ const InfoScreen = ({ route }: any) => {
 	/* ---------------------------------------------------------------------- */
 	/*                                  Render                                  */
 	/* ---------------------------------------------------------------------- */
+	const isComparison = data.specifications?.[0]?.property === "Comparision";
+	const compValue = data.specifications?.[0]?.value;
 	return (
 		<View style={styles.container}>
 			<View>
@@ -89,7 +92,11 @@ const InfoScreen = ({ route }: any) => {
 
 						{/* Specifications */}
 						<View>
-							<SpecificationsCard data={data.specifications} />
+							{isComparison ? (
+								<ComparisonCard value={compValue} />
+							) : (
+								<SpecificationsCard data={data.specifications} />
+							)}
 						</View>
 
 						{/* Applicable industries */}

@@ -1,1 +1,183 @@
-{}
+{
+	"HPCL0318": {
+		"comparison": {
+			"headers": ["Property", "10W-30", "20W-40", "20W-50", "15W-50"],
+			"rows": [
+				["Kinematic Viscosity @ 100°C (cSt)", "11.2", "14.5", "18.5", "18.5"],
+				["Viscosity Index", "130", "115", "115", "115"],
+				["TBN (mg KOH/g)", "6", "6", "6", "6"],
+				["Flash Point, COC (°C)", "230", "230", "230", "230"],
+				["Pour Point (°C)", "-30", "-24", "-24", "-24"]
+			]
+		}
+	},
+	"HPCL0410": {
+		"comparison": {
+			"headers": [
+				"Property",
+				"MILCY TURBO STAR 15W-40",
+				"MILCY NO.1 15W-40",
+				"MILCY TURBO TECH 15W-40"
+			],
+			"rows": [
+				["Kinematic Viscosity @ 100°C (cSt)", "14.6", "14.5", "14.7"],
+				["Viscosity Index", "135", "136", "136"],
+				["TBN (mg KOH/g)", "8.4", "10.4", "10.5"],
+				["Flash Point, COC (°C)", "214", "215", "218"],
+				["Pour Point (°C)", "-27", "-27", "-27"]
+			]
+		}
+	},
+	"HPCL0360": {
+		"comparison": {
+			"headers": ["Property", "10W (KB)", "30 (KB)"],
+			"rows": [
+				["Kinematic Viscosity @ 100°C (cSt)", "5.6", "9–13"],
+				["Kinematic Viscosity @ 40°C (cSt)", "32–39", "80–120"],
+				["Viscosity Index", "104", "90"],
+				["Pour Point (°C)", "-30", "-12"],
+				["Sulphated Ash (% wt)", "1.85", "1.85"],
+				["TBN (mg KOH/g)", "10.5", "10.5"],
+				["Foaming Tendency/Stability (ml)", "10", "10"],
+				["Foaming Seq I (ml)", "50/10", "50/10"],
+				["Foaming Seq II (ml)", "50/10", "50/10"],
+				["Foaming Seq III (ml)", "50/10", "50/10"],
+				["Flash Point, COC (°C)", "220", "220"]
+			]
+		}
+	},
+	"HPCL0308": {
+		"comparison": {
+			"headers": ["Property", "Unit", "M 3015", "M 4015"],
+			"rows": [
+				["SAE Grade", "-", "30", "40"],
+				["Density @ 15°C", "kg/m³", "900", "904"],
+				["Kinematic Viscosity @ 40°C", "mm²/s", "110", "145"],
+				["Kinematic Viscosity @ 100°C", "mm²/s", "12", "14.2"],
+				["BN (ex-TBN)", "mg KOH/g", "14", "14"]
+			]
+		}
+	},
+	"HPCL0307": {
+		"comparison": {
+			"headers": ["Property", "Method", "Unit", "3030", "4030"],
+			"rows": [
+				["SAE Grade", "-", "-", "30", "40"],
+				["Density @ 15°C", "ISO 3675", "kg/m³", "910", "910"],
+				["Kinematic Viscosity @ 40°C", "ISO 3104", "mm²/s", "110", "140"],
+				["Kinematic Viscosity @ 100°C", "ISO 3104", "mm²/s", "12", "14"],
+				["Flash Point (COC)", "ASTM D92", "°C", "≥230", "≥230"],
+				["Pour Point", "ISO 3016", "°C", "-12", "-12"],
+				["BN (ex-TBN)", "ASTM 2896", "mg KOH/g", "30", "30"]
+			]
+		}
+	},
+	"HPCL0304": {
+		"comparison": {
+			"headers": ["Property", "TISONA 2", "TISONA M2", "TISONA M3"],
+			"rows": [
+				["Worked Penetration @ 25°C", "265-295", "265-295", "225-250"],
+				["Drop Point (°C) Min", "250", "280", "280"],
+				["Soap Type", "Non-Soap", "Non-Soap", "Non-Soap"],
+				["Colour", "Brown", "Black", "Black"]
+			]
+		}
+	},
+	"HPCL0300": {
+		"comparison": {
+			"headers": ["Property", "LITHOPLEX HTX 1", "LITHOPLEX HTX 2"],
+			"rows": [
+				[
+					"Appearance",
+					"Green Smooth & homogeneous",
+					"Green Smooth & homogeneous"
+				],
+				["NLGI Grade", "1", "2"],
+				["Soap Type", "Lithium Complex", "Lithium Complex"],
+				["Drop Point (°C)", "250", "260"],
+				["Consistency @ 25°C (60X)", "310-340", "280-305"],
+				["Worked Stability (100,000X)", "±30 of 60X", "±30 of 60X"],
+				["Flash Point, COC (°C)", "220", "220"],
+				["Kinematic Viscosity @ 40°C (cSt)", "198-248", "198-248"],
+				["Viscosity Index (Min)", "90", "90"],
+				["Heat Stability Loss @100°C, 30h (%)", "5", "3"],
+				["Copper Corrosion @100°C, 24h", "Negative", "Negative"],
+				["Slump Test", "Passes", "Passes"],
+				["Leakage (gm, max)", "5", "5"],
+				["Emcor Rust Test Rating", "0", "0"],
+				["Water Washout @ 80°C (% loss)", "8", "5"],
+				["Roll Stability Change (%)", "18", "18"],
+				["Oxidation Stability Pressure Drop (psi)", "5", "5"],
+				["Four Ball Wear Scar (mm, max)", "0.5", "0.5"],
+				["Four Ball Weld Load (kg, min)", "280", "280"]
+			]
+		}
+	},
+	"HPCL0301": {
+		"comparison": {
+			"headers": ["Property", "LITHOPLEX 1", "LITHOPLEX 2", "LITHOPLEX 3"],
+			"rows": [
+				["Appearance", "Green & Smooth", "Green & Smooth", "Green & Smooth"],
+				["Dropping Point (°C)", ">250", ">260", ">260"],
+				[
+					"Mineral Oil Viscosity @ 40°C",
+					"ISO VG 220",
+					"ISO VG 220",
+					"ISO VG 220"
+				],
+				["Copper Corrosion", "Pass", "Pass", "Pass"],
+				["EMCOR Rust Test", "0,0", "0,0", "0,0"]
+			]
+		}
+	},
+	"HPCL0296": {
+		"comparison": {
+			"headers": ["Property", "LITHON PD-0", "Test Method"],
+			"rows": [
+				["NLGI Grade", "NLGI 0", "NLGI"],
+				["Type of Soap", "Lithium", "Lithium"],
+				["Penetration", "366", "ASTM D217"],
+				["Worked Penetration (60X)", "382", ""],
+				["Drop Point (°C)", ">190", "ASTM D665"],
+				["Base Oil Viscosity", "ISO VG 220", ""],
+				[
+					"Oxidation Stability @ 100°C (drop in psi, 100 hrs)",
+					"0.4",
+					"ASTM D942"
+				],
+				["Emcor Rust Test (Rating)", "0,0", "ASTM D6138"],
+				["Water Washout @ 80°C (% loss)", "<5", "ASTM D1264"],
+				["Four Ball Weld Load (kg)", "250", "ASTM D2596"],
+				["Four Ball Wear Scar Dia (mm)", "<0.5", "ASTM D2266"],
+				["Timken OK Load (lb)", "45", "ASTM D2509"],
+				["Copper Corrosion (24 hrs)", "1A", "ASTM D4048"]
+			]
+		}
+	},
+	"HPCL0290": {
+		"comparison": {
+			"headers": ["Property", "LITHON EP 0", "LITHON EP 00"],
+			"rows": [
+				["NLGI Grade", "-", "NLGI 00"],
+				["Appearance", "Smooth and Uniform", "Smooth & Uniform"],
+				["Colour", "-", "Amber to Light Brown"],
+
+				["Consistency / Penetration @ 25°C", "355 – 385", "400 – 430"],
+				["Copper Strip Corrosion @ 100°C (24 hrs)", "Negative", "Negative"],
+
+				["Drop Point (°C)", ">180", "160"],
+
+				["Four Ball Weld Load (kg)", "200", "250"],
+				["Four Ball Wear Scar Dia (mm)", "0.5", "0.6"],
+
+				["Timken OK Load", "45 lb", "22 kg"],
+
+				["Oxidation Stability (Pressure Drop)", "0.5 kgf/cm²", "0.7 kg/cm²"],
+
+				["Mineral Oil Viscosity @ 40°C (cSt)", "-", "135 – 165"],
+				["Flash Point COC (°C)", "-", "200"],
+				["Viscosity Index", "-", "60"]
+			]
+		}
+	}
+}

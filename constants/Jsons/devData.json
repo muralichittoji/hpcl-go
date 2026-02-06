@@ -12230,7 +12230,7 @@
 		"title": "LITHON EP 0 & EP 00",
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "LITHON EP series of lubricants are first quality, lithium soap greases suitable for lubricating various types of mechanical equipments. These are superior multipurpose greases, developed to meet the varied requirements of bearing manufacturers. They are water-resistant and are corrosion inhibited with excellent oxidation and mechanical stability.",
-		"specifications": [],
+		"specifications": [{ "name": "Comparision", "value": "HPCL0290" }],
 		"appData": "Recommended for lubrication requirements where NLGI 0 grade is recommended with EP properties. Product has good pumpability.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -12431,7 +12431,7 @@
 		"title": "LITHON PD-0 FLUID GREASE",
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "Lithon PD-0 is a high performance lithium fluid grease. The grease has good fluidity and is fortified with additives which protect against wear and extreme pressures without causing corrosion to copper alloys or steel.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0296" }],
 		"appData": "Not available",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -12710,7 +12710,7 @@
 		"title": "LITHOPLEX HTX SERIES",
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "LITHOPLEX HTX grades meet the requirements of all industrial grease applications for ball and roller bearings in steel mills, paper mills, cement plants. LITHOPLEX HTX has, in addition to shear stability, high load carrying capacity and is recommended for situations having extremely high temperature. These greases are suitable for applications up to 200°C. LITHOPLEX HTX is also suitable for ball and roller bearings of railway axle boxes. LITHOPLEX HTX 1 is suitable for applications in the lubrication of the rack and pinion joint of the kilns in the cement industry. It is also suitable for slip seal application in sponge iron plant.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0300" }],
 		"appData": "Not available",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -12725,7 +12725,7 @@
 		"title": "LITHOPLEX INDUSTRIAL GREASE",
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "LITHOPLEX HTX series of greases are premium quality, lithium base complex greases suitable for lubricating various types of mechanical equipments. These are superior multipurpose greases, developed to meet the varied temperature requirements of ball and roller bearing lubrication. They possess outstanding oxidation & mechanical stability, water-resistant and rust protection characteristics. These grades have an exceptionally high dropping point giving them excellent resistance to leakage, dripping and throw-off at elevated operating temperatures. Also they possess unique non corrosive EP additives to assist in boundary lubrication conditions.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0301" }],
 		"appData": "Lithoplex grades meet the requirements of all industrial grease applications for ball and roller bearings in steel mills, paper mills, cement plants. Lithoplex has, in addition to shear stability, high load carrying capacity and is recommended for situations having extremely high temperature. These greases are suitable for applications up to 200°C. Lithoplex is also suitable for ball and roller bearings of railway axle boxes. Lithoplex 1 is suitable for applications in the lubrication of the rack and pinion joint of the kilns in the cement industry",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -12791,7 +12791,7 @@
 		"title": "TISONA",
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "TISONA is a premium quality high temperature clay thickened non soap base smooth structured grease having good oxidation resistance and thermal stability for use in both plain and antifriction bearings. It is further fortified with anti-oxidant and anti-corrosion additives. It can lubricate satisfactorily at temperature upto 230°C and will not melt or soften appreciably even at higher temperature. It has better resistance to acids than metal soap greases. TISONA M2 & M3 contains molybdenum disulphide which makes it suitable for high temperature applications upto 250°C. Tisona Supreme is special grease for sugar mills.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0304" }],
 		"appData": "Used in steel and cement plants.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -12869,7 +12869,7 @@
 		"title": "AURELIA TI 3030 & AURELIA TI 4030",
 		"subTitle": "Marine Applications",
 		"description": "AURELIA TI is a range of trunk piston engine oils developed for use in medium speed diesel engines burning residual fuels. AURELIA TI combines an exclusive formulation of latest additive technologies and a highly refined base oil to provide a substantial safety margin to cope with the higher stress levels even with the latest and future designs of diesel engines.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0307" }],
 		"appData": "Highly rated medium speed diesel engines used in marine and stationary power generation applications, burning heavy fuel oil with various qualities and sulphur contents\nParticularly suitable for low or very low oil consumption engines operating with a poor quality residual fuel\nBearings and stern-tubes\nReduction gear lubrication",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -12884,7 +12884,7 @@
 		"title": "DISOLA M 3015 & DISOLA M 4015",
 		"subTitle": "Marine Applications",
 		"description": "DISOLA M 3015 & 4015 are monograde engine oils for High and Medium speed diesel engines.\n\nApplication",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0308" }],
 		"appData": "Oil specially devised for lubricating high and medium speed diesel engines at sea and for fishing and river transport applications\nMain and auxiliary naturally-aspirated or supercharged engines of all types and ratings\nJournals, stern tubes and reduction drives / reversing gear\nRecommended for engines running on Gas oil and Marine Diesel oil",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -13237,7 +13237,12 @@
 		"title": "HP RACER",
 		"subTitle": "BS VI Grades",
 		"description": "HP RACER grades are premium quality motorcycle engine oils made to cater to the highly demanding lubrication requirements of modern 4-Stroke geared bikes. They are manufactured from finest quality paraffinic base stocks and state of the art additive technology and meet API SL and JASO MA 2 specifications.\n\nHP RACER grades provide superior protection for engine, clutch and gears of a motorcycle which helps you to derive the best performance from your bike all the time, while ensuring high engine durability.",
-		"specifications": [],
+		"specifications": [
+			{
+				"property": "Comparision",
+				"value": "HPCL0318"
+			}
+		],
 		"appData": "HP RACER grades are recommended for new BS VI compliant geared 4-stroke bikes manufactured by most of the reputed manufacturers like Hero Motors, Bajaj, Yamaha, Honda, Suzuki, TVS, Royal Enfield, etc. They are also recommended for use in previous engine models as well.\n\nHP RACER grades are available in 10W-30, 20W-40, 20W-50 and 15W-50 Viscometrics.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
@@ -14326,7 +14331,12 @@
 		"title": "HP HYLUBE X-3 10W (KB), 30 (KB)",
 		"subTitle": "HEAVY DUTY DIESEL ENGINE OILS",
 		"description": "HP HYLUBE X-3 10W KB, 30 KB are premium quality lubricating oils formulated especially for BEML- KOMATSU equipments. HYLUBE X-3- 10 W KB can be used as a hydraulic fluid as well. The oils offer Excellent thermal and oxidation stability and exhibit excellent performance under severe conditions",
-		"specifications": [],
+		"specifications": [
+			{
+				"property": "Comparision",
+				"value": "HPCL0360"
+			}
+		],
 		"appData": "Not available",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
@@ -15740,7 +15750,7 @@
 		"title": "THREE WHEELER ENGINE OILS RUNNING ON DIESEL",
 		"subTitle": "THREE WHEELER ENGINE OILS",
 		"description": "HPCL has a wide variety of Engine oils for Three Wheeler applications. Most of Three wheeler manufacturers now recommend oils meeting API CH4/CI4 and CI4+ performance levels. The various HPCL grades under these categories meeting the above performance levels are given below:\n\n \n\nGRADE\tAPI PERFORMANCE LEVEL\nHP MILCY TURBOSTAR 15W 40\tCH4\nHP MILCY NO. 1 15W 40\tCI4\nHP MILCY TURBOTECH 15W 40\tCI4+\n \n\nThe above grades are premium quality diesel engine oils made from the finest paraffinic base stocks and state of the art additive technology, specifically designed to address the operational severity and engine durability issues of the modern diesel engines. They provide unmatched soot handling properties, optimum protection for control of corrosive wear, low and high temperature stability, piston deposit control, valve train wear, oxidative thickening, foaming and viscosity loss due to shear. They are recommended for use in 3 wheelers manufactured by OEMs like Bajaj Auto,M&M , TVS, Atul Auto, Piaggio, Scooters India etc.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0410" }],
 		"appData": "Not available",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."

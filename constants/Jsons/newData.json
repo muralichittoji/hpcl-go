@@ -34,20 +34,6 @@
 			"description": "Lubricants offers a comprehensive range of oils and greases designed to protect, enhance, and extend the life of engines and machinery. These products reduce friction, minimize wear, and ensure smooth operation across automotive, industrial, and commercial applications, even under demanding operating conditions.",
 			"data": [
 				{
-					"id": 1,
-					"name": "Automotive Oils",
-					"data": [
-						{ "name": "HP KISAN SHAKTI", "data": "HPCL0209" },
-						{ "name": "HP KISAN SHAKTI UTTO", "data": "HPCL0210" },
-						{ "name": "HP KISAN TRACTOR OIL 20W-40", "data": "HPCL0211" },
-						{ "name": "HP PUMPSET OIL", "data": "HPCL0212" },
-						{ "name": "HP TRACTOR OIL 15W-40", "data": "HPCL0213" },
-						{ "name": "HP WET BRAKE OIL", "data": "HPCL0214" },
-						{ "name": "HP SUPERTRAN", "data": "HPCL0215" },
-						{ "name": "HP SUPERTRAN HVI", "data": "HPCL0216" }
-					]
-				},
-				{
 					"id": 2,
 					"name": "Base Oil",
 					"data": [
@@ -449,6 +435,20 @@
 				{
 					"name": "Automotive Oils",
 					"data": [
+						{
+							"id": 1,
+							"name": "Agriculture Oils",
+							"data": [
+								{ "name": "HP KISAN SHAKTI", "data": "HPCL0209" },
+								{ "name": "HP KISAN SHAKTI UTTO", "data": "HPCL0210" },
+								{ "name": "HP KISAN TRACTOR OIL 20W-40", "data": "HPCL0211" },
+								{ "name": "HP PUMPSET OIL", "data": "HPCL0212" },
+								{ "name": "HP TRACTOR OIL 15W-40", "data": "HPCL0213" },
+								{ "name": "HP WET BRAKE OIL", "data": "HPCL0214" },
+								{ "name": "HP SUPERTRAN", "data": "HPCL0215" },
+								{ "name": "HP SUPERTRAN HVI", "data": "HPCL0216" }
+							]
+						},
 						{
 							"name": "BRAKE FLUIDS",
 							"data": [
