@@ -16,7 +16,7 @@ import SpecificationsCard from "@/components/Ui/Info/SpecificationsCard";
 
 // Static product data
 import infoData from "@/constants/Jsons/InfoData.json";
-import devData from "@/constants/Jsons/devData.json";
+import devData from "@/constants/Jsons/newDevData.json";
 
 // Routing & hooks
 import { useLocalSearchParams } from "expo-router";

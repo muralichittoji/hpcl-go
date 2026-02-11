@@ -34,10 +34,10 @@ const InputSearch = ({
 		try {
 			setLoading(true);
 
-			if (!isOnline) {
-				setSlowNet(true);
-				return;
-			}
+			// if (!isOnline) {
+			// 	setSlowNet(true);
+			// 	return;
+			// }
 
 			// ⭐ manual slow-network guard (10s)
 			timeoutId = setTimeout(() => {
@@ -46,14 +46,17 @@ const InputSearch = ({
 			}, 10000);
 
 			const res = await getAnswer({ question });
-
-			clearTimeout(timeoutId); // ✅ stop timer if success
+			clearTimeout(timeoutId);
 
 			const rawAnswer = res?.results?.[0]?.answer;
 
 			if (!rawAnswer) {
 				setSlowNet(true);
 				return;
+			}
+
+			if (res) {
+				setSlowNet(false);
 			}
 
 			const parsed = JSON.parse(rawAnswer);

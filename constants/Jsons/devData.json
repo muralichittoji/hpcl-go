@@ -6875,67 +6875,10 @@
 	"HPCL0146": {
 		"id": 146,
 		"MSDS": "",
-		"title": "ENKLO FRWG 46(FIRE RESISTANT HYDRAULIC FLUID )",
+		"title": "ENKLO FRWG",
 		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO FRWG is a hydraulic oil formulated from glycols for meeting the fire resistant requirements in fire prone areas in Steel, Mining, Die-Casting and Plastics industries. It is a true solution of glycols and water. This grade is composed of Polyalkylene Glycols, selected additives for wear reduction, corrosion inhibitors, anti-oxidants, anti-foamants and water. The operating temperature of the oil ranges from -20\u00b0C to +60\u00b0C. This oil is suitable for use in all low temperature applications without any chance of freezing and gelling. This oil meets IS: 10532 (part\u20133) \u2013 1993 and HF-C classification of European Mines Safety Commission.",
-		"specifications": [
-			{ "property": "Product Name", "value": "ENKLO FRWG 22" },
-			{ "property": "Appearance", "value": "Clear" },
-			{ "property": "Density @ 15°C", "value": "1.05–1.09 g/cc" },
-			{ "property": "pH Value", "value": "8.5–10.5" },
-			{
-				"property": "Kinematic Viscosity @ 40°C",
-				"value": "19.8–24.2 cSt"
-			},
-			{ "property": "Water Content", "value": "40–60 % Volume" },
-			{
-				"property": "Fire Resistance Characteristics",
-				"value": "Shall pass the test"
-			},
-			{
-				"property": "Rusting Test (With Synthetic Sea Water)",
-				"value": "Pass"
-			},
-			{ "property": "Pour Point", "value": "-10 °C" },
-
-			{ "property": "Product Name", "value": "ENKLO FRWG 46" },
-			{ "property": "Appearance", "value": "Clear" },
-			{ "property": "Density @ 15°C", "value": "1.05–1.09 g/cc" },
-			{ "property": "pH Value", "value": "8.5–10.5" },
-			{
-				"property": "Kinematic Viscosity @ 40°C",
-				"value": "41.5–50.6 cSt"
-			},
-			{ "property": "Water Content", "value": "40–45 % Volume" },
-			{
-				"property": "Fire Resistance Characteristics",
-				"value": "Shall pass the test"
-			},
-			{
-				"property": "Rusting Test (With Synthetic Sea Water)",
-				"value": "Pass"
-			},
-			{ "property": "Pour Point", "value": "-10 °C" },
-
-			{ "property": "Product Name", "value": "ENKLO FRWG 68" },
-			{ "property": "Appearance", "value": "Clear" },
-			{ "property": "Density @ 15°C", "value": "1.05–1.09 g/cc" },
-			{ "property": "pH Value", "value": "8.5–10.5" },
-			{
-				"property": "Kinematic Viscosity @ 40°C",
-				"value": "61.2–74.8 cSt"
-			},
-			{ "property": "Water Content", "value": "40–45 % Volume" },
-			{
-				"property": "Fire Resistance Characteristics",
-				"value": "Shall pass the test"
-			},
-			{
-				"property": "Rusting Test (With Synthetic Sea Water)",
-				"value": "Pass"
-			},
-			{ "property": "Pour Point", "value": "-10 °C" }
-		],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0146" }],
 		"appData": "This oil is suitable for use in the hydraulic systems of coke oven battery carrier, crane hydraulics in high temperature regions of Steel Plants. It is used in control governors in steam turbines, control valves in presence of superheated steam in Power Plants. It is also suitable for use in hydrostatic systems in Plastics and Die-Casting industries.",
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
@@ -6950,37 +6893,7 @@
 		"title": "ENKLO SYNTHETIC",
 		"subTitle": "Hydraulic Oil",
 		"description": "ENKLO SYNTHETIC is top of the line premium quality hydraulic oil made from synthetic Base Stocks and ash less additives. This ensures excellent anti \u2013 oxidation properties and at the same time low varnish and sludge. This oil offers a longer drain period of 5000 hours with improved energy efficiency & equipment durability during use.",
-		"specifications": [
-			{ "property": "Product Name", "value": "ENKLO SYNTHETIC 46" },
-			{ "property": "Density @ 15°C", "value": "0.8416 g/cm³" },
-			{ "property": "Flash Point", "value": "228 °C" },
-			{ "property": "Kinematic Viscosity @ 40°C", "value": "48.26 cSt" },
-			{ "property": "Kinematic Viscosity @ 100°C", "value": "8.531 cSt" },
-			{ "property": "Viscosity Index", "value": "155" },
-			{ "property": "Pour Point", "value": "-40 °C" },
-			{ "property": "Foaming Sequence I", "value": "10/0 ml" },
-			{ "property": "Foaming Sequence II", "value": "10/0 ml" },
-			{ "property": "Foaming Sequence III", "value": "10/0 ml" },
-			{ "property": "Rust Prevention", "value": "No rust" },
-			{ "property": "Copper Corrosion", "value": "1A" },
-			{ "property": "FZG Pass Load Stage", "value": "12" },
-			{ "property": "Shell Four-Ball Wear Test", "value": "0.39 mm" },
-
-			{ "property": "Product Name", "value": "ENKLO SYNTHETIC 68" },
-			{ "property": "Density @ 15°C", "value": "0.8518 g/cm³" },
-			{ "property": "Flash Point", "value": "235 °C" },
-			{ "property": "Kinematic Viscosity @ 40°C", "value": "68.3 cSt" },
-			{ "property": "Kinematic Viscosity @ 100°C", "value": "11.7 cSt" },
-			{ "property": "Viscosity Index", "value": "168" },
-			{ "property": "Pour Point", "value": "-40 °C" },
-			{ "property": "Foaming Sequence I", "value": "10/0 ml" },
-			{ "property": "Foaming Sequence II", "value": "10/0 ml" },
-			{ "property": "Foaming Sequence III", "value": "10/0 ml" },
-			{ "property": "Rust Prevention", "value": "No rust" },
-			{ "property": "Copper Corrosion", "value": "1A" },
-			{ "property": "FZG Pass Load Stage", "value": "12" },
-			{ "property": "Shell Four-Ball Wear Test", "value": "0.39 mm" }
-		],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0147" }],
 		"appData": "Energy efficient synthetic hydraulic oil offers a longer drain period of 5000 hours with improved energy efficiency & equipment durability during use.",
 		"packaging": ["210 ltr", "Bulk"],
 		"SBU": "Lubes",
@@ -8474,31 +8387,7 @@
 		"title": "HYCOM  PGE  Series",
 		"subTitle": "Compressor Oils",
 		"description": "AHYCOM PGE Air compressor lubricants have been specially designed for use in rotary screw air compressors. HYCOM PGE compressor lubricants are a fully formulated, fully synthetic blend of polyalkylene glycol (PAG) and polyol ester and thus, take advantage of the excellent performance attributes of both classes of compound. In addition, due to the inherently high viscosity index of HYCOM PGE lubricants, no additional VI improvers are required in the formulation and so the products remain stable to shear forces and do not suffer any irreversible effects.",
-		"specifications": [
-			{ "property": "Product Name", "value": "HYCOM PGE 32" },
-			{ "property": "Kinematic Viscosity @ 40°C", "value": "31 cSt" },
-			{ "property": "Kinematic Viscosity @ 100°C", "value": "6.5 cSt" },
-			{ "property": "Viscosity Index", "value": "169" },
-			{ "property": "Density @ 20°C", "value": "0.985 g/cc" },
-			{ "property": "Pour Point", "value": "-50 °C" },
-			{ "property": "Flash Point (COC)", "value": "> 260 °C" },
-
-			{ "property": "Product Name", "value": "HYCOM PGE 46" },
-			{ "property": "Kinematic Viscosity @ 40°C", "value": "47.07 cSt" },
-			{ "property": "Kinematic Viscosity @ 100°C", "value": "8.93 cSt" },
-			{ "property": "Viscosity Index", "value": "173" },
-			{ "property": "Density @ 20°C", "value": "0.989 g/cc" },
-			{ "property": "Pour Point", "value": "-50 °C" },
-			{ "property": "Flash Point (COC)", "value": "> 260 °C" },
-
-			{ "property": "Product Name", "value": "HYCOM PGE 68" },
-			{ "property": "Kinematic Viscosity @ 40°C", "value": "73 cSt" },
-			{ "property": "Kinematic Viscosity @ 100°C", "value": "13.3 cSt" },
-			{ "property": "Viscosity Index", "value": "185" },
-			{ "property": "Density @ 20°C", "value": "0.990 g/cc" },
-			{ "property": "Pour Point", "value": "-50 °C" },
-			{ "property": "Flash Point (COC)", "value": "> 260 °C" }
-		],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0166" }],
 		"appData": "AHYCOM PGE Air compressor lubricants have been specially designed for use in rotary screw air compressors. HYCOM PGE compressor lubricants are a fully formulated, fully synthetic blend of polyalkylene glycol (PAG) and polyol ester and thus, take advantage of the excellent performance attributes of both classes of compound. In addition, due to the inherently high viscosity index of HYCOM PGE lubricants, no additional VI improvers are required in the formulation and so the products remain stable to shear forces and do not suffer any irreversible effects.",
 		"packaging": ["-"],
 		"SBU": "Lubes",
@@ -9553,7 +9442,7 @@
 		"subTitle": "Compressor Oils",
 		"description": "HYCOM LS grades are low sulphur, high viscosity compressor oils recommended for synthesis gas compressors such as Cooper Bessemer, Nuovo Pignone and similar makes. These oils are compatible with high-pressure syn gas operations, offer excellent oxidation stability, and minimize the risk of catalyst poisoning due to their very low sulphur content (<0.25% wt).",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0205" }],
 
 		"appData": "Synthesis gas compressors, high pressure compressor systems, industrial gas processing plants, heavy-duty compressor applications.",
 
@@ -9573,17 +9462,7 @@
 		"subTitle": "Neat Cutting Fluid",
 		"description": "Compounded low viscosity neat cutting oil specially designed for the bearing industry, offering excellent lubrication and ensuring superior surface finish during machining and finishing operations.",
 
-		"specifications": [
-			{ "property": "Appearance", "value": "Clear" },
-			{ "property": "Density @ 29°C", "value": "826" },
-			{ "property": "Kinematic Viscosity @ 40°C", "value": "4 – 7 cSt" },
-			{ "property": "Flash Point (COC)", "value": "110 °C" },
-			{
-				"property": "Copper Strip Corrosion @ 100°C, 3 Hrs (Max)",
-				"value": "1"
-			},
-			{ "property": "Chlorine Content", "value": "Yes" }
-		],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0206" }],
 
 		"appData": "Bearing industry machining, neat cutting operations, precision metal cutting, and finishing applications requiring high surface quality.",
 
@@ -9599,24 +9478,53 @@
 	"HPCL0207": {
 		"id": 207,
 		"MSDS": "",
-		"title": "HYCOM SYN Series",
+		"title": "HYCOM SYN 150",
 		"subTitle": "Soluble Cutting Fluids",
 		"description": "General-purpose emulsifiable cutting oil that forms a stable milky white emulsion when mixed with water. Designed for effective cooling, lubrication and corrosion protection during machining operations.",
 		"specifications": [
-			{ "property": "Colour After Emulsification", "value": "Milky White" },
-			{ "property": "Kinematic Viscosity @ 40°C (Min)", "value": "20 cSt" },
-			{ "property": "Flash Point (COC) (Min)", "value": "150 °C" },
-			{ "property": "Copper Corrosion @ 100°C (Min)", "value": "1" },
+			{ "property": "Kinematic Viscosity @ 40°C (cSt)", "value": "152" },
+			{ "property": "Kinematic Viscosity @ 100°C (cSt)", "value": "20.6" },
+			{ "property": "Viscosity Index", "value": "158" },
+			{ "property": "Pour Point (°C)", "value": "-39" },
+			{ "property": "Acidity – Inorganic (mg KOH/g)", "value": "Nil" },
+			{ "property": "Flash Point, COC (°C)", "value": "240" },
+			{ "property": "Rusting Test", "value": "Passes" },
+
+			{ "property": "Foam Stability – Sequence I (ml)", "value": "10 / Nil" },
+			{ "property": "Foam Stability – Sequence II (ml)", "value": "10 / Nil" },
+			{ "property": "Foam Stability – Sequence III (ml)", "value": "10 / Nil" },
+
+			{ "property": "Oxidation Stability (RPVOT)", "value": "2200 minutes" },
+			{ "property": "Ash Content (% mass)", "value": "< 0.007" },
+			{ "property": "Copper Strip Corrosion @ 100°C, 3 hrs", "value": "1A" },
+
 			{
-				"property": "Cast Iron Corrosion Test (20:1 Emulsion, 400 ppm Hard Water)",
-				"value": "0/1-1 (Max)"
+				"property": "Demulsibility – Water in Oil after 5 hrs (%)",
+				"value": "0.2"
 			},
 			{
-				"property": "Emulsion Test (400 ppm Hard Water, 5:1 & 20:1)",
-				"value": "Pass"
+				"property": "Demulsibility – Cuff after Centrifuging (ml)",
+				"value": "0.05"
+			},
+			{ "property": "Demulsibility – Total Free Water (ml)", "value": "87" },
+
+			{ "property": "Air Release Value @ 90°C", "value": "4" },
+			{ "property": "Additive Solubility", "value": "Passes" },
+			{ "property": "FZG EP Test (PLS)", "value": "12" },
+
+			{ "property": "4 Ball Wear (WSD mm Max)", "value": "0.3" },
+
+			{ "property": "Thermal Stability – Copper Appearance", "value": "1" },
+			{
+				"property": "Thermal Stability – Steel Appearance",
+				"value": "No Deposit / Discoloration"
+			},
+			{ "property": "Thermal Stability – Sludge", "value": "None" },
+			{
+				"property": "Thermal Stability – % Viscosity Increase",
+				"value": "0.02"
 			}
 		],
-
 		"appData": "Suitable for machining of all metals. Recommended concentration 5–10% depending on machining severity. Can also be used for light grinding operations.",
 
 		"packaging": ["Barrel", "Bulk Supply"],
@@ -9635,7 +9543,7 @@
 		"subTitle": "Compressor Oils",
 		"description": "HYCOM LS EXPO grades are ultra-low sulphur, high viscosity compressor oils designed for synthesis gas and LDPE compressors such as Cooper Bessemer, Nuovo Pignone and similar makes. These oils are compatible with high-pressure syn gas operations, provide excellent oxidation resistance, and virtually eliminate the risk of catalyst poisoning due to extremely low sulphur content (< 5 ppm).",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0208" }],
 
 		"appData": "Syn gas compressors, LDPE compressors, high-pressure compressor systems, gas processing plants, catalyst-sensitive applications.",
 
@@ -9842,7 +9750,7 @@
 		"subTitle": "Compressor Oils",
 		"description": "HYCOM C grades are recommended for cylinder lubrication of single and multistage air compressors handling moist air. These oils provide excellent lubrication of piston rings, valves and cylinder liners. HYCOM C 460 features low sulphur content and is suitable for ammonia synthesis compressors used in fertilizer plants.",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0217" }],
 
 		"appData": "Single and multistage air compressors, moist air compressors, piston compressors, ammonia synthesis compressors in fertilizer plants.",
 
@@ -9893,7 +9801,7 @@
 		"subTitle": "Compressor Oils",
 		"description": "HYCOM VDL T grades are high performance compressor oils suitable for rotary air compressors, screw compressors and vacuum pumps. They provide reliable operation up to 250°C air discharge temperature and are also recommended for journal and antifriction bearings in high-speed, high-temperature fan applications. HYCOM VDL T 100 is an ashless fluid suitable for high pressure boiler control valves.",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0219" }],
 
 		"appData": "Rotary compressors, screw compressors, vacuum pumps, journal bearings, antifriction bearings, high-speed fans and high temperature industrial applications.",
 
@@ -9913,7 +9821,7 @@
 		"subTitle": "Cylinder Oils",
 		"description": "CYNDOL grades are specially formulated cylinder oils designed for lubrication of steam engine cylinders operating under highly superheated and wet saturated steam conditions. They also provide excellent performance in large slow moving industrial gears, plain bearings, calender bearings, sugar mill roller bearings and worm gears. Higher viscosity grades like CYNDOL 1000 and 1500 are also suitable for tempering and wire drawing applications.",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0220" }],
 
 		"appData": "Steam engines, slow moving gears, plain bearings, worm gears, calender bearings, sugar mill roller bearings, tempering and wire drawing operations.",
 
@@ -10576,15 +10484,7 @@
 		"subTitle": "Industrial Turbine Oils",
 		"description": "TURBINOL LP grades are premium quality lubricating oils designed to provide efficient and trouble-free service in precision industrial machinery having most exacting lubrication requirements. These oils are formulated from selected stable base oils and efficient refining methods. The additives used are metal-free and ashless, ensuring excellent oxidation stability, rust protection and long service life.",
 
-		"specifications": [
-			{
-				"property": "Product Type",
-				"value": "Turbine Oil (Ashless / Metal-free Additives)"
-			},
-			{ "property": "Base Oil Type", "value": "Highly Refined Mineral Oils" },
-			{ "property": "Additive System", "value": "Ashless" },
-			{ "property": "Availability", "value": "Available" }
-		],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0239" }],
 
 		"appData": "Recommended for lubrication of precision industrial turbines and machinery requiring long oil life, oxidation resistance and clean, deposit-free operation.",
 
@@ -10726,7 +10626,7 @@
 		"subTitle": "Neat Cutting Fluids",
 		"description": "HP TRIMOFIN 14, 15, 16 and 18 are oiliness type straight cutting oils formulated from refined mineral base oils and performance additives to enhance wetting, lubrication and surface finish. These oils are non-staining and provide excellent machining performance for non-ferrous metals and light to medium duty machining of steels.",
 
-		"specifications": ["available"],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0244" }],
 
 		"appData": "Suitable for machining non-ferrous metals and light machining of steels. Trimofin 14 & 15 are low viscosity grades recommended for honing and precision machining. Trimofin 16 & 18 provide higher viscosity and superior wettability. Trimofin 18 is also suitable for drawing of non-ferrous rods and tubing.",
 
@@ -10746,17 +10646,7 @@
 		"subTitle": "Neat Cutting Fluids (EP Type)",
 		"description": "HP TRIMOFIN 23 and 25 are non-staining straight cutting oils treated with extreme pressure (EP) and oiliness additives. They provide superior load carrying capacity, improved lubrication and enhanced tool life. These oils are specially designed for high speed automatic machine tools and demanding machining operations.",
 
-		"specifications": [
-			{ "property": "Type", "value": "Straight (Neat) Cutting Oil" },
-			{ "property": "Additive System", "value": "EP + Oiliness Additives" },
-			{ "property": "Staining", "value": "Non-staining" },
-			{ "property": "Grades Available", "value": "23 / 25" },
-			{ "property": "Load Carrying Capacity", "value": "High" },
-			{
-				"property": "EP Strength",
-				"value": "Trimofin 25 Higher EP Performance"
-			}
-		],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0245" }],
 
 		"appData": "Recommended for high speed automatic machine tools and machining of ferrous and non-ferrous metals. Suitable for medium to heavy duty cutting operations requiring improved tool life and surface finish.",
 
@@ -10776,7 +10666,7 @@
 		"subTitle": "Semi-Synthetic / Synthetic Metal Working Fluids",
 		"description": "SYNTHKOOL 100, 101 and 102 are semi-synthetic and fully synthetic water-miscible cutting fluids formulated with carefully selected rust preventive additives and performance improvers. They provide excellent cooling, corrosion protection and long service life. Grades 100 and 102 are fully synthetic formulations offering superior cleanliness and stability.",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0246" }],
 
 		"appData": "Recommended for grinding and high-speed machining operations. Provides excellent cooling, anti-rust protection and extended service life. Suitable for general machining of ferrous and non-ferrous metals.",
 
@@ -10796,7 +10686,7 @@
 		"subTitle": "Neat Cutting Fluids (Broaching & Grinding Oils)",
 		"description": "TRIMOFIN 64, 65 and 66 are special purpose straight cutting oils formulated for broaching and grinding operations. These oils are fortified with enhanced extreme pressure additives and contain active sulphur to provide superior load carrying capacity, improved tool life and excellent surface finish under severe machining conditions.",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0247" }],
 
 		"appData": "Recommended for heavy-duty broaching, grinding and other severe machining operations requiring strong EP performance and extended tool life. Suitable for demanding metal removal processes.",
 
@@ -10816,7 +10706,7 @@
 		"subTitle": "Mould Release Oils",
 		"description": "CEMOL 35 and N35 are effective mould releasing agents designed for metallic moulds used in concrete construction works. They are carefully blended formulations of resins, plasticizers and oils in selected solvents to provide easy release, clean surfaces and improved finish of concrete structures.",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0248" }],
 
 		"appData": "Recommended for all types of concrete moulds including complex and intricate shapes such as hume pipes, precast elements and construction formworks. Helps prevent sticking and improves mould life.",
 
@@ -10866,7 +10756,7 @@
 		"subTitle": "Quenching Oils",
 		"description": "HP METAQUENCH 39 and 40 are high quality quenching oils formulated from refined base stocks without additives. They provide controlled cooling characteristics for heat treatment operations. METAQUENCH 39 offers relatively faster quenching suitable for general purpose and cyanided parts, while METAQUENCH 40 provides slower quenching speed for reduced distortion and cracking.",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0250" }],
 
 		"appData": "METAQUENCH 39 is recommended for general purpose quenching of components including cyanided parts. METAQUENCH 40 is suitable where slower quenching speed is desired to minimize distortion and cracking during heat treatment.",
 
@@ -10886,7 +10776,7 @@
 		"subTitle": "Rolling Oils",
 		"description": "HP ROLMET V series are compounded rolling oils specially designed for cold rolling operations of both ferrous and non-ferrous metals. They provide excellent lubricity, surface finish, and tool life. ROLMET V 45 is suitable for general cold rolling of carbon and alloy steels, brass and copper, while ROLMET V 55 offers higher viscosity for heavier duty rolling applications.",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0251" }],
 
 		"appData": "Recommended for cold rolling of carbon steel, alloy steel, brass and copper. Suitable for both ferrous and non-ferrous metal rolling operations requiring good lubricity and surface finish.",
 
@@ -10926,7 +10816,7 @@
 		"subTitle": "Rust Preventives",
 		"description": "HP RUSTOP grades are specially formulated rust preventive oils designed to provide effective protection against corrosion during storage and transit. These products offer short-term, medium-term, and long-term protection depending on grade. They form a uniform protective film, provide wide surface coverage, and are easily removable by solvent, making them economical and efficient for industrial use.",
 
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0253" }],
 
 		"appData": "Recommended for protection of machined components, finished parts, metal surfaces, and equipment during storage, shipment, and transit. Suitable for indoor and covered storage applications across various industries.",
 
@@ -11019,7 +10909,7 @@
 		"title": "RUSTOP 274, 275, 276, 282, 283",
 		"subTitle": "RUST PREVENTIVES",
 		"description": "HP Rustop grades (rust preventives) are formulated for various specific applications such as short-term, mid-term, and long-term rust protection. They are easily removable by solvent and offer wide surface coverage, making them economical and efficient for use.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0257" }],
 		"appData": "Not available",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -11936,7 +11826,7 @@
 		"title": "HP ALPLEX 2",
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "HP ALPEX Greases are high performance, extreme pressure and environment friendly greases. The grease has good extreme pressure properties and excellent mechanical stability.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0280" }],
 		"appData": "Not available",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -12200,7 +12090,7 @@
 		"title": "LIMAPLEX EP TYPE GREASE",
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "Limaplex EP Grease is high performance environment friendly grease. The grease has good inherent extreme pressure properties as well as anti-corrosion resistance. The properties are further fortified with additives, which protect against wear and provide oxidation resistance.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0288" }],
 		"appData": "Not available",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
@@ -12215,7 +12105,7 @@
 		"title": "LITHON",
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "LITHON grades meet the requirements of all industrial grease applications for plain and antifriction bearings in steel mills, paper mills, electric motors & generators, pumps, conveyors, compressors, machine tools, etc. LITHON EP has, in addition, shear stability, high load carrying capacity and is recommended for situations requiring the use of an extreme pressure multipurpose grease. LITHON EP2 is also suitable for ball and roller bearings of railway axle boxes. LITHON M 2 is suitable for applications where fretting corrosion may be a problem, such as lubrication of splined shafts.",
-		"specifications": [],
+		"specifications": [{ "property": "Comparision", "value": "HPCL0289" }],
 		"appData": "LITHON grades meet the requirements of all industrial grease applications for plain and antifriction bearings in steel mills, paper mills, electric motors & generators, pumps, conveyors, compressors, machine tools, etc. LITHON EP has, in addition, shear stability, high load carrying capacity and is recommended for situations requiring the use of an extreme pressure multipurpose grease. LITHON EP2 is also suitable for ball and roller bearings of railway axle boxes. LITHON M 2 is suitable for applications where fretting corrosion may be a problem, such as lubrication of splined shafts.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",

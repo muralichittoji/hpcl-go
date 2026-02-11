@@ -11,10 +11,18 @@ const ComparisonCard: React.FC<Props> = ({ value }) => {
 	const item = comparisonData[value as keyof typeof comparisonData];
 
 	if (!item?.comparison) {
-		return <Text>No comparison data found</Text>;
+		return (
+			<View style={styles.header}>
+				<View style={styles.iconCircle}>
+					<Text style={styles.icon}>▦</Text>
+				</View>
+				<Text style={styles.headerText}>
+					Specification &{"\n"} Comparison{value}
+				</Text>
+			</View>
+		);
 	}
-
-	const { headers, rows } = item.comparison;
+	const { headers, rows } = item?.comparison;
 
 	return (
 		<View style={styles.container}>

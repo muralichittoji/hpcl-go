@@ -1,5 +1,5 @@
 // Local JSON data used to populate modal info (Page 3)
-import devData from "@/constants/Jsons/devData.json";
+import newDevData from "@/constants/Jsons/newDevData.json";
 
 // App theme colors
 import { Colors } from "@/constants/theme";
@@ -10,7 +10,7 @@ import { ALL_IMAGES } from "@/hooks/Allimages";
 // Vector icons
 import { FontAwesome } from "@expo/vector-icons";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
 	Image,
 	Modal,
@@ -106,11 +106,18 @@ const UnifiedListMenu = ({
 	/* -------------------------------------------------------------------------- */
 
 	// Fetch product object from JSON
-	const getProduct = (key?: string) =>
-		key ? (devData[key as keyof typeof devData] ?? null) : null;
 
-	const getDesc = (key?: string) =>
-		getProduct(key)?.description ?? "No description available";
+	const getProduct = (key?: string) =>
+		key ? newDevData[key as keyof typeof newDevData] : null;
+
+	useEffect(() => {});
+	const getDesc = (key?: string) => {
+		console.log("KEY =>", key);
+		console.log("TYPE =>", typeof key);
+		console.log("ALL KEYS =>", Object.keys(newDevData));
+		console.log("MATCH =>", Object.keys(newDevData).includes(key!));
+		return getProduct(key)?.description ?? "No description available";
+	};
 
 	const getTitle = (key?: string) =>
 		getProduct(key)?.title ?? "No description available";

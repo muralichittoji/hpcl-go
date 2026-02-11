@@ -1,5 +1,5 @@
 {
-	"HPCL0318": {
+	"HPCL-LBS-0198": {
 		"comparison": {
 			"headers": ["Property", "10W-30", "20W-40", "20W-50", "15W-50"],
 			"rows": [
@@ -11,7 +11,7 @@
 			]
 		}
 	},
-	"HPCL0410": {
+	"HPCL-LBS-0294": {
 		"comparison": {
 			"headers": [
 				"Property",
@@ -28,7 +28,7 @@
 			]
 		}
 	},
-	"HPCL0360": {
+	"HPCL-LBS-0241": {
 		"comparison": {
 			"headers": ["Property", "10W (KB)", "30 (KB)"],
 			"rows": [
@@ -46,7 +46,7 @@
 			]
 		}
 	},
-	"HPCL0308": {
+	"HPCL-LBS-0188": {
 		"comparison": {
 			"headers": ["Property", "Unit", "M 3015", "M 4015"],
 			"rows": [
@@ -58,7 +58,7 @@
 			]
 		}
 	},
-	"HPCL0307": {
+	"HPCL-LBS-0187": {
 		"comparison": {
 			"headers": ["Property", "Method", "Unit", "3030", "4030"],
 			"rows": [
@@ -72,7 +72,7 @@
 			]
 		}
 	},
-	"HPCL0304": {
+	"HPCL-LBS-0184": {
 		"comparison": {
 			"headers": ["Property", "TISONA 2", "TISONA M2", "TISONA M3"],
 			"rows": [
@@ -83,7 +83,7 @@
 			]
 		}
 	},
-	"HPCL0300": {
+	"HPCL-LBS-0180": {
 		"comparison": {
 			"headers": ["Property", "LITHOPLEX HTX 1", "LITHOPLEX HTX 2"],
 			"rows": [
@@ -113,7 +113,7 @@
 			]
 		}
 	},
-	"HPCL0301": {
+	"HPCL-LBS-0181": {
 		"comparison": {
 			"headers": ["Property", "LITHOPLEX 1", "LITHOPLEX 2", "LITHOPLEX 3"],
 			"rows": [
@@ -130,7 +130,7 @@
 			]
 		}
 	},
-	"HPCL0296": {
+	"HPCL-LBS-0176": {
 		"comparison": {
 			"headers": ["Property", "LITHON PD-0", "Test Method"],
 			"rows": [
@@ -154,7 +154,7 @@
 			]
 		}
 	},
-	"HPCL0290": {
+	"HPCL-LBS-0170": {
 		"comparison": {
 			"headers": ["Property", "LITHON EP 0", "LITHON EP 00"],
 			"rows": [
@@ -177,6 +177,573 @@
 				["Mineral Oil Viscosity @ 40°C (cSt)", "-", "135 – 165"],
 				["Flash Point COC (°C)", "-", "200"],
 				["Viscosity Index", "-", "60"]
+			]
+		}
+	},
+	"HPCL-LBS-0169": {
+		"comparison": {
+			"headers": [
+				"Property",
+				"LITHON 2",
+				"LITHON 3",
+				"LITHON EP1",
+				"LITHON EP2",
+				"LITHON M2"
+			],
+			"rows": [
+				["Colour", "Yellowish", "-", "-", "-", "Black"],
+
+				[
+					"Worked Penetration @ 25°C",
+					"265–295",
+					"230–250",
+					"310–340",
+					"265–295",
+					"265–295"
+				],
+
+				["Drop Point (°C), Min", "180", "180", "180", "180", "180"],
+
+				["Type of Soap", "Lithium", "Lithium", "Lithium", "Lithium", "Lithium"],
+
+				["Timken OK Load (kg), Min", "-", "-", "20.4", "20.4", "-"]
+			]
+		}
+	},
+	"HPCL-LBS-0168": {
+		"comparison": {
+			"headers": ["Property", "LIMAPLEX EP", "Test Method"],
+			"rows": [
+				["Penetration, Worked (60 strokes)", "250", "ASTM D 217"],
+				["Drop Point (°C)", "180", "ASTM D 566"],
+				[
+					"Oxidation Stability @ 100°C (drop in pressure after 100 hrs, kg/cm²)",
+					"0.7 max",
+					"ASTM D 942"
+				],
+				["Emcor Rust Test Rating", "0,0", "ASTM D 6138"],
+				[
+					"Resistance to Water Washout @ 80°C (% loss by wt)",
+					"10",
+					"ASTM D 1264"
+				],
+				["Four Ball Weld Load (kg)", "250", "ASTM D 2596"]
+			]
+		}
+	},
+	"HPCL-LBS-0160": {
+		"comparison": {
+			"headers": [
+				"Property",
+				"ALPEX EP 0",
+				"ALPEX EP 1",
+				"ALPEX EP 2",
+				"ALPEX EP 3"
+			],
+			"rows": [
+				[
+					"Penetration, Worked (60X) – ASTM D 217",
+					"356",
+					"315",
+					"265–295",
+					"220–250"
+				],
+				["Drop Point (°C) – ASTM D 566", "219", "233", ">260", ">260"],
+				["Four Ball Weld Load (kg) – ASTM D 2596", "250", "250", "250", "315"],
+				["Copper Strip Corrosion – ASTM D 4048", "Pass", "Pass", "Pass", "Pass"]
+			]
+		}
+	},
+	"HPCL-LBS-0137": {
+		"comparison": {
+			"headers": ["Property", "274", "275", "276", "282", "283"],
+			"rows": [
+				["Appearance", "Dull", "Clear", "Dull", "Clear", "Clear"],
+				["Flash Point, COC (°C), Min", "-", "-", "-", "-", "120"],
+				["Non Volatiles (% wt)", "19–24", "-", "45–50", "-", "-"],
+				[
+					"Copper Strip Corrosion (3 hrs @ 100°C, ASTM)",
+					"1",
+					"-",
+					"1",
+					"-",
+					"1A"
+				],
+				["Water Displacement Test", "Pass", "-", "Pass", "-", "Pass"],
+				["Density", "-", "0.7–0.9", "-", "-", "0.855"],
+				[
+					"Kinematic Viscosity @ 40°C (cSt)",
+					"18–28",
+					"14–20",
+					"20–30",
+					"85–95",
+					"12.50–16.00"
+				]
+			]
+		}
+	},
+	"HPCL-LBS-0133": {
+		"comparison": {
+			"headers": ["Property", "387", "388", "389"],
+			"rows": [
+				["Appearance", "-", "Light Brown", "Yellow to Brown"],
+				["Flash Point, COC (°C), Min", "218", "-", "-"],
+				["Copper Strip Corrosion (3 hrs @ 100°C, ASTM), Max", "1", "1", "-"]
+			]
+		}
+	},
+	"HPCL-LBS-0129": {
+		"comparison": {
+			"headers": [
+				"Property",
+				"HP ELASTO 165",
+				"HP ELASTO 245",
+				"HP ELASTO 255"
+			],
+			"rows": [
+				["Kinematic Viscosity @ 40°C (cSt)", "85–107", "28–31", "14–18"],
+				["Aniline Point (°C) Min", "107–118", "95", "96"],
+				["Flash Point, COC (°C) Min", "225", "190", "230"],
+				["Copper Corrosion @100°C, 3 Hrs Max", "-", "1", "1"],
+				["Clay Gel Analysis", "-", "NIL", "-"],
+				["Asphaltenes (% wt)", "-", "0.6", "-"],
+				["Polar Compounds (% wt)", "-", "0.6", "-"],
+				["Aromatics (% wt)", "-", "20.3", "-"],
+				["Saturates (% wt)", "-", "79.1", "-"]
+			]
+		}
+	},
+	"HPCL-LBS-0123": {
+		"comparison": {
+			"headers": [
+				"Property",
+				"HP ROLMET V 45",
+				"HP ROLMET V 55",
+				"",
+				"HP ROLMET 22 (Min)",
+				"HP ROLMET 22 (Max)"
+			],
+			"rows": [
+				["Appearance", "-", "-", "", "Clear", "Clear"],
+
+				[
+					"Kinematic Viscosity @ 40°C (cSt)",
+					"17–28",
+					"104–110",
+					"",
+					"21",
+					"24"
+				],
+
+				["Flash Point, COC (°C)", "160", "190", "", "160", "-"],
+
+				["Copper Corrosion @100°C, 3 Hrs Max", "1", "1", "", "-", "1"],
+
+				["Colour (ASTM)", "-", "-", "", "0", "2"],
+
+				["Saponification Value (mg KOH/g) Max", "8–10", "-", "", "-", "-"]
+			]
+		}
+	},
+	"HPCL-LBS-0113": {
+		"comparison": {
+			"headers": ["Property", "METAQUENCH 39", "METAQUENCH 40"],
+			"rows": [
+				["Appearance", "Clear", "Clear"],
+				["Flash Point, COC (°C) Min", "210", "240"],
+				["Kinematic Viscosity @ 40°C (cSt)", "23–33", "58–73"],
+				["Saponification Value (mg KOH/g)", "0.5", "0.5"]
+			]
+		}
+	},
+	"HPCL-LBS-0111": {
+		"comparison": {
+			"headers": ["Property", "HP CEMOL 35", "HP CEMOL N35"],
+			"rows": [
+				["Appearance", "Slightly Hazy", "Clear"],
+				["Saponification Value (mg KOH/g)", "-", "0.55–0.65"],
+				["Kinematic Viscosity @ 40°C (cSt)", "1", "21"],
+				["Flash Point (°C)", "32", "165 (COC)"],
+				["Pour Point (°C)", "-", "-3"]
+			]
+		}
+	},
+	"HPCL-LBS-0108": {
+		"comparison": {
+			"headers": ["Property", "TRIMOFIN 64", "TRIMOFIN 65", "TRIMOFIN 66"],
+			"rows": [
+				["Appearance", "Clear", "Clear", "Clear"],
+				["Cu Strip Corrosion @100°C, 3 hrs", "4", "4", "4"],
+				["Density @ 29°C (g/cc)", "0.875–1.01", "-", "1.03"],
+				["Flash Point (COC) (°C)", "160", "130", "130"],
+				["Saponification Value (mg KOH/g)", "5", "-", "15"],
+				["Kinematic Viscosity @ 40°C (cSt)", "40–55", "14–16", "30–32"],
+				["Four Ball OK Load (kg)", "600", "800", "800"]
+			]
+		}
+	},
+	"HPCL-LBS-0106": {
+		"comparison": {
+			"headers": [
+				"Property",
+				"SYNTHKOOL 100",
+				"SYNTHKOOL 101",
+				"SYNTHKOOL 102"
+			],
+			"rows": [
+				["Appearance", "Fluorescent Yellow", "Fluorescent", "Fluorescent"],
+
+				["Copper Strip Corrosion (3 Hr @ 100°C, Max)", "1", "1", "1"],
+
+				[
+					"Cast Iron Corrosion – 1:40 (Distilled Water)",
+					"0/1-1",
+					"0/1-1",
+					"0/1-1"
+				],
+
+				[
+					"Cast Iron Corrosion – 1:40 (Hard Water, 200 PPM)",
+					"0/1-1",
+					"0/0-0",
+					"0/0-0"
+				],
+
+				["pH of 1:40 Solution (Distilled Water)", "8–8.5", "9", "9"]
+			]
+		}
+	},
+	"HPCL-LBS-0093": {
+		"comparison": {
+			"headers": ["Property", "Trimofin 23", "Trimofin 25"],
+			"rows": [
+				["Kinematic Viscosity @ 40°C (cSt)", "27 – 42", "31 – 42"],
+				["Flash Point, COC (°C, Min)", "160", "160"],
+				["Copper Corrosion (3 Hrs @ 100°C, Max)", "2", "—"],
+				["Saponification Value (mg KOH/g, Min)", "9", "—"],
+				["Colour, ASTM (Dilute, Max)", "6", "—"],
+
+				["Contains – Inactive Sulphur", "Yes", "—"],
+				["Contains – Active Sulphur", "No", "—"],
+				["Contains – Chlorine", "No", "—"]
+			]
+		}
+	},
+	"HPCL-LBS-0088": {
+		"comparison": {
+			"headers": [
+				"Property",
+				"Trimofin 14",
+				"Trimofin 15",
+				"Trimofin 16",
+				"Trimofin 18"
+			],
+			"rows": [
+				[
+					"Kinematic Viscosity @ 40°C (cSt)",
+					"2.2 – 8.4",
+					"3.0 – 9.0",
+					"20.1 – 24.8",
+					"20.1 – 24.8"
+				],
+
+				["Flash Point, COC (°C, Min)", "110", "110", "160", "150 (PMCC)"],
+
+				["Copper Strip Corrosion (3 Hr @ 100°C, Max)", "—", "—", "—", "—"],
+
+				[
+					"Saponification Number (mg KOH/g)",
+					"6.0 – 8.5",
+					"6.0 – 8.5",
+					"9.0 – 10.5",
+					"18 – 21"
+				],
+
+				["Organic Acidity (mg KOH/g, Max)", "—", "—", "0.1", "0.2"]
+			]
+		}
+	},
+	"HPCL-LBS-0068": {
+		"comparison": {
+			"headers": [
+				"Property",
+				"TURBINOL 32 LP",
+				"TURBINOL 46 LP",
+				"TURBINOL 68 LP"
+			],
+			"rows": [
+				["Kinematic Viscosity @ 40°C (cSt)", "31.26", "45.63", "65.3"],
+				["Viscosity Index", "107", "107", "114"],
+				["Flash Point, COC (°C)", "220", "220", "228"],
+				["Pour Point (°C)", "-32", "-32", "-32"],
+				["Neutralization No. TAN (mg KOH/g)", "0.1", "0.09", "0.09"],
+
+				["Rust Preventive Characteristics", "Pass", "Pass", "Pass"],
+
+				["Oxidation Stability – TOST Life (hrs)", ">7500", ">7500", ">7500"],
+				[
+					"Oxidation Stability – TAN after 1000 hrs (mg KOH/g)",
+					"0.1",
+					"0.13",
+					"0.28"
+				],
+				["Oxidation Stability – RPVOT (minutes)", "1000", "1000", "950"],
+
+				[
+					"Demulsibility @ 54°C (40-37-3)",
+					"40-40-0 (5)",
+					"40-40-0 (5)",
+					"40-40-0 (10)"
+				],
+
+				["Foaming – Seq I @ 24°C (ml/ml)", "0/0", "0/0", "0/0"],
+				["Foaming – Seq II @ 93.5°C (ml/ml)", "0/0", "0/0", "0/0"],
+				["Foaming – Seq III @ 24°C (ml/ml)", "0/0", "0/0", "0/0"],
+
+				["Air Release @ 50°C (minutes)", "3.5", "3.5", "4.7"],
+
+				["Sulphur Content (ppm)", "40", "43", "48"],
+
+				["FZG Load Stage (DIN 51354)", "10th", "10th", "10th"]
+			]
+		}
+	},
+	"HPCL-LBS-0041": {
+		"comparison": {
+			"headers": ["Property", "ENKLO SYNTHETIC 46", "ENKLO SYNTHETIC 68"],
+			"rows": [
+				["Density @ 15°C (g/cm³)", "0.8416", "0.8518"],
+				["Flash Point (°C)", "228", "235"],
+
+				["Kinematic Viscosity @ 40°C (cSt)", "48.26", "68.3"],
+				["Kinematic Viscosity @ 100°C (cSt)", "8.531", "11.7"],
+				["Viscosity Index", "155", "168"],
+				["Pour Point (°C)", "-40", "-40"],
+
+				["Foaming Sequence I (ml)", "0/0", "0/0"],
+				["Foaming Sequence II (ml)", "0/0", "0/0"],
+				["Foaming Sequence III (ml)", "0/0", "0/0"],
+
+				["Rust Prevention", "No Rust", "No Rust"],
+				["Copper Corrosion", "1A", "1A"],
+
+				["FZG Pass Load Stage", "12", "12"],
+				["Shell Four Ball Wear (mm)", "0.39", "0.39"]
+			]
+		}
+	},
+	"HPCL-LBS-0031": {
+		"comparison": {
+			"headers": ["Property", "FRWG 22", "FRWG 46", "FRWG 68"],
+			"rows": [
+				["Appearance", "Clear", "Clear", "Clear"],
+
+				["Density @ 15°C (g/cc)", "1.05–1.09", "1.05–1.09", "1.05–1.09"],
+				["pH Value", "8.5–10.5", "8.5–10.5", "8.5–10.5"],
+
+				[
+					"Kinematic Viscosity @ 40°C (cSt)",
+					"19.8–24.2",
+					"41.5–50.6",
+					"61.2–74.8"
+				],
+
+				["Water Content (% Vol)", "40–60", "40–45", "40–45"],
+
+				["Fire Resistance Characteristics", "Pass", "Pass", "Pass"],
+				["Rusting Test (Synthetic Sea Water)", "Pass", "Pass", "Pass"],
+
+				["Pour Point (°C)", "-10", "-10", "-10"]
+			]
+		}
+	},
+	"HPCL-LBS-0019": {
+		"comparison": {
+			"headers": ["Property", "680", "1000", "1500", "TC460", "TC530", "TC680"],
+			"rows": [
+				["Flash Point, COC (°C) Min", "254", "292", "306", "248", "240", "270"],
+
+				[
+					"Kinematic Viscosity @ 40°C (cSt)",
+					"680",
+					"1000",
+					"1500",
+					"460",
+					"530",
+					"680"
+				],
+
+				["Viscosity Index", "80", "80", "85", "90", "90", "85"],
+
+				["Pour Point (°C) Max", "12", "9", "3", "6", "6", "6"],
+
+				["Saponification Number (mg KOH/g)", "-", "-", "-", "11", "11", "11"]
+			]
+		}
+	},
+	"HPCL-LBS-0018": {
+		"comparison": {
+			"headers": ["Property", "32", "46", "68", "100", "150", "220", "320"],
+			"rows": [
+				[
+					"Kinematic Viscosity @ 40°C (cSt)",
+					"29–35",
+					"42–50",
+					"62–74",
+					"90–110",
+					"135–165",
+					"210–230",
+					"290–350"
+				],
+				["Viscosity Index (Min)", "95", "95", "95", "95", "95", "95", "95"],
+				[
+					"Flash Point (°C Min)",
+					"175",
+					"195",
+					"195",
+					"205",
+					"210",
+					"220",
+					"220"
+				],
+				["Pour Point (°C Max)", "-9", "-9", "-9", "-9", "-9", "-9", "-9"],
+				["FZG Failure Load Stage (Min)", "9", "9", "9", "9", "9", "9", "9"]
+			]
+		}
+	},
+	"HPCL-LBS-0016": {
+		"comparison": {
+			"headers": ["Property", "SYN 32", "SYN 46", "SYN 68", "SYN 100"],
+			"rows": [
+				["Kinematic Viscosity @ 100°C (cSt)", "5.8", "7.3", "10.2", "13.1"],
+				["Kinematic Viscosity @ 40°C (cSt)", "32", "46", "68", "100"],
+				["Viscosity Index", "135", "135", "135", "135"],
+				["Density @ 20°C", "0.85", "0.85", "0.855", "0.86"],
+				["Pour Point (°C)", "-51", "-40", "-40", "-36"],
+				["Flash Point, COC (°C)", "230", "240", "245", "248"],
+				[
+					"Foam Tendency",
+					"Trace (Nil)",
+					"Trace (Nil)",
+					"Trace (Nil)",
+					"Trace (Nil)"
+				],
+				[
+					"Demulsibility (ASTM D 1401)",
+					"40-40-0 < 15 min",
+					"40-40-0 < 20 min",
+					"40-40-0 in 21 min",
+					"40-40-0 in 22 min"
+				],
+				["Appearance", "Clear", "Clear", "Clear", "Clear"],
+				["FZG Test (A/8.3/90)", "12 Pass", "12 Pass", "12 Pass", "12 Pass"]
+			]
+		}
+	},
+	"HPCL-LBS-0013": {
+		"comparison": {
+			"headers": ["Property", "HYCOM PGE 32", "HYCOM PGE 46", "HYCOM PGE 68"],
+			"rows": [
+				["Kinematic Viscosity @ 100°C (cSt)", "6.5", "8.93", "13.3"],
+				["Kinematic Viscosity @ 40°C (cSt)", "31", "47.07", "73"],
+				["Viscosity Index", "169", "173", "185"],
+				["Density @ 20°C", "0.985", "0.989", "0.99"],
+				["Pour Point (°C)", "-50", "-50", "-50"],
+				["Flash Point, COC (°C)", ">260", ">260", ">260"]
+			]
+		}
+	},
+	"HPCL-LBS-0010": {
+		"comparison": {
+			"headers": [
+				"Property",
+				"HYCOM C 100",
+				"HYCOM C 150",
+				"HYCOM C 220",
+				"HYCOM C 320"
+			],
+			"rows": [
+				[
+					"Kinematic Viscosity @ 40°C (cSt)",
+					"95–105",
+					"140–160",
+					"210–230",
+					"310–330"
+				],
+				["Flash Point, COC (°C)", "190", "210", "240", "248"],
+				[
+					"Saponification Number (mg KOH/g)",
+					"2.5–5.0",
+					"2.5–5.0",
+					"2.5–5.0",
+					"7–10"
+				],
+				["Pour Point (°C)", "-6", "0", "3", "6"]
+			]
+		}
+	},
+	"HPCL-LBS-0011": {
+		"comparison": {
+			"headers": ["Property", "HYCOM LS 320 EXPO", "HYCOM LS 460 EXPO"],
+			"rows": [
+				["Kinematic Viscosity @ 40°C (cSt)", "320", "25.3"],
+				["Kinematic Viscosity @ 100°C (cSt)", "461", "31.2"],
+				["Viscosity Index", "100", "97"],
+				["Pour Point (°C)", "-9", "-9"],
+				["Acid Number (mg KOH/g)", "0.66", "0.66"],
+				["Flash Point, COC (°C)", "240", "240"],
+				["Copper Strip Corrosion @ 100°C, 3 hrs", "1a", "1a"],
+				["Chlorides (% wt)", "< 5 ppm", "< 5 ppm"],
+				["Sulphur (% wt)", "< 5 ppm", "< 5 ppm"],
+				["Water Content", "< 100 ppm", "< 100 ppm"],
+				["Bromine Number", "2 g/100 g", "2 g/100 g"],
+				["BHT Content", "≥ 2% wt", "≥ 2% wt"]
+			]
+		}
+	},
+	"HPCL-LBS-0012": {
+		"comparison": {
+			"headers": ["Property", "220", "320", "460"],
+			"rows": [
+				["Kinematic Viscosity @ 40°C (cSt)", "220", "320", "461"],
+				["Kinematic Viscosity @ 100°C (cSt)", "20.3", "25.3", "31.2"],
+				["Viscosity Index", "105", "100", "97"],
+				["Pour Point (°C)", "-9", "-9", "-9"],
+				["Inorganic Acidity (mg KOH/g)", "Nil", "Nil", "Nil"],
+				["Flash Point, COC (°C)", "240", "240", "240"],
+				["Rusting Test", "Passes", "Passes", "Passes"],
+
+				["Foam Stability – Sequence I", "10/Nil", "10/Nil", "10/Nil"],
+				["Foam Stability – Sequence II", "10/Nil", "10/Nil", "10/Nil"],
+				["Foam Stability – Sequence III", "10/Nil", "10/Nil", "10/Nil"],
+
+				[
+					"Oxidation Stability – % Visc Increase @ 121°C (312 hrs)",
+					"2.62",
+					"3.77",
+					"4.44"
+				],
+				["Ash Content (% mass)", "0.04", "0.04", "0.04"],
+				["Copper Strip Corrosion @ 100°C, 3 hrs", "1a", "1a", "1a"],
+				["Demulsibility @ 82°C (20 min)", "40-40-0", "40-40-0", "40-40-0"],
+				["Air Release @ 90°C (min)", "12", "14", "17"],
+				["FZG EP Test (PLS)", "12", "12", "12"],
+
+				["Thermal Stability – CM Procedure B", "1", "1", "1"],
+				[
+					"Thermal Stability – Copper Appearance",
+					"No Deposit/Discoloration",
+					"No Deposit/Discoloration",
+					"No Deposit/Discoloration"
+				],
+				[
+					"Thermal Stability – Steel Appearance",
+					"No Deposit/Discoloration",
+					"No Deposit/Discoloration",
+					"No Deposit/Discoloration"
+				],
+				["Sludge", "Trace", "Trace", "Trace"],
+				["% Viscosity Increase", "1.68", "2.31", "2.7"]
 			]
 		}
 	}

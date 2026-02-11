@@ -71,14 +71,7 @@
 		"Greases",
 		"Steel"
 	],
-	"Base_Oil": [
-		"500GR-1",
-		"500GR-2",
-		"150GR-1",
-		"150GR-2",
-		"75GR-1",
-		"75GR-2"
-	],
+	"Base_Oil": ["500GR-1", "500GR-2", "150GR-1", "150GR-2", "75GR-1", "75GR-2"],
 	"Bitumen": ["VG-10", "VG-30", "VG-40"],
 	"BitumenData": [
 		{ "name": "Paving VG10", "data": "HPCL0016" },
@@ -112,7 +105,7 @@
 	],
 	"BulkFuel": ["FO", "LDO", "HFHSD"],
 	"BulkFuelData": [
-		{ "name": "NV2 Grade", "data": "HPCL0011" },
+		{ "name": "MV2 Grade", "data": "HPCL0011" },
 		{ "name": "Heating Oil", "data": "HPCL0012" },
 		{ "name": "Distillate Marine Fuel", "data": "HPCL0013" }
 	],

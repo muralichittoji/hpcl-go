@@ -1,5 +1,5 @@
 import Header from "@/components/Ui/Header";
-import devData from "@/constants/Jsons/devData.json";
+import devData from "@/constants/Jsons/newDevData.json";
 import { Colors } from "@/constants/theme";
 import { ALL_IMAGES } from "@/hooks/Allimages";
 import { ProductData } from "@/hooks/types";
@@ -97,7 +97,7 @@ export default function ResultScreen() {
 							fontWeight: "400",
 						}}
 					>
-						Please reach out to us at{" "}
+						Please reach us @
 						<Text
 							style={{
 								color: Colors.blueLight,

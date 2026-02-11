@@ -4,7 +4,7 @@ import { getToken, removeToken } from "./authStorage";
 
 const api = axios.create({
 	baseURL: "https://gpt.hpcl.co.in/backend/hpcl-vigilance",
-	timeout: 15000,
+	timeout: 30000,
 	headers: {
 		"Content-Type": "application/json",
 	},
@@ -16,7 +16,7 @@ const api = axios.create({
 api.interceptors.request.use(
 	async (config) => {
 		const token = await getToken();
-
+		console.log(config.timeout);
 		if (token) {
 			// ✅ ensure headers exists
 			config.headers = config.headers ?? {};
