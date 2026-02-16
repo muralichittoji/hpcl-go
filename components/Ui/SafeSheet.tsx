@@ -20,7 +20,7 @@ type Props = {
 	heightRatio?: number;
 };
 
-const BottomSheet = ({
+const SafeSheet = ({
 	visible,
 	onClose,
 	children,
@@ -40,7 +40,7 @@ const BottomSheet = ({
 				useNativeDriver: true,
 			}).start();
 		}
-	}, [visible]);
+	}, [smoothEasing, translateY, visible]);
 
 	const closeSheet = () => {
 		Animated.timing(translateY, {
@@ -67,7 +67,7 @@ const BottomSheet = ({
 						useNativeDriver: true,
 					}).start();
 			},
-		})
+		}),
 	).current;
 
 	if (!visible) return null;
@@ -83,13 +83,12 @@ const BottomSheet = ({
 					styles.sheet,
 					{ height: SHEET_HEIGHT, transform: [{ translateY }] },
 				]}
-				{...panResponder.panHandlers}
 			>
 				<KeyboardAvoidingView
 					behavior={Platform.OS === "ios" ? "padding" : "height"}
 					style={{ flex: 1 }}
 				>
-					<View style={styles.handle} />
+					<View style={styles.handle} {...panResponder.panHandlers} />
 					{children}
 				</KeyboardAvoidingView>
 			</Animated.View>
@@ -97,7 +96,7 @@ const BottomSheet = ({
 	);
 };
 
-export default BottomSheet;
+export default SafeSheet;
 
 const styles = StyleSheet.create({
 	overlay: {

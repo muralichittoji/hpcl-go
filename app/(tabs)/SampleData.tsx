@@ -33,7 +33,7 @@ const SampleData = () => {
 						fontWeight: "500",
 					}}
 				>
-					Please reach us @{" "}
+					Please reach out to us at{" "}
 					<Text
 						style={{
 							color: Colors.blueLight,

@@ -3,6 +3,7 @@ import CommonModal from "@/components/Ui/CommonModal";
 import Header from "@/components/Ui/Header";
 import InputSearch from "@/components/Ui/InputSearch";
 import LoadingOverlay from "@/components/Ui/LoadingOverlay";
+import ScrollComponent from "@/components/Ui/ScrollComponent";
 import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
 
 // Static home screen data
@@ -15,7 +16,7 @@ import { Colors } from "@/constants/theme";
 import { router } from "expo-router";
 
 import React, { useState } from "react";
-import { Dimensions, ScrollView, StyleSheet, Text, View } from "react-native";
+import { Dimensions, StyleSheet, Text, View } from "react-native";
 
 // Screen width for layout calculations
 const { width } = Dimensions.get("window");
@@ -68,10 +69,7 @@ const HomeScreen = () => {
 			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} />
 
 			{/* Main content */}
-			<ScrollView
-				showsVerticalScrollIndicator={false}
-				contentContainerStyle={{ paddingBottom: 30 }}
-			>
+			<ScrollComponent>
 				{/* Product categories */}
 				<View>
 					<UnifiedListMenu
@@ -99,7 +97,7 @@ const HomeScreen = () => {
 					<Text style={styles.exploreBtn}>Explore More {"->"}</Text>
 				</TouchableOpacity>
 				*/}
-			</ScrollView>
+			</ScrollComponent>
 
 			{/* Loading overlay */}
 			<LoadingOverlay visible={loading} text="Thinking..." />

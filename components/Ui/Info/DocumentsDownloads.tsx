@@ -1,83 +1,41 @@
 import { ALL_PDFS } from "@/hooks/ALL_PDFS";
-import { Asset } from "expo-asset";
-import * as FileSystem from "expo-file-system/legacy";
 import { router } from "expo-router";
-import * as Sharing from "expo-sharing";
-import React, { useState } from "react";
+import React from "react";
 import {
 	ActivityIndicator,
-	Alert,
 	StyleSheet,
 	Text,
 	TouchableOpacity,
 	View,
 } from "react-native";
 
-/* ---------------- DATA ---------------- */
-
 const documents = [{ title: "Material Safety Data Sheet (MSDS)", icon: "🛡️" }];
 
-/* ---------------- COMPONENT ---------------- */
+type Props = {
+	data: any;
+	loading: boolean;
+	setOpenPdf: React.Dispatch<React.SetStateAction<boolean>>;
+	setPdfUrl: React.Dispatch<React.SetStateAction<string>>;
+	setPdfName: React.Dispatch<React.SetStateAction<string>>;
+};
 
-const DocumentsDownloads = ({ data }: any) => {
-	const [loading, setLoading] = useState(false);
+const DocumentsDownloads = ({
+	data,
+	loading,
+	setOpenPdf,
+	setPdfUrl,
+	setPdfName,
+}: Props) => {
+	const pdfUrl = ALL_PDFS[data?.MSDS ?? ""];
+	const pdfName = data?.title ?? "Document";
 
-	/* ---------------- OPEN MSDS PDF ---------------- */
+	const openMsdsPdf = () => {
+		if (!data?.MSDS) return router.push("/(tabs)/SampleData");
 
-	const openMsdsPdf = async () => {
-		try {
-			if (!data?.MSDS) {
-				router.push("/SampleData");
-				return;
-			}
-
-			const pdfModule = ALL_PDFS[data.MSDS];
-			if (!pdfModule) {
-				router.push("/SampleData");
-				return;
-			}
-
-			setLoading(true);
-
-			const fileUri = FileSystem.documentDirectory + `${data.MSDS}.pdf`;
-
-			// ✅ Use cached file if already exists
-			const fileInfo = await FileSystem.getInfoAsync(fileUri);
-			if (!fileInfo.exists) {
-				const asset = Asset.fromModule(pdfModule);
-				await asset.downloadAsync();
-
-				await FileSystem.copyAsync({
-					from: asset.localUri!,
-					to: fileUri,
-				});
-			}
-
-			// ✅ Open using native viewer (iOS & Android)
-			await Sharing.shareAsync(fileUri, {
-				mimeType: "application/pdf",
-				UTI: "com.adobe.pdf", // iOS safe
-			});
-		} catch (error) {
-			console.log("MSDS open failed:", error);
-			Alert.alert("Error", "Unable to open MSDS file");
-		} finally {
-			setLoading(false);
-		}
+		setPdfUrl(pdfUrl);
+		setPdfName(pdfName);
+		setOpenPdf(true);
 	};
-
-	/* ---------------- CLICK HANDLER ---------------- */
-
-	const onDocumentPress = async (title: string) => {
-		if (title === "Material Safety Data Sheet (MSDS)") {
-			await openMsdsPdf();
-			return;
-		}
-
-		router.push("/SampleData");
-	};
-
-	/* ---------------- UI ---------------- */
 
 	return (
 		<View style={styles.container}>
@@ -87,18 +45,12 @@ const DocumentsDownloads = ({ data }: any) => {
 				<Text style={styles.headerText}>Documents & Downloads</Text>
 			</View>
 
-			{/* Loader */}
 			{loading && (
 				<ActivityIndicator size="large" style={{ marginVertical: 20 }} />
 			)}
 
-			{/* Documents list */}
 			{documents.map((item, index) => (
-				<TouchableOpacity
-					key={index}
-					style={styles.item}
-					onPress={() => onDocumentPress(item.title)}
-				>
+				<TouchableOpacity key={index} style={styles.item} onPress={openMsdsPdf}>
 					<View style={styles.itemIcon}>
 						<Text style={styles.iconText}>{item.icon}</Text>
 					</View>
@@ -112,10 +64,9 @@ const DocumentsDownloads = ({ data }: any) => {
 
 export default DocumentsDownloads;
 
-/* ---------------- STYLES ---------------- */
-
 const styles = StyleSheet.create({
 	container: {
+		flex: 1,
 		backgroundColor: "#F0F9FF",
 		padding: 16,
 		borderRadius: 18,

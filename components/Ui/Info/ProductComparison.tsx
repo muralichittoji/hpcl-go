@@ -11,11 +11,10 @@ import {
 import DropDownPicker from "react-native-dropdown-picker";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import productDetails from "@/constants/Jsons/InfoData.json";
+import productDetails from "@/constants/Jsons/newDevData.json";
 import wholeData from "@/constants/Jsons/wholeData.json";
 import { Colors } from "@/constants/theme";
-
-const HappinessIcon = "@/assets/images/icons/DeliveringHappiness.png";
+import { ALL_IMAGES } from "@/hooks/Allimages";
 
 type ProductValue = string;
 
@@ -76,6 +75,10 @@ const ProductComparison = () => {
 				setValue={setProduct1}
 				placeholder="Select product"
 				listMode="SCROLLVIEW"
+				searchable={true}
+				searchPlaceholder="Search product..."
+				searchContainerStyle={styles.searchContainer}
+				searchTextInputStyle={styles.searchInput}
 				style={styles.dropdown}
 				zIndex={3000}
 				zIndexInverse={1000}
@@ -90,6 +93,10 @@ const ProductComparison = () => {
 				setValue={setProduct2}
 				placeholder="Select product"
 				listMode="SCROLLVIEW"
+				searchable={true}
+				searchPlaceholder="Search product..."
+				searchContainerStyle={styles.searchContainer}
+				searchTextInputStyle={styles.searchInput}
 				style={styles.dropdown}
 				zIndex={2000}
 				zIndexInverse={2000}
@@ -104,6 +111,10 @@ const ProductComparison = () => {
 				setValue={setProduct3}
 				placeholder="Select product"
 				listMode="SCROLLVIEW"
+				searchable={true}
+				searchPlaceholder="Search product..."
+				searchContainerStyle={styles.searchContainer}
+				searchTextInputStyle={styles.searchInput}
 				style={styles.dropdown}
 				zIndex={1000}
 				zIndexInverse={3000}
@@ -184,7 +195,7 @@ const ProductComparison = () => {
 										</Text>
 
 										<Image
-											source={require(HappinessIcon)}
+											source={ALL_IMAGES.HAPPINESS_ICON}
 											style={styles.happiness}
 										/>
 									</View>
@@ -238,6 +249,16 @@ const styles = StyleSheet.create({
 		marginBottom: 12,
 		overflow: "hidden",
 	},
+	searchContainer: {
+		borderBottomWidth: 1,
+		borderColor: "#eee",
+	},
+
+	searchInput: {
+		paddingVertical: 8,
+		fontSize: 16,
+	},
+
 	button: {
 		backgroundColor: "#0a3d62",
 		padding: 14,

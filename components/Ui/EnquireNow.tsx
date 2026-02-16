@@ -7,9 +7,10 @@ import {
 	StyleSheet,
 	Text,
 	TextInput,
+	TouchableOpacity,
 	View,
 } from "react-native";
-import BottomSheet from "./BottomSheet";
+import SafeSheet from "./SafeSheet";
 
 type Props = {
 	title: string;
@@ -39,12 +40,12 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 		loadUser();
 	}, []);
 
-	const generateAnonymousName = () => {
-		const now = new Date();
-		return `User_${now.getFullYear()}_${
-			now.getMonth() + 1
-		}_${now.getDate()}_${now.getHours()}${now.getMinutes()}`;
-	};
+	// const generateAnonymousName = () => {
+	// 	const now = new Date();
+	// 	return `User_${now.getFullYear()}_${
+	// 		now.getMonth() + 1
+	// 	}_${now.getDate()}_${now.getHours()}${now.getMinutes()}`;
+	// };
 
 	const saveUser = async (name: string, type: "email" | "anonymous") => {
 		await AsyncStorage.setItem("user_name", name);
@@ -53,18 +54,47 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 		setIsAnonymous(type === "anonymous");
 	};
 
+	const [nameError, setNameError] = useState(false);
+	const [mobileError, setMobileError] = useState(false);
+	const [emailError, setEmailError] = useState(false);
+
 	const handleContinue = () => {
-		if (!name || !mobile || !email) return;
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+		let hasError = false;
+
+		// Reset errors first
+		setNameError(false);
+		setMobileError(false);
+		setEmailError(false);
+
+		if (!name || name.length < 3) {
+			setNameError(true);
+			hasError = true;
+		}
+
+		if (!mobile || mobile.length !== 10) {
+			setMobileError(true);
+			hasError = true;
+		}
+
+		if (!email || !emailRegex.test(email)) {
+			setEmailError(true);
+			hasError = true;
+		}
+
+		if (hasError) return;
+
 		saveUser(name, "email");
 	};
 
-	const handleAnonymous = () => {
-		const anonName = generateAnonymousName();
-		saveUser(anonName, "anonymous");
-	};
+	// const handleAnonymous = () => {
+	// 	const anonName = generateAnonymousName();
+	// 	saveUser(anonName, "anonymous");
+	// };
 
 	return (
-		<BottomSheet visible={visible} onClose={onClose} heightRatio={0.75}>
+		<SafeSheet visible={visible} onClose={onClose} heightRatio={0.75}>
 			{/* Title Row */}
 			<View style={styles.titleRow}>
 				<Text style={styles.title}>{title}</Text>
@@ -84,14 +114,24 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 				{!userName && (
 					<View style={styles.formContainer}>
 						<Text style={styles.formTitle}>Please enter your details</Text>
-
 						<TextInput
 							placeholder="Name"
 							placeholderTextColor={Colors.grayDeep}
 							value={name}
 							onChangeText={setName}
-							style={styles.input}
+							style={[
+								styles.input,
+								nameError && {
+									marginBottom: 0,
+									borderColor: "#f00",
+								},
+							]}
 						/>
+						{nameError && (
+							<Text style={{ color: "#f00" }}>
+								Enter a name with more than 4 characters
+							</Text>
+						)}
 
 						<TextInput
 							placeholder="Organization Name"
@@ -108,8 +148,19 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 							maxLength={10}
 							onChangeText={setMobile}
 							keyboardType="phone-pad"
-							style={styles.input}
+							style={[
+								styles.input,
+								mobileError && {
+									marginBottom: 0,
+									borderColor: "#f00",
+								},
+							]}
 						/>
+						{mobileError && (
+							<Text style={{ color: "#f00" }}>
+								enter a valid 10 digit mobile number
+							</Text>
+						)}
 
 						<TextInput
 							placeholder="Email ID"
@@ -118,8 +169,17 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 							onChangeText={setEmail}
 							keyboardType="email-address"
 							autoCapitalize="none"
-							style={styles.input}
+							style={[
+								styles.input,
+								emailError && {
+									marginBottom: 0,
+									borderColor: "#f00",
+								},
+							]}
 						/>
+						{emailError && (
+							<Text style={{ color: "#f00" }}>enter a valid email address</Text>
+						)}
 
 						<Pressable
 							style={[
@@ -150,17 +210,34 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 							</Text>
 						</View>
 
-						<TextInput
+						{/* <TextInput
 							placeholder="Enter your query"
 							placeholderTextColor="#9CA3AF"
 							style={styles.input}
-						/>
+						/> */}
+						<View
+							style={{ flexDirection: "row", justifyContent: "space-between" }}
+						>
+							<TouchableOpacity
+								onPress={() => {
+									AsyncStorage.removeItem("user_name");
+									AsyncStorage.removeItem("user_type");
+									setUserName("");
+								}}
+								style={styles.outlineBtn}
+							>
+								<Text style={styles.resetText}>Reset Details</Text>
+							</TouchableOpacity>
+							<TouchableOpacity style={styles.submitBtn} onPress={onClose}>
+								<Text style={styles.submitText}>Close Enquiry</Text>
+							</TouchableOpacity>
+						</View>
 					</View>
 				)}
 
 				<View style={{ height: 300 }} />
 			</ScrollView>
-		</BottomSheet>
+		</SafeSheet>
 	);
 };
 
@@ -176,6 +253,29 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		justifyContent: "space-between",
 		marginBottom: 20,
+	},
+
+	submitBtn: {
+		backgroundColor: Colors.blueDeep,
+		padding: 6,
+		borderRadius: 8,
+		alignItems: "center",
+	},
+	outlineBtn: {
+		borderWidth: 2,
+		borderColor: Colors.blueDark,
+		padding: 6,
+		borderRadius: 8,
+		alignItems: "center",
+	},
+	submitText: {
+		color: "#fff",
+		fontWeight: "600",
+	},
+
+	resetText: {
+		color: Colors.blueDark,
+		fontWeight: "600",
 	},
 
 	formContainer: {

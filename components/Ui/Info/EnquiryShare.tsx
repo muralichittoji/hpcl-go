@@ -11,15 +11,15 @@ import {
 import { FontAwesome } from "@expo/vector-icons";
 
 import { Colors } from "@/constants/theme";
+
 import * as MailComposer from "expo-mail-composer";
-import { shareAsPDF } from "./ShareAsPdf";
 
 // ✅ Correct Expo image imports
 const ShareIcon = require("@/assets/images/icons/share.png");
 const MessageIcon = require("@/assets/images/icons/email.png");
 const EnquireIcon = require("@/assets/images/icons/share.png");
 
-const EnquiryShare = ({ data, openEnquire }: any) => {
+const EnquiryShare = ({ data, openEnquire, setOpenPreview }: any) => {
 	const Enquiry = [
 		{
 			id: 1,
@@ -59,35 +59,10 @@ const EnquiryShare = ({ data, openEnquire }: any) => {
 		});
 	};
 
-	// const shareAsPDF = async () => {
-	// 	try {
-	// 		if (!data) {
-	// 			throw new Error("No product data");
-	// 		}
-
-	// 		const html = await PDFShare(data);
-
-	// 		const { uri } = await Print.printToFileAsync({
-	// 			html,
-	// 		});
-
-	// 		await Sharing.shareAsync(uri, {
-	// 			mimeType: "application/pdf",
-	// 			dialogTitle: `HPCL_${data?.title ?? "Product"}`,
-	// 		});
-	// 	} catch (error) {
-	// 		console.error("PDF Share Error:", error);
-	// 		Alert.alert(
-	// 			"Unable to share PDF",
-	// 			"Something went wrong while preparing the document."
-	// 		);
-	// 	}
-	// };
-
 	const handleAction = async (title: string) => {
 		switch (title) {
 			case "Share":
-				await shareAsPDF(data);
+				setOpenPreview(true);
 				break;
 
 			case "E-Mail":
@@ -106,8 +81,11 @@ const EnquiryShare = ({ data, openEnquire }: any) => {
 	return (
 		<View>
 			<View style={styles.dividerGreen} />
-
 			<View style={styles.mapContainer}>
+				{/* Loader
+				{loading && (
+					<ActivityIndicator size="large" style={{ marginVertical: 20 }} />
+				)} */}
 				{Enquiry.map((item) => (
 					<TouchableOpacity
 						key={item.id}

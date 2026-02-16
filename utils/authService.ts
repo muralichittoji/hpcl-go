@@ -38,3 +38,20 @@ export const getAnswer = async ({ question }: GetDataPayload) => {
 	});
 	return res.data;
 };
+
+export const imageUpload = async (formData: FormData) => {
+	try {
+		const res = await api.post("/upload-files-to-s3", formData, {
+			headers: {
+				"Content-Type": "multipart/form-data",
+			},
+			timeout: 60000, // 60 seconds timeout for uploads
+		});
+
+		return res.data;
+	} catch (error: any) {
+		console.log("UPLOAD ERROR DATA:", error.response?.data);
+		console.log("UPLOAD ERROR STATUS:", error.response?.status);
+		throw error;
+	}
+};

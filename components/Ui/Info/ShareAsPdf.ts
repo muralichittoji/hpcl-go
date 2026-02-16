@@ -20,20 +20,26 @@
 // 	}
 // };
 
-import * as Print from 'expo-print';
-import * as Sharing from 'expo-sharing';
-import { PDFShare } from './PDFShare';
+import * as Print from "expo-print";
+import * as Sharing from "expo-sharing";
+import { PDFShare } from "./PDFShare";
 
 export const shareAsPDF = async (data: any) => {
-	const html = await PDFShare(data);
+	const isComparison = data.specifications?.[0]?.property === "Comparision";
+
+	const pageOrientation = isComparison ? "landscape" : "portrait";
+
+	// pass orientation into HTML generator
+	const html = await PDFShare(data, pageOrientation);
+
 	const { uri } = await Print.printToFileAsync({
 		html,
 	});
 
-	console.log('PDF URI:', uri);
+	console.log("PDF URI:", uri);
 
 	await Sharing.shareAsync(uri, {
-		mimeType: 'application/pdf',
-		dialogTitle: 'Share PDF',
+		mimeType: "application/pdf",
+		dialogTitle: "Share PDF",
 	});
 };

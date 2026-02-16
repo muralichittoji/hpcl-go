@@ -3,8 +3,6 @@ import EnquireNow from "@/components/Ui/EnquireNow";
 
 // Common header
 import Header from "@/components/Ui/Header";
-
-// Info screen sections
 import AppIndustries from "@/components/Ui/Info/AppIndustries";
 import ComparisonCard from "@/components/Ui/Info/ComparisonCard";
 import DocumentsDownloads from "@/components/Ui/Info/DocumentsDownloads";
@@ -14,6 +12,10 @@ import ProductComparison from "@/components/Ui/Info/ProductComparison";
 import RelatedProducts from "@/components/Ui/Info/RelatedProducts";
 import SpecificationsCard from "@/components/Ui/Info/SpecificationsCard";
 
+// Info screen sections
+import ProductPreviewModal from "@/components/Ui/ProductPreviewModal";
+import SafeSheet from "@/components/Ui/SafeSheet";
+
 // Static product data
 import infoData from "@/constants/Jsons/InfoData.json";
 import devData from "@/constants/Jsons/newDevData.json";
@@ -21,8 +23,16 @@ import devData from "@/constants/Jsons/newDevData.json";
 // Routing & hooks
 import { useLocalSearchParams } from "expo-router";
 import React, { useRef, useState } from "react";
-import { Platform, ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+	KeyboardAvoidingView,
+	Platform,
+	ScrollView,
+	StyleSheet,
+	Text,
+	View,
+} from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import PdfViewerContent from "../PdfViewerContent";
 
 /* -------------------------------------------------------------------------- */
 /*                                Info Screen                                 */
@@ -45,6 +55,11 @@ const InfoScreen = ({ route }: any) => {
 
 	// Enquiry modal visibility
 	const [enquireOpen, setEnquireOpen] = useState(false);
+	const [openPreview, setOpenPreview] = React.useState(false);
+	const [loading, setLoading] = useState(false);
+	const [openPdf, setOpenPdf] = useState(false);
+	const [pdfUrl, setPdfUrl] = useState("");
+	const [pdfName, setPdfName] = useState("");
 
 	// Scroll reference (useful for future scroll-to-section logic)
 	const scrollRef = useRef<ScrollView>(null);
@@ -66,19 +81,21 @@ const InfoScreen = ({ route }: any) => {
 	const isComparison = data.specifications?.[0]?.property === "Comparision";
 	const compValue = data.specifications?.[0]?.value;
 	return (
-		<View style={styles.container}>
-			<View>
-				{/* Product header */}
+		<KeyboardAvoidingView
+			style={styles.container}
+			behavior={Platform.OS === "ios" ? "padding" : "height"}
+			keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 20}
+		>
+			<View style={{ flex: 1 }}>
 				<Header caption={data.title} subCaption={data.subTitle} />
-
 				{/* Scrollable content */}
 				<ScrollView
 					ref={scrollRef}
 					showsVerticalScrollIndicator={false}
+					keyboardShouldPersistTaps="handled"
 					contentContainerStyle={{
-						// Extra bottom spacing for enquiry CTA & safe area
 						paddingBottom:
-							Platform.OS === "ios" ? insets.bottom + 120 : insets.bottom + 140,
+							Platform.OS === "ios" ? insets.bottom + 100 : insets.bottom + 110,
 					}}
 				>
 					<View style={{ paddingHorizontal: 20 }}>
@@ -111,7 +128,13 @@ const InfoScreen = ({ route }: any) => {
 
 						{/* Document downloads */}
 						<View>
-							<DocumentsDownloads data={data} />
+							<DocumentsDownloads
+								data={data}
+								loading={loading}
+								setOpenPdf={setOpenPdf}
+								setPdfUrl={setPdfUrl}
+								setPdfName={setPdfName}
+							/>
 						</View>
 
 						{/* Related products */}
@@ -126,21 +149,45 @@ const InfoScreen = ({ route }: any) => {
 
 						{/* Share & enquiry CTA */}
 						<View>
-							<EnquiryShare data={data} openEnquire={setEnquireOpen} />
+							<EnquiryShare
+								data={data}
+								openEnquire={setEnquireOpen}
+								setOpenPreview={setOpenPreview}
+							/>
 						</View>
 					</View>
 				</ScrollView>
+				{/* Bottom Sheet */}
+				<SafeSheet
+					visible={openPdf}
+					onClose={() => setOpenPdf(false)}
+					heightRatio={0.85}
+				>
+					{pdfUrl && (
+						<PdfViewerContent
+							pdfUrl={pdfUrl}
+							name={pdfName}
+							onClose={() => setOpenPdf(false)}
+						/>
+					)}
+				</SafeSheet>
+				{/* Enquiry modal */}
+				{enquireOpen && (
+					<EnquireNow
+						title={`Enquire about ${data?.title}`}
+						visible={enquireOpen}
+						onClose={() => setEnquireOpen(false)}
+					/>
+				)}
+				{openPreview && (
+					<ProductPreviewModal
+						product={data}
+						visible={openPreview}
+						onClose={() => setOpenPreview(false)}
+					/>
+				)}
 			</View>
-
-			{/* Enquiry modal */}
-			{enquireOpen && (
-				<EnquireNow
-					title={`Enquire about ${data?.title}`}
-					visible={enquireOpen}
-					onClose={() => setEnquireOpen(false)}
-				/>
-			)}
-		</View>
+		</KeyboardAvoidingView>
 	);
 };
 

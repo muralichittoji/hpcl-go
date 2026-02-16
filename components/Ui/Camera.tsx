@@ -1,135 +1,116 @@
+import { imageUpload } from "@/utils/authService";
 import { FontAwesome } from "@expo/vector-icons";
+import * as DocumentPicker from "expo-document-picker";
 import * as ImagePicker from "expo-image-picker";
-import React, { useState } from "react";
-import {
-	Alert,
-	Image,
-	Modal,
-	StyleSheet,
-	Text,
-	TouchableOpacity,
-	View,
-} from "react-native";
+import React from "react";
+import { Alert, TouchableOpacity } from "react-native";
 
 const CameraScreen: React.FC = () => {
-	const [imageBase64, setImageBase64] = useState<string | null>(null);
-	const [previewVisible, setPreviewVisible] = useState(false);
+	const openOptions = () => {
+		Alert.alert("Select Option", "Choose source", [
+			{ text: "Camera", onPress: openCamera },
+			{ text: "Gallery", onPress: openGallery },
+			{ text: "Pick PDF", onPress: pickPDF },
+			{ text: "Cancel", style: "cancel" },
+		]);
+	};
 
-	const openCamera = async () => {
+	/* ---------------- COMMON UPLOAD HANDLER ---------------- */
+	const uploadFile = async (
+		uri: string,
+		fileName: string,
+		mimeType: string,
+	) => {
+		const formData = new FormData();
+
+		formData.append("files", {
+			uri,
+			name: fileName,
+			type: mimeType,
+		} as any);
+
 		try {
-			// ✅ ask permission
-			const permission = await ImagePicker.requestCameraPermissionsAsync();
-
-			if (!permission.granted) {
-				Alert.alert("Permission required", "Camera permission is required");
-				return;
-			}
-
-			// ✅ launch camera
-			const result = await ImagePicker.launchCameraAsync({
-				mediaTypes: ImagePicker.MediaTypeOptions.Images,
-				cameraType: ImagePicker.CameraType.back,
-				quality: 0.5,
-				allowsEditing: false,
-				base64: true,
-			});
-
-			// ❌ cancelled
-			if (result.canceled) {
-				Alert.alert("User cancelled camera picker");
-				return;
-			}
-
-			// ✅ success
-			const asset = result.assets[0];
-
-			const base64 = asset.base64;
-			const uri = asset.uri;
-
-			if (!base64) return;
-
-			console.log("URI:", uri);
-			console.log("BASE64 length:", base64.length);
-
-			// save for preview
-			setImageBase64(`data:image/jpeg;base64,${base64}`);
-			setPreviewVisible(true);
-
-			// // small safe preview text only
-			// Alert.alert(
-			// 	"Captured ✅",
-			// 	`Base64 (first 100 chars):\n${base64.slice(0, 100)}...`,
-			// );
-		} catch (err) {
-			console.log(err);
-			Alert.alert("Error", "Something went wrong opening camera");
+			const res = imageUpload(formData);
+			console.log("Upload response:", res);
+		} catch (error: any) {
+			console.log("Status:", error?.response?.status);
+			console.log("Backend error:", error?.response?.data);
+			throw error;
 		}
 	};
 
+	/* ---------------- CAMERA ---------------- */
+	const openCamera = async () => {
+		const permission = await ImagePicker.requestCameraPermissionsAsync();
+		if (!permission.granted) {
+			Alert.alert("Permission required");
+			return;
+		}
+
+		const result = await ImagePicker.launchCameraAsync({
+			mediaTypes: ["images"],
+			quality: 0.5,
+		});
+
+		if (result.canceled) return;
+
+		const asset = result.assets[0];
+
+		console.log("Captured asset:", asset);
+
+		await uploadFile(
+			asset.uri,
+			`photo_${Date.now()}.jpg`,
+			asset.mimeType ?? "image/jpeg",
+		);
+	};
+
+	/* ---------------- GALLERY ---------------- */
+	const openGallery = async () => {
+		const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
+		if (!permission.granted) {
+			Alert.alert("Gallery permission required");
+			return;
+		}
+
+		const result = await ImagePicker.launchImageLibraryAsync({
+			mediaTypes: ["images"],
+			quality: 0.7,
+		});
+
+		if (result.canceled) return;
+
+		const asset = result.assets[0];
+
+		uploadFile(
+			asset.uri,
+			`gallery_${Date.now()}.jpg`,
+			asset.mimeType || "image/jpeg",
+		);
+	};
+
+	/* ---------------- PDF PICKER ---------------- */
+	const pickPDF = async () => {
+		const result = await DocumentPicker.getDocumentAsync({
+			type: "application/pdf",
+		});
+
+		if (result.canceled) return;
+
+		const asset = result.assets[0];
+
+		uploadFile(
+			asset.uri,
+			asset.name || `document_${Date.now()}.pdf`,
+			asset.mimeType || "application/pdf",
+		);
+	};
+
 	return (
-		<>
-			{/* Camera Button */}
-			<TouchableOpacity onPress={openCamera}>
-				<FontAwesome name="camera" size={35} color="#999" />
-			</TouchableOpacity>
-
-			{/* Preview Modal */}
-			<Modal visible={previewVisible} transparent animationType="slide">
-				<View style={styles.overlay}>
-					<View style={styles.modalBox}>
-						<Text style={styles.title}>Preview</Text>
-
-						{imageBase64 && (
-							<Image
-								source={{ uri: imageBase64 }}
-								style={styles.image}
-								resizeMode="contain"
-							/>
-						)}
-
-						<TouchableOpacity
-							style={styles.closeBtn}
-							onPress={() => setPreviewVisible(false)}
-						>
-							<Text style={{ color: "#fff" }}>Close</Text>
-						</TouchableOpacity>
-					</View>
-				</View>
-			</Modal>
-		</>
+		<TouchableOpacity onPress={openOptions}>
+			<FontAwesome name="camera" size={35} color="#999" />
+		</TouchableOpacity>
 	);
 };
 
 export default CameraScreen;
-
-const styles = StyleSheet.create({
-	overlay: {
-		flex: 1,
-		backgroundColor: "rgba(0,0,0,0.5)",
-		justifyContent: "center",
-		alignItems: "center",
-	},
-	modalBox: {
-		backgroundColor: "#fff",
-		width: "90%",
-		padding: 20,
-		borderRadius: 16,
-		alignItems: "center",
-	},
-	title: {
-		fontSize: 18,
-		fontWeight: "700",
-		marginBottom: 12,
-	},
-	image: {
-		width: 250,
-		height: 250,
-		marginBottom: 20,
-	},
-	closeBtn: {
-		backgroundColor: "#0369A1",
-		paddingHorizontal: 20,
-		paddingVertical: 10,
-		borderRadius: 8,
-	},
-});

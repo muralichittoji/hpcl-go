@@ -1,68 +1,73 @@
 {
-	"expo": {
-		"name": "HPCL",
-		"slug": "HpclDev",
-		"version": "1.0.1",
-		"orientation": "portrait",
-		"icon": "./assets/app_icon.png",
-		"scheme": "HPCL",
-		"userInterfaceStyle": "automatic",
-		"newArchEnabled": true,
-		"ios": {
-			"supportsTablet": true,
-			"bundleIdentifier": "com.muralisreekrishnac.HPCL",
-			"infoPlist": {
-				"ITSAppUsesNonExemptEncryption": false
-			}
-		},
-		"android": {
-			"adaptiveIcon": {
-				"backgroundColor": "#E6F4FE",
-				"foregroundImage": "./assets/app_icon.png"
-			},
-			"permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
-			"edgeToEdgeEnabled": true,
-			"predictiveBackGestureEnabled": false,
-			"package": "com.muralisreekrishnac.HPCL"
-		},
-		"splash": {
-			"image": "./assets/images/Master_Logo.png",
-			"resizeMode": "contain",
-			"backgroundColor": "#E6F4FE"
-		},
-		"web": {
-			"output": "static",
-			"favicon": "./assets/images/Master_Logo.png"
-		},
-		"plugins": [
-			"expo-router",
-			[
-				"expo-splash-screen",
-				{
-					"image": "./assets/images/Master_Logo.png",
-					"imageWidth": 200,
-					"resizeMode": "contain",
-					"backgroundColor": "#ffffff",
-					"dark": {
-						"backgroundColor": "#FFFFFF"
-					}
-				}
-			],
-			"expo-mail-composer",
-			"expo-secure-store"
-		],
-		"experiments": {
-			"typedRoutes": true,
-			"reactCompiler": true
-		},
-		"extra": {
-			"router": {},
-			"eas": {
-				"projectId": "1929e595-9ff8-4ca7-a545-5e0ef4ee39d0"
-			}
-		},
-		"cli": {
-			"appVersionSource": "app.json"
-		}
-	}
+  "expo": {
+    "name": "HPCL",
+    "slug": "HpclDev",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/app_icon.png",
+    "scheme": "HPCL",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.muralisreekrishnac.HPCL",
+      "buildNumber": "2",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/app_icon.png"
+      },
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.muralisreekrishnac.HPCL"
+    },
+    "splash": {
+      "image": "./assets/images/Master_Logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E6F4FE"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/Master_Logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/Master_Logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#FFFFFF"
+          }
+        }
+      ],
+      "expo-mail-composer",
+      "expo-secure-store",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "1929e595-9ff8-4ca7-a545-5e0ef4ee39d0"
+      }
+    },
+    "cli": {
+      "appVersionSource": "app.json"
+    }
+  }
 }

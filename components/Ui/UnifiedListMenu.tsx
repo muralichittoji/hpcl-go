@@ -131,6 +131,14 @@ const UnifiedListMenu = ({
 		setModalVisible(true);
 	};
 
+	const toTitleCase = (text: string) => {
+		return text
+			.toLowerCase()
+			.split(" ")
+			.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+			.join(" ");
+	};
+
 	/* -------------------------------------------------------------------------- */
 	/*                                Menu Content                                 */
 	/* -------------------------------------------------------------------------- */
@@ -163,6 +171,7 @@ const UnifiedListMenu = ({
 								width: last ? width - 30 : itemWidth,
 								paddingHorizontal: 15,
 								backgroundColor: getBackgroundColor(index),
+								padding: showIcons ? 10 : 3,
 
 								// Image tiles stack vertically
 								flexDirection: png && !last ? "column" : "row",
@@ -207,20 +216,18 @@ const UnifiedListMenu = ({
 
 						{/* -------------------------- Label Text -------------------------- */}
 						<Text
-							numberOfLines={2}
-							adjustsFontSizeToFit
-							minimumFontScale={0.65}
+							numberOfLines={4} // allow up to 4 lines
+							ellipsizeMode="tail"
 							style={[
 								styles.text,
 								{
-									// Responsive font scaling
 									fontSize: !useItemName
 										? Math.min(width * 0.055, 20)
 										: Math.min(width * 0.07, 23),
 								},
 							]}
 						>
-							{label}
+							{toTitleCase(label)}
 						</Text>
 					</TouchableOpacity>
 				);
@@ -311,7 +318,7 @@ const styles = StyleSheet.create({
 
 	text: {
 		color: "white",
-		fontWeight: "700",
+		fontWeight: "600",
 		textAlign: "center",
 	},
 

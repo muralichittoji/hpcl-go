@@ -26,6 +26,11 @@ export default function RootLayout() {
 						name="modal"
 						options={{ presentation: "modal", title: "Modal" }}
 					/>
+					<Stack.Screen name="pdf-preview" options={{ headerShown: false }} />
+					<Stack.Screen
+						name="PdfViewerScreen"
+						options={{ headerShown: false }}
+					/>
 				</Stack>
 				<StatusBar style="light" />
 			</NetworkProvider>

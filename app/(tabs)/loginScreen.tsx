@@ -1,11 +1,11 @@
 import Header from "@/components/Ui/Header";
+import ScrollComponent from "@/components/Ui/ScrollComponent";
 import { Colors } from "@/constants/theme";
 import { rf } from "@/utils/responsive";
 import React from "react";
 import {
 	KeyboardAvoidingView,
 	Platform,
-	ScrollView,
 	StyleSheet,
 	Text,
 	TextInput,
@@ -26,10 +26,7 @@ const LoginScreen = () => {
 			keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0} // Offset for Header height (important!)
 		>
 			{/* ScrollView allows content to move when keyboard opens */}
-			<ScrollView
-				contentContainerStyle={{ flexGrow: 1 }} // Allows full height + scrolling
-				keyboardShouldPersistTaps="handled" // Keeps keyboard open while tapping inputs/buttons
-			>
+			<ScrollComponent>
 				<View style={[styles.container, { width }]}>
 					{/* App header */}
 					<Header caption="" screen="Login" />
@@ -67,7 +64,7 @@ const LoginScreen = () => {
 						</TouchableOpacity>
 					</View>
 				</View>
-			</ScrollView>
+			</ScrollComponent>
 		</KeyboardAvoidingView>
 	);
 };

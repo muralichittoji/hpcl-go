@@ -1,3 +1,4 @@
+import devData from "@/constants/Jsons/newDevData.json";
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import React, { useMemo, useState } from "react";
@@ -50,6 +51,10 @@ const ProductFinder = () => {
 
 	const [loading, setLoading] = useState(false);
 	const [slowNet, setSlowNet] = useState(false);
+
+	const getName = (name: any) => {
+		return name ? devData[name as keyof typeof devData].title : undefined;
+	};
 
 	const applicationItems = useMemo(() => {
 		if (!industry) return [];
@@ -163,7 +168,7 @@ const ProductFinder = () => {
 							colors={[Colors.blueDeep, Colors.blueLight]}
 							style={styles.productCard}
 						>
-							<Text style={styles.productTitle}>{product}</Text>
+							<Text style={styles.productTitle}>{getName(product ?? "")}</Text>
 							<Text style={styles.productDesc}>
 								Eligible / Recommended Product
 							</Text>
@@ -181,9 +186,9 @@ const ProductFinder = () => {
 									<Text style={styles.outlineText}>View Specifications</Text>
 								</TouchableOpacity>
 
-								<TouchableOpacity style={styles.outlineBtn}>
+								{/* <TouchableOpacity style={styles.outlineBtn}>
 									<Text style={styles.outlineText}>Enquire</Text>
-								</TouchableOpacity>
+								</TouchableOpacity> */}
 							</View>
 						</LinearGradient>
 					))}

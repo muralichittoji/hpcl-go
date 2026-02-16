@@ -26,6 +26,14 @@ const InputSearch = ({
 	const findScreen = () => {
 		if (!search?.trim()) return;
 		getSearch(search.trim());
+		// router.push({
+		// 	pathname: "/result",
+		// 	params: {
+		// 		response: "Static response for testing",
+		// 		question: search,
+		// 		productCode: null,
+		// 	},
+		// });
 	};
 
 	const getSearch = async (question: string) => {
@@ -34,20 +42,20 @@ const InputSearch = ({
 		try {
 			setLoading(true);
 
-			// if (!isOnline) {
-			// 	setSlowNet(true);
-			// 	return;
-			// }
+			if (!isOnline) {
+				setSlowNet(true);
+				return;
+			}
 
 			// ⭐ manual slow-network guard (10s)
 			timeoutId = setTimeout(() => {
 				setLoading(false);
 				setSlowNet(true);
-			}, 10000);
+			}, 30000);
 
 			const res = await getAnswer({ question });
 			clearTimeout(timeoutId);
-
+			console.log("Raw API response:", res);
 			const rawAnswer = res?.results?.[0]?.answer;
 
 			if (!rawAnswer) {

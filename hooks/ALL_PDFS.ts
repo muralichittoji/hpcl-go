@@ -1,34 +1,65 @@
 // pdfRegistry.ts
 export const ALL_PDFS: Record<string, any> = {
-	BITUMEN_PDF: require("@/assets/pdfs/Bitumen_MSDS.pdf"),
-	VG30_PDF: require("@/assets/pdfs/VG30_MSDS.pdf"),
-	VG40_PDF: require("@/assets/pdfs/VG40_MSDS.pdf"),
-	GRI_150N_PDF: require("@/assets/pdfs/GRI_150N_MSDS.pdf"),
-	GRII_150SN_PDF: require("@/assets/pdfs/GRII_150SN_MSDS.pdf"),
-	ATF_PDF: require("@/assets/pdfs/ATF_MSDS.pdf"),
-	BRF150BS_PDF: require("@/assets/pdfs/BRF150BS_MSDS.pdf"),
-	ELASTO_SUPREME_H_PDF: require("@/assets/pdfs/ELASTO_SUPREME_H_MSDS.pdf"),
-	ELASTO_SUPREME_PDF: require("@/assets/pdfs/ELASTO_SUPREME_MSDS.pdf"),
-	ELASTO710_PDF: require("@/assets/pdfs/ELASTO710_MSDS.pdf"),
-	ETHANOL_PDF: require("@/assets/pdfs/ETHANOL_MSDS.pdf"),
-	FLAME_PLUS_PDF: require("@/assets/pdfs/FLAME_PLUS_MSDS.pdf"),
-	HEXANE_PDF: require("@/assets/pdfs/HEXANE_MSDS.pdf"),
-	HFHSD_PDF: require("@/assets/pdfs/HFHSD_MSDS.pdf"),
-	HSD_PDF: require("@/assets/pdfs/HSD_MSDS.pdf"),
-	JBO_PDF: require("@/assets/pdfs/JBO_MSDS.pdf"),
-	LDO_PDF: require("@/assets/pdfs/LDO_MSDS.pdf"),
-	LLDPE_PDF: require("@/assets/pdfs/LLDPE_MSDS.pdf"),
-	LPG_PDF: require("@/assets/pdfs/LPG_MSDS.pdf"),
-	LSFO_LSHSFO_VLSFO_PDF: require("@/assets/pdfs/LSFO_LSHSFO_VLSFO_MSDS.pdf"),
-	LSHS_PDF: require("@/assets/pdfs/LSHS_MSDS.pdf"),
-	MS_PDF: require("@/assets/pdfs/MS_MSDS.pdf"),
-	NAPHTHA_PDF: require("@/assets/pdfs/NAPHTHA_MSDS.pdf"),
-	PPHP_PDF: require("@/assets/pdfs/PPHP_MSDS.pdf"),
-	PROPANE_BUTANE_PDF: require("@/assets/pdfs/PROPANE_BUTANE_MSDS.pdf"),
-	SOLVENT_1425_PDF: require("@/assets/pdfs/SOLVENT_1425_MSDS.pdf"),
-	SOLVENT_2445_PDF: require("@/assets/pdfs/SOLVENT_2445_MSDS.pdf"),
-	KEROSENE_PDF: require("@/assets/pdfs/KEROSENE_MSDS.pdf"),
-	HOMOPOLYMER_PDF: require("@/assets/pdfs/HOMOPOLYMER_MSDS.pdf"),
-	"500N_PDF": require("@/assets/pdfs/500N_MSDS.pdf"),
-	"500SN_PDF": require("@/assets/pdfs/500SN_MSDS.pdf"),
+	BITUMEN_PDF:
+		"https://drive.google.com/file/d/10zCWlS6wPiuXQ4oLaiGrd3LYtLmxnOaU/preview",
+	VG30_PDF:
+		"https://drive.google.com/file/d/16NPtVEIF_FQ3PE8fq4ZDmOqhgGagM2DB/preview",
+	VG40_PDF:
+		"https://drive.google.com/file/d/1yHnYH3SD4ElVTp3w5EAWmq1GLTQJS4sa/preview",
+	GRI_150N_PDF:
+		"https://drive.google.com/file/d/1trUa2hqpbdUX_2M_IfPnQC5sEtXeUZo6/preview",
+	GRII_150SN_PDF:
+		"https://drive.google.com/file/d/1trUa2hqpbdUX_2M_IfPnQC5sEtXeUZo6/preview",
+	ATF_PDF:
+		"https://drive.google.com/file/d/15WLcZftJDC-mBHhLaH_96JYEkRvswVyV/preview",
+	BRF150BS_PDF:
+		"https://drive.google.com/file/d/1dP7G6jKTtq4DKQjg5RUxQel_AUar7MTz/preview",
+	ELASTO_SUPREME_H_PDF:
+		"https://drive.google.com/file/d/1c6yLaEWLgWrFdTqRkr-BGtkINTKDsY6S/preview",
+	ELASTO_SUPREME_PDF:
+		"https://drive.google.com/file/d/1PCfYmLX1NpYgZXgBqWAWapTfecQndcSi/preview",
+	ELASTO710_PDF:
+		"https://drive.google.com/file/d/1el_3jRUItWf2zAITd48I2miYgwFLihzg/preview",
+	ETHANOL_PDF:
+		"https://drive.google.com/file/d/1KCiHAebR2RixzieGsTLxDz3P6VUUKtXR/preview",
+	FLAME_PLUS_PDF:
+		"https://drive.google.com/file/d/1H7cXRmC5yPutA-huEY5XOiRvbjIAwluF/preview",
+	HEXANE_PDF:
+		"https://drive.google.com/file/d/1za_EnUkoVu5wRJSreLMjUfoqyGmgdb8B/preview",
+	HFHSD_PDF:
+		"https://drive.google.com/file/d/1Z2nvVkqHd1Jarv-ACHJSuy7TGs_ZTRF1/preview",
+	HSD_PDF:
+		"https://drive.google.com/file/d/1Fpq-Ronp4JcuOLkK6h3YgoVR_HCXJYOS/preview",
+	JBO_PDF:
+		"https://drive.google.com/file/d/1z6HrZVEro48s_onUtDhzu8-av2kMKw8G/preview",
+	LDO_PDF:
+		"https://drive.google.com/file/d/1nbRH_ZPY67WdrgG6CLUiePJAeovqLCyT/preview",
+	LLDPE_PDF:
+		"https://drive.google.com/file/d/1vPHy_mZ6hbDufEeydo_TrM0IHHmbIcYx/preview",
+	LPG_PDF:
+		"https://drive.google.com/file/d/1n_FEoXe0qLVRayCEN5N9VrZPHmvx5mfE/preview",
+	LSFO_LSHSFO_VLSFO_PDF:
+		"https://drive.google.com/file/d/17TK8nAw54Rgzg0x9rklX2MiZnMY-mzQV/preview",
+	LSHS_PDF:
+		"https://drive.google.com/file/d/1uLameSLiEgZugTHIJ-X0Afv9WN5KLqon/preview",
+	MS_PDF:
+		"https://drive.google.com/file/d/1F1MxlDBQtm3X8_s81FQ4JUzOq6a8WJ5O/preview",
+	NAPHTHA_PDF:
+		"https://drive.google.com/file/d/1XseSYUB7meiCWuTwdvVvVugiiQ1Ahuq5/preview",
+	PPHP_PDF:
+		"https://drive.google.com/file/d/1Szsbi6agYX2f43H54bK0UbCbPdGSE_Rg/preview",
+	PROPANE_BUTANE_PDF:
+		"https://drive.google.com/file/d/109IbTn3Vy9ZyjKyAIwiuJFYnCEJhX3qB/preview",
+	SOLVENT_1425_PDF:
+		"https://drive.google.com/file/d/1U-krPb89e85GECrMkmc421EmBFtzvJx6/preview",
+	SOLVENT_2445_PDF:
+		"https://drive.google.com/file/d/12ydV3AOpceFvNKA-bpvk8bVoBU9PCTuW/preview",
+	KEROSENE_PDF:
+		"https://drive.google.com/file/d/1CVLNw7vucDCnqT-rv1Edsyg_JzmokBCn/preview",
+	HOMOPOLYMER_PDF:
+		"https://drive.google.com/file/d/15LP01gpzIKYkQ2jF0WPSEmzQu32KgNVz/preview",
+	"500N_PDF":
+		"https://drive.google.com/file/d/17rwJFvVlmgI3gBCTrASZ9jBpE117PWRi/preview",
+	"500SN_PDF":
+		"https://drive.google.com/file/d/1PbdiVr_WGyh-RLxDq1RlP7-PQi67NWEf/preview",
 };
