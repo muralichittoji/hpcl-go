@@ -1,19 +1,12 @@
 import { ALL_PDFS } from "@/hooks/ALL_PDFS";
 import { router } from "expo-router";
 import React from "react";
-import {
-	ActivityIndicator,
-	StyleSheet,
-	Text,
-	TouchableOpacity,
-	View,
-} from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const documents = [{ title: "Material Safety Data Sheet (MSDS)", icon: "🛡️" }];
 
 type Props = {
 	data: any;
-	loading: boolean;
 	setOpenPdf: React.Dispatch<React.SetStateAction<boolean>>;
 	setPdfUrl: React.Dispatch<React.SetStateAction<string>>;
 	setPdfName: React.Dispatch<React.SetStateAction<string>>;
@@ -21,13 +14,12 @@ type Props = {
 
 const DocumentsDownloads = ({
 	data,
-	loading,
 	setOpenPdf,
 	setPdfUrl,
 	setPdfName,
 }: Props) => {
 	const pdfUrl = ALL_PDFS[data?.MSDS ?? ""];
-	const pdfName = data?.title ?? "Document";
+	const pdfName = data?.MSDS ?? "Document";
 
 	const openMsdsPdf = () => {
 		if (!data?.MSDS) return router.push("/(tabs)/SampleData");
@@ -44,10 +36,6 @@ const DocumentsDownloads = ({
 				<Text style={styles.headerIcon}>📁</Text>
 				<Text style={styles.headerText}>Documents & Downloads</Text>
 			</View>
-
-			{loading && (
-				<ActivityIndicator size="large" style={{ marginVertical: 20 }} />
-			)}
 
 			{documents.map((item, index) => (
 				<TouchableOpacity key={index} style={styles.item} onPress={openMsdsPdf}>

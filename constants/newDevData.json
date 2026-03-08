@@ -512,11 +512,20 @@
 			{ "property": "Carbon residue", "value": "% by mass, Max 0.30" },
 			{ "property": "Cetane number", "value": "Min 51" },
 			{ "property": "Cetane index", "value": "Min 46" },
-			{ "property": "Pour point", "value": "Max 3°C (Winter) / 15°C (Summer)" },
-			{ "property": "Copper strip corrosion", "value": "Not worse than No. 1" },
+			{
+				"property": "Pour point",
+				"value": "Max 3°C (Winter) / 15°C (Summer)"
+			},
+			{
+				"property": "Copper strip corrosion",
+				"value": "Not worse than No. 1"
+			},
 			{ "property": "Distillation 95% recovery", "value": "°C, Max 360" },
 			{ "property": "Flash point (Abel)", "value": "°C, Min 35" },
-			{ "property": "Kinematic Viscosity @ 40°C", "value": "2.0 – 4.5 cSt" },
+			{
+				"property": "Kinematic Viscosity @ 40°C",
+				"value": "2.0 – 4.5 cSt"
+			},
 			{ "property": "Total contamination", "value": "mg/kg, Max 24" },
 			{ "property": "Density at 15°C", "value": "810–845 kg/m³" },
 			{ "property": "Total sulphur", "value": "mg/kg, Max 10" },
@@ -534,6 +543,230 @@
 		"documentation": "-",
 		"alternatives": ["HIGH SPEED DIESEL"],
 		"related": ["HPCL0002"]
+	},
+	"HPCL-MS-0007": {
+		"id": 400,
+		"MSDS": "",
+		"title": "EBMS",
+		"subTitle": "MOTOR FUEL",
+		"description": "Motor Spirit (also known as Motor Gasoline) is a distillate fraction, normally boiling within the range 30°C to 210°C. It is a complex mixture composed of relatively volatile hydrocarbons (alkanes, alkenes and aromatics with typical carbon chain length of C5 to C10) that vary widely in their physical and chemical properties.",
+
+		"specifications": [
+			{ "property": "Appearance", "value": "Visual, B & C" },
+			{ "property": "Colour", "value": "Visual, Orange (MG95)" },
+			{ "property": "Density at 15°C", "value": "720–775 kg/m³" },
+
+			{
+				"property": "Distillation % evaporated at 70°C (E70)",
+				"value": "10–60 % v/v"
+			},
+			{
+				"property": "Distillation % evaporated at 100°C (E100)",
+				"value": "45–78 % v/v"
+			},
+			{
+				"property": "Distillation % evaporated at 150°C (E150)",
+				"value": "Min 85 % v/v"
+			},
+
+			{
+				"property": "Distillation Final Boiling Point",
+				"value": "Max 210 °C"
+			},
+			{
+				"property": "Distillation Residue",
+				"value": "Max 2.0 % by volume"
+			},
+
+			{ "property": "Research Octane Number (RON)", "value": "Min 95.0" },
+			{
+				"property": "Gum Content (Solvent Washed)",
+				"value": "Max 40 g/m³"
+			},
+			{ "property": "Total Sulphur", "value": "Max 10 mg/kg" },
+			{ "property": "Lead Content (as Pb)", "value": "Max 0.005 g/L" },
+
+			{
+				"property": "Reid Vapour Pressure (RVP) at 37.8°C",
+				"value": "Max 70 kPa"
+			},
+			{ "property": "Vapour Lock Index (VLI)", "value": "Max 1100" },
+
+			{ "property": "Benzene Content", "value": "Max 1 % v/v" },
+			{
+				"property": "Copper Strip Corrosion (3h at 50°C)",
+				"value": "Max Class 1"
+			},
+
+			{
+				"property": "Water Tolerance of Motor Gasoline–Alcohol Blends",
+				"value": "Phase separation temperature: Max 10°C (other months) / 0°C (winter)"
+			},
+
+			{
+				"property": "Engine Intake System Cleanliness",
+				"value": "Report – MFA used"
+			},
+
+			{ "property": "Olefin Content", "value": "Max 18 % v/v" },
+			{ "property": "Oxidation Stability", "value": "Min 360 minutes" },
+
+			{ "property": "Aromatics Content", "value": "Max 35 % v/v" },
+			{ "property": "Oxygen Content", "value": "Max 7.7 % by mass" },
+
+			{ "property": "Ethanol Content", "value": "19–20 % v/v" },
+
+			{
+				"property": "Oxygenates",
+				"value": "Max 15 % v/v (MTBE, ETBE, TAME) / Other oxygenates not permitted"
+			},
+
+			{
+				"property": "Motor Gasoline Content",
+				"value": "100 − Ethanol content and stabilizing additives (% v/v)"
+			},
+
+			{ "property": "Water Content", "value": "Max 3000 mg/kg" }
+		],
+
+		"appData": "Primarily used in transportation (Cars, Sport Utility Vehicles, Motorcycles and Scooters). E20 Fuel was launched in India on 6th Feb 2023. As on date regular MS is substituted by E20 MS. It is observed that E20 fuel is being used in existing spark-ignition engine. E20 fuel has several advantages over conventional MS, such as it reduces vehicular tailpipe emissions by lowering the carbon monoxide, hydrocarbons and nitrogen oxides levels.",
+
+		"packaging": ["Bulk", "Retail"],
+
+		"SBU": "SOD/I&C/RETAIL",
+		"industrial": "Transport",
+
+		"documentation": "-",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-MS-0008": {
+		"id": 401,
+		"MSDS": "",
+		"title": "POWER95",
+		"subTitle": "MOTOR FUEL",
+		"description": "Power95 is premium branded fuel produced by addition of special high quality additives which enhances overall performance of MS.",
+
+		"specifications": [
+			{ "property": "Appearance", "value": "Visual, B & C" },
+			{ "property": "Colour", "value": "Visual, Orange (MG95)" },
+			{ "property": "Density at 15°C", "value": "720–775 kg/m³" },
+
+			{
+				"property": "Distillation % evaporated at 70°C (E70)",
+				"value": "10–60 % v/v"
+			},
+			{
+				"property": "Distillation % evaporated at 100°C (E100)",
+				"value": "45–78 % v/v"
+			},
+			{
+				"property": "Distillation % evaporated at 150°C (E150)",
+				"value": "Min 85 % v/v"
+			},
+
+			{
+				"property": "Distillation Final Boiling Point",
+				"value": "Max 210 °C"
+			},
+			{
+				"property": "Distillation Residue",
+				"value": "Max 2.0 % by volume"
+			},
+
+			{ "property": "Research Octane Number (RON)", "value": "Min 95.0" },
+			{
+				"property": "Gum Content (Solvent Washed)",
+				"value": "Max 40 g/m³"
+			},
+			{ "property": "Total Sulphur", "value": "Max 10 mg/kg" },
+			{ "property": "Lead Content (as Pb)", "value": "Max 0.005 g/L" },
+
+			{
+				"property": "Reid Vapour Pressure (RVP) at 37.8°C",
+				"value": "Max 70 kPa"
+			},
+			{ "property": "Vapour Lock Index (VLI)", "value": "Max 1100" },
+
+			{ "property": "Benzene Content", "value": "Max 1 % v/v" },
+			{
+				"property": "Copper Strip Corrosion (3h at 50°C)",
+				"value": "Max Class 1"
+			},
+
+			{
+				"property": "Water Tolerance of Motor Gasoline–Alcohol Blends",
+				"value": "Phase separation temperature: Max 10°C (other months) / 0°C (winter)"
+			},
+
+			{
+				"property": "Engine Intake System Cleanliness",
+				"value": "Report – MFA used"
+			},
+
+			{ "property": "Olefin Content", "value": "Max 18 % v/v" },
+			{ "property": "Oxidation Stability", "value": "Min 360 minutes" },
+
+			{ "property": "Aromatics Content", "value": "Max 35 % v/v" },
+			{ "property": "Oxygen Content", "value": "Max 7.7 % by mass" },
+
+			{ "property": "Ethanol Content", "value": "19–20 % v/v" },
+
+			{
+				"property": "Oxygenates",
+				"value": "Max 15 % v/v (MTBE, ETBE, TAME) / Other oxygenates not permitted"
+			},
+
+			{
+				"property": "Motor Gasoline Content",
+				"value": "100 − Ethanol content and stabilizing additives (% v/v)"
+			},
+
+			{ "property": "Water Content", "value": "Max 3000 mg/kg" }
+		],
+
+		"appData": "Primarily used in transportation (Cars, Sport Utility Vehicles, Motorcycles and Scooters).",
+
+		"packaging": ["Bulk", "Retail"],
+
+		"SBU": "SOD/I&C/RETAIL",
+		"industrial": "Transport",
+
+		"documentation": "",
+		"alternatives": ["SPEED", "XTRA PREMIUM 95"],
+		"related": []
+	},
+	"HPCL-MS-0009": {
+		"id": 402,
+		"MSDS": "",
+		"title": "POWER100",
+		"subTitle": "SPECIAL MOTOR FUEL",
+		"description": "Power100 is premium branded Motor Spirit with Research Octane Number (RON) 100 and no Ethanol. It is produced by addition of special high quality additives which enhance the overall performance of Motor Spirit and deliver superior engine efficiency and responsiveness.",
+
+		"specifications": [
+			{ "property": "Research Octane Number (RON)", "value": "Min 100" },
+			{ "property": "Ethanol Content", "value": "0 % v/v (No Ethanol)" },
+			{ "property": "Appearance", "value": "Bright & Clear (Visual)" },
+			{ "property": "Colour", "value": "Orange" },
+			{ "property": "Density at 15°C", "value": "720–775 kg/m³" },
+			{ "property": "Total Sulphur", "value": "Max 10 mg/kg" },
+			{ "property": "Benzene Content", "value": "Max 1 % v/v" },
+			{
+				"property": "Copper Strip Corrosion (3h at 50°C)",
+				"value": "Max Class 1"
+			}
+		],
+
+		"appData": "Recommended for luxury and high-end cars requiring very high octane fuel for improved engine performance, acceleration and combustion efficiency.",
+
+		"packaging": ["Bulk", "Retail"],
+
+		"SBU": "SOD/I&C/RETAIL",
+		"industrial": "Transport",
+
+		"documentation": "",
+		"alternatives": ["SPEED 100", "XTRA PREMIUM 100"],
+		"related": []
 	},
 	"HPCL-IF-0001": {
 		"id": 7,
@@ -895,7 +1128,7 @@
 				"value": "0.005 - 1.50"
 			}
 		],
-		"appData": "LDO is known for its efficient combustion properties. This fuel is free flowing in nature. It is largely an industrial fuel. It finds extensive use in industries such as manufacturing, power generation, and heating systems. It is commonly used in boilers, furnaces, and other equipment that require a steady and controlled source of heat.",
+		"appData": "LDO is known for its efficient combustion properties. This fuel is free flowing in nature. It finds extensive use in industries such as manufacturing, power generation, and heating systems. It is commonly used in boilers, furnaces, and other equipment that require a steady and controlled source of heat.",
 		"packaging": ["Bulk"],
 		"SBU": "I&C/SOD",
 		"industrial": "Power, Manufacturing, Construction & mining",
@@ -1323,183 +1556,907 @@
 		"id": 20,
 		"MSDS": "HOMOPOLYMER_PDF",
 		"title": "HM120A-MS",
-		"subTitle": "PP Homopolymer Injection moulding",
-		"description": "Polypropylene grade for manufacturing of injection moulded articles",
+		"subTitle": "PP Homopolymer",
+		"description": "Polypropylene grade for manufacturing of raffia woven sack fabric and bag manufacturing.",
+
 		"specifications": [
 			{
-				"property": "Melt Flow Rate (230\u00b0C/2.16 kg), gm/10 min",
-				"value": "12"
+				"property": "Melt Flow Rate (230°C / 2.16 kg)",
+				"value": "3.5 g/10 min"
 			},
 			{
-				"property": "Tensile Strength@ Yield, MPa",
-				"value": "33"
+				"property": "Tensile Stress at Yield (23°C, 50 mm/min)",
+				"value": "33 MPa"
 			},
 			{
-				"property": "Tensile Elongation@Yield, %",
-				"value": "10"
+				"property": "Tensile Strain at Yield (23°C, 50 mm/min)",
+				"value": "10 %"
 			},
 			{
-				"property": "Flexural Modulus, MPa",
-				"value": "1470"
+				"property": "Flexural Modulus",
+				"value": "1480 MPa"
 			},
 			{
-				"property": "Notch Izod Impact Strength (23 \u00b0C). J/m",
-				"value": "24"
+				"property": "Vicat Softening Temperature (A50)",
+				"value": "154 °C"
 			},
 			{
-				"property": "Heat Deflection Temperature (0.46 N/mm2), \u00b0C)",
-				"value": "95"
+				"property": "Deflection Temperature under Load (0.45 MPa, Unannealed)",
+				"value": "90 °C"
 			}
 		],
-		"appData": "Household articles, Industrial articles etc",
+
+		"appData": "Used for manufacturing raffia woven sacks such as cement bags, fertilizer bags and rice bags.",
+
 		"packaging": ["25 kg Raffia woven sack bags"],
-		"SBU": "Petrochemical",
-		"industrial": "Household articles manufacturing industries",
-		"documentation": "-",
-		"alternatives": ["Reliance H110MAS"],
-		"related": ["-"]
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Petrochemicals",
+
+		"documentation": "",
+		"alternatives": ["Reliance F19010"],
+		"related": []
 	},
 	"HPCL-IF-0015": {
 		"id": 21,
 		"MSDS": "",
 		"title": "HR033-MS",
-		"subTitle": "PP Homopolymer  Raffia",
-		"description": "Polypropylene grade for manufacturing of Raffia woven sack fabric/ bag manufacturing",
+		"subTitle": "PP Homopolymer Raffia",
+		"description": "Polypropylene grade for manufacturing of raffia woven sack fabric and bag manufacturing.",
+
 		"specifications": [
 			{
-				"property": "Melt Flow Rate (230\u00b0C/2.16 kg), gm/10 min",
-				"value": "3.5"
+				"property": "Melt Flow Rate (230°C / 2.16 kg)",
+				"value": "3.5 g/10 min"
 			},
 			{
-				"property": "Tensile Stress at Yield (23 \u00b0C, 50 mm/min), MPa",
-				"value": "33"
+				"property": "Tensile Stress at Yield (23°C, 50 mm/min)",
+				"value": "33 MPa"
 			},
 			{
-				"property": "Tensile Strain at Yield  (23 \u00b0C, 50 mm/min), %",
-				"value": "10"
+				"property": "Tensile Strain at Yield (23°C, 50 mm/min)",
+				"value": "10 %"
 			},
 			{
-				"property": "Flexural Modulus, MPa",
-				"value": "1480"
+				"property": "Flexural Modulus",
+				"value": "1480 MPa"
 			},
 			{
-				"property": "Vicat Softening Temperature, (A50), \u00b0C",
-				"value": "154"
+				"property": "Vicat Softening Temperature (A50)",
+				"value": "154 °C"
 			},
 			{
-				"property": "Deflection Temperature under Load (0.0.45MPa, Unannealed) \u00b0C",
-				"value": "90"
+				"property": "Deflection Temperature under Load (0.45 MPa, Unannealed)",
+				"value": "90 °C"
 			}
 		],
-		"appData": "Cement bags, Fertilizer, Rice bags etc.",
+
+		"appData": "Used for manufacturing raffia woven sacks such as cement bags, fertilizer bags and rice bags.",
+
 		"packaging": ["25 kg Raffia woven sack bags"],
-		"SBU": "Petrochemical",
-		"industrial": "Cement Industries, Fertilizer industries, Food industries etc.",
-		"documentation": "-",
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Petrochemicals",
+
+		"documentation": "",
 		"alternatives": ["Reliance F19010"],
-		"related": ["-"]
+		"related": []
 	},
 	"HPCL-IF-0016": {
 		"id": 22,
 		"MSDS": "LLDPE_PDF",
 		"title": "F01019S-MS",
-		"subTitle": "LLDPE Flim Slip 1MFI",
-		"description": "LLDPE grade for manufacturing of general packaging film, multilayer films, agricultural films etc",
+		"subTitle": "PE Grade",
+		"description": "LLDPE grade for manufacturing of general packaging film, multilayer films and agricultural films.",
+
 		"specifications": [
 			{
-				"property": "Density of resin @23\u00b0C, g/cc",
-				"value": "0.920"
+				"property": "Density of Resin @ 23°C",
+				"value": "0.920 g/cc"
 			},
 			{
-				"property": "MFI of resin at 190 \u00b0C, 2.16 Kgs",
+				"property": "Melt Flow Index (190°C / 2.16 kg)",
 				"value": "0.96"
 			},
+
 			{
-				"property": "Tensile Strength at Break (MD/TD), psi",
-				"value": "5080/4120"
+				"property": "Tensile Strength at Break (MD/TD)",
+				"value": "5080 / 4120 psi"
 			},
 			{
-				"property": "Elongation (MD/TD), %",
-				"value": "680/910"
+				"property": "Elongation (MD/TD)",
+				"value": "680 / 910 %"
 			},
 			{
-				"property": "Gloss, 45\u00b0",
+				"property": "Gloss @ 45°",
 				"value": "40"
 			},
 			{
-				"property": "Haze, %",
-				"value": "21"
+				"property": "Haze",
+				"value": "21 %"
 			},
 			{
-				"property": "Dart Impact, g/ml",
-				"value": "130"
+				"property": "Dart Impact",
+				"value": "130 g/mil"
 			},
 			{
-				"property": "Tear Strength, g/ml",
-				"value": "150/385"
+				"property": "Tear Strength (MD/TD)",
+				"value": "150 / 385 g/mil"
 			}
 		],
-		"appData": "FMCG packaging, general packaging etc.",
+
+		"appData": "Used for FMCG packaging, general packaging films and multilayer film applications.",
+
 		"packaging": ["25 kg Raffia woven sack bags"],
-		"SBU": "Petrochemical",
-		"industrial": "Food industries, Manufacturing plants",
-		"documentation": "-",
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Petrochemicals",
+
+		"documentation": "",
 		"alternatives": ["Reliance F19010"],
-		"related": ["-"]
+		"related": []
 	},
 	"HPCL-IF-0017": {
 		"id": 23,
 		"MSDS": "",
 		"title": "F02020-MS",
-		"subTitle": "LLDPE Flim Non slip 2MFI",
-		"description": "LLDPE grade for manufacturing of liners, agricultural films etc",
+		"subTitle": "PE Grade",
+		"description": "LLDPE grade for manufacturing of liners and agricultural films.",
+
 		"specifications": [
 			{
-				"property": "Density of resin @23\u00b0C, g/cc",
-				"value": "0.918"
+				"property": "Density of Resin @ 23°C",
+				"value": "0.918 g/cc"
 			},
 			{
-				"property": "MFI of resin at 190 \u00b0C, 2.16 Kgs, g/10 min",
-				"value": "2"
+				"property": "Melt Flow Index (190°C / 2.16 kg)",
+				"value": "2 g/10 min"
+			},
+
+			{
+				"property": "Tensile Strength at Yield (MD/TD)",
+				"value": "9 / 9 MPa"
 			},
 			{
-				"property": "Tensile Strength at Yield (MD/TD), MPa",
-				"value": "9/9"
+				"property": "Tensile Strength at Break (MD/TD)",
+				"value": "29 / 22 MPa"
 			},
 			{
-				"property": "Tensile Strength at Break (MD/TD), MPa",
-				"value": "29/22"
+				"property": "Elongation at Break (MD/TD)",
+				"value": "650 / 760 %"
 			},
 			{
-				"property": "Elongation at break (MD/TD), %",
-				"value": "650/760"
+				"property": "Gloss @ 60°",
+				"value": "95 GU"
 			},
 			{
-				"property": "Gloss, 60\u00b0, GU",
-				"value": "95"
+				"property": "Haze",
+				"value": "11 %"
 			},
 			{
-				"property": "Haze, %",
-				"value": "11"
+				"property": "Dart Impact Strength",
+				"value": "2.7 g/micron"
 			},
 			{
-				"property": "Dart Impact Strength, g/micron",
-				"value": "2.7"
-			},
-			{
-				"property": "Elmendorf Tear Strength, g/micron",
-				"value": "5.3/15.2"
+				"property": "Elmendorf Tear Strength (MD/TD)",
+				"value": "5.3 / 15.2 g/micron"
 			}
 		],
-		"appData": "FMCG packaging, Industrial liners etc.",
-		"packaging": ["25 kg Raffia woven sack bags"],
-		"SBU": "Petrochemical",
-		"industrial": "Food industries, Manufacturing plants",
-		"documentation": "-",
-		"alternatives": ["Reliance S030SG"],
-		"related": ["-"]
-	},
 
+		"appData": "Used for FMCG packaging, industrial liners and agricultural film applications.",
+
+		"packaging": ["25 kg Raffia woven sack bags"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Petrochemicals",
+
+		"documentation": "",
+		"alternatives": ["Reliance S030SG"],
+		"related": []
+	},
+	"HPCL-IF-0018": {
+		"id": 405,
+		"MSDS": "",
+		"title": "FO 380",
+		"subTitle": "Marine Fuel",
+		"description": "FO 380 is a high-viscosity residual marine fuel primarily used in large ocean-going vessels equipped with slow-speed and medium-speed diesel engines. Traditionally supplied as High Sulfur Fuel Oil (HSFO) (up to 3.5% sulfur), its usage today is largely restricted to vessels fitted with exhaust gas cleaning systems (scrubbers) in order to comply with IMO 2020 sulfur regulations.",
+
+		"specifications": [
+			{
+				"property": "Kinematic Viscosity @ 50°C",
+				"value": "Max 380 mm²/s"
+			},
+			{
+				"property": "Density @ 15°C",
+				"value": "Max 991 kg/m³"
+			},
+			{
+				"property": "Calculated Carbon Aromaticity Index (CCAI)",
+				"value": "Max 870"
+			},
+			{
+				"property": "Sulfur Content",
+				"value": "Max 3.5 % mass"
+			},
+			{
+				"property": "Flash Point",
+				"value": "Min 60 °C"
+			},
+			{
+				"property": "Hydrogen Sulfide",
+				"value": "Max 2 mg/kg"
+			},
+			{
+				"property": "Acid Number",
+				"value": "Max 2.5 mg KOH/g"
+			},
+			{
+				"property": "Total Sediment (Aged)",
+				"value": "Max 0.10 % mass"
+			},
+			{
+				"property": "Carbon Residue (Micro Method)",
+				"value": "Max 18.00 % mass"
+			},
+			{
+				"property": "Pour Point (Upper)",
+				"value": "Max 30 °C (Winter) / 30 °C (Summer)"
+			},
+			{
+				"property": "Water Content",
+				"value": "Max 0.50 % volume"
+			},
+			{
+				"property": "Ash Content",
+				"value": "Max 1.00 % mass"
+			},
+			{
+				"property": "Vanadium",
+				"value": "Max 350 mg/kg"
+			},
+			{
+				"property": "Sodium",
+				"value": "Max 100 mg/kg"
+			},
+			{
+				"property": "Aluminium + Silicon",
+				"value": "Max 60 mg/kg"
+			},
+			{
+				"property": "Calcium",
+				"value": "> 30 mg/kg"
+			},
+			{
+				"property": "Zinc",
+				"value": "> 30 mg/kg"
+			},
+			{
+				"property": "Phosphorus",
+				"value": "> 15 mg/kg"
+			}
+		],
+
+		"appData": "Fuel used in ocean-going vessels fitted with exhaust gas cleaning systems (scrubbers) to comply with IMO 2020 sulfur regulations.",
+
+		"packaging": ["Bulk"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Marine",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0019": {
+		"id": 406,
+		"MSDS": "",
+		"title": "LSHS Premium",
+		"subTitle": "Bulk Fuels",
+		"description": "LSHS Premium (Low Sulphur Heavy Stock) is a dark viscous residual fuel obtained by blending mainly heavier components from crude distillation units. It consists primarily of heavy petroleum fractions and is widely used as an industrial fuel. Its performance varies depending on kinematic viscosity and sulphur content, with sulphur maintained below 1% to meet stricter environmental norms.",
+
+		"specifications": [
+			{
+				"property": "Acidity (Inorganic)",
+				"value": "Nil"
+			},
+			{
+				"property": "Ash Content",
+				"value": "Max 0.1 % mass"
+			},
+			{
+				"property": "Carbon Residue",
+				"value": "Max 18 % mass"
+			},
+			{
+				"property": "Gross Calorific Value",
+				"value": "Not limited, but to be reported"
+			},
+			{
+				"property": "Density @ 15°C / Relative Density @ 15.6/15.6°C",
+				"value": "Not limited, but to be reported"
+			},
+			{
+				"property": "Flash Point (Pensky Martens Closed)",
+				"value": "Min 66 °C"
+			},
+			{
+				"property": "Kinematic Viscosity @ 100°C",
+				"value": "125 – 180 cSt"
+			},
+			{
+				"property": "Sediment",
+				"value": "Max 0.25 % mass"
+			},
+			{
+				"property": "Total Sulphur",
+				"value": "Max 1.0 % mass"
+			},
+			{
+				"property": "Water Content",
+				"value": "Max 1.0 % volume"
+			}
+		],
+
+		"appData": "Used as a replacement for FO 180 in regions with stricter NGT norms where sulphur content must be below 1%.",
+
+		"packaging": ["Bulk"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Bulk Fuels",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0020": {
+		"id": 407,
+		"MSDS": "",
+		"title": "Paving Bitumen (VG 40 Super)",
+		"subTitle": "Industrial Construction",
+		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid or solid consisting essentially of a complex mixture of hydrocarbons including high molecular weight compounds such as asphaltenes and lighter fractions such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour and possesses waterproofing and adhesive properties.",
+
+		"specifications": [
+			{
+				"property": "Penetration @ 25°C, 100 g, 5 s",
+				"value": "Min 35 (0.1 mm)"
+			},
+			{
+				"property": "Absolute Viscosity @ 60°C",
+				"value": "4000 – 4800 Poises"
+			},
+			{
+				"property": "Kinematic Viscosity @ 135°C",
+				"value": "Min 400 cSt"
+			},
+			{
+				"property": "Flash Point (Cleveland Open Cup)",
+				"value": "Min 220 °C"
+			},
+			{
+				"property": "Solubility in Trichloroethylene",
+				"value": "Min 99.0 %"
+			},
+			{
+				"property": "Softening Point (Ring & Ball)",
+				"value": "Min 50 °C"
+			},
+			{
+				"property": "Viscosity Ratio @ 60°C (RTFOT Residue)",
+				"value": "Max 4.0"
+			},
+			{
+				"property": "Ductility @ 25°C (RTFOT Residue)",
+				"value": "Min 25 cm"
+			}
+		],
+
+		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
+
+		"packaging": ["Bulk"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Industrial Construction",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0021": {
+		"id": 408,
+		"MSDS": "",
+		"title": "Crumb Rubber Modified Bitumen (CRMB55)",
+		"subTitle": "Industrial Construction",
+		"description": "Crumb Rubber Modified Bitumen (CRMB) is a high-performance asphalt binder produced by blending bitumen with crumb rubber derived from recycled tyres along with performance additives. It enhances road durability by improving flexibility, reducing cracking and resisting deformation under heavy traffic loads and extreme temperature conditions.",
+
+		"specifications": [
+			{
+				"property": "Penetration @ 25°C, 100 g, 5 s",
+				"value": "30 – 60 (0.1 mm)"
+			},
+			{
+				"property": "Softening Point (Ring & Ball)",
+				"value": "Min 55 °C"
+			},
+			{
+				"property": "Flash Point (COC)",
+				"value": "Min 220 °C"
+			},
+			{
+				"property": "Elastic Recovery of Half Thread in Ductilometer @ 15°C",
+				"value": "Min 60 %"
+			},
+			{
+				"property": "Complex Modulus (G*/Sin) @ 10 rad/s",
+				"value": "Min 1.0 kPa at 64 °C"
+			},
+			{
+				"property": "Separation (Difference in Softening Point, R&B)",
+				"value": "Max 4 °C"
+			},
+			{
+				"property": "Viscosity @ 150°C",
+				"value": "4 – 8 Poise"
+			},
+			{
+				"property": "Loss in Mass (Thin Film Oven Test Residue)",
+				"value": "Max 1.0 %"
+			},
+			{
+				"property": "Change in Softening Point (TFOT Residue)",
+				"value": "Max 5 °C"
+			},
+			{
+				"property": "Reduction in Penetration of Residue @ 25°C",
+				"value": "Max 35 %"
+			},
+			{
+				"property": "Elastic Recovery of Half Thread in Ductilometer @ 25°C",
+				"value": "Min 35 %"
+			},
+			{
+				"property": "Complex Modulus (G*/Sin) @ 10 rad/s (Residue)",
+				"value": "Min 2.2 kPa at 64 °C"
+			}
+		],
+
+		"appData": "CRMB is extensively used in the construction of roads, highways and airport tarmac.",
+
+		"packaging": ["Bulk", "Packed (161.8 KG)"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Industrial Construction",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0022": {
+		"id": 409,
+		"MSDS": "",
+		"title": "Crumb Rubber Modified Bitumen (CRMB65)",
+		"subTitle": "Industrial Construction",
+		"description": "Crumb Rubber Modified Bitumen (CRMB) is a high-performance asphalt binder produced by blending bitumen with crumb rubber derived from recycled tyres along with special performance additives. It enhances road durability by improving flexibility, reducing cracking and resisting deformation under heavy traffic and extreme temperature conditions.",
+
+		"specifications": [
+			{
+				"property": "Penetration @ 25°C, 100 g, 5 s",
+				"value": "20 – 50 (0.1 mm)"
+			},
+			{
+				"property": "Softening Point (Ring & Ball)",
+				"value": "Min 65 °C"
+			},
+			{
+				"property": "Flash Point (COC)",
+				"value": "Min 220 °C"
+			},
+			{
+				"property": "Elastic Recovery of Half Thread in Ductilometer @ 15°C",
+				"value": "Min 60 %"
+			},
+			{
+				"property": "Complex Modulus (G*/Sin) @ 10 rad/s",
+				"value": "Min 1.0 kPa at 70 °C"
+			},
+			{
+				"property": "Separation (Difference in Softening Point, R&B)",
+				"value": "Max 4 °C"
+			},
+			{
+				"property": "Viscosity @ 150°C",
+				"value": "6 – 12 Poise"
+			},
+			{
+				"property": "Loss in Mass (Thin Film Oven Test Residue)",
+				"value": "Max 1.0 %"
+			},
+			{
+				"property": "Change in Softening Point (TFOT Residue)",
+				"value": "Max 5 °C"
+			},
+			{
+				"property": "Reduction in Penetration of Residue @ 25°C",
+				"value": "Max 35 %"
+			},
+			{
+				"property": "Elastic Recovery of Half Thread in Ductilometer @ 25°C",
+				"value": "Min 35 %"
+			},
+			{
+				"property": "Complex Modulus (G*/Sin) @ 10 rad/s (Residue)",
+				"value": "Min 2.2 kPa at 70 °C"
+			}
+		],
+
+		"appData": "CRMB is extensively used in the construction of roads, highways and airport tarmac.",
+
+		"packaging": ["Bulk", "Packed (161.8 KG)"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Industrial Construction",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0023": {
+		"id": 410,
+		"MSDS": "",
+		"title": "BULK SULPHUR",
+		"subTitle": "Manufacturing",
+		"description": "Sulphur is a non-metallic, bright yellow brittle solid at room temperature. Known since antiquity as brimstone, it is primarily used in industrial production of sulfuric acid, fertilizers, and rubber vulcanization. Sulphur is produced as a by-product of removing sulphur-containing contaminants from petroleum refining processes.",
+
+		"specifications": [
+			{
+				"property": "Purity",
+				"value": "99.9%"
+			},
+			{
+				"property": "Available Form",
+				"value": "Molten and Solid"
+			}
+		],
+
+		"appData": "Sulphur is widely used in industrial processes including production of sulfuric acid, fertilizers and chemicals, rubber vulcanization, paper production, sugar refining and manufacturing of explosives such as gunpowder.",
+
+		"packaging": ["Bulk"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Manufacturing",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0024": {
+		"id": 411,
+		"MSDS": "",
+		"title": "Propylene",
+		"subTitle": "Feedstock",
+		"description": "Propylene is a light, colorless hydrocarbon and an unsaturated alkene. It is produced during crude oil refining and steam cracking of hydrocarbons.",
+
+		"specifications": [
+			{
+				"property": "Minimum Purity",
+				"value": "95%"
+			}
+		],
+
+		"appData": "Propylene is widely used as a chemical feedstock for the production of polypropylene (PP) plastics, oxo alcohols used in plasticizers and solvents, acrylonitrile, propylene oxide and other petrochemical derivatives. It is also used as an octane enhancing component in gasoline blending.",
+
+		"packaging": ["Bulk"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Feedstock",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0025": {
+		"id": 412,
+		"MSDS": "",
+		"title": "MS",
+		"subTitle": "Automotive fuel",
+		"description": "Motor Spirit (MS) is a light petroleum distillate used in spark-ignition internal combustion engines. It is produced through atmospheric distillation, catalytic reforming, isomerization and blending of various refinery streams. In India, Motor Spirit conforms to Bharat Stage VI (BS-VI) emission norms.",
+		"specifications": [
+			{
+				"property": "Density @ 15°C",
+				"value": "720.0 – 775.0 kg/m³"
+			},
+			{
+				"property": "Distillation – % Evaporated @ 70°C (E70)",
+				"value": "10.0 – 45.0 % v/v"
+			},
+			{
+				"property": "Distillation – % Evaporated @ 100°C (E100)",
+				"value": "40.0 – 70.0 % v/v"
+			},
+			{
+				"property": "Distillation – % Evaporated @ 150°C (E150)",
+				"value": "Min 75 % v/v"
+			},
+			{
+				"property": "Distillation – Final Boiling Point",
+				"value": "Max 210 °C"
+			},
+			{
+				"property": "Distillation Residue",
+				"value": "Max 2.0 %"
+			},
+			{
+				"property": "Sulphur Content",
+				"value": "Max 10 mg/kg"
+			},
+			{
+				"property": "Gum Content (Solvent Washed)",
+				"value": "Max 40 g/m³"
+			},
+			{
+				"property": "Copper Strip Corrosion (3 hr @ 50°C)",
+				"value": "Not worse than No.1"
+			}
+		],
+
+		"appData": "Primarily used as an automotive fuel for passenger vehicles including cars, motorcycles and scooters. It is also used in small generators, agricultural light machinery and recreational vehicles.",
+
+		"packaging": ["Bulk"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Automotive fuel",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0026": {
+		"id": 413,
+		"MSDS": "",
+		"title": "HSD",
+		"subTitle": "Automotive fuel",
+		"description": "High Speed Diesel (HSD) is a middle distillate petroleum fuel used in compression ignition (CI) engines. It is the largest consumed petroleum product in India. HSD is refined from crude oil through atmospheric distillation followed by hydrotreating for sulfur removal and blending for performance compliance. In India, HSD conforms to Bharat Stage VI (BS-VI) emission norms.",
+
+		"specifications": [
+			{
+				"property": "Density @ 15°C",
+				"value": "810.0 – 845.0 kg/m³"
+			},
+			{
+				"property": "Distillation – 95% Recovery",
+				"value": "Max 360 °C"
+			},
+			{
+				"property": "Flash Point (Abel)",
+				"value": "Min 35 °C"
+			},
+			{
+				"property": "Kinematic Viscosity @ 40°C",
+				"value": "2.0 – 4.5 cSt"
+			},
+			{
+				"property": "Total Sulphur",
+				"value": "Max 10 mg/kg"
+			},
+			{
+				"property": "Pour Point (Winter)",
+				"value": "Max 3 °C"
+			},
+			{
+				"property": "Copper Strip Corrosion (3 hr @ 50°C)",
+				"value": "Not worse than No.1"
+			},
+			{
+				"property": "Cetane Index",
+				"value": "Min 46"
+			}
+		],
+
+		"appData": "Primarily used as an automotive fuel for passenger vehicles, heavy commercial vehicles such as trucks and buses, and rail locomotives. It is also widely used in construction and mining equipment, agricultural tractors, diesel generators and marine engines.",
+
+		"packaging": ["Bulk"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Automotive fuel",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0027": {
+		"id": 414,
+		"MSDS": "",
+		"title": "ISKO",
+		"subTitle": "Heating & cleaning",
+		"description": "Superior Kerosene Oil (SKO) is a middle distillate petroleum fraction heavier than gasoline but lighter than diesel. It is produced during atmospheric distillation of crude oil. Historically used as a domestic fuel, its usage has declined with the introduction of cleaner fuel alternatives.",
+
+		"specifications": [
+			{
+				"property": "Density @ 15°C",
+				"value": "To be reported"
+			},
+			{
+				"property": "Distillation – % Recovered Below 200°C",
+				"value": "Min 20 % v/v"
+			},
+			{
+				"property": "Distillation – Final Boiling Point",
+				"value": "Max 300 °C"
+			},
+			{
+				"property": "Distillation Residue",
+				"value": "Max 2.0 %"
+			},
+			{
+				"property": "Flash Point (Abel)",
+				"value": "Min 35 °C"
+			},
+			{
+				"property": "Smoke Point",
+				"value": "Min 18 mm"
+			},
+			{
+				"property": "Total Sulphur Content",
+				"value": "Max 0.1000 % m/m"
+			},
+			{
+				"property": "Copper Strip Corrosion (3 hr @ 50°C)",
+				"value": "Not worse than No.1"
+			}
+		],
+
+		"appData": "Traditionally used for domestic lighting in kerosene lamps and cooking in kerosene stoves, though usage has declined. It is also used in industrial burners, solvent applications, and as fuel for small boat engines.",
+
+		"packaging": ["Bulk"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Heating & cleaning",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0028": {
+		"id": 415,
+		"MSDS": "",
+		"title": "CBFS",
+		"subTitle": "Feedstock",
+		"description": "Carbon Black Feedstock (CBFS) is a heavy aromatic hydrocarbon oil used as the primary raw material for manufacturing carbon black. It is rich in aromatic hydrocarbons, which are essential for efficient carbon black formation in furnace-type reactors.",
+
+		"specifications": [
+			{
+				"property": "Density @ 15°C",
+				"value": "1.080 – 1.120 g/cc"
+			},
+			{
+				"property": "API Gravity",
+				"value": "-5.0 to 2.0"
+			},
+			{
+				"property": "Viscosity @ 100°C",
+				"value": "50 – 100 SSU"
+			},
+			{
+				"property": "Sulphur Content",
+				"value": "Max 3.5 % wt"
+			},
+			{
+				"property": "BMCI",
+				"value": "Min 120"
+			},
+			{
+				"property": "Asphaltenes",
+				"value": "1.74 % wt"
+			},
+			{
+				"property": "Water Content",
+				"value": "Max 0.50 %"
+			},
+			{
+				"property": "Flash Point",
+				"value": "100 °C"
+			},
+			{
+				"property": "n-Pentane Insolubles",
+				"value": "To be reported"
+			},
+			{
+				"property": "Toluene Insolubles",
+				"value": "To be reported"
+			},
+			{
+				"property": "Ash Content",
+				"value": "To be reported"
+			},
+			{
+				"property": "Na, C, K, H",
+				"value": "To be reported"
+			},
+			{
+				"property": "pH",
+				"value": "To be reported"
+			}
+		],
+
+		"appData": "CBFS is used as a process feedstock for producing tyre-grade carbon black, rubber-grade carbon black, pigment-grade carbon black and specialty carbon black used in inks, coatings and plastics.",
+
+		"packaging": ["Bulk"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Feedstock",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-IF-0029": {
+		"id": 416,
+		"MSDS": "",
+		"title": "Crumb Rubber Modified Bitumen (CRMB60)",
+		"subTitle": "Bitumen",
+		"description": "Crumb Rubber Modified Bitumen (CRMB) is a high-performance asphalt binder created by blending bitumen with crumb rubber derived from recycled tires along with special additives. It enhances road durability by improving flexibility, reducing cracking and resisting deformation under heavy traffic and extreme temperatures.",
+
+		"specifications": [
+			{
+				"property": "Penetration @ 25°C (100 g, 5 s)",
+				"value": "20 – 50 (0.1 mm)"
+			},
+			{
+				"property": "Softening Point (Ring & Ball)",
+				"value": "Min 60 °C"
+			},
+			{
+				"property": "Flash Point (COC)",
+				"value": "Min 220 °C"
+			},
+			{
+				"property": "Elastic Recovery @ 15°C",
+				"value": "Min 60 %"
+			},
+			{
+				"property": "Complex Modulus (G*/Sin)",
+				"value": "Min 1.0 kPa @ 10 rad/s at 70 °C"
+			},
+			{
+				"property": "Separation (Difference in Softening Point)",
+				"value": "Max 4 °C"
+			},
+			{
+				"property": "Viscosity @ 150°C",
+				"value": "6 – 12 Poise"
+			},
+			{
+				"property": "Thin Film Oven Test – Loss in Mass",
+				"value": "Max 1.0 %"
+			},
+			{
+				"property": "Thin Film Oven Test – Change in Softening Point",
+				"value": "Max 5 °C"
+			},
+			{
+				"property": "Thin Film Oven Test – Reduction in Penetration @ 25°C",
+				"value": "Max 35 %"
+			},
+			{
+				"property": "Thin Film Oven Test – Elastic Recovery @ 25°C",
+				"value": "Min 35 %"
+			},
+			{
+				"property": "Thin Film Oven Test – Complex Modulus (G*/Sin)",
+				"value": "Min 2.2 kPa @ 10 rad/s at 70 °C"
+			}
+		],
+
+		"appData": "CRMB is extensively used in the construction of roads, highways and airport tarmac where improved durability, resistance to rutting and enhanced flexibility are required.",
+
+		"packaging": ["Bulk", "Packed (161.8 KG)"],
+
+		"SBU": "Industrial Fuels",
+		"industrial": "Industrial Construction",
+
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
 	"HPCL-LPG-0001": {
 		"id": 25,
 		"MSDS": "",
@@ -1530,7 +2487,10 @@
 			{ "property": "Specific Heat @ 0°C", "value": "0.54 kcal/kg/°C" },
 			{ "property": "Relative Density (Air = 1)", "value": "2.091" },
 			{ "property": "Gas/Liquid Expansion Ratio", "value": "230" },
-			{ "property": "Flammability Limits", "value": "1.8 – 8.5 % v/v in air" }
+			{
+				"property": "Flammability Limits",
+				"value": "1.8 – 8.5 % v/v in air"
+			}
 		],
 
 		"appData": "Aerosol propellants, portable fuel cartridges for camping stoves and laboratory burners, specialty commercial kitchens operating at controlled indoor temperatures, laboratory and R&D applications, lighter fuel and specialty fuel cylinders.",
@@ -1576,7 +2536,10 @@
 			{ "property": "Specific Heat @ 0°C", "value": "0.57 kcal/kg/°C" },
 			{ "property": "Relative Density (Air = 1)", "value": "1.561" },
 			{ "property": "Gas/Liquid Expansion Ratio", "value": "274" },
-			{ "property": "Flammability Limits", "value": "2.2 – 9.5 % v/v in air" }
+			{
+				"property": "Flammability Limits",
+				"value": "2.2 – 9.5 % v/v in air"
+			}
 		],
 
 		"appData": "Industrial heating & furnaces, LPG-based gensets, metal cutting/brazing/welding, vaporizers & process heating, cold-climate fuel applications.",
@@ -1754,13 +2717,213 @@
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
+	"HPCL-LPG-0006": {
+		"id": 403,
+		"MSDS": "",
+		"title": "HP GAS RAZOR",
+		"subTitle": "Metal Cutting Gas",
+		"description": "HP GAS RAZOR is a high-performance metal cutting fuel developed by HPCL. It is LPG fortified with a specially developed additive to provide faster pre-heating, higher piercing rate, faster cutting speed, smooth cut surface, lower slag formation and improved safety compared to Dissolved Acetylene.",
+
+		"specifications": [
+			{
+				"property": "Chemical Formula",
+				"value": "C₃H₈ + C₄H₁₀ + Razor Additive"
+			},
+			{
+				"property": "Physical State",
+				"value": "Gas"
+			},
+			{
+				"property": "Appearance",
+				"value": "Colourless"
+			},
+			{
+				"property": "Odour",
+				"value": "Mercaptan Added"
+			},
+			{
+				"property": "Vapour Density (Air = 1)",
+				"value": "1.5"
+			},
+			{
+				"property": "Specific Gravity (Water = 1)",
+				"value": "0.51 – 0.58 @ 50°C"
+			},
+			{
+				"property": "Boiling Point",
+				"value": "< –40°C"
+			},
+			{
+				"property": "Flammability",
+				"value": "Flammable"
+			},
+			{
+				"property": "Lower Explosive Limit (LEL)",
+				"value": "1.9 %"
+			},
+			{
+				"property": "Upper Explosive Limit (UEL)",
+				"value": "9.5 %"
+			},
+			{
+				"property": "Flash Point",
+				"value": "–104.4 °C"
+			},
+			{
+				"property": "Auto Ignition Temperature",
+				"value": "466.1 °C (Propane) / 405 °C (Butane)"
+			},
+			{
+				"property": "Stability",
+				"value": "Stable"
+			},
+			{
+				"property": "Hazardous Combustion Products",
+				"value": "CO, CO₂"
+			},
+			{
+				"property": "NFPA Rating",
+				"value": "Health: 1, Flammability: 4, Reactivity: 0"
+			},
+			{
+				"property": "Personal Protective Equipment (PPE)",
+				"value": "Gloves, Goggles, Gas Mask"
+			},
+			{
+				"property": "Storage Conditions",
+				"value": "Store in a cool, well-ventilated area away from heat and sparks"
+			},
+			{
+				"property": "Fire Extinguishing Media",
+				"value": "CO₂, DCP, Water Spray"
+			}
+		],
+
+		"appData": "Used in commercial cylinders for oxy-fuel metal cutting, scrap cutting, steel plate cutting, rail track cutting and fabrication cutting jobs.",
+
+		"packaging": [
+			"Cylinder 19 kg",
+			"Cylinder 35 kg",
+			"Cylinder 47.5 kg",
+			"Cylinder 425 kg"
+		],
+
+		"SBU": "LPG",
+		"industrial": "Metal Cutting Gas",
+
+		"documentation": "Yes, attached",
+		"alternatives": ["HP FLAME PLUS", "HP DOLPHIN", "HP POWERLIFT"],
+		"related": []
+	},
+	"HPCL-LPG-0007": {
+		"id": 404,
+		"MSDS": "",
+		"title": "HP GAS DOLPHIN",
+		"subTitle": "Marine Engine Fuel",
+		"description": "HP GAS DOLPHIN is an LPG fortified with a specially developed additive designed by HPCL R&D Centre, Bengaluru for use in Outboard Motor (OBM) boat engines. It enables cleaner combustion, improved engine performance, reduced maintenance and safer handling compared to conventional liquid fuels. It is used in dual fuel systems (Petrol/Kerosene/LPG) with suitable conversion kit.",
+
+		"specifications": [
+			{
+				"property": "Chemical Formula",
+				"value": "C₃H₈ + C₄H₁₀ + Dolphin Additive"
+			},
+			{
+				"property": "Physical State",
+				"value": "Gas"
+			},
+			{
+				"property": "Appearance",
+				"value": "Colourless"
+			},
+			{
+				"property": "Odour",
+				"value": "Mercaptan Added"
+			},
+			{
+				"property": "Vapour Density (Air = 1)",
+				"value": "1.5"
+			},
+			{
+				"property": "Specific Gravity (Water = 1)",
+				"value": "0.51 – 0.58 @ 50°C"
+			},
+			{
+				"property": "Boiling Point",
+				"value": "< –40 °C"
+			},
+			{
+				"property": "Flammability",
+				"value": "Flammable"
+			},
+			{
+				"property": "Lower Explosive Limit (LEL)",
+				"value": "1.9 %"
+			},
+			{
+				"property": "Upper Explosive Limit (UEL)",
+				"value": "9.5 %"
+			},
+			{
+				"property": "Flash Point",
+				"value": "–104.4 °C"
+			},
+			{
+				"property": "Auto Ignition Temperature",
+				"value": "466.1 °C (Propane) / 405 °C (Butane)"
+			},
+			{
+				"property": "Stability",
+				"value": "Stable"
+			},
+			{
+				"property": "Incompatibility",
+				"value": "Strong Oxidisers"
+			},
+			{
+				"property": "Hazardous Combustion Products",
+				"value": "CO, CO₂"
+			},
+			{
+				"property": "NFPA Rating",
+				"value": "Health: 1, Flammability: 4, Reactivity: 0"
+			},
+			{
+				"property": "Personal Protective Equipment (PPE)",
+				"value": "Gloves, Goggles, Gas Mask"
+			},
+			{
+				"property": "Storage Conditions",
+				"value": "Store in a cool, well-ventilated area away from heat and sparks"
+			},
+			{
+				"property": "Fire Extinguishing Media",
+				"value": "CO₂, DCP, Water Spray"
+			}
+		],
+
+		"appData": "Fuel for outboard motor (OBM) engines in fishing boats and marine propulsion systems operating in dual fuel mode.",
+
+		"packaging": ["Cylinder 19 kg"],
+
+		"SBU": "LPG",
+		"industrial": "Marine Fuel",
+
+		"documentation": "Yes attached",
+		"alternatives": ["HP FLAME PLUS", "HP POWERLIFT"],
+		"related": []
+	},
 	"HPCL-LBS-0001": {
 		"id": 1,
 		"MSDS": "",
 		"title": "HP KISAN SHAKTI",
 		"subTitle": "Agriculture Oils",
 		"description": "HP KISAN SHAKTI is an engine oil developed for agricultural Pump-Sets running on Diesel, Kerosene or Light Diesel Oil (LDO). The product is made from paraffinic base stocks and fortified with select additives to deliver performance benefits in the pump-sets used in agriculture and farming activities. The superior additive chemistry not only ensures greater protection of the engine against wear and rust, its balanced detergency helps to keep the engine clean and trouble free for longer service intervals.",
-		"specifications": [],
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "CF/SF"
+			}
+		],
 		"appData": "HP KISAN SHAKTI is recommended for all types of agricultural and farm equipment like Pumpsets, Tractors, Powertillers, Harvesters & DG sets requiring good quality Diesel Engine Oils.\n\nHP KISAN SHAKTI can also be used in petrol engines to render satisfactory performance.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
@@ -1794,7 +2957,16 @@
 		"title": "HP KISAN TRACTOR OIL 20W-40",
 		"subTitle": "Agriculture Oils",
 		"description": "HP KISAN TRACTOR OIL 20W-40 grade is a good quality engine oil specifically designed to address the operational severity of Indian tractors in field usage. The product is made from the paraffinic base stocks and fortified with selected additives to deliver satisfactory performance in earlier models of tractors. The product is particularly suitable for the older diesel engines requiring lower detergency.",
-		"specifications": [],
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "CF-4"
+			},
+			{
+				"property": "MB Approval",
+				"value": "228.1"
+			}
+		],
 		"appData": "HP KISAN TRACTOR OIL 20W-40 grade is recommended for earlier models of tractors of all makes, agricultural and farm equipment.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
@@ -1845,11 +3017,50 @@
 		"title": "HP SUPERTRAN HVI",
 		"subTitle": "Agriculture Oils",
 		"description": "HP SUPERTRAN HVI is a super-premium quality Universal Tractor Transmission Oils (UTTO) formulated from high quality hydrotreated base stocks and carefully selected additives, designed to deliver the best performance in Transmission, Hydraulic, Final Drive and PTO systems of modern tractors.",
-		"specifications": [],
-		"appData": "HP SUPERTRAN HVI grade is recommended for use in tractors manufactured by all major OEMs like Mahindra & Mahindra, Tafe, Eicher, SAME, Swaraj, Escorts, John Deere, ITL, CNH, etc. The product can also be used in other off-road/construction equipment requiring UTTO type transmission fluid.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
+		"specifications": [
+			{
+				"property": "John Deere",
+				"value": "JDM J20 C/D"
+			},
+			{
+				"property": "Massey Ferguson",
+				"value": "CMS M 1135 / M 1141 / M 1143 / M 1145"
+			},
+			{
+				"property": "Case New Holland",
+				"value": "MAT 3505 / 3509 / 3525"
+			},
+			{
+				"property": "Ford",
+				"value": "ESN-M2C86-B/C, ESN-M2C134-D"
+			},
+			{
+				"property": "Kubota",
+				"value": "UDT Fluid"
+			},
+			{
+				"property": "Fendt",
+				"value": "Compatible"
+			},
+			{
+				"property": "Allison",
+				"value": "C-4"
+			},
+			{
+				"property": "Caterpillar",
+				"value": "TO-2"
+			},
+			{
+				"property": "AGCO",
+				"value": "Powerfluid 821XL"
+			},
+			{
+				"property": "ZF",
+				"value": "TE-ML 03E / 05F / 06K / 17E / 21F"
+			}
 		],
+		"appData": "HP SUPERTRAN HVI grade is recommended for use in tractors manufactured by all major OEMs like Mahindra & Mahindra, Tafe, Eicher, SAME, Swaraj, Escorts, John Deere, ITL, CNH, etc. The product can also be used in other off-road/construction equipment requiring UTTO type transmission fluid.",
+		"packaging": ["210 LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "Not available",
@@ -1864,28 +3075,8 @@
 		"description": "HP TRACTOR OIL 15W 40 grade is a premium quality tractor engine oil made from the finest paraffinic base stocks and state of art additive technology, specifically designed to address the operational severity of Indian tractors in field usage. HP TRACTOR OIL 15W 40 provides unmatched soot handling properties, optimum protection for control of corrosive wear, low and high temperature stability, piston deposit control, valve train wear, oxidative thickening, foaming and viscosity loss due to shear.",
 		"specifications": [
 			{
-				"property": "Characteristics",
-				"value": "Values"
-			},
-			{
-				"property": "Kinematic Viscosity, @ 100°C, cSt",
-				"value": "15.3"
-			},
-			{
-				"property": "Viscosity Index",
-				"value": "120"
-			},
-			{
-				"property": "Flash Point, COC,°C",
-				"value": "210"
-			},
-			{
-				"property": "Pour Point, °C",
-				"value": "-24"
-			},
-			{
-				"property": "TBN, mg KOH/gm",
-				"value": "8"
+				"property": "API Service Classification",
+				"value": "CF-4"
 			}
 		],
 		"appData": "HP TRACTOR OIL 15W 40 grade is recommended for modern emission compliant TREM IIIA engines of tractors manufactured by John Deere, M&M, Escorts, ITL (Sonalika), New Holland, HMT, TAFE etc. Older tractors (made on TREM II/III Technology etc.) would also derive performance benefits from this product. The oil can also be used in construction equipment & DG sets.",
@@ -1906,23 +3097,11 @@
 		"description": "HP WET BRAKE OIL is a Universal Tractor Transmission Oil (UTTO) formulated from high quality base stocks and carefully selected additives, designed to deliver superior performance in transmission, hydraulic, final drive and PTO systems of tractors.",
 		"specifications": [
 			{
-				"property": "Kinematic Viscosity @ 100°C, cSt",
-				"value": "10.0 – 11.5"
-			},
-			{
-				"property": "Viscosity Index, Min",
-				"value": "100"
-			},
-			{
-				"property": "Pour Point, °C, Max",
-				"value": "-21"
-			},
-			{
-				"property": "Flash point (COC), °C, Min",
-				"value": "180"
+				"property": "John Deere",
+				"value": "JDM J20 C/D"
 			}
 		],
-		"appData": "HP WET BRAKE OIL is recommended for all tractors including Eicher, Escorts, Mahindra & Mahindra, SAME, Swaraj, Sonalika, TAFE etc. The product can also be used in other off-road/construction equipment requiring UTTO type transmission fluid.",
+		"appData": "HP WET BRAKE OIL is recommended for all tractors including Eicher, Escorts, Mahindra & Mahindra, SAME, Swaraj, Sonalika, TAFE etc. The product can also be used in other off-road/construction equipment requiring UTTO type transmission fluid.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
 		],
@@ -2362,7 +3541,7 @@
 		"subTitle": "GENERAL PURPOSE MACHINERY OILS",
 		"description": "HP Flushing oil is an oil for removing of contaminants from a machine lubrication system. It has a low viscosity, which enables good flushing operation.",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "Industrial Application",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "INDUSTRIAL OIL",
@@ -3327,7 +4506,7 @@
 		"MSDS": "",
 		"title": "SEETUL GRADES",
 		"subTitle": "REFRIGERATION COMPRESSOR OILS",
-		"description": "SEETUL grades are refrigeration compressor oils.\n\nThe grades are formulated from specially selected lube base stocks to provide low pour point, low floc point, dryness, good chemical stability and ready solubility in liquified refrigerants.\n\nThey have additional characteristics of low freon floc point.",
+		"description": "SEETUL grades are refrigeration compressor oils.\nThe grades are formulated from specially selected lube base stocks to provide low pour point, low floc point, dryness, good chemical stability and ready solubility in liquified refrigerants.\nThey have additional characteristics of low freon floc point.",
 		"specifications": [
 			{
 				"property": "22",
@@ -3365,7 +4544,7 @@
 		"subTitle": "REFRIGERATION COMPRESSOR OILS",
 		"description": "SEETUL N 68 (P) grade is refrigeration compressor oil. The grade is formulated from specially selected deep hydro finished lube base stocks to provide low pour point, dryness, good chemical stability.It is recommended for wide range of refrigeration compressors, both reciprocating as well as rotary, using ammonia and carbon dioxide. It is not recommended for R-12, R-22 and other Freon Refrigerants.",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "Refrigeration Compressor Oils are specially formulated lubricants used in refrigeration and air-conditioning compressors. They lubricate moving parts, ensure sealing, provide cooling, and maintain chemical stability in the presence of refrigerants at low and high temperatures.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "INDUSTRIAL OIL",
@@ -3456,7 +4635,7 @@
 		"subTitle": "REFRIGERATION COMPRESSOR OILS",
 		"description": "HPCL SEETUL S 68 are fully synthetic lubricants, designed for use in refrigeration compressors and heat pumps. They are formulated from polyalphaolefin (PAO) fluids, which have outstanding resistance to thermal/oxidative degradation. Their naturally high shear stable viscosity index and low temperature fluidity, make them perform in severe service conditions that are beyond the capabilities of conventional mineral oils. Their solubility and miscibility with refrigerants is low, resulting in higher film thickness in the presence of refrigerants under pressure and reduced shaft seal leakage. Their stability and low volatility eliminates “light end stripping” which can occur with conventional mineral oils.",
 		"specifications": [],
-		"appData": "They are specifically recommended for the lubrication of refrigeration compressors operating at very high temperatures, and for systems with very low evaporator temperatures. They are suitable for compressor systems using refrigerants such as ammonia, carbon dioxide and HCFCs such as R-22; and CFC R-12. They are compatible with all refrigerants except sulphur dioxide. They are compatible with Mineral oils.",
+		"appData": "Refrigeration Compressor Oils are specially formulated lubricants used in refrigeration and air-conditioning compressors. They lubricate moving parts, ensure sealing, provide cooling, and maintain chemical stability in the presence of refrigerants at low and high temperatures.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "INDUSTRIAL OIL",
@@ -3471,7 +4650,7 @@
 		"subTitle": "REFRIGERATION COMPRESSOR OILS",
 		"description": "SEETUL SE 68 is a synthetic ester based lubricating oil for compressors running on HFCs like R-134 A. This refrigerant is CFC Free and therefore considered environment friendly. For ensuring proper lubricity we have to use synthetic esters.",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "Refrigeration Compressor Oils are specially formulated lubricants used in refrigeration and air-conditioning compressors. They lubricate moving parts, ensure sealing, provide cooling, and maintain chemical stability in the presence of refrigerants at low and high temperatures.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "INDUSTRIAL OIL",
@@ -3706,7 +4885,7 @@
 		"subTitle": "HIGH TEMPRATURE CHAIN LUBRICANT",
 		"description": "To take care of the cleanliness aspect and the environment HPCL has come out with a unique bitumen free lubricant for crushing mills. CRUSHFINE 40 NB from HPCL protects the bearings under high pressures and also the corrosive and washing properties of the cane juice.",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "High Temperature Chain Lubricants are specially formulated oils designed to lubricate conveyor and drive chains operating at elevated temperatures",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "INDUSTRIAL OIL",
@@ -4241,7 +5420,7 @@
 		"subTitle": "WIRE ROPE LUBRICANT",
 		"description": "HP METWIRE NB is produced from the highest quality petroleum fractions and is a non-bituminous base wire rope lubricant. In addition to having excellent lubricating properties, they contain selected additives to obtain sufficient chemical resistance; water displacing properties; excellent rust prevention, oxidation stability and penetration. The high polarity of both products enables them to creep and “wet” the metal surface forming an adhesive and protective film.",
 		"specifications": [],
-		"appData": "Product can be applied by swabbing, drip lubrication, continuous bath, high pressure auto lubrication. Suitable for lubrication of wire ropes in cranes, draglines, overhead trolleys, pulley mechanisms, lifts.",
+		"appData": "Wire Rope Lubricants are specially formulated to lubricate, penetrate, and protect steel wire ropes used in lifting, hoisting, pulling, and suspension applications.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "INDUSTRIAL OIL",
@@ -4456,7 +5635,7 @@
 				"value": "Nil"
 			}
 		],
-		"appData": "Not available",
+		"appData": "Forming application",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -4509,7 +5688,7 @@
 			}
 		],
 		"appData": "Suitable for all metals for machining operations where emulsifiable oil are normally used. The recommended concentration is between 5 to 10 % depending on the severity of machining. Sometimes used successfully for even grinding operations.",
-		"packaging": ["Barrel and Bulk Supply"],
+		"packaging": ["26 L", "210 L", "Bulk"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
 		"documentation": "Not available",
@@ -5120,7 +6299,7 @@
 				"value": "YES"
 			}
 		],
-		"appData": "Not available",
+		"appData": "Compounded low viscosity neat cutting oil specially designed for bearing industry guaranteeing super surface finish.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -5164,7 +6343,7 @@
 				"value": "yes"
 			}
 		],
-		"appData": "Not available",
+		"appData": "HP TRIMOFIN 23 DEF is a non-staining type sulphurized neat cutting oil suitable for machining of medium alloyed steel and Non-Ferrous metals under light & medium duty conditions.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -5708,14 +6887,38 @@
 		"MSDS": "",
 		"title": "SYNTHKOOL 100, 101, 102",
 		"subTitle": "Metal Working Fluids",
-		"description": "Semi-synthetic cutting fluid consisting of carefully selected rust preventive additives and other performance improvers, supplied in solution form. SYNTHAKOOL 100 & 102 is totally synthetic.",
+		"description": "This low viscosity product is used as a honing oil and is used for honing operations in automobile plants.",
 		"specifications": [
 			{
-				"property": "Comparision",
-				"value": "HPCL-LBS-0106"
+				"property": "Appearance",
+				"value": "Clear"
+			},
+			{
+				"property": "Colour",
+				"value": "Red"
+			},
+			{
+				"property": "Kinematic Viscosity @ 40°C, cSt",
+				"value": "4.5 - 5.5"
+			},
+			{
+				"property": "Copper Strip Corrosion @ 100°C, 3 Hrs",
+				"value": "1"
+			},
+			{
+				"property": "Flash Point, COC, °C",
+				"value": "Min 120"
+			},
+			{
+				"property": "Density @ 29°C, gm/cc",
+				"value": "0.818"
+			},
+			{
+				"property": "SAP Value, mg KOH/gm",
+				"value": "25 - 30"
 			}
 		],
-		"appData": "Recommended concentration in the ratio of 2-4% in water. The resultant solution provides exceptional anti-rust & cooling properties when used in grinding and other high speed machining operations. It is highly resistant to bacterial attack and provides long life in use.",
+		"appData": "This low viscosity product is used as a honing oil and is used for honing operations in automobile plants.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -5763,7 +6966,7 @@
 				"value": "25-30"
 			}
 		],
-		"appData": "Not available",
+		"appData": "Auto Ancillaries Industry,Metalworking and Machining industry",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -5783,7 +6986,7 @@
 				"value": "HPCL-LBS-0108"
 			}
 		],
-		"appData": "Not available",
+		"appData": "These are special purpose broaching & grinding oils having enhanced EP properties. They contain active sulfur.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -5835,7 +7038,7 @@
 				"value": "20.00"
 			}
 		],
-		"appData": "not available",
+		"appData": "Fully synthetic low viscosity oil suitable for cutting operations of Aluminum. This oil is specially designed for oil mist type cutting systems and where non-staining properties are required. It functions as a coolant, cutting oil and prevents sticking of tool to the work piece.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -5891,7 +7094,7 @@
 				"value": "ppm\tASTM D3120\t3 Max\t< 3.0"
 			}
 		],
-		"appData": "Not available",
+		"appData": "Colourless, waterwhite aliphatic solvent, the low sulfur and low aromatic contents make it suitable for use in wide range of applications like granite cutting , lapping , grinding and other surface finishing opeartions.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -6311,7 +7514,7 @@
 				"value": "% Wt\tIS 1212\t0.5"
 			}
 		],
-		"appData": "Not available",
+		"appData": "Metaquench 88 is a hot quenching oil with exceptional ageing stability coupled with distortion control properties . The product consists of highly refined base oil fortified with performance additives and detergent components for long lasting performance , sludge removal etc. Recommended for use in higher temperature for better dimensional control.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -6346,7 +7549,7 @@
 				"value": "HPCL-LBS-0123"
 			}
 		],
-		"appData": "Not available",
+		"appData": "HP ROLMET V 45 is compounded rolling oil specially designed for rolling of both ferrous and non-ferrous metals. Particularly useful for cold rolling of carbon and alloy steel, brass and copper. HP ROLMET V 55 is a higher viscosity oil for rolling of both ferrous and non-ferrous metals.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -6430,7 +7633,7 @@
 				"value": "0.5"
 			}
 		],
-		"appData": "Not available",
+		"appData": "HP ROLMET 7 is a neat cold rolling oil for use in Cold rolling of stainless steels requiring high degree of “BA Finish” (Bright Annealing) , very smooth surface Texture with spot free finish. HP ROLMET 7 is made out of highly refined low viscosity base oil having ultra-low sulfur and aromatic content. This oil contains carefully selected additive chemistry intended to give superior performance of high VI, Rust prevention, besides Non staining characteristics. The oil provides optimum co-efficient of friction between the roll bites depending upon the type of metal surface, roll diameter, rolling speed and percentage reduction.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -6594,7 +7797,7 @@
 				"value": "<10 mg per Kg\t1.748"
 			}
 		],
-		"appData": "Not available",
+		"appData": "Aromatic process oils are primarily used in the manufacture of tyres. A typical tyre tread may contain a substantial weight of this aromatic extender Oil. These oils contain Poly Aromatic Hydrocarbons (PAH) / Polycylic Aromatic Hydrocarbons (PCA). It has been scientifically proved that a PCA Content of more than 3% weight is directly proportional to the risk of cancer in human beings. The PCAs are released to the environment during the process of tyre wear and manufacture. The content of PCA/PAH need to be controlled to ensure that the product does not damage the environment. ELASTO SUPREME is a treated residual aromatic extract (TRAE) type product which has been designed to prevent damage to the environment and at the same time contribute to the high end performance of modern automobile tyre and Styrene Butadiene Rubber (SBR).",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -6718,7 +7921,7 @@
 				"value": "95"
 			}
 		],
-		"appData": "Not available",
+		"appData": "High viscosity paraffinic rubber process oil which can be used by rubber industry where oil resistant to heat aging and with very low volatility is required.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -6920,7 +8123,7 @@
 		"subTitle": "RUST PREVENTIVES",
 		"description": "RUSTOP 273 is a premium quality rust preventive designed to protect metal surfaces from rust and corrosion. It is formulated using lightbodied petroleum solvents as cutback with polar rust preventing, water displacing and fingerprint neutralising additives. RUSTOP 273 is soft film, solvent deposited, water displacing type, corrosion preventives specifically developed for the roller bearing industry.\n\nSALIENT FEATURES\n\nEasy to apply and remove using degreasing agents\nCan be removed by wiping off with rags/waste soaked in SKO/MTO/Alkaline degreasents or solvent degreasing methods\nAfter evaporation of solvent RUSTOP 273 films are fully compatible with subsequently applied lubricants\nSuitable for use just before parts that are packaged for storage or shipment\nProvides long term protection under more adverse conditions with formation of heavy duty thin film",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "RUSTOP 273 is a premium quality rust preventive designed to protect metal surfaces from rust and corrosion. It is formulated using lightbodied petroleum solvents as cutback with polar rust preventing, water displacing and fingerprint neutralising additives. RUSTOP 273 is soft film, solvent deposited, water displacing type, corrosion preventives specifically developed for the roller bearing industry.\nSALIENT FEATURES Easy to apply and remove using degreasing agents\nCan be removed by wiping off with rags/waste soaked in SKO/MTO/Alkaline degreasents or solvent degreasing methods\nAfter evaporation of solvent RUSTOP 273 films are fully compatible with subsequently applied lubricants\nSuitable for use just before parts that are packaged for storage or shipment\nProvides long term protection under more adverse conditions with formation of heavy duty thin film",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -6940,7 +8143,7 @@
 				"value": "HPCL-LBS-0137"
 			}
 		],
-		"appData": "Not available",
+		"appData": "HP Rustop grades (rust preventives) are formulated for various specific applications such as short-term, mid-term, and long-term rust protection. They are easily removable by solvent and offer wide surface coverage, making them economical and efficient for use.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -7029,7 +8232,7 @@
 		"subTitle": "Hp Spray Oil",
 		"description": "RECOMMENDED FOR APPLE, APRICOT, CHERRY, PEAR, PLUM & WALNUT.EFFECTIVE IN CONTROLLING SAN JOSE SCALE, MITES, SPIDERS & PESTS",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "RECOMMENDED FOR APPLE, APRICOT, CHERRY, PEAR, PLUM & WALNUT.EFFECTIVE IN CONTROLLING SAN JOSE SCALE, MITES, SPIDERS & PESTS",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -7112,7 +8315,7 @@
 		"subTitle": "THERMIC-FLUIDS",
 		"description": "HYTHERM 600 PLUS is a premium quality Heat Transfer Oil blended using a combination of the highest quality mineral and synthetic base stocks and fortified with high performance additives for superior performance in indirect closed fluid heat transfer systems.",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "HYTHERM 600 PLUS is a premium quality Heat Transfer Oil blended using a combination of the highest quality mineral and synthetic base stocks and fortified with high performance additives for superior performance in indirect closed fluid heat transfer systems.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -7211,7 +8414,7 @@
 				"value": "%Wt.\t(-99)-4"
 			}
 		],
-		"appData": "Not available",
+		"appData": "DE DUSTING OIL is a heavy stock oil used primarily for suppressing the fine dust arising in the manufacture of Calcined Petroleum coke, Battery electrodes etc.\n\n\t\tThe oil is sprayed in atomized form into the material emitting fine dust in proportions of 0.2 - 0.5 % depending upon the process of operation.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "SPECIALTIES",
@@ -7406,7 +8609,7 @@
 		"subTitle": "AUTOMOTIVE GREASES",
 		"description": "HP AP3 GREASE is a premium quality all purpose automotive grease. Recommended for all types of Wheel bearings used in automobiles e.g Heavy duty, Light commercial, Passenger vehicles.",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "All purpose grease",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "GREASES",
@@ -8081,7 +9284,7 @@
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "HP EV HUB GREASE is a heavy duty high performance advanced complex soap based extreme pressure (EP) grease specially developed for wheel bearing hub assembly in Heavy Commercial Electric Vehicles and Electric Buses. It is manufactured from high quality advanced complex thickener, specially selected base oils and top of the line additives to provide good structural stability, resistance to water washout and effective protection from wear and corrosion. The mechanical stability of the grease is so good that it can retain its consistency over many hours in operation or very long kilometers of run. The grease has proved its long life performance with a leading and prestigious Transport Body in India.",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "HP EV HUB GREASE is a heavy duty high performance advanced complex soap based extreme pressure (EP) grease specially developed for wheel bearing hub assembly in Heavy Commercial Electric Vehicles and Electric Buses.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "GREASES",
@@ -8096,7 +9299,7 @@
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "This is Aluminium Complex grease of NLGI O consistency. It is recommended for the lubncation of Girth Gears used for kiln drive in sponge iron plants and cement plant; where high temperatures and high loads are encountered simultaneously. Product has excellent fluidity am! ability to maintain consistency.",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": "Girth lube is recommended for the lubrication of girth gears used in kiln drives in sponge iron plants and cement plants, where high temperatures and heavy loads are encountered simultaneously.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "GREASES",
@@ -8278,7 +9481,7 @@
 				"value": "Four ball weld load, kg,"
 			}
 		],
-		"appData": "LITHON M 1 Plus is a grease which is recommended for use in large roller bearings operating at low speeds with high loads",
+		"appData": "LITHON M 1/M2 Plus is a premium lithium soap–based grease fortified with advanced Extreme Pressure (EP) additives to deliver superior performance under heavy and shock load conditions. Its excellent adhesion properties ensure strong retention on metal surfaces, minimizing lubricant throw-off and reducing consumption. Recommended for heavy-duty bearings, crushers, conveyors, rolling mill auxiliaries, and construction equipment operating in cement, steel, mining, power, and general engineering industries. Provides reliable protection against wear, corrosion, and mechanical stress for extended service life.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "GREASES",
@@ -8293,7 +9496,7 @@
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "LITHON M 2 PLUS is a high quality Lithium Based grease fortified with unique additives which impart extreme pressure performance under all conditions. It has special adhesion properties.",
 		"specifications": [],
-		"appData": "LITHON M 2 PLUS is a grease which is recommended for use in bearings located near blast furnace area.",
+		"appData": "LITHON M 1/M2 Plus is a premium lithium soap–based grease fortified with advanced Extreme Pressure (EP) additives to deliver superior performance under heavy and shock load conditions. Its excellent adhesion properties ensure strong retention on metal surfaces, minimizing lubricant throw-off and reducing consumption. Recommended for heavy-duty bearings, crushers, conveyors, rolling mill auxiliaries, and construction equipment operating in cement, steel, mining, power, and general engineering industries. Provides reliable protection against wear, corrosion, and mechanical stress for extended service life.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "GREASES",
@@ -8752,7 +9955,7 @@
 				"value": "HPCL-LBS-0184"
 			}
 		],
-		"appData": "Used in steel and cement plants.",
+		"appData": "PREMIUM QUALITY HIGH TEMPERATURE CLAY THICKENED NON SOAP BASE SMOOTH STRUCTURED GREASE HAVING GOOD OXIDATION RESISTANCE AND THERMAL STABILITY FOR USE IN BOTH PLAIN AND ANTIFRICTION BEARINGS.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "GREASES",
@@ -8767,7 +9970,7 @@
 		"subTitle": "INDUSTRIAL GREASES",
 		"description": "TISONA SUPREME GREASE IS MEANT FOR SUGAR MILLS BEARINGS LUBRICATIONS",
 		"specifications": [],
-		"appData": "Not available",
+		"appData": " The grease provides excellent load-carrying capability, strong adhesion, and superior resistance to water washout, ensuring reliable performance in high-moisture and heavy-duty operating conditions typical of sugar plants.",
 		"packaging": ["Barrel and Bulk Supply"],
 		"SBU": "Lubes",
 		"industrial": "GREASES",
@@ -9255,7 +10458,7 @@
 				"value": "-30\t-30"
 			}
 		],
-		"appData": "HP RACER SKUTEX grades are available in 10W-30 & 10W-40 viscometrics. It is recommended for all new generation BS VI compliant gearless 4-stroke scooters like Honda Activa, Piaggio Vespa LX 125, Hero Pleasure, Suzuki Access, Mahindra Rodeo RZ, Mahindra Duro DZ, Mahindra Gusto, Yamaha Ray and TVS Wego, etc. It is also recommended for use in previous engine models as well.",
+		"appData": "New generation BS VI compliant gearless 4-stroke scooters like Honda Activa, Piaggio Vespa LX 125, Hero Pleasure, Suzuki Access, Mahindra Rodeo RZ, Mahindra Duro DZ, Mahindra Gusto, Yamaha Ray and TVS Wego, etc. It is also recommended for use in previous engine models as well.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
 		],
@@ -9270,34 +10473,18 @@
 		"MSDS": "",
 		"title": "HP RACER SPLENDID",
 		"subTitle": "BS VI Grades",
-		"description": "HP RACER SPLENDID grades are premium quality motorcycle engine oils made to cater to the highly demanding lubrication requirements of modern 4-Stroke geared bikes. They are manufactured from finest quality paraffinic base stocks and state of the art additive technology and meet API SJ and JASO MA 2 specifications.",
+		"description": "HP RACER SPLENDID is a premium quality motor cycle engine oil made in accordance with High-Quality Motor Cycle Engine Oil Concept (HMEOC) program of Honda R&D, Japan.\nHP RACER SPLENDID  manufactured from the finest Group II base stocks and state of the art additive technology approved by Honda R&D, designed to promote high fuel efficiency and environment protection.\nHP RACER SPLENDID  provides superior protection for engine, clutch and gears of a motor cycle which helps you to derive the best performance from your bike all the time, while ensuring high engine durability.",
 		"specifications": [
 			{
-				"property": "HP RACER SPLENDID",
-				"value": "10W-30\t20W -40\t20W-50"
+				"property": "API Service Classification",
+				"value": "SL"
 			},
 			{
-				"property": "Kinematic Viscosity @ 100°C, cSt",
-				"value": "10.49\t14.5\t18.5"
-			},
-			{
-				"property": "Viscosity Index",
-				"value": "130\t115\t115"
-			},
-			{
-				"property": "TBN, mg KOH/gm",
-				"value": "5.4\t5.4\t5.4"
-			},
-			{
-				"property": "Flash Point, COC,°C",
-				"value": "222\t230\t230"
-			},
-			{
-				"property": "Pour Point, °C",
-				"value": "-33\t-27\t-27"
+				"property": "JASO",
+				"value": "MB"
 			}
 		],
-		"appData": "HP RACER SPLENDID grades are recommended for new BS VI compliant geared 4-stroke bikes manufactured by most of the reputed manufacturers like Hero Motors, Bajaj, Yamaha, Honda, Suzuki, TVS, Royal Enfield, etc. They are also recommended for use in previous engine models as well.\n\nHP RACER SPLENDID grades are available in 10W-30, 20W-40 and 20W-50 Viscometrics.",
+		"appData": "HP RACER SPLENDID is recommended for new generation geared 4-stroke bikes manufactured with Honda technology like Hero Moto Corp’s Achiever/CBZ Extreme/ CD-Dawn/ Glamour/ Impulse/ Karizma/ Passion/Splendor and HMSI’s CB Twister/CB Unicorn/CBF Stunner/ CB Shine/ Dream Yuga etc.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
 		],
@@ -9407,30 +10594,16 @@
 		"description": "HP EV BRAKE FLUID is a superior quality synthetic fluid meant for the hydraulic brakes of Electric Vehicles. Meets US Dept. of Transportation’s stringent specification FMVSS 116 DoT 4. It also meets BIS : 8654 - 2001 (Type 2) & SAE J1703 F specifications.",
 		"specifications": [
 			{
-				"property": "@ - 40 °C, cSt",
-				"value": "1450"
+				"property": "FMVSS",
+				"value": "116 DoT 4"
 			},
 			{
-				"property": "@ 100°C, cSt",
-				"value": "1.7"
-			},
-			{
-				"property": "Equilibrium Reflux B.P °C",
-				"value": "264"
-			},
-			{
-				"property": "Wet E. Reflux B.P °C",
-				"value": "155"
-			},
-			{
-				"property": "pH",
-				"value": "9"
+				"property": "BIS",
+				"value": "8654 - 2001 (Type 2)"
 			}
 		],
 		"appData": "Recommended for all Electric Vehicles having hydraulic brakes.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"packaging": ["210 LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "Not available",
@@ -9546,30 +10719,12 @@
 		"description": "HP EV STEERING FLUID is a high quality power transmission fluid manufactured from highly refined base stocks and carefully selected additives, to provide a superior performance in the steering application of Electric Vehicles.\n\nHP EV STEERING FLUID provides exemplary performance benefits than a GM Type A Suffix A fluid in terms of the fluid’s durability, oxidation resistance, protection for the system components against wear & corrosion, while providing wider temperatures of operations.",
 		"specifications": [
 			{
-				"property": "Kinematic Viscosity, @ 100°C, cSt",
-				"value": "7.1"
-			},
-			{
-				"property": "Viscosity Index",
-				"value": "195"
-			},
-			{
-				"property": "Color",
-				"value": "RED"
-			},
-			{
-				"property": "Flash Point, COC,°C",
-				"value": ">230"
-			},
-			{
-				"property": "Cu-Strip Corrosion @ 100°C, 3 hrs",
-				"value": "1"
+				"property": "DEXRON",
+				"value": "IID"
 			}
 		],
 		"appData": "HP EV STEERING FLUID is recommended for power steering systems of electric vehicles requiring GM DEXRON®-IID / II/ Type A Suffix A quality fluids. It also cools the electric motors in the Wheel Hub Drive Axle in heavy commercial vehicles",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"packaging": ["210 LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "Not available",
@@ -9601,9 +10756,7 @@
 			}
 		],
 		"appData": "HP EV TRANSMISSION FLUID is recommended for the transmission system of Electric Vehicles.It is available in SAE 75W viscometrics.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"packaging": ["210 LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "Not available",
@@ -9667,7 +10820,9 @@
 		"title": "HP AUTO TRANSMISSION FLUID A",
 		"subTitle": "GEAR and TRANSMISSION OILS",
 		"description": "HP AUTO TRANSMISSION FLUID A is a high quality automatic transmission fluid manufactured from highly refined base stocks and carefully selected additives, to provide a superior performance in the automatic transmission systems of automotive.\n\nHP AUTO TRANSMISSION FLUID A provides superior protection for the automatic transmission system against wear & corrosion, while its high viscosity index ensures unmatched lubrication at high operating temperatures.",
-		"specifications": [],
+		"specifications": [
+			{ "property": "General Motors", "value": " Type A Suffix A" }
+		],
 		"appData": "HP AUTO TRANSMISSION FLUID A is recommended for automatic transmissions and power steering systems of vehicles requiring general motors “TYPE A SUFFIX A” quality fluids.\n\nIt is also recommended for synchromesh gear boxes and certain manual transmissions, torque converters and hydraulic systems, where such types of fluids are specified.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
@@ -10049,11 +11204,14 @@
 		"title": "HP POWERFLO FD1-60",
 		"subTitle": "GEAR and TRANSMISSION OILS",
 		"description": "HP POWERFLO FD1-60 is a premium quality final drive & axle oil formulated from high quality hydro-treated base stocks and revolutionary and unique additive technology, designed to meet the Caterpillar FD1-60 lubricant specifications. HP POWERFLO FD1-60 contains special anti-wear components that provide increased protection for bearings and gears against macro-pitting and metal fatigue and imparts full metal and seal compatibility, excellent thermal and oxidation stability and sustained anti-foam performance.\n\nHP POWERFLO FD1-60 grade is meant specifically for applications with high load and high temperature conditions where protection of gears and bearings are the primary concern. HP POWERFLO FD1-60 is a preferred lubricant for CAT final drives and axles that formerly specified CAT TO-4 oils and that do not contain friction materials.",
-		"specifications": [],
-		"appData": "HP POWERFLO FD1-60 is recommended for use in certain Caterpillar equipment having highly loaded final drives and axles that do not contain friction material.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
+		"specifications": [
+			{
+				"property": "Caterpillar",
+				"value": "FD-1"
+			}
 		],
+		"appData": "HP POWERFLO FD1-60 is recommended for use in certain Caterpillar equipment having highly loaded final drives and axles that do not contain friction material.",
+		"packaging": ["210 LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -10067,35 +11225,18 @@
 		"subTitle": "GEAR and TRANSMISSION OILS",
 		"description": "HP POWERFLO TO-4 grades are premium quality Transmission and Drive Train Oils formulated from high quality hydro-treated base stocks and carefully selected additives, designed to meet the Caterpillar TO-4 lubricant specifications.\n\nHP POWERFLO TO-4 grades maximize the life of the frictional materials in power-shift transmissions, eliminate the chatter in wet brake mechanisms and protect drive train gears against wear, used in off-road equipment.",
 		"specifications": [
+			{ "property": "Caterpillar", "value": "TO-4" },
 			{
-				"property": "HP POWERFLO TO-4",
-				"value": "10W\t30\t50\t60"
+				"property": "Allison",
+				"value": "C-4"
 			},
 			{
-				"property": "Ash, Sulfated, % wt",
-				"value": "1.0\t1.0\t1.0\t1.0"
-			},
-			{
-				"property": "Kinematic Viscosity @ 100°C, cSt",
-				"value": "4.1 min\t9.3 – 12.5\t16.3 – 21.9\t22 – 26"
-			},
-			{
-				"property": "Viscosity Index, Min",
-				"value": "95\t95\t95\t95"
-			},
-			{
-				"property": "TBN, mg KOH/gm, Min",
-				"value": "6.9\t6.9\t6.9\t6.9"
-			},
-			{
-				"property": "Flash point (COC), °C, Min",
-				"value": "190\t215\t220\t220"
+				"property": "Komatsu",
+				"value": "KES 7.868.1"
 			}
 		],
 		"appData": "HP POWERFLO TO-4 grades are recommended for use in Caterpillar equipment having\n\nPower-shift and Hydrostatic Transmissions\nWet Brake Mechanisms\nDifferentials and Final Drives\nHydraulics\nThe product can also be used in most of the other off-road equipment requiring an Allison C-4 fluid of the similar viscosity grade.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"packaging": ["210 LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -10152,36 +11293,8 @@
 		"description": "HP POWERGLIDE C-4 10 / 30 are allison C – 4 service classification transmission oils.",
 		"specifications": [
 			{
-				"property": "HP POWERGLIDE C-4",
-				"value": "10\t30"
-			},
-			{
-				"property": "Kinematic Viscosity, @ 100°C, cSt",
-				"value": "4.1 Min\t9.3 – 12.5"
-			},
-			{
-				"property": "Viscosity Index",
-				"value": "105\t97"
-			},
-			{
-				"property": "Flash Point, (COC), °C",
-				"value": "220\t220"
-			},
-			{
-				"property": "Pour Point, °C",
-				"value": "-21\t-21"
-			},
-			{
-				"property": "Corrosion, Copper Strip, At 100 °C for 3 hours, Max",
-				"value": "1\t1"
-			},
-			{
-				"property": "Total Base Number, mg KOH/g, Min",
-				"value": "7.9\t7.9"
-			},
-			{
-				"property": "Rust Test, 24 hrs With Synthetic Sea Water",
-				"value": "Pass\tPass"
+				"property": "Allison",
+				"value": "C-4"
 			}
 		],
 		"appData": "Recommended for all commercial powershift transmissions, industrial torque converters & automatic transmission requiring allision C – 4 oils",
@@ -10340,7 +11453,28 @@
 		"title": "HP KLT 15W-40",
 		"subTitle": "HEAVY DUTY DIESEL ENGINE OILS",
 		"description": "HP KLT 15W 40 is a premium quality diesel engine oil made from the finest paraffinic base stocks and state of art additive technology, specifically designed to address the operational severity and engine durability issues in the diesel engines employed in the off-highway equipment.\n\nHP KLT 15W 40 provides optimum protection against valve train wear, superior piston deposit control, soot handling, oxidative thickening control.",
-		"specifications": [],
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "CI-4"
+			},
+			{
+				"property": "JASO Specification",
+				"value": "DH-1"
+			},
+			{
+				"property": "Volvo Approval",
+				"value": "VDS-3"
+			},
+			{
+				"property": "MAN Approval",
+				"value": "M 3275"
+			},
+			{
+				"property": "MTU Approval",
+				"value": "Type 2"
+			}
+		],
 		"appData": "HP KLT 15W 40 is specifically designed to cater to stringent requirements of Engines manufactured by the Japanese OEMS like KOMATSU, KOBELCO, NISSAN, MITSUBISHI, etc.\n\nThe product is also recommended for new generation diesel engines of heavy commercial, multi utility vehicles, construction equipment & DG sets etc., based on Euro III and Euro IV platforms.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
@@ -11504,11 +12638,14 @@
 		"title": "HP GASENOL 20W-50",
 		"subTitle": "Natural Gas And CNG Engine Oils",
 		"description": "HP GASENOL 20W 50 is a premium quality engine oil developed for CNG/LPG autos, passenger cars and minivans running on CNG/LPG. The product is made from highly paraffinic base stocks and fortified with select additives to deliver superior performance benefits upto 10,000 kms drain interval.\n\nHP GASENOL is available in 20W 50 viscometrics. The superior additive chemistry ensures protection against oxidation and nitration caused due to high temperature combustion of CNG/LPG Fuels in Engine. Right dosage of anti-wear and balanced detergency helps to protect the engine from wear and deposits, resulting in trouble free operation for longer service intervals.",
-		"specifications": [],
-		"appData": "HP GASENOL 20W 50 is recommended for all types of autos, passenger cars and minivans running on CNG/LPG fuel. It can also be used in petrol engines to render satisfactory performance.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "SL/CF"
+			}
 		],
+		"appData": "HP GASENOL 20W 50 is recommended for all types of autos, passenger cars and minivans running on CNG/LPG fuel. It can also be used in petrol engines to render satisfactory performance.",
+		"packaging": ["Available in Multiple SKUs"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -11523,42 +12660,16 @@
 		"description": "Controlled ash, low phosphorus, superior quality engine oil for engines running on CNG. Specially formulated to meet the requirements of mobile engines running on CNG.",
 		"specifications": [
 			{
-				"property": "HP GREEN ENGINE OIL",
-				"value": "15W 40\t20W 50"
+				"property": "API Service Classification",
+				"value": "CF"
 			},
 			{
-				"property": "Kinematic Viscosity, cSt, @ 100°C",
-				"value": "15\t19.5"
-			},
-			{
-				"property": "Flash Point °C",
-				"value": "200\t220"
-			},
-			{
-				"property": "Viscosity Index",
-				"value": "120\t124"
-			},
-			{
-				"property": "Pour Point °C",
-				"value": "-21\t-24"
-			},
-			{
-				"property": "Sulphated Ash % Wt",
-				"value": "0.54\t0.6"
-			},
-			{
-				"property": "TBN mg Koh/gm",
-				"value": "4.6\t4.9"
-			},
-			{
-				"property": "Colour",
-				"value": "Green\tGreen"
+				"property": "Cummins",
+				"value": "CES 20074"
 			}
 		],
 		"appData": "Heavy vehicles running on CNG.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"packaging": ["210LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -11606,10 +12717,8 @@
 		"subTitle": "Natural Gas And CNG Engine Oils",
 		"description": "HP MILCY CNG Engine Oil 15W 40 is a Long Drain CNG Engine Oil which provides excellent performance in the challenging operating environments presented by Compressed Natural Gas (CNG) and offers extended drain interval capability. The optimized Ash Content in the oil helps in protecting against excessive valve recession & spark plug fouling.",
 		"specifications": [],
-		"appData": "Light & Heavy vehicles running on CNG.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"appData": "Light & Heavy vehicles running on CNG.\nRequiring Extended Drain Interval\nGood control on Oxidation & Nitration\nExceptional control on Deposits &Wear\nEnsures engine durability\nReduced NOx formation",
+		"packaging": ["210LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -11641,38 +12750,12 @@
 		"description": "Gas Engines have very well defined lubricant needs. Most OEMs specify narrow bands of sulphated ash, which is required to optimise performance for a particular engine.\n\nHP NATURAL GAS ENGINE OIL L 40 and L 15W 40 are low ash natural gas engine oils for stationary applications",
 		"specifications": [
 			{
-				"property": "HP NATURAL GAS ENGINE OIL",
-				"value": "L 40\tL 15W 40"
-			},
-			{
-				"property": "Kinematic Viscosity, @ 100ºC, cSt",
-				"value": "15\t15"
-			},
-			{
-				"property": "Viscosity Index",
-				"value": "100\t120"
-			},
-			{
-				"property": "Flash Point, (COC) ºC",
-				"value": "215\t190"
-			},
-			{
-				"property": "Pour Point, ºC",
-				"value": "-12\t-24"
-			},
-			{
-				"property": "Sulphated Ash,%wt",
-				"value": "0.47\t0.5"
-			},
-			{
-				"property": "TBN, mg KOH/g",
-				"value": "5.2\t5"
+				"property": "API Service Classification",
+				"value": "CF"
 			}
 		],
 		"appData": "Recommended for stationary DG Sets running on natural gas equipped with 4 stroke engines requiring low ash (0.1% wt to 0.6% wt.) Recommended for Caterpillar engines running on natural gas",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"packaging": ["210LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -11702,11 +12785,22 @@
 		"title": "HP MARIGEN 4015 & 3015",
 		"subTitle": "Outboatd Marine Oils",
 		"description": "HP MARIGEN grades are Monograde Engine oils for Medium Speed Marine Diesel Engines operating on Gas Oil and Marine Diesel Oil. These grades are blended from finest quality paraffinic base oils & additives and are specifically designed to address the operational severity and engine durability issues of Marine engines. They provide excellent protection to engine components against rust, corrosion, wear, and have excellent TBN retention over long service life.",
-		"specifications": [],
-		"appData": "Recommended for lubricating Medium Speed Diesel engines at sea and for fishing and river transport applications. It is used for lubrication of Main & Auxiliary naturally aspirated or Super Charged engines, Journals, stern tubes and reduction drives/reversing gear.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "CF / CF-2, SF"
+			},
+			{
+				"property": "MTU Approval",
+				"value": "Type 1"
+			},
+			{
+				"property": "MIL Specification",
+				"value": "PRF 009000K"
+			}
 		],
+		"appData": "Recommended for lubricating Medium Speed Diesel engines at sea and for fishing and river transport applications. It is used for lubrication of Main & Auxiliary naturally aspirated or Super Charged engines, Journals, stern tubes and reduction drives/reversing gear.",
+		"packaging": ["210LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -11719,11 +12813,14 @@
 		"title": "HP MATSYA BOAT OIL 2T",
 		"subTitle": "Outboatd Marine Oils",
 		"description": "HP MATSYA BOAT OIL 2T grade is a premium quality 2T engine oil developed to cater to lubrication requirements of modern 2-stroke out- board Motors fitted on fishing boats.\n\nHP MATSYA BOAT OIL 2T are manufactured from the semi-synthetic blend and state of art additive technology to meet the stringent requirements of API TC.\n\nHP MATSYA BOAT OIL 2T provides superior protection for against crown deposits, ring sticking, spark plug fouling, pre-ignition, port blockage. Special additive chemistry in the product provides ultimate protection against wear and engine rust in corrosive sea weather. Thus, provides smooth and trouble free operation for extended engine overhaul intervals.",
-		"specifications": [],
-		"appData": "HP MATSYA BOAT OIL 2T grade is recommended for new generation Petrol-start Kerosene/Diesel - run 2-stroke out-board motors made by reputed manufacturers like Suzuki, Yamaha, etc.\n\n \n\nPREMIUM QUALITY ENGINE OIL FOR OUT-BOARD MOTORS",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "TC"
+			}
 		],
+		"appData": "New generation Petrol-start Kerosene/Diesel - run 2-stroke out-board motors made by reputed manufacturers like Suzuki, Yamaha, etc.",
+		"packaging": ["210LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -11755,26 +12852,12 @@
 		"description": "HP MATSYAFED 2T PREMIUM is a premium quality 2T Engine Oil developed to cater to lubrication requirements of modern 2-Stroke Out Board Motors fitted on fishing boats.\n\nHP MATSYAFED 2T PREMIUM is manufactured with Premium base stocks blended with modern ashless detergent additive package to provide fortification for maximum performance in outboard engines. It is pre-diluted for ease of mixing with gasoline and may also be used in direct fuel injection system\n\nHP MATSYAFED 2T PREMIUM provides superior protection for against crown deposits, ring sticking, spark plug fouling, pre-ignition, port blockage. Special additive chemistry in the product provides ultimate protection against wear and engine rust in corrosive sea weather. Thus, provides smooth and trouble free operation for extended engine overhaul intervals.",
 		"specifications": [
 			{
-				"property": "Appearance",
-				"value": "Bright & Clear"
-			},
-			{
-				"property": "Kinematic Viscosity @ 100°C, cSt",
-				"value": "6.9"
-			},
-			{
-				"property": "Flash Point, COC, °C",
-				"value": "106"
-			},
-			{
-				"property": "Pour Point, °C",
-				"value": "-33"
+				"property": "NMMA",
+				"value": "TC-W3"
 			}
 		],
-		"appData": "HP MATSYAFED 2T PREMIUM grade is recommended for new generation 2-Stroke Out Board Motors made by reputed manufacturers like Suzuki, Yamaha, etc.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"appData": "recommended for new generation 2-Stroke Out Board Motors made by reputed manufacturers like Suzuki, Yamaha, etc",
+		"packaging": ["210LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -11787,7 +12870,20 @@
 		"title": "HP MILCY MARINA",
 		"subTitle": "Outboatd Marine Oils",
 		"description": "HP MILCY MARINA grade is a premium quality diesel engine oil made from the finest paraffinic base stocks and state of art additive technology, specifically designed to address the operational severity and engine durability issues of Fishing Boats & Trawlers.\n\nHP MILCY MARINA provides enhanced protection to the engine and its components under the extreme conditions encountered in marine environment.",
-		"specifications": [],
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "CI-4 Plus"
+			},
+			{
+				"property": "ACEA Specification",
+				"value": "E7"
+			},
+			{
+				"property": "Caterpillar Approval",
+				"value": "ECF-2"
+			}
+		],
 		"appData": "HP MILCY MARINA grade is recommended for use in Turbo Charged as well as naturally aspirated diesel engines used in Fishing Vessels, Boats, and Trawlers. HP MILCY MARINA is recommended for use in diesel engines manufactured by OEMs like Ashok Leyland, Sinotruk etc that are commonly used in the fishing vessels.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
@@ -11804,7 +12900,16 @@
 		"title": "HP AUTO SHAKTI 20W-50",
 		"subTitle": "THREE WHEELER ENGINE OILS",
 		"description": "HP AUTO SHAKTI grade is a Premium Quality engine oil developed for 4-stroke autos and 3-wheelers running on CNG/LPG. The product is made from highly paraffinic base stocks and fortified with select additives to deliver satisfactory performance benefits in Autos and 3- wheelers running on CNG/LPG.\n\nHP AUTO SHAKTI is available in 20W 50 viscometrics. It’s superior additive chemistry ensures protection against oxidation and nitration caused due to high temperature combustion of CNG/LPG Fuels in Engine. Right dosage of anti-wear and balanced detergency helps to protect the engine from wear and deposits, resulting in trouble free operation for longer service intervals.",
-		"specifications": [],
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "SF / CF"
+			},
+			{
+				"property": "Performance Level",
+				"value": "EPL 2 / EDL 2"
+			}
+		],
 		"appData": "HP AUTO SHAKTI grade is recommended for all types of 4-stroke autos and 3-wheelers running on CNG/LPG Fuel.\n\nHP AUTO SHAKTI grade can also be used in petrol engines to render satisfactory performance.",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
@@ -11821,7 +12926,16 @@
 		"title": "HP CNG BOOSTER 20W-50",
 		"subTitle": "THREE WHEELER ENGINE OILS",
 		"description": "HP CNG BOOSTER 20W-50 is a superior Quality engine oil developed for 4-stroke autos and 3-wheelers running on CNG/LPG. The product is made from highly paraffinic base stocks and fortified with select additives to deliver satisfactory performance benefits in Autos and 3- wheelers running on CNG/LPG.\n\nThe superior additive chemistry ensures protection against oxidation and nitration caused due to higher temperatures in CNG/LPG fuel Engines. Right dosage of anti-wear and balanced detergency helps to protect the engine & gears from wear and deposits, resulting in trouble free operation for longer service intervals",
-		"specifications": [],
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "SF / CF"
+			},
+			{
+				"property": "Performance Level",
+				"value": "EPL 2 / EDL 2"
+			}
+		],
 		"appData": "HP CNG BOOSTER 20W-50 is recommended for all types of 4-stroke autos and 3-wheelers running on CNG/LPG Fuel. It can also be used in petrol engines to render satisfactory performance",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
@@ -11896,9 +13010,7 @@
 		"description": "HP RAIL ROAD OIL 810M is a 9 TBN, Generation-V, Zinc free multigrade crankcase oil for all locomotives including EMD, GE & ALCO. It has a reduced ash content and incorporates advanced dispersant technology. It enhances oxidation and thermal stability, and improves yellow metal wear protection. It has good base retention, viscosity control, and insoluble control. It is suitable for use in Rail Road engines using low sulfur / Ultra low sulfur diesel.",
 		"specifications": [],
 		"appData": "It is approved for GE Locomotives and is recommended for use in all types of locomotives operating in Indian railways. Absence of Zinc in the oil makes it ideal for use in diesel locomotives fitted with silver components.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"packaging": ["210LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -11913,9 +13025,7 @@
 		"description": "HP RAIL ROAD OIL 813M is a Generation-V Zinc free multigrade crankcase oil for all locomotives including EMD, GE & ALCO. It is being used as a common engine oil for EMD & ALCO locos in Indian Railways.",
 		"specifications": [],
 		"appData": "Recommended for use in all types of locomotives operating in Indian Railways. Absence of Zinc in the oil makes it ideal for use in diesel locomotives fitted with silver components.",
-		"packaging": [
-			"Available in multiple pack sizes, from small retail packs to bulk supply."
-		],
+		"packaging": ["210LT"],
 		"SBU": "Lubes",
 		"industrial": "Automotive Oils",
 		"documentation": "",
@@ -11979,7 +13089,7 @@
 				"value": "5.5 – 7.0\t5.5 – 7.0"
 			}
 		],
-		"appData": "Not available",
+		"appData": "Front Fork Oil provides precise damping and smooth suspension movement, while safeguarding  against rust and corrosion. Shock Absorber Oil ensures reliable shock absorption, minimizes vibrations, and protects suspension parts from wear and damage. Together with SAO, these oils maintain consistent viscosity, resist thermal breakdown, and deliver dependable protection, improving ride quality, extending component life, and enhancing overall vehicle performance. We supply our Front Fork Oil (FFO) and Shock absorber oil (SAO) to all major manufacturers. ",
 		"packaging": [
 			"Available in multiple pack sizes, from small retail packs to bulk supply."
 		],
@@ -12124,5 +13234,538 @@
 		"documentation": "",
 		"alternatives": [],
 		"related": [""]
+	},
+	"HPCL-LBS-0306": {
+		"id": 306,
+		"MSDS": "",
+		"title": "HP CRUISE PREMIUM S",
+		"subTitle": "PCMO",
+		"description": "HP CRUISE PREMIUM S  is manufactured from finest quality paraffinic base stocks and state of art additive technology to meet the requirements of API SL specifications.\n\nHP CRUISE PREMIUM S 20W-50 provides exemplary benefits in reduction of piston deposits and anti- wear protection resulting in longer engine life.",
+		"specifications": [],
+		"appData": "Recommended for various models of Passenger Cars running on Petrol/LPG/CNG requiring SAE 20W-50 & 20W-40 grade engine oil with API SL performance.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0307": {
+		"id": 307,
+		"MSDS": "",
+		"title": "HP CRUISE",
+		"subTitle": "PCMO",
+		"description": "HP CRUISE 15W 40 is a premium quality multigrade engine oil which provides outstanding  performance in older petrol engine passenger cars",
+		"specifications": [
+			{
+				"property": "EPL 4/EDL 3 of 13656",
+				"value": "2014"
+			}
+		],
+		"appData": "Engine oil for all Older passenger cars",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0308": {
+		"id": 308,
+		"MSDS": "",
+		"title": "HP NEOSYNTH CLASSIC",
+		"subTitle": "PCMO",
+		"description": "HP NEOSYNTH CLASSIC is manufactured from finest base stocks and state of art additive technology to meet the most stringent requirements of API SN, thus making it suitable for modern cars running on petrol.\nHP NEOSYNTH 5W 30 CLASSIC provides exemplary benefits in reduction of piston deposits, improved fuel economy benefits and after treatment compatibility.",
+		"specifications": [],
+		"appData": "Modern cars running on Petrol/LPG/CNG.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0309": {
+		"id": 309,
+		"MSDS": "",
+		"title": "HP NEOSYNTH",
+		"subTitle": "PCMO",
+		"description": "HP NEOSYNTH is manufactured from finest API Group III base stocks and state of art additive technology to meet the most stringent requirements of API SN, ACEA A5/B5 thus making it suitable for modern cars running on petrol or diesel fuels.\n\nHP NEOSYNTH provides exemplary benefits in reduction of piston deposits, improved fuel economy benefits and after treatment compatibility. The product also designed to exhibit improved performance in bio-diesel fueled vehicles.",
+		"specifications": [],
+		"appData": "High quality synthetic engine oil specifically designed for modern cars running on Petrol/Diesel/LPG/CNG/Bio-Diesel.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0310": {
+		"id": 310,
+		"MSDS": "",
+		"title": "HP NEOSYNTH CNG",
+		"subTitle": "PCMO",
+		"description": "HP NEOSYNTH CNG 20W-50 is a premium quality engine oil made from highly paraffinic base stocks and fortified with select additives to deliver satisfactory performance benefits in autos and taxis running on CNG/LPG.\nHP NEOSYNTH CNG has been multi-graded to 20W-50 viscometrics to facilitate easy starting even at lower ambient temperatures. The superior additive chemistry ensures protection against oxidation and nitration caused due to high temperature combustion due to CNG/LPG Fuels in Engine. Right dosage of anti-wear and balanced detergency helps to protect the engine from wear and deposits, resulting in trouble free operation for longer service intervals.",
+		"specifications": [
+			{
+				"property": "EPL 7 of BIS 13656",
+				"value": "2019"
+			}
+		],
+		"appData": "Autos and Taxis runnig on CNG/LPG PASSENGER CARS",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0311": {
+		"id": 311,
+		"MSDS": "",
+		"title": "HP RACER 2",
+		"subTitle": "MCO",
+		"description": "HP RACER2 LOW SMOKE is a superior grade two stroke oil formulated with part synthetic base, fortified with finely balanced additives and contains solvent.",
+		"specifications": [
+			{
+				"property": "JASO M-345",
+				"value": "FC"
+			}
+		],
+		"appData": "Recommended for use in all 2 stroke petrol engines.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0312": {
+		"id": 312,
+		"MSDS": "",
+		"title": "HP RACER GREEN",
+		"subTitle": "MCO",
+		"description": "HP RACER GREEN grade is a premium quality motor cycle engine oil made to cater to the highly demanding lubrication requirements of modern 4-Stroke geared bikes.\n\nHP RACER GREEN  is manufactured from the finest Group II base stocks and state of the art additive technology to meet the most stringent requirements of API SL as well as JASO MA 2 specifications.\n\nHP RACER GREEN  provides superior protection for engine, clutch and gears of a motor cycle which helps you to derive the best performance from your bike all the time, while ensuring high engine durability.",
+		"specifications": [],
+		"appData": "New generation geared 4-stroke bikes manufactured by most of the reputed manufacturers like Hero Motocorp, Bajaj Auto, Yamaha, Honda, Suzuki, TVS, Royal Enfield etc\n",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0313": {
+		"id": 313,
+		"MSDS": "",
+		"title": "HP RACER  SYNTH",
+		"subTitle": "MCO",
+		"description": "HP RACER SYNTH is a super premium quality motor cycle engine oil formulated on synthetic technology with the most advanced additive chemistry.\n\nThe synthetic technology in HP RACER SYNTH  is the key in providing unmatched Fuel Efficiency, lower oil consumption and superior film strength while lubricating the modern bikes with high power densities and elevated temperatures of operation. The cutting-edge-technology additive chemistry boosts the oil performance in rendering excellent engine cleanliness, high protection to the engine and transmission while ensuring a smooth clutch operation, vital for rapid pick-up.",
+		"specifications": [],
+		"appData": "New generation fuel efficient geared 4- stroke bikes requiring a API SN & JASO MA2 engine oil.\n\nHP RACER SYNTH far exceeds the requirements of the bikes manufactured by HMSI, Hero MotoCorp, TVS, Bajaj etc. It’s also recommended for other 4-stroke geared bikes requiring a 10W 30 viscometric oil.\n\nHP RACER SYNTH 15W 50 is exclusively developed for high powered bikes like Royal Enfield, Yamaha & KTM et",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0314": {
+		"id": 314,
+		"MSDS": "",
+		"title": "HP RACER FURTUR-X",
+		"subTitle": "MCO",
+		"description": "HP RACER FUTUR-X  is a premium quality syntheticmotor cycleengineoilmadetocater tothe highly demanding lubrication requirements of modern High Powered 4-Stroke geared bikes.\n\nHP RACER FUTUR-X manufactured from a synergistic blend of high quality synthetic base stocks, esters and state of art additive technology to meet the requirements of API SP as well as JASO MA2 performance levels.\n\nHP RACER FUTUR-X  provides superior protection for engine, clutch and gears of the high powered motor cycles. Advanced synthetic formula of HP RACER FUTUR-X renders exemplary performance benefits like unmatched engine and gear protection, low volatility that lowers the oil top-up needs, smooth clutch operation and longer oil drain interval.\n-Unmatched engine protection, leading to longer engine life\n-Ensures smooth wet-clutch operation for better pick-up\n-Ultimate protection to gears\n-Longer oil life\n-Better mileag",
+		"specifications": [],
+		"appData": "High performance bikes, sport bikes, road bikes and trail bikes. Also, recommended for high powered bikes of KTM, Yamaha and Royal Enfield.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0315": {
+		"id": 315,
+		"MSDS": "",
+		"title": "HP RACER SKUTEX PRO",
+		"subTitle": "MCO",
+		"description": "HP RACER SKUTEX PRO is manufactured from the paraffinic base stocks and state of art additive technology to meet the most stringent requirements of API SN as well as JASO MB\n\nHP RACER SKUTEX PRO provides superior protection to scooter engine which helps you to derive the best performance from your bike all the time, while ensuring high engine durability",
+		"specifications": [
+			{
+				"property": "API Service Classification",
+				"value": "SJ"
+			},
+			{
+				"property": "JASO",
+				"value": "MA2"
+			}
+		],
+		"appData": "New generation BS VI compliant gearless 4-stroke scooters like Honda Activa, Piaggio Vespa LX 125, Hero Pleasure, Suzuki Access, Mahindra Rodeo RZ, Mahindra Duro DZ, Mahindra Gusto, Yamaha Ray and TVS Wego, etc. It is also recommended for use in previous engine models as well.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0316": {
+		"id": 316,
+		"MSDS": "",
+		"title": "HP RACER SKUTEX FUTUR-X PRO",
+		"subTitle": "MCO",
+		"description": "HP RACER FUTUR-X SKUTEX PRO SP is a super-premium, new-generation synthetic scooter engine oil formulated using high-quality synthetic base oils and advanced additive chemistry to meet the lubrication requirements of modern 4-stroke scooters operating under severe stop-and-go urban conditions",
+		"specifications": [],
+		"appData": "HP RACER FUTUR-X SKUTEX PRO SP is designed for modern 4-stroke and high-performance scooters with CVT or dry clutch systems.\n\nIt is also recommended for use in scooters from OEMs such as Honda, Yamaha, Suzuki, TVS, Hero, and other manufacturers requiring API SP / JASO MB-compliant oils.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0317": {
+		"id": 317,
+		"MSDS": "",
+		"title": "HP LAAL GHODA/HP HYLUBE HDX MG /HP KISHAN SHAKTI",
+		"subTitle": "DEO",
+		"description": "High Quality engine oil developed for Naturally Aspirated Diesel Engines. The product is made from the paraffinic base stocks and fortified with selected additives to deliver satisfactory performance in busses, trucks, LCVs designed on Pre-Bharat Stage-I norms. The product is particularly suitable for the older diesel engines requiring lower detergency.\nThese are multi-graded 20W 40 & 20W 50 viscometrics to facilitate easy starting even at lower ambient temperatures. The superior additive chemistry not only ensures greater protection of the engine against wear and rust, its balanced detergency helps to keep the engine clean and trouble free for longer service intervals.",
+		"specifications": [
+			{
+				"property": "E-DL 2/ E-PL 2 IS",
+				"value": "13656:2014"
+			}
+		],
+		"appData": "Older busses, trucks, lcvs, agricultural and farm equipment like pump-sets, tractors, power-tillers, harvesters & DG sets requiring good quality diesel engine oils.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0318": {
+		"id": 318,
+		"MSDS": "",
+		"title": "HP MILCY PICK UP/MILCY CF-4/MILCY POWER",
+		"subTitle": "DEO",
+		"description": "Premium quality engine oil made from the finest paraffin base stocks\nand state of art additive technology, specifically designed to address the operational severity and engine durability issues of the modern emission complaint engines.\n\nHP MILCY TOP UP helps in replenishing the additives in the engine oil, which get depleted over a period of time during running of the vehicle.",
+		"specifications": [],
+		"appData": "All kinds of diesel engines (both turbo-charged & naturally aspirated) in commercial pick up & utility vehicles requiring high quality heavy duty diesel engine oil.\nHP MILCY PICKUP is recommended for all major automotive manufactures viz. Ashok Leyland, Tata Motors, Eicher, AMW, Mahindra & Mahindra etc for their diesel engines",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0319": {
+		"id": 319,
+		"MSDS": "",
+		"title": "HP MILCY TURBO/MILCY TURBO STAR/MILCY PICK-UP ULTRA",
+		"subTitle": "DEO",
+		"description": "Premium quality diesel engine oil made from the finest paraffinic base stocks and state of art additive technology, specifically designed to address the operational severity and engine durability issues of the modern diesel engines.\nThese Grades Provides unmatched soot handling properties, optimum protection for control of corrosive wear, low and high temperature stability, piston deposit control, valve train wear, oxidative thickening, foaming and viscosity loss due to shear. ",
+		"specifications": [],
+		"appData": "Recommended for new generation diesel engines of heavy and light pickup commercial vehicles, multi utility vehicles manufactured by all major manufacturers like Ashok Leyland, Tata Motors, Eicher, AMW, Mahindra & Mahindra etc., employing BS III/BS II/BS I technologies",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0320": {
+		"id": 320,
+		"MSDS": "",
+		"title": "HP MILCY TURBO GEN6/MILCY TURBO SUPREME/MILCY TURBO ULTRA +",
+		"subTitle": "DEO",
+		"description": "Super premium quality diesel engine oil made from the finest paraffinic base stocks and state of art additive technology, specifically for the modern low emission diesel engines, employing After Treatment Devices like DPF (Diesel Particulate Filter), Exhaust Gas Recirculation (EGR), Cooled EGR and Selective Catalytic Reduction ( SCR).\n\n",
+		"specifications": [],
+		"appData": "New generation BS VI diesel engines of heavy commercial, multi utility as well as small cars employing DPF, Exhaust Gas Recirculation (EGR)/ Cooled EGR/SCR type after treatment devices. The product also yields tangible benefits on longer engine oil life, better engine health in regular BS II/BS III/BS IV compliant engines requiring engine oil meeting API CF-4/CH-4/CI-4/CI-4 Plus performance level.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0321": {
+		"id": 321,
+		"MSDS": "",
+		"title": "HP MILCY FUTUR-X",
+		"subTitle": "DEO",
+		"description": "HP MILCY FUTUR-X  is a super-premium quality diesel engine oil made from the finest paraffinic base stocks and state of art additive technology, specifically for the modern low emission diesel engines, employing after treatment devices.\n\nHP MILCY FUTUR-X  is designed on a low SAPS platform to provide fuel efficiency benefits and with exceptional low temperature performance. It enhances protection against oil oxidation, viscosity loss due to shear and oil aeration, as well as catalyst poisoning. The Low SAPS technology helps in preventing particulate filter blocking, engine wear, piston deposits, degradation of low- and high-temperature properties and soot-related viscosity increase. The high temperature oxidation stability will help in extending drain interval of the oil. While, its exceptional soot dispersancy provides optimum control on oil thickening & filter clogging; the advanced detergency in the product exhibits exemplary control on piston deposit.",
+		"specifications": [],
+		"appData": "New generation BS VI diesel engines of heavy commercial, multi utility as well as small cars employing DPF, Exhaust Gas Recirculation (EGR)/ Cooled EGR/SCR type after treatment devices. The product also yields tangible benefits on longer engine oil life, better engine health in regular BS II/BS III/BS IV compliant engines requiring engine oil meeting API CF-4/CH-4/CI-4/CI-4 Plus performance level",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0322": {
+		"id": 322,
+		"MSDS": "",
+		"title": "HP GEAR OIL EP 90",
+		"subTitle": "Gear & Transmission Oil",
+		"description": "HP GEAR Oil EP 90 is a multipurpose gear oil containing extreme pressure additives for moderate service conditions. It provide Excellent thermal & chemical stability and Protection against rust and corrosion ensuring longer trouble free protection",
+		"specifications": [],
+		"appData": "Manual transmissions of automobiles requiring this type of extreme pressure oils",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0323": {
+		"id": 323,
+		"MSDS": "",
+		"title": "HP GEAR OIL EP 140",
+		"subTitle": "Gear & Transmission Oil",
+		"description": "HP GEAR Oil EP 140 is a good quality Axle and Differential Oil containing extreme pressure additives",
+		"specifications": [],
+		"appData": "It is recommended for Drive Axles, Differentials, Constant Mesh Gear Boxes and Auxiliary Gear Boxes of Automotive requiring an extreme pressure oil.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0324": {
+		"id": 324,
+		"MSDS": "",
+		"title": "HP GEAR OIL XP 80W-90",
+		"subTitle": "Gear & Transmission Oil",
+		"description": "HP GEAR OIL XP 80W-90 is multipurpose gear oil containing extreme pressure additives for moderate as well as severe conditions service.It provides:\n- Excellent thermal & chemical stability\n- Protection against rust & corrosion ensuring longer trouble free protection\n- Good performance even under extreme pressure & varying load conditions",
+		"specifications": [],
+		"appData": "Application areas are hypoid differential & drive axles and manual transmissions of automobiles.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0325": {
+		"id": 325,
+		"MSDS": "",
+		"title": "HP GEAR OIL XP 85W-140",
+		"subTitle": "Gear & Transmission Oil",
+		"description": "HP GEAR DRIVE XP 85W 140 grade is a high quality extreme pressure type multi-grade automotive gear oil specifically designed to address the requirements of gears, particularly hypoid gears in passenger cars, heavy commercial vehicles and other automotive equipment operated under high-speed, shock-load; high-speed, low-torque; and low-speed, high-torque conditions.",
+		"specifications": [],
+		"appData": "recommended for the new generation vehicles for heavy duty service in their differentials, rear axles, live front axles and final drives",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0326": {
+		"id": 326,
+		"MSDS": "",
+		"title": "HP ATF DEX II/ATF DEX IID",
+		"subTitle": "Gear & Transmission Oil",
+		"description": "HP ATF DEX II is a premium quality red coloured automatic transmission fluid having low static friction properties. It provides\n-Better oxidation stability\n-Low temperature viscosity\n-Longer life\n-Seal compatibility",
+		"specifications": [],
+		"appData": "Recommended for use in automatic transmissions & power steering units of automobiles and other LCV’S requiring Dexron II fluids.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0327": {
+		"id": 327,
+		"MSDS": "",
+		"title": "HP ATF DEX III",
+		"subTitle": "Gear & Transmission Oil",
+		"description": "HP ATF DEX III is a high-quality automatic transmission fluid manufactured from highly\nrefined base stocks and carefully selected additives to provide superior performance in\nautomotive automatic transmission systems",
+		"specifications": [],
+		"appData": "Automatic transmissions and power steering systems of vehicles requiring GM DEXRON® III, DEXRON® IIIF/G, DEXRON® IIE/D, and Type A Suffix A performance  fluids. Power steering units, torque converters, and hydraulic systems where such\nfluids are specified. ",
+		"packaging": ["210 LT"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0328": {
+		"id": 328,
+		"MSDS": "",
+		"title": "HP KISHAN SHAKTI UTTO",
+		"subTitle": "Agriculture Oils",
+		"description": "HP KISAN SHAKTI UTTO is a premium quality Universal Tractor Transmission Oil (UTTO) formulated from high quality hydrotreated base stocks and carefully selected additives, designed to deliver the best performance in transmission, hydraulic, final drive and PTO systems of modern tractors.",
+		"specifications": [
+			{
+				"property": "John Deere",
+				"value": "JDM J20 C/D"
+			},
+			{
+				"property": "Massey Ferguson",
+				"value": "CMS M 1135/ M1141/M 1143/M 1145"
+			},
+			{
+				"property": "Case New Holland",
+				"value": "MAT 3505/3509/3525"
+			}
+		],
+		"appData": "HP KISAN SHAKTI UTTO is recommended for use in tractors manufactured by all major OEMs like Mahindra & Mahindra, Tafe, Eicher, SAME, ITL, Swaraj, Escorts, John Deere, CNH etc.\n\nThe product can also be used in other off-road/construction equipment requiring UTTO type transmission fluid.",
+		"packaging": ["Available in Multiple SKUs"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0329": {
+		"id": 329,
+		"MSDS": "",
+		"title": "HP HYLUBE X-30 KLT",
+		"subTitle": "CONSTRUCTION & EARTH MOVING EQUIMENT",
+		"description": "HP X-3 30 KLT grade is a premium quality Power Train Oil formulated from high quality hydro-treated base stocks and carefully selected additives, designed to meet the stringent Komatsu specifications.\n\nHP X-3 30 KLT provides optimum protection against wear, rust & corrosion, and oxidation to swing machinery, damper case and final drive",
+		"specifications": [],
+		"appData": "HP X-3 30 KLT grade is specifically designed to cater to stringent requirements of equipment manufactured by Komatsu. The product is approved by KOMATSU for their PC71, PC130-7, PC200-6, PC300-7, PC400-7 etc.",
+		"packaging": ["210 LT"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0330": {
+		"id": 330,
+		"MSDS": "",
+		"title": "HP HYLUBE X-10W KLT",
+		"subTitle": "CONSTRUCTION & EARTH MOVING EQUIMENT",
+		"description": "HP X-3 10W KLT grade is a premium quality Hydraulic Oils formulated from high quality hydro-treated base stocks and carefully selected additives, designed to meet the stringent Komatsu specifications.\n\nHP X-3 10W KLT provides optimum protection against wear, rust & corrosion, and oxidation",
+		"specifications": [],
+		"appData": "HP X-3 10 KLT grade is specifically designed to cater to stringent requirements of equipment manufactured by Komatsu. The product is approved by KOMATSU for their PC71, PC130-7, PC200-6, PC300-7, PC400-7 etc.",
+		"packaging": ["210 LT"],
+		"SBU": "Lubes",
+		"industrial": "Automotive Oils",
+		"documentation": "Aavailable ",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0331": {
+		"id": 331,
+		"MSDS": "",
+		"title": "HP SYNTHKOOL 10000",
+		"subTitle": "PREMIUM SEMI SYNTHETIC METAL CUTTING FLUIDS",
+		"description": "HP SYNTHKOOL 10000 is a high mineral oil containing, water miscible semi synthetic type cutting fluid blended with multi-functional additive packages. The oil is suitable for all moderate machining & grinding applications on ferrous and non-ferrous metals and alloys. The product is chlorine free",
+		"specifications": [
+			{
+				"property": "Appearance",
+				"value": "Clear"
+			},
+			{
+				"property": "Mineral Oil Content",
+				"value": "> 50%"
+			},
+			{
+				"property": "Cast Iron Corrosion Test (1",
+				"value": "40 in Distilled Water): 0/0–0"
+			},
+			{
+				"property": "Cast Iron Corrosion Test (1",
+				"value": "40 in Hard Water – 200 ppm): 0/0–0"
+			},
+			{
+				"property": "pH of 5% Emulsion in Distilled Water",
+				"value": "9.6"
+			}
+		],
+		"appData": "The oil is suitable for all moderate machining & grinding applications on ferrous and non-ferrous metals and alloys. The product is chlorine free",
+		"packaging": ["Barrel,Bulk"],
+		"SBU": "Lubes",
+		"industrial": "SPECIALTIES",
+		"documentation": "Not available",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0332": {
+		"id": 332,
+		"MSDS": "",
+		"title": "HP SYNTHKOOL 10001",
+		"subTitle": "PREMIUM SEMI SYNTHETIC METAL CUTTING FLUIDS",
+		"description": "HP SYNTHKOOL 10001 is a low mineral oil containing, water miscible semi synthetic type cutting fluid blended with multi-functional additive packages. The oil is suitable for all moderate machining & grinding applications on ferrous and non-ferrous metals and alloys. The product is chlorine free.",
+		"specifications": [
+			{
+				"property": "Appearance",
+				"value": "Clear"
+			},
+			{
+				"property": "Mineral Oil Content",
+				"value": "> 20%"
+			},
+			{
+				"property": "Cast Iron Corrosion Test (1",
+				"value": "40 in Distilled Water): 0/0–0"
+			},
+			{
+				"property": "Cast Iron Corrosion Test (1",
+				"value": "40 in Hard Water – 200 ppm): 0/0–0"
+			},
+			{
+				"property": "pH of 5% Emulsion in Distilled Water",
+				"value": "9.6"
+			}
+		],
+		"appData": "The oil is suitable for all moderate machining & grinding applications on ferrous and non-ferrous metals and alloys. The product is chlorine free",
+		"packaging": ["Barrel,Bulk"],
+		"SBU": "Lubes",
+		"industrial": "SPECIALTIES",
+		"documentation": "Not available",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-LBS-0333": {
+		"id": 333,
+		"MSDS": "",
+		"title": "HP SYNTHKOOL 24121",
+		"subTitle": "PREMIUM SEMI SYNTHETIC METAL CUTTING FLUIDS",
+		"description": "HP SYNTHKOOL 24121 is a low mineral oil containing, water miscible semi synthetic type cutting fluid blended with high performing lubricity additives. The oil is suitable for high performance multipurpose machining applications on multi metals. The product is free from additives containing Chlorine, Sulphur or Phosphorus.",
+		"specifications": [
+			{
+				"property": "PROPERTIES",
+				"value": "TYPICAL VALUES"
+			},
+			{
+				"property": "APPEARANCE",
+				"value": "Amber Liquid"
+			},
+			{
+				"property": "Kinematic Viscosity @ 40 Deg C, cSt",
+				"value": "51"
+			},
+			{
+				"property": "Mineral Oil Content %",
+				"value": "30"
+			},
+			{
+				"property": "1",
+				"value": "40 in Distilled Water\t0/0-0"
+			},
+			{
+				"property": "1",
+				"value": "40 in Hard Water-200 PPM\t0/0-0"
+			},
+			{
+				"property": "pH of Emulsion in DW @ 5%",
+				"value": "9.0"
+			}
+		],
+		"appData": " Suitable for high performance multipurpose machining applications on multi meta",
+		"packaging": ["Barrel and Bulk Supply"],
+		"SBU": "Lubes",
+		"industrial": "SPECIALTIES",
+		"documentation": "Not available",
+		"alternatives": [],
+		"related": ["nan"]
 	}
 }

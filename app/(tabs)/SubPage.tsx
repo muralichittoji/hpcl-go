@@ -6,7 +6,7 @@ import LoadingOverlay from "@/components/Ui/LoadingOverlay";
 import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
 
 // Static navigation data
-import newData from "@/constants/Jsons/newData.json";
+import newData from "@/constants/newData.json";
 
 // Theme & icons
 import { Colors } from "@/constants/theme";
@@ -78,6 +78,13 @@ const SubPage = () => {
 	/*                         Central navigation logic                         */
 	/* ---------------------------------------------------------------------- */
 	const onItemPress = (item: any) => {
+		console.log(typeof item);
+		if (typeof item === "string") {
+			router.push({
+				pathname: "/InfoScreen",
+				params: { name: item },
+			});
+		}
 		// Direct route navigation (explicit screen)
 		if (item?.navigation) {
 			router.push({ pathname: item.navigation });

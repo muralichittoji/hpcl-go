@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useMemo, useState } from 'react';
 import {
 	Image,
 	Modal,
@@ -7,23 +7,23 @@ import {
 	Text,
 	TouchableOpacity,
 	View,
-} from "react-native";
-import DropDownPicker from "react-native-dropdown-picker";
-import { SafeAreaView } from "react-native-safe-area-context";
+} from 'react-native';
+import DropDownPicker from 'react-native-dropdown-picker';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-import productDetails from "@/constants/Jsons/newDevData.json";
-import wholeData from "@/constants/Jsons/wholeData.json";
-import { Colors } from "@/constants/theme";
-import { ALL_IMAGES } from "@/hooks/Allimages";
+import wholeData from '@/constants/Jsons/wholeData.json';
+import productDetails from '@/constants/newDevData.json';
+import { Colors } from '@/constants/theme';
+import { ALL_IMAGES } from '@/hooks/Allimages';
 
 type ProductValue = string;
 
 const ProductComparison = () => {
 	/* -------------------- STATE -------------------- */
 
-	const [product1, setProduct1] = useState<ProductValue>("");
-	const [product2, setProduct2] = useState<ProductValue>("");
-	const [product3, setProduct3] = useState<ProductValue>("");
+	const [product1, setProduct1] = useState<ProductValue>('');
+	const [product2, setProduct2] = useState<ProductValue>('');
+	const [product3, setProduct3] = useState<ProductValue>('');
 
 	const [open1, setOpen1] = useState(false);
 	const [open2, setOpen2] = useState(false);
@@ -47,7 +47,8 @@ const ProductComparison = () => {
 	const getItems = useCallback(
 		(current: string) =>
 			wholeData.products.filter(
-				(p) => p.value === current || !selectedProducts.includes(p.value),
+				(p) =>
+					p.value === current || !selectedProducts.includes(p.value),
 			),
 		[selectedProducts],
 	);
@@ -64,7 +65,9 @@ const ProductComparison = () => {
 		<View style={styles.container}>
 			<Text style={styles.icon}>⚖️</Text>
 			<Text style={styles.title}>Product Comparison</Text>
-			<Text style={styles.subtitle}>Select at least 2 products to compare</Text>
+			<Text style={styles.subtitle}>
+				Select at least 2 products to compare
+			</Text>
 
 			{/* Dropdown 1 */}
 			<DropDownPicker
@@ -158,19 +161,31 @@ const ProductComparison = () => {
 						>
 							{selectedProducts.map((key) => {
 								const product =
-									productDetails[key as keyof typeof productDetails];
+									productDetails[
+										key as keyof typeof productDetails
+									];
 
 								if (!product) return null;
 
 								return (
 									<View key={key} style={styles.card}>
-										<Text style={styles.cardTitle}>{product.title}</Text>
-										<Text style={styles.cardSubTitle}>{product.subTitle}</Text>
+										<Text style={styles.cardTitle}>
+											{product.title}
+										</Text>
+										<Text style={styles.cardSubTitle}>
+											{product.subTitle}
+										</Text>
 										<View style={styles.divider} />
-										<Text style={styles.section}>Description</Text>
-										<Text style={styles.text}>{product.description}</Text>
+										<Text style={styles.section}>
+											Description
+										</Text>
+										<Text style={styles.text}>
+											{product.description}
+										</Text>
 
-										<Text style={styles.section}>Specifications</Text>
+										<Text style={styles.section}>
+											Specifications
+										</Text>
 										<View style={styles.divider} />
 										{product.specifications
 											.slice(0, 4)
@@ -179,19 +194,33 @@ const ProductComparison = () => {
 													key={`${spec.property}-${index}`}
 													style={styles.specRow}
 												>
-													<Text style={styles.specKey}>{spec.property}:</Text>
-													<Text style={styles.specValue}>{spec.value}</Text>
+													<Text
+														style={styles.specKey}
+													>
+														{spec.property}:
+													</Text>
+													<Text
+														style={styles.specValue}
+													>
+														{spec.value}
+													</Text>
 												</View>
 											))}
 
-										<Text style={styles.section}>Applications</Text>
-										<View style={styles.divider} />
-										<Text style={styles.text}>{product.appData}</Text>
-
-										<Text style={styles.section}>Packaging</Text>
+										<Text style={styles.section}>
+											Applications
+										</Text>
 										<View style={styles.divider} />
 										<Text style={styles.text}>
-											{product.packaging.join(", ")}
+											{product.appData}
+										</Text>
+
+										<Text style={styles.section}>
+											Packaging
+										</Text>
+										<View style={styles.divider} />
+										<Text style={styles.text}>
+											{product.packaging.join(', ')}
 										</Text>
 
 										<Image
@@ -215,11 +244,11 @@ const styles = StyleSheet.create({
 	container: {
 		padding: 16,
 		flex: 1,
-		backgroundColor: "#f5f6fa",
+		backgroundColor: '#f5f6fa',
 	},
 	modalSafeArea: {
 		flex: 1,
-		backgroundColor: "rgba(0,0,0,0.4)",
+		backgroundColor: 'rgba(0,0,0,0.4)',
 		paddingVertical: 20,
 	},
 
@@ -230,28 +259,28 @@ const styles = StyleSheet.create({
 	},
 	icon: {
 		fontSize: 40,
-		textAlign: "center",
+		textAlign: 'center',
 	},
 	title: {
 		fontSize: 20,
-		fontWeight: "bold",
-		textAlign: "center",
+		fontWeight: 'bold',
+		textAlign: 'center',
 		marginTop: 8,
 	},
 	subtitle: {
-		textAlign: "center",
-		color: "#666",
+		textAlign: 'center',
+		color: '#666',
 		marginBottom: 16,
 	},
 	dropdown: {
-		backgroundColor: "#fff",
+		backgroundColor: '#fff',
 		borderRadius: 8,
 		marginBottom: 12,
-		overflow: "hidden",
+		overflow: 'hidden',
 	},
 	searchContainer: {
 		borderBottomWidth: 1,
-		borderColor: "#eee",
+		borderColor: '#eee',
 	},
 
 	searchInput: {
@@ -260,98 +289,98 @@ const styles = StyleSheet.create({
 	},
 
 	button: {
-		backgroundColor: "#0a3d62",
+		backgroundColor: '#0a3d62',
 		padding: 14,
 		borderRadius: 8,
 		marginTop: 8,
 	},
 	disabledButton: {
-		backgroundColor: "#b2bec3",
+		backgroundColor: '#b2bec3',
 	},
 	buttonText: {
-		color: "#fff",
-		textAlign: "center",
-		fontWeight: "bold",
+		color: '#fff',
+		textAlign: 'center',
+		fontWeight: 'bold',
 	},
 	overlay: {
 		// maxHeight: '100%',
 		// overflow: 'hidden',
 		// height: '100%',
 		flex: 1,
-		backgroundColor: "rgba(0,0,0,0.4)",
+		backgroundColor: 'rgba(0,0,0,0.4)',
 	},
 	modalHeader: {
-		backgroundColor: "#fff",
+		backgroundColor: '#fff',
 		padding: 16,
-		flexDirection: "row",
-		justifyContent: "space-between",
-		alignItems: "center",
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		alignItems: 'center',
 	},
 	modalTitle: {
 		fontSize: 18,
-		fontWeight: "bold",
+		fontWeight: 'bold',
 		color: Colors.blueDark,
 	},
 	closeButton: {
 		width: 32,
 		height: 32,
 		borderRadius: 16,
-		backgroundColor: "rgba(0,0,0,0.2)",
-		justifyContent: "center",
-		alignItems: "center",
+		backgroundColor: 'rgba(0,0,0,0.2)',
+		justifyContent: 'center',
+		alignItems: 'center',
 	},
 
 	closeText: {
-		color: "#fff",
+		color: '#fff',
 		fontSize: 25,
-		fontWeight: "900",
+		fontWeight: '900',
 	},
 	cardContainer: {
 		padding: 16,
 	},
 	card: {
 		width: 300,
-		backgroundColor: "#fff",
+		backgroundColor: '#fff',
 		minHeight: 500,
 		borderRadius: 12,
 		padding: 16,
 		marginRight: 16,
 		marginVertical: 10,
 		elevation: 6,
-		display: "flex",
-		justifyContent: "space-between",
+		display: 'flex',
+		justifyContent: 'space-between',
 	},
 	cardTitle: {
 		fontSize: 16,
-		fontWeight: "bold",
+		fontWeight: 'bold',
 		color: Colors.blueDark,
 	},
 	cardSubTitle: {
 		fontSize: 12,
-		color: "#777",
+		color: '#777',
 		marginBottom: 8,
 	},
 	section: {
 		marginTop: 12,
-		fontWeight: "bold",
+		fontWeight: 'bold',
 		color: Colors.blueDeep,
 	},
 	text: {
 		fontSize: 12,
 		marginTop: 4,
-		textAlign: "justify",
+		textAlign: 'justify',
 	},
 	specRow: {
-		flexDirection: "column",
-		justifyContent: "space-between",
+		flexDirection: 'column',
+		justifyContent: 'space-between',
 		marginTop: 4,
 	},
 	specKey: {
 		fontSize: 11,
-		fontWeight: "700",
+		fontWeight: '700',
 	},
 	specValue: {
 		fontSize: 11,
 	},
-	happiness: { height: 100, width: 130, alignSelf: "flex-end" },
+	happiness: { height: 100, width: 130, alignSelf: 'flex-end' },
 });

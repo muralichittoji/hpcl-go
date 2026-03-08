@@ -1,11 +1,11 @@
+import { openPdfFromRegistry } from "@/utils/openPdf";
 import { Ionicons } from "@expo/vector-icons";
-import * as FileSystem from "expo-file-system/legacy";
-import * as Sharing from "expo-sharing";
 import React, { useState } from "react";
 import {
 	ActivityIndicator,
 	Alert,
 	StyleSheet,
+	Text,
 	TouchableOpacity,
 	View,
 } from "react-native";
@@ -23,30 +23,7 @@ export default function PdfViewerContent({ pdfUrl, name, onClose }: Props) {
 	const sharePdf = async () => {
 		try {
 			setLoading(true);
-
-			const fileUri = FileSystem.documentDirectory + `${name}_MSDS.pdf`;
-
-			const downloadResumable = FileSystem.createDownloadResumable(
-				pdfUrl,
-				fileUri,
-			);
-
-			const result = await downloadResumable.downloadAsync();
-
-			if (!result) {
-				Alert.alert("Error", "Download failed");
-				return;
-			}
-
-			if (!(await Sharing.isAvailableAsync())) {
-				Alert.alert("Error", "Sharing not available");
-				return;
-			}
-
-			await Sharing.shareAsync(result.uri, {
-				mimeType: "application/pdf",
-				UTI: "com.adobe.pdf",
-			});
+			await openPdfFromRegistry(name);
 		} catch (error) {
 			console.log(error);
 			Alert.alert("Error", "Something went wrong");
@@ -57,7 +34,7 @@ export default function PdfViewerContent({ pdfUrl, name, onClose }: Props) {
 
 	return (
 		<View style={{ flex: 1 }}>
-			{/* Header inside sheet */}
+			{/* Header */}
 			<View style={styles.header}>
 				<TouchableOpacity onPress={onClose}>
 					<Ionicons name="close" size={24} />
@@ -78,13 +55,21 @@ export default function PdfViewerContent({ pdfUrl, name, onClose }: Props) {
 				setDisplayZoomControls={false}
 				androidLayerType="hardware"
 				renderLoading={() => (
-					<ActivityIndicator size="large" style={{ marginTop: 20 }} />
+					<View style={styles.webLoader}>
+						<ActivityIndicator size="large" color="#1e88e5" />
+						<View style={{ height: 12 }} />
+						<Text style={styles.loadingText}>Preparing document...</Text>
+						<Text style={styles.subText}>Please wait a moment</Text>
+					</View>
 				)}
 			/>
 
+			{/* Share Loader Overlay */}
 			{loading && (
 				<View style={styles.loaderOverlay}>
 					<ActivityIndicator size="large" color="#fff" />
+					<View style={{ height: 12 }} />
+					<Text style={styles.overlayText}>Preparing PDF for sharing...</Text>
 				</View>
 			)}
 		</View>
@@ -98,14 +83,41 @@ const styles = StyleSheet.create({
 		justifyContent: "space-between",
 		backgroundColor: "#fff",
 	},
+
+	webLoader: {
+		flex: 1,
+		justifyContent: "center",
+		alignItems: "center",
+		backgroundColor: "#f9fafb",
+	},
+
+	loadingText: {
+		fontSize: 16,
+		fontWeight: "600",
+		color: "#222",
+	},
+
+	subText: {
+		fontSize: 13,
+		color: "#666",
+		marginTop: 4,
+	},
+
 	loaderOverlay: {
 		position: "absolute",
-		backgroundColor: "rgba(0,0,0,0.5)",
+		backgroundColor: "rgba(0,0,0,0.6)",
 		top: 0,
 		bottom: 0,
 		left: 0,
 		right: 0,
 		justifyContent: "center",
 		alignItems: "center",
+	},
+
+	overlayText: {
+		marginTop: 10,
+		color: "#fff",
+		fontSize: 15,
+		fontWeight: "500",
 	},
 });

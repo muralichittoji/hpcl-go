@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
 	enterBtn: {
 		width: width - 40,
 		marginVertical: 60,
-		marginHorizontal: "5%",
+		alignSelf: "center",
 		height: 70,
 		backgroundColor: Colors.blueDeep,
 		justifyContent: "center",

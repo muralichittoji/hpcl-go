@@ -1,5 +1,5 @@
 // Local JSON data used to populate modal info (Page 3)
-import newDevData from "@/constants/Jsons/newDevData.json";
+import newDevData from "@/constants/newDevData.json";
 
 // App theme colors
 import { Colors } from "@/constants/theme";
@@ -112,10 +112,10 @@ const UnifiedListMenu = ({
 
 	useEffect(() => {});
 	const getDesc = (key?: string) => {
-		console.log("KEY =>", key);
-		console.log("TYPE =>", typeof key);
-		console.log("ALL KEYS =>", Object.keys(newDevData));
-		console.log("MATCH =>", Object.keys(newDevData).includes(key!));
+		// console.log("KEY =>", key);
+		// console.log("TYPE =>", typeof key);
+		// console.log("ALL KEYS =>", Object.keys(newDevData));
+		// console.log("MATCH =>", Object.keys(newDevData).includes(key!));
 		return getProduct(key)?.description ?? "No description available";
 	};
 
@@ -131,13 +131,13 @@ const UnifiedListMenu = ({
 		setModalVisible(true);
 	};
 
-	const toTitleCase = (text: string) => {
-		return text
-			.toLowerCase()
-			.split(" ")
-			.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-			.join(" ");
-	};
+	// const toTitleCase = (text: string) => {
+	// 	return text
+	// 		.toLowerCase()
+	// 		.split(' ')
+	// 		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+	// 		.join(' ');
+	// };
 
 	/* -------------------------------------------------------------------------- */
 	/*                                Menu Content                                 */
@@ -203,7 +203,7 @@ const UnifiedListMenu = ({
 						)}
 
 						{/* -------------------------- Info Button ------------------------- */}
-						{showInfo && (
+						{!item.icon && (
 							<Pressable
 								onPress={() => openInfo(item)}
 								// Prevent navigation trigger
@@ -227,13 +227,67 @@ const UnifiedListMenu = ({
 								},
 							]}
 						>
-							{toTitleCase(label)}
+							{label}
 						</Text>
 					</TouchableOpacity>
 				);
 			})}
 		</View>
 	);
+
+	const renderData = (data: any) => {
+		// CASE 1 → Final product (string)
+		if (typeof data === "string") {
+			return (
+				<>
+					<Text style={styles.modalTitle}>{getTitle(data)}</Text>
+
+					<Text style={styles.modalSubTitle}>{getSubTitle(data)}</Text>
+
+					<View style={styles.divider} />
+
+					<ScrollView style={{ maxHeight: 300 }}>
+						<Text style={styles.modalDesc}>{getDesc(data)}</Text>
+					</ScrollView>
+					<TouchableOpacity
+						onPress={() => {
+							console.log("Pressed", data);
+							setModalVisible(false);
+							navigate(data);
+						}}
+					>
+						<Text>Navigate →</Text>
+					</TouchableOpacity>
+				</>
+			);
+		}
+
+		// CASE 2 → Array of items
+		if (Array.isArray(data)) {
+			return (
+				<View>
+					<Text style={styles.listHeader}>Number of Items: {data.length}</Text>
+					<ScrollView
+						style={{
+							maxHeight: 320,
+						}}
+					>
+						{data.map((item: any, index: number) => (
+							<Pressable
+								key={index}
+								style={styles.listItem}
+								onPress={() => setSelectedItem({ data: item.data })}
+							>
+								<Text style={styles.listText}>{item.name}</Text>
+							</Pressable>
+						))}
+					</ScrollView>
+				</View>
+			);
+		}
+
+		return null;
+	};
 
 	/* -------------------------------------------------------------------------- */
 	/*                                   Render                                   */
@@ -245,7 +299,9 @@ const UnifiedListMenu = ({
 				<ScrollView
 					ref={scrollRef}
 					showsVerticalScrollIndicator={false}
-					contentContainerStyle={{ paddingBottom: insets.bottom + 250 }}
+					contentContainerStyle={{
+						paddingBottom: insets.bottom + 250,
+					}}
 				>
 					{Content}
 				</ScrollView>
@@ -254,7 +310,7 @@ const UnifiedListMenu = ({
 			)}
 
 			{/* ----------------------------- Info Modal ----------------------------- */}
-			{showInfo && (
+			{modalVisible && (
 				<Modal
 					transparent
 					animationType="fade"
@@ -263,17 +319,7 @@ const UnifiedListMenu = ({
 				>
 					<View style={styles.modalOverlay}>
 						<View style={styles.modalContent}>
-							<Text style={styles.modalTitle}>
-								{getTitle(selectedItem?.data)}
-							</Text>
-
-							<Text>{getSubTitle(selectedItem?.data)}</Text>
-
-							<View style={styles.divider} />
-
-							<Text style={styles.modalDesc}>
-								{getDesc(selectedItem?.data)}
-							</Text>
+							{renderData(selectedItem?.data)}
 
 							<Pressable
 								style={styles.closeBtn}
@@ -301,6 +347,35 @@ const styles = StyleSheet.create({
 		justifyContent: "flex-start",
 		flexWrap: "wrap",
 		marginHorizontal: 10,
+		marginBottom: 10,
+	},
+
+	listItem: {
+		padding: 12,
+		backgroundColor: "#f3f3f3",
+		borderRadius: 8,
+		marginVertical: 4,
+		shadowOpacity: 0.1,
+		shadowOffset: { width: 1, height: 1 },
+	},
+
+	listText: {
+		fontSize: 16,
+		fontWeight: "500",
+		color: "#333",
+	},
+	listHeader: {
+		fontSize: 16,
+		fontWeight: "500",
+		color: Colors.blueDark,
+		marginVertical: 10,
+		borderBottomColor: Colors.blueDark,
+		borderBottomWidth: 1,
+	},
+
+	modalSubTitle: {
+		fontSize: 16,
+		color: "#555",
 		marginBottom: 10,
 	},
 
@@ -357,7 +432,7 @@ const styles = StyleSheet.create({
 
 	modalContent: {
 		width: "85%",
-		backgroundColor: "#fff",
+		backgroundColor: Colors.white,
 		borderRadius: 12,
 		padding: 20,
 	},
@@ -379,6 +454,7 @@ const styles = StyleSheet.create({
 		alignSelf: "flex-end",
 		paddingVertical: 8,
 		paddingHorizontal: 16,
+		marginTop: 8,
 		backgroundColor: Colors.blueDeep,
 		borderRadius: 6,
 	},

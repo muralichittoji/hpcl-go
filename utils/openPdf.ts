@@ -1,4 +1,4 @@
-import { ALL_PDFS } from "@/hooks/ALL_PDFS";
+import { ALL_PDFS_DOWNLOAD } from "@/hooks/ALL_PDFS_DOWNLOAD";
 import { Asset } from "expo-asset";
 import * as FileSystem from "expo-file-system/legacy";
 import * as Sharing from "expo-sharing";
@@ -11,7 +11,7 @@ export const openPdfFromRegistry = async (pdfKey: string) => {
 			return;
 		}
 
-		const pdfModule = ALL_PDFS[pdfKey];
+		const pdfModule = ALL_PDFS_DOWNLOAD[pdfKey];
 		if (!pdfModule) {
 			Alert.alert("Error", "PDF not found");
 			return;

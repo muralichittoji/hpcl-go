@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Header from "@/components/Ui/Header";
 import ScrollComponent from "@/components/Ui/ScrollComponent";
 import devData from "@/constants/Jsons/newDevData.json";
