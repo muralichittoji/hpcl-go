@@ -1,0 +1,95 @@
+{
+	"E20_Motor_Spirit": {
+		"composition": "95 RON gasoline blended with 19-20% ethanol",
+		"applications": [
+			"Transportation fuel for cars",
+			"SUVs",
+			"Motorcycles",
+			"Scooters"
+		],
+		"launch": "February 2023",
+		"benefits": "Reduces tailpipe emissions (CO, HC, NOx) compared to regular Motor Spirit",
+		"key_specifications": {
+			"RON": "≥95",
+			"density_at_15C": "720-775 kg/m³",
+			"ethanol_content": "19-20% v/v",
+			"oxygen_content": "≤7.7% m/m",
+			"total_sulphur": "≤10 mg/kg",
+			"lead": "≤0.005 g/L",
+			"benzene": "≤1% v/v",
+			"aromatics": "≤35% v/v",
+			"olefins": "≤18% v/v",
+			"RVP_at_37_8C": "≤70 kPa",
+			"vapor_lock_index": "≤1100",
+			"gum": "≤40 g/m³",
+			"oxidation_stability": "≥360 min",
+			"water_content": "≤3000 mg/kg",
+			"color": "Orange (MG95)",
+			"appearance": "Bright & Clear"
+		}
+	},
+	"Paving_Bitumen": {
+		"VG10": {
+			"description": "Viscous petroleum residue used in road construction",
+			"applications": ["Road construction", "Highways", "Airport tarmac"],
+			"specifications": {
+				"penetration_at_25C": "Min 80 (0.1 mm)",
+				"absolute_viscosity_at_60C": "800-1200 Poise",
+				"kinematic_viscosity_at_135C": "Min 250 cSt",
+				"flash_point": "≥220°C",
+				"softening_point": "Min 40°C",
+				"solubility_in_trichloroethylene": "Min 99.0%",
+				"viscosity_ratio_at_60C": "Max 4.0",
+				"ductility_at_25C": "Min 75 cm"
+			}
+		},
+		"VG30": {
+			"description": "Viscous petroleum residue used for road and airport tarmac construction",
+			"applications": ["Road construction", "Highways", "Airport tarmac"],
+			"specifications": {
+				"penetration_at_25C": "≥45 (0.1 mm)",
+				"absolute_viscosity_at_60C": "2400-3200 Poise",
+				"kinematic_viscosity_at_135C": "≥350 cSt",
+				"flash_point": "≥220°C",
+				"softening_point": "≥47°C",
+				"solubility_in_trichloroethylene": "≥99.0%",
+				"viscosity_ratio_at_60C": "≤4.0",
+				"ductility_at_25C": "≥40 cm"
+			}
+		},
+		"VG40": {
+			"description": "Viscous petroleum residue for use in road construction and airport tarmacs",
+			"applications": ["Road construction", "Highways", "Airport tarmac"],
+			"specifications": {
+				"penetration_at_25C": "Min 35 (0.1 mm)",
+				"absolute_viscosity_at_60C": "3200-4800 Poise",
+				"kinematic_viscosity_at_135C": "Min 400 cSt",
+				"flash_point": "≥220°C",
+				"softening_point": "Min 50°C",
+				"solubility_in_trichloroethylene": "Min 99.0%",
+				"viscosity_ratio_at_60C": "Max 4.0",
+				"ductility_at_25C": "Min 25 cm"
+			}
+		}
+	},
+	"High_Speed_Diesel": {
+		"usage": [
+			"Compression-ignition engines",
+			"Vehicles (trucks, buses)",
+			"DG sets",
+			"Agricultural and construction machinery"
+		],
+		"specifications": {
+			"density_at_15C": "810-845 kg/m³",
+			"cetane_number": "≥51",
+			"flash_point": "≥35°C",
+			"total_sulphur": "≤10 mg/kg",
+			"water_content": "≤200 mg/kg",
+			"pour_point_winter": "Max 3°C",
+			"pour_point_summer": "Max 15°C",
+			"CFPP_winter": "Max 6°C",
+			"CFPP_summer": "Max 18°C",
+			"FAME_content": "≤7% v/v"
+		}
+	}
+}

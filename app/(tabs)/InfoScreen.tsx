@@ -17,7 +17,6 @@ import ProductPreviewModal from '@/components/Ui/ProductPreviewModal';
 import SafeSheet from '@/components/Ui/SafeSheet';
 
 // Static product data
-import infoData from '@/constants/Jsons/InfoData.json';
 import devData from '@/constants/newDevData.json';
 
 // Routing & hooks
@@ -48,10 +47,7 @@ const InfoScreen = ({ route }: any) => {
 	/* ---------------------------------------------------------------------- */
 	/*                 Resolve product data from JSON sources                 */
 	/* ---------------------------------------------------------------------- */
-	const data = name
-		? (infoData[name as keyof typeof infoData] ??
-			devData[name as keyof typeof devData])
-		: undefined;
+	const data = name ? devData[name as keyof typeof devData] : undefined;
 
 	// Enquiry modal visibility
 	const [enquireOpen, setEnquireOpen] = useState(false);
@@ -94,7 +90,8 @@ const InfoScreen = ({ route }: any) => {
 			keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 20}
 		>
 			<View style={{ flex: 1 }}>
-				<Header caption={data.title} subCaption={data.subTitle} />
+				<Header caption={data.title} />
+				{/* subCaption={data.subTitle} */}
 				{/* Scrollable content */}
 				<ScrollView
 					ref={scrollRef}

@@ -1,18 +1,18 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import Header from "@/components/Ui/Header";
-import ScrollComponent from "@/components/Ui/ScrollComponent";
-import devData from "@/constants/Jsons/newDevData.json";
-import { Colors } from "@/constants/theme";
-import { ALL_IMAGES } from "@/hooks/Allimages";
-import { ProductData } from "@/hooks/types";
+import Header from '@/components/Ui/Header';
+import ScrollComponent from '@/components/Ui/ScrollComponent';
+import devData from '@/constants/Jsons/newDevData.json';
+import { Colors } from '@/constants/theme';
+import { ALL_IMAGES } from '@/hooks/Allimages';
+import { ProductData } from '@/hooks/types';
 import {
 	getSearchHistory,
 	saveSearchToHistory,
 	SearchHistoryItem,
-} from "@/utils/searchHistory";
-import { LinearGradient } from "expo-linear-gradient";
-import { router, useLocalSearchParams } from "expo-router";
-import { useEffect, useRef, useState } from "react";
+} from '@/utils/searchHistory';
+import { LinearGradient } from 'expo-linear-gradient';
+import { router, useLocalSearchParams } from 'expo-router';
+import { useEffect, useRef, useState } from 'react';
 import {
 	Image,
 	Linking,
@@ -22,19 +22,19 @@ import {
 	Text,
 	TouchableOpacity,
 	View,
-} from "react-native";
+} from 'react-native';
 
 export default function ResultScreen() {
 	const params = useLocalSearchParams();
 
 	/* ---------------- SAFE PARAM EXTRACTION ---------------- */
-	const question = typeof params.question === "string" ? params.question : "";
+	const question = typeof params.question === 'string' ? params.question : '';
 
 	const rawResponse =
-		typeof params.response === "string" ? params.response : "";
+		typeof params.response === 'string' ? params.response : '';
 
 	const productCode =
-		typeof params.productCode === "string" ? params.productCode : null;
+		typeof params.productCode === 'string' ? params.productCode : null;
 
 	/* ---------------- PARSE ANSWERS ---------------- */
 	let parsedAnswers: string[] = [];
@@ -44,8 +44,8 @@ export default function ResultScreen() {
 		parsedAnswers = Array.isArray(parsed)
 			? parsed
 			: rawResponse
-				? [rawResponse]
-				: [];
+			? [rawResponse]
+			: [];
 	} catch {
 		parsedAnswers = rawResponse ? [rawResponse] : [];
 	}
@@ -74,7 +74,9 @@ export default function ResultScreen() {
 			const stored = await getSearchHistory();
 
 			// remove current question from modal list
-			const filtered = stored.filter((item) => item.question !== question);
+			const filtered = stored.filter(
+				(item) => item.question !== question,
+			);
 
 			setHistory(filtered);
 		};
@@ -138,21 +140,25 @@ export default function ResultScreen() {
 					>
 						<Text style={styles.productTitle}>{product.title}</Text>
 
-						<Text style={styles.productDesc}>{product.subTitle}</Text>
+						<Text style={styles.productDesc}>
+							{product.subTitle}
+						</Text>
 
 						<View style={styles.buttonRow}>
 							<TouchableOpacity
 								style={styles.outlineBtn}
 								onPress={() =>
 									router.push({
-										pathname: "/InfoScreen",
+										pathname: '/InfoScreen',
 										params: {
 											name: productCode,
 										},
 									})
 								}
 							>
-								<Text style={styles.outlineText}>View page</Text>
+								<Text style={styles.outlineText}>
+									View page
+								</Text>
 							</TouchableOpacity>
 						</View>
 					</LinearGradient>
@@ -161,17 +167,23 @@ export default function ResultScreen() {
 				{/* SUPPORT */}
 				<View style={styles.supportBox}>
 					<Text style={styles.supportText}>
-						Please reach out to us at{" "}
+						Please reach out to us at{' '}
 						<Text
 							style={styles.supportLink}
-							onPress={() => Linking.openURL("mailto:productsupport@hpcl.in")}
+							onPress={() =>
+								Linking.openURL('mailto:productsupport@hpcl.in')
+							}
 						>
 							productsupport@hpcl.in
-						</Text>{" "}
-						and our team will be happy to assist you with the necessary details
+						</Text>{' '}
+						and our team will be happy to assist you with the
+						necessary details
 					</Text>
 
-					<Image source={ALL_IMAGES.HAPPINESS_ICON} style={styles.happiness} />
+					<Image
+						source={ALL_IMAGES.HAPPINESS_ICON}
+						style={styles.happiness}
+					/>
 				</View>
 			</ScrollComponent>
 
@@ -180,9 +192,13 @@ export default function ResultScreen() {
 				<View style={styles.modalOverlay}>
 					<View style={styles.modalBox}>
 						<View style={styles.modalHeader}>
-							<Text style={styles.modalTitle}>Previous Searches</Text>
+							<Text style={styles.modalTitle}>
+								Previous Searches
+							</Text>
 
-							<TouchableOpacity onPress={() => setHistoryVisible(false)}>
+							<TouchableOpacity
+								onPress={() => setHistoryVisible(false)}
+							>
 								<Text style={styles.closeBtn}>Close</Text>
 							</TouchableOpacity>
 						</View>
@@ -191,7 +207,7 @@ export default function ResultScreen() {
 							{history.length === 0 ? (
 								<Text
 									style={{
-										textAlign: "center",
+										textAlign: 'center',
 									}}
 								>
 									No history available
@@ -205,19 +221,26 @@ export default function ResultScreen() {
 											setHistoryVisible(false);
 
 											router.replace({
-												pathname: "/(tabs)/result",
+												pathname: '/(tabs)/result',
 												params: {
 													question: item.question,
-													response: JSON.stringify(item.answers),
-													productCode: item.productCode ?? "",
+													response: JSON.stringify(
+														item.answers,
+													),
+													productCode:
+														item.productCode ?? '',
 												},
 											});
 										}}
 									>
-										<Text style={styles.historyQuestion}>{item.question}</Text>
+										<Text style={styles.historyQuestion}>
+											{item.question}
+										</Text>
 
 										<Text style={styles.historyTime}>
-											{new Date(item.createdAt).toLocaleString()}
+											{new Date(
+												item.createdAt,
+											).toLocaleString()}
 										</Text>
 									</TouchableOpacity>
 								))
@@ -234,46 +257,46 @@ export default function ResultScreen() {
 
 const styles = StyleSheet.create({
 	container: {
-		backgroundColor: "#eee",
+		backgroundColor: '#eee',
 		flex: 1,
 	},
 	divider: {
 		borderBottomWidth: 1,
-		borderBottomColor: "#ccc",
+		borderBottomColor: '#ccc',
 		marginVertical: 10,
 		marginHorizontal: 20,
 	},
 	topRow: {
-		flexDirection: "row",
-		justifyContent: "space-between",
-		alignItems: "center",
+		flexDirection: 'row',
+		justifyContent: 'space-between',
+		alignItems: 'center',
 		marginBottom: 10,
 	},
 	sectionTitle: {
 		fontSize: 18,
-		fontWeight: "700",
+		fontWeight: '700',
 	},
 	historyBtn: {
 		color: Colors.blueLight,
-		fontWeight: "600",
+		fontWeight: '600',
 	},
 	questionView: {
 		backgroundColor: Colors.gray,
 		borderRadius: 20,
-		alignSelf: "flex-end",
+		alignSelf: 'flex-end',
 		marginVertical: 10,
 		padding: 15,
 	},
 	question: {
 		fontSize: 18,
-		fontWeight: "700",
-		textAlign: "right",
+		fontWeight: '700',
+		textAlign: 'right',
 		color: Colors.blueDark,
 	},
 	text: {
 		fontSize: 16,
 		lineHeight: 24,
-		textAlign: "justify",
+		textAlign: 'justify',
 	},
 	productCard: {
 		marginTop: 20,
@@ -282,86 +305,86 @@ const styles = StyleSheet.create({
 	},
 	productTitle: {
 		fontSize: 18,
-		fontWeight: "700",
-		color: "#fff",
+		fontWeight: '700',
+		color: '#fff',
 	},
 	productDesc: {
 		marginTop: 6,
 		fontSize: 14,
-		color: "#E5E7EB",
+		color: '#E5E7EB',
 	},
 	buttonRow: {
-		flexDirection: "row",
+		flexDirection: 'row',
 		marginTop: 14,
 	},
 	outlineBtn: {
 		borderWidth: 1,
-		borderColor: "#fff",
+		borderColor: '#fff',
 		borderRadius: 8,
 		paddingVertical: 8,
 		paddingHorizontal: 12,
 	},
 	outlineText: {
-		color: "#fff",
+		color: '#fff',
 		fontSize: 13,
-		fontWeight: "600",
+		fontWeight: '600',
 	},
 	supportBox: {
 		marginTop: 30,
-		alignItems: "center",
+		alignItems: 'center',
 	},
 	supportText: {
-		textAlign: "justify",
+		textAlign: 'justify',
 		fontSize: 16,
 	},
 	supportLink: {
 		color: Colors.blueLight,
-		textDecorationLine: "underline",
+		textDecorationLine: 'underline',
 	},
 	happiness: {
 		height: 100,
 		width: 130,
-		resizeMode: "contain",
+		resizeMode: 'contain',
 		marginTop: 20,
-		alignSelf: "flex-end",
+		alignSelf: 'flex-end',
 	},
 	modalOverlay: {
 		flex: 1,
-		backgroundColor: "rgba(0,0,0,0.4)",
-		justifyContent: "center",
+		backgroundColor: 'rgba(0,0,0,0.4)',
+		justifyContent: 'center',
 	},
 	modalBox: {
-		backgroundColor: "#fff",
+		backgroundColor: '#fff',
 		marginHorizontal: 20,
 		borderRadius: 16,
 		padding: 20,
-		maxHeight: "70%",
+		maxHeight: '70%',
 	},
 	modalHeader: {
-		flexDirection: "row",
-		justifyContent: "space-between",
+		flexDirection: 'row',
+		justifyContent: 'space-between',
 		marginBottom: 15,
 	},
 	modalTitle: {
 		fontSize: 18,
-		fontWeight: "700",
+		fontWeight: '700',
 	},
 	closeBtn: {
-		color: "red",
-		fontWeight: "600",
+		color: 'red',
+		fontWeight: '600',
 	},
 	historyCard: {
-		backgroundColor: "#f9f9f9",
+		backgroundColor: '#f9f9f9',
 		padding: 12,
 		borderRadius: 8,
 		marginBottom: 10,
 	},
 	historyQuestion: {
-		fontWeight: "600",
+		fontWeight: '600',
 	},
 	historyTime: {
 		fontSize: 12,
-		color: "#777",
+		color: '#777',
 		marginTop: 4,
 	},
 });

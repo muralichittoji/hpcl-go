@@ -2,6 +2,7 @@ import { NetworkProvider } from "@/utils/NetworkProvider";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { Text, TextInput } from "react-native";
+import { CopilotProvider } from "react-native-copilot";
 import "react-native-reanimated";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
@@ -19,21 +20,23 @@ export const unstable_settings = {
 export default function RootLayout() {
 	return (
 		<SafeAreaProvider style={{ flex: 1 }}>
-			<NetworkProvider>
-				<Stack>
-					<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-					<Stack.Screen
-						name="modal"
-						options={{ presentation: "modal", title: "Modal" }}
-					/>
-					<Stack.Screen name="pdf-preview" options={{ headerShown: false }} />
-					<Stack.Screen
-						name="PdfViewerScreen"
-						options={{ headerShown: false }}
-					/>
-				</Stack>
-				<StatusBar style="light" />
-			</NetworkProvider>
+			<CopilotProvider>
+				<NetworkProvider>
+					<Stack>
+						<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+						<Stack.Screen
+							name="modal"
+							options={{ presentation: "modal", title: "Modal" }}
+						/>
+						<Stack.Screen name="pdf-preview" options={{ headerShown: false }} />
+						<Stack.Screen
+							name="PdfViewerScreen"
+							options={{ headerShown: false }}
+						/>
+					</Stack>
+					<StatusBar style="light" />
+				</NetworkProvider>
+			</CopilotProvider>
 		</SafeAreaProvider>
 	);
 }

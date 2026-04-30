@@ -155,8 +155,8 @@ const UnifiedListMenu = ({
 				const navigatePlace = item?.navigation
 					? item.name
 					: showInfo
-						? item.data
-						: item;
+					? item.data
+					: item;
 
 				return (
 					<TouchableOpacity
@@ -235,8 +235,30 @@ const UnifiedListMenu = ({
 		</View>
 	);
 
+	// const normalizeData = (data: any) => {
+	// 	if (!Array.isArray(data)) return data;
+
+	// 	let current = data;
+
+	// 	// unwrap arrays with only one child that itself has children
+	// 	while (
+	// 		Array.isArray(current) &&
+	// 		current.length === 1 &&
+	// 		Array.isArray(current[0]?.data)
+	// 	) {
+	// 		current = current[0].data;
+	// 	}
+
+	// 	return current;
+	// };
+
 	const renderData = (data: any) => {
-		// CASE 1 → Final product (string)
+		// unwrap item object
+		if (data && typeof data === "object" && !Array.isArray(data) && data.data) {
+			data = data.data;
+		}
+
+		// CASE 1 → Final product
 		if (typeof data === "string") {
 			return (
 				<>
@@ -249,38 +271,50 @@ const UnifiedListMenu = ({
 					<ScrollView style={{ maxHeight: 300 }}>
 						<Text style={styles.modalDesc}>{getDesc(data)}</Text>
 					</ScrollView>
+
 					<TouchableOpacity
 						onPress={() => {
-							console.log("Pressed", data);
 							setModalVisible(false);
+
 							navigate(data);
 						}}
 					>
-						<Text>Navigate →</Text>
+						<Text style={styles.navigateBtn}>Navigate →</Text>
 					</TouchableOpacity>
 				</>
 			);
 		}
 
-		// CASE 2 → Array of items
+		// CASE 2 → List
 		if (Array.isArray(data)) {
 			return (
 				<View>
 					<Text style={styles.listHeader}>Number of Items: {data.length}</Text>
-					<ScrollView
-						style={{
-							maxHeight: 320,
-						}}
-					>
-						{data.map((item: any, index: number) => (
-							<Pressable
-								key={index}
-								style={styles.listItem}
-								onPress={() => setSelectedItem({ data: item.data })}
-							>
-								<Text style={styles.listText}>{item.name}</Text>
-							</Pressable>
-						))}
+
+					<ScrollView style={{ maxHeight: 320 }}>
+						{data.map((item: any, index: number) => {
+							const hasChildren = Array.isArray(item?.data);
+
+							return (
+								<Pressable
+									key={index}
+									style={styles.listItem}
+									onPress={() => setSelectedItem(item)}
+								>
+									<View style={{ flex: 1 }}>
+										<Text style={styles.listText}>{item.name}</Text>
+
+										{item.description && (
+											<Text style={styles.listDescription}>
+												{item.description}
+											</Text>
+										)}
+									</View>
+
+									{hasChildren && <Text style={styles.arrow}>›</Text>}
+								</Pressable>
+							);
+						})}
 					</ScrollView>
 				</View>
 			);
@@ -288,7 +322,6 @@ const UnifiedListMenu = ({
 
 		return null;
 	};
-
 	/* -------------------------------------------------------------------------- */
 	/*                                   Render                                   */
 	/* -------------------------------------------------------------------------- */
@@ -350,27 +383,70 @@ const styles = StyleSheet.create({
 		marginBottom: 10,
 	},
 
+	// listItem: {
+	// 	padding: 12,
+	// 	backgroundColor: "#f3f3f3",
+	// 	borderRadius: 8,
+	// 	marginVertical: 4,
+	// 	shadowOpacity: 0.1,
+	// 	shadowOffset: { width: 1, height: 1 },
+	// },
+
+	// listText: {
+	// 	fontSize: 16,
+	// 	fontWeight: "500",
+	// 	color: "#333",
+	// },
+	// listHeader: {
+	// 	fontSize: 16,
+	// 	fontWeight: "500",
+	// 	color: Colors.blueDark,
+	// 	marginVertical: 10,
+	// 	borderBottomColor: Colors.blueDark,
+	// 	borderBottomWidth: 1,
+	// },
+
+	navigateBtn: {
+		marginTop: 15,
+		fontSize: 15,
+		fontWeight: "600",
+		color: "#007AFF",
+	},
+
+	listHeader: {
+		fontSize: 16,
+		fontWeight: "600",
+		marginBottom: 10,
+	},
+
 	listItem: {
-		padding: 12,
-		backgroundColor: "#f3f3f3",
-		borderRadius: 8,
-		marginVertical: 4,
-		shadowOpacity: 0.1,
-		shadowOffset: { width: 1, height: 1 },
+		flexDirection: "row",
+		justifyContent: "space-between",
+		alignItems: "center",
+		paddingVertical: 14,
+		paddingHorizontal: 12,
+		borderBottomWidth: 1,
+		borderBottomColor: "#eee",
 	},
 
 	listText: {
-		fontSize: 16,
+		fontSize: 15,
 		fontWeight: "500",
-		color: "#333",
+		color: "#222",
 	},
-	listHeader: {
-		fontSize: 16,
-		fontWeight: "500",
-		color: Colors.blueDark,
-		marginVertical: 10,
-		borderBottomColor: Colors.blueDark,
-		borderBottomWidth: 1,
+
+	listDescription: {
+		fontSize: 12,
+		color: "#666",
+		marginTop: 4,
+		maxWidth: "90%",
+		lineHeight: 16,
+	},
+
+	arrow: {
+		fontSize: 20,
+		color: "#999",
+		fontWeight: "600",
 	},
 
 	modalSubTitle: {

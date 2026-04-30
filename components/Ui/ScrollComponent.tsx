@@ -1,5 +1,5 @@
-import React from "react";
-import { ScrollView, StyleSheet, View } from "react-native";
+import React from 'react';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
 type ScrollProps = {
 	children: React.ReactNode;
@@ -13,7 +13,7 @@ type ScrollProps = {
 const ScrollComponent = ({
 	children,
 	bottom = 60,
-	bg = "#EEE",
+	bg = '#EEE',
 	verticalSroll = false,
 	horizontalScroll = false,
 	padding = 0,

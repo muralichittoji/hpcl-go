@@ -47,7 +47,7 @@ const HomeScreen = () => {
 			default:
 				router.push({
 					pathname: '/SubPage',
-					params: { title: itemName.name },
+					params: { item: JSON.stringify(itemName) },
 				});
 				break;
 		}

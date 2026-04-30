@@ -1,13 +1,13 @@
-import { Colors } from "@/constants/theme";
-import { getAnswer } from "@/utils/authService";
-import { useNetwork } from "@/utils/NetworkProvider";
-import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
-import React, { useState } from "react";
-import { Dimensions, StyleSheet, TextInput, View } from "react-native";
-import CameraScreen from "./Camera";
+import { Colors } from '@/constants/theme';
+import { getAnswer } from '@/utils/authService';
+import { useNetwork } from '@/utils/NetworkProvider';
+import { Ionicons } from '@expo/vector-icons';
+import { router } from 'expo-router';
+import React, { useState } from 'react';
+import { Dimensions, StyleSheet, TextInput, View } from 'react-native';
+import CameraScreen from './Camera';
 
-const { width } = Dimensions.get("window");
+const { width } = Dimensions.get('window');
 
 type SearchProps = {
 	setLoading: React.Dispatch<React.SetStateAction<boolean>>;
@@ -18,10 +18,12 @@ type SearchProps = {
 const InputSearch = ({
 	setLoading,
 	setSlowNet,
-	placeHolder = "Search Products",
+
+	placeHolder = 'Search Products',
 }: SearchProps) => {
-	const [search, setSearch] = useState("");
+	const [search, setSearch] = useState('');
 	const { isOnline } = useNetwork();
+	const [lowNetwork, setLowNetwork] = useState<boolean>(false);
 
 	const findScreen = () => {
 		if (!search?.trim()) return;
@@ -36,50 +38,89 @@ const InputSearch = ({
 		// });
 	};
 
+	const safeParse = (text: string) => {
+		try {
+			const first = JSON.parse(text);
+
+			// Handle double-encoded JSON (very common with Azure)
+			if (typeof first === 'string') {
+				try {
+					return JSON.parse(first);
+				} catch {
+					return { response: first };
+				}
+			}
+
+			return first;
+		} catch {
+			// Fallback → treat as plain text
+			return { response: text };
+		}
+	};
+
 	const getSearch = async (question: string) => {
 		let timeoutId: any;
 
 		try {
 			setLoading(true);
 
+			// 🚫 Offline handling
 			if (!isOnline) {
+				setLowNetwork(true);
 				setSlowNet(true);
 				return;
 			}
 
-			// ⭐ manual slow-network guard (10s)
+			// ⏱️ Slow network guard (90s)
 			timeoutId = setTimeout(() => {
 				setLoading(false);
+				setLowNetwork(true);
 				setSlowNet(true);
-			}, 30000);
+			}, 90000);
 
 			const res = await getAnswer({ question });
+
 			clearTimeout(timeoutId);
-			console.log("Raw API response:", res);
+
+			console.log('Raw API response:', res);
+
 			const rawAnswer = res?.results?.[0]?.answer;
 
+			// ❌ No response
 			if (!rawAnswer) {
 				setSlowNet(true);
+				setLowNetwork(true);
 				return;
 			}
 
-			if (res) {
-				setSlowNet(false);
-			}
+			// ✅ Network OK
+			setLowNetwork(false);
+			setSlowNet(false);
 
-			const parsed = JSON.parse(rawAnswer);
+			// 🔥 SAFE PARSE (core fix)
+			const parsed = safeParse(rawAnswer);
 
+			// 🧠 Always ensure response exists
+			const finalResponse =
+				parsed?.response ?? rawAnswer ?? 'No response available';
+
+			const productCode = parsed?.app_product_code ?? 'na';
+
+			// 🚀 Navigate safely
 			router.push({
-				pathname: "/(tabs)/result",
+				pathname: '/(tabs)/result',
 				params: {
-					response: parsed.response,
-					productCode: parsed.app_product_code ?? "na",
+					response: finalResponse,
+					productCode,
 					question,
+					lowNetwork: 'false', // avoid stale state issue
 				},
 			});
 		} catch (e) {
-			console.log(e);
+			console.log('Search Error:', e);
+
 			setSlowNet(true);
+			setLowNetwork(true);
 		} finally {
 			setLoading(false);
 			clearTimeout(timeoutId);
@@ -109,26 +150,26 @@ export default InputSearch;
 
 const styles = StyleSheet.create({
 	searchInputContainer: {
-		width: "95%",
-		maxWidth: "95%",
+		width: '95%',
+		maxWidth: '95%',
 		height: 50,
-		flexDirection: "row",
-		justifyContent: "space-around",
-		alignItems: "center",
-		backgroundColor: "#e6e6e6",
+		flexDirection: 'row',
+		justifyContent: 'space-around',
+		alignItems: 'center',
+		backgroundColor: '#e6e6e6',
 		borderRadius: 15,
 		marginVertical: 20,
 		marginHorizontal: 10,
 		paddingHorizontal: 10,
-		shadowColor: "#000",
+		shadowColor: '#000',
 		shadowOpacity: 0.3,
 		shadowRadius: 2,
 		shadowOffset: { width: 2, height: 2 },
 		elevation: 4,
 	},
 	inputWrapper: {
-		flexDirection: "row",
-		alignItems: "center",
+		flexDirection: 'row',
+		alignItems: 'center',
 		width: width / 1.27,
 	},
 	searchInput: {

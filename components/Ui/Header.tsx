@@ -1,7 +1,7 @@
 // Centralized image registry
-import { ALL_IMAGES } from "@/hooks/Allimages";
+import { ALL_IMAGES } from '@/hooks/Allimages';
 
-import React from "react";
+import React from 'react';
 import {
 	Dimensions,
 	Image,
@@ -9,13 +9,13 @@ import {
 	Text,
 	View,
 	ViewStyle,
-} from "react-native";
+} from 'react-native';
 
 // Theme colors
-import { Colors } from "../../constants/theme";
+import { Colors } from '../../constants/theme';
 
 // Screen width for responsive sizing
-const { width } = Dimensions.get("window");
+const { width } = Dimensions.get('window');
 
 /* -------------------------------------------------------------------------- */
 /*                                   Header                                   */
@@ -34,18 +34,18 @@ const Header = ({
 	/* ---------------------------------------------------------------------- */
 	const getStyle = (): ViewStyle => ({
 		// Taller header for Login screen
-		minHeight: screen === "Login" ? 180 : 120,
+		minHeight: screen === 'Login' ? 180 : 120,
 
 		// Percentage height allows responsiveness
-		height: "15%",
+		height: '15%',
 
-		display: "flex",
+		display: 'flex',
 
 		// Login screen stacks vertically, others are horizontal
-		flexDirection: screen ? "column" : "row",
+		flexDirection: screen ? 'column' : 'row',
 
-		justifyContent: screen ? "center" : "flex-start",
-		alignItems: "center",
+		justifyContent: screen ? 'center' : 'flex-start',
+		alignItems: 'center',
 
 		gap: 5,
 		padding: 10,
@@ -60,7 +60,7 @@ const Header = ({
 	/* ---------------------------------------------------------------------- */
 	const getHeader = () => {
 		switch (screen) {
-			case "Login":
+			case 'Login':
 				// Large centered logo for login screen
 				return (
 					<View style={styles.container}>
@@ -81,7 +81,7 @@ const Header = ({
 				// Compact logo for internal screens
 				return (
 					<Image
-						style={{ width: "25%", height: 150 }}
+						style={{ width: '25%', height: 150 }}
 						source={ALL_IMAGES.MASTER_LOGO}
 						resizeMode="contain"
 					/>
@@ -98,7 +98,7 @@ const Header = ({
 			{getHeader()}
 
 			{/* Title & subtitle */}
-			<View style={{ width: "70%" }}>
+			<View style={{ width: '70%' }}>
 				{caption && (
 					<Text
 						numberOfLines={2}
@@ -110,7 +110,9 @@ const Header = ({
 					</Text>
 				)}
 
-				{subCaption && <Text style={styles.subTitle}>{subCaption}</Text>}
+				{subCaption && (
+					<Text style={styles.subTitle}>{subCaption}</Text>
+				)}
 			</View>
 
 			{/* Bottom divider */}
@@ -127,22 +129,22 @@ export default Header;
 const styles = StyleSheet.create({
 	// Login header container
 	container: {
-		flexDirection: "row",
-		alignItems: "center",
+		flexDirection: 'row',
+		alignItems: 'center',
 		padding: 5,
 		marginTop: 30,
 	},
 
 	// Large logo for login screen
 	mainLogo: {
-		width: "100%",
+		width: '100%',
 		height: 210,
 		marginRight: 5,
 	},
 
 	// (Unused currently) Smaller logo style
 	headImage: {
-		width: "25%",
+		width: '25%',
 		height: 200,
 		marginRight: 5,
 	},
@@ -151,7 +153,7 @@ const styles = StyleSheet.create({
 	content: {
 		color: Colors.blueDark,
 		fontSize: 30,
-		fontWeight: "700",
+		fontWeight: '700',
 	},
 
 	// Subtitle text
@@ -164,12 +166,12 @@ const styles = StyleSheet.create({
 	headText: {
 		color: Colors.blueDeep,
 		fontSize: 15,
-		fontWeight: "700",
+		fontWeight: '700',
 	},
 
 	// Bottom divider line
 	divider: {
 		height: 1,
-		backgroundColor: "#000",
+		backgroundColor: '#000',
 	},
 });

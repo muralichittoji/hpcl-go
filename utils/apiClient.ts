@@ -1,12 +1,12 @@
-import axios from "axios";
-import { router } from "expo-router";
-import { getToken, removeToken } from "./authStorage";
+import axios from 'axios';
+import { router } from 'expo-router';
+import { getToken, removeToken } from './authStorage';
 
 const api = axios.create({
-	baseURL: "https://gpt.hpcl.co.in/backend/hpcl-vigilance",
-	timeout: 30000,
+	baseURL: 'https://gpt.hpcl.co.in/backend/hpcl-vigilance',
+	timeout: 90000,
 	headers: {
-		"Content-Type": "application/json",
+		'Content-Type': 'application/json',
 	},
 });
 
@@ -40,7 +40,7 @@ api.interceptors.response.use(
 			await removeToken();
 
 			// ✅ Use correct Expo Router path here
-			router.replace("/(auth)/login" as any);
+			router.replace('/(auth)/login' as any);
 		}
 
 		return Promise.reject(error);
