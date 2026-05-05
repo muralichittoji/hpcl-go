@@ -149,13 +149,13 @@ const UnifiedListMenu = ({
 				const png = item.iconType === "image";
 
 				// Label text
-				const label = useItemName ? item.name : item.name;
+				const label = useItemName ? item.label : item.label;
 
 				// Decide navigation payload
 				const navigatePlace = item?.navigation
-					? item.name
+					? item.label
 					: showInfo
-					? item.data
+					? item.value
 					: item;
 
 				return (
@@ -244,9 +244,9 @@ const UnifiedListMenu = ({
 	// 	while (
 	// 		Array.isArray(current) &&
 	// 		current.length === 1 &&
-	// 		Array.isArray(current[0]?.data)
+	// 		Array.isArray(current[0]?.value)
 	// 	) {
-	// 		current = current[0].data;
+	// 		current = current[0].value;
 	// 	}
 
 	// 	return current;
@@ -254,8 +254,13 @@ const UnifiedListMenu = ({
 
 	const renderData = (data: any) => {
 		// unwrap item object
-		if (data && typeof data === "object" && !Array.isArray(data) && data.data) {
-			data = data.data;
+		if (
+			data &&
+			typeof data === "object" &&
+			!Array.isArray(data) &&
+			data.value
+		) {
+			data = data.value;
 		}
 
 		// CASE 1 → Final product
@@ -293,7 +298,7 @@ const UnifiedListMenu = ({
 
 					<ScrollView style={{ maxHeight: 320 }}>
 						{data.map((item: any, index: number) => {
-							const hasChildren = Array.isArray(item?.data);
+							const hasChildren = Array.isArray(item?.value);
 
 							return (
 								<Pressable
@@ -302,7 +307,7 @@ const UnifiedListMenu = ({
 									onPress={() => setSelectedItem(item)}
 								>
 									<View style={{ flex: 1 }}>
-										<Text style={styles.listText}>{item.name}</Text>
+										<Text style={styles.listText}>{item.label}</Text>
 
 										{item.description && (
 											<Text style={styles.listDescription}>
@@ -352,7 +357,7 @@ const UnifiedListMenu = ({
 				>
 					<View style={styles.modalOverlay}>
 						<View style={styles.modalContent}>
-							{renderData(selectedItem?.data)}
+							{renderData(selectedItem?.value)}
 
 							<Pressable
 								style={styles.closeBtn}

@@ -390,13 +390,13 @@
 	"HPCL-MS-0005": {
 		"id": 5,
 		"MSDS": "ATF_PDF",
-		"title": "ATF (Jet A-1) (Aviation Turbine Fuel Jet A-1)",
+		"title": "ATF (Jet A-1) (Aviation Turbine Oil Jet A-1)",
 		"subTitle": "AVIATION FUEL",
 		"description": "Aviation Turbine Fuel is a colorless, combustible, straight-run petroleum distillate, kerosene-based fuel. Kerosene makes up the majority of Jet A-1, with trace amounts of additives.",
 		"specifications": [
 			{
 				"property": "Product Name",
-				"value": "ATF (Jet A-1) (Aviation Turbine Fuel Jet A-1)"
+				"value": "ATF (Jet A-1) (Aviation Turbine Oil Jet A-1)"
 			},
 			{ "property": "Appearance", "value": "Visual, B& C" },
 			{ "property": "Colour (Saybolt)", "value": "Report" },
@@ -547,7 +547,7 @@
 	"HPCL-MS-0007": {
 		"id": 400,
 		"MSDS": "",
-		"title": "EBMS",
+		"title": "ETHANOL BLENDED MOTOR SPIRIT",
 		"subTitle": "MOTOR FUEL",
 		"description": "Motor Spirit (also known as Motor Gasoline) is a distillate fraction, normally boiling within the range 30°C to 210°C. It is a complex mixture composed of relatively volatile hydrocarbons (alkanes, alkenes and aromatics with typical carbon chain length of C5 to C10) that vary widely in their physical and chemical properties.",
 
@@ -2591,7 +2591,7 @@
 				"value": "IS 4576"
 			}
 		],
-		"appData": "Cooking fuel (domestic & commercial)    Industrial heating, drying & processing            Metal cutting & brazing                                              Fuel for LPG-based gensets, vaporizers & furnaces",
+		"appData": "Cooking fuel (domestic & commercial) Industrial heating, drying & processing Metal cutting & brazing Fuel for LPG-based gensets, vaporizers & furnaces",
 		"packaging": [
 			"Cylinders:",
 			"2 kg",
@@ -2607,11 +2607,9 @@
 			"Bulk LPG through tankers & storage vessels"
 		],
 		"SBU": "LPG",
-		"industrial": "Domestic households                       Hotels & restaurants                           Small & large industries    Commercial kitchens               Construction & fabrication units etc",
+		"industrial": "Domestic households Hotels & restaurants Small & large industries Commercial kitchens Construction & fabrication units etc",
 		"documentation": "Yes, attached",
-		"alternatives": [
-			"IOCL Indane LPG                                   BPCL Bharatgas                                    T"
-		],
+		"alternatives": ["IOCL Indane LPG BPCL Bharatgas T"],
 		"related": ["HP RAZOR, HP FLAME PLUS , HP DOLPHIN,HP POWERLIFT"]
 	},
 	"HPCL-LPG-0004": {
@@ -2801,12 +2799,7 @@
 
 		"appData": "Used in commercial cylinders for oxy-fuel metal cutting, scrap cutting, steel plate cutting, rail track cutting and fabrication cutting jobs.",
 
-		"packaging": [
-			"Cylinder 19 kg",
-			"Cylinder 35 kg",
-			"Cylinder 47.5 kg",
-			"Cylinder 425 kg"
-		],
+		"packaging": ["Cylinder 19 kg", "35 kg", "47.5 kg", "425 kg"],
 
 		"SBU": "LPG",
 		"industrial": "Metal Cutting Gas",

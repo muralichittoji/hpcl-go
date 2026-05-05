@@ -8,26 +8,109 @@
 			"screen": "FuelsHome",
 			"title": "Motor \n Fuels",
 			"value": [
-				{ "id": 1, "label": "E20 MS", "value": "HPCL-MS-0001" },
+				{
+					"id": 1,
+					"label": "MOTOR SPIRIT",
+					"value": ""
+				},
 				{
 					"id": 2,
-					"label": "High Speed Diesel",
+					"label": "HIGH SPEED DIESEL",
 					"value": "HPCL-MS-0002"
 				},
-				{ "id": 3, "label": "Ethanol", "value": "HPCL-MS-0003" },
-				{ "id": 4, "label": "Domestic Fuel", "value": "HPCL-MS-0004" },
-				{ "id": 5, "label": "Aviation Fuel", "value": "HPCL-MS-0005" },
-				{ "id": 6, "label": "EBMS", "value": "HPCL-MS-0007" },
-				{ "id": 7, "label": "POWER95", "value": "HPCL-MS-0008" },
 				{
-					"id": 9,
-					"label": "Special Motor Fuel",
+					"id": 3,
+					"label": "ETHANOL BLENDED MOTOR SPIRIT",
+					"value": "HPCL-MS-0007"
+				},
+				{
+					"id": 6,
+					"label": "HP TURBOJET",
+					"value": "HPCL-MS-0006"
+				},
+				{ "id": 4, "label": "POWER95", "value": "HPCL-MS-0008" },
+				{
+					"id": 7,
+					"label": "COMPRESSED NATURAL GAS",
+					"value": ""
+				},
+				{ "id": 5, "label": "POWER100", "value": "HPCL-MS-0009" },
+				{
+					"id": 8,
+					"label": "AUTO LPG",
+					"value": ""
+				}
+			]
+		},
+
+		{
+			"id": 3,
+			"iconType": "image",
+			"icon": "CYLINDER_ICON",
+			"label": "LPG",
+			"screen": "LpgScreen",
+			"value": [
+				{ "id": 1, "label": "LPG Domestic", "value": "HPCL-LPG-0003" },
+				{
+					"id": 2,
+					"label": "LPG Industrial",
 					"value": [
-						{ "id": 8, "label": "POWER100", "value": "HPCL-MS-0009" },
 						{
-							"id": 1,
-							"label": "HP TURBOJET",
-							"value": "HPCL-MS-0006"
+							"label": "HP Gas Razor",
+							"value": "HPCL-LPG-0006"
+						},
+						{
+							"label": "HP Gas Flame Plus",
+							"value": "HPCL-LPG-0004"
+						},
+						{
+							"id": 5,
+							"label": "HP Gas Dolfin",
+							"value": ""
+						},
+						{ "label": "Butane ", "value": "HPCL-LPG-0001" },
+						{ "label": "Propane", "value": "HPCL-LPG-0002" }
+					]
+				}
+			]
+		},
+
+		{
+			"id": 5,
+			"label": "Aviation Fuel",
+			"iconType": "image",
+			"icon": "WATER_ICON",
+			"value": [
+				{ "id": 1, "label": "Aviation Turbine OIL", "value": "HPCL-MS-0005" },
+				{ "id": 2, "label": "Substainable Aviation Fuel (SAF)", "value": "" }
+			]
+		},
+		{
+			"id": 5,
+			"label": "Natural Gas",
+			"iconType": "image",
+			"icon": "CYLINDER_ICON",
+			"value": [
+				{
+					"id": 1,
+					"label": "Liquified Natural Gas",
+					"value": ""
+				},
+				{
+					"id": 2,
+					"label": "Piped Natural Gas",
+					"value": [
+						{
+							"label": "Domestic",
+							"value": ""
+						},
+						{
+							"label": "Industrial",
+							"value": ""
+						},
+						{
+							"label": "Commercial",
+							"value": ""
 						}
 					]
 				}
@@ -44,6 +127,10 @@
 				{
 					"label": "Automotive Oils",
 					"value": [
+						{
+							"label": "Premium (FuturX)",
+							"value": ""
+						},
 						{
 							"label": "Agriculture Oils",
 							"value": [
@@ -97,7 +184,7 @@
 							]
 						},
 						{
-							"label": "CONSTRUCTION & EARTH MOVING EQUIPMENT",
+							"label": "Construction & Earth Moving Equipment",
 							"value": [
 								{
 									"label": "Power Train Oil",
@@ -272,11 +359,11 @@
 							"label": "Natural Gas And CNG Engine Oils",
 							"value": [
 								{
-									"label": "HP NATURAL GAS ENGINE OIL L",
+									"label": "HP Natural Gas ENGINE OIL L",
 									"value": "HPCL-LBS-0285"
 								},
 								{
-									"label": "HP NATURAL GAS ENGINE OIL M",
+									"label": "HP Natural Gas ENGINE OIL M",
 									"value": "HPCL-LBS-0404"
 								},
 								{
@@ -290,7 +377,7 @@
 							]
 						},
 						{
-							"label": "Outboatd Marine Oils",
+							"label": "Outbound Marine Oils",
 							"value": [
 								{
 									"label": "HP MARIGEN 4015 & 3015",
@@ -311,7 +398,7 @@
 							]
 						},
 						{
-							"label": "Passaenger Car Motor Oil",
+							"label": "Passenger Car Motor Oil",
 							"value": [
 								{
 									"label": "HP CRUISE PREMIUM S",
@@ -351,7 +438,7 @@
 							"label": "Three Wheeler Engine Oils",
 							"value": [
 								{
-									"label": "HP GASENOL",
+									"label": "HP GasENOL",
 									"value": "HPCL-LBS-0424"
 								},
 								{
@@ -432,7 +519,7 @@
 					"label": "Industrial Oil",
 					"value": [
 						{
-							"label": "COMPRESSOR OILS",
+							"label": "Compressor Oils",
 							"value": [
 								{
 									"label": "HYCOM 150 P",
@@ -759,364 +846,380 @@
 					"label": "Specialties",
 					"value": [
 						{
-							"label": "Metal Drawing Compounds",
+							"label": "Automotive",
 							"value": [
+								{ "label": "BRAKE FLUID", "value": "" },
 								{
-									"label": "HP DRAWMET 15, 15S",
-									"value": "HPCL-LBS-0072"
+									"label": "FRONT FORK OIL & SHOCK ABSORBER OIL",
+									"value": "HPCL-LBS-0300"
 								},
-								{
-									"label": "HP DRAWMET 22",
-									"value": "HPCL-LBS-0073"
-								},
-								{
-									"label": "HP DRAWMET 44",
-									"value": "HPCL-LBS-0074"
-								},
-								{
-									"label": "HP DRAWMET 66",
-									"value": "HPCL-LBS-0075"
-								},
-								{
-									"label": "HP DRAWMET 81 CF",
-									"value": "HPCL-LBS-0076"
-								}
+								{ "label": "COOLANTS", "value": "" }
 							]
 						},
 						{
-							"label": "PREMIUM SEMI SYNTHETIC METAL CUTTING FLUIDS",
+							"label": "Industrial",
 							"value": [
 								{
-									"label": "HP SYNTHKOOL 24121",
-									"value": "HPCL-LBS-0333"
+									"label": "Metal Drawing Compounds",
+									"value": [
+										{
+											"label": "HP DRAWMET 15, 15S",
+											"value": "HPCL-LBS-0072"
+										},
+										{
+											"label": "HP DRAWMET 22",
+											"value": "HPCL-LBS-0073"
+										},
+										{
+											"label": "HP DRAWMET 44",
+											"value": "HPCL-LBS-0074"
+										},
+										{
+											"label": "HP DRAWMET 66",
+											"value": "HPCL-LBS-0075"
+										},
+										{
+											"label": "HP DRAWMET 81 CF",
+											"value": "HPCL-LBS-0076"
+										}
+									]
 								},
 								{
-									"label": "HP SYNTHKOOL 10000",
-									"value": "HPCL-LBS-033"
+									"label": "Premium Semi Synthetic Metal Cutting Fluids",
+									"value": [
+										{
+											"label": "HP SYNTHKOOL 24121",
+											"value": "HPCL-LBS-0333"
+										},
+										{
+											"label": "HP SYNTHKOOL 10000",
+											"value": "HPCL-LBS-033"
+										},
+										{
+											"label": "HP SYNTHKOOL 10001",
+											"value": "HPCL-LBS-0332"
+										}
+									]
 								},
 								{
-									"label": "HP SYNTHKOOL 10001",
-									"value": "HPCL-LBS-0332"
-								}
-							]
-						},
-						{
-							"label": "Metal Working Fluid- Water Soluble",
-							"value": [
-								{
-									"label": "HP KOOLKUT 40",
-									"value": "HPCL-LBS-0077"
+									"label": "Metal Working Fluid- Water Soluble",
+									"value": [
+										{
+											"label": "HP KOOLKUT 40",
+											"value": "HPCL-LBS-0077"
+										},
+										{
+											"label": "HP KOOLKUT 40 M",
+											"value": "HPCL-LBS-0078"
+										},
+										{
+											"label": "HP KOOLKUT 60",
+											"value": "HPCL-LBS-0079"
+										},
+										{
+											"label": "HP KOOLKUT 70",
+											"value": "HPCL-LBS-0080"
+										},
+										{
+											"label": "HP KOOLKUT 80",
+											"value": "HPCL-LBS-0081"
+										},
+										{
+											"label": "HP KOOLKUT EP 66",
+											"value": "HPCL-LBS-0082"
+										},
+										{
+											"label": "HP KOOLKUT EP 67",
+											"value": "HPCL-LBS-0083"
+										},
+										{
+											"label": "HP KOOLKUT EP 68",
+											"value": "HPCL-LBS-0084"
+										},
+										{
+											"label": "HP KOOLKUT EP 681",
+											"value": "HPCL-LBS-0085"
+										},
+										{
+											"label": "KOOLKUT 40 MS",
+											"value": "HPCL-LBS-0104"
+										},
+										{
+											"label": "KOOLKUT EP 68",
+											"value": "HPCL-LBS-0105"
+										}
+									]
 								},
 								{
-									"label": "HP KOOLKUT 40 M",
-									"value": "HPCL-LBS-0078"
-								},
-								{
-									"label": "HP KOOLKUT 60",
-									"value": "HPCL-LBS-0079"
-								},
-								{
-									"label": "HP KOOLKUT 70",
-									"value": "HPCL-LBS-0080"
-								},
-								{
-									"label": "HP KOOLKUT 80",
-									"value": "HPCL-LBS-0081"
-								},
-								{
-									"label": "HP KOOLKUT EP 66",
-									"value": "HPCL-LBS-0082"
-								},
-								{
-									"label": "HP KOOLKUT EP 67",
-									"value": "HPCL-LBS-0083"
-								},
-								{
-									"label": "HP KOOLKUT EP 68",
-									"value": "HPCL-LBS-0084"
-								},
-								{
-									"label": "HP KOOLKUT EP 681",
-									"value": "HPCL-LBS-0085"
-								},
-								{
-									"label": "KOOLKUT 40 MS",
-									"value": "HPCL-LBS-0104"
-								},
-								{
-									"label": "KOOLKUT EP 68",
-									"value": "HPCL-LBS-0105"
-								}
-							]
-						},
-						{
-							"label": "Metal Working Fluid- Neat",
-							"value": [
-								{
-									"label": "HP TRIMOFIN 12",
-									"value": "HPCL-LBS-0087"
-								},
-								{
-									"label": "HP TRIMOFIN 14, 15, 16, 18",
-									"value": "HPCL-LBS-0088"
-								},
-								{
-									"label": "HP TRIMOFIN 20",
-									"value": "HPCL-LBS-0089"
-								},
-								{
-									"label": "HP TRIMOFIN 21",
-									"value": "HPCL-LBS-0090"
-								},
-								{
-									"label": "HP TRIMOFIN 22",
-									"value": "HPCL-LBS-0091"
-								},
-								{
-									"label": "HP TRIMOFIN 23 DEF",
-									"value": "HPCL-LBS-0092"
-								},
-								{
-									"label": "HP TRIMOFIN 23, 25",
-									"value": "HPCL-LBS-0093"
-								},
-								{
-									"label": "HP TRIMOFIN 235",
-									"value": "HPCL-LBS-0094"
-								},
-								{
-									"label": "HP TRIMOFIN 26",
-									"value": "HPCL-LBS-0095"
-								},
-								{
-									"label": "HP TRIMOFIN 27",
-									"value": "HPCL-LBS-0096"
-								},
-								{
-									"label": "HP TRIMOFIN 54",
-									"value": "HPCL-LBS-0097"
-								},
-								{
-									"label": "HP TRIMOFIN 55",
-									"value": "HPCL-LBS-0098"
-								},
-								{
-									"label": "HP TRIMOFIN 56",
-									"value": "HPCL-LBS-0099"
-								},
-								{
-									"label": "HP TRIMOFIN 58",
-									"value": "HPCL-LBS-0100"
-								},
-								{
-									"label": "HP TRIMOFIN 58 BR",
-									"value": "HPCL-LBS-0101"
-								},
-								{
-									"label": "HP TRIMOFIN 595",
-									"value": "HPCL-LBS-0102"
-								},
-								{
-									"label": "HP TRIMOL 225",
-									"value": "HPCL-LBS-0103"
-								},
+									"label": "Metal Working Fluid- Neat",
+									"value": [
+										{
+											"label": "HP TRIMOFIN 12",
+											"value": "HPCL-LBS-0087"
+										},
+										{
+											"label": "HP TRIMOFIN 14, 15, 16, 18",
+											"value": "HPCL-LBS-0088"
+										},
+										{
+											"label": "HP TRIMOFIN 20",
+											"value": "HPCL-LBS-0089"
+										},
+										{
+											"label": "HP TRIMOFIN 21",
+											"value": "HPCL-LBS-0090"
+										},
+										{
+											"label": "HP TRIMOFIN 22",
+											"value": "HPCL-LBS-0091"
+										},
+										{
+											"label": "HP TRIMOFIN 23 DEF",
+											"value": "HPCL-LBS-0092"
+										},
+										{
+											"label": "HP TRIMOFIN 23, 25",
+											"value": "HPCL-LBS-0093"
+										},
+										{
+											"label": "HP TRIMOFIN 235",
+											"value": "HPCL-LBS-0094"
+										},
+										{
+											"label": "HP TRIMOFIN 26",
+											"value": "HPCL-LBS-0095"
+										},
+										{
+											"label": "HP TRIMOFIN 27",
+											"value": "HPCL-LBS-0096"
+										},
+										{
+											"label": "HP TRIMOFIN 54",
+											"value": "HPCL-LBS-0097"
+										},
+										{
+											"label": "HP TRIMOFIN 55",
+											"value": "HPCL-LBS-0098"
+										},
+										{
+											"label": "HP TRIMOFIN 56",
+											"value": "HPCL-LBS-0099"
+										},
+										{
+											"label": "HP TRIMOFIN 58",
+											"value": "HPCL-LBS-0100"
+										},
+										{
+											"label": "HP TRIMOFIN 58 BR",
+											"value": "HPCL-LBS-0101"
+										},
+										{
+											"label": "HP TRIMOFIN 595",
+											"value": "HPCL-LBS-0102"
+										},
+										{
+											"label": "HP TRIMOL 225",
+											"value": "HPCL-LBS-0103"
+										},
 
-								{
-									"label": "HP TRIMOFIN 19",
-									"value": "HPCL-LBS-0107"
+										{
+											"label": "HP TRIMOFIN 19",
+											"value": "HPCL-LBS-0107"
+										},
+										{
+											"label": "TRIMOFIN 64, 65 ,66",
+											"value": "HPCL-LBS-0108"
+										},
+										{
+											"label": "TRIMOFIN AL",
+											"value": "HPCL-LBS-0109"
+										},
+										{
+											"label": "TRIMOFIN GR",
+											"value": "HPCL-LBS-0110"
+										}
+									]
 								},
 								{
-									"label": "TRIMOFIN 64, 65 ,66",
-									"value": "HPCL-LBS-0108"
+									"label": "Mould Oils",
+									"value": [
+										{
+											"label": "CEMOL 35, N35",
+											"value": "HPCL-LBS-0111"
+										},
+										{
+											"label": "GLAMOL 40",
+											"value": "HPCL-LBS-0112"
+										}
+									]
 								},
 								{
-									"label": "TRIMOFIN AL",
-									"value": "HPCL-LBS-0109"
+									"label": "Quenching Oils",
+									"value": [
+										{
+											"label": "HP METAQUENCH 39,40",
+											"value": "HPCL-LBS-0113"
+										},
+										{
+											"label": "HP METAQUENCH 42",
+											"value": "HPCL-LBS-0114"
+										},
+										{
+											"label": "HP METAQUENCH 43",
+											"value": "HPCL-LBS-0115"
+										},
+										{
+											"label": "HP METAQUENCH 44",
+											"value": "HPCL-LBS-0116"
+										},
+										{
+											"label": "HP METAQUENCH 45",
+											"value": "HPCL-LBS-0117"
+										},
+										{
+											"label": "HP METAQUENCH 85",
+											"value": "HPCL-LBS-0118"
+										},
+										{
+											"label": "HP METAQUENCH 86",
+											"value": "HPCL-LBS-0119"
+										},
+										{
+											"label": "HP METAQUENCH 87",
+											"value": "HPCL-LBS-0120"
+										},
+										{
+											"label": "HP METAQUENCH 88",
+											"value": "HPCL-LBS-0121"
+										},
+										{
+											"label": "METAQUENCH 44H",
+											"value": "HPCL-LBS-0122"
+										}
+									]
 								},
 								{
-									"label": "TRIMOFIN GR",
-									"value": "HPCL-LBS-0110"
-								}
-							]
-						},
-						{
-							"label": "Mould Oils",
-							"value": [
-								{
-									"label": "CEMOL 35, N35",
-									"value": "HPCL-LBS-0111"
+									"label": "Rolling Oils",
+									"value": [
+										{
+											"label": "HP ROLMET 22 V 45 V 55",
+											"value": "HPCL-LBS-0123"
+										},
+										{
+											"label": "HP ROLMET 40",
+											"value": "HPCL-LBS-0124"
+										},
+										{
+											"label": "HP ROLMET 7",
+											"value": "HPCL-LBS-0125"
+										},
+										{
+											"label": "HP ROLMET N34",
+											"value": "HPCL-LBS-0126"
+										}
+									]
 								},
 								{
-									"label": "GLAMOL 40",
-									"value": "HPCL-LBS-0112"
-								}
-							]
-						},
-						{
-							"label": "Quenching Oils",
-							"value": [
-								{
-									"label": "HP METAQUENCH 39,40",
-									"value": "HPCL-LBS-0113"
+									"label": "Rubber Process Oils",
+									"value": [
+										{
+											"label": "ELASTO SUPREME (TRAE)",
+											"value": "HPCL-LBS-0127"
+										},
+										{
+											"label": "ELASTO SUPREME H (RAE)",
+											"value": "HPCL-LBS-0128"
+										},
+										{
+											"label": "HP ELASTO 165, 245, 255",
+											"value": "HPCL-LBS-0129"
+										},
+										{
+											"label": "HP ELASTO 215/216",
+											"value": "HPCL-LBS-0130"
+										},
+										{
+											"label": "HP ELASTO 541",
+											"value": "HPCL-LBS-0131"
+										},
+										{
+											"label": "HP ELASTO 710",
+											"value": "HPCL-LBS-0132"
+										}
+									]
 								},
 								{
-									"label": "HP METAQUENCH 42",
-									"value": "HPCL-LBS-0114"
+									"label": "Rust Preventives",
+									"value": [
+										{
+											"label": "RUSTOP 179C",
+											"value": "HPCL-LBS-0134"
+										},
+										{
+											"label": "RUSTOP 185",
+											"value": "HPCL-LBS-0135"
+										},
+										{
+											"label": "RUSTOP 273",
+											"value": "HPCL-LBS-0136"
+										},
+										{
+											"label": "RUSTOP 274, 275, 276, 282, 283",
+											"value": "HPCL-LBS-0137"
+										},
+										{
+											"label": "RUSTOP 68, 173, 173 DW, 175, 179,184",
+											"value": "HPCL-LBS-0138"
+										}
+									]
 								},
 								{
-									"label": "HP METAQUENCH 43",
-									"value": "HPCL-LBS-0115"
+									"label": "HP Spray Oil",
+									"value": [
+										{
+											"label": "HP RUBBER SPRAY OIL",
+											"value": "HPCL-LBS-0140"
+										},
+										{
+											"label": "HP Spray Oil Leaflet",
+											"value": "HPCL-LBS-0141"
+										}
+									]
 								},
 								{
-									"label": "HP METAQUENCH 44",
-									"value": "HPCL-LBS-0116"
+									"label": "Thermic Fluids",
+									"value": [
+										{
+											"label": "HYTHERM 500 & 600",
+											"value": "HPCL-LBS-0142"
+										},
+										{
+											"label": "HYTHERM 600 PLUS",
+											"value": "HPCL-LBS-0143"
+										},
+										{
+											"label": "HYTHERM S",
+											"value": "HPCL-LBS-0144"
+										}
+									]
 								},
 								{
-									"label": "HP METAQUENCH 45",
-									"value": "HPCL-LBS-0117"
+									"label": "Unipro Conkote Dedusting Oils",
+									"value": [
+										{
+											"label": "HP CONKOTE",
+											"value": "HPCL-LBS-0145"
+										}
+									]
 								},
 								{
-									"label": "HP METAQUENCH 85",
-									"value": "HPCL-LBS-0118"
-								},
-								{
-									"label": "HP METAQUENCH 86",
-									"value": "HPCL-LBS-0119"
-								},
-								{
-									"label": "HP METAQUENCH 87",
-									"value": "HPCL-LBS-0120"
-								},
-								{
-									"label": "HP METAQUENCH 88",
-									"value": "HPCL-LBS-0121"
-								},
-								{
-									"label": "METAQUENCH 44H",
-									"value": "HPCL-LBS-0122"
-								}
-							]
-						},
-						{
-							"label": "Rolling Oils",
-							"value": [
-								{
-									"label": "HP ROLMET 22 V 45 V 55",
-									"value": "HPCL-LBS-0123"
-								},
-								{
-									"label": "HP ROLMET 40",
-									"value": "HPCL-LBS-0124"
-								},
-								{
-									"label": "HP ROLMET 7",
-									"value": "HPCL-LBS-0125"
-								},
-								{
-									"label": "HP ROLMET N34",
-									"value": "HPCL-LBS-0126"
-								}
-							]
-						},
-						{
-							"label": "Rubber Process Oils",
-							"value": [
-								{
-									"label": "ELASTO SUPREME (TRAE)",
-									"value": "HPCL-LBS-0127"
-								},
-								{
-									"label": "ELASTO SUPREME H (RAE)",
-									"value": "HPCL-LBS-0128"
-								},
-								{
-									"label": "HP ELASTO 165, 245, 255",
-									"value": "HPCL-LBS-0129"
-								},
-								{
-									"label": "HP ELASTO 215/216",
-									"value": "HPCL-LBS-0130"
-								},
-								{
-									"label": "HP ELASTO 541",
-									"value": "HPCL-LBS-0131"
-								},
-								{
-									"label": "HP ELASTO 710",
-									"value": "HPCL-LBS-0132"
-								}
-							]
-						},
-						{
-							"label": "Rust Preventives",
-							"value": [
-								{
-									"label": "RUSTOP 179C",
-									"value": "HPCL-LBS-0134"
-								},
-								{
-									"label": "RUSTOP 185",
-									"value": "HPCL-LBS-0135"
-								},
-								{
-									"label": "RUSTOP 273",
-									"value": "HPCL-LBS-0136"
-								},
-								{
-									"label": "RUSTOP 274, 275, 276, 282, 283",
-									"value": "HPCL-LBS-0137"
-								},
-								{
-									"label": "RUSTOP 68, 173, 173 DW, 175, 179,184",
-									"value": "HPCL-LBS-0138"
-								}
-							]
-						},
-						{
-							"label": "HP Spray Oil",
-							"value": [
-								{
-									"label": "HP RUBBER SPRAY OIL",
-									"value": "HPCL-LBS-0140"
-								},
-								{
-									"label": "HP Spray Oil Leaflet",
-									"value": "HPCL-LBS-0141"
-								}
-							]
-						},
-						{
-							"label": "Thermic Fluids",
-							"value": [
-								{
-									"label": "HYTHERM 500 & 600",
-									"value": "HPCL-LBS-0142"
-								},
-								{
-									"label": "HYTHERM 600 PLUS",
-									"value": "HPCL-LBS-0143"
-								},
-								{
-									"label": "HYTHERM S",
-									"value": "HPCL-LBS-0144"
-								}
-							]
-						},
-						{
-							"label": "Unipro Conkote Dedusting Oils",
-							"value": [
-								{
-									"label": "HP CONKOTE",
-									"value": "HPCL-LBS-0145"
-								}
-							]
-						},
-						{
-							"label": "Diesel Exhaust Fluid",
-							"value": [
-								{
-									"label": "HP DEF",
-									"value": "HPCL-LBS-0150"
+									"label": "Diesel Exhaust Fluid",
+									"value": [
+										{
+											"label": "HP DEF",
+											"value": "HPCL-LBS-0150"
+										}
+									]
 								}
 							]
 						}
@@ -1264,48 +1367,28 @@
 							]
 						}
 					]
-				}
-			]
-		},
-
-		{
-			"id": 3,
-			"iconType": "image",
-			"icon": "CYLINDER_ICON",
-			"label": "LPG",
-			"screen": "LpgScreen",
-			"value": [
-				{ "id": 1, "label": "LPG Domestic", "value": "HPCL-LPG-0003" },
+				},
 				{
-					"id": 2,
-					"label": "LPG Industrial",
+					"label": "Chevron",
+					"value": ""
+				},
+				{
+					"label": "Genuine OIL",
 					"value": [
-						{
-							"label": "HP GAS Flame Plus",
-							"value": "HPCL-LPG-0004"
-						},
-						{ "label": "Butane ", "value": "HPCL-LPG-0001" },
-						{ "label": "Propane", "value": "HPCL-LPG-0002" },
-						{
-							"label": "Engine fuel",
-							"value": [
-								{
-									"label": "Marine fuel",
-									"value": "HPCL-LPG-0007"
-								}
-							]
-						}
+						{ "label": "Bajaj", "value": "" },
+						{ "label": "JCB", "value": "" },
+						{ "label": "Force Motors", "value": "" },
+						{ "label": "Others", "value": "" }
 					]
 				},
 				{
-					"id": 3,
-					"label": "LPG Industrial Speciality",
-					"value": "HPCL-LPG-0005"
+					"label": "Marine OILS",
+					"value": ""
 				},
 				{
-					"id": 4,
-					"label": "Metal Cutting Gas",
-					"value": "HPCL-LPG-0006"
+					"label": "Lube Recommendation",
+					"type": "link",
+					"value": "https://www.hplubricants.in/engine-oil-recommendation"
 				}
 			]
 		},
@@ -1318,9 +1401,21 @@
 			"screen": "IndustrialScreen",
 			"description": "Industrial Fuels offers a range of energy solutions designed to support manufacturing, processing, and large-scale operations. These fuels ensure efficient heat generation, reliable performance, and operational continuity across diverse industrial applications.",
 			"value": [
+				{ "id": 5, "label": "MS", "value": "HPCL-IF-0025" },
+				{ "id": 6, "label": "HSD", "value": "HPCL-IF-0026" },
+				{
+					"id": 8,
+					"label": "Superior Kerosene Oil (SKO)",
+					"value": "HPCL-IF-0027"
+				},
+				{
+					"id": 7,
+					"label": "Black Oils",
+					"value": ""
+				},
 				{
 					"id": 1,
-					"label": "Industrial Construction",
+					"label": "Bitumen",
 					"value": [
 						{ "label": "Bitumen VG10", "value": "HPCL-IF-0010" },
 						{ "label": "Bitumen VG30", "value": "HPCL-IF-0011" },
@@ -1345,80 +1440,17 @@
 				},
 				{
 					"id": 2,
-					"label": "Bulk Fuels",
+					"label": "Specialty Products",
 					"value": [
-						{ "label": "MV2 Grade", "value": "HPCL-IF-0005" },
-						{ "label": "Heating Oil", "value": "HPCL-IF-0006" },
-						{
-							"label": "LSHS (Low Sulphur Heavy Stock)",
-							"value": "HPCL-IF-0009"
-						},
-						{
-							"label": "LSHS Premium",
-							"value": "HPCL-IF-0019"
-						}
+						{ "label": "NAPTHA", "value": "" },
+						{ "label": "SOLVENTS", "value": "" },
+						{ "label": "HEXANE", "value": "" },
+						{ "label": "JBO", "value": "HPCL-IF-0013" },
+						{ "label": "SUPLHUR", "value": "" }
 					]
 				},
 				{
 					"id": 3,
-					"label": "Industrial Process Solvent",
-					"value": [
-						{
-							"label": "Low Aromatic Naphtha",
-							"value": "HPCL-IF-0001"
-						},
-						{ "label": "Food Grade Hexane", "value": "HPCL-IF-0002" },
-						{ "label": "Solvent 1425", "value": "HPCL-IF-0003" },
-						{
-							"label": "MTO (Mineral Turpentine Oil) / Solvent 2445",
-							"value": "HPCL-IF-0004"
-						}
-					]
-				},
-				{
-					"id": 4,
-					"label": "Process Oil",
-					"value": [{ "label": "Jute Batching Oil", "value": "HPCL-IF-0013" }]
-				},
-				{
-					"id": 5,
-					"label": "Petrochemical",
-					"value": [
-						{
-							"label": "Raw material - Plastc Industry",
-							"value": [
-								{
-									"label": "PP Homopolymer",
-									"value": [
-										{
-											"label": "HM120A-MS",
-											"value": "HPCL-IF-0014"
-										},
-										{
-											"label": "HR033-MS",
-											"value": "HPCL-IF-0015"
-										}
-									]
-								},
-								{
-									"label": "PE Grade",
-									"value": [
-										{
-											"label": "F01019S-MS",
-											"value": "HPCL-IF-0016"
-										},
-										{
-											"label": "F02020-MS",
-											"value": "HPCL-IF-0017"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"id": 5,
 					"label": "Marine Fuel",
 					"value": [
 						{
@@ -1435,32 +1467,48 @@
 						}
 					]
 				},
-				{
-					"id": 6,
-					"label": "Manufacturing",
 
-					"value": [{ "label": "Sulphur", "value": "HPCL-IF-0023" }]
-				},
 				{
-					"id": 7,
+					"id": 4,
 					"label": "Feedstock",
 					"value": [
 						{ "label": "Propylene", "value": "HPCL-IF-0024" },
 						{ "label": "CBFS", "value": "HPCL-IF-0028" }
 					]
-				},
+				}
+			]
+		},
+		{
+			"id": 5,
+			"label": "Petchem",
+			"iconType": "image",
+			"icon": "WATER_ICON",
+			"value": [
 				{
-					"id": 8,
-					"label": "Automotive fuel",
+					"label": "POLYPROPLENE HOMOPOLYMER",
 					"value": [
-						{ "label": "MS", "value": "HPCL-IF-0025" },
-						{ "label": "HSD", "value": "HPCL-IF-0026" }
+						{
+							"label": "HM120A-MS",
+							"value": "HPCL-IF-0014"
+						},
+						{
+							"label": "HR033-MS",
+							"value": "HPCL-IF-0015"
+						}
 					]
 				},
 				{
-					"id": 9,
-					"label": "Heating & cleaning",
-					"value": "HPCL-IF-0027"
+					"label": "POLYETHYLENE GRADE",
+					"value": [
+						{
+							"label": "F01019S-MS",
+							"value": "HPCL-IF-0016"
+						},
+						{
+							"label": "F02020-MS",
+							"value": "HPCL-IF-0017"
+						}
+					]
 				}
 			]
 		},
@@ -1842,50 +1890,6 @@
 								{
 									"label": "HP Laundry Sanitizer",
 									"value": "HPCL-R&D-0064"
-								}
-							]
-						}
-					]
-				},
-				{
-					"label": "Retail",
-					"value": [
-						{
-							"label": "Fuel Additives",
-							"value": [
-								{
-									"label": "HP Power95, Kl",
-									"value": "HPCL-R&D-0065"
-								},
-								{
-									"label": "HP Power99, Kl",
-									"value": "HPCL-R&D-0066"
-								},
-								{
-									"label": "HP Power100, Kl",
-									"value": "HPCL-R&D-0067"
-								}
-							]
-						}
-					]
-				},
-				{
-					"label": "LPG",
-					"value": [
-						{
-							"label": "Fuel Additives",
-							"value": [
-								{
-									"label": "HP FlamePlus, MT",
-									"value": "HPCL-R&D-0068"
-								},
-								{
-									"label": "HP Razor, MT",
-									"value": "HPCL-R&D-0069"
-								},
-								{
-									"label": "HP Dolphin, MT",
-									"value": "HPCL-R&D-0070"
 								}
 							]
 						}

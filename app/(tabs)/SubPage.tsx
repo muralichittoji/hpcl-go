@@ -1,24 +1,24 @@
-import CommonModal from '@/components/Ui/CommonModal';
-import Header from '@/components/Ui/Header';
-import InputSearch from '@/components/Ui/InputSearch';
-import LoadingOverlay from '@/components/Ui/LoadingOverlay';
-import UnifiedListMenu from '@/components/Ui/UnifiedListMenu';
+import CommonModal from "@/components/Ui/CommonModal";
+import Header from "@/components/Ui/Header";
+import InputSearch from "@/components/Ui/InputSearch";
+import LoadingOverlay from "@/components/Ui/LoadingOverlay";
+import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
 
-import { Colors } from '@/constants/theme';
-import { MaterialIcons } from '@expo/vector-icons';
+import { Colors } from "@/constants/theme";
+import { MaterialIcons } from "@expo/vector-icons";
 
-import { router, useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from "expo-router";
 
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useState } from "react";
+import { Linking, StyleSheet, Text, View } from "react-native";
 
 const SubPage = () => {
 	const { item } = useLocalSearchParams<{ item: string }>();
 
 	const parsedItem = item ? JSON.parse(item) : null;
 
-	const rawData = parsedItem?.data;
-	const title = parsedItem?.name;
+	const rawData = parsedItem?.value;
+	const title = parsedItem?.label;
 
 	// ✅ IMPORTANT FIX
 	const data = Array.isArray(rawData) ? rawData : null;
@@ -31,9 +31,9 @@ const SubPage = () => {
 		if (!rawData) return;
 
 		// ✅ If it's a FINAL PRODUCT → go to InfoScreen
-		if (typeof rawData === 'string') {
+		if (typeof rawData === "string") {
 			router.replace({
-				pathname: '/InfoScreen',
+				pathname: "/InfoScreen",
 				params: { name: rawData },
 			});
 			return;
@@ -43,15 +43,15 @@ const SubPage = () => {
 		if (Array.isArray(rawData) && rawData.length === 1) {
 			const item = rawData[0];
 
-			if (Array.isArray(item.data)) {
+			if (Array.isArray(item.value)) {
 				router.replace({
-					pathname: '/SubPage',
+					pathname: "/SubPage",
 					params: { item: JSON.stringify(item) },
 				});
 			} else {
 				router.replace({
-					pathname: '/InfoScreen',
-					params: { name: item.data },
+					pathname: "/InfoScreen",
+					params: { name: item.value },
 				});
 			}
 		}
@@ -59,9 +59,19 @@ const SubPage = () => {
 
 	/* ---------------- NAVIGATION ---------------- */
 	const onItemPress = (item: any) => {
-		if (typeof item === 'string') {
+		if (item?.type === "link") {
+			const url = item.value ?? item.value;
+			if (typeof url === "string") {
+				Linking.openURL(url).catch(() => {
+					console.warn("Failed to open link:", url);
+				});
+			}
+			return;
+		}
+
+		if (typeof item === "string") {
 			router.push({
-				pathname: '/InfoScreen',
+				pathname: "/InfoScreen",
 				params: { name: item },
 			});
 			return;
@@ -72,27 +82,27 @@ const SubPage = () => {
 			return;
 		}
 
-		if (!item?.data) return;
+		if (!item?.value) return;
 
-		if (Array.isArray(item.data)) {
+		if (Array.isArray(item.value)) {
 			router.push({
-				pathname: '/SubPage',
+				pathname: "/SubPage",
 				params: { item: JSON.stringify(item) },
 			});
 			return;
 		}
 
-		if (typeof item.data === 'string') {
+		if (typeof item.value === "string") {
 			router.push({
-				pathname: '/InfoScreen',
-				params: { name: item.data },
+				pathname: "/InfoScreen",
+				params: { name: item.value },
 			});
 		}
 	};
 
 	/* ---------------- PREVENT FLASH ---------------- */
 	if (
-		typeof rawData === 'string' ||
+		typeof rawData === "string" ||
 		(Array.isArray(rawData) && rawData.length === 1)
 	) {
 		return null;
@@ -101,7 +111,7 @@ const SubPage = () => {
 	const hasIcons =
 		Array.isArray(data) &&
 		data.some(
-			(item) => item.iconType === 'image' || item.iconType === 'vector',
+			(item) => item.iconType === "image" || item.iconType === "vector",
 		);
 
 	/* ---------------- UI ---------------- */
@@ -137,7 +147,7 @@ const SubPage = () => {
 						name="priority-high"
 						size={24}
 						color={Colors.orangeDeep}
-					/>{' '}
+					/>{" "}
 					Coming Soon
 				</Text>
 			)}
@@ -149,12 +159,12 @@ export default SubPage;
 
 const styles = StyleSheet.create({
 	container: {
-		height: '100%',
+		height: "100%",
 	},
 	emptyText: {
 		fontSize: 35,
-		fontWeight: '400',
-		textAlign: 'center',
+		fontWeight: "400",
+		textAlign: "center",
 		color: Colors.orangeDeep,
 		marginVertical: 140,
 	},
