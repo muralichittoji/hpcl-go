@@ -7,8 +7,7 @@ import ScrollComponent from "@/components/Ui/ScrollComponent";
 import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
 
 // Static home screen data
-import wholeData from "@/constants/pageData.json";
-
+import wholeData from "../../constants/Pages";
 // Theme
 import { Colors } from "@/constants/theme";
 
@@ -85,7 +84,7 @@ const HomeScreen = () => {
 					<Text style={styles.content}>Quick Help</Text>
 
 					<UnifiedListMenu
-						items={wholeData.quickHelp}
+						items={wholeData?.quickHelp}
 						navigate={onItemPress}
 						itemHeight={70}
 					/>

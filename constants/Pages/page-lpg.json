@@ -1,0 +1,31 @@
+{
+	"id": 3,
+	"iconType": "image",
+	"icon": "CYLINDER_ICON",
+	"label": "LPG",
+	"screen": "LpgScreen",
+	"value": [
+		{ "id": 1, "label": "LPG Domestic", "value": "HPCL-LPG-0003" },
+		{
+			"id": 2,
+			"label": "LPG Industrial",
+			"value": [
+				{
+					"label": "HP Gas Razor",
+					"value": "HPCL-LPG-0006"
+				},
+				{
+					"label": "HP Gas Flame Plus",
+					"value": "HPCL-LPG-0004"
+				},
+				{
+					"id": 5,
+					"label": "HP Gas Dolfin",
+					"value": ""
+				},
+				{ "label": "Butane ", "value": "HPCL-LPG-0001" },
+				{ "label": "Propane", "value": "HPCL-LPG-0002" }
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"id": 5,
+	"label": "Natural Gas",
+	"iconType": "image",
+	"icon": "CYLINDER_ICON",
+	"value": [
+		{
+			"id": 1,
+			"label": "Liquified Natural Gas",
+			"value": ""
+		},
+		{
+			"id": 2,
+			"label": "Piped Natural Gas",
+			"value": [
+				{
+					"label": "Domestic",
+					"value": ""
+				},
+				{
+					"label": "Industrial",
+					"value": ""
+				},
+				{
+					"label": "Commercial",
+					"value": ""
+				}
+			]
+		}
+	]
+}

@@ -133,7 +133,7 @@
 				"value": "IS 4576"
 			}
 		],
-		"appData": "Cooking fuel (domestic & commercial) Industrial heating, drying & processing Metal cutting & brazing Fuel for LPG-based gensets, vaporizers & furnaces",
+		"appData": "Cooking fuel (domestic & commercial)    Industrial heating, drying & processing            Metal cutting & brazing                                              Fuel for LPG-based gensets, vaporizers & furnaces",
 		"packaging": [
 			"Cylinders:",
 			"2 kg",
@@ -151,7 +151,9 @@
 		"SBU": "LPG",
 		"industrial": "Domestic households                       Hotels & restaurants                           Small & large industries    Commercial kitchens               Construction & fabrication units etc",
 		"documentation": "Yes, attached",
-		"alternatives": ["IOCL Indane LPG BPCL Bharatgas T"],
+		"alternatives": [
+			"IOCL Indane LPG                                   BPCL Bharatgas                                    T"
+		],
 		"related": ["HP RAZOR, HP FLAME PLUS , HP DOLPHIN,HP POWERLIFT"]
 	},
 	"HPCL-LPG-0004": {
