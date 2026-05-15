@@ -1,10 +1,10 @@
 {
-	"id": 5,
-	"label": "Aviation Fuel",
-	"iconType": "image",
-	"icon": "WATER_ICON",
-	"value": [
-		{ "id": 1, "label": "Aviation Turbine OIL", "value": "HPCL-MS-0005" },
-		{ "id": 2, "label": "Substainable Aviation Fuel (SAF)", "value": "" }
-	]
+  "id": 5,
+  "label": "Aviation Fuel",
+  "iconType": "image",
+  "icon": "WATER_ICON",
+  "value": [
+    { "id": 1, "label": "Aviation Turbine OIL", "value": "HPCL-MS-0005" },
+    { "id": 2, "label": "Substainable Aviation Fuel (SAF)", "value": "" }
+  ]
 }

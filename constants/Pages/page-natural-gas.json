@@ -1,31 +1,31 @@
 {
-	"id": 5,
-	"label": "Natural Gas",
-	"iconType": "image",
-	"icon": "CYLINDER_ICON",
-	"value": [
-		{
-			"id": 1,
-			"label": "Liquified Natural Gas",
-			"value": ""
-		},
-		{
-			"id": 2,
-			"label": "Piped Natural Gas",
-			"value": [
-				{
-					"label": "Domestic",
-					"value": ""
-				},
-				{
-					"label": "Industrial",
-					"value": ""
-				},
-				{
-					"label": "Commercial",
-					"value": ""
-				}
-			]
-		}
-	]
+  "id": 5,
+  "label": "Natural Gas",
+  "iconType": "image",
+  "icon": "CYLINDER_ICON",
+  "value": [
+    {
+      "id": 1,
+      "label": "Liquified Natural Gas",
+      "value": "HPCL-NGS-0001"
+    },
+    {
+      "id": 2,
+      "label": "Piped Natural Gas",
+      "value": [
+        {
+          "label": "Domestic",
+          "value": "HPCL-NGS-0002"
+        },
+        {
+          "label": "Industrial",
+          "value": "HPCL-NGS-0003"
+        },
+        {
+          "label": "Commercial",
+          "value": "HPCL-NGS-0004"
+        }
+      ]
+    }
+  ]
 }

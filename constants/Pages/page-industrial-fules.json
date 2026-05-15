@@ -1,85 +1,85 @@
 {
-	"id": 4,
-	"iconType": "image",
-	"icon": "INDUSTRIAL_ICON",
-	"label": "Industrial Fuels",
-	"screen": "IndustrialScreen",
-	"description": "Industrial Fuels offers a range of energy solutions designed to support manufacturing, processing, and large-scale operations. These fuels ensure efficient heat generation, reliable performance, and operational continuity across diverse industrial applications.",
-	"value": [
-		{ "id": 5, "label": "MS", "value": "HPCL-IF-0025" },
-		{ "id": 6, "label": "HSD", "value": "HPCL-IF-0026" },
-		{
-			"id": 8,
-			"label": "Superior Kerosene Oil (SKO)",
-			"value": "HPCL-IF-0027"
-		},
-		{
-			"id": 7,
-			"label": "Black Oils",
-			"value": ""
-		},
-		{
-			"id": 1,
-			"label": "Bitumen",
-			"value": [
-				{ "label": "Bitumen VG10", "value": "HPCL-IF-0010" },
-				{ "label": "Bitumen VG30", "value": "HPCL-IF-0011" },
-				{ "label": "Bitumen VG40", "value": "HPCL-IF-0012" },
-				{
-					"label": "Bitumen VG40 Super",
-					"value": "HPCL-IF-0020"
-				},
-				{
-					"label": "Crumb Rubber Modified Bitumen (CRMB55)",
-					"value": "HPCL-IF-0021"
-				},
-				{
-					"label": "Crumb Rubber Modified Bitumen (CRMB60)",
-					"value": "HPCL-IF-0029"
-				},
-				{
-					"label": "Crumb Rubber Modified Bitumen (CRMB65)",
-					"value": "HPCL-IF-0022"
-				}
-			]
-		},
-		{
-			"id": 2,
-			"label": "Specialty Products",
-			"value": [
-				{ "label": "NAPTHA", "value": "" },
-				{ "label": "SOLVENTS", "value": "" },
-				{ "label": "HEXANE", "value": "" },
-				{ "label": "JBO", "value": "HPCL-IF-0013" },
-				{ "label": "SUPLHUR", "value": "" }
-			]
-		},
-		{
-			"id": 3,
-			"label": "Marine Fuel",
-			"value": [
-				{
-					"label": "Distillate Marine Fuel",
-					"value": "HPCL-IF-0007"
-				},
-				{
-					"label": "VLSFO (Very Low Sulfur Fuel Oil) RMG380",
-					"value": "HPCL-IF-0008"
-				},
-				{
-					"label": "FO 380",
-					"value": "HPCL-IF-0018"
-				}
-			]
-		},
+  "id": 4,
+  "iconType": "image",
+  "icon": "INDUSTRIAL_ICON",
+  "label": "Industrial Fuels",
+  "screen": "IndustrialScreen",
+  "description": "Industrial Fuels offers a range of energy solutions designed to support manufacturing, processing, and large-scale operations. These fuels ensure efficient heat generation, reliable performance, and operational continuity across diverse industrial applications.",
+  "value": [
+    { "id": 5, "label": "MS", "value": "HPCL-IF-0025" },
+    { "id": 6, "label": "HSD", "value": "HPCL-IF-0026" },
+    {
+      "id": 8,
+      "label": "Superior Kerosene Oil (SKO)",
+      "value": "HPCL-IF-0027"
+    },
+    {
+      "id": 7,
+      "label": "Black Oils",
+      "value": ""
+    },
+    {
+      "id": 1,
+      "label": "Bitumen",
+      "value": [
+        { "label": "Bitumen VG10", "value": "HPCL-IF-0010" },
+        { "label": "Bitumen VG30", "value": "HPCL-IF-0011" },
+        { "label": "Bitumen VG40", "value": "HPCL-IF-0012" },
+        {
+          "label": "Bitumen VG40 Super",
+          "value": "HPCL-IF-0020"
+        },
+        {
+          "label": "Crumb Rubber Modified Bitumen (CRMB55)",
+          "value": "HPCL-IF-0021"
+        },
+        {
+          "label": "Crumb Rubber Modified Bitumen (CRMB60)",
+          "value": "HPCL-IF-0029"
+        },
+        {
+          "label": "Crumb Rubber Modified Bitumen (CRMB65)",
+          "value": "HPCL-IF-0022"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Specialty Products",
+      "value": [
+        { "label": "NAPTHA", "value": "" },
+        { "label": "SOLVENTS", "value": "" },
+        { "label": "HEXANE", "value": "" },
+        { "label": "JBO", "value": "HPCL-IF-0013" },
+        { "label": "SUPLHUR", "value": "" }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Marine Fuel",
+      "value": [
+        {
+          "label": "Distillate Marine Fuel",
+          "value": "HPCL-IF-0007"
+        },
+        {
+          "label": "VLSFO (Very Low Sulfur Fuel Oil) RMG380",
+          "value": "HPCL-IF-0008"
+        },
+        {
+          "label": "FO 380",
+          "value": "HPCL-IF-0018"
+        }
+      ]
+    },
 
-		{
-			"id": 4,
-			"label": "Feedstock",
-			"value": [
-				{ "label": "Propylene", "value": "HPCL-IF-0024" },
-				{ "label": "CBFS", "value": "HPCL-IF-0028" }
-			]
-		}
-	]
+    {
+      "id": 4,
+      "label": "Feedstock",
+      "value": [
+        { "label": "Propylene", "value": "HPCL-IF-0024" },
+        { "label": "CBFS", "value": "HPCL-IF-0028" }
+      ]
+    }
+  ]
 }
