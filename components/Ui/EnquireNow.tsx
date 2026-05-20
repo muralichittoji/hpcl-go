@@ -2,146 +2,146 @@ import { Colors } from "@/constants/theme";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import React, { useEffect, useState } from "react";
 import {
-  Pressable,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
+	Pressable,
+	ScrollView,
+	StyleSheet,
+	Text,
+	TextInput,
+	TouchableOpacity,
+	View,
 } from "react-native";
 import SafeSheet from "./SafeSheet";
 
 type Props = {
-  title: string;
-  visible: boolean;
-  onClose: () => void;
+	title: string;
+	visible: boolean;
+	onClose: () => void;
 };
 
 const EnquireNow = ({ title, visible, onClose }: Props) => {
-  const [name, setName] = useState("");
-  const [orgName, setOrgName] = useState("");
-  const [mobile, setMobile] = useState("");
-  const [email, setEmail] = useState("");
+	const [name, setName] = useState("");
+	const [orgName, setOrgName] = useState("");
+	const [mobile, setMobile] = useState("");
+	const [email, setEmail] = useState("");
 
-  const [userName, setUserName] = useState<string | null>(null);
-  const [isAnonymous, setIsAnonymous] = useState(false);
+	const [userName, setUserName] = useState<string | null>(null);
+	const [isAnonymous, setIsAnonymous] = useState(false);
 
-  useEffect(() => {
-    const loadUser = async () => {
-      const storedName = await AsyncStorage.getItem("user_name");
-      const storedType = await AsyncStorage.getItem("user_type");
+	useEffect(() => {
+		const loadUser = async () => {
+			const storedName = await AsyncStorage.getItem("user_name");
+			const storedType = await AsyncStorage.getItem("user_type");
 
-      if (storedName) {
-        setUserName(storedName);
-        setIsAnonymous(storedType === "anonymous");
-      }
-    };
-    loadUser();
-  }, []);
+			if (storedName) {
+				setUserName(storedName);
+				setIsAnonymous(storedType === "anonymous");
+			}
+		};
+		loadUser();
+	}, []);
 
-  // const generateAnonymousName = () => {
-  // 	const now = new Date();
-  // 	return `User_${now.getFullYear()}_${
-  // 		now.getMonth() + 1
-  // 	}_${now.getDate()}_${now.getHours()}${now.getMinutes()}`;
-  // };
+	// const generateAnonymousName = () => {
+	// 	const now = new Date();
+	// 	return `User_${now.getFullYear()}_${
+	// 		now.getMonth() + 1
+	// 	}_${now.getDate()}_${now.getHours()}${now.getMinutes()}`;
+	// };
 
-  const saveUser = async (name: string, type: "email" | "anonymous") => {
-    await AsyncStorage.setItem("user_name", name);
-    await AsyncStorage.setItem("user_type", type);
-    setUserName(name);
-    setIsAnonymous(type === "anonymous");
-  };
+	const saveUser = async (name: string, type: "email" | "anonymous") => {
+		await AsyncStorage.setItem("user_name", name);
+		await AsyncStorage.setItem("user_type", type);
+		setUserName(name);
+		setIsAnonymous(type === "anonymous");
+	};
 
-  const [nameError, setNameError] = useState(false);
-  const [mobileError, setMobileError] = useState(false);
-  const [emailError, setEmailError] = useState(false);
+	const [nameError, setNameError] = useState(false);
+	const [mobileError, setMobileError] = useState(false);
+	const [emailError, setEmailError] = useState(false);
 
-  const handleContinue = () => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	const handleContinue = () => {
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    let hasError = false;
+		let hasError = false;
 
-    // Reset errors first
-    setNameError(false);
-    setMobileError(false);
-    setEmailError(false);
+		// Reset errors first
+		setNameError(false);
+		setMobileError(false);
+		setEmailError(false);
 
-    if (!name || name.length < 3) {
-      setNameError(true);
-      hasError = true;
-    }
+		if (!name || name.length < 3) {
+			setNameError(true);
+			hasError = true;
+		}
 
-    if (!mobile || mobile.length !== 10) {
-      setMobileError(true);
-      hasError = true;
-    }
+		if (!mobile || mobile.length !== 10) {
+			setMobileError(true);
+			hasError = true;
+		}
 
-    if (!email || !emailRegex.test(email)) {
-      setEmailError(true);
-      hasError = true;
-    }
+		if (!email || !emailRegex.test(email)) {
+			setEmailError(true);
+			hasError = true;
+		}
 
-    if (hasError) return;
+		if (hasError) return;
 
-    saveUser(name, "email");
-  };
+		saveUser(name, "email");
+	};
 
-  // const handleAnonymous = () => {
-  // 	const anonName = generateAnonymousName();
-  // 	saveUser(anonName, "anonymous");
-  // };
+	// const handleAnonymous = () => {
+	// 	const anonName = generateAnonymousName();
+	// 	saveUser(anonName, "anonymous");
+	// };
 
-  return (
-    <SafeSheet visible={visible} onClose={onClose} heightRatio={0.75}>
-      {/* Title Row */}
-      <View style={styles.titleRow}>
-        <Text style={styles.title}>{title}</Text>
+	return (
+		<SafeSheet visible={visible} onClose={onClose} heightRatio={0.75}>
+			{/* Title Row */}
+			<View style={styles.titleRow}>
+				<Text style={styles.title}>{title}</Text>
 
-        {isAnonymous && (
-          <Pressable style={styles.registerBtn}>
-            <Text style={styles.registerText}>Registered</Text>
-          </Pressable>
-        )}
-      </View>
+				{isAnonymous && (
+					<Pressable style={styles.registerBtn}>
+						<Text style={styles.registerText}>Registered</Text>
+					</Pressable>
+				)}
+			</View>
 
-      <ScrollView
-        contentContainerStyle={styles.container}
-        keyboardShouldPersistTaps="handled"
-      >
-        {/* ===== USER FORM ===== */}
-        {!userName && (
-          <View style={styles.formContainer}>
-            <Text style={styles.formTitle}>Please enter your details</Text>
-            <TextInput
-              placeholder="Name"
-              placeholderTextColor={Colors.grayDeep}
-              value={name}
-              onChangeText={setName}
-              style={[
-                styles.input,
-                nameError && {
-                  marginBottom: 0,
-                  borderColor: "#f00",
-                },
-              ]}
-            />
-            {nameError && (
-              <Text style={{ color: "#f00" }}>
-                Enter a name with more than 4 characters
-              </Text>
-            )}
+			<ScrollView
+				contentContainerStyle={styles.container}
+				keyboardShouldPersistTaps="handled"
+			>
+				{/* ===== USER FORM ===== */}
+				{!userName && (
+					<View style={styles.formContainer}>
+						<Text style={styles.formTitle}>Please enter your details</Text>
+						<TextInput
+							placeholder="Name"
+							placeholderTextColor={Colors.grayDeep}
+							value={name}
+							onChangeText={setName}
+							style={[
+								styles.input,
+								nameError && {
+									marginBottom: 0,
+									borderColor: "#f00",
+								},
+							]}
+						/>
+						{nameError && (
+							<Text style={{ color: "#f00" }}>
+								Enter a name with more than 4 characters
+							</Text>
+						)}
 
-            <TextInput
-              placeholder="Emp Id"
-              placeholderTextColor={Colors.grayDeep}
-              value={orgName}
-              onChangeText={setOrgName}
-              style={styles.input}
-            />
+						<TextInput
+							placeholder="Emp Id"
+							placeholderTextColor={Colors.grayDeep}
+							value={orgName}
+							onChangeText={setOrgName}
+							style={styles.input}
+						/>
 
-            {/* <TextInput
+						{/* <TextInput
 							placeholder="Mobile Number"
 							placeholderTextColor={Colors.grayDeep}
 							value={mobile}
@@ -162,202 +162,203 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 							</Text>
 						)} */}
 
-            <TextInput
-              placeholder="Email ID"
-              placeholderTextColor={Colors.grayDeep}
-              value={email}
-              onChangeText={setEmail}
-              keyboardType="email-address"
-              autoCapitalize="none"
-              style={[
-                styles.input,
-                emailError && {
-                  marginBottom: 0,
-                  borderColor: "#f00",
-                },
-              ]}
-            />
-            {emailError && (
-              <Text style={{ color: "#f00" }}>enter a valid email address</Text>
-            )}
+						<TextInput
+							placeholder="Email ID"
+							placeholderTextColor={Colors.grayDeep}
+							value={email}
+							onChangeText={setEmail}
+							keyboardType="email-address"
+							autoCapitalize="none"
+							style={[
+								styles.input,
+								emailError && {
+									marginBottom: 0,
+									borderColor: "#f00",
+								},
+							]}
+						/>
+						{emailError && (
+							<Text style={{ color: "#f00" }}>enter a valid email address</Text>
+						)}
 
-            <Pressable
-              style={[
-                styles.continueBtn,
-                (!name || !mobile || !email) && {
-                  opacity: 0.5,
-                },
-              ]}
-              disabled={!name || !mobile || !email}
-              onPress={handleContinue}
-            >
-              <Text style={styles.continueText}>Submit</Text>
-            </Pressable>
-            {/* 
+						<TextInput
+							placeholder="Enter your query"
+							placeholderTextColor="#9CA3AF"
+							style={[styles.input, { height: 100, textAlignVertical: "top" }]}
+						/>
+
+						<Pressable
+							style={[
+								styles.continueBtn,
+								(!name || !email) && {
+									opacity: 0.5,
+								},
+							]}
+							disabled={!name || !email}
+							onPress={handleContinue}
+						>
+							<Text style={styles.continueText}>Submit</Text>
+						</Pressable>
+						{/* 
 						<Pressable onPress={handleAnonymous} style={styles.anonBtn}>
 							<Text style={styles.anonText}>Continue as Guest</Text>
 						</Pressable> */}
-          </View>
-        )}
+					</View>
+				)}
 
-        {/* ===== SUCCESS VIEW ===== */}
-        {userName && (
-          <View style={styles.fullHeight}>
-            <View>
-              <Text style={styles.success}>Thank you, {userName} 👋</Text>
-              <Text style={styles.message}>
-                Our team will contact you soon.
-              </Text>
-            </View>
+				{/* ===== SUCCESS VIEW ===== */}
+				{userName && (
+					<View style={styles.fullHeight}>
+						<View>
+							<Text style={styles.success}>Thank you, {userName} 👋</Text>
+							<Text style={styles.message}>
+								Our team will contact you soon.
+							</Text>
+						</View>
 
-            {/* <TextInput
-							placeholder="Enter your query"
-							placeholderTextColor="#9CA3AF"
-							style={styles.input}
-						/> */}
-            <View
-              style={{ flexDirection: "row", justifyContent: "space-between" }}
-            >
-              <TouchableOpacity
-                onPress={() => {
-                  AsyncStorage.removeItem("user_name");
-                  AsyncStorage.removeItem("user_type");
-                  setUserName("");
-                }}
-                style={styles.outlineBtn}
-              >
-                <Text style={styles.resetText}>Reset Details</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.submitBtn} onPress={onClose}>
-                <Text style={styles.submitText}>Close Enquiry</Text>
-              </TouchableOpacity>
-            </View>
-          </View>
-        )}
+						<View
+							style={{ flexDirection: "row", justifyContent: "space-between" }}
+						>
+							<TouchableOpacity
+								onPress={() => {
+									AsyncStorage.removeItem("user_name");
+									AsyncStorage.removeItem("user_type");
+									setUserName("");
+								}}
+								style={styles.outlineBtn}
+							>
+								<Text style={styles.resetText}>Reset Details</Text>
+							</TouchableOpacity>
+							<TouchableOpacity style={styles.submitBtn} onPress={onClose}>
+								<Text style={styles.submitText}>Close Enquiry</Text>
+							</TouchableOpacity>
+						</View>
+					</View>
+				)}
 
-        <View style={{ height: 300 }} />
-      </ScrollView>
-    </SafeSheet>
-  );
+				<View style={{ height: 300 }} />
+			</ScrollView>
+		</SafeSheet>
+	);
 };
 
 export default EnquireNow;
 
 const styles = StyleSheet.create({
-  container: {
-    padding: 20,
-  },
+	container: {
+		padding: 20,
+	},
 
-  titleRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    marginBottom: 20,
-  },
+	titleRow: {
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: "space-between",
+		marginBottom: 20,
+	},
 
-  submitBtn: {
-    backgroundColor: Colors.blueDeep,
-    padding: 6,
-    borderRadius: 8,
-    alignItems: "center",
-  },
-  outlineBtn: {
-    borderWidth: 2,
-    borderColor: Colors.blueDark,
-    padding: 6,
-    borderRadius: 8,
-    alignItems: "center",
-  },
-  submitText: {
-    color: "#fff",
-    fontWeight: "600",
-  },
+	submitBtn: {
+		backgroundColor: Colors.blueDeep,
+		padding: 6,
+		borderRadius: 8,
+		alignItems: "center",
+	},
+	outlineBtn: {
+		borderWidth: 2,
+		borderColor: Colors.blueDark,
+		padding: 6,
+		borderRadius: 8,
+		alignItems: "center",
+	},
+	submitText: {
+		color: "#fff",
+		fontWeight: "600",
+	},
 
-  resetText: {
-    color: Colors.blueDark,
-    fontWeight: "600",
-  },
+	resetText: {
+		color: Colors.blueDark,
+		fontWeight: "600",
+	},
 
-  formContainer: {
-    gap: 16,
-  },
+	formContainer: {
+		gap: 16,
+	},
 
-  formTitle: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: Colors.blueDark,
-    marginBottom: 10,
-  },
+	formTitle: {
+		fontSize: 16,
+		fontWeight: "600",
+		color: Colors.blueDark,
+		marginBottom: 10,
+	},
 
-  input: {
-    borderWidth: 1,
-    borderColor: "#E5E7EB",
-    borderRadius: 8,
-    padding: 12,
-    backgroundColor: "#fff",
-    color: "#000",
-  },
+	input: {
+		borderWidth: 1,
+		borderColor: "#E5E7EB",
+		borderRadius: 8,
+		padding: 12,
+		backgroundColor: "#fff",
+		color: "#000",
+	},
 
-  fullHeight: {
-    height: "60%",
-    justifyContent: "space-between",
-    paddingBottom: 20,
-  },
+	fullHeight: {
+		height: "60%",
+		justifyContent: "space-between",
+		paddingBottom: 20,
+	},
 
-  title: {
-    fontSize: 20,
-    fontWeight: "700",
-    color: Colors.blueDark,
-    flex: 1,
-  },
+	title: {
+		fontSize: 20,
+		fontWeight: "700",
+		color: Colors.blueDark,
+		flex: 1,
+	},
 
-  registerBtn: {
-    borderWidth: 1,
-    borderColor: Colors.greenDark,
-    borderRadius: 6,
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-  },
+	registerBtn: {
+		borderWidth: 1,
+		borderColor: Colors.greenDark,
+		borderRadius: 6,
+		paddingHorizontal: 10,
+		paddingVertical: 4,
+	},
 
-  registerText: {
-    color: Colors.greenDark,
-    fontWeight: "600",
-    fontSize: 12,
-  },
+	registerText: {
+		color: Colors.greenDark,
+		fontWeight: "600",
+		fontSize: 12,
+	},
 
-  continueBtn: {
-    backgroundColor: Colors.blueDeep,
-    padding: 12,
-    borderRadius: 8,
-    alignItems: "center",
-    marginTop: 10,
-  },
+	continueBtn: {
+		backgroundColor: Colors.blueDeep,
+		padding: 12,
+		borderRadius: 8,
+		alignItems: "center",
+		marginTop: 10,
+	},
 
-  continueText: {
-    color: "#fff",
-    fontWeight: "600",
-  },
+	continueText: {
+		color: "#fff",
+		fontWeight: "600",
+	},
 
-  anonBtn: {
-    alignItems: "center",
-    marginTop: 40,
-  },
+	anonBtn: {
+		alignItems: "center",
+		marginTop: 40,
+	},
 
-  anonText: {
-    color: Colors.blueDeep,
-    fontWeight: "600",
-    fontSize: 16,
-  },
+	anonText: {
+		color: Colors.blueDeep,
+		fontWeight: "600",
+		fontSize: 16,
+	},
 
-  success: {
-    fontSize: 18,
-    fontWeight: "700",
-    color: Colors.greenDark,
-    marginBottom: 6,
-  },
+	success: {
+		fontSize: 18,
+		fontWeight: "700",
+		color: Colors.greenDark,
+		marginBottom: 6,
+	},
 
-  message: {
-    fontSize: 15,
-    color: "#555",
-  },
+	message: {
+		fontSize: 15,
+		color: "#555",
+	},
 });

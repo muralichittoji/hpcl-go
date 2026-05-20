@@ -1,4 +1,5 @@
 import { saveToken } from "@/utils/authStorage";
+import axios from "axios";
 import api from "./apiClient";
 
 type LoginPayload = {
@@ -23,6 +24,29 @@ export const loginUser = async ({ email, password }: LoginPayload) => {
 	}
 
 	await saveToken(token);
+
+	return res.data;
+};
+
+export const AdloginUser = async ({ email, password }: LoginPayload) => {
+	console.log("AD LOGIN RAW RESPONSE:", {
+		userName: "hpcl\\" + email,
+		password,
+	});
+	const res = await axios.post(
+		"http://10.90.22.145:8081/mlapi/login",
+		{
+			userName: "hpcl\\" + email,
+			password,
+		},
+		{
+			headers: {
+				"Content-Type": "multipart/form-data",
+			},
+			timeout: 90000,
+		},
+	);
+	console.log("AD LOGIN RESPONSE:", res);
 
 	return res.data;
 };
