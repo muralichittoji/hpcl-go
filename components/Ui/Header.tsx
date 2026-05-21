@@ -35,7 +35,7 @@ const Header = ({
 }) => {
 	const [userEmail, setUserEmail] = React.useState<string | null>(null);
 	/* ---------------------------------------------------------------------- */
-	/*              Dynamic container style based on screen type              */
+	/*              Dynamic container style based on screen type              *
 	/* ---------------------------------------------------------------------- */
 	const getStyle = (): ViewStyle => ({
 		// Taller header for Login screen
@@ -61,7 +61,7 @@ const Header = ({
 	});
 
 	/* ---------------------------------------------------------------------- */
-	/*               Render header logo based on screen context                */
+	/*               Render header logo based on screen context               */
 	/* ---------------------------------------------------------------------- */
 	const getHeader = () => {
 		switch (screen) {
@@ -119,7 +119,7 @@ const Header = ({
 	}, [screen]);
 
 	/* ---------------------------------------------------------------------- */
-	/*                                  Render                                  */
+	/*                                  Render                                */
 	/* ---------------------------------------------------------------------- */
 	return (
 		<View style={{ flexDirection: "column" }}>
@@ -142,25 +142,48 @@ const Header = ({
 					>
 						{userEmail ? userEmail : null}
 					</Text>
-					<TouchableOpacity
-						onPress={handleLogout}
-						style={{
-							backgroundColor: Colors.blueDeep,
-							padding: 5,
-							borderRadius: 10,
-						}}
-					>
-						<Text
+					{userEmail && userEmail !== "guest" ? (
+						<TouchableOpacity
+							onPress={handleLogout}
 							style={{
-								textAlign: "center",
-								color: "#fff",
-								fontWeight: "600",
-								fontSize: 16,
+								backgroundColor: Colors.blueDeep,
+								padding: 5,
+								borderRadius: 10,
 							}}
 						>
-							Logout
-						</Text>
-					</TouchableOpacity>
+							<Text
+								style={{
+									textAlign: "center",
+									color: "#fff",
+									fontWeight: "600",
+									fontSize: 16,
+								}}
+							>
+								Logout
+							</Text>
+						</TouchableOpacity>
+					) : (
+						<TouchableOpacity
+							style={{
+								backgroundColor: Colors.blueDeep,
+								padding: 5,
+								borderRadius: 10,
+							}}
+							onPress={handleLogout}
+						>
+							<Text
+								style={{
+									textAlign: "center",
+									color: "#fff",
+									fontWeight: "600",
+									fontSize: 16,
+								}}
+							>
+								Login
+							</Text>
+						</TouchableOpacity>
+					)}
+					{/* Show login button if no user is logged in */}
 				</View>
 			)}
 			<View style={getStyle()}>

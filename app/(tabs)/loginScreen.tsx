@@ -3,6 +3,7 @@ import ScrollComponent from "@/components/Ui/ScrollComponent";
 import { Colors } from "@/constants/theme";
 import { AdloginUser } from "@/utils/authService";
 import { rf } from "@/utils/responsive";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import React from "react";
 import {
@@ -26,6 +27,7 @@ const LoginScreen = () => {
 		console.log("Attempting login with:", { email, password });
 		AdloginUser({ email, password })
 			.then((response) => {
+				AsyncStorage.setItem("user_email", email); // Store email for later use
 				console.log("Login response:", response);
 				if (response.success) {
 					router.push("/homeScreen");
@@ -37,6 +39,12 @@ const LoginScreen = () => {
 				console.error("Login error:", error);
 				alert("An error occurred during login. Please try again.");
 			});
+	};
+
+	const handleGuestLogin = () => {
+		console.log("Continuing as guest");
+		AsyncStorage.setItem("user_email", "guest"); // Store email for later use
+		router.push("/homeScreen");
 	};
 
 	return (
@@ -82,6 +90,10 @@ const LoginScreen = () => {
 								<Text style={styles.logText}>Login</Text>
 							</TouchableOpacity>
 						</View>
+
+						<TouchableOpacity style={styles.forgBtn} onPress={handleGuestLogin}>
+							<Text style={styles.forgText}>Continue as guest</Text>
+						</TouchableOpacity>
 
 						{/* Forgot password action */}
 						<TouchableOpacity style={styles.forgBtn}>
