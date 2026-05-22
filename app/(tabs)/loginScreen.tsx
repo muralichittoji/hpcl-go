@@ -27,9 +27,9 @@ const LoginScreen = () => {
 		console.log("Attempting login with:", { email, password });
 		AdloginUser({ email, password })
 			.then((response) => {
-				AsyncStorage.setItem("user_email", email); // Store email for later use
+				AsyncStorage.setItem("user_details", JSON.stringify(response.result)); // Store user details for later use
 				console.log("Login response:", response);
-				if (response.success) {
+				if (response.result !== null && response.result !== undefined) {
 					router.push("/homeScreen");
 				} else {
 					alert("Login failed: " + response.message);
@@ -43,7 +43,7 @@ const LoginScreen = () => {
 
 	const handleGuestLogin = () => {
 		console.log("Continuing as guest");
-		AsyncStorage.setItem("user_email", "guest"); // Store email for later use
+		AsyncStorage.setItem("user_details", JSON.stringify({ email: "guest" })); // Store user details for later use
 		router.push("/homeScreen");
 	};
 
@@ -91,13 +91,15 @@ const LoginScreen = () => {
 							</TouchableOpacity>
 						</View>
 
-						<TouchableOpacity style={styles.forgBtn} onPress={handleGuestLogin}>
-							<Text style={styles.forgText}>Continue as guest</Text>
-						</TouchableOpacity>
-
 						{/* Forgot password action */}
-						<TouchableOpacity style={styles.forgBtn}>
+						{/* <TouchableOpacity style={styles.forgBtn}>
 							<Text style={styles.forgText}>Forgot Password ?</Text>
+							</TouchableOpacity> */}
+						<TouchableOpacity
+							style={styles.guestBtn}
+							onPress={handleGuestLogin}
+						>
+							<Text style={styles.guestText}>Continue as guest</Text>
 						</TouchableOpacity>
 					</View>
 				</View>
@@ -122,7 +124,7 @@ const styles = StyleSheet.create({
 		fontSize: 35,
 		fontWeight: "500",
 		textAlign: "center",
-		margin: 5,
+		margin: 25,
 	},
 
 	// Form wrapper
@@ -174,6 +176,25 @@ const styles = StyleSheet.create({
 		fontSize: rf(20),
 		textAlign: "center",
 		color: Colors.blueDark,
+		fontWeight: "600",
+	},
+
+	guestBtn: {
+		width: "90%",
+		margin: "5%",
+		height: 40,
+		backgroundColor: Colors.grayDeep,
+		padding: 5,
+		borderRadius: 10,
+		justifyContent: "center",
+		alignItems: "center",
+	},
+
+	guestText: {
+		fontSize: rf(20),
+		padding: 5,
+		textAlign: "center",
+		color: Colors.black,
 		fontWeight: "600",
 	},
 });

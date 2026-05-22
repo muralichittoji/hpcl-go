@@ -20,9 +20,10 @@ type Props = {
 
 const EnquireNow = ({ title, visible, onClose }: Props) => {
 	const [name, setName] = useState("");
-	const [orgName, setOrgName] = useState("");
+	const [empId, setEmpId] = useState("");
 	const [mobile, setMobile] = useState("");
 	const [email, setEmail] = useState("");
+	const [fieldsDisabled, setFieldsDisabled] = useState(false);
 
 	const [userName, setUserName] = useState<string | null>(null);
 	const [isAnonymous, setIsAnonymous] = useState(false);
@@ -88,6 +89,38 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 		saveUser(name, "email");
 	};
 
+	useEffect(() => {
+		const loadUserDetails = async () => {
+			try {
+				const userDetails = await AsyncStorage.getItem("user_details");
+				if (!userDetails) {
+					setFieldsDisabled(false);
+					return;
+				}
+
+				const parsedDetails = JSON.parse(userDetails);
+				if (parsedDetails.email === "guest") {
+					setFieldsDisabled(false);
+					return;
+				}
+
+				setEmail(parsedDetails.email ?? "");
+				setEmpId(parsedDetails.employeeId ?? "");
+				const fullName = [parsedDetails.firstName, parsedDetails.lastName]
+					.filter(Boolean)
+					.join(" ")
+					.trim();
+				setName(fullName || parsedDetails.name || "");
+				setFieldsDisabled(true);
+			} catch (error) {
+				console.error("Error loading user details:", error);
+				setFieldsDisabled(false);
+			}
+		};
+
+		loadUserDetails();
+	}, []);
+
 	// const handleAnonymous = () => {
 	// 	const anonName = generateAnonymousName();
 	// 	saveUser(anonName, "anonymous");
@@ -136,31 +169,11 @@ const EnquireNow = ({ title, visible, onClose }: Props) => {
 						<TextInput
 							placeholder="Emp Id"
 							placeholderTextColor={Colors.grayDeep}
-							value={orgName}
-							onChangeText={setOrgName}
-							style={styles.input}
+							value={empId}
+							onChangeText={setEmpId}
+							editable={!fieldsDisabled}
+							style={[styles.input, fieldsDisabled && styles.disabledInput]}
 						/>
-
-						{/* <TextInput
-							placeholder="Mobile Number"
-							placeholderTextColor={Colors.grayDeep}
-							value={mobile}
-							maxLength={10}
-							onChangeText={setMobile}
-							keyboardType="phone-pad"
-							style={[
-								styles.input,
-								mobileError && {
-									marginBottom: 0,
-									borderColor: "#f00",
-								},
-							]}
-						/>
-						{mobileError && (
-							<Text style={{ color: "#f00" }}>
-								enter a valid 10 digit mobile number
-							</Text>
-						)} */}
 
 						<TextInput
 							placeholder="Email ID"
@@ -360,5 +373,10 @@ const styles = StyleSheet.create({
 	message: {
 		fontSize: 15,
 		color: "#555",
+	},
+	disabledInput: {
+		backgroundColor: "#F3F4F6",
+		borderColor: "#D1D5DB",
+		color: "#9CA3AF",
 	},
 });

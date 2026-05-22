@@ -17,8 +17,8 @@ const { width } = Dimensions.get("window");
 
 const WelcomeScreen = () => {
 	const handleNavigation = () => {
-		AsyncStorage.getItem("user_email").then((email) => {
-			if (email) {
+		AsyncStorage.getItem("user_details").then((userDetails) => {
+			if (userDetails) {
 				router.push("/homeScreen");
 			} else {
 				router.push("/loginScreen");
@@ -44,11 +44,10 @@ const WelcomeScreen = () => {
 						<Text style={styles.enterText}>ENTER</Text>
 					</TouchableOpacity>
 				</View>
-
-				{/* LOGIN BUTTON */}
+				{/* LOGIN BUTTON
 				<TouchableOpacity onPress={() => router.push("/loginScreen")}>
 					<Text style={styles.loginText}>FOR SALES OFFICERS {"->"} LOGIN</Text>
-				</TouchableOpacity>
+				</TouchableOpacity> */}
 			</View>
 		</View>
 	);

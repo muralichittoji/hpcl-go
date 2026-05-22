@@ -157,4 +157,6 @@ a
 cd android
 # make sure to delete the previous android/app/build/outputs/apk/, here deleted the release folder then use the command below
 ./gradlew assembleRelease
+# for eas
+eas build --profile preview --platform android
 ```

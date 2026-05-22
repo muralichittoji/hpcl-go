@@ -36,12 +36,13 @@ export const AdloginUser = async ({ email, password }: LoginPayload) => {
 	const res = await axios.post(
 		"http://10.90.22.145:8081/mlapi/login",
 		{
-			userName: "hpcl\\" + email,
+			userName: email,
 			password,
 		},
 		{
 			headers: {
-				"Content-Type": "multipart/form-data",
+				"Content-Type": "application/json",
+				Accept: "application/json",
 			},
 			timeout: 90000,
 		},

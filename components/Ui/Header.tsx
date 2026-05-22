@@ -95,7 +95,7 @@ const Header = ({
 	};
 
 	const handleLogout = () => {
-		AsyncStorage.removeItem("user_email")
+		AsyncStorage.removeItem("user_details")
 			.then(() => {
 				setUserEmail(null);
 				router.replace("/loginScreen");
@@ -108,10 +108,11 @@ const Header = ({
 	useEffect(() => {
 		// Log the current screen for debugging
 		console.log("Header rendered for screen:", screen);
-		AsyncStorage.getItem("user_email")
-			.then((email) => {
-				setUserEmail(email);
-				console.log("Logged in user email:", email);
+		AsyncStorage.getItem("user_details")
+			.then((userDetails: any) => {
+				const parsedDetails = JSON.parse(userDetails);
+				setUserEmail(parsedDetails.email);
+				console.log("Logged in user email:", parsedDetails.email);
 			})
 			.catch((e) => {
 				console.log("Error fetching user email from AsyncStorage:", e);
