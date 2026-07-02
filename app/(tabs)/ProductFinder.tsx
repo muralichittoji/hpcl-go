@@ -1,22 +1,22 @@
-import devData from '@/constants/newDevData.json';
-import { LinearGradient } from 'expo-linear-gradient';
-import { useRouter } from 'expo-router';
-import React, { useMemo, useState } from 'react';
+import devData from "@/constants/newDevData.json";
+import { LinearGradient } from "expo-linear-gradient";
+import { useRouter } from "expo-router";
+import React, { useMemo, useState } from "react";
 import {
 	ScrollView,
 	StyleSheet,
 	Text,
 	TouchableOpacity,
 	View,
-} from 'react-native';
-import DropDownPicker from 'react-native-dropdown-picker';
+} from "react-native";
+import DropDownPicker from "react-native-dropdown-picker";
 
-import CommonModal from '@/components/Ui/CommonModal';
-import Header from '@/components/Ui/Header';
-import InputSearch from '@/components/Ui/InputSearch';
-import LoadingOverlay from '@/components/Ui/LoadingOverlay';
-import wholeData from '@/constants/Jsons/wholeData.json';
-import { Colors } from '@/constants/theme';
+import CommonModal from "@/components/Ui/CommonModal";
+import Header from "@/components/Ui/Header";
+import InputSearch from "@/components/Ui/InputSearch";
+import LoadingOverlay from "@/components/Ui/LoadingOverlay";
+import wholeData from "@/constants/Jsons/wholeData.json";
+import { Colors } from "@/constants/theme";
 
 /* -------------------- Types -------------------- */
 type PickerJSON = {
@@ -85,15 +85,15 @@ const ProductFinder = () => {
 		const raw = pickerData[industry]?.[application]?.[condition] ?? [];
 
 		return raw.flatMap((item) =>
-			item.includes('/') ? item.split('/').map((v) => v.trim()) : [item],
+			item.includes("/") ? item.split("/").map((v) => v.trim()) : [item],
 		);
 	}, [industry, application, condition, pickerData]);
 
 	/* -------------------- UI -------------------- */
 	return (
 		<View style={styles.container}>
-			<Header caption={'Product \n Finder'} />
-			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} />
+			<Header caption={"Product \n Finder"} />
+			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} mode="new" />
 			<LoadingOverlay visible={loading} text="Analyzing..." />
 
 			<CommonModal
@@ -168,9 +168,7 @@ const ProductFinder = () => {
 							colors={[Colors.blueDeep, Colors.blueLight]}
 							style={styles.productCard}
 						>
-							<Text style={styles.productTitle}>
-								{getName(product ?? '')}
-							</Text>
+							<Text style={styles.productTitle}>{getName(product ?? "")}</Text>
 							<Text style={styles.productDesc}>
 								Eligible / Recommended Product
 							</Text>
@@ -180,14 +178,12 @@ const ProductFinder = () => {
 									style={styles.outlineBtn}
 									onPress={() =>
 										router.push({
-											pathname: '/InfoScreen',
+											pathname: "/InfoScreen",
 											params: { name: product },
 										})
 									}
 								>
-									<Text style={styles.outlineText}>
-										View Specifications
-									</Text>
+									<Text style={styles.outlineText}>View Specifications</Text>
 								</TouchableOpacity>
 
 								{/* <TouchableOpacity style={styles.outlineBtn}>
@@ -217,16 +213,16 @@ const styles = StyleSheet.create({
 		marginTop: 20,
 		marginBottom: 6,
 		fontSize: 14,
-		fontWeight: '600',
+		fontWeight: "600",
 		color: Colors.black,
 	},
 	dropdown: {
-		borderColor: '#E5E7EB',
+		borderColor: "#E5E7EB",
 		borderRadius: 8,
 		minHeight: 48,
 	},
 	dropdownContainer: {
-		borderColor: '#E5E7EB',
+		borderColor: "#E5E7EB",
 	},
 	productCard: {
 		marginTop: 12,
@@ -235,29 +231,29 @@ const styles = StyleSheet.create({
 	},
 	productTitle: {
 		fontSize: 18,
-		fontWeight: '700',
-		color: '#fff',
+		fontWeight: "700",
+		color: "#fff",
 	},
 	productDesc: {
 		marginTop: 6,
 		fontSize: 14,
-		color: '#E5E7EB',
+		color: "#E5E7EB",
 	},
 	buttonRow: {
-		flexDirection: 'row',
+		flexDirection: "row",
 		marginTop: 14,
 	},
 	outlineBtn: {
 		borderWidth: 1,
-		borderColor: '#fff',
+		borderColor: "#fff",
 		borderRadius: 8,
 		paddingVertical: 8,
 		paddingHorizontal: 12,
 		marginRight: 10,
 	},
 	outlineText: {
-		color: '#fff',
+		color: "#fff",
 		fontSize: 13,
-		fontWeight: '600',
+		fontWeight: "600",
 	},
 });

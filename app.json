@@ -2,44 +2,37 @@
 	"expo": {
 		"name": "HPCL",
 		"slug": "HpclDev",
-		"version": "1.1.9",
+		"version": "1.2.1",
 		"orientation": "portrait",
 		"icon": "./assets/app_icon.png",
 		"scheme": "hpcl",
 		"userInterfaceStyle": "automatic",
-
 		"ios": {
 			"supportsTablet": true,
 			"bundleIdentifier": "com.muralisreekrishnac.HPCL",
-			"buildNumber": "19",
+			"buildNumber": "21",
 			"infoPlist": {
 				"ITSAppUsesNonExemptEncryption": false
 			}
 		},
-
 		"android": {
 			"adaptiveIcon": {
 				"backgroundColor": "#E6F4FE",
 				"foregroundImage": "./assets/app_icon.png"
 			},
-
 			"permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
-
 			"predictiveBackGestureEnabled": false,
 			"package": "com.muralisreekrishnac.HPCL"
 		},
-
 		"splash": {
 			"image": "./assets/images/Master_Logo.png",
 			"resizeMode": "contain",
 			"backgroundColor": "#E6F4FE"
 		},
-
 		"web": {
 			"output": "static",
 			"favicon": "./assets/images/Master_Logo.png"
 		},
-
 		"plugins": [
 			"expo-router",
 			[
@@ -60,14 +53,13 @@
 			"expo-font",
 			"expo-image",
 			"expo-sharing",
-			"expo-web-browser"
+			"expo-web-browser",
+			"expo-sqlite"
 		],
-
 		"experiments": {
 			"typedRoutes": true,
 			"reactCompiler": true
 		},
-
 		"extra": {
 			"router": {},
 			"eas": {

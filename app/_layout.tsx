@@ -1,4 +1,4 @@
-import { initDatabase } from "@/utils/dataBase";
+import { initDatabase } from "@/lib/database";
 import { NetworkProvider } from "@/utils/NetworkProvider";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -29,7 +29,11 @@ export default function RootLayout() {
 	// }, []);
 
 	useEffect(() => {
-		initDatabase();
+		try {
+			initDatabase();
+		} catch (e) {
+			console.log("Database init failed", e);
+		}
 	}, []);
 
 	return (
@@ -43,10 +47,6 @@ export default function RootLayout() {
 							options={{ presentation: "modal", title: "Modal" }}
 						/>
 						<Stack.Screen name="pdf-preview" options={{ headerShown: false }} />
-						<Stack.Screen
-							name="PdfViewerScreen"
-							options={{ headerShown: false }}
-						/>
 					</Stack>
 					<StatusBar style="light" />
 				</NetworkProvider>

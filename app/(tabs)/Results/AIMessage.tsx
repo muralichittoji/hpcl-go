@@ -6,6 +6,7 @@ import { StyleSheet, Text, View } from "react-native";
 type Props = {
 	answer: string;
 	speed?: number;
+	animate?: boolean;
 	onTyping?: () => void;
 	onTypingComplete?: () => void;
 };
@@ -15,23 +16,22 @@ const AIMessage = ({
 	speed = 7,
 	onTyping,
 	onTypingComplete,
+	animate = true,
 }: Props) => {
 	const [displayText, setDisplayText] = useState("");
 	const [showCursor, setShowCursor] = useState(true);
 
 	useEffect(() => {
-		const cursor = setInterval(() => {
-			setShowCursor((v) => !v);
-		}, 450);
+		// Old messages should render instantly
+		if (!animate) {
+			setDisplayText(answer);
+			onTypingComplete?.();
+			return;
+		}
 
-		return () => clearInterval(cursor);
-	}, []);
-
-	useEffect(() => {
 		setDisplayText("");
 
 		const words = answer.split(" ");
-
 		let index = 0;
 
 		const interval = setInterval(() => {
@@ -43,11 +43,25 @@ const AIMessage = ({
 
 			if (index >= words.length) {
 				clearInterval(interval);
+				onTypingComplete?.();
 			}
 		}, speed);
 
 		return () => clearInterval(interval);
-	}, [answer]);
+	}, [answer, animate, speed]);
+
+	useEffect(() => {
+		if (!animate) {
+			setShowCursor(false);
+			return;
+		}
+
+		const cursor = setInterval(() => {
+			setShowCursor((v) => !v);
+		}, 450);
+
+		return () => clearInterval(cursor);
+	}, [animate]);
 
 	return (
 		<View style={styles.container}>

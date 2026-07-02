@@ -119,7 +119,7 @@ const SubPage = () => {
 		<View style={styles.container}>
 			<Header caption={title} />
 
-			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} />
+			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} mode="new" />
 
 			<LoadingOverlay visible={loading} text="Analyzing..." />
 

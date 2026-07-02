@@ -1,17 +1,18 @@
 import { Colors } from "@/constants/theme";
 import { getAnswer } from "@/utils/authService";
 import {
-	clearHistory,
-	deleteHistory,
-	getHistory,
-	insertQuestion,
-	SearchHistoryItem,
-	updateAnswer,
-} from "@/utils/historyRepository";
+	addMessage,
+	CHAT_PAGE_SIZE,
+	Chat,
+	clearChats,
+	createChat,
+	getChatsPage,
+	updateChatId,
+} from "@/lib/chat";
 import { useNetwork } from "@/utils/NetworkProvider";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import React, { useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import {
 	Dimensions,
 	FlatList,
@@ -29,19 +30,62 @@ type SearchProps = {
 	setLoading: React.Dispatch<React.SetStateAction<boolean>>;
 	setSlowNet: React.Dispatch<React.SetStateAction<boolean>>;
 	placeHolder?: string;
+
+	mode?: "new" | "continue";
+
+	localChatId?: number;
+
+	onMessageAdded?: () => void;
 };
 
 const InputSearch = ({
 	setLoading,
 	setSlowNet,
-
 	placeHolder = "Search Products",
+
+	mode = "new",
+
+	localChatId,
+
+	onMessageAdded,
 }: SearchProps) => {
 	const [search, setSearch] = useState("");
 	const { isOnline } = useNetwork();
 	const [lowNetwork, setLowNetwork] = useState<boolean>(false);
 	const [historyVisible, setHistoryVisible] = useState(false);
-	const [history, setHistory] = useState<SearchHistoryItem[]>([]);
+	const [history, setHistory] = useState<Chat[]>([]);
+	const [historyOffset, setHistoryOffset] = useState(0);
+	const [historyHasMore, setHistoryHasMore] = useState(false);
+	const [historyLoading, setHistoryLoading] = useState(false);
+	const historyLoadingRef = useRef(false);
+
+	const loadHistoryPage = useCallback((offset = 0, append = false) => {
+		if (historyLoadingRef.current) return;
+
+		historyLoadingRef.current = true;
+		setHistoryLoading(true);
+
+		try {
+			const { items, hasMore } = getChatsPage(offset, CHAT_PAGE_SIZE);
+
+			setHistory((prev) => (append ? [...prev, ...items] : items));
+			setHistoryOffset(offset + items.length);
+			setHistoryHasMore(hasMore);
+		} finally {
+			historyLoadingRef.current = false;
+			setHistoryLoading(false);
+		}
+	}, []);
+
+	const openHistory = () => {
+		setHistoryVisible(true);
+		loadHistoryPage(0, false);
+	};
+
+	const loadMoreHistory = () => {
+		if (!historyHasMore || historyLoading) return;
+		loadHistoryPage(historyOffset, true);
+	};
 
 	const findScreen = () => {
 		if (!search.trim()) return;
@@ -71,7 +115,7 @@ const InputSearch = ({
 
 	const getSearch = async (question: string) => {
 		let timeoutId: ReturnType<typeof setTimeout> | undefined;
-		let historyId = 0;
+		let chatId = localChatId ?? 0;
 
 		try {
 			setLoading(true);
@@ -92,22 +136,18 @@ const InputSearch = ({
 				setSlowNet(true);
 			}, 90000);
 
-			/* ---------------- Save Question ---------------- */
-
-			historyId = insertQuestion(question);
-
 			/* ---------------- API ---------------- */
 
 			const res = await getAnswer({ question });
 
 			clearTimeout(timeoutId);
 
-			console.log("Raw API Response :", res);
+			console.log("Raw API Response:", res);
 
 			const rawAnswer = res?.results?.[0]?.answer;
 
 			if (!rawAnswer) {
-				deleteHistory(historyId);
+				console.log("API returned no answer.");
 
 				setLowNetwork(true);
 				setSlowNet(true);
@@ -123,27 +163,47 @@ const InputSearch = ({
 
 			const productCode = parsed?.app_product_code ?? null;
 
-			/* ---------------- Update SQLite ---------------- */
+			/* ---------------- Create Chat ---------------- */
 
-			updateAnswer(historyId, finalResponse, productCode);
+			if (mode === "new") {
+				chatId = createChat(question);
+			}
+
+			/* ---------------- Save Messages ---------------- */
+
+			addMessage(chatId, "user", question);
+
+			addMessage(
+				chatId,
+				"assistant",
+				finalResponse,
+				productCode,
+				res?.results?.[0]?.queryId ?? null,
+			);
+
+			/* ---------------- Save Server ChatId ---------------- */
+
+			if (res?.chatId) {
+				updateChatId(chatId, res.chatId);
+			}
 
 			setLowNetwork(false);
 			setSlowNet(false);
 
 			/* ---------------- Navigate ---------------- */
 
-			router.push({
-				pathname: "/(tabs)/ResultScreen",
-				params: {
-					historyId: historyId.toString(),
-				},
-			});
-		} catch (error) {
-			console.log("Search Error :", error);
-
-			if (historyId) {
-				deleteHistory(historyId);
+			if (mode === "new") {
+				router.push({
+					pathname: "/(tabs)/ResultScreen",
+					params: {
+						chatLocalId: chatId.toString(),
+					},
+				});
+			} else {
+				onMessageAdded?.();
 			}
+		} catch (error) {
+			console.log("Search Error:", error);
 
 			setLowNetwork(true);
 			setSlowNet(true);
@@ -175,11 +235,7 @@ const InputSearch = ({
 
 				<TouchableOpacity
 					style={styles.historyButton}
-					onPress={() => {
-						const data = getHistory();
-						setHistory(data);
-						setHistoryVisible(true);
-					}}
+					onPress={openHistory}
 				>
 					<Ionicons name="time-outline" size={24} color={Colors.blueDark} />
 				</TouchableOpacity>
@@ -198,6 +254,8 @@ const InputSearch = ({
 						<FlatList
 							data={history}
 							keyExtractor={(item) => item.id.toString()}
+							onEndReached={loadMoreHistory}
+							onEndReachedThreshold={0.4}
 							renderItem={({ item }) => (
 								<TouchableOpacity
 									style={styles.historyItem}
@@ -207,7 +265,7 @@ const InputSearch = ({
 										router.push({
 											pathname: "/(tabs)/ResultScreen",
 											params: {
-												historyId: item.id.toString(),
+												chatLocalId: item.id.toString(),
 											},
 										});
 									}}
@@ -220,7 +278,7 @@ const InputSearch = ({
 											marginLeft: 12,
 										}}
 									>
-										<Text style={styles.historyText}>{item.question}</Text>
+										<Text style={styles.historyText}>{item.title}</Text>
 
 										<Text
 											style={{
@@ -234,16 +292,31 @@ const InputSearch = ({
 									</View>
 								</TouchableOpacity>
 							)}
-							ListEmptyComponent={() => (
-								<Text
-									style={{
-										textAlign: "center",
-										padding: 20,
-									}}
-								>
-									No Search History
-								</Text>
-							)}
+							ListEmptyComponent={() =>
+								historyLoading ? null : (
+									<Text
+										style={{
+											textAlign: "center",
+											padding: 20,
+										}}
+									>
+										No Search History
+									</Text>
+								)
+							}
+							ListFooterComponent={
+								historyLoading ? (
+									<Text
+										style={{
+											textAlign: "center",
+											padding: 12,
+											color: "#999",
+										}}
+									>
+										Loading...
+									</Text>
+								) : null
+							}
 						/>
 						<View
 							style={{ flexDirection: "row", justifyContent: "space-around" }}
@@ -251,8 +324,10 @@ const InputSearch = ({
 							<TouchableOpacity
 								style={styles.clearButton}
 								onPress={() => {
-									clearHistory();
+									clearChats();
 									setHistory([]);
+									setHistoryOffset(0);
+									setHistoryHasMore(false);
 								}}
 							>
 								<Text
