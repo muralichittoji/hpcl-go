@@ -42,7 +42,7 @@
 		"SBU": "LPG",
 		"industrial": "Manufacturing & Processing Industries; Aerosol & Chemical Industries; Refrigerant and Specialty Gas Applications",
 
-		"documentation": "-",
+		"documentation": "",
 
 		"alternatives": ["HP RAZOR", "HP DOLPHIN", "HP POWERLIFT"],
 
@@ -91,7 +91,7 @@
 		"SBU": "LPG",
 		"industrial": "Commercial & Industrial Fuel Applications",
 
-		"documentation": "-",
+		"documentation": "",
 
 		"alternatives": ["HP RAZOR", "HP DOLPHIN", "HP POWERLIFT"],
 
@@ -252,7 +252,7 @@
 		"SBU": "Lubes",
 		"industrial": "Specialties",
 
-		"documentation": "-",
+		"documentation": "",
 
 		"alternatives": ["-"],
 		"related": ["-"]

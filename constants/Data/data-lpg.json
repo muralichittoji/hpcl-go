@@ -1,369 +1,10 @@
 {
-	"HPCL-LPG-0001": {
-		"id": 25,
-		"MSDS": "",
-		"title": "BUTANE",
-		"subTitle": "LPG – Commercial / Industrial Fuel",
-		"description": "Butane (C₄H₁₀) is a clean-burning, liquefiable hydrocarbon gas primarily used as a fuel and blending component in LPG. It is colourless and odourless in its natural form; an odorant such as Ethyl Mercaptan is added for leak detection and safety. Butane has a lower vapour pressure compared to Propane and delivers a high calorific value, making it suitable for commercial and industrial applications under moderate ambient conditions.",
-
-		"specifications": [
-			{ "property": "Chemical Formula", "value": "C₄H₁₀" },
-			{ "property": "Liquid Density @ 15°C", "value": "0.584" },
-			{
-				"property": "Co-efficient of Volumetric Expansion (/°C)",
-				"value": "0.0018 (-20 to +20°C); 0.0020 (0 to +40°C)"
-			},
-			{ "property": "Melting Point", "value": "-137°C" },
-			{ "property": "Critical Temperature", "value": "152°C" },
-			{ "property": "Auto-Ignition Temperature", "value": "441°C" },
-			{ "property": "Critical Pressure", "value": "39 ata (kg/cm²)" },
-			{ "property": "Boiling Point @ 760 mm Hg", "value": "-0.5°C" },
-			{
-				"property": "Vapour Pressure",
-				"value": "0.17 @-40°C, 0.45 @-20°C, 1.04 @0°C, 2.1 @+20°C, 3.9 @+40°C"
-			},
-			{
-				"property": "Latent Heat of Vaporisation (kcal/kg)",
-				"value": "96 @-20°C, 92 @0°C, 87 @+20°C"
-			},
-			{ "property": "Specific Heat @ 0°C", "value": "0.54 kcal/kg/°C" },
-			{ "property": "Relative Density (Air = 1)", "value": "2.091" },
-			{ "property": "Gas/Liquid Expansion Ratio", "value": "230" },
-			{
-				"property": "Flammability Limits",
-				"value": "1.8 – 8.5 % v/v in air"
-			}
-		],
-
-		"appData": "Aerosol propellants, portable fuel cartridges for camping stoves and laboratory burners, specialty commercial kitchens operating at controlled indoor temperatures, laboratory and R&D applications, lighter fuel and specialty fuel cylinders.",
-
-		"packaging": ["Bulk tankers", "Storage vessels"],
-
-		"SBU": "LPG",
-		"industrial": "Manufacturing & Processing Industries; Aerosol & Chemical Industries; Refrigerant and Specialty Gas Applications",
-
-		"documentation": "-",
-
-		"alternatives": ["HP RAZOR", "HP DOLPHIN", "HP POWERLIFT"],
-
-		"related": ["-"]
-	},
-	"HPCL-LPG-0002": {
-		"id": 26,
-		"MSDS": "",
-		"title": "PROPANE",
-		"subTitle": "LPG – Commercial / Industrial Fuel",
-		"description": "Propane (C₃H₈) is a highly volatile, clean-burning liquefied petroleum hydrocarbon gas used as an industrial and commercial fuel. It is colourless, odourless, and non-toxic in its natural state; an odorant such as Ethyl Mercaptan is added to facilitate leak detection and enhance operational safety. Propane has high vapour pressure and a low boiling point, ensuring reliable vaporisation even at low ambient temperatures, making it suitable for high-demand and cold-weather operations.",
-
-		"specifications": [
-			{ "property": "Chemical Formula", "value": "C₃H₈" },
-			{ "property": "Liquid Density @ 15°C", "value": "0.508" },
-			{
-				"property": "Co-efficient of Volumetric Expansion (/°C)",
-				"value": "0.0028 (-20 to +20°C); 0.0033 (0 to +40°C)"
-			},
-			{ "property": "Melting Point", "value": "-187°C" },
-			{ "property": "Critical Temperature", "value": "97°C" },
-			{ "property": "Auto-Ignition Temperature", "value": "481°C" },
-			{ "property": "Critical Pressure", "value": "43 ata (kg/cm²)" },
-			{ "property": "Boiling Point @ 760 mm Hg", "value": "-42.1°C" },
-			{
-				"property": "Vapour Pressure",
-				"value": "1.11 @-40°C, 2.4 @-20°C, 4.8 @0°C, 8.3 @+20°C, 14.0 @+40°C"
-			},
-			{
-				"property": "Latent Heat of Vaporisation (kcal/kg)",
-				"value": "96 @-20°C, 90 @0°C, 82 @+20°C"
-			},
-			{ "property": "Specific Heat @ 0°C", "value": "0.57 kcal/kg/°C" },
-			{ "property": "Relative Density (Air = 1)", "value": "1.561" },
-			{ "property": "Gas/Liquid Expansion Ratio", "value": "274" },
-			{
-				"property": "Flammability Limits",
-				"value": "2.2 – 9.5 % v/v in air"
-			}
-		],
-
-		"appData": "Industrial heating & furnaces, LPG-based gensets, metal cutting/brazing/welding, vaporizers & process heating, cold-climate fuel applications.",
-
-		"packaging": ["Bulk tankers", "Storage vessels"],
-
-		"SBU": "LPG",
-		"industrial": "Commercial & Industrial Fuel Applications",
-
-		"documentation": "-",
-
-		"alternatives": ["HP RAZOR", "HP DOLPHIN", "HP POWERLIFT"],
-
-		"related": ["-"]
-	},
-	"HPCL-LPG-0003": {
-		"id": 27,
-		"MSDS": "",
-		"title": "HP GAS",
-		"subTitle": "Domestic / Commercial / Industrial Fuel/Free trade LPG",
-		"description": "HP GAS (LPG) is a clean, efficient, and high-calorific gaseous fuel comprising mainly of mixture of  Propane (C\u2083H\u2088) and Butane (C\u2084H\u2081\u2080) . It is colourless, odourless in natural form (odorized with Ethyl Mercaptan for safety), non-toxic. HP GAS is produced during petroleum refining and gas processing",
-		"specifications": [
-			{
-				"property": "Composition",
-				"value": "Propane / Butane mixture as per IS 4576"
-			},
-			{
-				"property": "Vapour Pressure @ 40 \u00b0C(kpa)",
-				"value": "520 to 1050"
-			},
-			{
-				"property": "Odorant",
-				"value": "Ethyl Mercaptan"
-			},
-			{
-				"property": "Free water content",
-				"value": "Nil"
-			},
-			{
-				"property": "C5 Hydrocarbons and Heavier (% of vol)",
-				"value": "2.5 Max"
-			},
-			{
-				"property": "Total Volatile Sulphur (mg/Kg)",
-				"value": "140 max"
-			},
-			{
-				"property": "Compliance",
-				"value": "IS 4576"
-			}
-		],
-		"appData": "Cooking fuel (domestic & commercial)    Industrial heating, drying & processing            Metal cutting & brazing                                              Fuel for LPG-based gensets, vaporizers & furnaces",
-		"packaging": [
-			"Cylinders:",
-			"2 kg",
-			"5 kg",
-			"7 kg",
-			"10 kg",
-			"14.2 kg",
-			"15 KG",
-			"19 kg",
-			"35 KG",
-			"47.5 kg",
-			"425 kg",
-			"Bulk LPG through tankers & storage vessels"
-		],
-		"SBU": "LPG",
-		"industrial": "Domestic households                       Hotels & restaurants                           Small & large industries    Commercial kitchens               Construction & fabrication units etc",
-		"documentation": "Yes, attached",
-		"alternatives": [
-			"IOCL Indane LPG                                   BPCL Bharatgas                                    T"
-		],
-		"related": ["HP RAZOR, HP FLAME PLUS , HP DOLPHIN,HP POWERLIFT"]
-	},
-	"HPCL-LPG-0004": {
-		"id": 32,
-		"MSDS": "FLAME_PLUS_PDF",
-		"title": "HP GAS FLAME PLUS",
-		"subTitle": "Commercial",
-		"description": "HP GAS FLAME PLUS is LPG fortified with an additive to enhance the combustion properties of LPG. The additive increases the flame temperature and also improves the combustion kinetics of propane/butane and flame properties, thereby resulting in quicker heating, reduced gas consumption, reduced process time and hence more savings for the customers.",
-		"specifications": [
-			{
-				"property": "Boiling Point/Range \u00b0C",
-				"value": ">-40"
-			},
-			{
-				"property": "Physical State",
-				"value": "Gas at 15 \u00b0C and 1 atm"
-			},
-			{
-				"property": "Appearance",
-				"value": "Colourless"
-			},
-			{
-				"property": "Odour",
-				"value": "Mercaptan added as an odouriser"
-			},
-			{
-				"property": "Vapour Density (Air = 1)",
-				"value": "1.5"
-			},
-			{
-				"property": "Solubility in water @ 30\u00b0C",
-				"value": "Slight"
-			},
-			{
-				"property": "Others",
-				"value": "Soluble in Organic Solvents, Alcohol"
-			},
-			{
-				"property": "Specific Gravity (Water = 1)",
-				"value": "0.51-0.58 at 50 \u00b0C"
-			},
-			{
-				"property": "Flammability",
-				"value": "Yes"
-			},
-			{
-				"property": "LEL",
-				"value": "1.9%"
-			},
-			{
-				"property": "UEL",
-				"value": "9.5%"
-			},
-			{
-				"property": "TDG Flammability",
-				"value": "2"
-			},
-			{
-				"property": "Flash Point \u00b0C",
-				"value": "- 104.4"
-			},
-			{
-				"property": "Auto ignition Temperature \u00b0C",
-				"value": "466.1 Propane and 405 Butane"
-			}
-		],
-		"appData": "Commerical cylinder",
-		"packaging": ["Cylinder :", "19 kg", "35kg", "47.5", "425 kg"],
-		"SBU": "LPG",
-		"industrial": "hospitality (hotels, restaurants, canteens), bakeries, food processing, and various industries etc",
-		"documentation": "Yes ,attached",
-		"alternatives": ["-"],
-		"related": ["HP RAZOR,HP DOLPHIN,HP POWERLIFT"]
-	},
-	"HPCL-LPG-0005": {
-		"id": 27,
-		"MSDS": "",
-		"title": "LPG Industrial Speciality",
-		"subTitle": "Neat Cutting Fluid",
-		"description": "Compounded low viscosity neat cutting oil specially designed for the bearing industry, providing excellent lubrication and guaranteeing superior surface finish during machining operations.",
-
-		"specifications": [
-			{ "property": "Appearance", "value": "Clear" },
-			{ "property": "Density @ 29°C", "value": "826" },
-			{ "property": "Kinematic Viscosity @ 40°C", "value": "4 – 7 cSt" },
-			{ "property": "Flash Point (COC)", "value": "110 °C" },
-			{
-				"property": "Copper Strip Corrosion @ 100°C, 3 Hrs (Max)",
-				"value": "1"
-			},
-			{ "property": "Chlorine Content", "value": "Yes" }
-		],
-
-		"appData": "Bearing industry machining operations, neat cutting applications, precision metal cutting and finishing processes requiring superior surface finish.",
-
-		"packaging": ["Barrel", "Bulk Supply"],
-
-		"SBU": "Lubes",
-		"industrial": "Specialties",
-
-		"documentation": "-",
-
-		"alternatives": ["-"],
-		"related": ["-"]
-	},
-	"HPCL-LPG-0006": {
-		"id": 403,
-		"MSDS": "HP_GAS_RAZOR_PDF",
-		"title": "HP GAS RAZOR",
-		"subTitle": "Metal Cutting Gas",
-		"description": "HP GAS RAZOR is a high-performance metal cutting fuel developed by HPCL. It is LPG fortified with a specially developed additive to provide faster pre-heating, higher piercing rate, faster cutting speed, smooth cut surface, lower slag formation and improved safety compared to Dissolved Acetylene.",
-
-		"specifications": [
-			{
-				"property": "Chemical Formula",
-				"value": "C₃H₈ + C₄H₁₀ + Razor Additive"
-			},
-			{
-				"property": "Physical State",
-				"value": "Gas"
-			},
-			{
-				"property": "Appearance",
-				"value": "Colourless"
-			},
-			{
-				"property": "Odour",
-				"value": "Mercaptan Added"
-			},
-			{
-				"property": "Vapour Density (Air = 1)",
-				"value": "1.5"
-			},
-			{
-				"property": "Specific Gravity (Water = 1)",
-				"value": "0.51 – 0.58 @ 50°C"
-			},
-			{
-				"property": "Boiling Point",
-				"value": "< –40°C"
-			},
-			{
-				"property": "Flammability",
-				"value": "Flammable"
-			},
-			{
-				"property": "Lower Explosive Limit (LEL)",
-				"value": "1.9 %"
-			},
-			{
-				"property": "Upper Explosive Limit (UEL)",
-				"value": "9.5 %"
-			},
-			{
-				"property": "Flash Point",
-				"value": "–104.4 °C"
-			},
-			{
-				"property": "Auto Ignition Temperature",
-				"value": "466.1 °C (Propane) / 405 °C (Butane)"
-			},
-			{
-				"property": "Stability",
-				"value": "Stable"
-			},
-			{
-				"property": "Hazardous Combustion Products",
-				"value": "CO, CO₂"
-			},
-			{
-				"property": "NFPA Rating",
-				"value": "Health: 1, Flammability: 4, Reactivity: 0"
-			},
-			{
-				"property": "Personal Protective Equipment (PPE)",
-				"value": "Gloves, Goggles, Gas Mask"
-			},
-			{
-				"property": "Storage Conditions",
-				"value": "Store in a cool, well-ventilated area away from heat and sparks"
-			},
-			{
-				"property": "Fire Extinguishing Media",
-				"value": "CO₂, DCP, Water Spray"
-			}
-		],
-
-		"appData": "Used in commercial cylinders for oxy-fuel metal cutting, scrap cutting, steel plate cutting, rail track cutting and fabrication cutting jobs.",
-
-		"packaging": [
-			"Cylinder 19 kg",
-			"Cylinder 35 kg",
-			"Cylinder 47.5 kg",
-			"Cylinder 425 kg"
-		],
-
-		"SBU": "LPG",
-		"industrial": "Metal Cutting Gas",
-
-		"documentation": "Yes, attached",
-		"alternatives": ["HP FLAME PLUS", "HP DOLPHIN", "HP POWERLIFT"],
-		"related": []
-	},
 	"HPCL-LPG-0007": {
 		"id": 404,
 		"MSDS": "DOLPHIN_PDF",
 		"title": "HP GAS DOLPHIN",
 		"subTitle": "Marine Engine Fuel",
 		"description": "HP GAS DOLPHIN is an LPG fortified with a specially developed additive designed by HPCL R&D Centre, Bengaluru for use in Outboard Motor (OBM) boat engines. It enables cleaner combustion, improved engine performance, reduced maintenance and safer handling compared to conventional liquid fuels. It is used in dual fuel systems (Petrol/Kerosene/LPG) with suitable conversion kit.",
-
 		"specifications": [
 			{
 				"property": "Chemical Formula",
@@ -442,16 +83,404 @@
 				"value": "CO₂, DCP, Water Spray"
 			}
 		],
-
 		"appData": "Fuel for outboard motor (OBM) engines in fishing boats and marine propulsion systems operating in dual fuel mode.",
-
 		"packaging": ["Cylinder 19 kg"],
-
 		"SBU": "LPG",
 		"industrial": "Marine Fuel",
-
 		"documentation": "Yes attached",
 		"alternatives": ["HP FLAME PLUS", "HP POWERLIFT"],
+		"related": []
+	},
+	"HPCL-LPG-0003": {
+		"id": 27,
+		"MSDS": "",
+		"title": "HP GAS",
+		"subTitle": "Domestic / Commercial / Industrial Fuel/Free trade LPG",
+		"description": "HP GAS (LPG) is a clean, efficient, and high-calorific gaseous fuel comprising mainly of mixture of  Propane (C₃H₈) and Butane (C₄H₁₀) . It is colourless, odourless in natural form (odorized with Ethyl Mercaptan for safety), non-toxic. HP GAS is produced during petroleum refining and gas processing",
+		"specifications": [
+			{
+				"property": "Composition",
+				"value": "Propane / Butane mixture as per IS 4576"
+			},
+			{
+				"property": "Vapour Pressure @ 40 °C(kpa)",
+				"value": "520 to 1050"
+			},
+			{
+				"property": "Odorant",
+				"value": "Ethyl Mercaptan"
+			},
+			{
+				"property": "Free water content",
+				"value": "Nil"
+			},
+			{
+				"property": "C5 Hydrocarbons and Heavier (% of vol)",
+				"value": "2.5 Max"
+			},
+			{
+				"property": "Total Volatile Sulphur (mg/Kg)",
+				"value": "140 max"
+			},
+			{
+				"property": "Compliance",
+				"value": "IS 4576"
+			}
+		],
+		"appData": "Cooking fuel (domestic & commercial) Industrial heating, drying & processing Metal cutting & brazing Fuel for LPG-based gensets, vaporizers & furnaces",
+		"packaging": ["5kg", "14.2 Kg"],
+		"SBU": "LPG",
+		"industrial": "Domestic households Hotels & restaurants Small & large industries Commercial kitchens Construction & fabrication units etc",
+		"documentation": "Yes, attached",
+		"alternatives": ["IOCL Indane LPG BPCL Bharatgas T"],
+		"related": ["HP RAZOR, HP FLAME PLUS , HP DOLPHIN,HP POWERLIFT"]
+	},
+	"HPCL-LPG-0004": {
+		"id": 32,
+		"MSDS": "FLAME_PLUS_PDF",
+		"title": "HP GAS FLAME PLUS",
+		"subTitle": "Commercial",
+		"description": "HP GAS FLAME PLUS is LPG fortified with an additive to enhance the combustion properties of LPG. The additive increases the flame temperature and also improves the combustion kinetics of propane/butane and flame properties, thereby resulting in quicker heating, reduced gas consumption, reduced process time and hence more savings for the customers.",
+		"specifications": [
+			{
+				"property": "Boiling Point/Range °C",
+				"value": ">-40"
+			},
+			{
+				"property": "Physical State",
+				"value": "Gas at 15 °C and 1 atm"
+			},
+			{
+				"property": "Appearance",
+				"value": "Colourless"
+			},
+			{
+				"property": "Odour",
+				"value": "Mercaptan added as an odouriser"
+			},
+			{
+				"property": "Vapour Density (Air = 1)",
+				"value": "1.5"
+			},
+			{
+				"property": "Solubility in water @ 30°C",
+				"value": "Slight"
+			},
+			{
+				"property": "Others",
+				"value": "Soluble in Organic Solvents, Alcohol"
+			},
+			{
+				"property": "Specific Gravity (Water = 1)",
+				"value": "0.51-0.58 at 50 °C"
+			},
+			{
+				"property": "Flammability",
+				"value": "Yes"
+			},
+			{
+				"property": "LEL",
+				"value": "1.9%"
+			},
+			{
+				"property": "UEL",
+				"value": "9.5%"
+			},
+			{
+				"property": "TDG Flammability",
+				"value": "2"
+			},
+			{
+				"property": "Flash Point °C",
+				"value": "- 104.4"
+			},
+			{
+				"property": "Auto ignition Temperature °C",
+				"value": "466.1 Propane and 405 Butane"
+			}
+		],
+		"appData": "Commerical cylinder",
+		"packaging": ["Cylinder :", "19 kg", "35kg", "47.5", "425 kg Bulk"],
+		"SBU": "LPG",
+		"industrial": "hospitality (hotels, restaurants, canteens), bakeries, food processing, and various industries etc",
+		"documentation": "Yes ,attached",
+		"alternatives": ["-"],
+		"related": ["HP RAZOR,HP DOLPHIN,HP POWERLIFT"]
+	},
+	"HPCL-LPG-0002": {
+		"id": 26,
+		"MSDS": "",
+		"title": "PROPANE",
+		"subTitle": "LPG – Commercial / Industrial Fuel",
+		"description": "Propane (C₃H₈) is a highly volatile, clean-burning liquefied petroleum hydrocarbon gas used as an industrial and commercial fuel. It is colourless, odourless, and non-toxic in its natural state; an odorant such as Ethyl Mercaptan is added to facilitate leak detection and enhance operational safety. Propane has high vapour pressure and a low boiling point, ensuring reliable vaporisation even at low ambient temperatures, making it suitable for high-demand and cold-weather operations.",
+		"specifications": [
+			{
+				"property": "Chemical Formula",
+				"value": "C₃H₈"
+			},
+			{
+				"property": "Liquid Density @ 15°C",
+				"value": "0.508"
+			},
+			{
+				"property": "Co-efficient of Volumetric Expansion (/°C)",
+				"value": "0.0028 (-20 to +20°C); 0.0033 (0 to +40°C)"
+			},
+			{
+				"property": "Melting Point",
+				"value": "-187°C"
+			},
+			{
+				"property": "Critical Temperature",
+				"value": "97°C"
+			},
+			{
+				"property": "Auto-Ignition Temperature",
+				"value": "481°C"
+			},
+			{
+				"property": "Critical Pressure",
+				"value": "43 ata (kg/cm²)"
+			},
+			{
+				"property": "Boiling Point @ 760 mm Hg",
+				"value": "-42.1°C"
+			},
+			{
+				"property": "Vapour Pressure",
+				"value": "1.11 @-40°C, 2.4 @-20°C, 4.8 @0°C, 8.3 @+20°C, 14.0 @+40°C"
+			},
+			{
+				"property": "Latent Heat of Vaporisation (kcal/kg)",
+				"value": "96 @-20°C, 90 @0°C, 82 @+20°C"
+			},
+			{
+				"property": "Specific Heat @ 0°C",
+				"value": "0.57 kcal/kg/°C"
+			},
+			{
+				"property": "Relative Density (Air = 1)",
+				"value": "1.561"
+			},
+			{
+				"property": "Gas/Liquid Expansion Ratio",
+				"value": "274"
+			},
+			{
+				"property": "Flammability Limits",
+				"value": "2.2 – 9.5 % v/v in air"
+			}
+		],
+		"appData": "Industrial heating & furnaces, LPG-based gensets, metal cutting/brazing/welding, vaporizers & process heating, cold-climate fuel applications.",
+		"packaging": ["Bulk"],
+		"SBU": "LPG",
+		"industrial": "Commercial & Industrial Fuel Applications",
+		"documentation": "",
+		"alternatives": ["HP RAZOR", "HP DOLPHIN", "HP POWERLIFT"],
+		"related": ["-"]
+	},
+	"HPCL-LPG-0001": {
+		"id": 25,
+		"MSDS": "",
+		"title": "BUTANE",
+		"subTitle": "LPG – Commercial / Industrial Fuel",
+		"description": "Butane (C₄H₁₀) is a clean-burning, liquefiable hydrocarbon gas primarily used as a fuel and blending component in LPG. It is colourless and odourless in its natural form; an odorant such as Ethyl Mercaptan is added for leak detection and safety. Butane has a lower vapour pressure compared to Propane and delivers a high calorific value, making it suitable for commercial and industrial applications under moderate ambient conditions.",
+		"specifications": [
+			{
+				"property": "Chemical Formula",
+				"value": "C₄H₁₀"
+			},
+			{
+				"property": "Liquid Density @ 15°C",
+				"value": "0.584"
+			},
+			{
+				"property": "Co-efficient of Volumetric Expansion (/°C)",
+				"value": "0.0018 (-20 to +20°C); 0.0020 (0 to +40°C)"
+			},
+			{
+				"property": "Melting Point",
+				"value": "-137°C"
+			},
+			{
+				"property": "Critical Temperature",
+				"value": "152°C"
+			},
+			{
+				"property": "Auto-Ignition Temperature",
+				"value": "441°C"
+			},
+			{
+				"property": "Critical Pressure",
+				"value": "39 ata (kg/cm²)"
+			},
+			{
+				"property": "Boiling Point @ 760 mm Hg",
+				"value": "-0.5°C"
+			},
+			{
+				"property": "Vapour Pressure",
+				"value": "0.17 @-40°C, 0.45 @-20°C, 1.04 @0°C, 2.1 @+20°C, 3.9 @+40°C"
+			},
+			{
+				"property": "Latent Heat of Vaporisation (kcal/kg)",
+				"value": "96 @-20°C, 92 @0°C, 87 @+20°C"
+			},
+			{
+				"property": "Specific Heat @ 0°C",
+				"value": "0.54 kcal/kg/°C"
+			},
+			{
+				"property": "Relative Density (Air = 1)",
+				"value": "2.091"
+			},
+			{
+				"property": "Gas/Liquid Expansion Ratio",
+				"value": "230"
+			},
+			{
+				"property": "Flammability Limits",
+				"value": "1.8 – 8.5 % v/v in air"
+			}
+		],
+		"appData": "Aerosol propellants, portable fuel cartridges for camping stoves and laboratory burners, specialty commercial kitchens operating at controlled indoor temperatures, laboratory and R&D applications, lighter fuel and specialty fuel cylinders.",
+		"packaging": ["Bulk"],
+		"SBU": "LPG",
+		"industrial": "Manufacturing & Processing Industries; Aerosol & Chemical Industries; Refrigerant and Specialty Gas Applications",
+		"documentation": "",
+		"alternatives": ["HP RAZOR", "HP DOLPHIN", "HP POWERLIFT"],
+		"related": ["-"]
+	},
+	"HPCL-LPG-0006": {
+		"id": 403,
+		"MSDS": "HP_GAS_RAZOR_PDF",
+		"title": "HP GAS RAZOR",
+		"subTitle": "Metal Cutting Gas",
+		"description": "HP GAS RAZOR is a high-performance metal cutting fuel developed by HPCL. It is LPG fortified with a specially developed additive to provide faster pre-heating, higher piercing rate, faster cutting speed, smooth cut surface, lower slag formation and improved safety compared to Dissolved Acetylene.",
+		"specifications": [
+			{
+				"property": "Chemical Formula",
+				"value": "C₃H₈ + C₄H₁₀ + Razor Additive"
+			},
+			{
+				"property": "Physical State",
+				"value": "Gas"
+			},
+			{
+				"property": "Appearance",
+				"value": "Colourless"
+			},
+			{
+				"property": "Odour",
+				"value": "Mercaptan Added"
+			},
+			{
+				"property": "Vapour Density (Air = 1)",
+				"value": "1.5"
+			},
+			{
+				"property": "Specific Gravity (Water = 1)",
+				"value": "0.51 – 0.58 @ 50°C"
+			},
+			{
+				"property": "Boiling Point",
+				"value": "< –40°C"
+			},
+			{
+				"property": "Flammability",
+				"value": "Flammable"
+			},
+			{
+				"property": "Lower Explosive Limit (LEL)",
+				"value": "1.9 %"
+			},
+			{
+				"property": "Upper Explosive Limit (UEL)",
+				"value": "9.5 %"
+			},
+			{
+				"property": "Flash Point",
+				"value": "–104.4 °C"
+			},
+			{
+				"property": "Auto Ignition Temperature",
+				"value": "466.1 °C (Propane) / 405 °C (Butane)"
+			},
+			{
+				"property": "Stability",
+				"value": "Stable"
+			},
+			{
+				"property": "Hazardous Combustion Products",
+				"value": "CO, CO₂"
+			},
+			{
+				"property": "NFPA Rating",
+				"value": "Health: 1, Flammability: 4, Reactivity: 0"
+			},
+			{
+				"property": "Personal Protective Equipment (PPE)",
+				"value": "Gloves, Goggles, Gas Mask"
+			},
+			{
+				"property": "Storage Conditions",
+				"value": "Store in a cool, well-ventilated area away from heat and sparks"
+			},
+			{
+				"property": "Fire Extinguishing Media",
+				"value": "CO₂, DCP, Water Spray"
+			}
+		],
+		"appData": "Used in commercial cylinders for oxy-fuel metal cutting, scrap cutting, steel plate cutting, rail track cutting and fabrication cutting jobs.",
+		"packaging": ["Cylinder 19 kg", "47.5 kg"],
+		"SBU": "LPG",
+		"industrial": "Metal Cutting Gas",
+		"documentation": "Yes, attached",
+		"alternatives": ["HP FLAME PLUS", "HP DOLPHIN", "HP POWERLIFT"],
+		"related": []
+	},
+	"HPCL-LPG-0008": {
+		"id": 405,
+		"MSDS": "",
+		"title": "AUTO LPG",
+		"subTitle": "Motor Fuel",
+		"description": "Auto LPG is a clean, efficient, high-calorific gaseous fuel comprising mainly of a mixture of Propane (C₃H₈) and Butane (C₄H₁₀). It is colourless and odourless in its natural form and is odorized with Ethyl Mercaptan for safety. Auto LPG is produced during petroleum refining and gas processing. Ethyl Mercaptan provides a distinctive odour, enabling quick detection of gas leaks and ensuring safe handling. It is primarily used as an automotive fuel for passenger vehicles equipped with Auto LPG systems.",
+		"specifications": [
+			{
+				"property": "Composition",
+				"value": "Propane / Butane mixture as per IS 4576"
+			},
+			{
+				"property": "Vapour Pressure @ 40 °C (kPa)",
+				"value": "520 to 1050"
+			},
+			{
+				"property": "Odorant",
+				"value": "Ethyl Mercaptan"
+			},
+			{
+				"property": "Free Water Content",
+				"value": "Nil"
+			},
+			{
+				"property": "C5 Hydrocarbons and Heavier (% of Vol.)",
+				"value": "2.5 Max"
+			},
+			{
+				"property": "Total Volatile Sulphur (mg/kg)",
+				"value": "140 Max"
+			},
+			{
+				"property": "Compliance",
+				"value": "IS 4576"
+			}
+		],
+		"appData": "Primarily used as an automotive fuel for passenger vehicles (cars) equipped with Auto LPG systems.",
+		"packaging": ["Bulk", "Retail"],
+		"SBU": "LPG",
+		"industrial": "Automotive, Transportation",
+		"documentation": "Yes attached",
+		"alternatives": [],
 		"related": []
 	}
 }

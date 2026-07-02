@@ -3,6 +3,7 @@ import { ALL_IMAGES } from "@/hooks/Allimages";
 
 import React, { useEffect } from "react";
 import {
+	Animated,
 	Dimensions,
 	Image,
 	StyleSheet,
@@ -28,36 +29,59 @@ const Header = ({
 	caption,
 	screen,
 	subCaption,
+	scrollY,
 }: {
 	caption?: string; // Main heading text
 	screen?: string; // Screen identifier (eg: "Login")
 	subCaption?: string; // Optional subtitle text
+	scrollY?: Animated.Value; // Scroll position reference
 }) => {
 	const [userEmail, setUserEmail] = React.useState<string | null>(null);
+
+	const headerHeight = scrollY
+		? scrollY.interpolate({
+				inputRange: [0, 150],
+				outputRange: [140, 80],
+				extrapolate: "clamp",
+		  })
+		: 140;
+
+	const logoHeight = scrollY
+		? scrollY.interpolate({
+				inputRange: [0, 150],
+				outputRange: [90, 45],
+				extrapolate: "clamp",
+		  })
+		: 90;
+
+	const titleSize = scrollY
+		? scrollY.interpolate({
+				inputRange: [0, 150],
+				outputRange: [30, 20],
+				extrapolate: "clamp",
+		  })
+		: 30;
+
+	const imageWidth = scrollY
+		? scrollY.interpolate({
+				inputRange: [0, 150],
+				outputRange: [90, 50],
+				extrapolate: "clamp",
+		  })
+		: 90;
+
 	/* ---------------------------------------------------------------------- */
-	/*              Dynamic container style based on screen type              *
+	/*              Dynamic container style based on screen type              */
 	/* ---------------------------------------------------------------------- */
 	const getStyle = (): ViewStyle => ({
-		// Taller header for Login screen
-		minHeight: screen === "Login" ? 180 : 120,
-
-		// Percentage height allows responsiveness
-		height: "15%",
-
-		display: "flex",
-
-		// Login screen stacks vertically, others are horizontal
 		flexDirection: screen ? "column" : "row",
-
 		justifyContent: screen ? "center" : "flex-start",
 		alignItems: "center",
-
-		gap: 5,
-		padding: 10,
-
-		// Full-width card-style header
+		gap: 10,
+		paddingHorizontal: 15,
 		width: width - 20,
-		margin: 10,
+		marginHorizontal: 10,
+		marginTop: 10,
 	});
 
 	/* ---------------------------------------------------------------------- */
@@ -66,7 +90,6 @@ const Header = ({
 	const getHeader = () => {
 		switch (screen) {
 			case "Login":
-				// Large centered logo for login screen
 				return (
 					<View style={styles.container}>
 						<Image
@@ -74,21 +97,18 @@ const Header = ({
 							source={ALL_IMAGES.MASTER}
 							resizeMode="contain"
 						/>
-
-						{/* 
-							Optional multilingual / branding text 
-							(commented for now but kept for future use)
-						*/}
 					</View>
 				);
 
 			default:
-				// Compact logo for internal screens
 				return (
-					<Image
-						style={{ width: "25%", height: 150 }}
+					<Animated.Image
 						source={ALL_IMAGES.MASTER_LOGO}
 						resizeMode="contain"
+						style={{
+							width: imageWidth,
+							height: logoHeight,
+						}}
 					/>
 				);
 		}
@@ -131,6 +151,7 @@ const Header = ({
 						flexDirection: "row",
 						paddingHorizontal: 10,
 						alignItems: "center",
+						paddingVertical: 5,
 					}}
 				>
 					<Text
@@ -187,21 +208,35 @@ const Header = ({
 					{/* Show login button if no user is logged in */}
 				</View>
 			)}
-			<View style={getStyle()}>
+			<Animated.View
+				style={[
+					getStyle(),
+					{
+						height: headerHeight,
+						minHeight: undefined,
+						overflow: "hidden",
+					},
+				]}
+			>
 				{/* Logo section */}
 				{getHeader()}
 
 				{/* Title & subtitle */}
 				<View style={{ width: "70%" }}>
 					{caption && (
-						<Text
+						<Animated.Text
 							numberOfLines={2}
 							adjustsFontSizeToFit
 							minimumFontScale={0.65}
-							style={styles.content}
+							style={[
+								styles.content,
+								{
+									fontSize: titleSize,
+								},
+							]}
 						>
 							{caption}
-						</Text>
+						</Animated.Text>
 					)}
 
 					{subCaption && <Text style={styles.subTitle}>{subCaption}</Text>}
@@ -209,7 +244,7 @@ const Header = ({
 
 				{/* Bottom divider */}
 				<View style={styles.divider} />
-			</View>
+			</Animated.View>
 			<View>
 				{caption && caption !== "Product \nCatalogue" && (
 					<View
@@ -264,6 +299,7 @@ const styles = StyleSheet.create({
 		alignItems: "center",
 		padding: 5,
 		marginTop: 30,
+		elevation: 10,
 	},
 
 	// Large logo for login screen

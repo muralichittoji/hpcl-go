@@ -1,0 +1,1107 @@
+{
+    "HPCL-R&D-0016": {
+        "id": 16,
+        "MSDS": "VISABIT2_PDF",
+        "title": "HP-VisaBit2 A/B",
+        "subTitle": "Refinery Fuel Additives",
+        "description": "A newer version of Viscosity improvement additive for Bitumen with enhanced performance",
+        "specifications": [],
+        "appData": "Improved and cost-effective new version of HP Visabit ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0018": {
+        "id": 18,
+        "MSDS": "NEUTMAX_PDF",
+        "title": "HP NEUTMAX",
+        "subTitle": "Corrosion Mitigators",
+        "description": "Additive for superior neutralizing ability and corrosion protection in Distillation Units",
+        "specifications": [],
+        "appData": "Corrision inhibitor for primary refinery units",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0056": {
+        "id": 56,
+        "MSDS": "FROSTFREE_PDF",
+        "title": "HP-Frost Free",
+        "subTitle": "Specialty Products",
+        "description": "De-icing formulation for Car wind shield application",
+        "specifications": [],
+        "appData": "De-icing chemical for vehicle wind shield ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Lubes",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0021": {
+        "id": 21,
+        "MSDS": "",
+        "title": "HP FILMMAX HT",
+        "subTitle": "Corrosion Mitigators",
+        "description": "High performance hydrocarbon Filming Amines for Hydrotreaters",
+        "specifications": [],
+        "appData": "Corrosion inhibitor for  hydrotreating units",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0029": {
+        "id": 29,
+        "MSDS": "AQUAOKARE_BCW_PDF",
+        "title": "HP Aqua-O-Kare",
+        "subTitle": "Water Treatment / Environmental Protection Chemicals",
+        "description": "Comprehensive Anti-scaling formulation for BCW Systems",
+        "specifications": [],
+        "appData": "Comprehensive Anti-scaling formulation for refinery BCW Systems",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0034": {
+        "id": 34,
+        "MSDS": "TIC_PDF",
+        "title": "HP TIC",
+        "subTitle": "Protective Coatings",
+        "description": "Thermal insulating coating mitigating CUI Up to 120 degC",
+        "specifications": [],
+        "appData": " Helps in mitigating Corrosion under Insulation with temperature rating up to 120 degC",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0019": {
+        "id": 19,
+        "MSDS": "NEUTMAX_SUE_PDF",
+        "title": "HP SEU NEUTMAX",
+        "subTitle": "Corrosion Mitigators",
+        "description": "Cost-effective Corrosion Inhibitor formulations for SEU unit",
+        "specifications": [],
+        "appData": "Corrision inhibitor for solent extraction unit",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0024": {
+        "id": 24,
+        "MSDS": "CORRMIT_W2_PDF",
+        "title": "HP CORRMIT-White Oil 2.0",
+        "subTitle": "Corrosion Mitigators",
+        "description": "A newer variant of Corrosion Inhibitor for White Oil Pipelines with increased efficiency",
+        "specifications": [],
+        "appData": "HP CORRMIT W 2.0 Corrosion Inhibitor for White Oil Pipelines. Inhibits the corrosion in diesel, gasoline, sko and naphtha",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Lubes",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0063": {
+        "id": 63,
+        "MSDS": "INVIUS_PDF",
+        "title": "HP INVIUS",
+        "subTitle": "nan",
+        "description": "Antimicrobial coating for any surface",
+        "specifications": [],
+        "appData": "Surface cleaner for germ and microbe protection",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Hygiene Products",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0023": {
+        "id": 23,
+        "MSDS": "BIOLMAX_PDF",
+        "title": "HP BOILMAX",
+        "subTitle": "Corrosion Mitigators",
+        "description": "Organic Neutralizing Amines for Water Boiler Units",
+        "specifications": [],
+        "appData": "Corrosion Inhibitor for refinery boilers",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0053": {
+        "id": 53,
+        "MSDS": "",
+        "title": "HP HYTHERM - ω",
+        "subTitle": "Lube Additives/ Thermic Fluids",
+        "description": "HP HYTherm-ω (omega) is a high-performance synthetic heat transfer fluid designed to meet the demands of liquid or vapor phase systems, and indirect heat transfer. It is excellent for use in heat transfer fluid systems, which require precise temperature control.",
+        "specifications": [],
+        "appData": "operating temperature: 20 to 320 °C",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Lubes",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0026": {
+        "id": 26,
+        "MSDS": "CORRINAC_PDF",
+        "title": "HP CorrinAC",
+        "subTitle": "Corrosion Mitigators",
+        "description": "Corrosion Inhibitor for protection of critical equipment in overhead and REAC systems suitable for NH4CL and HCl corrosion issues",
+        "specifications": [],
+        "appData": "Corrosion inhibitor for protection against NH4CL and HCl corrosion issues",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0015": {
+        "id": 15,
+        "MSDS": "",
+        "title": "HP Visabit",
+        "subTitle": "Refinery Fuel Additives",
+        "description": "Viscosity improvement additive for Bitumen to upgrade short residue to VG30, VG30 to VG40 and VG40 super",
+        "specifications": [],
+        "appData": "Viscosity improvement additive for Bitumen ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0045": {
+        "id": 45,
+        "MSDS": "",
+        "title": "HP BioP",
+        "subTitle": "Petchem & polymers",
+        "description": "An advanced 100% biocompostable polymer natural fiber composite for food cutlery applications",
+        "specifications": [],
+        "appData": "Biocompostable polymer material",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0046": {
+        "id": 46,
+        "MSDS": "BIOFILM_PDF",
+        "title": "HP BioFilm",
+        "subTitle": "Petchem & polymers",
+        "description": "a bio-compostable garbage bag with enhanced flexibility, barrier properties, mechanical properties",
+        "specifications": [],
+        "appData": "Bio-compostable garbage bag ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0027": {
+        "id": 27,
+        "MSDS": "",
+        "title": "HP BioActiva",
+        "subTitle": "Water Treatment / Environmental Protection Chemicals",
+        "description": "A comprehensive biodegradable solution for effective effluent management",
+        "specifications": [],
+        "appData": "Biodegradable solution for controlling BOD, COD at ETP plants",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0033": {
+        "id": 33,
+        "MSDS": "NANOKOOOL_PDF",
+        "title": "HP NanoKoool",
+        "subTitle": "Protective Coatings",
+        "description": "Effective solar reflectence rooftop coating",
+        "specifications": [],
+        "appData": "Rooftop coating for solar reflectance ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0052": {
+        "id": 52,
+        "MSDS": "",
+        "title": "HP THERM -α",
+        "subTitle": "Lube Additives/ Thermic Fluids",
+        "description": "HP THERM-α is ideally suited for high-temperature heat recovery applications up to the temperatures 370 °C",
+        "specifications": [],
+        "appData": "operating temperature: 20 °c to 240 °c in liquid phase; 241 to 370 °C in vapour phase systems",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Lubes",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0025": {
+        "id": 25,
+        "MSDS": "EGIN_PDF",
+        "title": "HP EGIN",
+        "subTitle": "Corrosion Mitigators",
+        "description": "An effective corrosion inhibitor for Ethanol & Gasohol with greater corrosion resistance",
+        "specifications": [],
+        "appData": "Corrosion inhibitor for Ethanol & Gasohol blend",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0004": {
+        "id": 4,
+        "MSDS": "THERMOPRO_D_PDF",
+        "title": "HP THERMOPRO-D",
+        "subTitle": "Refinery Process Chemical",
+        "description": "Cost effective & efficient anti-foulant for Diesel Hydrotreating circuit",
+        "specifications": [],
+        "appData": "Antifoulant for refinery diesel hydrotreating unit",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0022": {
+        "id": 22,
+        "MSDS": "CORRMIT_PDF",
+        "title": "HP CORRMIT-LPG",
+        "subTitle": "Corrosion Mitigators",
+        "description": "Corrosion Inhibitor specifically designed for LPG Pipelines",
+        "specifications": [],
+        "appData": "Corrosion Inhibitor for LPG Pipelines ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0003": {
+        "id": 3,
+        "MSDS": "",
+        "title": "HP THERMOPRO-W",
+        "subTitle": "Refinery Process Chemical",
+        "description": "A Novel Antifoulant for specifically designed for Waxy crude ",
+        "specifications": [],
+        "appData": "Antifoulant specifically designed for waxy crude",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0017": {
+        "id": 17,
+        "MSDS": "COSOL_PDF",
+        "title": "HP Cosol",
+        "subTitle": "Refinery Fuel Additives",
+        "description": "A Novel Co-solvent for Solvent Extraction Unit",
+        "specifications": [],
+        "appData": "Co-solvent for Solvent Extraction Unit",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Refinery",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0010": {
+        "id": 10,
+        "MSDS": "",
+        "title": "HP Enscour",
+        "subTitle": "Refinery Process Chemical",
+        "description": "Additized Solvent Package for Defouling of Units in Heavy Oil Processing",
+        "specifications": [],
+        "appData": "Defouling of heavy oil processing unit",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0050": {
+        "id": 50,
+        "MSDS": "DIACID_PDF",
+        "title": "Diacid",
+        "subTitle": "Lube Additives",
+        "description": "Dicarboxylic acid that serves as a co-emulsifier, corrosion inhibitor, lubricity additive, and wetting agent",
+        "specifications": [],
+        "appData": "Dicarboxylic acid that serves as a co-emulsifier, corrosion inhibitor, lubricity additive, and wetting agent",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Lubes",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0062": {
+        "id": 62,
+        "MSDS": "EASYWASH_PDF",
+        "title": "HP EASYWASH",
+        "subTitle": "nan",
+        "description": "Hand wash solution with excellent anti-microbial eficiency ",
+        "specifications": [],
+        "appData": "Hand wash solution ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Hygiene Products",
+        "documentation": "not available",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0031": {
+        "id": 31,
+        "MSDS": "",
+        "title": "HP Primer",
+        "subTitle": "Protective Coatings",
+        "description": "Durable and Enhanced Corrosion Resistant Primer",
+        "specifications": [],
+        "appData": "Durable and Enhanced  Corrosion Resistant Primer . Offers lower application cost and better  performance Compatible to other top coats",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0041": {
+        "id": 41,
+        "MSDS": "13X31_PDF",
+        "title": "HP 13X31",
+        "subTitle": "Catalysts & Adsorbents",
+        "description": "Adsorbent for Medical Oxygen/CNU PSA",
+        "specifications": [],
+        "appData": "Adsorbent for Medical Oxygen/CNU PSA",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0040": {
+        "id": 40,
+        "MSDS": "",
+        "title": "HP Nano ZSM-5",
+        "subTitle": "Catalysts & Adsorbents",
+        "description": "Nanosized ZSM-5  additive for FCCU",
+        "specifications": [],
+        "appData": "Nano ZSM 5 based additive for FCC unit ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "HPGRDC",
+        "documentation": "not available",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0035": {
+        "id": 35,
+        "MSDS": "CIC_PDF",
+        "title": "HP CIC",
+        "subTitle": "Protective Coatings",
+        "description": "Cold Insulating Coating for low temperature applications  upto -20 deg. C",
+        "specifications": [],
+        "appData": "Cold insulation coating with temperature rating up to -20 deg. C.",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0013": {
+        "id": 13,
+        "MSDS": "DLA_FLO_PDF",
+        "title": "HP-DLA FLO",
+        "subTitle": "Refinery Fuel Additives",
+        "description": "Diesel lubricity additive for advanced protection & enhanced operability",
+        "specifications": [],
+        "appData": "Diesel lubricity addtive for refinery",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0032": {
+        "id": 32,
+        "MSDS": "NANOKOAT_PDF",
+        "title": "HP NanOKoat",
+        "subTitle": "Protective Coatings",
+        "description": "Nano material added high performance corrosion resistant coating for salty water environment",
+        "specifications": [],
+        "appData": "High performance, high functionalized nano-additized paints for corrosion protection",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0007": {
+        "id": 7,
+        "MSDS": "HPDUCER_PDF",
+        "title": "HP DUCER",
+        "subTitle": "Refinery Process Chemical",
+        "description": "Online pressure drop management solution for DHT",
+        "specifications": [],
+        "appData": "Helps in delaying DHT unit shut down & continous operation at desired pressure drop level",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0037": {
+        "id": 37,
+        "MSDS": "BCA_PDF",
+        "title": "HP BCA",
+        "subTitle": "Catalysts & Adsorbents",
+        "description": "Novel and innovative catalyst additive for reduction of bottoms yield",
+        "specifications": [],
+        "appData": "Bottoms Cracking Additive for FCC unit",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0043": {
+        "id": 43,
+        "MSDS": "DRA_PDF",
+        "title": "HP DRA",
+        "subTitle": "Petchem & polymers",
+        "description": "A cost-effective and novel additive for superior drag reduction in white oil pipelines",
+        "specifications": [],
+        "appData": "Drag reduction agent for white oil pipelines",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0049": {
+        "id": 49,
+        "MSDS": "",
+        "title": "HP Fused 3D",
+        "subTitle": "Petchem & polymers",
+        "description": "Polypropylene pellets meticulously engineered for extrusion-based 3D printing ",
+        "specifications": [],
+        "appData": "PP pellet based 3D printing material",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0036": {
+        "id": 36,
+        "MSDS": "HP2FCC_PDF",
+        "title": "HP2FCC  Catalyst",
+        "subTitle": "Catalysts & Adsorbents",
+        "description": "Novel cost-effective multifunctional single catalyst for increasing the yield of propylene and reducing the yield of bottoms in high severity FCCU",
+        "specifications": [],
+        "appData": "FCC Catalyst for high severity refinery FCC unit",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "HPGRDC",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0060": {
+        "id": 60,
+        "MSDS": "SAN_PDF",
+        "title": "HP SAN",
+        "subTitle": "nan",
+        "description": "Hand Sanitizer with proven bacterial elimination and protection against infecting pathogens",
+        "specifications": [],
+        "appData": "Hand Sanitizer",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Hygiene Products",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0005": {
+        "id": 5,
+        "MSDS": "",
+        "title": "HP DEWA",
+        "subTitle": "Refinery Process Chemical",
+        "description": "Crude dewatering additive for faster settlement of water in tanks",
+        "specifications": [],
+        "appData": "Dewatering of crude tanks/storages",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0006": {
+        "id": 6,
+        "MSDS": "DWA_V2_PDF",
+        "title": "HP DWA 150N",
+        "subTitle": "Refinery Process Chemical",
+        "description": "Novel dewaxing aid additives for enhanced lube oil quality and efficiency",
+        "specifications": [],
+        "appData": "Propane Dewaxing Units at lube refinery",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0009": {
+        "id": 9,
+        "MSDS": "DEMU_PDF",
+        "title": "HP DEMU",
+        "subTitle": "Refinery Process Chemical",
+        "description": "Cost effective Demulsifier for Crude Oil Desalting",
+        "specifications": [],
+        "appData": "Demulsifier for refinery desalters",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0064": {
+        "id": 64,
+        "MSDS": "LAUNDRYSANITIZER_PDF",
+        "title": "HP Laundry Sanitizer",
+        "subTitle": "nan",
+        "description": "Disinfecting solution for hygienically clean laundry",
+        "specifications": [],
+        "appData": "Laundry Sanitizer",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Hygiene Products",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0061": {
+        "id": 61,
+        "MSDS": "",
+        "title": "HP PurUS",
+        "subTitle": "nan",
+        "description": "All Purpose floor cleaner",
+        "specifications": [],
+        "appData": "Floor cleaner",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Hygiene Products",
+        "documentation": "not available",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0054": {
+        "id": 54,
+        "MSDS": "NANOLITE_PDF",
+        "title": "HP Nanolite",
+        "subTitle": "Lube Additives/ Thermic Fluids",
+        "description": "Nano Additized Light Colored Grease",
+        "specifications": [],
+        "appData": "Nano additized grease",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Lubes",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0039": {
+        "id": 39,
+        "MSDS": "",
+        "title": "HP COP",
+        "subTitle": "Catalysts & Adsorbents",
+        "description": "Cost effective additive formulation for higher CO conversion in FCCU",
+        "specifications": [],
+        "appData": "CO promoter for refinery FCC unit",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0047": {
+        "id": 47,
+        "MSDS": "PCRHDPE_PDF",
+        "title": "HP PCR HDPE",
+        "subTitle": "Petchem & polymers",
+        "description": "100% Post-Consumer Recycled High-Density Polyethylene (PCR HDPE) for manufacturing HP Lubricant bottles",
+        "specifications": [],
+        "appData": "Post-Consumer Recycled HDPE material",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0011": {
+        "id": 11,
+        "MSDS": "ANTIFOAM_PDF",
+        "title": "HP Antifoam",
+        "subTitle": "Refinery Process Chemical",
+        "description": "Defoaming agent for alkaline aqueous-gas interface",
+        "specifications": [],
+        "appData": "Defoamer Amine Recovery unit at refinery",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0042": {
+        "id": 42,
+        "MSDS": "PMA45_PDF",
+        "title": "HP PMA45",
+        "subTitle": "Catalysts & Adsorbents",
+        "description": "Propylene Maximization Additive",
+        "specifications": [],
+        "appData": "Improved variant of Propylene Maximization Additive for refinery FCC unit",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0012": {
+        "id": 12,
+        "MSDS": "",
+        "title": "HP Dehazer",
+        "subTitle": "Refinery Fuel Additives",
+        "description": "Novel formulation for improving appearance of White oil products",
+        "specifications": [],
+        "appData": " Improvement of  appearance of White oil products",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0071": {
+        "id": 71,
+        "MSDS": "",
+        "title": "HP WMA",
+        "subTitle": "Fuel Additives",
+        "description": "Warm Mix Additive for Asphalt Applications",
+        "specifications": [],
+        "appData": "Warm Mix Additive for Asphalt  Applications",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "not available",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0030": {
+        "id": 30,
+        "MSDS": "AQUASCALEOUT_PDF",
+        "title": "HP AquaScaleOut",
+        "subTitle": "Water Treatment / Environmental Protection Chemicals",
+        "description": "Effective Descaling formulation for Chillers, Refrigeration units and Boilers",
+        "specifications": [],
+        "appData": "Scale inhibitors for refinery BCW Systems",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0038": {
+        "id": 38,
+        "MSDS": "PMA_PDF",
+        "title": "HP PMA",
+        "subTitle": "Catalysts & Adsorbents",
+        "description": "Novel ZSM 5 additive for enhanced propylene production in FCCU",
+        "specifications": [],
+        "appData": "ZSM 5 based FCC unit additive for enhancing propylene yield",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "not available",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0044": {
+        "id": 44,
+        "MSDS": "3DPP_PDF",
+        "title": "HP 3D PP",
+        "subTitle": "Petchem & polymers",
+        "description": "HP 3D PP  is an innovative polypropylene (PP) product for FDM 3D printing",
+        "specifications": [],
+        "appData": "PP filament based 3D printing material",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0058": {
+        "id": 58,
+        "MSDS": "SHINEPRO_PDF",
+        "title": "HP-Shine Pro",
+        "subTitle": "Specialty Products",
+        "description": "Premium high gloss paint thinner",
+        "specifications": [],
+        "appData": "MTO based high gloss paint thinner",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0048": {
+        "id": 48,
+        "MSDS": "PFT_PDF",
+        "title": "HP PFT",
+        "subTitle": "Petchem & polymers",
+        "description": "PE Based Compound for Rotomolded Plastic Fuel Tank",
+        "specifications": [],
+        "appData": "PE based compound for manufacturing Plastic Fuel Tank",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0020": {
+        "id": 20,
+        "MSDS": "",
+        "title": "HP FILMMAX",
+        "subTitle": "Corrosion Mitigators",
+        "description": "Filming Amine for effective protection from overhead corrosion in crude units",
+        "specifications": [],
+        "appData": "Corrision inhibitor for primary refinery units",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0059": {
+        "id": 59,
+        "MSDS": "BUBBLY_PDF",
+        "title": "HP Bubbly",
+        "subTitle": "Specialty Products",
+        "description": "Specialized Leak Detection Liquid with superior bubble formation  for low pressure lines",
+        "specifications": [],
+        "appData": "Specialized Leak Detection Liquid ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0055": {
+        "id": 55,
+        "MSDS": "SOLAROKARE_PDF",
+        "title": "HP Solar-O-Kare",
+        "subTitle": "Specialty Products",
+        "description": "Chemical for efficient Solar Panel Cleaning",
+        "specifications": [],
+        "appData": "Cost-effective chemical for solar panel cleaning",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing/NFB",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0051": {
+        "id": 51,
+        "MSDS": "THERMGAMMA_PDF",
+        "title": "HP THERM- γ",
+        "subTitle": "Lube Additives/ Thermic Fluids",
+        "description": "HP THERM-γ is a heat transfer fluid for high temperature heat transfer applications. HP THERM-γ possesses low viscosity and high thermal stability for consistent performance due to its ability to operate in vapor and liquid phases. ",
+        "specifications": [],
+        "appData": "operating temperature: 12 °c to 257 °c in liquid phase; 258 to 400 °C in vapour phase systems",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Lubes",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0002": {
+        "id": 2,
+        "MSDS": "THERMOPRO_PDF",
+        "title": "HP THERMOPRO",
+        "subTitle": "Refinery Process Chemical",
+        "description": "A Novel & Cost-effective Anti-foulant for crude pre-heat exchangers",
+        "specifications": [],
+        "appData": "Antifoulant for refinery crude pre-heat exchangers",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0057": {
+        "id": 57,
+        "MSDS": "FROSTSHIELD_PDF",
+        "title": "HP Frost Shield",
+        "subTitle": "Specialty Products",
+        "description": "Prevents frost formation in vehicle wind shields ",
+        "specifications": [],
+        "appData": "Prevention of frost formation on vehicle wind shield ",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Lubes",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0008": {
+        "id": 8,
+        "MSDS": "",
+        "title": "HP DUCER NHT",
+        "subTitle": "Refinery Process Chemical",
+        "description": "Online pressure drop management solution for NHT unit",
+        "specifications": [],
+        "appData": "Helps in delaying NHT unit shut down & continous operation at desired pressure drop level",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0028": {
+        "id": 28,
+        "MSDS": "BIOREMEDIA_PDF",
+        "title": "HP Bio Remedia",
+        "subTitle": "Water Treatment / Environmental Protection Chemicals",
+        "description": "An effective solution for management of crude sludge in refineries and oil terminals",
+        "specifications": [],
+        "appData": "Bio based solution to oily sludge treatment",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0014": {
+        "id": 14,
+        "MSDS": "PPD_ULSD_PDF",
+        "title": "HP-PPD-ULSD",
+        "subTitle": "Refinery Fuel Additives",
+        "description": "Pour point depressant for ultra low sulphur diesel",
+        "specifications": [],
+        "appData": "Pour point depressant for ultra low sulphur diesel",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    },
+    "HPCL-R&D-0001": {
+        "id": 1,
+        "MSDS": "",
+        "title": "HP FurnOKare",
+        "subTitle": "Refinery Process Chemical",
+        "description": "Online Fuel-oil Furnace Heater Cleaning for superior furnace efficiency",
+        "specifications": [],
+        "appData": "Refinery fuel oil furnaces",
+        "packaging": [],
+        "SBU": "R&D Products",
+        "industrial": "Petchem-Marketing",
+        "documentation": "",
+        "alternatives": [],
+        "related": [
+            "not available"
+        ]
+    }
+}

@@ -1,42 +1,42 @@
 {
-  "id": 1,
-  "iconType": "image",
-  "icon": "FUEL_ICON",
-  "label": "Motor Fuels",
-  "screen": "FuelsHome",
-  "title": "Motor \n Fuels",
-  "value": [
-    {
-      "id": 1,
-      "label": "MOTOR SPIRIT",
-      "value": ""
-    },
-    {
-      "id": 2,
-      "label": "HIGH SPEED DIESEL",
-      "value": "HPCL-MS-0002"
-    },
-    {
-      "id": 3,
-      "label": "ETHANOL BLENDED MOTOR SPIRIT",
-      "value": "HPCL-MS-0007"
-    },
-    {
-      "id": 6,
-      "label": "HP TURBOJET",
-      "value": "HPCL-MS-0006"
-    },
-    { "id": 4, "label": "POWER95", "value": "HPCL-MS-0008" },
-    {
-      "id": 7,
-      "label": "COMPRESSED NATURAL GAS",
-      "value": ""
-    },
-    { "id": 5, "label": "POWER100", "value": "HPCL-MS-0009" },
-    {
-      "id": 8,
-      "label": "AUTO LPG",
-      "value": ""
-    }
-  ]
+	"id": 1,
+	"iconType": "image",
+	"icon": "FUEL_ICON",
+	"label": "Motor Fuels",
+	"screen": "FuelsHome",
+	"title": "Motor \n Fuels",
+	"value": [
+		{
+			"id": 1,
+			"label": "MOTOR SPIRIT",
+			"value": "HPCL-MS-0010"
+		},
+		{
+			"id": 2,
+			"label": "HIGH SPEED DIESEL",
+			"value": "HPCL-MS-0002"
+		},
+		{
+			"id": 3,
+			"label": "ETHANOL BLENDED MOTOR SPIRIT",
+			"value": "HPCL-MS-0007"
+		},
+		{
+			"id": 6,
+			"label": "HP TURBOJET",
+			"value": "HPCL-MS-0006"
+		},
+		{ "id": 4, "label": "POWER95", "value": "HPCL-MS-0008" },
+		{
+			"id": 7,
+			"label": "COMPRESSED NATURAL GAS",
+			"value": ""
+		},
+		{ "id": 5, "label": "POWER100", "value": "HPCL-MS-0009" },
+		{
+			"id": 8,
+			"label": "AUTO LPG",
+			"value": "HPCL-LPG-0008"
+		}
+	]
 }

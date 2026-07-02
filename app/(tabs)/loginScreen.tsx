@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
 	guestBtn: {
 		width: "90%",
 		margin: "5%",
-		height: 40,
+		height: 50,
 		backgroundColor: Colors.grayDeep,
 		padding: 5,
 		borderRadius: 10,

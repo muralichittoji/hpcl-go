@@ -7,247 +7,267 @@
 	"description": "",
 	"value": [
 		{
-			"label": "Petchem-Marketing",
+			"label": "Petchem",
 			"value": [
 				{
-					"label": "Refinery Process Chemical",
+					"label": "Petchem-Marketing",
 					"value": [
 						{
-							"label": "HP FurnOKare",
-							"value": "HPCL-R&D-0001"
+							"label": "Refinery Process Chemical",
+							"value": [
+								{
+									"label": "HP FurnOKare",
+									"value": "HPCL-R&D-0001"
+								},
+								{
+									"label": "HP THERMOPRO",
+									"value": "HPCL-R&D-0002"
+								},
+								{
+									"label": "HP THERMOPRO-W",
+									"value": "HPCL-R&D-0003"
+								},
+								{
+									"label": "HP THERMOPRO-D",
+									"value": "HPCL-R&D-0004"
+								},
+								{
+									"label": "HP DEWA",
+									"value": "HPCL-R&D-0005"
+								},
+								{
+									"label": "HP DWA 150N",
+									"value": "HPCL-R&D-0006"
+								},
+								{
+									"label": "HP DUCER",
+									"value": "HPCL-R&D-0007"
+								},
+								{
+									"label": "HP DUCER NHT",
+									"value": "HPCL-R&D-0008"
+								},
+								{
+									"label": "HP DEMU",
+									"value": "HPCL-R&D-0009"
+								},
+								{
+									"label": "HP Enscour",
+									"value": "HPCL-R&D-0010"
+								},
+								{
+									"label": "HP Antifoam",
+									"value": "HPCL-R&D-0011"
+								}
+							]
 						},
 						{
-							"label": "HP THERMOPRO",
-							"value": "HPCL-R&D-0002"
+							"label": "Refinery Fuel Additives",
+							"value": [
+								{
+									"label": "HP Dehazer",
+									"value": "HPCL-R&D-0012"
+								},
+								{
+									"label": "HP-DLA FLO",
+									"value": "HPCL-R&D-0013"
+								},
+								{
+									"label": "HP-PPD-ULSD",
+									"value": "HPCL-R&D-0014"
+								},
+								{
+									"label": "HP Visabit",
+									"value": "HPCL-R&D-0015"
+								},
+								{
+									"label": "HP-VisaBit2 A/B",
+									"value": "HPCL-R&D-0016"
+								}
+							]
 						},
 						{
-							"label": "HP THERMOPRO-W",
-							"value": "HPCL-R&D-0003"
+							"label": "Corrosion Mitigators",
+							"value": [
+								{
+									"label": "HP NEUTMAX",
+									"value": "HPCL-R&D-0018"
+								},
+								{
+									"label": "HP SEU NEUTMAX",
+									"value": "HPCL-R&D-0019"
+								},
+								{
+									"label": "HP FILMMAX",
+									"value": "HPCL-R&D-0020"
+								},
+								{
+									"label": "HP FILMMAX HT",
+									"value": "HPCL-R&D-0021"
+								},
+								{
+									"label": "HP CORRMIT-LPG",
+									"value": "HPCL-R&D-0022"
+								},
+								{
+									"label": "HP BOILMAX",
+									"value": "HPCL-R&D-0023"
+								},
+								{
+									"label": "HP EGIN",
+									"value": "HPCL-R&D-0025"
+								},
+								{
+									"label": "HP CorrinAC",
+									"value": "HPCL-R&D-0026"
+								}
+							]
 						},
 						{
-							"label": "HP THERMOPRO-D",
-							"value": "HPCL-R&D-0004"
+							"label": "Water Treatment / Environmental Protection Chemicals",
+							"value": [
+								{
+									"label": "HP BioActiva",
+									"value": "HPCL-R&D-0027"
+								},
+								{
+									"label": "HP Bio Remedia",
+									"value": "HPCL-R&D-0028"
+								},
+								{
+									"label": "HP Aqua-O-Kare",
+									"value": "HPCL-R&D-0029"
+								},
+								{
+									"label": "HP AquaScaleOut",
+									"value": "HPCL-R&D-0030"
+								}
+							]
 						},
 						{
-							"label": "HP DEWA",
-							"value": "HPCL-R&D-0005"
+							"label": "Protective Coatings",
+							"value": [
+								{
+									"label": "HP Primer",
+									"value": "HPCL-R&D-0031"
+								},
+								{
+									"label": "HP NanOKoat",
+									"value": "HPCL-R&D-0032"
+								},
+								{
+									"label": "HP NanoKoool",
+									"value": "HPCL-R&D-0033"
+								},
+								{
+									"label": "HP TIC",
+									"value": "HPCL-R&D-0034"
+								},
+								{
+									"label": "HP CIC",
+									"value": "HPCL-R&D-0035"
+								}
+							]
 						},
 						{
-							"label": "HP DWA 150N",
-							"value": "HPCL-R&D-0006"
+							"label": "Catalysts & Adsorbents",
+							"value": [
+								{
+									"label": "HP BCA",
+									"value": "HPCL-R&D-0037"
+								},
+								{
+									"label": "HP PMA",
+									"value": "HPCL-R&D-0038"
+								},
+								{
+									"label": "HP COP",
+									"value": "HPCL-R&D-0039"
+								},
+								{
+									"label": "HP 13X31",
+									"value": "HPCL-R&D-0041"
+								},
+								{
+									"label": "HP PMA45",
+									"value": "HPCL-R&D-0042"
+								}
+							]
 						},
 						{
-							"label": "HP DUCER",
-							"value": "HPCL-R&D-0007"
+							"label": "Petchem & polymers",
+							"value": [
+								{
+									"label": "HP DRA",
+									"value": "HPCL-R&D-0043"
+								},
+								{
+									"label": "HP 3D PP",
+									"value": "HPCL-R&D-0044"
+								},
+								{
+									"label": "HP BioP",
+									"value": "HPCL-R&D-0045"
+								},
+								{
+									"label": "HP BioFilm",
+									"value": "HPCL-R&D-0046"
+								},
+								{
+									"label": "HP PCR HDPE",
+									"value": "HPCL-R&D-0047"
+								},
+								{
+									"label": "HP PFT",
+									"value": "HPCL-R&D-0048"
+								},
+								{
+									"label": "HP Fused 3D",
+									"value": "HPCL-R&D-0049"
+								}
+							]
 						},
 						{
-							"label": "HP DUCER NHT",
-							"value": "HPCL-R&D-0008"
+							"label": "Specialty Products",
+							"value": [
+								{
+									"label": "HP-Shine Pro",
+									"value": "HPCL-R&D-0058"
+								},
+								{
+									"label": "HP Bubbly",
+									"value": "HPCL-R&D-0059"
+								}
+							]
 						},
 						{
-							"label": "HP DEMU",
-							"value": "HPCL-R&D-0009"
-						},
-						{
-							"label": "HP Enscour",
-							"value": "HPCL-R&D-0010"
-						},
-						{
-							"label": "HP Antifoam",
-							"value": "HPCL-R&D-0011"
+							"label": "Fuel Additives",
+							"value": [
+								{
+									"label": "HP WMA",
+									"value": "HPCL-R&D-0071"
+								}
+							]
 						}
 					]
 				},
 				{
-					"label": "Refinery Fuel Additives",
+					"label": "Petchem-Marketing/NFB",
 					"value": [
 						{
-							"label": "HP Dehazer",
-							"value": "HPCL-R&D-0012"
-						},
-						{
-							"label": "HP-DLA FLO",
-							"value": "HPCL-R&D-0013"
-						},
-						{
-							"label": "HP-PPD-ULSD",
-							"value": "HPCL-R&D-0014"
-						},
-						{
-							"label": "HP Visabit",
-							"value": "HPCL-R&D-0015"
-						},
-						{
-							"label": "HP-VisaBit2 A/B",
-							"value": "HPCL-R&D-0016"
-						}
-					]
-				},
-				{
-					"label": "Corrosion Mitigators",
-					"value": [
-						{
-							"label": "HP NEUTMAX",
-							"value": "HPCL-R&D-0018"
-						},
-						{
-							"label": "HP SEU NEUTMAX",
-							"value": "HPCL-R&D-0019"
-						},
-						{
-							"label": "HP FILMMAX",
-							"value": "HPCL-R&D-0020"
-						},
-						{
-							"label": "HP FILMMAX HT",
-							"value": "HPCL-R&D-0021"
-						},
-						{
-							"label": "HP CORRMIT-LPG",
-							"value": "HPCL-R&D-0022"
-						},
-						{
-							"label": "HP BOILMAX",
-							"value": "HPCL-R&D-0023"
-						},
-						{
-							"label": "HP EGIN",
-							"value": "HPCL-R&D-0025"
-						},
-						{
-							"label": "HP CorrinAC",
-							"value": "HPCL-R&D-0026"
-						}
-					]
-				},
-				{
-					"label": "Water Treatment / Environmental Protection Chemicals",
-					"value": [
-						{
-							"label": "HP BioActiva",
-							"value": "HPCL-R&D-0027"
-						},
-						{
-							"label": "HP Bio Remedia",
-							"value": "HPCL-R&D-0028"
-						},
-						{
-							"label": "HP Aqua-O-Kare",
-							"value": "HPCL-R&D-0029"
-						},
-						{
-							"label": "HP AquaScaleOut",
-							"value": "HPCL-R&D-0030"
-						}
-					]
-				},
-				{
-					"label": "Protective Coatings",
-					"value": [
-						{
-							"label": "HP Primer",
-							"value": "HPCL-R&D-0031"
-						},
-						{
-							"label": "HP NanOKoat",
-							"value": "HPCL-R&D-0032"
-						},
-						{
-							"label": "HP NanoKoool",
-							"value": "HPCL-R&D-0033"
-						},
-						{
-							"label": "HP TIC",
-							"value": "HPCL-R&D-0034"
-						},
-						{
-							"label": "HP CIC",
-							"value": "HPCL-R&D-0035"
-						}
-					]
-				},
-				{
-					"label": "Catalysts & Adsorbents",
-					"value": [
-						{
-							"label": "HP BCA",
-							"value": "HPCL-R&D-0037"
-						},
-						{
-							"label": "HP PMA",
-							"value": "HPCL-R&D-0038"
-						},
-						{
-							"label": "HP COP",
-							"value": "HPCL-R&D-0039"
-						},
-						{
-							"label": "HP 13X31",
-							"value": "HPCL-R&D-0041"
-						},
-						{
-							"label": "HP PMA45",
-							"value": "HPCL-R&D-0042"
-						}
-					]
-				},
-				{
-					"label": "Petchem & polymers",
-					"value": [
-						{
-							"label": "HP DRA",
-							"value": "HPCL-R&D-0043"
-						},
-						{
-							"label": "HP 3D PP",
-							"value": "HPCL-R&D-0044"
-						},
-						{
-							"label": "HP BioP",
-							"value": "HPCL-R&D-0045"
-						},
-						{
-							"label": "HP BioFilm",
-							"value": "HPCL-R&D-0046"
-						},
-						{
-							"label": "HP PCR HDPE",
-							"value": "HPCL-R&D-0047"
-						},
-						{
-							"label": "HP PFT",
-							"value": "HPCL-R&D-0048"
-						},
-						{
-							"label": "HP Fused 3D",
-							"value": "HPCL-R&D-0049"
-						}
-					]
-				},
-				{
-					"label": "Specialty Products",
-					"value": [
-						{
-							"label": "HP-Shine Pro",
-							"value": "HPCL-R&D-0058"
-						},
-						{
-							"label": "HP Bubbly",
-							"value": "HPCL-R&D-0059"
-						}
-					]
-				},
-				{
-					"label": "Fuel Additives",
-					"value": [
-						{
-							"label": "HP WMA",
-							"value": "HPCL-R&D-0071"
+							"label": "Specialty Products",
+							"value": [
+								{
+									"label": "HP Solar-O-Kare",
+									"value": "HPCL-R&D-0055"
+								}
+							]
 						}
 					]
 				}
 			]
 		},
+
 		{
 			"label": "Refinery",
 			"value": [
@@ -332,20 +352,6 @@
 						{
 							"label": "HP Nano ZSM-5",
 							"value": "HPCL-R&D-0040"
-						}
-					]
-				}
-			]
-		},
-		{
-			"label": "Petchem-Marketing/NFB",
-			"value": [
-				{
-					"label": "Specialty Products",
-					"value": [
-						{
-							"label": "HP Solar-O-Kare",
-							"value": "HPCL-R&D-0055"
 						}
 					]
 				}

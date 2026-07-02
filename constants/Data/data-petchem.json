@@ -1,0 +1,198 @@
+{
+    "HPCL-IF-0017": {
+        "id": 23,
+        "MSDS": "",
+        "title": "F02020-MS",
+        "subTitle": "PE Grade",
+        "description": "LLDPE grade for manufacturing of liners and agricultural films.",
+        "specifications": [
+            {
+                "property": "Density of Resin @ 23°C",
+                "value": "0.918 g/cc"
+            },
+            {
+                "property": "Melt Flow Index (190°C / 2.16 kg)",
+                "value": "2 g/10 min"
+            },
+            {
+                "property": "Tensile Strength at Yield (MD/TD)",
+                "value": "9 / 9 MPa"
+            },
+            {
+                "property": "Tensile Strength at Break (MD/TD)",
+                "value": "29 / 22 MPa"
+            },
+            {
+                "property": "Elongation at Break (MD/TD)",
+                "value": "650 / 760 %"
+            },
+            {
+                "property": "Gloss @ 60°",
+                "value": "95 GU"
+            },
+            {
+                "property": "Haze",
+                "value": "11 %"
+            },
+            {
+                "property": "Dart Impact Strength",
+                "value": "2.7 g/micron"
+            },
+            {
+                "property": "Elmendorf Tear Strength (MD/TD)",
+                "value": "5.3 / 15.2 g/micron"
+            }
+        ],
+        "appData": "Used for FMCG packaging, industrial liners and agricultural film applications.",
+        "packaging": [
+            "25 kg Raffia woven sack bags"
+        ],
+        "SBU": "Industrial Fuels",
+        "industrial": "Petrochemicals",
+        "documentation": "",
+        "alternatives": [
+            "Reliance S030SG"
+        ],
+        "related": []
+    },
+    "HPCL-IF-0016": {
+        "id": 22,
+        "MSDS": "LLDPE_PDF",
+        "title": "F01019S-MS",
+        "subTitle": "PE Grade",
+        "description": "LLDPE grade for manufacturing of general packaging film, multilayer films and agricultural films.",
+        "specifications": [
+            {
+                "property": "Density of Resin @ 23°C",
+                "value": "0.920 g/cc"
+            },
+            {
+                "property": "Melt Flow Index (190°C / 2.16 kg)",
+                "value": "0.96"
+            },
+            {
+                "property": "Tensile Strength at Break (MD/TD)",
+                "value": "5080 / 4120 psi"
+            },
+            {
+                "property": "Elongation (MD/TD)",
+                "value": "680 / 910 %"
+            },
+            {
+                "property": "Gloss @ 45°",
+                "value": "40"
+            },
+            {
+                "property": "Haze",
+                "value": "21 %"
+            },
+            {
+                "property": "Dart Impact",
+                "value": "130 g/mil"
+            },
+            {
+                "property": "Tear Strength (MD/TD)",
+                "value": "150 / 385 g/mil"
+            }
+        ],
+        "appData": "Used for FMCG packaging, general packaging films and multilayer film applications.",
+        "packaging": [
+            "25 kg Raffia woven sack bags"
+        ],
+        "SBU": "Industrial Fuels",
+        "industrial": "Petrochemicals",
+        "documentation": "",
+        "alternatives": [
+            "Reliance F19010"
+        ],
+        "related": []
+    },
+    "HPCL-IF-0014": {
+        "id": 20,
+        "MSDS": "HOMOPOLYMER_PDF",
+        "title": "HM120A-MS",
+        "subTitle": "PP Homopolymer",
+        "description": "Polypropylene grade for manufacturing of raffia woven sack fabric and bag manufacturing.",
+        "specifications": [
+            {
+                "property": "Melt Flow Rate (230°C / 2.16 kg)",
+                "value": "3.5 g/10 min"
+            },
+            {
+                "property": "Tensile Stress at Yield (23°C, 50 mm/min)",
+                "value": "33 MPa"
+            },
+            {
+                "property": "Tensile Strain at Yield (23°C, 50 mm/min)",
+                "value": "10 %"
+            },
+            {
+                "property": "Flexural Modulus",
+                "value": "1480 MPa"
+            },
+            {
+                "property": "Vicat Softening Temperature (A50)",
+                "value": "154 °C"
+            },
+            {
+                "property": "Deflection Temperature under Load (0.45 MPa, Unannealed)",
+                "value": "90 °C"
+            }
+        ],
+        "appData": "Used for manufacturing raffia woven sacks such as cement bags, fertilizer bags and rice bags.",
+        "packaging": [
+            "25 kg Raffia woven sack bags"
+        ],
+        "SBU": "Industrial Fuels",
+        "industrial": "Petrochemicals",
+        "documentation": "",
+        "alternatives": [
+            "Reliance F19010"
+        ],
+        "related": []
+    },
+    "HPCL-IF-0015": {
+        "id": 21,
+        "MSDS": "",
+        "title": "HR033-MS",
+        "subTitle": "PP Homopolymer Raffia",
+        "description": "Polypropylene grade for manufacturing of raffia woven sack fabric and bag manufacturing.",
+        "specifications": [
+            {
+                "property": "Melt Flow Rate (230°C / 2.16 kg)",
+                "value": "3.5 g/10 min"
+            },
+            {
+                "property": "Tensile Stress at Yield (23°C, 50 mm/min)",
+                "value": "33 MPa"
+            },
+            {
+                "property": "Tensile Strain at Yield (23°C, 50 mm/min)",
+                "value": "10 %"
+            },
+            {
+                "property": "Flexural Modulus",
+                "value": "1480 MPa"
+            },
+            {
+                "property": "Vicat Softening Temperature (A50)",
+                "value": "154 °C"
+            },
+            {
+                "property": "Deflection Temperature under Load (0.45 MPa, Unannealed)",
+                "value": "90 °C"
+            }
+        ],
+        "appData": "Used for manufacturing raffia woven sacks such as cement bags, fertilizer bags and rice bags.",
+        "packaging": [
+            "25 kg Raffia woven sack bags"
+        ],
+        "SBU": "Industrial Fuels",
+        "industrial": "Petrochemicals",
+        "documentation": "",
+        "alternatives": [
+            "Reliance F19010"
+        ],
+        "related": []
+    }
+}

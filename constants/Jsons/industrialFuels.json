@@ -59,7 +59,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C",
 		"industrial": "Manufacturing Industry & Petrochemical Industry",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -135,7 +135,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C",
 		"industrial": "Food, Pharmaceutical",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -187,7 +187,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C",
 		"industrial": "Paint & Rubber industry",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -247,7 +247,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C",
 		"industrial": "Paint industry",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -303,7 +303,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C/SOD",
 		"industrial": "Power, Marine, Manufacturing (Steel, Cement, Glass, Ceramic Industries)",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -363,7 +363,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C/SOD",
 		"industrial": "Power, Manufacturing, Construction & mining",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -439,7 +439,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C/SOD",
 		"industrial": "Marine",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -527,7 +527,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C/SOD",
 		"industrial": "Power, Marine",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -583,7 +583,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C",
 		"industrial": "Power, Manufacturing (Steel Plant)",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -631,7 +631,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C",
 		"industrial": "Construction of Roads, Highways, Tarmac",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -679,7 +679,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C",
 		"industrial": "Construction of Roads, Highways, Tarmac",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -727,7 +727,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "I&C",
 		"industrial": "Construction of Roads, Highways, Tarmac",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -779,7 +779,7 @@
 		"packaging": ["Barrel", "Bulk"],
 		"SBU": "I&C",
 		"industrial": "Steel industry",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},

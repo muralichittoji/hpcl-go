@@ -1,130 +1,226 @@
 {
-	"HPCL-MS-0001": {
-		"id": 1,
-		"MSDS": "MS_PDF",
-		"title": "E20 MS",
+	"HPCL-MS-0010": {
+		"id": 10,
+		"MSDS": "",
+		"title": "MOTOR SPIRIT",
+		"subTitle": "Motor Fuel",
+		"description": "Motor Spirit (MS) (IS 2796) is a light petroleum distillate used in spark-ignition internal combustion engines. It is produced through atmospheric distillation, catalytic reforming, isomerization and blending of various refinery streams. In India, MS conforms to applicable fuel quality standards.",
+		"specifications": [
+			{
+				"property": "Density @ 15°C",
+				"value": "720.0 – 775.0"
+			},
+			{
+				"property": "Distillation – % Evaporated @ 70°C (E70)",
+				"value": "10.0 – 45.0 % v/v"
+			},
+			{
+				"property": "Distillation – % Evaporated @ 100°C (E100)",
+				"value": "40.0 – 70.0 % v/v"
+			},
+			{
+				"property": "Distillation – % Evaporated @ 150°C (E150)",
+				"value": "Min 75 % v/v"
+			},
+			{
+				"property": "Distillation – Final Boiling Point",
+				"value": "Max 210.0 °C"
+			},
+			{
+				"property": "Distillation Residue",
+				"value": "Max 2.0"
+			},
+			{
+				"property": "Sulphur Content",
+				"value": "Max 10.0 mg/kg"
+			},
+			{
+				"property": "Gum Content (Solvent Washed)",
+				"value": "Max 40 g/m³"
+			}
+		],
+		"appData": "Primarily used as an automotive fuel for passenger vehicles including cars, motorcycles and scooters. Also used in small generators, agricultural light machinery and recreational vehicles.",
+		"packaging": ["Bulk", "Retail"],
+		"SBU": "Industrial Fuels",
+		"industrial": "Motor Fuel",
+		"documentation": "",
+		"alternatives": [],
+		"related": []
+	},
+	"HPCL-MS-0008": {
+		"id": 401,
+		"MSDS": "",
+		"title": "POWER95",
 		"subTitle": "MOTOR FUEL",
-		"description": "Motor Spirit (also known as Motor Gasoline) is a distillate fraction, normally boiling within the range 30\u00b0C to 210\u00b0C. It is a complex mixture composed of relatively volatile hydrocarbons (alkanes, alkenes and aromatics with typical carbon chain length of C5 to C10) that vary widely in their physical and chemical properties.",
+		"description": "Power95 is premium branded fuel produced by addition of special high quality additives which enhances overall performance of MS.",
 		"specifications": [
 			{
 				"property": "Appearance",
-				"value": "Visual, B& C"
+				"value": "Visual, B & C"
 			},
 			{
 				"property": "Colour",
 				"value": "Visual, Orange (MG95)"
 			},
 			{
-				"property": "Density at 15\u00b0C, kg/m\u00b3",
-				"value": "720-775"
+				"property": "Density at 15°C",
+				"value": "720–775 kg/m³"
 			},
 			{
-				"property": "Distillation % evaporated at 70\u00b0C (E 70\u00b0C), % v/v",
-				"value": "10-60"
+				"property": "Distillation % evaporated at 70°C (E70)",
+				"value": "10–60 % v/v"
 			},
 			{
-				"property": "Distillation % evaporated at 100\u00b0C (E 100\u00b0C),% v/v",
-				"value": "45-78"
+				"property": "Distillation % evaporated at 100°C (E100)",
+				"value": "45–78 % v/v"
 			},
 			{
-				"property": "Distillation % evaporated at 150\u00b0C (E 150\u00b0C),% v/v",
-				"value": "Min. 85"
+				"property": "Distillation % evaporated at 150°C (E150)",
+				"value": "Min 85 % v/v"
 			},
 			{
 				"property": "Distillation Final Boiling Point",
-				"value": "\u00b0C Max. 210"
+				"value": "Max 210 °C"
 			},
 			{
 				"property": "Distillation Residue",
-				"value": "% by volume, Max 2.0"
+				"value": "Max 2.0 % by volume"
 			},
 			{
-				"property": "Research octane number (RON)",
+				"property": "Research Octane Number (RON)",
 				"value": "Min 95.0"
 			},
 			{
-				"property": "Gum content (solvent washed)",
-				"value": "g/m3, Max 40"
+				"property": "Gum Content (Solvent Washed)",
+				"value": "Max 40 g/m³"
 			},
 			{
-				"property": "Total sulphur",
-				"value": "mg/kg, Max 10"
+				"property": "Total Sulphur",
+				"value": "Max 10 mg/kg"
 			},
 			{
-				"property": "Lead content (as Pb)",
-				"value": "g/l, Max 0.005"
+				"property": "Lead Content (as Pb)",
+				"value": "Max 0.005 g/L"
 			},
 			{
-				"property": "Reid vapour pressure (RVP) at 37.8 \u00b0C",
-				"value": "kPa, Max 70"
+				"property": "Reid Vapour Pressure (RVP) at 37.8°C",
+				"value": "Max 70 kPa"
 			},
 			{
-				"property": "Vapour lock index (VLI)",
+				"property": "Vapour Lock Index (VLI)",
 				"value": "Max 1100"
 			},
 			{
-				"property": "Benzene content",
-				"value": "% by volume, Max 1"
+				"property": "Benzene Content",
+				"value": "Max 1 % v/v"
 			},
 			{
-				"property": "Copper strip corrosion (3 h at 50 \u00b0C)",
+				"property": "Copper Strip Corrosion (3h at 50°C)",
 				"value": "Max Class 1"
 			},
 			{
-				"property": "Water tolerance of motor gasoline-alcohol blends",
-				"value": "temperature for phase separation, \u00b0C, Max 10 (other months) / 0 (winter)"
+				"property": "Water Tolerance of Motor Gasoline–Alcohol Blends",
+				"value": "Phase separation temperature: Max 10°C (other months) / 0°C (winter)"
 			},
 			{
-				"property": "Engine intake system cleanliness",
-				"value": "Report-MFA used"
+				"property": "Engine Intake System Cleanliness",
+				"value": "Report – MFA used"
 			},
 			{
-				"property": "Olefin content",
-				"value": "% by volume, Max 18"
+				"property": "Olefin Content",
+				"value": "Max 18 % v/v"
 			},
 			{
-				"property": "Oxidation stability",
-				"value": "minutes, Min 360"
+				"property": "Oxidation Stability",
+				"value": "Min 360 minutes"
 			},
 			{
-				"property": "Aromatics content",
-				"value": "% by volume, Max 35"
+				"property": "Aromatics Content",
+				"value": "Max 35 % v/v"
 			},
 			{
-				"property": "Oxygen content",
-				"value": "% by mass, Max 7.7"
+				"property": "Oxygen Content",
+				"value": "Max 7.7 % by mass"
 			},
 			{
-				"property": "Ethanol content",
-				"value": "percent v/v, 19-20"
+				"property": "Ethanol Content",
+				"value": "19–20 % v/v"
 			},
 			{
-				"property": "Oxygenates percent by volume",
-				"value": "Max, 15 (Ethers containing 5 or more \u2018C\u2019 atoms per molecules such as MTBE, ETBE or TAME) / Not permitted (Any other oxygenates)"
+				"property": "Oxygenates",
+				"value": "Max 15 % v/v (MTBE, ETBE, TAME) / Other oxygenates not permitted"
 			},
 			{
-				"property": "Motor Gasoline Content, %, v/v",
-				"value": "(100 \u2013 Ethanol Content and stabilizing agents/additives)"
+				"property": "Motor Gasoline Content",
+				"value": "100 − Ethanol content and stabilizing additives (% v/v)"
 			},
 			{
 				"property": "Water Content",
-				"value": "mg/kg, Max 3000"
+				"value": "Max 3000 mg/kg"
 			}
 		],
-		"appData": "Primarily used in transportation (Cars, Sport Utility Vehicles, Motorcycles and Scooters). E20 Fuel was launched in India on 6th Feb 2023. As on date regular MS is substituted by E20 MS. It is observed that E20 fuel is being used in existing spark-ignition engine. E20 fuel has several advantages over conventional MS, such as it reduces vehicular tailpipe emissions by lowering the carbon monoxide, hydrocarbons and nitrogen oxides levels.",
+		"appData": "Primarily used in transportation (Cars, Sport Utility Vehicles, Motorcycles and Scooters).",
 		"packaging": ["Bulk", "Retail"],
 		"SBU": "SOD/I&C/RETAIL",
 		"industrial": "Transport",
-		"documentation": "-",
-		"alternatives": ["-"],
-		"related": ["MS POWER 95"]
+		"documentation": "",
+		"alternatives": ["SPEED", "XTRA PREMIUM 95"],
+		"related": []
+	},
+	"HPCL-MS-0009": {
+		"id": 402,
+		"MSDS": "",
+		"title": "POWER100",
+		"subTitle": "SPECIAL MOTOR FUEL",
+		"description": "Power100 is premium branded Motor Spirit with Research Octane Number (RON) 100 and no Ethanol. It is produced by addition of special high quality additives which enhance the overall performance of Motor Spirit and deliver superior engine efficiency and responsiveness.",
+		"specifications": [
+			{
+				"property": "Research Octane Number (RON)",
+				"value": "Min 100"
+			},
+			{
+				"property": "Ethanol Content",
+				"value": "0 % v/v (No Ethanol)"
+			},
+			{
+				"property": "Appearance",
+				"value": "Bright & Clear (Visual)"
+			},
+			{
+				"property": "Colour",
+				"value": "Orange"
+			},
+			{
+				"property": "Density at 15°C",
+				"value": "720–775 kg/m³"
+			},
+			{
+				"property": "Total Sulphur",
+				"value": "Max 10 mg/kg"
+			},
+			{
+				"property": "Benzene Content",
+				"value": "Max 1 % v/v"
+			},
+			{
+				"property": "Copper Strip Corrosion (3h at 50°C)",
+				"value": "Max Class 1"
+			}
+		],
+		"appData": "Recommended for luxury and high-end cars requiring very high octane fuel for improved engine performance, acceleration and combustion efficiency.",
+		"packaging": ["Bulk", "Retail"],
+		"SBU": "SOD/I&C/RETAIL",
+		"industrial": "Transport",
+		"documentation": "",
+		"alternatives": ["SPEED 100", "XTRA PREMIUM 100"],
+		"related": []
 	},
 	"HPCL-MS-0002": {
 		"id": 2,
 		"MSDS": "HSD_PDF",
 		"title": "HSD (High Speed Diesel)",
 		"subTitle": "MOTOR FUEL",
-		"description": "High-Speed Diesel (HSD), also known as Automotive Diesel Fuel, is produced from the fractional distillation of crude oil between 200\u00b0C and 400\u00b0C resulting in a mixture of carbon chains and is composed of saturated hydrocarbons and aromatic hydrocarbons.",
+		"description": "High-Speed Diesel (HSD), also known as Automotive Diesel Fuel, is produced from the fractional distillation of crude oil between 200°C and 400°C resulting in a mixture of carbon chains and is composed of saturated hydrocarbons and aromatic hydrocarbons.",
 		"specifications": [
 			{
 				"property": "Appearance",
@@ -152,22 +248,22 @@
 			},
 			{
 				"property": "Pour point",
-				"value": "\u00b0C, Max 3\u00b0C (Winter) / 15\u00b0C (Summer)"
+				"value": "°C, Max 3°C (Winter) / 15°C (Summer)"
 			},
 			{
-				"property": "Copper strip corrosion (3 h at 50 \u00b0C)",
+				"property": "Copper strip corrosion (3 h at 50 °C)",
 				"value": "Not worse than No. 1"
 			},
 			{
 				"property": "Distillation",
-				"value": "95 percent v/v, recovery, \u00b0C, Max 360"
+				"value": "95 percent v/v, recovery, °C, Max 360"
 			},
 			{
 				"property": "Flash point",
-				"value": "Abel, \u00b0C, Min 35"
+				"value": "Abel, °C, Min 35"
 			},
 			{
-				"property": "Kinematic Viscosity @ 40\u00b0C",
+				"property": "Kinematic Viscosity @ 40°C",
 				"value": "cSt 2.0 to 4.5"
 			},
 			{
@@ -175,8 +271,8 @@
 				"value": "mg/kg, Max 24"
 			},
 			{
-				"property": "Density at 15\u00b0C",
-				"value": "kg/m\u00b3 810-845"
+				"property": "Density at 15°C",
+				"value": "kg/m³ 810-845"
 			},
 			{
 				"property": "Total sulphur",
@@ -188,11 +284,11 @@
 			},
 			{
 				"property": "Cold Filter Plugging Point (CFPP)",
-				"value": "\u00b0C, Max 6\u00b0C (Winter)/ 18\u00b0C (Summer)"
+				"value": "°C, Max 6°C (Winter)/ 18°C (Summer)"
 			},
 			{
 				"property": "Oxidation stability",
-				"value": "g/m\u00b3, Max 25"
+				"value": "g/m³, Max 25"
 			},
 			{
 				"property": "Oxidation stability",
@@ -212,7 +308,7 @@
 			},
 			{
 				"property": "Lubricity",
-				"value": "wear scar diameter (wsd) at 60 \u00baC, \u03bcm, Max 460"
+				"value": "wear scar diameter (wsd) at 60 ºC, μm, Max 460"
 			},
 			{
 				"property": "FAME content",
@@ -223,295 +319,41 @@
 		"packaging": ["Bulk"],
 		"SBU": "SOD/I&C/RETAIL",
 		"industrial": "Transport, Manufacturing, Agriculture",
-		"documentation": "-",
-		"alternatives": ["-"],
+		"documentation": "",
+		"alternatives": [""],
 		"related": ["HP TURBOJET"]
-	},
-	"HPCL-MS-0003": {
-		"id": 3,
-		"MSDS": "MS_PDF",
-		"title": "Ethanol",
-		"subTitle": "FUEL ADDITIVE FOR MS",
-		"description": "Ethanol meant for E20 blending having purity of min. 99.5% and other components including water max. 0.5%. Anhydrous Ethanol is known as Ethyl Alcohol, is a clear, colourless and homogenous liquid with high purity, also known as Absolute Alcohol. \nAnhydrous Ethanol is categorized into 1G and 2G, based on its source of raw material used. 1G Ethanol produced from raw materials viz. sugarcane juice, molasses, damaged food grains. 2G Ethanol are generally made from biomass. 1G Ethanol is produced by subsidiary unit HPCL-MS--Biofuel Ltd.",
-		"specifications": [
-			{
-				"property": "Appearance",
-				"value": "Visual, B& C"
-			},
-			{
-				"property": "Relative density at 15.6/15.6 \u00b0C",
-				"value": "Max 0.7961 (1G) / 0.7965 (2G/OGF)"
-			},
-			{
-				"property": "Ethanol, percent, v/v, Min. (excluding denaturant)",
-				"value": "99.5 (1G)/ 98 (2G/OGF)"
-			},
-			{
-				"property": "Methanol",
-				"value": "percent, v/v, Max 0.5 (1G, 2G/OGF)"
-			},
-			{
-				"property": "Higher saturated alcohols (C3-C5)",
-				"value": "percent, v/v, Max 1.5 (2G/OGF)"
-			},
-			{
-				"property": "Boiling point, \u00b0C, Min",
-				"value": "To report (2G/OGF)"
-			},
-			{
-				"property": "Residue on evaporation",
-				"value": "percent by mass, Max. 0.005 (1G, 2G/OGF)"
-			},
-			{
-				"property": "Acidity (as CH3 COOH)",
-				"value": "mg/kg, Max 30 (1G, 2G/OGF)"
-			},
-			{
-				"property": "Alkalinity, mg/kg, Max",
-				"value": "Nil (1G, 2G/OGF)"
-			},
-			{
-				"property": "Aldehyde (as CH3 CHO) content",
-				"value": "mg/l, Max 60 (1G, 2G/OGF)"
-			},
-			{
-				"property": "Electrical conductivity",
-				"value": "\u00b5S/m, Max. 300 (1G) / 500 (2G/OGF)"
-			},
-			{
-				"property": "Copper",
-				"value": "mg/kg, Max 0.1 (1G, 2G/OGF)"
-			},
-			{
-				"property": "pHe",
-				"value": "6.5 \u2013 8.0 (2G/OGF)"
-			},
-			{
-				"property": "Inorganic chloride",
-				"value": "mg/kg, Max 3.0 (2G/OGF)"
-			},
-			{
-				"property": "Sulfur content",
-				"value": "mg/kg, Max. 10.0 (1G, 2G/OGF)"
-			},
-			{
-				"property": "Sulphate content",
-				"value": "mg/kg Max 4 (2G/OGF)"
-			},
-			{
-				"property": "Water content",
-				"value": "percent v/v, Max to report (1G) / 0.3 (2G/OGF)"
-			},
-			{
-				"property": "Hydrocarbons, percent v/v",
-				"value": "to report (2G/OGF)"
-			},
-			{
-				"property": "Miscibility with water",
-				"value": "Miscible (1G, 2G/OGF)"
-			}
-		],
-		"appData": "Ethanol is an environment friendly fuel used for blending with Motor Spirit (MS).",
-		"packaging": ["Bulk"],
-		"SBU": "SOD",
-		"industrial": "Chemical Feedstock, Biofuel & pharmaceuticals",
-		"documentation": "-",
-		"alternatives": ["-"],
-		"related": ["-"]
-	},
-	"HPCL-MS-0004": {
-		"id": 4,
-		"MSDS": "KEROSENE_PDF",
-		"title": "Kerosene",
-		"subTitle": "FUEL",
-		"description": "Kerosene is distillate fractions of crude oil in the boiling range of 150-250\u00b0C. It is a complex mixture of hydrocarbons from crude oil distillation, primarily containing alkanes (paraffins), cycloalkanes (naphthenes) and some aromatics like alkylbenzenes.",
-		"specifications": [
-			{
-				"property": "Appearance",
-				"value": "Visual, B& C"
-			},
-			{
-				"property": "Acidity, inorganic",
-				"value": "Nil"
-			},
-			{
-				"property": "Char Value",
-				"value": "mg/kg of oil consumed, Max 20"
-			},
-			{
-				"property": "Bloom on glass Chimney",
-				"value": "Not darker than grey"
-			},
-			{
-				"property": "Colour Saybolt (in case of undyed Kerosene)",
-				"value": "Min 10"
-			},
-			{
-				"property": "Colour Visual (in case of dyed Kerosene)",
-				"value": "Blue"
-			},
-			{
-				"property": "Copper strip corrosion (3 h at 50 \u00b0C)",
-				"value": "Not worse than No. 1"
-			},
-			{
-				"property": "Density at 15\u00b0C, kg/m3",
-				"value": "Not limited, but to be reported"
-			},
-			{
-				"property": "Distillation Percent recovered below 200\u00b0C",
-				"value": "percent (v/v), Min 20"
-			},
-			{
-				"property": "Final boiling point",
-				"value": "\u00b0C, Max 300"
-			},
-			{
-				"property": "Flash point ( Abel)",
-				"value": "\u00b0C, Min 35"
-			},
-			{
-				"property": "Smoke Point",
-				"value": "mm, Min 18"
-			},
-			{
-				"property": "Total Sulphur Content",
-				"value": "percent, m/m, Max 0.10 (Grade A) / 0.20 (Grade B)"
-			}
-		],
-		"appData": "Kerosene is one of the most versatile hydrocarbon fuels in the industry. Kerosene is used in many industrial applications like heating, cleaning and as thinner. It is also used for lighting lamps in areas where electricity is not available. Use of Public Distribution System (PDS) Kerosene (Blue Dyed) has reduced drastically. \nKerosene with ultra-low sulfur content upto 10 mg/kg is used as pipeline compatible plug material (PCK) in multi-product pipeline operations in Petroleum Industry. Chemical industry uses kerosene as a petroleum solvent and in pesticide industry.",
-		"packaging": ["-"],
-		"SBU": "SOD/RETAIL",
-		"industrial": "Domestic Use, Petroleum Industry. Chemical Industry & Pesticide industry",
-		"documentation": "-",
-		"alternatives": ["-"],
-		"related": ["-"]
-	},
-	"HPCL-MS-0005": {
-		"id": 5,
-		"MSDS": "ATF_PDF",
-		"title": "ATF (Jet A-1) (Aviation Turbine Fuel Jet A-1)",
-		"subTitle": "AVIATION FUEL",
-		"description": "Aviation Turbine Fuel is a colorless, combustible, straight-run petroleum distillate, kerosene-based fuel. Kerosene makes up the majority of Jet A-1, with trace amounts of additives.",
-		"specifications": [
-			{
-				"property": "Product Name",
-				"value": "ATF (Jet A-1) (Aviation Turbine Fuel Jet A-1)"
-			},
-			{ "property": "Appearance", "value": "Visual, B& C" },
-			{ "property": "Colour (Saybolt)", "value": "Report" },
-			{
-				"property": "Particulate contamination at point of manufacture, mg/l, Max",
-				"value": "1.0"
-			},
-			{
-				"property": "Particulate, cumulative channel particle counts at point of manufacture",
-				"value": "≥ 4 μm(c): Report, ≥6 μm(c): Report, ≥14 μm(c): Report, ≥21 μm(c): Report, ≥25 μm(c): Report, ≥30 μm(c): Report"
-			},
-			{ "property": "Total acidity, mg KOH/g, Max", "value": "0.015" },
-			{ "property": "Aromatics, % by volume, Max", "value": "25.0" },
-			{
-				"property": "Total Aromatics, % by volume, Max",
-				"value": "26.5"
-			},
-			{
-				"property": "Total sulphur, % by mass, Max",
-				"value": "0.30 (Defence 0.25)"
-			},
-			{
-				"property": "Sulphur mercaptan, percent m/m, Max",
-				"value": "0.0030"
-			},
-			{ "property": "Doctor Test", "value": "Negative" },
-			{
-				"property": "Refining components at the point of manufacture",
-				"value": "Non Hydro processed Components: Report, Mildly Hydro processed Components: Report, Severely Hydro processed Components: Report, Synthetic Components: Report"
-			},
-			{
-				"property": "Distillation Initial Boiling Point °C",
-				"value": "Report"
-			},
-			{
-				"property": "Distillation 10 percent recovery °C, v/v, Max",
-				"value": "205.0"
-			},
-			{
-				"property": "Distillation 50 percent recovery °C, v/v",
-				"value": "Report"
-			},
-			{
-				"property": "Distillation 95 percent v/v recovery, °C",
-				"value": "Report"
-			},
-			{
-				"property": "Distillation Final boiling point, °C, Max",
-				"value": "300"
-			},
-			{ "property": "Distillation residue, % v/v, Max", "value": "1.5" },
-			{ "property": "Distillation loss, % v/v, Max", "value": "1.5" },
-			{ "property": "Flash point, Abel, °C, Min", "value": "38" },
-			{ "property": "Density at 15°C, kg/m³", "value": "775-840" },
-			{ "property": "Freezing Point °C, Max", "value": "minus 47" },
-			{
-				"property": "Kinematic Viscosity @ minus 20°C, cSt, Max",
-				"value": "8.000"
-			},
-			{ "property": "Specific energy, MJ/kg, Min", "value": "42.80" },
-			{ "property": "Smoke point, mm, Min", "value": "25.0 / 18.0" },
-			{ "property": "& Naphthalenes, percent v/v, Max", "value": "3.00" },
-			{
-				"property": "Copper strip corrosion (2 h at 100 °C)",
-				"value": "Not worse than No. 1"
-			},
-			{
-				"property": "Silver strip corrosion (4 h at 50 °C), Max",
-				"value": "0 at Refinery / 1 at Delivery Point"
-			},
-			{
-				"property": "Thermal Stability, JFTOT at Control Temperature of 260°C",
-				"value": "Filter pressure differential, mm Hg, Max 25; Tube rating visual (VTR) <3, No ‘Peacock’ or ‘Abnormal’ OR Annex C ITR/Annex D ETR, average over area 2.5 mm², Max 85"
-			},
-			{ "property": "Existent gum, mg/100 ml, Max", "value": "7" },
-			{
-				"property": "Water reaction: Interface rating, Max",
-				"value": "1b"
-			},
-			{
-				"property": "Micro-separometer rating at point of manufacture",
-				"value": "MSEP without SDA, Min 85; MSEP with SDA, Min 70"
-			},
-			{
-				"property": "Electrical conductivity, pS/m",
-				"value": "50 to 600"
-			},
-			{ "property": "Wear scar diameter, mm, Max", "value": "0.85" },
-			{ "property": "Fatty Acid Methyl Ester, mg/kg, Max", "value": "50" }
-		],
-		"appData": "ATF Jet A-1 is used for aircrafts (Military jets) and Civil Aviation sector worldwide. It is a higher quality fuel subjected to stringent Quality Control norms set by DGCA and DGAQA.",
-		"packaging": ["Bulk"],
-		"SBU": "AVIATION/SOD",
-		"industrial": "Aviation",
-		"documentation": "-",
-		"alternatives": ["-"],
-		"related": ["-"]
 	},
 	"HPCL-MS-0006": {
 		"id": 6,
-		"MSDS": "-",
+		"MSDS": "",
 		"title": "HP Turbojet",
 		"subTitle": "MOTOR FUEL",
 		"description": "HP Turbojet is premium branded fuel produced by addition of special high quality additives which enhances overall performance of High Speed Diesel.",
-
 		"specifications": [
-			{ "property": "Appearance", "value": "Visual, B & C" },
+			{
+				"property": "Appearance",
+				"value": "Visual, B & C"
+			},
 			{
 				"property": "Total Acid Number (TAN)",
 				"value": "mg of KOH/g, Max 0.20"
 			},
-			{ "property": "Ash", "value": "% by mass, Max 0.01" },
-			{ "property": "Carbon residue", "value": "% by mass, Max 0.30" },
-			{ "property": "Cetane number", "value": "Min 51" },
-			{ "property": "Cetane index", "value": "Min 46" },
+			{
+				"property": "Ash",
+				"value": "% by mass, Max 0.01"
+			},
+			{
+				"property": "Carbon residue",
+				"value": "% by mass, Max 0.30"
+			},
+			{
+				"property": "Cetane number",
+				"value": "Min 51"
+			},
+			{
+				"property": "Cetane index",
+				"value": "Min 46"
+			},
 			{
 				"property": "Pour point",
 				"value": "Max 3°C (Winter) / 15°C (Summer)"
@@ -520,42 +362,78 @@
 				"property": "Copper strip corrosion",
 				"value": "Not worse than No. 1"
 			},
-			{ "property": "Distillation 95% recovery", "value": "°C, Max 360" },
-			{ "property": "Flash point (Abel)", "value": "°C, Min 35" },
+			{
+				"property": "Distillation 95% recovery",
+				"value": "°C, Max 360"
+			},
+			{
+				"property": "Flash point (Abel)",
+				"value": "°C, Min 35"
+			},
 			{
 				"property": "Kinematic Viscosity @ 40°C",
 				"value": "2.0 – 4.5 cSt"
 			},
-			{ "property": "Total contamination", "value": "mg/kg, Max 24" },
-			{ "property": "Density at 15°C", "value": "810–845 kg/m³" },
-			{ "property": "Total sulphur", "value": "mg/kg, Max 10" },
-			{ "property": "Water content", "value": "mg/kg, Max 200" },
-			{ "property": "CFPP", "value": "Max 6°C (Winter) / 18°C (Summer)" },
-			{ "property": "Oxidation stability", "value": "g/m³, Max 25" },
-			{ "property": "Lubricity (WSD @ 60°C)", "value": "μm, Max 460" },
-			{ "property": "FAME content", "value": "% v/v, Max 7.0" }
+			{
+				"property": "Total contamination",
+				"value": "mg/kg, Max 24"
+			},
+			{
+				"property": "Density at 15°C",
+				"value": "810–845 kg/m³"
+			},
+			{
+				"property": "Total sulphur",
+				"value": "mg/kg, Max 10"
+			},
+			{
+				"property": "Water content",
+				"value": "mg/kg, Max 200"
+			},
+			{
+				"property": "CFPP",
+				"value": "Max 6°C (Winter) / 18°C (Summer)"
+			},
+			{
+				"property": "Oxidation stability",
+				"value": "g/m³, Max 25"
+			},
+			{
+				"property": "Lubricity (WSD @ 60°C)",
+				"value": "μm, Max 460"
+			},
+			{
+				"property": "FAME content",
+				"value": "% v/v, Max 7.0"
+			}
 		],
-
 		"appData": "Used as a fuel in medium and high-speed compression ignition engines in high-end vehicles.",
-		"packaging": ["Retail"],
+		"packaging": ["Bulk", "Retail"],
 		"SBU": "Retail",
 		"industrial": "Transport",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["HIGH SPEED DIESEL"],
 		"related": ["HPCL0002"]
 	},
 	"HPCL-MS-0007": {
 		"id": 400,
 		"MSDS": "",
-		"title": "EBMS",
+		"title": "ETHANOL BLENDED MOTOR SPIRIT",
 		"subTitle": "MOTOR FUEL",
 		"description": "Motor Spirit (also known as Motor Gasoline) is a distillate fraction, normally boiling within the range 30°C to 210°C. It is a complex mixture composed of relatively volatile hydrocarbons (alkanes, alkenes and aromatics with typical carbon chain length of C5 to C10) that vary widely in their physical and chemical properties.",
-
 		"specifications": [
-			{ "property": "Appearance", "value": "Visual, B & C" },
-			{ "property": "Colour", "value": "Visual, Orange (MG95)" },
-			{ "property": "Density at 15°C", "value": "720–775 kg/m³" },
-
+			{
+				"property": "Appearance",
+				"value": "Visual, B & C"
+			},
+			{
+				"property": "Colour",
+				"value": "Visual, Orange (MG95)"
+			},
+			{
+				"property": "Density at 15°C",
+				"value": "720–775 kg/m³"
+			},
 			{
 				"property": "Distillation % evaporated at 70°C (E70)",
 				"value": "10–60 % v/v"
@@ -568,7 +446,6 @@
 				"property": "Distillation % evaporated at 150°C (E150)",
 				"value": "Min 85 % v/v"
 			},
-
 			{
 				"property": "Distillation Final Boiling Point",
 				"value": "Max 210 °C"
@@ -577,195 +454,85 @@
 				"property": "Distillation Residue",
 				"value": "Max 2.0 % by volume"
 			},
-
-			{ "property": "Research Octane Number (RON)", "value": "Min 95.0" },
+			{
+				"property": "Research Octane Number (RON)",
+				"value": "Min 95.0"
+			},
 			{
 				"property": "Gum Content (Solvent Washed)",
 				"value": "Max 40 g/m³"
 			},
-			{ "property": "Total Sulphur", "value": "Max 10 mg/kg" },
-			{ "property": "Lead Content (as Pb)", "value": "Max 0.005 g/L" },
-
+			{
+				"property": "Total Sulphur",
+				"value": "Max 10 mg/kg"
+			},
+			{
+				"property": "Lead Content (as Pb)",
+				"value": "Max 0.005 g/L"
+			},
 			{
 				"property": "Reid Vapour Pressure (RVP) at 37.8°C",
 				"value": "Max 70 kPa"
 			},
-			{ "property": "Vapour Lock Index (VLI)", "value": "Max 1100" },
-
-			{ "property": "Benzene Content", "value": "Max 1 % v/v" },
+			{
+				"property": "Vapour Lock Index (VLI)",
+				"value": "Max 1100"
+			},
+			{
+				"property": "Benzene Content",
+				"value": "Max 1 % v/v"
+			},
 			{
 				"property": "Copper Strip Corrosion (3h at 50°C)",
 				"value": "Max Class 1"
 			},
-
 			{
 				"property": "Water Tolerance of Motor Gasoline–Alcohol Blends",
 				"value": "Phase separation temperature: Max 10°C (other months) / 0°C (winter)"
 			},
-
 			{
 				"property": "Engine Intake System Cleanliness",
 				"value": "Report – MFA used"
 			},
-
-			{ "property": "Olefin Content", "value": "Max 18 % v/v" },
-			{ "property": "Oxidation Stability", "value": "Min 360 minutes" },
-
-			{ "property": "Aromatics Content", "value": "Max 35 % v/v" },
-			{ "property": "Oxygen Content", "value": "Max 7.7 % by mass" },
-
-			{ "property": "Ethanol Content", "value": "19–20 % v/v" },
-
+			{
+				"property": "Olefin Content",
+				"value": "Max 18 % v/v"
+			},
+			{
+				"property": "Oxidation Stability",
+				"value": "Min 360 minutes"
+			},
+			{
+				"property": "Aromatics Content",
+				"value": "Max 35 % v/v"
+			},
+			{
+				"property": "Oxygen Content",
+				"value": "Max 7.7 % by mass"
+			},
+			{
+				"property": "Ethanol Content",
+				"value": "19–20 % v/v"
+			},
 			{
 				"property": "Oxygenates",
 				"value": "Max 15 % v/v (MTBE, ETBE, TAME) / Other oxygenates not permitted"
 			},
-
 			{
 				"property": "Motor Gasoline Content",
 				"value": "100 − Ethanol content and stabilizing additives (% v/v)"
 			},
-
-			{ "property": "Water Content", "value": "Max 3000 mg/kg" }
-		],
-
-		"appData": "Primarily used in transportation (Cars, Sport Utility Vehicles, Motorcycles and Scooters). E20 Fuel was launched in India on 6th Feb 2023. As on date regular MS is substituted by E20 MS. It is observed that E20 fuel is being used in existing spark-ignition engine. E20 fuel has several advantages over conventional MS, such as it reduces vehicular tailpipe emissions by lowering the carbon monoxide, hydrocarbons and nitrogen oxides levels.",
-
-		"packaging": ["Bulk", "Retail"],
-
-		"SBU": "SOD/I&C/RETAIL",
-		"industrial": "Transport",
-
-		"documentation": "-",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-MS-0008": {
-		"id": 401,
-		"MSDS": "",
-		"title": "POWER95",
-		"subTitle": "MOTOR FUEL",
-		"description": "Power95 is premium branded fuel produced by addition of special high quality additives which enhances overall performance of MS.",
-
-		"specifications": [
-			{ "property": "Appearance", "value": "Visual, B & C" },
-			{ "property": "Colour", "value": "Visual, Orange (MG95)" },
-			{ "property": "Density at 15°C", "value": "720–775 kg/m³" },
-
 			{
-				"property": "Distillation % evaporated at 70°C (E70)",
-				"value": "10–60 % v/v"
-			},
-			{
-				"property": "Distillation % evaporated at 100°C (E100)",
-				"value": "45–78 % v/v"
-			},
-			{
-				"property": "Distillation % evaporated at 150°C (E150)",
-				"value": "Min 85 % v/v"
-			},
-
-			{
-				"property": "Distillation Final Boiling Point",
-				"value": "Max 210 °C"
-			},
-			{
-				"property": "Distillation Residue",
-				"value": "Max 2.0 % by volume"
-			},
-
-			{ "property": "Research Octane Number (RON)", "value": "Min 95.0" },
-			{
-				"property": "Gum Content (Solvent Washed)",
-				"value": "Max 40 g/m³"
-			},
-			{ "property": "Total Sulphur", "value": "Max 10 mg/kg" },
-			{ "property": "Lead Content (as Pb)", "value": "Max 0.005 g/L" },
-
-			{
-				"property": "Reid Vapour Pressure (RVP) at 37.8°C",
-				"value": "Max 70 kPa"
-			},
-			{ "property": "Vapour Lock Index (VLI)", "value": "Max 1100" },
-
-			{ "property": "Benzene Content", "value": "Max 1 % v/v" },
-			{
-				"property": "Copper Strip Corrosion (3h at 50°C)",
-				"value": "Max Class 1"
-			},
-
-			{
-				"property": "Water Tolerance of Motor Gasoline–Alcohol Blends",
-				"value": "Phase separation temperature: Max 10°C (other months) / 0°C (winter)"
-			},
-
-			{
-				"property": "Engine Intake System Cleanliness",
-				"value": "Report – MFA used"
-			},
-
-			{ "property": "Olefin Content", "value": "Max 18 % v/v" },
-			{ "property": "Oxidation Stability", "value": "Min 360 minutes" },
-
-			{ "property": "Aromatics Content", "value": "Max 35 % v/v" },
-			{ "property": "Oxygen Content", "value": "Max 7.7 % by mass" },
-
-			{ "property": "Ethanol Content", "value": "19–20 % v/v" },
-
-			{
-				"property": "Oxygenates",
-				"value": "Max 15 % v/v (MTBE, ETBE, TAME) / Other oxygenates not permitted"
-			},
-
-			{
-				"property": "Motor Gasoline Content",
-				"value": "100 − Ethanol content and stabilizing additives (% v/v)"
-			},
-
-			{ "property": "Water Content", "value": "Max 3000 mg/kg" }
-		],
-
-		"appData": "Primarily used in transportation (Cars, Sport Utility Vehicles, Motorcycles and Scooters).",
-
-		"packaging": ["Bulk", "Retail"],
-
-		"SBU": "SOD/I&C/RETAIL",
-		"industrial": "Transport",
-
-		"documentation": "",
-		"alternatives": ["SPEED", "XTRA PREMIUM 95"],
-		"related": []
-	},
-	"HPCL-MS-0009": {
-		"id": 402,
-		"MSDS": "",
-		"title": "POWER100",
-		"subTitle": "SPECIAL MOTOR FUEL",
-		"description": "Power100 is premium branded Motor Spirit with Research Octane Number (RON) 100 and no Ethanol. It is produced by addition of special high quality additives which enhance the overall performance of Motor Spirit and deliver superior engine efficiency and responsiveness.",
-
-		"specifications": [
-			{ "property": "Research Octane Number (RON)", "value": "Min 100" },
-			{ "property": "Ethanol Content", "value": "0 % v/v (No Ethanol)" },
-			{ "property": "Appearance", "value": "Bright & Clear (Visual)" },
-			{ "property": "Colour", "value": "Orange" },
-			{ "property": "Density at 15°C", "value": "720–775 kg/m³" },
-			{ "property": "Total Sulphur", "value": "Max 10 mg/kg" },
-			{ "property": "Benzene Content", "value": "Max 1 % v/v" },
-			{
-				"property": "Copper Strip Corrosion (3h at 50°C)",
-				"value": "Max Class 1"
+				"property": "Water Content",
+				"value": "Max 3000 mg/kg"
 			}
 		],
-
-		"appData": "Recommended for luxury and high-end cars requiring very high octane fuel for improved engine performance, acceleration and combustion efficiency.",
-
+		"appData": "Primarily used in transportation (Cars, Sport Utility Vehicles, Motorcycles and Scooters). E20 Fuel was launched in India on 6th Feb 2023. As on date regular MS is substituted by E20 MS. It is observed that E20 fuel is being used in existing spark-ignition engine. E20 fuel has several advantages over conventional MS, such as it reduces vehicular tailpipe emissions by lowering the carbon monoxide, hydrocarbons and nitrogen oxides levels.",
 		"packaging": ["Bulk", "Retail"],
-
 		"SBU": "SOD/I&C/RETAIL",
 		"industrial": "Transport",
-
 		"documentation": "",
-		"alternatives": ["SPEED 100", "XTRA PREMIUM 100"],
+		"alternatives": [],
 		"related": []
 	}
 }

@@ -1,0 +1,158 @@
+{
+	"HPCL-MS-0005": {
+		"id": 5,
+		"MSDS": "ATF_PDF",
+		"title": "ATF (Jet A-1) (Aviation Turbine Oil Jet A-1)",
+		"subTitle": "AVIATION FUEL",
+		"description": "Aviation Turbine Fuel is a colorless, combustible, straight-run petroleum distillate, kerosene-based fuel. Kerosene makes up the majority of Jet A-1, with trace amounts of additives.",
+		"specifications": [
+			{
+				"property": "Product Name",
+				"value": "ATF (Jet A-1) (Aviation Turbine Oil Jet A-1)"
+			},
+			{
+				"property": "Appearance",
+				"value": "Visual, B& C"
+			},
+			{
+				"property": "Colour (Saybolt)",
+				"value": "Report"
+			},
+			{
+				"property": "Particulate contamination at point of manufacture, mg/l, Max",
+				"value": "1.0"
+			},
+			{
+				"property": "Particulate, cumulative channel particle counts at point of manufacture",
+				"value": "≥ 4 μm(c): Report, ≥6 μm(c): Report, ≥14 μm(c): Report, ≥21 μm(c): Report, ≥25 μm(c): Report, ≥30 μm(c): Report"
+			},
+			{
+				"property": "Total acidity, mg KOH/g, Max",
+				"value": "0.015"
+			},
+			{
+				"property": "Aromatics, % by volume, Max",
+				"value": "25.0"
+			},
+			{
+				"property": "Total Aromatics, % by volume, Max",
+				"value": "26.5"
+			},
+			{
+				"property": "Total sulphur, % by mass, Max",
+				"value": "0.30 (Defence 0.25)"
+			},
+			{
+				"property": "Sulphur mercaptan, percent m/m, Max",
+				"value": "0.0030"
+			},
+			{
+				"property": "Doctor Test",
+				"value": "Negative"
+			},
+			{
+				"property": "Refining components at the point of manufacture",
+				"value": "Non Hydro processed Components: Report, Mildly Hydro processed Components: Report, Severely Hydro processed Components: Report, Synthetic Components: Report"
+			},
+			{
+				"property": "Distillation Initial Boiling Point °C",
+				"value": "Report"
+			},
+			{
+				"property": "Distillation 10 percent recovery °C, v/v, Max",
+				"value": "205.0"
+			},
+			{
+				"property": "Distillation 50 percent recovery °C, v/v",
+				"value": "Report"
+			},
+			{
+				"property": "Distillation 95 percent v/v recovery, °C",
+				"value": "Report"
+			},
+			{
+				"property": "Distillation Final boiling point, °C, Max",
+				"value": "300"
+			},
+			{
+				"property": "Distillation residue, % v/v, Max",
+				"value": "1.5"
+			},
+			{
+				"property": "Distillation loss, % v/v, Max",
+				"value": "1.5"
+			},
+			{
+				"property": "Flash point, Abel, °C, Min",
+				"value": "38"
+			},
+			{
+				"property": "Density at 15°C, kg/m³",
+				"value": "775-840"
+			},
+			{
+				"property": "Freezing Point °C, Max",
+				"value": "minus 47"
+			},
+			{
+				"property": "Kinematic Viscosity @ minus 20°C, cSt, Max",
+				"value": "8.000"
+			},
+			{
+				"property": "Specific energy, MJ/kg, Min",
+				"value": "42.80"
+			},
+			{
+				"property": "Smoke point, mm, Min",
+				"value": "25.0 / 18.0"
+			},
+			{
+				"property": "& Naphthalenes, percent v/v, Max",
+				"value": "3.00"
+			},
+			{
+				"property": "Copper strip corrosion (2 h at 100 °C)",
+				"value": "Not worse than No. 1"
+			},
+			{
+				"property": "Silver strip corrosion (4 h at 50 °C), Max",
+				"value": "0 at Refinery / 1 at Delivery Point"
+			},
+			{
+				"property": "Thermal Stability, JFTOT at Control Temperature of 260°C",
+				"value": "Filter pressure differential, mm Hg, Max 25; Tube rating visual (VTR) <3, No ‘Peacock’ or ‘Abnormal’ OR Annex C ITR/Annex D ETR, average over area 2.5 mm², Max 85"
+			},
+			{
+				"property": "Existent gum, mg/100 ml, Max",
+				"value": "7"
+			},
+			{
+				"property": "Water reaction: Interface rating, Max",
+				"value": "1b"
+			},
+			{
+				"property": "Micro-separometer rating at point of manufacture",
+				"value": "MSEP without SDA, Min 85; MSEP with SDA, Min 70"
+			},
+			{
+				"property": "Electrical conductivity, pS/m",
+				"value": "50 to 600"
+			},
+			{
+				"property": "Wear scar diameter, mm, Max",
+				"value": "0.85"
+			},
+			{
+				"property": "Fatty Acid Methyl Ester, mg/kg, Max",
+				"value": "50"
+			}
+		],
+		"appData": "ATF Jet A-1 is used for aircrafts (Military jets) and Civil Aviation sector worldwide. It is a higher quality fuel subjected to stringent Quality Control norms set by DGCA and DGAQA.",
+		"packaging": ["Bulk"],
+		"SBU": "AVIATION/SOD",
+		"industrial": "Aviation",
+		"documentation": "",
+		"alternatives": ["-"],
+		"related": ["-"]
+	}
+}

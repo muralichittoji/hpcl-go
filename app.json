@@ -2,7 +2,7 @@
 	"expo": {
 		"name": "HPCL",
 		"slug": "HpclDev",
-		"version": "1.1.2",
+		"version": "1.1.9",
 		"orientation": "portrait",
 		"icon": "./assets/app_icon.png",
 		"scheme": "hpcl",
@@ -11,7 +11,7 @@
 		"ios": {
 			"supportsTablet": true,
 			"bundleIdentifier": "com.muralisreekrishnac.HPCL",
-			"buildNumber": "11",
+			"buildNumber": "19",
 			"infoPlist": {
 				"ITSAppUsesNonExemptEncryption": false
 			}
@@ -22,10 +22,11 @@
 				"backgroundColor": "#E6F4FE",
 				"foregroundImage": "./assets/app_icon.png"
 			},
+
 			"permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+
 			"predictiveBackGestureEnabled": false,
-			"package": "com.muralisreekrishnac.HPCL",
-			"buildType": "apk"
+			"package": "com.muralisreekrishnac.HPCL"
 		},
 
 		"splash": {

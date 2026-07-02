@@ -1,26 +1,19 @@
 {
-  "quickHelp": [
-    {
-      "id": 1,
-      "icon": "search",
-      "iconType": "vector",
-      "label": "Product\nFinder",
-      "navigation": "ProductFinder"
-    },
+	"quickHelp": [
+		{
+			"id": 1,
+			"icon": "search",
+			"iconType": "vector",
+			"label": "Product\nFinder",
+			"navigation": "ProductFinder"
+		},
 
-    {
-      "id": 2,
-      "icon": "book",
-      "iconType": "vector",
-      "label": "Knowledge\nCenter",
-      "navigation": "KnowledgeCenter"
-    },
-    {
-      "id": 3,
-      "label": "Product\nComparison",
-      "icon": "book",
-      "iconType": "vector",
-      "navigation": "ProductComparison"
-    }
-  ]
+		{
+			"id": 2,
+			"icon": "book",
+			"iconType": "vector",
+			"label": "Knowledge\nCenter",
+			"navigation": "KnowledgeCenter"
+		}
+	]
 }

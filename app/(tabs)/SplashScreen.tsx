@@ -5,7 +5,14 @@ import { loginUser } from "@/utils/authService";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import { useEffect, useRef, useState } from "react";
-import { Animated, Image, StyleSheet, Text, View } from "react-native";
+import {
+	Animated,
+	Image,
+	Platform,
+	StyleSheet,
+	Text,
+	View,
+} from "react-native";
 import * as Progress from "react-native-progress";
 
 export default function SplashScreen() {
@@ -53,9 +60,13 @@ export default function SplashScreen() {
 			const speed = await testInternetSpeed();
 			await AsyncStorage.setItem("NETWORK_MODE", speed > 1 ? "FAST" : "SLOW");
 
-			// 🔐 Device UUID (generated once)
-			const deviceUUID = await getDeviceUUID();
-			console.log("Device UUID:", deviceUUID);
+			// 🔐 Device UUID (generated once) — skip on web
+			if (Platform.OS !== "web") {
+				const deviceUUID = await getDeviceUUID();
+				console.log("Device UUID:", deviceUUID);
+			} else {
+				console.log("Web platform detected — skipping getDeviceUUID");
+			}
 
 			// 📊 Progress bar animation
 			progressInterval = setInterval(() => {
@@ -133,7 +144,6 @@ export default function SplashScreen() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: "#fff",
 		justifyContent: "space-around",
 		alignItems: "center",
 	},

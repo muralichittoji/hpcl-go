@@ -115,7 +115,7 @@
 		"packaging": ["Bulk", "Retail"],
 		"SBU": "SOD/I&C/RETAIL",
 		"industrial": "Transport",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["MS POWER 95"]
 	},
@@ -223,7 +223,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "SOD/I&C/RETAIL",
 		"industrial": "Transport, Manufacturing, Agriculture",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["HP TURBOJET"]
 	},
@@ -315,7 +315,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "SOD",
 		"industrial": "Chemical Feedstock, Biofuel & pharmaceuticals",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -383,7 +383,7 @@
 		"packaging": ["-"],
 		"SBU": "SOD/RETAIL",
 		"industrial": "Domestic Use, Petroleum Industry. Chemical Industry & Pesticide industry",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -491,7 +491,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "AVIATION/SOD",
 		"industrial": "Aviation",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
@@ -540,7 +540,7 @@
 		"packaging": ["Retail"],
 		"SBU": "Retail",
 		"industrial": "Transport",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": ["HIGH SPEED DIESEL"],
 		"related": ["HPCL0002"]
 	},
@@ -636,7 +636,7 @@
 		"SBU": "SOD/I&C/RETAIL",
 		"industrial": "Transport",
 
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": [],
 		"related": []
 	},
