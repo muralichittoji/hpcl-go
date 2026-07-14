@@ -5,6 +5,9 @@ export interface ParsedResponse {
 }
 
 export const safeParse = (text: string): ParsedResponse => {
+	console.log("Question:", text);
+	console.log("Safe Parsing");
+
 	try {
 		const parsed = JSON.parse(text);
 

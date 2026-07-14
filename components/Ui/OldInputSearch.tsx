@@ -7,6 +7,7 @@ import {
 	createChat,
 	getChatsPage,
 } from "@/lib/chat";
+// import { getAnswer } from "@/utils/authService";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import React, { useCallback, useRef, useState } from "react";
@@ -47,6 +48,8 @@ const InputSearch = ({
 	onMessageAdded,
 }: SearchProps) => {
 	const [search, setSearch] = useState("");
+	// const { isOnline } = useNetwork();
+	// const [, setLowNetwork] = useState<boolean>(false);
 	const [historyVisible, setHistoryVisible] = useState(false);
 	const [history, setHistory] = useState<Chat[]>([]);
 	const [historyOffset, setHistoryOffset] = useState(0);
@@ -110,6 +113,113 @@ const InputSearch = ({
 		}
 	};
 
+	// const safeParse = (text: string) => {
+	// 	try {
+	// 		const first = JSON.parse(text);
+
+	// 		// Handle double-encoded JSON (very common with Azure)
+	// 		if (typeof first === "string") {
+	// 			try {
+	// 				return JSON.parse(first);
+	// 			} catch {
+	// 				return { response: first };
+	// 			}
+	// 		}
+
+	// 		return first;
+	// 	} catch {
+	// 		// Fallback → treat as plain text
+	// 		return { response: text };
+	// 	}
+	// };
+
+	// const getSearch = async (question: string) => {
+	// 	let timeoutId: ReturnType<typeof setTimeout> | undefined;
+	// 	let chatId = localChatId ?? 0;
+
+	// 	try {
+	// 		setLoading(true);
+
+	// 		if (!isOnline) {
+	// 			setLowNetwork(true);
+	// 			setSlowNet(true);
+	// 			return;
+	// 		}
+
+	// 		// Create chat immediately
+	// 		if (mode === "new") {
+	// 			chatId = createChat(question);
+
+	// 			// Save user message immediately
+	// 			addMessage(chatId, "user", question);
+
+	// 			// Navigate immediately
+	// 			router.push({
+	// 				pathname: "/(tabs)/ResultScreen",
+	// 				params: {
+	// 					chatLocalId: chatId.toString(),
+	// 				},
+	// 			});
+	// 		}
+
+	// 		timeoutId = setTimeout(() => {
+	// 			setLoading(false);
+	// 			setLowNetwork(true);
+	// 			setSlowNet(true);
+	// 		}, 90000);
+
+	// 		// API call happens in background
+	// 		const res = await getAnswer({ question });
+
+	// 		clearTimeout(timeoutId);
+
+	// 		const rawAnswer = res?.results?.[0]?.answer;
+
+	// 		if (!rawAnswer) {
+	// 			setLowNetwork(true);
+	// 			setSlowNet(true);
+	// 			return;
+	// 		}
+
+	// 		const parsed = safeParse(rawAnswer);
+
+	// 		setSearch("");
+
+	// 		const finalResponse =
+	// 			parsed?.response ?? rawAnswer ?? "No response available";
+
+	// 		const productCode = parsed?.app_product_code ?? null;
+
+	// 		// Save assistant message
+	// 		addMessage(
+	// 			chatId,
+	// 			"assistant",
+	// 			finalResponse,
+	// 			productCode,
+	// 			res?.results?.[0]?.queryId ?? null,
+	// 		);
+
+	// 		if (res?.chatId) {
+	// 			updateChatId(chatId, res.chatId);
+	// 		}
+
+	// 		// Tell ResultScreen new message arrived
+	// 		onMessageAdded?.();
+
+	// 		setLowNetwork(false);
+	// 		setSlowNet(false);
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 		setLowNetwork(true);
+	// 		setSlowNet(true);
+	// 	} finally {
+	// 		setLoading(false);
+
+	// 		if (timeoutId) {
+	// 			clearTimeout(timeoutId);
+	// 		}
+	// 	}
+	// };
 	return (
 		<>
 			<View style={styles.searchInputContainer}>

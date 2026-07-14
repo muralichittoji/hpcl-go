@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {
 	FlatList,
 	StyleSheet,
@@ -7,7 +7,7 @@ import {
 	View,
 } from "react-native";
 
-import devData from "@/constants/newDevData.json";
+import { getProductSummaries, ProductSummary } from "@/lib/products";
 import { Colors } from "@/constants/theme";
 import { router } from "expo-router";
 
@@ -16,49 +16,48 @@ type Props = {
 };
 
 const RelatedProducts = ({ related = [] }: Props) => {
-	if (!related.length) return null;
+	const products = useMemo(
+		() => getProductSummaries(related),
+		[related.join("|")],
+	);
+
+	if (!products.length) return null;
 
 	return (
 		<View style={styles.container}>
 			<Text style={styles.heading}>Related Products</Text>
 
 			<FlatList
-				data={related}
+				data={products}
 				horizontal
 				showsHorizontalScrollIndicator={false}
-				keyExtractor={(item) => item}
+				keyExtractor={(item) => item.code}
 				contentContainerStyle={styles.list}
-				renderItem={({ item }) => {
-					const product = devData[item as keyof typeof devData];
+				renderItem={({ item }: { item: ProductSummary }) => (
+					<TouchableOpacity
+						style={styles.card}
+						onPress={() =>
+							router.push({
+								pathname: "/InfoScreen",
+								params: {
+									name: item.code,
+								},
+							})
+						}
+					>
+						<Text numberOfLines={2} style={styles.title}>
+							{item.title}
+						</Text>
 
-					if (!product) return null;
+						<Text numberOfLines={2} style={styles.subtitle}>
+							{item.subTitle}
+						</Text>
 
-					return (
-						<TouchableOpacity
-							style={styles.card}
-							onPress={() =>
-								router.push({
-									pathname: "/InfoScreen",
-									params: {
-										name: item,
-									},
-								})
-							}
-						>
-							<Text numberOfLines={2} style={styles.title}>
-								{product.title}
-							</Text>
-
-							<Text numberOfLines={2} style={styles.subtitle}>
-								{product.subTitle}
-							</Text>
-
-							<View style={styles.footer}>
-								<Text style={styles.view}>View →</Text>
-							</View>
-						</TouchableOpacity>
-					);
-				}}
+						<View style={styles.footer}>
+							<Text style={styles.view}>View →</Text>
+						</View>
+					</TouchableOpacity>
+				)}
 			/>
 		</View>
 	);

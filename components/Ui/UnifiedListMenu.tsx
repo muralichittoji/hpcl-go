@@ -1,5 +1,5 @@
-// Local JSON data used to populate modal
-import mainData from "@/constants/Data";
+// Product data from SQLite
+import { getProduct } from "@/lib/products";
 
 // App theme colors
 import { Colors } from "@/constants/theme";
@@ -109,8 +109,8 @@ const UnifiedListMenu = ({
 
 	// Fetch product object from JSON
 
-	const getProduct = (key?: string) =>
-		key ? mainData[key as keyof typeof mainData] : null;
+	const getProductByKey = (key?: string) =>
+		key ? getProduct(key) : null;
 
 	useEffect(() => {});
 	const getDesc = (key?: string) => {
@@ -118,14 +118,14 @@ const UnifiedListMenu = ({
 		// console.log("TYPE =>", typeof key);
 		// console.log("ALL KEYS =>", Object.keys(NewDevData));
 		// console.log("MATCH =>", Object.keys(newDevData).includes(key!));
-		return getProduct(key)?.description ?? "No description available";
+		return getProductByKey(key)?.description ?? "No description available";
 	};
 
 	const getTitle = (key?: string) =>
-		getProduct(key)?.title ?? "No description available";
+		getProductByKey(key)?.title ?? "No description available";
 
 	const getSubTitle = (key?: string) =>
-		getProduct(key)?.subTitle ?? "No description available";
+		getProductByKey(key)?.subTitle ?? "No description available";
 
 	// Open info modal
 	const openInfo = (item: any) => {

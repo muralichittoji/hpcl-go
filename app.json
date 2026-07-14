@@ -2,7 +2,7 @@
 	"expo": {
 		"name": "HPCL",
 		"slug": "HpclDev",
-		"version": "1.2.1",
+		"version": "1.2.2",
 		"orientation": "portrait",
 		"icon": "./assets/app_icon.png",
 		"scheme": "hpcl",
@@ -10,7 +10,7 @@
 		"ios": {
 			"supportsTablet": true,
 			"bundleIdentifier": "com.muralisreekrishnac.HPCL",
-			"buildNumber": "21",
+			"buildNumber": "22",
 			"infoPlist": {
 				"ITSAppUsesNonExemptEncryption": false
 			}
@@ -20,7 +20,11 @@
 				"backgroundColor": "#E6F4FE",
 				"foregroundImage": "./assets/app_icon.png"
 			},
-			"permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+			"permissions": [
+				"READ_EXTERNAL_STORAGE",
+				"WRITE_EXTERNAL_STORAGE",
+				"POST_NOTIFICATIONS"
+			],
 			"predictiveBackGestureEnabled": false,
 			"package": "com.muralisreekrishnac.HPCL"
 		},
@@ -35,6 +39,7 @@
 		},
 		"plugins": [
 			"expo-router",
+
 			[
 				"expo-splash-screen",
 				{
@@ -47,6 +52,15 @@
 					}
 				}
 			],
+
+			[
+				"expo-notifications",
+				{
+					"icon": "./assets/notification.png",
+					"color": "#ffffff"
+				}
+			],
+
 			"expo-mail-composer",
 			"expo-secure-store",
 			"expo-asset",

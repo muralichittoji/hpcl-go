@@ -5,7 +5,9 @@ import React, { useEffect } from "react";
 import {
 	Animated,
 	Dimensions,
+	FlatList,
 	Image,
+	Modal,
 	StyleSheet,
 	Text,
 	TouchableOpacity,
@@ -19,6 +21,13 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import { Colors } from "../../constants/theme";
 
+import {
+	clearNotifications,
+	getNotifications,
+	getUnreadCount,
+	markAsRead,
+	notificationEmitter,
+} from "@/lib/notification";
 // Screen width for responsive sizing
 const { width } = Dimensions.get("window");
 
@@ -37,6 +46,14 @@ const Header = ({
 	scrollY?: Animated.Value; // Scroll position reference
 }) => {
 	const [userEmail, setUserEmail] = React.useState<string | null>(null);
+	const [notificationVisible, setNotificationVisible] = React.useState(false);
+	const [notifications, setNotifications] = React.useState(getNotifications());
+	const [unreadCount, setUnreadCount] = React.useState(getUnreadCount());
+
+	const refreshNotifications = () => {
+		setNotifications(getNotifications());
+		setUnreadCount(getUnreadCount());
+	};
 
 	const headerHeight = scrollY
 		? scrollY.interpolate({
@@ -83,6 +100,18 @@ const Header = ({
 		marginHorizontal: 10,
 		marginTop: 10,
 	});
+
+	useEffect(() => {
+		refreshNotifications();
+
+		const update = () => refreshNotifications();
+
+		notificationEmitter.on("changed", update);
+
+		return () => {
+			notificationEmitter.off("changed", update);
+		};
+	}, []);
 
 	/* ---------------------------------------------------------------------- */
 	/*               Render header logo based on screen context               */
@@ -154,16 +183,40 @@ const Header = ({
 						paddingVertical: 5,
 					}}
 				>
-					<Text
-						style={{
-							textAlign: "center",
-							color: "#000",
-							fontSize: 16,
-							fontWeight: "600",
-						}}
-					>
-						{userEmail ? userEmail : null}
-					</Text>
+					<View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+						<Text
+							style={{
+								textAlign: "center",
+								color: "#000",
+								fontSize: 16,
+								fontWeight: "600",
+							}}
+						>
+							{userEmail ? userEmail : null}
+						</Text>
+						<TouchableOpacity
+							onPress={() => {
+								refreshNotifications();
+								setNotificationVisible(true);
+							}}
+							style={{
+								padding: 5,
+								borderRadius: 20,
+							}}
+						>
+							<MaterialIcons
+								name="notifications"
+								size={30}
+								color={Colors.yellowDeep}
+							/>
+
+							{unreadCount > 0 && (
+								<View style={styles.badge}>
+									<Text style={styles.badgeText}>{unreadCount}</Text>
+								</View>
+							)}
+						</TouchableOpacity>
+					</View>
 					{userEmail && userEmail !== "guest" ? (
 						<TouchableOpacity
 							onPress={handleLogout}
@@ -267,22 +320,93 @@ const Header = ({
 						>
 							<MaterialIcons name="arrow-back" size={30} color={Colors.white} />
 						</TouchableOpacity>
-						<TouchableOpacity
-							onPress={() => router.replace("/homeScreen")}
+						<View
 							style={{
 								flexDirection: "row",
 								alignItems: "center",
-								gap: 3,
-								backgroundColor: Colors.grayDeep,
-								padding: 5,
-								borderRadius: 20,
+								gap: 10,
 							}}
 						>
-							<MaterialIcons name="home" size={30} color={Colors.white} />
-						</TouchableOpacity>
+							<TouchableOpacity
+								onPress={() => router.replace("/homeScreen")}
+								style={{
+									backgroundColor: Colors.grayDeep,
+									padding: 5,
+									borderRadius: 20,
+								}}
+							>
+								<MaterialIcons name="home" size={30} color={Colors.white} />
+							</TouchableOpacity>
+						</View>
 					</View>
 				)}
 			</View>
+			<Modal
+				visible={notificationVisible}
+				transparent
+				animationType="slide"
+				onRequestClose={() => setNotificationVisible(false)}
+			>
+				<View style={styles.modalOverlay}>
+					<View style={styles.modalContainer}>
+						<Text style={styles.modalTitle}>Notifications</Text>
+
+						<FlatList
+							data={notifications}
+							keyExtractor={(item) => item.id.toString()}
+							renderItem={({ item }) => (
+								<TouchableOpacity
+									style={styles.notificationItem}
+									onPress={() => {
+										markAsRead(item.id);
+										refreshNotifications();
+
+										setNotificationVisible(false);
+
+										router.push({
+											pathname: "/(tabs)/ResultScreen",
+											params: {
+												chatLocalId: item.chatId.toString(),
+											},
+										});
+									}}
+								>
+									<Text style={{ fontWeight: "700" }}>{item.title}</Text>
+
+									<Text>{item.message}</Text>
+								</TouchableOpacity>
+							)}
+							ListEmptyComponent={
+								<Text style={{ textAlign: "center", padding: 20 }}>
+									No notifications
+								</Text>
+							}
+						/>
+
+						<View
+							style={{
+								flexDirection: "row",
+								justifyContent: "space-around",
+								alignItems: "center",
+								height: 40,
+							}}
+						>
+							<TouchableOpacity
+								onPress={() => {
+									clearNotifications();
+									refreshNotifications();
+								}}
+							>
+								<Text style={{ color: "red" }}>Clear</Text>
+							</TouchableOpacity>
+
+							<TouchableOpacity onPress={() => setNotificationVisible(false)}>
+								<Text>Close</Text>
+							</TouchableOpacity>
+						</View>
+					</View>
+				</View>
+			</Modal>
 		</View>
 	);
 };
@@ -340,5 +464,52 @@ const styles = StyleSheet.create({
 	divider: {
 		height: 1,
 		backgroundColor: "#000",
+	},
+	badge: {
+		position: "absolute",
+		top: -3,
+		right: -3,
+		backgroundColor: "#E53935",
+		borderRadius: 10,
+		minWidth: 18,
+		height: 18,
+		justifyContent: "center",
+		alignItems: "center",
+		paddingHorizontal: 4,
+	},
+
+	badgeText: {
+		color: "#FFF",
+		fontSize: 11,
+		fontWeight: "700",
+	},
+
+	modalOverlay: {
+		flex: 1,
+		backgroundColor: "rgba(0,0,0,0.45)",
+		justifyContent: "center",
+		alignItems: "center",
+	},
+
+	modalContainer: {
+		width: "90%",
+		maxHeight: "70%",
+		backgroundColor: "#FFF",
+		borderRadius: 18,
+		padding: 20,
+	},
+
+	modalTitle: {
+		fontSize: 20,
+		fontWeight: "700",
+		marginBottom: 15,
+		textAlign: "center",
+		color: Colors.blueDark,
+	},
+
+	notificationItem: {
+		padding: 14,
+		borderBottomWidth: 1,
+		borderBottomColor: "#EEE",
 	},
 });

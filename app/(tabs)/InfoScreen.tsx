@@ -16,11 +16,11 @@ import ProductPreviewModal from "@/components/Ui/ProductPreviewModal";
 import SafeSheet from "@/components/Ui/SafeSheet";
 
 // Static product data
-import devData from "@/constants/Data";
+import { getProduct } from "@/lib/products";
 
 // Routing & hooks
 import { useLocalSearchParams } from "expo-router";
-import React, { useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import {
 	Animated,
 	KeyboardAvoidingView,
@@ -50,7 +50,10 @@ const InfoScreen = ({ route }: any) => {
 	/* ---------------------------------------------------------------------- */
 	/*                 Resolve product data from JSON sources                 */
 	/* ---------------------------------------------------------------------- */
-	const data = name ? devData[name as keyof typeof devData] : null;
+	const data = useMemo(
+		() => (name ? getProduct(name) : null),
+		[name],
+	);
 
 	// Enquiry modal visibility
 	const [enquireOpen, setEnquireOpen] = useState(false);

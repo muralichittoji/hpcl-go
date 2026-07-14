@@ -1,5 +1,4 @@
 // Common UI components
-import CommonModal from "@/components/Ui/CommonModal";
 import Header from "@/components/Ui/Header";
 import InputSearch from "@/components/Ui/InputSearch";
 import LoadingOverlay from "@/components/Ui/LoadingOverlay";
@@ -104,14 +103,6 @@ const HomeScreen = () => {
 			<LoadingOverlay visible={loading} text="Thinking..." />
 
 			{/* Slow internet modal */}
-			<CommonModal
-				visible={slowNet}
-				title="Slow Internet"
-				message="Backend Servers are at full swing. Please try again."
-				icon="speedometer-outline"
-				buttonText="Retry"
-				onPress={() => setSlowNet(false)}
-			/>
 		</View>
 	);
 };

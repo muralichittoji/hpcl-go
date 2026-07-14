@@ -32,5 +32,37 @@ export function runMigrations(db: SQLite.SQLiteDatabase) {
 
     CREATE INDEX IF NOT EXISTS idx_chats_updated
       ON chats(updatedAt DESC);
+
+    CREATE TABLE IF NOT EXISTS app_meta (
+      key TEXT PRIMARY KEY,
+      value TEXT NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS products (
+      code TEXT PRIMARY KEY,
+      productId INTEGER NOT NULL,
+      title TEXT NOT NULL,
+      subTitle TEXT NOT NULL DEFAULT '',
+      description TEXT NOT NULL DEFAULT '',
+      msds TEXT NOT NULL DEFAULT '',
+      appData TEXT NOT NULL DEFAULT '',
+      sbu TEXT NOT NULL DEFAULT '',
+      industrial TEXT NOT NULL DEFAULT '',
+      documentation TEXT NOT NULL DEFAULT '',
+      specifications TEXT NOT NULL DEFAULT '[]',
+      packaging TEXT NOT NULL DEFAULT '[]',
+      alternatives TEXT NOT NULL DEFAULT '[]',
+      related TEXT NOT NULL DEFAULT '[]',
+      category TEXT
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_products_category
+      ON products(category);
+
+    CREATE INDEX IF NOT EXISTS idx_products_title
+      ON products(title);
+
+    CREATE INDEX IF NOT EXISTS idx_products_sbu
+      ON products(sbu);
   `);
 }

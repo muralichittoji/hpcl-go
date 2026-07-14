@@ -1,4 +1,4 @@
-import devData from "@/constants/newDevData.json";
+import { getProductTitle } from "@/lib/products";
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import React, { useMemo, useState } from "react";
@@ -52,8 +52,8 @@ const ProductFinder = () => {
 	const [loading, setLoading] = useState(false);
 	const [slowNet, setSlowNet] = useState(false);
 
-	const getName = (name: any) => {
-		return name ? devData[name as keyof typeof devData].title : undefined;
+	const getName = (name: string) => {
+		return name ? getProductTitle(name) ?? undefined : undefined;
 	};
 
 	const applicationItems = useMemo(() => {

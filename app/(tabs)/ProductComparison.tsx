@@ -13,7 +13,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import Header from "@/components/Ui/Header";
 import wholeData from "@/constants/Jsons/wholeData.json";
-import productDetails from "@/constants/newDevData.json";
+import { getProduct } from "@/lib/products";
 import { Colors } from "@/constants/theme";
 import { ALL_IMAGES } from "@/hooks/Allimages";
 
@@ -160,8 +160,7 @@ const ProductComparison = () => {
               }}
             >
               {selectedProducts.map((key) => {
-                const product =
-                  productDetails[key as keyof typeof productDetails];
+                const product = getProduct(key);
 
                 if (!product) return null;
 

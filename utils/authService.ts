@@ -61,6 +61,23 @@ export const getAnswer = async ({ question }: GetDataPayload) => {
 		],
 		agentic_workflow_name: "Product_App",
 	});
+
+	// Validate response structure
+	if (!res.data || !res.data.results || !Array.isArray(res.data.results)) {
+		console.log("Invalid response structure:", res.data);
+		throw new Error("Invalid API response structure");
+	}
+
+	// Check if answer is an error message (starts with "E", "Error", "Failed", etc.)
+	const answer = res.data.results[0]?.answer;
+	if (
+		typeof answer === "string" &&
+		/^(error|error:|e\s|failed|exception)/i.test(answer.trim())
+	) {
+		console.log("API returned error message:", answer.substring(0, 200));
+		throw new Error(`API Error: ${answer.substring(0, 100)}`);
+	}
+
 	return res.data;
 };
 

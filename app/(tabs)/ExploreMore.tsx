@@ -45,6 +45,7 @@ const ExploreMore = () => {
 					showIcons
 					itemHeight={170}
 					navigate={() => {}}
+					bottomMinimise={0}
 				/>
 			</View>
 		</View>
