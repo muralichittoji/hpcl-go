@@ -21,3 +21,9 @@ export function getDb(): SQLite.SQLiteDatabase {
 export function initDatabase() {
 	getDb();
 }
+
+export function reloadDb() {
+	db?.closeSync(); // if supported
+	db = SQLite.openDatabaseSync("hpcl.db");
+	return db;
+}

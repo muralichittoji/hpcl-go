@@ -14,7 +14,7 @@ export type ProductRow = {
 	title: string;
 	subTitle: string;
 	description: string;
-	msds: string;
+	MSDS: string;
 	appData: string;
 	sbu: string;
 	industrial: string;

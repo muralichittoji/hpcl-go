@@ -2,7 +2,7 @@
 	"expo": {
 		"name": "HPCL",
 		"slug": "HpclDev",
-		"version": "1.2.2",
+		"version": "1.2.3",
 		"orientation": "portrait",
 		"icon": "./assets/app_icon.png",
 		"scheme": "hpcl",
@@ -10,7 +10,7 @@
 		"ios": {
 			"supportsTablet": true,
 			"bundleIdentifier": "com.muralisreekrishnac.HPCL",
-			"buildNumber": "22",
+			"buildNumber": "23",
 			"infoPlist": {
 				"ITSAppUsesNonExemptEncryption": false
 			}

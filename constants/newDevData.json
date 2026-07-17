@@ -1457,6 +1457,58 @@
 		"alternatives": ["-"],
 		"related": ["-"]
 	},
+	"HPCL-IF-0030": {
+		"id": 22,
+		"MSDS": "",
+		"title": "M50200-MS",
+		"subTitle": "Ployethylene",
+		"description": "HP Durapol® M50200 is a butene-based High Density Polyethylene (HDPE) grade designed for high-density injection moulding applications. It offers excellent dimensional stability, superior surface finish, and enhanced aesthetics, making it ideal for a wide range of injection-moulded products",
+		"specifications": [
+			{
+				"property": "Density of Resin @23°C, g/cc",
+				"value": "0.950"
+			},
+			{
+				"property": "Melt Flow Index @190°C, 2.16 kg, g/10 min",
+				"value": "20"
+			},
+			{
+				"property": "Mechanical Properties",
+				"value": ""
+			},
+			{
+				"property": "Tensile Strength at Yield, Type IV Specimen, MPa",
+				"value": "22"
+			},
+			{
+				"property": "Tensile Elongation at Break, Type IV Specimen, %",
+				"value": "300"
+			},
+			{
+				"property": "Flexural Modulus (1% Secant), MPa",
+				"value": "900"
+			},
+			{
+				"property": "Notched Izod Impact Strength @23°C, J/m",
+				"value": "30"
+			},
+			{
+				"property": "Vicat Softening Point (10N), °C",
+				"value": "126"
+			},
+			{
+				"property": "Heat Deflection Temperature (0.455 MPa), °C",
+				"value": "78"
+			}
+		],
+		"appData": "Household articles, thin-wall injection-moulded products, food containers, and other general-purpose injection-moulded applications",
+		"packaging": ["25 kg Raffia FFS bags"],
+		"SBU": "",
+		"industrial": "Petrochemicals",
+		"documentation": "TDS of HD IM High M50200",
+		"alternatives": [],
+		"related": ["nan"]
+	},
 	"HPCL-IF-0011": {
 		"id": 17,
 		"MSDS": "VG30_PDF",

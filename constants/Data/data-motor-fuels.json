@@ -534,5 +534,35 @@
 		"documentation": "",
 		"alternatives": [],
 		"related": []
+	},
+	"HPCL-MS-0011": {
+		"id": 5,
+		"MSDS": "",
+		"title": "PETROL PLUS 5ML POUCH",
+		"subTitle": "Additives",
+		"description": "Petrol Plus is additive containing antioxidants, antiknocing agents, anti corrosive agants for higher engine shelf life",
+		"specifications": [],
+		"appData": "PRIMARILY USED IN PETROL FOR BLENDING ",
+		"packaging": ["PACKED, Retail"],
+		"SBU": "",
+		"industrial": "Motor Fuel",
+		"documentation": "nan",
+		"alternatives": [],
+		"related": ["nan"]
+	},
+	"HPCL-MS-0012": {
+		"id": 6,
+		"MSDS": "",
+		"title": "DIESEL PLUS 10ML POUCH",
+		"subTitle": "Additives",
+		"description": "Petrol Plus is additive containing antioxidants, antiknocing agents, anti corrosive agants for higher engine shelf life",
+		"specifications": [],
+		"appData": "PRIMARILY USED IN DIESEL FOR BLENDING ",
+		"packaging": ["PACKED, Retail"],
+		"SBU": "",
+		"industrial": "Motor Fuel",
+		"documentation": "nan",
+		"alternatives": [],
+		"related": ["nan"]
 	}
 }

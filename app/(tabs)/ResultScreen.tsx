@@ -8,6 +8,7 @@ import { Colors } from "@/constants/theme";
 import { ALL_IMAGES } from "@/hooks/Allimages";
 import {
 	addMessage,
+	deleteMessage,
 	getOlderMessagesPage,
 	getPreviousUserMessage,
 	getRecentMessagesPage,
@@ -16,8 +17,11 @@ import {
 	updateMessage,
 } from "@/lib/chat";
 import { addNotification } from "@/lib/notification";
+import { showSearchCompletedNotification } from "@/lib/pushNotifications";
+import { getApiErrorMessage, isAbortError } from "@/utils/apiErrors";
 import { getAnswer } from "@/utils/authService";
 import { safeParse } from "@/utils/jsonUtils";
+import { useNetwork } from "@/utils/NetworkProvider";
 import { Ionicons } from "@expo/vector-icons";
 import { router, useLocalSearchParams } from "expo-router";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -30,29 +34,36 @@ import {
 	Platform,
 	StyleSheet,
 	Text,
-	TouchableOpacity,
 	View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import AIActions from "./Results/AIActions";
 import AIMessage from "./Results/AIMessage";
-import ProductCard from "./Results/ProductCard";
 import RelatedProducts from "./Results/RelatedProducts";
+import SearchFailureCard from "./Results/SearchFailureCard";
 import UserMessage from "./Results/UserMessage";
 
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList<Message>);
 
+type SearchFailure = {
+	type: "error" | "stopped";
+	message: string;
+	userMessageId: number;
+	userMessageText: string;
+};
+
 const ResultScreen = () => {
 	const params = useLocalSearchParams();
+	const { isOnline } = useNetwork();
 	const scrollRef = useRef<FlatList<Message>>(null);
 	const scrollY = useRef(new Animated.Value(0)).current;
 
 	const [loading, setLoading] = useState(false);
 	const [, setSlowNet] = useState(false);
-	const hasAutoAsked = useRef(false);
-	const isAsking = useRef(false); // Prevent duplicate requests
-	const lastUserMessageRef = useRef<string | null>(null); // Track for retry
-	const previousMessagesLengthRef = useRef(0);
+	const isAsking = useRef(false);
+	const lastUserMessageRef = useRef<string | null>(null);
+	const lastAskedMessageIdRef = useRef<number | null>(null);
+	const abortControllerRef = useRef<AbortController | null>(null);
 
 	const chatLocalId = Number(params.chatLocalId);
 
@@ -60,9 +71,11 @@ const ResultScreen = () => {
 	const [hasMoreOlder, setHasMoreOlder] = useState(false);
 	const [loadingOlder, setLoadingOlder] = useState(false);
 	const [isTyping, setIsTyping] = useState(false);
-	const [error, setError] = useState<string | null>(null);
-
-	const autoAsk = params.autoAsk === "1";
+	const [searchFailure, setSearchFailure] = useState<SearchFailure | null>(
+		null,
+	);
+	const [editDraft, setEditDraft] = useState<string | null>(null);
+	const [regenerateError, setRegenerateError] = useState<string | null>(null);
 
 	const getLastUserMessage = () => {
 		if (!messages.length) return null;
@@ -75,16 +88,34 @@ const ResultScreen = () => {
 	const askQuestion = async () => {
 		const userMessage = getLastUserMessage();
 
-		if (!userMessage || isAsking.current) return; // Prevent duplicate requests
+		if (!userMessage || isAsking.current) return;
 
-		lastUserMessageRef.current = userMessage.text; // Save for retry
+		if (lastAskedMessageIdRef.current === userMessage.id) return;
+
+		if (!isOnline) {
+			setSearchFailure({
+				type: "error",
+				message: "No internet connection. Check your network and try again.",
+				userMessageId: userMessage.id,
+				userMessageText: userMessage.text,
+			});
+			return;
+		}
+
+		lastUserMessageRef.current = userMessage.text;
+		lastAskedMessageIdRef.current = userMessage.id;
 		isAsking.current = true;
 		setIsTyping(true);
-		setError(null);
+		setSearchFailure(null);
+		setRegenerateError(null);
+
+		abortControllerRef.current?.abort();
+		abortControllerRef.current = new AbortController();
 
 		try {
 			const res = await getAnswer({
 				question: userMessage.text,
+				signal: abortControllerRef.current.signal,
 			});
 
 			const rawAnswer = res?.results?.[0]?.answer;
@@ -92,7 +123,13 @@ const ResultScreen = () => {
 			if (!rawAnswer) {
 				const errorMsg = "No answer received from server.";
 				console.log(errorMsg);
-				setError(errorMsg);
+				lastAskedMessageIdRef.current = null;
+				setSearchFailure({
+					type: "error",
+					message: "Network Failure, Please wait or try again later",
+					userMessageId: userMessage.id,
+					userMessageText: userMessage.text,
+				});
 				return;
 			}
 
@@ -104,7 +141,13 @@ const ResultScreen = () => {
 					"HTML Response received instead of JSON:",
 					rawAnswer.substring(0, 100),
 				);
-				setError(errorMsg);
+				lastAskedMessageIdRef.current = null;
+				setSearchFailure({
+					type: "error",
+					message: errorMsg,
+					userMessageId: userMessage.id,
+					userMessageText: userMessage.text,
+				});
 				return;
 			}
 
@@ -131,6 +174,12 @@ const ResultScreen = () => {
 				"success",
 			);
 
+			showSearchCompletedNotification(
+				chatLocalId,
+				"Search Complete",
+				userMessage.text,
+			);
+
 			// Save server chat id if available
 			if (res?.chatId) {
 				updateChatId(chatLocalId, res.chatId);
@@ -138,67 +187,81 @@ const ResultScreen = () => {
 
 			// Refresh UI
 			loadRecentMessages();
-		} catch (e: any) {
-			let errorMsg = "Failed to get answer. Please try again.";
-
-			// Check for specific error types
-			if (e?.message?.includes("API Error:")) {
-				errorMsg = "Backend returned an error. Please try again.";
-			} else if (e?.response?.status === 502) {
-				errorMsg =
-					"Server is temporarily unavailable (502). Please try again in a moment.";
-			} else if (e?.message?.includes("timeout")) {
-				errorMsg =
-					"Request timed out. Please check your connection and try again.";
-			} else if (e?.message?.includes("Invalid API response")) {
-				errorMsg = "Received invalid response from server. Please try again.";
+		} catch (e: unknown) {
+			if (isAbortError(e)) {
+				lastAskedMessageIdRef.current = null;
+				setSearchFailure({
+					type: "stopped",
+					message: "Search stopped by user.",
+					userMessageId: userMessage.id,
+					userMessageText: userMessage.text,
+				});
+				return;
 			}
 
+			const errorMsg = getApiErrorMessage(e, isOnline);
 			console.log("Search Error:", e);
-			setError(errorMsg);
+			lastAskedMessageIdRef.current = null;
+			setSearchFailure({
+				type: "error",
+				message: errorMsg,
+				userMessageId: userMessage.id,
+				userMessageText: userMessage.text,
+			});
 		} finally {
 			setIsTyping(false);
 			isAsking.current = false;
+			abortControllerRef.current = null;
 		}
 	};
 
+	const handleStopSearch = () => {
+		abortControllerRef.current?.abort();
+	};
+
 	const handleRetry = async () => {
-		setError(null);
+		setSearchFailure(null);
+		lastAskedMessageIdRef.current = null;
 		await askQuestion();
 	};
 
+	const handleEdit = () => {
+		if (!searchFailure) return;
+
+		setEditDraft(searchFailure.userMessageText);
+		deleteMessage(searchFailure.userMessageId);
+		lastAskedMessageIdRef.current = null;
+		setSearchFailure(null);
+		loadRecentMessages();
+	};
+
+	// Ask whenever the latest message is an unanswered user message.
 	useEffect(() => {
-		if (!autoAsk) return;
+		const lastUser = getLastUserMessage();
+		if (!lastUser) return;
 
-		if (hasAutoAsked.current) return;
+		if (searchFailure && lastUser.id !== searchFailure.userMessageId) {
+			setSearchFailure(null);
+		}
 
-		if (!messages.length) return;
-
-		const last = getLastUserMessage();
-
-		if (!last) return;
-
-		hasAutoAsked.current = true;
-		previousMessagesLengthRef.current = messages.length;
+		if (searchFailure) return;
+		if (isAsking.current) return;
+		if (lastUser.id === lastAskedMessageIdRef.current) return;
 
 		askQuestion();
-	}, [messages, autoAsk]);
+	}, [messages, searchFailure, isOnline]);
 
-	// Handle subsequent user messages added manually via InputSearch
 	useEffect(() => {
-		// Only process if we've already done the initial auto-ask
-		if (!hasAutoAsked.current) return;
-
-		// Check if a new user message was added
-		if (messages.length <= previousMessagesLengthRef.current) return;
-
-		const last = getLastUserMessage();
-
-		if (!last) return;
-
-		previousMessagesLengthRef.current = messages.length;
-		askQuestion();
-	}, [messages]);
+		abortControllerRef.current?.abort();
+		abortControllerRef.current = null;
+		isAsking.current = false;
+		lastAskedMessageIdRef.current = null;
+		lastUserMessageRef.current = null;
+		setSearchFailure(null);
+		setEditDraft(null);
+		setRegenerateError(null);
+		setIsTyping(false);
+	}, [chatLocalId]);
 
 	const loadRecentMessages = useCallback(() => {
 		if (!chatLocalId) return [];
@@ -264,14 +327,15 @@ const ResultScreen = () => {
 		try {
 			setLoading(true);
 			setIsTyping(true);
-			setError(null);
+			setRegenerateError(null);
+			setSearchFailure(null);
 
 			const userMessage = getPreviousUserMessage(assistantMessage.id);
 
 			if (!userMessage) {
 				const errorMsg = "User message not found";
 				console.log(errorMsg);
-				setError(errorMsg);
+				setRegenerateError(errorMsg);
 				return;
 			}
 
@@ -284,7 +348,7 @@ const ResultScreen = () => {
 			if (!rawAnswer) {
 				const errorMsg = "No regenerated answer received.";
 				console.log(errorMsg);
-				setError(errorMsg);
+				setRegenerateError(errorMsg);
 				return;
 			}
 
@@ -296,7 +360,7 @@ const ResultScreen = () => {
 					"HTML Response received instead of JSON:",
 					rawAnswer.substring(0, 100),
 				);
-				setError(errorMsg);
+				setRegenerateError(errorMsg);
 				return;
 			}
 
@@ -321,24 +385,10 @@ const ResultScreen = () => {
 			/* ---------------- Refresh Conversation ---------------- */
 
 			loadRecentMessages();
-		} catch (error: any) {
-			let errorMsg = "Failed to regenerate answer. Please try again.";
-
-			// Check for specific error types
-			if (error?.message?.includes("API Error:")) {
-				errorMsg = "Backend returned an error. Please try again.";
-			} else if (error?.response?.status === 502) {
-				errorMsg =
-					"Server is temporarily unavailable (502). Please try again in a moment.";
-			} else if (error?.message?.includes("timeout")) {
-				errorMsg =
-					"Request timed out. Please check your connection and try again.";
-			} else if (error?.message?.includes("Invalid API response")) {
-				errorMsg = "Received invalid response from server. Please try again.";
-			}
-
+		} catch (error: unknown) {
+			const errorMsg = getApiErrorMessage(error, isOnline);
 			console.log("Regenerate Error:", error);
-			setError(errorMsg);
+			setRegenerateError(errorMsg);
 		} finally {
 			setLoading(false);
 			setIsTyping(false);
@@ -411,12 +461,12 @@ const ResultScreen = () => {
 										onRegenerate={() => regenerate(item)}
 									/>
 
-									{product && (
+									{/* {product && (
 										<ProductCard
 											product={product}
 											productCode={item.productCode!}
 										/>
-									)}
+									)} */}
 								</View>
 							);
 						}}
@@ -439,19 +489,20 @@ const ResultScreen = () => {
 										</Text>
 									</View>
 								)}
-								{error && (
-									<View style={styles.errorContainer}>
-										<Ionicons name="alert-circle" size={20} color="#EF4444" />
-										<Text style={styles.errorText}>{error}</Text>
-										<TouchableOpacity
-											style={styles.retryButton}
-											onPress={handleRetry}
-										>
-											<Text style={styles.retryButtonText}>Retry</Text>
-										</TouchableOpacity>
-										<TouchableOpacity onPress={() => setError(null)}>
-											<Text style={styles.errorDismiss}>✕</Text>
-										</TouchableOpacity>
+								{searchFailure && (
+									<SearchFailureCard
+										message={searchFailure.message}
+										variant={searchFailure.type}
+										onRetry={handleRetry}
+										onEdit={handleEdit}
+									/>
+								)}
+								{regenerateError && (
+									<View style={styles.regenerateErrorContainer}>
+										<Ionicons name="alert-circle" size={20} color="#DC2626" />
+										<Text style={styles.regenerateErrorText}>
+											Request Failed, Please retry or try again later
+										</Text>
 									</View>
 								)}
 								<RelatedProducts />
@@ -473,6 +524,10 @@ const ResultScreen = () => {
 					}}
 					setLoading={setLoading}
 					setSlowNet={setSlowNet}
+					isSearching={isTyping}
+					onStop={handleStopSearch}
+					draftText={editDraft}
+					onDraftTextApplied={() => setEditDraft(null)}
 				/>
 			</KeyboardAvoidingView>
 		</SafeAreaView>
@@ -509,7 +564,8 @@ const styles = StyleSheet.create({
 		fontSize: 14,
 		color: "#555",
 	},
-	errorContainer: {
+	regenerateErrorContainer: {
+		width: "98%",
 		flexDirection: "row",
 		alignItems: "center",
 		backgroundColor: "#FEE2E2",
@@ -518,33 +574,14 @@ const styles = StyleSheet.create({
 		borderRadius: 12,
 		marginTop: 10,
 		marginBottom: 8,
-		marginLeft: 10,
-		marginRight: 10,
+		marginHorizontal: "1%",
 		borderWidth: 1,
 		borderColor: "#FECACA",
 	},
-	errorText: {
+	regenerateErrorText: {
 		marginLeft: 10,
 		fontSize: 13,
 		color: "#DC2626",
 		flex: 1,
-	},
-	retryButton: {
-		backgroundColor: "#DC2626",
-		paddingHorizontal: 12,
-		paddingVertical: 6,
-		borderRadius: 6,
-		marginLeft: 10,
-	},
-	retryButtonText: {
-		color: "white",
-		fontSize: 12,
-		fontWeight: "600",
-	},
-	errorDismiss: {
-		fontSize: 18,
-		color: "#DC2626",
-		fontWeight: "bold",
-		marginLeft: 10,
 	},
 });

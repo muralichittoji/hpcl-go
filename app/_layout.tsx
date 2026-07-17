@@ -1,6 +1,8 @@
 import { initDatabase } from "@/lib/database";
+import { getInitialNotificationChatId, registerForPushNotifications, setupNotificationNavigation } from "@/lib/pushNotifications";
 import { NetworkProvider } from "@/utils/NetworkProvider";
-import { Stack } from "expo-router";
+import * as Notifications from "expo-notifications";
+import { Stack, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import { Text, TextInput } from "react-native";
@@ -15,70 +17,45 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 (TextInput as any).defaultProps = (TextInput as any).defaultProps || {};
 (TextInput as any).defaultProps.allowFontScaling = false;
 
-// Notifications.setNotificationHandler({
-// 	handleNotification: async () => ({
-// 		shouldShowBanner: true,
-// 		shouldShowList: true,
-// 		shouldPlaySound: true,
-// 		shouldSetBadge: true,
-// 	}),
-// });
+Notifications.setNotificationHandler({
+	handleNotification: async () => ({
+		shouldShowBanner: true,
+		shouldShowList: true,
+		shouldPlaySound: true,
+		shouldSetBadge: true,
+	}),
+});
 
 export const unstable_settings = {
 	anchor: "(tabs)",
 };
 
 export default function RootLayout() {
-	// useEffect(() => {
-	// 	ScreenCapture.preventScreenCaptureAsync();
+	useEffect(() => {
+		const subscription = setupNotificationNavigation((chatId) => {
+			router.push({
+				pathname: "/(tabs)/ResultScreen",
+				params: {
+					chatLocalId: chatId.toString(),
+				},
+			});
+		});
 
-	// 	return () => {
-	// 		ScreenCapture.allowScreenCaptureAsync();
-	// 	};
-	// }, []);
+		return () => subscription.remove();
+	}, []);
 
-	// useEffect(() => {
-	// 	const scheduleNotification = async () => {
-	// 		await Notifications.scheduleNotificationAsync({
-	// 			content: {
-	// 				title: "Hello 👋",
-	// 				body: "This is a local notification",
-	// 			},
-	// 			trigger: {
-	// 				type: Notifications.SchedulableTriggerInputTypes.TIME_INTERVAL,
-	// 				seconds: 3,
-	// 			},
-	// 		});
-	// 	};
+	useEffect(() => {
+		const chatId = getInitialNotificationChatId();
 
-	// 	scheduleNotification();
-	// }, []);
-
-	// useEffect(() => {
-	// 	const subscription = setupNotificationNavigation((chatId) => {
-	// 		router.push({
-	// 			pathname: "/(tabs)/ResultScreen",
-	// 			params: {
-	// 				chatLocalId: chatId.toString(),
-	// 			},
-	// 		});
-	// 	});
-
-	// 	return () => subscription.remove();
-	// }, []);
-
-	// useEffect(() => {
-	// 	const chatId = getInitialNotificationChatId();
-
-	// 	if (chatId) {
-	// 		router.replace({
-	// 			pathname: "/(tabs)/ResultScreen",
-	// 			params: {
-	// 				chatLocalId: chatId.toString(),
-	// 			},
-	// 		});
-	// 	}
-	// }, []);
+		if (chatId) {
+			router.replace({
+				pathname: "/(tabs)/ResultScreen",
+				params: {
+					chatLocalId: chatId.toString(),
+				},
+			});
+		}
+	}, []);
 
 	useEffect(() => {
 		try {
@@ -88,9 +65,9 @@ export default function RootLayout() {
 		}
 	}, []);
 
-	// useEffect(() => {
-	// 	registerForPushNotificationsAsync();
-	// }, []);
+	useEffect(() => {
+		registerForPushNotifications();
+	}, []);
 
 	return (
 		<SafeAreaProvider style={{ flex: 1 }}>

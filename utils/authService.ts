@@ -9,6 +9,7 @@ type LoginPayload = {
 
 type GetDataPayload = {
 	question: string;
+	signal?: AbortSignal;
 };
 
 export const loginUser = async ({ email, password }: LoginPayload) => {
@@ -52,15 +53,19 @@ export const AdloginUser = async ({ email, password }: LoginPayload) => {
 	return res.data;
 };
 
-export const getAnswer = async ({ question }: GetDataPayload) => {
-	const res = await api.post("/query-answer-agentic-workflow", {
-		queries: [
-			{
-				query: question,
-			},
-		],
-		agentic_workflow_name: "Product_App",
-	});
+export const getAnswer = async ({ question, signal }: GetDataPayload) => {
+	const res = await api.post(
+		"/query-answer-agentic-workflow",
+		{
+			queries: [
+				{
+					query: question,
+				},
+			],
+			agentic_workflow_name: "Product_App",
+		},
+		{ signal },
+	);
 
 	// Validate response structure
 	if (!res.data || !res.data.results || !Array.isArray(res.data.results)) {

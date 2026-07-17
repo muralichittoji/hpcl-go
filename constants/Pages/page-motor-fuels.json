@@ -37,6 +37,19 @@
 			"id": 8,
 			"label": "AUTO LPG",
 			"value": "HPCL-LPG-0008"
+		},
+		{
+			"label": "Additives",
+			"value": [
+				{
+					"label": "PETROL PLUS 5ML POUCH",
+					"value": "HPCL-MS-0011"
+				},
+				{
+					"label": "DIESEL PLUS 10ML POUCH",
+					"value": "HPCL-MS-0012"
+				}
+			]
 		}
 	]
 }

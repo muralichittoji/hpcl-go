@@ -1,6 +1,6 @@
 import { ALL_PDFS } from "@/hooks/ALL_PDFS";
 import { router } from "expo-router";
-import React from "react";
+import React, { useEffect } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const documents = [{ title: "Material Safety Data Sheet (MSDS)", icon: "🛡️" }];
@@ -18,6 +18,9 @@ const DocumentsDownloads = ({
 	setPdfUrl,
 	setPdfName,
 }: Props) => {
+	useEffect(() => {
+		console.log({ data }, data?.MSDS);
+	}, []);
 	const pdfUrl = ALL_PDFS[data?.MSDS ?? ""];
 	const pdfName = data?.MSDS ?? "Document";
 

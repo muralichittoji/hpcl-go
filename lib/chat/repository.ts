@@ -284,3 +284,13 @@ export const updateMessage = (
 		[text, productCode, queryId, id],
 	);
 };
+
+export const deleteMessage = (id: number) => {
+	getDb().runSync(
+		`
+		DELETE FROM messages
+		WHERE id = ?
+		`,
+		[id],
+	);
+};

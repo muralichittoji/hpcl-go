@@ -21,4 +21,5 @@ export const ALL_IMAGES = {
 	ROAD_ICON: require("@/assets/images/icons/road-construction.png"),
 	FIRE_ICON: require("@/assets/images/icons/fire-solid.png"),
 	NATURAL_GAS_ICON: require("@/assets/images/icons/Natural_gas.png"),
+	HP_Gas_Dolfin: require("@/assets/images/HPGasDolfin.png"),
 };

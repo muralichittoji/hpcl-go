@@ -31,6 +31,8 @@ import {
 	View,
 } from "react-native";
 
+import { ALL_IMAGES } from "@/hooks/Allimages";
+import { Image } from "expo-image";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import PdfViewerContent from "../PdfViewerContent";
 
@@ -50,10 +52,7 @@ const InfoScreen = ({ route }: any) => {
 	/* ---------------------------------------------------------------------- */
 	/*                 Resolve product data from JSON sources                 */
 	/* ---------------------------------------------------------------------- */
-	const data = useMemo(
-		() => (name ? getProduct(name) : null),
-		[name],
-	);
+	const data = useMemo(() => (name ? getProduct(name) : null), [name]);
 
 	// Enquiry modal visibility
 	const [enquireOpen, setEnquireOpen] = useState(false);
@@ -125,6 +124,12 @@ const InfoScreen = ({ route }: any) => {
 
 						{/* Product description */}
 						<View style={{ margin: 5 }}>
+							{data.title === "HP GAS DOLPHIN" && (
+								<Image
+									source={ALL_IMAGES.HP_Gas_Dolfin}
+									style={styles.happiness}
+								/>
+							)}
 							<Text style={styles.description}>{data.description}</Text>
 						</View>
 
@@ -232,6 +237,12 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 		marginRight: 8,
+	},
+
+	happiness: {
+		width: 120,
+		height: 150,
+		alignSelf: "center",
 	},
 
 	checkText: {

@@ -1,158 +1,374 @@
 {
 	"HPCL-MS-0005": {
-		"id": 5,
-		"MSDS": "ATF_PDF",
-		"title": "ATF (Jet A-1) (Aviation Turbine Oil Jet A-1)",
-		"subTitle": "AVIATION FUEL",
-		"description": "Aviation Turbine Fuel is a colorless, combustible, straight-run petroleum distillate, kerosene-based fuel. Kerosene makes up the majority of Jet A-1, with trace amounts of additives.",
+		"id": 0,
+		"MSDS": "",
+		"title": "Aviation Turbine Fuel",
+		"subTitle": "nan",
+		"description": "Aviation Jet Fuel JET A-1 (JETA1) is a clear liquid hydrocarbon-based mixture designed primarily for use as a turbine engine fuel in industrial and professional aviation applications. This complex fuel has a boiling range of 130–300°C, a flash point of greater than equals to 38°C, and a freezing point of greater than equals to -47°C. It is inherently hydrophobic with very poor water solubility and evaporates slowly.",
 		"specifications": [
 			{
-				"property": "Product Name",
-				"value": "ATF (Jet A-1) (Aviation Turbine Oil Jet A-1)"
+				"property": "Characteristic",
+				"value": "a. Visual Appearance"
 			},
 			{
-				"property": "Appearance",
-				"value": "Visual, B& C"
+				"property": "Method of Test",
+				"value": "Visual"
 			},
 			{
-				"property": "Colour (Saybolt)",
+				"property": "Standard Requirement / Limit",
+				"value": "Clear, bright & visually free from solid matter & undissolved water at ambient fuel temperature."
+			},
+			{
+				"property": "Characteristic",
+				"value": "b. Color"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ASTM D6045"
+			},
+			{
+				"property": "Standard Requirement / Limit",
 				"value": "Report"
 			},
 			{
-				"property": "Particulate contamination at point of manufacture, mg/l, Max",
-				"value": "1.0"
+				"property": "Characteristic",
+				"value": "c. Particulate Cumulative Channel Particle Count (ISO Code)"
 			},
 			{
-				"property": "Particulate, cumulative channel particle counts at point of manufacture",
-				"value": "≥ 4 μm(c): Report, ≥6 μm(c): Report, ≥14 μm(c): Report, ≥21 μm(c): Report, ≥25 μm(c): Report, ≥30 μm(c): Report"
+				"property": "Method of Test",
+				"value": "IP 577"
 			},
 			{
-				"property": "Total acidity, mg KOH/g, Max",
-				"value": "0.015"
+				"property": "Standard Requirement / Limit",
+				"value": "* i) ≥ 4 µm (c): Max 19 (ISO Code)"
 			},
 			{
-				"property": "Aromatics, % by volume, Max",
-				"value": "25.0"
+				"property": "ii) ≥ 6 µm (c)",
+				"value": "Max 17 (ISO Code)"
 			},
 			{
-				"property": "Total Aromatics, % by volume, Max",
-				"value": "26.5"
+				"property": "iii) ≥ 14 µm (c)",
+				"value": "Max 14 (ISO Code)"
 			},
 			{
-				"property": "Total sulphur, % by mass, Max",
-				"value": "0.30 (Defence 0.25)"
+				"property": "iv) ≥ 21 µm (c)",
+				"value": "Report (ISO Code)"
 			},
 			{
-				"property": "Sulphur mercaptan, percent m/m, Max",
-				"value": "0.0030"
+				"property": "v) ≥ 25 µm (c)",
+				"value": "Report (ISO Code)"
 			},
 			{
-				"property": "Doctor Test",
-				"value": "Negative"
+				"property": "vi) ≥ 30 µm (c)",
+				"value": "Max 13 (ISO Code)"
 			},
 			{
-				"property": "Refining components at the point of manufacture",
-				"value": "Non Hydro processed Components: Report, Mildly Hydro processed Components: Report, Severely Hydro processed Components: Report, Synthetic Components: Report"
+				"property": "Characteristic",
+				"value": "a. Total Acidity"
 			},
 			{
-				"property": "Distillation Initial Boiling Point °C",
-				"value": "Report"
+				"property": "Method of Test",
+				"value": "IS 1448 P-113"
 			},
 			{
-				"property": "Distillation 10 percent recovery °C, v/v, Max",
-				"value": "205.0"
+				"property": "Standard Requirement / Limit",
+				"value": "0.015 mg KOH/g Max"
 			},
 			{
-				"property": "Distillation 50 percent recovery °C, v/v",
-				"value": "Report"
+				"property": "Characteristic",
+				"value": "b. Aromatics"
 			},
 			{
-				"property": "Distillation 95 percent v/v recovery, °C",
-				"value": "Report"
+				"property": "Method of Test",
+				"value": "IS 1448 P-23"
 			},
 			{
-				"property": "Distillation Final boiling point, °C, Max",
-				"value": "300"
+				"property": "Standard Requirement / Limit",
+				"value": "25.0% v/v Max (22.0% v/v Max for Defence)"
 			},
 			{
-				"property": "Distillation residue, % v/v, Max",
-				"value": "1.5"
+				"property": "Characteristic",
+				"value": "c. Total Sulphur"
 			},
 			{
-				"property": "Distillation loss, % v/v, Max",
-				"value": "1.5"
+				"property": "Method of Test",
+				"value": "ASTM D4294"
 			},
 			{
-				"property": "Flash point, Abel, °C, Min",
-				"value": "38"
+				"property": "Standard Requirement / Limit",
+				"value": "0.30% m/m Max (0.25% m/m Max for Defence)"
 			},
 			{
-				"property": "Density at 15°C, kg/m³",
-				"value": "775-840"
+				"property": "Characteristic",
+				"value": "d. Sulphur Mercaptan"
 			},
 			{
-				"property": "Freezing Point °C, Max",
-				"value": "minus 47"
+				"property": "Method of Test",
+				"value": "ASTM D3227"
 			},
 			{
-				"property": "Kinematic Viscosity @ minus 20°C, cSt, Max",
-				"value": "8.000"
+				"property": "Standard Requirement / Limit",
+				"value": "0.0030% m/m Max (0.0020% m/m Max for Defence)"
 			},
 			{
-				"property": "Specific energy, MJ/kg, Min",
-				"value": "42.80"
+				"property": "Characteristic",
+				"value": "e. Blending Components (at point of manufacture)"
 			},
 			{
-				"property": "Smoke point, mm, Min",
-				"value": "25.0 / 18.0"
+				"property": "Method of Test",
+				"value": "Mechanical Record / Log"
 			},
 			{
-				"property": "& Naphthalenes, percent v/v, Max",
-				"value": "3.00"
+				"property": "Standard Requirement / Limit",
+				"value": "* 1. Non-Hydroprocessed Component: Report (% v/v)"
 			},
 			{
-				"property": "Copper strip corrosion (2 h at 100 °C)",
-				"value": "Not worse than No. 1"
+				"property": "2. Severely Hydroprocessed Component",
+				"value": "Report (% v/v)"
 			},
 			{
-				"property": "Silver strip corrosion (4 h at 50 °C), Max",
-				"value": "0 at Refinery / 1 at Delivery Point"
+				"property": "3. Synthetic Component",
+				"value": "Report (% v/v)"
 			},
 			{
-				"property": "Thermal Stability, JFTOT at Control Temperature of 260°C",
-				"value": "Filter pressure differential, mm Hg, Max 25; Tube rating visual (VTR) <3, No ‘Peacock’ or ‘Abnormal’ OR Annex C ITR/Annex D ETR, average over area 2.5 mm², Max 85"
+				"property": "Characteristic",
+				"value": "a. Distillation Characteristics"
 			},
 			{
-				"property": "Existent gum, mg/100 ml, Max",
-				"value": "7"
+				"property": "Method of Test",
+				"value": "ASTM D86"
 			},
 			{
-				"property": "Water reaction: Interface rating, Max",
-				"value": "1b"
+				"property": "Standard Requirement / Limit",
+				"value": ""
 			},
 			{
-				"property": "Micro-separometer rating at point of manufacture",
-				"value": "MSEP without SDA, Min 85; MSEP with SDA, Min 70"
+				"property": "1. Initial Boiling Point (IBP)",
+				"value": "Report (°C)"
 			},
 			{
-				"property": "Electrical conductivity, pS/m",
-				"value": "50 to 600"
+				"property": "2. 10% Recovery Temperature",
+				"value": "205.0 °C Max"
 			},
 			{
-				"property": "Wear scar diameter, mm, Max",
-				"value": "0.85"
+				"property": "3. 50% Recovery Temperature",
+				"value": "Report (°C)"
 			},
 			{
-				"property": "Fatty Acid Methyl Ester, mg/kg, Max",
-				"value": "50"
+				"property": "4. 90% Recovery Temperature",
+				"value": "Report (°C)"
+			},
+			{
+				"property": "5. Final Boiling Point (FBP)",
+				"value": "300.0 °C Max"
+			},
+			{
+				"property": "6. Residue",
+				"value": "1.5% v/v Max"
+			},
+			{
+				"property": "7. Loss",
+				"value": "1.5% v/v Max"
+			},
+			{
+				"property": "Characteristic",
+				"value": "b. Flash Point (Abel)"
+			},
+			{
+				"property": "Method of Test",
+				"value": "IS 1448 P-20"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "38.0 °C Min"
+			},
+			{
+				"property": "Characteristic",
+				"value": "c. Density at 15°C"
+			},
+			{
+				"property": "Method of Test",
+				"value": "IS 1448 P-16"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "775.0 to 840.0 kg/m³"
+			},
+			{
+				"property": "Characteristic",
+				"value": "a. Freezing Point"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ASTM D7153"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "-47.0 °C Max"
+			},
+			{
+				"property": "Characteristic",
+				"value": "b. Kinematic Viscosity at -20°C"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ASTM D445"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "8.000 mm²/s Max"
+			},
+			{
+				"property": "Characteristic",
+				"value": "a. Specific Energy (Net)"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ASTM D3338"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "42.80 MJ/kg Min"
+			},
+			{
+				"property": "Characteristic",
+				"value": "b. Smoke Point"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ASTM D1322"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "18.0 mm Min"
+			},
+			{
+				"property": "Characteristic",
+				"value": "c. Naphthalenes"
+			},
+			{
+				"property": "Method of Test",
+				"value": "IS 1448 P-118"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "3.0% v/v Max"
+			},
+			{
+				"property": "Characteristic",
+				"value": "a. Copper Strip Corrosion (2 hours at 100°C)"
+			},
+			{
+				"property": "Method of Test",
+				"value": "IS 1448 P-15"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "Not worse than No. 1 Class"
+			},
+			{
+				"property": "Characteristic",
+				"value": "b. Silver Strip Corrosion (4 hours at 50°C)"
+			},
+			{
+				"property": "Method of Test",
+				"value": "Annex B of IS 1571-2018"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "Classification 1 Max"
+			},
+			{
+				"property": "Characteristic",
+				"value": "a. Filter Pressure Differential"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ASTM D3241"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "25.0 mm Hg Max"
+			},
+			{
+				"property": "Characteristic",
+				"value": "b. Tube Rating (Visual Tube Rating - VTR)"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ASTM D3241"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "Less than 3; No Peacock (P) or Abnormal (A) coloring."
+			},
+			{
+				"property": "Characteristic",
+				"value": "a. Existent Gum (with Air flow)"
+			},
+			{
+				"property": "Method of Test",
+				"value": "IS 1448 P-29"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "7 mg / 100 ml Max"
+			},
+			{
+				"property": "Characteristic",
+				"value": "b. Micro Separometer Rating (MSEP with Static Dissipator Additive - SDA)"
+			},
+			{
+				"property": "Method of Test",
+				"value": "IS 1448 P-142"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "70 Min"
+			},
+			{
+				"property": "Characteristic",
+				"value": "a. Electrical Conductivity"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ISO 6297"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "50 pS/m Min to 600 pS/m Max"
+			},
+			{
+				"property": "Characteristic",
+				"value": "a. Lubricity Wear Scar Diameter (WSD)"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ASTM D5001"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "0.85 mm Max"
+			},
+			{
+				"property": "Characteristic",
+				"value": "b. Lubricity WSD (with additive assessment like NALCO 5403)"
+			},
+			{
+				"property": "Method of Test",
+				"value": "ASTM D5001"
+			},
+			{
+				"property": "Standard Requirement / Limit",
+				"value": "0.65 mm Max (Required benchmark for Defence / Military Use)"
 			}
 		],
-		"appData": "ATF Jet A-1 is used for aircrafts (Military jets) and Civil Aviation sector worldwide. It is a higher quality fuel subjected to stringent Quality Control norms set by DGCA and DGAQA.",
+		"appData": "ATF Jet A-1 is used for aircrafts (Military jets) and Civil Aviation sector worldwide. It is a higher quality fuel subjected to stringent Quality Control norms set by DGCA and DGAQA. ",
 		"packaging": ["Bulk"],
-		"SBU": "AVIATION/SOD",
+		"SBU": "",
 		"industrial": "Aviation",
-		"documentation": "",
-		"alternatives": ["-"],
+		"documentation": "-",
+		"alternatives": [],
 		"related": ["-"]
 	}
 }

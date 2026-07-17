@@ -38,11 +38,14 @@ export async function registerForPushNotifications() {
 		});
 	}
 
-	const token = (await Notifications.getExpoPushTokenAsync()).data;
+	// Skip push token registration for Expo Go compatibility
+	// Local notifications work without push tokens
+	// Uncomment below if using development build for remote push notifications
+	// const token = (await Notifications.getExpoPushTokenAsync()).data;
+	// console.log("Expo Push Token:", token);
+	// return token;
 
-	console.log("Expo Push Token:", token);
-
-	return token;
+	return null;
 }
 
 export async function showSearchCompletedNotification(

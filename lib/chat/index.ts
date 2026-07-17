@@ -5,6 +5,7 @@ export {
 	clearChats,
 	createChat,
 	deleteChat,
+	deleteMessage,
 	getChat,
 	getChatsPage,
 	getOlderMessagesPage,

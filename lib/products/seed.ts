@@ -13,7 +13,7 @@ import newDevData from "@/constants/newDevData.json";
 import { rawToProduct } from "./mappers";
 import type { ProductRow } from "./types";
 
-const PRODUCTS_SEED_VERSION = "1";
+const PRODUCTS_SEED_VERSION = "2";
 
 const CATEGORY_SOURCES = [
 	{ category: "motor-fuels", data: DataMotorFuels },
@@ -35,7 +35,7 @@ function insertProduct(db: SQLite.SQLiteDatabase, row: ProductRow) {
 			title,
 			subTitle,
 			description,
-			msds,
+			MSDS,
 			appData,
 			sbu,
 			industrial,
@@ -54,7 +54,7 @@ function insertProduct(db: SQLite.SQLiteDatabase, row: ProductRow) {
 			row.title,
 			row.subTitle,
 			row.description,
-			row.msds,
+			row.MSDS,
 			row.appData,
 			row.sbu,
 			row.industrial,
@@ -73,9 +73,9 @@ export function seedProductsIfNeeded(db: SQLite.SQLiteDatabase) {
 		`SELECT value FROM app_meta WHERE key = 'products_seed_version'`,
 	);
 
-	if (current?.value === PRODUCTS_SEED_VERSION) {
-		return;
-	}
+	// if (current?.value === PRODUCTS_SEED_VERSION) {
+	// 	return;
+	// }
 
 	db.execSync("BEGIN");
 

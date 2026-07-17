@@ -9,7 +9,7 @@ import {
 } from "@/lib/chat";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import React, { useCallback, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
 	Dimensions,
 	FlatList,
@@ -27,12 +27,13 @@ type SearchProps = {
 	setLoading: React.Dispatch<React.SetStateAction<boolean>>;
 	setSlowNet: React.Dispatch<React.SetStateAction<boolean>>;
 	placeHolder?: string;
-
 	mode?: "new" | "continue";
-
 	localChatId?: number;
-
 	onMessageAdded?: () => void;
+	isSearching?: boolean;
+	onStop?: () => void;
+	draftText?: string | null;
+	onDraftTextApplied?: () => void;
 };
 
 const InputSearch = ({
@@ -45,6 +46,11 @@ const InputSearch = ({
 	localChatId,
 
 	onMessageAdded,
+
+	isSearching = false,
+	onStop,
+	draftText,
+	onDraftTextApplied,
 }: SearchProps) => {
 	const [search, setSearch] = useState("");
 	const [historyVisible, setHistoryVisible] = useState(false);
@@ -53,6 +59,13 @@ const InputSearch = ({
 	const [historyHasMore, setHistoryHasMore] = useState(false);
 	const [historyLoading, setHistoryLoading] = useState(false);
 	const historyLoadingRef = useRef(false);
+
+	useEffect(() => {
+		if (!draftText) return;
+
+		setSearch(draftText);
+		onDraftTextApplied?.();
+	}, [draftText, onDraftTextApplied]);
 
 	const loadHistoryPage = useCallback((offset = 0, append = false) => {
 		if (historyLoadingRef.current) return;
@@ -85,7 +98,7 @@ const InputSearch = ({
 	const findScreen = () => {
 		const question = search.trim();
 
-		if (!question) return;
+		if (!question || isSearching) return;
 
 		let chatId = localChatId ?? 0;
 
@@ -124,12 +137,23 @@ const InputSearch = ({
 						onChangeText={setSearch}
 						onSubmitEditing={findScreen}
 						returnKeyType="search"
+						editable={!isSearching}
 					/>
 				</View>
 
-				<TouchableOpacity style={styles.historyButton} onPress={openHistory}>
-					<Ionicons name="time-outline" size={24} color={Colors.blueDark} />
-				</TouchableOpacity>
+				{isSearching ? (
+					<TouchableOpacity
+						style={styles.stopButton}
+						onPress={onStop}
+						accessibilityLabel="Stop search"
+					>
+						<Ionicons name="stop" size={22} color="#F00" />
+					</TouchableOpacity>
+				) : (
+					<TouchableOpacity style={styles.historyButton} onPress={openHistory}>
+						<Ionicons name="time-outline" size={24} color={Colors.blueDark} />
+					</TouchableOpacity>
+				)}
 			</View>
 
 			<Modal
@@ -290,6 +314,16 @@ const styles = StyleSheet.create({
 		justifyContent: "center",
 		alignItems: "center",
 		borderRadius: 12,
+		marginLeft: 8,
+	},
+	stopButton: {
+		width: 35,
+		height: 35,
+		justifyContent: "center",
+		alignItems: "center",
+		borderWidth: 1,
+		borderColor: "#f00",
+		borderRadius: 16,
 		marginLeft: 8,
 	},
 	modalOverlay: {

@@ -13,10 +13,10 @@ const api = axios.create({
 // ============================
 // REQUEST INTERCEPTOR
 // ============================
-api.interceptors.request.use(
+	api.interceptors.request.use(
 	async (config) => {
 		const token = await getToken();
-		console.log(config.timeout);
+
 		if (token) {
 			// ✅ ensure headers exists
 			config.headers = config.headers ?? {};

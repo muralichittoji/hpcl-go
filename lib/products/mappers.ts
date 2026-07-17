@@ -2,6 +2,16 @@ import type { ProductData } from "@/hooks/types";
 
 import type { ProductRow, ProductSummary } from "./types";
 
+function safeParse(value: any) {
+	if (!value) return null;
+
+	try {
+		return typeof value === "string" ? JSON.parse(value) : value;
+	} catch {
+		return value;
+	}
+}
+
 export function rowToProduct(row: ProductRow): ProductData {
 	return {
 		id: row.productId,
@@ -16,10 +26,13 @@ export function rowToProduct(row: ProductRow): ProductData {
 		documentation: row.documentation,
 		alternatives: JSON.parse(row.alternatives),
 		related: JSON.parse(row.related),
+		MSDS: safeParse(row.MSDS),
 	};
 }
 
-export function rowToSummary(row: Pick<ProductRow, "code" | "title" | "subTitle">): ProductSummary {
+export function rowToSummary(
+	row: Pick<ProductRow, "code" | "title" | "subTitle">,
+): ProductSummary {
 	return {
 		code: row.code,
 		title: row.title,
@@ -27,14 +40,18 @@ export function rowToSummary(row: Pick<ProductRow, "code" | "title" | "subTitle"
 	};
 }
 
-export function rawToProduct(code: string, raw: Record<string, unknown>, category: string | null): ProductRow {
+export function rawToProduct(
+	code: string,
+	raw: Record<string, unknown>,
+	category: string | null,
+): ProductRow {
 	return {
 		code,
 		productId: Number(raw.id ?? 0),
 		title: String(raw.title ?? ""),
 		subTitle: String(raw.subTitle ?? ""),
 		description: String(raw.description ?? ""),
-		msds: String(raw.MSDS ?? ""),
+		MSDS: String(raw.MSDS ?? ""),
 		appData: String(raw.appData ?? ""),
 		sbu: String(raw.SBU ?? ""),
 		industrial: String(raw.industrial ?? ""),

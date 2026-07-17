@@ -44,7 +44,7 @@ export function runMigrations(db: SQLite.SQLiteDatabase) {
       title TEXT NOT NULL,
       subTitle TEXT NOT NULL DEFAULT '',
       description TEXT NOT NULL DEFAULT '',
-      msds TEXT NOT NULL DEFAULT '',
+      MSDS TEXT NOT NULL DEFAULT '',
       appData TEXT NOT NULL DEFAULT '',
       sbu TEXT NOT NULL DEFAULT '',
       industrial TEXT NOT NULL DEFAULT '',
@@ -65,4 +65,21 @@ export function runMigrations(db: SQLite.SQLiteDatabase) {
     CREATE INDEX IF NOT EXISTS idx_products_sbu
       ON products(sbu);
   `);
+
+	// Migration: Rename msds column to MSDS if it exists
+	try {
+		// Check if the old column exists
+		const columns = db.getAllSync<{ name: string }>(
+			`PRAGMA table_info(products)`
+		);
+		const hasOldColumn = columns.some((col) => col.name === 'msds');
+		const hasNewColumn = columns.some((col) => col.name === 'MSDS');
+
+		if (hasOldColumn && !hasNewColumn) {
+			db.execSync(`ALTER TABLE products RENAME COLUMN msds TO MSDS`);
+		}
+	} catch (error) {
+		// If migration fails, continue anyway
+		console.warn('Migration failed:', error);
+	}
 }

@@ -1,34 +1,38 @@
 {
-  "id": 5,
-  "label": "Petchem",
-  "iconType": "image",
-  "icon": "SOLVENTS_ICON",
-  "value": [
-    {
-      "label": "POLYPROPLENE HOMOPOLYMER",
-      "value": [
-        {
-          "label": "HM120A-MS",
-          "value": "HPCL-IF-0014"
-        },
-        {
-          "label": "HR033-MS",
-          "value": "HPCL-IF-0015"
-        }
-      ]
-    },
-    {
-      "label": "POLYETHYLENE GRADE",
-      "value": [
-        {
-          "label": "F01019S-MS",
-          "value": "HPCL-IF-0016"
-        },
-        {
-          "label": "F02020-MS",
-          "value": "HPCL-IF-0017"
-        }
-      ]
-    }
-  ]
+	"id": 5,
+	"label": "HP Durapol®",
+	"iconType": "image",
+	"icon": "SOLVENTS_ICON",
+	"value": [
+		{
+			"label": "POLYPROPLENE HOMOPOLYMER",
+			"value": [
+				{
+					"label": "HM120A-MS",
+					"value": "HPCL-IF-0014"
+				},
+				{
+					"label": "HR033-MS",
+					"value": "HPCL-IF-0015"
+				}
+			]
+		},
+		{
+			"label": "POLYETHYLENE GRADE",
+			"value": [
+				{
+					"label": "F01019S-MS",
+					"value": "HPCL-IF-0016"
+				},
+				{
+					"label": "F02020-MS",
+					"value": "HPCL-IF-0017"
+				},
+				{
+					"label": "M50200-MS",
+					"value": "HPCL-IF-0030"
+				}
+			]
+		}
+	]
 }
