@@ -7,6 +7,7 @@ import {
 	createChat,
 	getChatsPage,
 } from "@/lib/chat";
+import { runSearchTask } from "@/lib/searchRunner";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import React, { useCallback, useEffect, useRef, useState } from "react";
@@ -34,6 +35,7 @@ type SearchProps = {
 	onStop?: () => void;
 	draftText?: string | null;
 	onDraftTextApplied?: () => void;
+	isOnline?: boolean;
 };
 
 const InputSearch = ({
@@ -51,6 +53,7 @@ const InputSearch = ({
 	onStop,
 	draftText,
 	onDraftTextApplied,
+	isOnline = true,
 }: SearchProps) => {
 	const [search, setSearch] = useState("");
 	const [historyVisible, setHistoryVisible] = useState(false);
@@ -106,16 +109,22 @@ const InputSearch = ({
 			chatId = createChat(question);
 		}
 
-		addMessage(chatId, "user", question);
+		const userMessageId = addMessage(chatId, "user", question);
 
 		setSearch("");
+
+		runSearchTask({
+			chatId,
+			userMessageId,
+			question,
+			isOnline,
+		});
 
 		if (mode === "new") {
 			router.push({
 				pathname: "/(tabs)/ResultScreen",
 				params: {
 					chatLocalId: chatId.toString(),
-					autoAsk: "1",
 				},
 			});
 		} else {

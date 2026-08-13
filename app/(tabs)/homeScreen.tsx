@@ -1,6 +1,5 @@
 // Common UI components
 import Header from "@/components/Ui/Header";
-import InputSearch from "@/components/Ui/InputSearch";
 import LoadingOverlay from "@/components/Ui/LoadingOverlay";
 import ScrollComponent from "@/components/Ui/ScrollComponent";
 import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
@@ -14,7 +13,8 @@ import { Colors } from "@/constants/theme";
 import { router } from "expo-router";
 
 import React, { useState } from "react";
-import { Dimensions, StyleSheet, Text, View } from "react-native";
+import { Dimensions, StyleSheet, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 // Screen width for layout calculations
 const { width } = Dimensions.get("window");
@@ -59,12 +59,12 @@ const HomeScreen = () => {
 	/*                                  Render                                  */
 	/* ---------------------------------------------------------------------- */
 	return (
-		<View style={styles.container}>
+		<SafeAreaView style={styles.container}>
 			{/* App header */}
 			<Header caption={"Product \nCatalogue"} />
 
 			{/* Global search input */}
-			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} mode="new" />
+			{/* <InputSearch setLoading={setLoading} setSlowNet={setSlowNet} mode="new" /> */}
 
 			{/* Main content */}
 			<ScrollComponent>
@@ -80,7 +80,7 @@ const HomeScreen = () => {
 				</View>
 
 				{/* Quick help section */}
-				<View>
+				{/* <View>
 					<Text style={styles.content}>Quick Help</Text>
 
 					<UnifiedListMenu
@@ -89,7 +89,7 @@ const HomeScreen = () => {
 						navigate={onItemPress}
 						itemHeight={70}
 					/>
-				</View>
+				</View> */}
 
 				{/* Explore More CTA (kept for future use) */}
 				{/*
@@ -103,7 +103,7 @@ const HomeScreen = () => {
 			<LoadingOverlay visible={loading} text="Thinking..." />
 
 			{/* Slow internet modal */}
-		</View>
+		</SafeAreaView>
 	);
 };
 

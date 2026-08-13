@@ -1,5 +1,4 @@
 import Header from "@/components/Ui/Header";
-import InputSearch from "@/components/Ui/InputSearch";
 import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
 import React, { useState } from "react";
 import { StyleSheet, View } from "react-native";
@@ -38,7 +37,7 @@ const ExploreMore = () => {
 	return (
 		<View style={styles.container}>
 			<Header caption="Interactive Tools" />
-			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} />
+			{/* <InputSearch setLoading={setLoading} setSlowNet={setSlowNet} /> */}
 			<View style={styles.subContainer}>
 				<UnifiedListMenu
 					items={data}

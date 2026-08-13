@@ -31,9 +31,10 @@ import {
 	View,
 } from "react-native";
 
-import { ALL_IMAGES } from "@/hooks/Allimages";
-import { Image } from "expo-image";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import {
+	SafeAreaView,
+	useSafeAreaInsets,
+} from "react-native-safe-area-context";
 import PdfViewerContent from "../PdfViewerContent";
 
 /* -------------------------------------------------------------------------- */
@@ -46,8 +47,14 @@ const InfoScreen = ({ route }: any) => {
 	const scrollY = useRef(new Animated.Value(0)).current;
 
 	// Read product name from route params
-	const params = useLocalSearchParams<{ name?: string }>();
+	const params = useLocalSearchParams<{
+		name?: string;
+		pageId?: string;
+		pageLabel?: string;
+	}>();
 	const name = params.name;
+	const pageId = Number(params.pageId);
+	const pageLabel = params.pageLabel;
 
 	/* ---------------------------------------------------------------------- */
 	/*                 Resolve product data from JSON sources                 */
@@ -86,6 +93,7 @@ const InfoScreen = ({ route }: any) => {
 	/* ---------------------------------------------------------------------- */
 	/*                                  Render                                  */
 	/* ---------------------------------------------------------------------- */
+	// const isComparison = "";
 	const isComparison = data.specifications?.[0]?.property === "Comparision";
 	const compValue = data.specifications?.[0]?.value;
 	return (
@@ -94,7 +102,7 @@ const InfoScreen = ({ route }: any) => {
 			behavior={Platform.OS === "ios" ? "padding" : "height"}
 			keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 20}
 		>
-			<View style={{ flex: 1 }}>
+			<SafeAreaView style={{ flex: 1 }}>
 				<Header caption={data.title} scrollY={scrollY} />
 				{/* subCaption={data.subTitle} */}
 				{/* Scrollable content */}
@@ -124,12 +132,12 @@ const InfoScreen = ({ route }: any) => {
 
 						{/* Product description */}
 						<View style={{ margin: 5 }}>
-							{data.title === "HP GAS DOLPHIN" && (
+							{/* {data.title === "HP GAS DOLPHIN" && (
 								<Image
 									source={ALL_IMAGES.HP_Gas_Dolfin}
 									style={styles.happiness}
 								/>
-							)}
+							)} */}
 							<Text style={styles.description}>{data.description}</Text>
 						</View>
 
@@ -159,6 +167,7 @@ const InfoScreen = ({ route }: any) => {
 								setOpenPdf={setOpenPdf}
 								setPdfUrl={setPdfUrl}
 								setPdfName={setPdfName}
+								pageName={pageLabel ?? ""}
 							/>
 						</View>
 
@@ -206,7 +215,7 @@ const InfoScreen = ({ route }: any) => {
 						onClose={() => setOpenPreview(false)}
 					/>
 				)}
-			</View>
+			</SafeAreaView>
 		</KeyboardAvoidingView>
 	);
 };

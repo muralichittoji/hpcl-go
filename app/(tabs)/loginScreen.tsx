@@ -16,6 +16,7 @@ import {
 	useWindowDimensions,
 	View,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const LoginScreen = () => {
 	// Get current screen width (updates on orientation change / font scaling)
@@ -56,7 +57,7 @@ const LoginScreen = () => {
 		>
 			{/* ScrollView allows content to move when keyboard opens */}
 			<ScrollComponent>
-				<View style={[styles.container, { width }]}>
+				<SafeAreaView style={[styles.container, { width }]}>
 					{/* App header */}
 					<Header caption="" screen="Login" />
 
@@ -102,7 +103,7 @@ const LoginScreen = () => {
 							<Text style={styles.guestText}>Continue as guest</Text>
 						</TouchableOpacity>
 					</View>
-				</View>
+				</SafeAreaView>
 			</ScrollComponent>
 		</KeyboardAvoidingView>
 	);

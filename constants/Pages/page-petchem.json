@@ -1,38 +1,58 @@
 {
-	"id": 5,
-	"label": "HP Durapol®",
-	"iconType": "image",
-	"icon": "SOLVENTS_ICON",
-	"value": [
-		{
-			"label": "POLYPROPLENE HOMOPOLYMER",
-			"value": [
-				{
-					"label": "HM120A-MS",
-					"value": "HPCL-IF-0014"
-				},
-				{
-					"label": "HR033-MS",
-					"value": "HPCL-IF-0015"
-				}
-			]
-		},
-		{
-			"label": "POLYETHYLENE GRADE",
-			"value": [
-				{
-					"label": "F01019S-MS",
-					"value": "HPCL-IF-0016"
-				},
-				{
-					"label": "F02020-MS",
-					"value": "HPCL-IF-0017"
-				},
-				{
-					"label": "M50200-MS",
-					"value": "HPCL-IF-0030"
-				}
-			]
-		}
-	]
+  "label": "Petrochemicals",
+  "id": 5,
+  "iconType": "image",
+  "icon": "PETCHEM_ICON",
+  "value": [
+    {
+      "label": "Polymers (HP Durapol®)",
+      "value": [
+        {
+          "label": "Polypropylene",
+          "value": [
+            {
+              "label": "Homopolymer",
+              "value": [
+                {
+                  "label": "PP IM 12MI",
+                  "value": "HPCL-IFpt-0000"
+                },
+                {
+                  "label": "PP Rafia",
+                  "value": "HPCL-IFpt-0001"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Ployethylene",
+          "value": [
+            {
+              "label": "Linear Low Density Polyethylene",
+              "value": [
+                {
+                  "label": "LL 1 MI SLIP",
+                  "value": "HPCL-IFpt-0002"
+                },
+                {
+                  "label": "LL 2 MI NONSLIP",
+                  "value": "HPCL-IFpt-0003"
+                }
+              ]
+            },
+            {
+              "label": "High Density Polyethylene",
+              "value": [
+                {
+                  "label": "HD 20MI LM",
+                  "value": "HPCL-IFpt-0004"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

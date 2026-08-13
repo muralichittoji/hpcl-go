@@ -1,1578 +1,1578 @@
 {
-	"HPCL-IF-0013": {
-		"id": 19,
-		"MSDS": "JBO_PDF",
-		"title": "Jute Batching Oil",
-		"subTitle": "Wash Oil",
-		"description": "JBO is a mineral oil fraction, generally mixed with water and emulsifiers. This is traditionally mineral based modern ecofriendly versions.  JBs applied to raw jute fibers to soften them and give cohesion during processing.",
-		"specifications": [
-			{
-				"property": "Color, ASTM",
-				"value": "Max L7.0"
-			},
-			{
-				"property": "Flash Point (Pensky Martens), °C",
-				"value": "Min 100"
-			},
-			{
-				"property": "Kinematic Viscosity @ 37.8 °C,cSt",
-				"value": "Max 15.0"
-			},
-			{
-				"property": "Pour Point, °C",
-				"value": "Max 30"
-			},
-			{
-				"property": "Distillation, IBP, °C",
-				"value": "Min 240"
-			},
-			{
-				"property": "Recovery upto 270 °C, vol %",
-				"value": "Max 3.0"
-			},
-			{
-				"property": "Recovery upto 370 °C, vol %",
-				"value": "Min 95"
-			},
-			{
-				"property": "Residue,vol %",
-				"value": "Max 2.0"
-			},
-			{
-				"property": "Density at 15°C, g/ml",
-				"value": "0.825 to 0.900"
-			}
-		],
-		"appData": "JBO softens raw jute fibers for easier processing by adding flexibility and cohesion reducig breakage. It also used in steel plant to recover aromatics from oven gas.",
-		"packaging": ["Barrel", "Bulk"],
-		"SBU": "I&C",
-		"industrial": "Steel industry",
-		"documentation": "",
-		"alternatives": ["-"],
-		"related": ["-"]
-	},
-	"HPCL-IF-0008": {
-		"id": 14,
-		"MSDS": "LSFO_LSHSFO_VLSFO_PDF",
-		"title": "VLSFO (Very Low Sulfur Fuel Oil) RMG380",
-		"subTitle": "MARINE FUEL",
-		"description": "VLSFO is a type of marine fuel that complies with the International Maritime Organization (IMO) – Marine Oil Pollution Control (MARPOL) regulations to reduce sulphur emissions from ships. It is generally blended from different refinery streams to achieve low sulfur levels while maintaining suitable viscosity and energy content for ship engines. VLSFO is a cleaner marine fuel with very low sulfur content (0.5% by wt. max./as per statutory norms) and prescribed limit of element content in fuel (Na, V, Al, Si, Ca, Zn, P).",
-		"specifications": [
-			{
-				"property": "Kinematic Viscosity at 50 °C",
-				"value": "mm2 /s, Max 380"
-			},
-			{
-				"property": "Density at 15 °C",
-				"value": "kg/m3, Max 991"
-			},
-			{
-				"property": "CCAI",
-				"value": "Max 870"
-			},
-			{
-				"property": "Sulfur, mass %",
-				"value": "Statutory requirements"
-			},
-			{
-				"property": "Flash point",
-				"value": "°C, Min 60.0"
-			},
-			{
-				"property": "Hydrogen sulfide",
-				"value": "mg/kg, Max 2.00"
-			},
-			{
-				"property": "Acid number",
-				"value": "mg KOH/g, Max 2.5"
-			},
-			{
-				"property": "Total sediment – Aged",
-				"value": "mass%, Max 0.10"
-			},
-			{
-				"property": "Carbon residue – Micro method",
-				"value": "mass%, Max 18.00"
-			},
-			{
-				"property": "Pour Point (upper)",
-				"value": "°C, Max 30 (Winter) / 30 (Summer)"
-			},
-			{
-				"property": "Water",
-				"value": "volume %, Max 0.50"
-			},
-			{
-				"property": "Ash",
-				"value": "mass%, Max 1.00"
-			},
-			{
-				"property": "Vanadium",
-				"value": "mg/kg, Max 350"
-			},
-			{
-				"property": "Sodium",
-				"value": "mg/kg, Max 100"
-			},
-			{
-				"property": "Aluminium plus Silicon",
-				"value": "mg/kg, Max 60"
-			},
-			{
-				"property": "Calcium",
-				"value": "mg/kg, Max >30"
-			},
-			{
-				"property": "Zinc",
-				"value": "mg/kg, Max >30"
-			},
-			{
-				"property": "Phosphorus",
-				"value": "mg/kg Max > 15"
-			}
-		],
-		"appData": "VLSFO is primarily used as a marine fuel in ships to comply with IMO regulations. VLSFO is used in various types of vessels, including container ships, bulk carriers, etc.",
-		"packaging": ["Bulk"],
-		"SBU": "I&C/SOD",
-		"industrial": "Power, Marine",
-		"documentation": "",
-		"alternatives": ["-"],
-		"related": ["-"]
-	},
-	"HPCL-IF-0010": {
-		"id": 16,
-		"MSDS": "BITUMEN_PDF",
-		"title": "Paving Bitumen (VG10)",
-		"subTitle": "ROAD CONSTRUCTION MATERIAL",
-		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
-		"specifications": [
-			{
-				"property": "Penetration at 25°C",
-				"value": "100 g, 5 s, 0.1 mm, Min 80"
-			},
-			{
-				"property": "Absolute viscosity at 60°C, Poises",
-				"value": "800-1200"
-			},
-			{
-				"property": "Kinematic viscosity at 135°C",
-				"value": "cSt, Min 250"
-			},
-			{
-				"property": "Flash point (Cleveland open cup)",
-				"value": "°C, Min 220"
-			},
-			{
-				"property": "Solubility in trichloroethylene",
-				"value": "percent, Min 99.0"
-			},
-			{
-				"property": "Softening point (R&B)",
-				"value": "Min 40"
-			},
-			{
-				"property": "Viscosity ratio at 60°C",
-				"value": "Max 4.0"
-			},
-			{
-				"property": "Ductility at 25°C",
-				"value": "cm, Min 75"
-			}
-		],
-		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
-		"packaging": ["Bulk"],
-		"SBU": "I&C",
-		"industrial": "Construction of Roads, Highways, Tarmac",
-		"documentation": "",
-		"alternatives": ["-"],
-		"related": ["-"]
-	},
-	"HPCL-IF-0029": {
-		"id": 416,
-		"MSDS": "CRMB_PDF",
-		"title": "Crumb Rubber Modified Bitumen (CRMB60)",
-		"subTitle": "Bitumen",
-		"description": "Crumb Rubber Modified Bitumen (CRMB) is a high-performance asphalt binder created by blending bitumen with crumb rubber derived from recycled tires along with special additives. It enhances road durability by improving flexibility, reducing cracking and resisting deformation under heavy traffic and extreme temperatures.",
-		"specifications": [
-			{
-				"property": "Penetration @ 25°C (100 g, 5 s)",
-				"value": "20 – 50 (0.1 mm)"
-			},
-			{
-				"property": "Softening Point (Ring & Ball)",
-				"value": "Min 60 °C"
-			},
-			{
-				"property": "Flash Point (COC)",
-				"value": "Min 220 °C"
-			},
-			{
-				"property": "Elastic Recovery @ 15°C",
-				"value": "Min 60 %"
-			},
-			{
-				"property": "Complex Modulus (G*/Sin)",
-				"value": "Min 1.0 kPa @ 10 rad/s at 70 °C"
-			},
-			{
-				"property": "Separation (Difference in Softening Point)",
-				"value": "Max 4 °C"
-			},
-			{
-				"property": "Viscosity @ 150°C",
-				"value": "6 – 12 Poise"
-			},
-			{
-				"property": "Thin Film Oven Test – Loss in Mass",
-				"value": "Max 1.0 %"
-			},
-			{
-				"property": "Thin Film Oven Test – Change in Softening Point",
-				"value": "Max 5 °C"
-			},
-			{
-				"property": "Thin Film Oven Test – Reduction in Penetration @ 25°C",
-				"value": "Max 35 %"
-			},
-			{
-				"property": "Thin Film Oven Test – Elastic Recovery @ 25°C",
-				"value": "Min 35 %"
-			},
-			{
-				"property": "Thin Film Oven Test – Complex Modulus (G*/Sin)",
-				"value": "Min 2.2 kPa @ 10 rad/s at 70 °C"
-			}
-		],
-		"appData": "CRMB is extensively used in the construction of roads, highways and airport tarmac where improved durability, resistance to rutting and enhanced flexibility are required.",
-		"packaging": ["Bulk", "Packed (161.8 KG)"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Industrial Construction",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0011": {
-		"id": 17,
-		"MSDS": "VG30_PDF",
-		"title": "Paving Bitumen (VG30)",
-		"subTitle": "ROAD CONSTRUCTION MATERIAL",
-		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
-		"specifications": [
-			{
-				"property": "Penetration at 25°C",
-				"value": "100 g, 5 s, 0.1 mm, Min 45"
-			},
-			{
-				"property": "Absolute viscosity at 60°C, Poises",
-				"value": "2400-3200"
-			},
-			{
-				"property": "Kinematic viscosity at 135°C",
-				"value": "cSt, Min 350"
-			},
-			{
-				"property": "Flash point (Cleveland open cup)",
-				"value": "°C, Min 220"
-			},
-			{
-				"property": "Solubility in trichloroethylene",
-				"value": "percent, Min 99.0"
-			},
-			{
-				"property": "Softening point (R&B)",
-				"value": "°C, Min  47"
-			},
-			{
-				"property": "Viscosity ratio at 60°C",
-				"value": "Max  4.0"
-			},
-			{
-				"property": "Ductility at 25°C",
-				"value": "cm, Min 40"
-			}
-		],
-		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
-		"packaging": ["Bulk"],
-		"SBU": "I&C",
-		"industrial": "Construction of Roads, Highways, Tarmac",
-		"documentation": "",
-		"alternatives": ["-"],
-		"related": ["-"]
-	},
-	"HPCL-IF-0026": {
-		"id": 413,
-		"MSDS": "",
-		"title": "HSD",
-		"subTitle": "Automotive fuel",
-		"description": "High Speed Diesel (HSD) is a middle distillate petroleum fuel used in compression ignition (CI) engines. It is the largest consumed petroleum product in India. HSD is refined from crude oil through atmospheric distillation followed by hydrotreating for sulfur removal and blending for performance compliance. In India, HSD conforms to Bharat Stage VI (BS-VI) emission norms.",
-		"specifications": [
-			{
-				"property": "Density @ 15°C",
-				"value": "810.0 – 845.0 kg/m³"
-			},
-			{
-				"property": "Distillation – 95% Recovery",
-				"value": "Max 360 °C"
-			},
-			{
-				"property": "Flash Point (Abel)",
-				"value": "Min 35 °C"
-			},
-			{
-				"property": "Kinematic Viscosity @ 40°C",
-				"value": "2.0 – 4.5 cSt"
-			},
-			{
-				"property": "Total Sulphur",
-				"value": "Max 10 mg/kg"
-			},
-			{
-				"property": "Pour Point (Winter)",
-				"value": "Max 3 °C"
-			},
-			{
-				"property": "Copper Strip Corrosion (3 hr @ 50°C)",
-				"value": "Not worse than No.1"
-			},
-			{
-				"property": "Cetane Index",
-				"value": "Min 46"
-			}
-		],
-		"appData": "Primarily used as an automotive fuel for passenger vehicles, heavy commercial vehicles such as trucks and buses, and rail locomotives. It is also widely used in construction and mining equipment, agricultural tractors, diesel generators and marine engines.",
-		"packaging": ["Bulk"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Automotive fuel",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0022": {
-		"id": 409,
-		"MSDS": "CRMB_PDF",
-		"title": "Crumb Rubber Modified Bitumen (CRMB65)",
-		"subTitle": "Industrial Construction",
-		"description": "Crumb Rubber Modified Bitumen (CRMB) is a high-performance asphalt binder produced by blending bitumen with crumb rubber derived from recycled tyres along with special performance additives. It enhances road durability by improving flexibility, reducing cracking and resisting deformation under heavy traffic and extreme temperature conditions.",
-		"specifications": [
-			{
-				"property": "Penetration @ 25°C, 100 g, 5 s",
-				"value": "20 – 50 (0.1 mm)"
-			},
-			{
-				"property": "Softening Point (Ring & Ball)",
-				"value": "Min 65 °C"
-			},
-			{
-				"property": "Flash Point (COC)",
-				"value": "Min 220 °C"
-			},
-			{
-				"property": "Elastic Recovery of Half Thread in Ductilometer @ 15°C",
-				"value": "Min 60 %"
-			},
-			{
-				"property": "Complex Modulus (G*/Sin) @ 10 rad/s",
-				"value": "Min 1.0 kPa at 70 °C"
-			},
-			{
-				"property": "Separation (Difference in Softening Point, R&B)",
-				"value": "Max 4 °C"
-			},
-			{
-				"property": "Viscosity @ 150°C",
-				"value": "6 – 12 Poise"
-			},
-			{
-				"property": "Loss in Mass (Thin Film Oven Test Residue)",
-				"value": "Max 1.0 %"
-			},
-			{
-				"property": "Change in Softening Point (TFOT Residue)",
-				"value": "Max 5 °C"
-			},
-			{
-				"property": "Reduction in Penetration of Residue @ 25°C",
-				"value": "Max 35 %"
-			},
-			{
-				"property": "Elastic Recovery of Half Thread in Ductilometer @ 25°C",
-				"value": "Min 35 %"
-			},
-			{
-				"property": "Complex Modulus (G*/Sin) @ 10 rad/s (Residue)",
-				"value": "Min 2.2 kPa at 70 °C"
-			}
-		],
-		"appData": "CRMB is extensively used in the construction of roads, highways and airport tarmac.",
-		"packaging": ["Bulk", "Packed (161.8 KG)"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Industrial Construction",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0021": {
-		"id": 408,
-		"MSDS": "CRMB_PDF",
-		"title": "Crumb Rubber Modified Bitumen (CRMB55)",
-		"subTitle": "Industrial Construction",
-		"description": "Crumb Rubber Modified Bitumen (CRMB) is a high-performance asphalt binder produced by blending bitumen with crumb rubber derived from recycled tyres along with performance additives. It enhances road durability by improving flexibility, reducing cracking and resisting deformation under heavy traffic loads and extreme temperature conditions.",
-		"specifications": [
-			{
-				"property": "Penetration @ 25°C, 100 g, 5 s",
-				"value": "30 – 60 (0.1 mm)"
-			},
-			{
-				"property": "Softening Point (Ring & Ball)",
-				"value": "Min 55 °C"
-			},
-			{
-				"property": "Flash Point (COC)",
-				"value": "Min 220 °C"
-			},
-			{
-				"property": "Elastic Recovery of Half Thread in Ductilometer @ 15°C",
-				"value": "Min 60 %"
-			},
-			{
-				"property": "Complex Modulus (G*/Sin) @ 10 rad/s",
-				"value": "Min 1.0 kPa at 64 °C"
-			},
-			{
-				"property": "Separation (Difference in Softening Point, R&B)",
-				"value": "Max 4 °C"
-			},
-			{
-				"property": "Viscosity @ 150°C",
-				"value": "4 – 8 Poise"
-			},
-			{
-				"property": "Loss in Mass (Thin Film Oven Test Residue)",
-				"value": "Max 1.0 %"
-			},
-			{
-				"property": "Change in Softening Point (TFOT Residue)",
-				"value": "Max 5 °C"
-			},
-			{
-				"property": "Reduction in Penetration of Residue @ 25°C",
-				"value": "Max 35 %"
-			},
-			{
-				"property": "Elastic Recovery of Half Thread in Ductilometer @ 25°C",
-				"value": "Min 35 %"
-			},
-			{
-				"property": "Complex Modulus (G*/Sin) @ 10 rad/s (Residue)",
-				"value": "Min 2.2 kPa at 64 °C"
-			}
-		],
-		"appData": "CRMB is extensively used in the construction of roads, highways and airport tarmac.",
-		"packaging": ["Bulk", "Packed (161.8 KG)"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Industrial Construction",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0025": {
-		"id": 412,
-		"MSDS": "",
-		"title": "MS",
-		"subTitle": "Automotive fuel",
-		"description": "Motor Spirit (MS) is a light petroleum distillate used in spark-ignition internal combustion engines. It is produced through atmospheric distillation, catalytic reforming, isomerization and blending of various refinery streams. In India, Motor Spirit conforms to Bharat Stage VI (BS-VI) emission norms.",
-		"specifications": [
-			{
-				"property": "Density @ 15°C",
-				"value": "720.0 – 775.0 kg/m³"
-			},
-			{
-				"property": "Distillation – % Evaporated @ 70°C (E70)",
-				"value": "10.0 – 45.0 % v/v"
-			},
-			{
-				"property": "Distillation – % Evaporated @ 100°C (E100)",
-				"value": "40.0 – 70.0 % v/v"
-			},
-			{
-				"property": "Distillation – % Evaporated @ 150°C (E150)",
-				"value": "Min 75 % v/v"
-			},
-			{
-				"property": "Distillation – Final Boiling Point",
-				"value": "Max 210 °C"
-			},
-			{
-				"property": "Distillation Residue",
-				"value": "Max 2.0 %"
-			},
-			{
-				"property": "Sulphur Content",
-				"value": "Max 10 mg/kg"
-			},
-			{
-				"property": "Gum Content (Solvent Washed)",
-				"value": "Max 40 g/m³"
-			},
-			{
-				"property": "Copper Strip Corrosion (3 hr @ 50°C)",
-				"value": "Not worse than No.1"
-			}
-		],
-		"appData": "Primarily used as an automotive fuel for passenger vehicles including cars, motorcycles and scooters. It is also used in small generators, agricultural light machinery and recreational vehicles.",
-		"packaging": ["Bulk"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Automotive fuel",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0027": {
-		"id": 414,
-		"MSDS": "",
-		"title": "ISKO",
-		"subTitle": "Heating & cleaning",
-		"description": "Superior Kerosene Oil (SKO) is a middle distillate petroleum fraction heavier than gasoline but lighter than diesel. It is produced during atmospheric distillation of crude oil. Historically used as a domestic fuel, its usage has declined with the introduction of cleaner fuel alternatives.",
-		"specifications": [
-			{
-				"property": "Density @ 15°C",
-				"value": "To be reported"
-			},
-			{
-				"property": "Distillation – % Recovered Below 200°C",
-				"value": "Min 20 % v/v"
-			},
-			{
-				"property": "Distillation – Final Boiling Point",
-				"value": "Max 300 °C"
-			},
-			{
-				"property": "Distillation Residue",
-				"value": "Max 2.0 %"
-			},
-			{
-				"property": "Flash Point (Abel)",
-				"value": "Min 35 °C"
-			},
-			{
-				"property": "Smoke Point",
-				"value": "Min 18 mm"
-			},
-			{
-				"property": "Total Sulphur Content",
-				"value": "Max 0.1000 % m/m"
-			},
-			{
-				"property": "Copper Strip Corrosion (3 hr @ 50°C)",
-				"value": "Not worse than No.1"
-			}
-		],
-		"appData": "Traditionally used for domestic lighting in kerosene lamps and cooking in kerosene stoves, though usage has declined. It is also used in industrial burners, solvent applications, and as fuel for small boat engines.",
-		"packaging": ["Bulk"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Heating & cleaning",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0024": {
-		"id": 411,
-		"MSDS": "PROPYLENE_PDF",
-		"title": "Propylene",
-		"subTitle": "Feedstock",
-		"description": "Propylene is a light, colorless hydrocarbon and an unsaturated alkene. It is produced during crude oil refining and steam cracking of hydrocarbons.",
-		"specifications": [
-			{
-				"property": "Minimum Purity",
-				"value": "95%"
-			}
-		],
-		"appData": "Propylene is widely used as a chemical feedstock for the production of polypropylene (PP) plastics, oxo alcohols used in plasticizers and solvents, acrylonitrile, propylene oxide and other petrochemical derivatives. It is also used as an octane enhancing component in gasoline blending.",
-		"packaging": ["Bulk"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Feedstock",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0012": {
-		"id": 18,
-		"MSDS": "VG40_PDF",
-		"title": "Paving Bitumen (VG40)",
-		"subTitle": "ROAD CONSTRUCTION MATERIAL",
-		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
-		"specifications": [
-			{
-				"property": "Penetration at 25°C",
-				"value": "100 g, 5 s, 0.1 mm, Min 35"
-			},
-			{
-				"property": "Absolute viscosity at 60°C, Poises",
-				"value": "3200-4800"
-			},
-			{
-				"property": "Kinematic viscosity at 135°C",
-				"value": "cSt, Min  400"
-			},
-			{
-				"property": "Flash point (Cleveland open cup)",
-				"value": "°C, Min 220"
-			},
-			{
-				"property": "Solubility in trichloroethylene",
-				"value": "percent, Min  99.0"
-			},
-			{
-				"property": "Softening point (R&B)",
-				"value": "°C, Min 50"
-			},
-			{
-				"property": "Viscosity ratio at 60°C",
-				"value": "Max 4.0"
-			},
-			{
-				"property": "Ductility at 25°C",
-				"value": "cm, Min 25"
-			}
-		],
-		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
-		"packaging": ["Bulk"],
-		"SBU": "I&C",
-		"industrial": "Construction of Roads, Highways, Tarmac",
-		"documentation": "",
-		"alternatives": ["-"],
-		"related": ["-"]
-	},
-	"HPCL-IF-0028": {
-		"id": 415,
-		"MSDS": "",
-		"title": "CBFS",
-		"subTitle": "Feedstock",
-		"description": "Carbon Black Feedstock (CBFS) is a heavy aromatic hydrocarbon oil used as the primary raw material for manufacturing carbon black. It is rich in aromatic hydrocarbons, which are essential for efficient carbon black formation in furnace-type reactors.",
-		"specifications": [
-			{
-				"property": "Density @ 15°C",
-				"value": "1.080 – 1.120 g/cc"
-			},
-			{
-				"property": "API Gravity",
-				"value": "-5.0 to 2.0"
-			},
-			{
-				"property": "Viscosity @ 100°C",
-				"value": "50 – 100 SSU"
-			},
-			{
-				"property": "Sulphur Content",
-				"value": "Max 3.5 % wt"
-			},
-			{
-				"property": "BMCI",
-				"value": "Min 120"
-			},
-			{
-				"property": "Asphaltenes",
-				"value": "1.74 % wt"
-			},
-			{
-				"property": "Water Content",
-				"value": "Max 0.50 %"
-			},
-			{
-				"property": "Flash Point",
-				"value": "100 °C"
-			},
-			{
-				"property": "n-Pentane Insolubles",
-				"value": "To be reported"
-			},
-			{
-				"property": "Toluene Insolubles",
-				"value": "To be reported"
-			},
-			{
-				"property": "Ash Content",
-				"value": "To be reported"
-			},
-			{
-				"property": "Na, C, K, H",
-				"value": "To be reported"
-			},
-			{
-				"property": "pH",
-				"value": "To be reported"
-			}
-		],
-		"appData": "CBFS is used as a process feedstock for producing tyre-grade carbon black, rubber-grade carbon black, pigment-grade carbon black and specialty carbon black used in inks, coatings and plastics.",
-		"packaging": ["Bulk"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Feedstock",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0018": {
-		"id": 405,
-		"MSDS": "",
-		"title": "FO 380",
-		"subTitle": "Marine Fuel",
-		"description": "FO 380 is a high-viscosity residual marine fuel primarily used in large ocean-going vessels equipped with slow-speed and medium-speed diesel engines. Traditionally supplied as High Sulfur Fuel Oil (HSFO) (up to 3.5% sulfur), its usage today is largely restricted to vessels fitted with exhaust gas cleaning systems (scrubbers) in order to comply with IMO 2020 sulfur regulations.",
-		"specifications": [
-			{
-				"property": "Kinematic Viscosity @ 50°C",
-				"value": "Max 380 mm²/s"
-			},
-			{
-				"property": "Density @ 15°C",
-				"value": "Max 991 kg/m³"
-			},
-			{
-				"property": "Calculated Carbon Aromaticity Index (CCAI)",
-				"value": "Max 870"
-			},
-			{
-				"property": "Sulfur Content",
-				"value": "Max 3.5 % mass"
-			},
-			{
-				"property": "Flash Point",
-				"value": "Min 60 °C"
-			},
-			{
-				"property": "Hydrogen Sulfide",
-				"value": "Max 2 mg/kg"
-			},
-			{
-				"property": "Acid Number",
-				"value": "Max 2.5 mg KOH/g"
-			},
-			{
-				"property": "Total Sediment (Aged)",
-				"value": "Max 0.10 % mass"
-			},
-			{
-				"property": "Carbon Residue (Micro Method)",
-				"value": "Max 18.00 % mass"
-			},
-			{
-				"property": "Pour Point (Upper)",
-				"value": "Max 30 °C (Winter) / 30 °C (Summer)"
-			},
-			{
-				"property": "Water Content",
-				"value": "Max 0.50 % volume"
-			},
-			{
-				"property": "Ash Content",
-				"value": "Max 1.00 % mass"
-			},
-			{
-				"property": "Vanadium",
-				"value": "Max 350 mg/kg"
-			},
-			{
-				"property": "Sodium",
-				"value": "Max 100 mg/kg"
-			},
-			{
-				"property": "Aluminium + Silicon",
-				"value": "Max 60 mg/kg"
-			},
-			{
-				"property": "Calcium",
-				"value": "> 30 mg/kg"
-			},
-			{
-				"property": "Zinc",
-				"value": "> 30 mg/kg"
-			},
-			{
-				"property": "Phosphorus",
-				"value": "> 15 mg/kg"
-			}
-		],
-		"appData": "Fuel used in ocean-going vessels fitted with exhaust gas cleaning systems (scrubbers) to comply with IMO 2020 sulfur regulations.",
-		"packaging": ["Bulk"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Marine",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0020": {
-		"id": 407,
-		"MSDS": "",
-		"title": "Paving Bitumen (VG 40 Super)",
-		"subTitle": "Industrial Construction",
-		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid or solid consisting essentially of a complex mixture of hydrocarbons including high molecular weight compounds such as asphaltenes and lighter fractions such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour and possesses waterproofing and adhesive properties.",
-		"specifications": [
-			{
-				"property": "Penetration @ 25°C, 100 g, 5 s",
-				"value": "Min 35 (0.1 mm)"
-			},
-			{
-				"property": "Absolute Viscosity @ 60°C",
-				"value": "4000 – 4800 Poises"
-			},
-			{
-				"property": "Kinematic Viscosity @ 135°C",
-				"value": "Min 400 cSt"
-			},
-			{
-				"property": "Flash Point (Cleveland Open Cup)",
-				"value": "Min 220 °C"
-			},
-			{
-				"property": "Solubility in Trichloroethylene",
-				"value": "Min 99.0 %"
-			},
-			{
-				"property": "Softening Point (Ring & Ball)",
-				"value": "Min 50 °C"
-			},
-			{
-				"property": "Viscosity Ratio @ 60°C (RTFOT Residue)",
-				"value": "Max 4.0"
-			},
-			{
-				"property": "Ductility @ 25°C (RTFOT Residue)",
-				"value": "Min 25 cm"
-			}
-		],
-		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
-		"packaging": ["Bulk"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Industrial Construction",
-		"documentation": "",
-		"alternatives": [],
-		"related": []
-	},
-	"HPCL-IF-0007": {
-		"id": 13,
-		"MSDS": "HFHSD_PDF",
-		"title": "HFHSD (High Flash High Speed Diesel - Distillate Marine Fuel )",
-		"subTitle": "MARINE FUEL",
-		"description": "High Flash High Speed Diesel (HFHSD) is a special grade of diesel fuel with flash point (Min. 66°C) significantly higher than that of HSD (Min. 35°C). It consists of hydrocarbons with carbon numbers predominantly in the range of C9 to C28, with a boiling range of approximately 150°C to 400°C. It is produced by refining middle-distillate fractions to meet stringent safety and performance specifications IS 16731(ISO 8217).",
-		"specifications": [
-			{
-				"property": "Kinematic Viscosity at 40 °C",
-				"value": "mm2 /s, 2.000-6.000"
-			},
-			{
-				"property": "Density at 15 °C",
-				"value": "kg/m3, Max 890.0"
-			},
-			{
-				"property": "Cetane Index",
-				"value": "Min 40"
-			},
-			{
-				"property": "Sulfur",
-				"value": "mass %, Max 1.00"
-			},
-			{
-				"property": "Flash point",
-				"value": "°C, Min 60"
-			},
-			{
-				"property": "Hydrogen sulfide",
-				"value": "mg/kg, Max 2.00"
-			},
-			{
-				"property": "Acid number",
-				"value": "mg KOH/g, Max 0.5"
-			},
-			{
-				"property": "Oxidation Stability",
-				"value": "g/m3, Max 25"
-			},
-			{
-				"property": "Carbon residue – Micro method on the 10 % volume distillation residue",
-				"value": "mass%, Max 0.30"
-			},
-			{
-				"property": "Cloud Point, °C",
-				"value": "Report"
-			},
-			{
-				"property": "Cold filter plugging point, °C",
-				"value": "Report"
-			},
-			{
-				"property": "Pour Point (upper)",
-				"value": "°C, Max -6 (Winter) / 0 (Summer)"
-			},
-			{
-				"property": "Appearance",
-				"value": "Visaul, Clear & Bright"
-			},
-			{
-				"property": "Ash",
-				"value": "mass%, Max 0.010"
-			},
-			{
-				"property": "Lubricity",
-				"value": "corrected wear scar diameter (WSD) at 60 °C, μm, Max 520"
-			}
-		],
-		"appData": "HFHSD is mainly manufactured for non-automotive applications. It is mainly applicable for marine use by Indian Navy, Merchant Ships, fishing vessels etc. where a high flash point diesel is required.",
-		"packaging": ["Bulk"],
-		"SBU": "I&C/SOD",
-		"industrial": "Marine",
-		"documentation": "",
-		"alternatives": ["-"],
-		"related": ["-"]
-	},
-	"HPCL-IF-0031": {
-		"id": 2,
-		"MSDS": "",
-		"title": "BS VI B7 HSD",
-		"subTitle": "nan",
-		"description": "BS-VI B7 HSD is a biodiesel-blended variant of BS-VI High Speed Diesel, produced by blending regular BS-VI HSD with 7% biodiesel. It meets the same BS-VI performance parameters as standard HSD while reducing net carbon emissions through the renewable biodiesel component. It is supplied to customers as a part of sustainability initiatives.",
-		"specifications": [
-			{
-				"property": "Base fuel meets BS-VI HSD specification",
-				"value": "IS 1460:2017"
-			},
-			{
-				"property": "Sulphur",
-				"value": "Max 10 mg/kg"
-			},
-			{
-				"property": "Density at 15°C",
-				"value": "810-845 kg/m3"
-			},
-			{
-				"property": "Flash Point",
-				"value": "Min 35°C (Summer) / 66°C"
-			},
-			{
-				"property": "Pour Point",
-				"value": "3°C (Winter) / 15°C (Summer) - blended with 7% Biodiesel"
-			},
-			{
-				"property": "Copper Strip Corrosion for 3 h at 50°C",
-				"value": "Not worse than No. 1B"
-			},
-			{
-				"property": "Cetane Index",
-				"value": "Min 46.0"
-			}
-		],
-		"appData": "Used as an automotive and industrial fuel for compression-ignition engines and power generation equipment (e.g. diesel gensets), functionally identical to standard BS-VI HSD, with the added benefit of a renewable biodiesel component supporting decarbonisation/sustainability goals.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0032": {
-		"id": 4,
-		"MSDS": "",
-		"title": "HP INDUSTRIAL DIESEL OIL (LDO)",
-		"subTitle": "Black Oils",
-		"description": "HP Industrial Diesel Oil (LDO), is a middle distillate fuel. It is a non-automotive diesel fuel used in medium and slow-speed compression ignition (CI) engines running below 750 RPM and also in pwoer plants. LDO is classified as a 'Class C' petroleum product based on its flash point.",
-		"specifications": [
-			{
-				"property": "Acid Number",
-				"value": "Max 0.500 mg KOH/g"
-			},
-			{
-				"property": "Ash",
-				"value": "Max 0.020 wt%"
-			},
-			{
-				"property": "Carbon Residue (Ramsbottom)",
-				"value": "Max 1.50 wt%"
-			},
-			{
-				"property": "Pour Point (Winter, Nov-Feb)",
-				"value": "Max 12°C"
-			},
-			{
-				"property": "Copper Strip Corrosion (3h @100°C)",
-				"value": "Not worse than No. 2"
-			},
-			{
-				"property": "Flash Point (PMCC)",
-				"value": "Min 66°C"
-			},
-			{
-				"property": "Kinematic Viscosity at 40°C",
-				"value": "2.500-15.000 cSt"
-			},
-			{
-				"property": "Total Sediments",
-				"value": "Max 0.100 wt%"
-			},
-			{
-				"property": "Density at 15°C",
-				"value": "To report"
-			},
-			{
-				"property": "Total Sulphur",
-				"value": "Max 1.500 wt%"
-			},
-			{
-				"property": "Water Content",
-				"value": "Max 0.25 %vol"
-			},
-			{
-				"property": "Governing Standard",
-				"value": "IS 15770:2021"
-			}
-		],
-		"appData": "Used as fuel in Power generation plants, stationary compression-ignition engines operating below 750 RPM, such as pumping sets and DG sets. Also used for firing boilers and in hot-mix plants for road construction.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0033": {
-		"id": 5,
-		"MSDS": "",
-		"title": "LSHS PREMIUM",
-		"subTitle": "Black Oils",
-		"description": "Low Sulphur Heavy Stock (LSHS) Premium is a residual fuel oil produced from processing of indigenous crude oils. It is obtained in lieu of Furnace Oil and primarily differs from FO in its sulphur content (max 1% vs up to 4.5% for FO), making it a cleaner substitute fuel where low-sulphur norms apply.",
-		"specifications": [
-			{
-				"property": "Density at 15°C",
-				"value": "To report"
-			},
-			{
-				"property": "Flash Point (PMCC)",
-				"value": "Min 66.0°C"
-			},
-			{
-				"property": "Kinematic Viscosity at 100°C",
-				"value": "Max 25 cSt (~Max 180 cSt at 50°C)"
-			},
-			{
-				"property": "Gross Calorific Value",
-				"value": "To report (typ. ~10,400–10,500 Cal/g)"
-			},
-			{
-				"property": "Pour Point (Summer)",
-				"value": "Max 27°C"
-			},
-			{
-				"property": "Sediment",
-				"value": "Max 0.25% m/m"
-			},
-			{
-				"property": "Total Sulphur",
-				"value": "Max 1.000% m/m"
-			},
-			{
-				"property": "Water Content",
-				"value": "Max 1.00% v/v"
-			},
-			{
-				"property": "Ash",
-				"value": "Max 0.1000% m/m"
-			}
-		],
-		"appData": "Used as a low-sulphur substitute for Furnace Oil in industrial boilers and furnaces, particularly in regions/states where high-sulphur FO use is restricted or banned by pollution control authorities.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0034": {
-		"id": 6,
-		"MSDS": "",
-		"title": "FO",
-		"subTitle": "Black Oils",
-		"description": "Furnace Oil (FO) - also known as Bunker Fuel, Fuel Oil, Heavy Fuel Oil (HFO) or Intermediate Fuel Oil (IFO) - is a dark, viscous residual fuel obtained as a heavy distillate from crude oil refining. It is supplied in LV, MV1, MV2 and HV viscosity grades.",
-		"specifications": [
-			{
-				"property": "Density at 15°C",
-				"value": "As observed"
-			},
-			{
-				"property": "Kinematic Viscosity at 50°C",
-				"value": "80-370 cSt (grade dependent - LV/MV1/MV2/HV)"
-			},
-			{
-				"property": "Flash Point (PMCC)",
-				"value": "Min 66°C"
-			},
-			{
-				"property": "Total Sulphur",
-				"value": "Max 3.5-4.5% by mass (grade dependent)"
-			},
-			{
-				"property": "Ash",
-				"value": "Max 0.1% by volume"
-			},
-			{
-				"property": "Sediment",
-				"value": "Max 0.25% by mass"
-			},
-			{
-				"property": "Water Content",
-				"value": "Max 1% by volume"
-			},
-			{
-				"property": "Gross Calorific Value",
-				"value": "Min 10,000 Cal/gm (~10,200 Kcal/kg avg)"
-			},
-			{
-				"property": "Governing Standard",
-				"value": "IS 1593:1982"
-			}
-		],
-		"appData": "Used for steam generation, industrial furnaces and power generation. Also used as a feedstock for fertiliser manufacturing.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0035": {
-		"id": 10,
-		"MSDS": "",
-		"title": "HP TUFFBIT BITUMEN VG10-161.8",
-		"subTitle": "Bitumen",
-		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties. ",
-		"specifications": [
-			{
-				"property": "Penetration at 25°C, 100 g, 5 s, 0.1 mm",
-				"value": "Min 80"
-			},
-			{
-				"property": "Absolute Viscosity at 60°C",
-				"value": "800-1200 Poises"
-			},
-			{
-				"property": "Kinematic Viscosity at 135°C",
-				"value": "Min 250 cSt"
-			},
-			{
-				"property": "Flash Point (Cleveland Open Cup)",
-				"value": "Min 220°C"
-			},
-			{
-				"property": "Solubility in Trichloroethylene",
-				"value": "Min 99.0%"
-			},
-			{
-				"property": "Softening Point (R&B)",
-				"value": "Min 40°C"
-			},
-			{
-				"property": "Viscosity Ratio at 60°C (after Rolling Thin Film Oven Test)",
-				"value": "Max 4.0"
-			},
-			{
-				"property": "Ductility at 25°C (after Rolling Thin Film Oven Test)",
-				"value": "Min 75 cm"
-			}
-		],
-		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac. ",
-		"packaging": ["Packed"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0036": {
-		"id": 11,
-		"MSDS": "",
-		"title": "HP TUFFBIT BITUMEN VG30-161.8",
-		"subTitle": "Bitumen",
-		"description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties. ",
-		"specifications": [
-			{
-				"property": "Penetration at 25°C, 100 g, 5 s, 0.1 mm",
-				"value": "Min 45"
-			},
-			{
-				"property": "Absolute Viscosity at 60°C",
-				"value": "2400-3600 Poises"
-			},
-			{
-				"property": "Kinematic Viscosity at 135°C",
-				"value": "Min 350 cSt"
-			},
-			{
-				"property": "Flash Point (Cleveland Open Cup)",
-				"value": "Min 220°C"
-			},
-			{
-				"property": "Solubility in Trichloroethylene",
-				"value": "Min 99.0%"
-			},
-			{
-				"property": "Softening Point (R&B)",
-				"value": "Min 47°C"
-			},
-			{
-				"property": "Viscosity Ratio at 60°C (after Rolling Thin Film Oven Test)",
-				"value": "Max 4.0"
-			},
-			{
-				"property": "Ductility at 25°C (after Rolling Thin Film Oven Test)",
-				"value": "Min 40 cm"
-			}
-		],
-		"appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac. ",
-		"packaging": ["Packed"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0037": {
-		"id": 16,
-		"MSDS": "",
-		"title": "NAPHTHA",
-		"subTitle": "Specialty Products",
-		"description": "Naphtha is a light petroleum distillate fraction with hydrocarbons boiling between 30°C and 200°C, generally containing 5 to 12 carbon atoms per molecule. It is primarily processed through catalytic reforming, which converts naphtha into high-octane reformate used for gasoline blending and as feedstock for aromatic petrochemicals.",
-		"specifications": [
-			{
-				"property": "Density at 15°C",
-				"value": "Max 0.735 g/cc"
-			},
-			{
-				"property": "Initial Boiling Point (IBP)",
-				"value": "Min 25°C"
-			},
-			{
-				"property": "Final Boiling Point (FBP)",
-				"value": "Max 170°C"
-			},
-			{
-				"property": "Reid Vapour Pressure (RVP) @37.8°C",
-				"value": "Max 13 psi"
-			},
-			{
-				"property": "Sulphur",
-				"value": "Max 300 ppm wt"
-			},
-			{
-				"property": "Lead",
-				"value": "Max 40 ppb"
-			},
-			{
-				"property": "Colour (Saybolt)",
-				"value": "Min +20"
-			},
-			{
-				"property": "Residue on Evaporation",
-				"value": "Max 5 mg/100 ml"
-			},
-			{
-				"property": "Calorific Value",
-				"value": "Min 10,500 kcal/kg"
-			},
-			{
-				"property": "Ramsbottom Carbon Residue",
-				"value": "Max 0.2 wt%"
-			},
-			{
-				"property": "Aromatics",
-				"value": "Max 13 vol%"
-			},
-			{
-				"property": "Paraffins",
-				"value": "Min 65 vol%"
-			},
-			{
-				"property": "Chlorides",
-				"value": "Max 1.0 mg/L"
-			},
-			{
-				"property": "Oxygenates",
-				"value": "Max 50 ppm"
-			},
-			{
-				"property": "CS₂",
-				"value": "Max 5 ppm"
-			},
-			{
-				"property": "Governing Standard",
-				"value": "BIS IS 1448 (various parts) – Typical export-grade guaranteed specification"
-			}
-		],
-		"appData": "Used as feedstock for catalytic reforming to produce high-octane gasoline blending stock, and as a key petrochemical feedstock for steam cracking to produce olefins (ethylene, propylene) and aromatics (benzene, toluene, xylene) used in plastics manufacturing.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0038": {
-		"id": 17,
-		"MSDS": "",
-		"title": "HP SOLVENT 1425",
-		"subTitle": "Specialty Products",
-		"description": "HP Solvent 1425 is a Special Boiling Point (SBP) solvent - a fast-to-medium evaporating aliphatic hydrocarbon fluid consisting of paraffins and cycloparaffins in the C6-C10 range. It has a narrow boiling range, low aromatic content and a mild, sweet odour.",
-		"specifications": [
-			{
-				"property": "Appearance",
-				"value": "Clear and bright, free from un-dissolved water/foreign matter"
-			},
-			{
-				"property": "Colour (Saybolt)",
-				"value": "Min 25"
-			},
-			{
-				"property": "Density at 15°C",
-				"value": "To report (typ. ~0.690 g/mL)"
-			},
-			{
-				"property": "Distillation Initial Boiling Point (IBP)",
-				"value": "Min 50.0°C"
-			},
-			{
-				"property": "Distillation Dry Point",
-				"value": "Max 120.0°C"
-			},
-			{
-				"property": "Residue on Evaporation",
-				"value": "Max 5.0 mg/100 mL"
-			},
-			{
-				"property": "Copper Strip Corrosion (3 h @ 50°C)",
-				"value": "Not more than No. 1"
-			},
-			{
-				"property": "Doctor Test",
-				"value": "Negative"
-			},
-			{
-				"property": "Governing Standard",
-				"value": "IS 1745:2018 (Third Revision)"
-			}
-		],
-		"appData": "Used for cleaning and degreasing to remove grease, oil, brake fluid and other contaminants from workshop floors, walls, vehicles and machinery; used in rubber compounding; and as a solvent in adhesives and sealants.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0039": {
-		"id": 18,
-		"MSDS": "",
-		"title": "HP MTO 2445",
-		"subTitle": "Specialty Products",
-		"description": "HP MTO 2445 is a colourless petroleum-derived Mineral Turpentine Oil (MTO), mainly comprising aliphatic hydrocarbons (C10 and above). It is chemically stable, non-corrosive, has medium evaporating characteristics, leaves no non-volatile residue on evaporation, and has a mild, sweet odour with low aromatic content.",
-		"specifications": [
-			{
-				"property": "Appearance",
-				"value": "Clear and bright, free from un-dissolved water/foreign matter"
-			},
-			{
-				"property": "Colour (Saybolt)",
-				"value": "Min 21"
-			},
-			{
-				"property": "Density at 15°C",
-				"value": "To report"
-			},
-			{
-				"property": "Copper Strip Corrosion (3 h @ 50°C)",
-				"value": "Not worse than No. 1B"
-			},
-			{
-				"property": "Distillation Initial Boiling Point (IBP)",
-				"value": "Min 125.0°C"
-			},
-			{
-				"property": "Distillation Final Boiling Point",
-				"value": "Max 240.0°C"
-			},
-			{
-				"property": "Flash Point (Abel)",
-				"value": "Min 30.0°C"
-			},
-			{
-				"property": "Residue on Evaporation",
-				"value": "Max 5.0 mg/100 mL"
-			},
-			{
-				"property": "Aromatic Content",
-				"value": "Max 40.0% v/v"
-			},
-			{
-				"property": "Governing Standard",
-				"value": "IS 1745:2018 (Third Revision)"
-			}
-		],
-		"appData": "Used as a raw material and thinner in the paint industry, solvent for textile printing with pigment colours, dry-cleaning solvent, carrier for oil-soluble waxes and resins in polish manufacture, thinner for rust preventives, solvent for metal/machine degreasing and industrial cleaning, solvent in electrical insulating compounds and insecticidal formulations, and diluent for waterproofing/mothproofing/binding/sealing compounds.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0040": {
-		"id": 19,
-		"MSDS": "",
-		"title": "HP FOOD GRADE HEXANE",
-		"subTitle": "Specialty Products",
-		"description": "HP Food Grade Hexane is a colourless, volatile, flammable liquid with a gasoline-like odour and a narrow boiling range of 63-70°C. It leaves no non-volatile residue on evaporation and has a low aromatic content, making it suitable for food-grade solvent extraction applications.",
-		"specifications": [
-			{
-				"property": "Appearance",
-				"value": "Clear and bright, free from un-dissolved water/foreign matter"
-			},
-			{
-				"property": "Colour (Saybolt)",
-				"value": "Min 30"
-			},
-			{
-				"property": "Density at 20°C",
-				"value": "0.6600–0.6870 g/mL"
-			},
-			{
-				"property": "Distillation Initial Boiling Point (IBP)",
-				"value": "Min 63.0°C"
-			},
-			{
-				"property": "Distillation between 64–70°C",
-				"value": "Min 95.0% v/v"
-			},
-			{
-				"property": "Copper Strip Corrosion (3 h @ 50°C)",
-				"value": "Not more than No. 1"
-			},
-			{
-				"property": "Non-Volatile Residue",
-				"value": "Max 0.0005 g/100 mL"
-			},
-			{
-				"property": "Reaction of Non-Volatile Residue",
-				"value": "Neutral to Methyl Orange"
-			},
-			{
-				"property": "Doctor Test",
-				"value": "Negative"
-			},
-			{
-				"property": "Governing Standard",
-				"value": "IS 3470:2017 (Second Revision)"
-			}
-		],
-		"appData": "Used as a solvent for extraction of vegetable oils (groundnut, mustard, cottonseed, soybean, rapeseed, rice bran) for edible and soap-making purposes, extraction of essential oils from flowers, preparation of rubber adhesives and sealing compounds, and as a carrier in pharmaceutical and polymer industries.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0041": {
-		"id": 20,
-		"MSDS": "",
-		"title": "JBO",
-		"subTitle": "Specialty Products",
-		"description": "Jute Batching Oil (JBO) is a specially blended mineral oil used as a softening, lubricating and antistatic/emulsifying agent in the jute textile industry, applied to jute fibres prior to spinning to improve pliability and reduce breakage during processing.",
-		"specifications": [
-			{
-				"property": "Density at 15°C",
-				"value": "0.8250–0.9000 g/mL"
-			},
-			{
-				"property": "Colour (ASTM)",
-				"value": "Max 7.0"
-			},
-			{
-				"property": "Flash Point (PMCC)",
-				"value": "Min 100°C"
-			},
-			{
-				"property": "Kinematic Viscosity at 37.8°C",
-				"value": "Max 15.00 cSt"
-			},
-			{
-				"property": "Pour Point",
-				"value": "Max 30°C"
-			},
-			{
-				"property": "Distillation Initial Boiling Point (IBP)",
-				"value": "Min 240°C"
-			},
-			{
-				"property": "Distillation Recovery at 270°C",
-				"value": "Max 3.0% v/v"
-			},
-			{
-				"property": "Distillation Recovery at 370°C",
-				"value": "Min 95.0% v/v"
-			},
-			{
-				"property": "Distillation Residue",
-				"value": "Max 2.0% v/v"
-			},
-			{
-				"property": "Test Method",
-				"value": "IS 1448 (various parts)"
-			}
-		],
-		"appData": "Applied as a softening, lubricating and antistatic/emulsifying agent on jute fibres before spinning, to improve fibre pliability and reduce breakage during batching and spinning.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	},
-	"HPCL-IF-0042": {
-		"id": 21,
-		"MSDS": "",
-		"title": "SULPHUR",
-		"subTitle": "Specialty Products",
-		"description": "Sulphur is a by-product recovered from the desulphurisation units at HPCL's refineries (Mumbai and Visakh). It is produced at approximately 140°C with about 99.9% purity, solidifies at normal ambient temperature.",
-		"specifications": [
-			{
-				"property": "Elemental Sulphur",
-				"value": "Min ~99.9% wt"
-			},
-			{
-				"property": "Acidity",
-				"value": "Max ~0.0003% wt (as mg NaOH/g)"
-			},
-			{
-				"property": "Ash Content",
-				"value": "Max 0.04% wt"
-			},
-			{
-				"property": "Moisture Content",
-				"value": "Max 0.05% wt"
-			},
-			{
-				"property": "Organic Matter",
-				"value": "Nil"
-			},
-			{
-				"property": "Colour",
-				"value": "Bright Yellow"
-			},
-			{
-				"property": "Test Methods",
-				"value": "IS 6655, IS 1448 Part 4"
-			}
-		],
-		"appData": "Used as a raw material for manufacturing sulphuric acid, fertilisers, fungicides and pesticides, batteries, pharmaceutical products, and for rubber vulcanisation and paint formulation.",
-		"packaging": ["Bulk"],
-		"SBU": "",
-		"industrial": "Industrial Fuels",
-		"documentation": "-",
-		"alternatives": [],
-		"related": ["-"]
-	}
+  "HPCL-IF-0013": {
+    "id": 19,
+    "MSDS": "JBO_Industrial_MSDS",
+    "title": "Jute Batching Oil",
+    "subTitle": "Wash Oil",
+    "description": "JBO is a mineral oil fraction, generally mixed with water and emulsifiers. This is traditionally mineral based modern ecofriendly versions.  JBs applied to raw jute fibers to soften them and give cohesion during processing.",
+    "specifications": [
+      {
+        "property": "Color, ASTM",
+        "value": "Max L7.0"
+      },
+      {
+        "property": "Flash Point (Pensky Martens), °C",
+        "value": "Min 100"
+      },
+      {
+        "property": "Kinematic Viscosity @ 37.8 °C,cSt",
+        "value": "Max 15.0"
+      },
+      {
+        "property": "Pour Point, °C",
+        "value": "Max 30"
+      },
+      {
+        "property": "Distillation, IBP, °C",
+        "value": "Min 240"
+      },
+      {
+        "property": "Recovery upto 270 °C, vol %",
+        "value": "Max 3.0"
+      },
+      {
+        "property": "Recovery upto 370 °C, vol %",
+        "value": "Min 95"
+      },
+      {
+        "property": "Residue,vol %",
+        "value": "Max 2.0"
+      },
+      {
+        "property": "Density at 15°C, g/ml",
+        "value": "0.825 to 0.900"
+      }
+    ],
+    "appData": "JBO softens raw jute fibers for easier processing by adding flexibility and cohesion reducig breakage. It also used in steel plant to recover aromatics from oven gas.",
+    "packaging": ["Barrel", "Bulk"],
+    "SBU": "I&C",
+    "industrial": "Steel industry",
+    "documentation": "",
+    "alternatives": ["-"],
+    "related": ["-"]
+  },
+  "HPCL-IF-0008": {
+    "id": 14,
+    "MSDS": "LSFO_LSHSFO_VLSFO_PDF",
+    "title": "VLSFO (Very Low Sulfur Fuel Oil) RMG380",
+    "subTitle": "MARINE FUEL",
+    "description": "VLSFO is a type of marine fuel that complies with the International Maritime Organization (IMO) – Marine Oil Pollution Control (MARPOL) regulations to reduce sulphur emissions from ships. It is generally blended from different refinery streams to achieve low sulfur levels while maintaining suitable viscosity and energy content for ship engines. VLSFO is a cleaner marine fuel with very low sulfur content (0.5% by wt. max./as per statutory norms) and prescribed limit of element content in fuel (Na, V, Al, Si, Ca, Zn, P).",
+    "specifications": [
+      {
+        "property": "Kinematic Viscosity at 50 °C",
+        "value": "mm2 /s, Max 380"
+      },
+      {
+        "property": "Density at 15 °C",
+        "value": "kg/m3, Max 991"
+      },
+      {
+        "property": "CCAI",
+        "value": "Max 870"
+      },
+      {
+        "property": "Sulfur, mass %",
+        "value": "Statutory requirements"
+      },
+      {
+        "property": "Flash point",
+        "value": "°C, Min 60.0"
+      },
+      {
+        "property": "Hydrogen sulfide",
+        "value": "mg/kg, Max 2.00"
+      },
+      {
+        "property": "Acid number",
+        "value": "mg KOH/g, Max 2.5"
+      },
+      {
+        "property": "Total sediment – Aged",
+        "value": "mass%, Max 0.10"
+      },
+      {
+        "property": "Carbon residue – Micro method",
+        "value": "mass%, Max 18.00"
+      },
+      {
+        "property": "Pour Point (upper)",
+        "value": "°C, Max 30 (Winter) / 30 (Summer)"
+      },
+      {
+        "property": "Water",
+        "value": "volume %, Max 0.50"
+      },
+      {
+        "property": "Ash",
+        "value": "mass%, Max 1.00"
+      },
+      {
+        "property": "Vanadium",
+        "value": "mg/kg, Max 350"
+      },
+      {
+        "property": "Sodium",
+        "value": "mg/kg, Max 100"
+      },
+      {
+        "property": "Aluminium plus Silicon",
+        "value": "mg/kg, Max 60"
+      },
+      {
+        "property": "Calcium",
+        "value": "mg/kg, Max >30"
+      },
+      {
+        "property": "Zinc",
+        "value": "mg/kg, Max >30"
+      },
+      {
+        "property": "Phosphorus",
+        "value": "mg/kg Max > 15"
+      }
+    ],
+    "appData": "VLSFO is primarily used as a marine fuel in ships to comply with IMO regulations. VLSFO is used in various types of vessels, including container ships, bulk carriers, etc.",
+    "packaging": ["Bulk"],
+    "SBU": "I&C/SOD",
+    "industrial": "Power, Marine",
+    "documentation": "",
+    "alternatives": ["-"],
+    "related": ["-"]
+  },
+  "HPCL-IF-0010": {
+    "id": 16,
+    "MSDS": "VG10_Industrial_MSDS",
+    "title": "Paving Bitumen (VG10)",
+    "subTitle": "ROAD CONSTRUCTION MATERIAL",
+    "description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
+    "specifications": [
+      {
+        "property": "Penetration at 25°C",
+        "value": "100 g, 5 s, 0.1 mm, Min 80"
+      },
+      {
+        "property": "Absolute viscosity at 60°C, Poises",
+        "value": "800-1200"
+      },
+      {
+        "property": "Kinematic viscosity at 135°C",
+        "value": "cSt, Min 250"
+      },
+      {
+        "property": "Flash point (Cleveland open cup)",
+        "value": "°C, Min 220"
+      },
+      {
+        "property": "Solubility in trichloroethylene",
+        "value": "percent, Min 99.0"
+      },
+      {
+        "property": "Softening point (R&B)",
+        "value": "Min 40"
+      },
+      {
+        "property": "Viscosity ratio at 60°C",
+        "value": "Max 4.0"
+      },
+      {
+        "property": "Ductility at 25°C",
+        "value": "cm, Min 75"
+      }
+    ],
+    "appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
+    "packaging": ["Bulk"],
+    "SBU": "I&C",
+    "industrial": "Construction of Roads, Highways, Tarmac",
+    "documentation": "",
+    "alternatives": ["-"],
+    "related": ["-"]
+  },
+  "HPCL-IF-0029": {
+    "id": 416,
+    "MSDS": "CRMB_PDF",
+    "title": "Crumb Rubber Modified Bitumen (CRMB60)",
+    "subTitle": "Bitumen",
+    "description": "Crumb Rubber Modified Bitumen (CRMB) is a high-performance asphalt binder created by blending bitumen with crumb rubber derived from recycled tires along with special additives. It enhances road durability by improving flexibility, reducing cracking and resisting deformation under heavy traffic and extreme temperatures.",
+    "specifications": [
+      {
+        "property": "Penetration @ 25°C (100 g, 5 s)",
+        "value": "20 – 50 (0.1 mm)"
+      },
+      {
+        "property": "Softening Point (Ring & Ball)",
+        "value": "Min 60 °C"
+      },
+      {
+        "property": "Flash Point (COC)",
+        "value": "Min 220 °C"
+      },
+      {
+        "property": "Elastic Recovery @ 15°C",
+        "value": "Min 60 %"
+      },
+      {
+        "property": "Complex Modulus (G*/Sin)",
+        "value": "Min 1.0 kPa @ 10 rad/s at 70 °C"
+      },
+      {
+        "property": "Separation (Difference in Softening Point)",
+        "value": "Max 4 °C"
+      },
+      {
+        "property": "Viscosity @ 150°C",
+        "value": "6 – 12 Poise"
+      },
+      {
+        "property": "Thin Film Oven Test – Loss in Mass",
+        "value": "Max 1.0 %"
+      },
+      {
+        "property": "Thin Film Oven Test – Change in Softening Point",
+        "value": "Max 5 °C"
+      },
+      {
+        "property": "Thin Film Oven Test – Reduction in Penetration @ 25°C",
+        "value": "Max 35 %"
+      },
+      {
+        "property": "Thin Film Oven Test – Elastic Recovery @ 25°C",
+        "value": "Min 35 %"
+      },
+      {
+        "property": "Thin Film Oven Test – Complex Modulus (G*/Sin)",
+        "value": "Min 2.2 kPa @ 10 rad/s at 70 °C"
+      }
+    ],
+    "appData": "CRMB is extensively used in the construction of roads, highways and airport tarmac where improved durability, resistance to rutting and enhanced flexibility are required.",
+    "packaging": ["Bulk", "Packed (161.8 KG)"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Industrial Construction",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0011": {
+    "id": 17,
+    "MSDS": "VG30_Industrial_MSDS",
+    "title": "Paving Bitumen (VG30)",
+    "subTitle": "ROAD CONSTRUCTION MATERIAL",
+    "description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
+    "specifications": [
+      {
+        "property": "Penetration at 25°C",
+        "value": "100 g, 5 s, 0.1 mm, Min 45"
+      },
+      {
+        "property": "Absolute viscosity at 60°C, Poises",
+        "value": "2400-3600"
+      },
+      {
+        "property": "Kinematic viscosity at 135°C",
+        "value": "cSt, Min 350"
+      },
+      {
+        "property": "Flash point (Cleveland open cup)",
+        "value": "°C, Min 220"
+      },
+      {
+        "property": "Solubility in trichloroethylene",
+        "value": "percent, Min 99.0"
+      },
+      {
+        "property": "Softening point (R&B)",
+        "value": "°C, Min  47"
+      },
+      {
+        "property": "Viscosity ratio at 60°C",
+        "value": "Max  4.0"
+      },
+      {
+        "property": "Ductility at 25°C",
+        "value": "cm, Min 40"
+      }
+    ],
+    "appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
+    "packaging": ["Bulk"],
+    "SBU": "I&C",
+    "industrial": "Construction of Roads, Highways, Tarmac",
+    "documentation": "",
+    "alternatives": ["-"],
+    "related": ["-"]
+  },
+  "HPCL-IF-0026": {
+    "id": 413,
+    "MSDS": "HSD_Industrial_MSDS",
+    "title": "HSD",
+    "subTitle": "Automotive fuel",
+    "description": "High Speed Diesel (HSD) is a middle distillate petroleum fuel used in compression ignition (CI) engines. It is the largest consumed petroleum product in India. HSD is refined from crude oil through atmospheric distillation followed by hydrotreating for sulfur removal and blending for performance compliance. In India, HSD conforms to Bharat Stage VI (BS-VI) emission norms.",
+    "specifications": [
+      {
+        "property": "Density @ 15°C",
+        "value": "810.0 – 845.0 kg/m³"
+      },
+      {
+        "property": "Distillation – 95% Recovery",
+        "value": "Max 360 °C"
+      },
+      {
+        "property": "Flash Point (Abel)",
+        "value": "Min 35 °C"
+      },
+      {
+        "property": "Kinematic Viscosity @ 40°C",
+        "value": "2.0 – 4.5 cSt"
+      },
+      {
+        "property": "Total Sulphur",
+        "value": "Max 10 mg/kg"
+      },
+      {
+        "property": "Pour Point (Winter)",
+        "value": "Max 3 °C"
+      },
+      {
+        "property": "Copper Strip Corrosion (3 hr @ 50°C)",
+        "value": "Not worse than No.1"
+      },
+      {
+        "property": "Cetane Index",
+        "value": "Min 46"
+      }
+    ],
+    "appData": "Primarily used as an automotive fuel for passenger vehicles, heavy commercial vehicles such as trucks and buses, and rail locomotives. It is also widely used in construction and mining equipment, agricultural tractors, diesel generators and marine engines.",
+    "packaging": ["Bulk"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Automotive fuel",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0022": {
+    "id": 409,
+    "MSDS": "CRMB_PDF",
+    "title": "Crumb Rubber Modified Bitumen (CRMB65)",
+    "subTitle": "Industrial Construction",
+    "description": "Crumb Rubber Modified Bitumen (CRMB) is a high-performance asphalt binder produced by blending bitumen with crumb rubber derived from recycled tyres along with special performance additives. It enhances road durability by improving flexibility, reducing cracking and resisting deformation under heavy traffic and extreme temperature conditions.",
+    "specifications": [
+      {
+        "property": "Penetration @ 25°C, 100 g, 5 s",
+        "value": "20 – 50 (0.1 mm)"
+      },
+      {
+        "property": "Softening Point (Ring & Ball)",
+        "value": "Min 65 °C"
+      },
+      {
+        "property": "Flash Point (COC)",
+        "value": "Min 220 °C"
+      },
+      {
+        "property": "Elastic Recovery of Half Thread in Ductilometer @ 15°C",
+        "value": "Min 60 %"
+      },
+      {
+        "property": "Complex Modulus (G*/Sin) @ 10 rad/s",
+        "value": "Min 1.0 kPa at 70 °C"
+      },
+      {
+        "property": "Separation (Difference in Softening Point, R&B)",
+        "value": "Max 4 °C"
+      },
+      {
+        "property": "Viscosity @ 150°C",
+        "value": "6 – 12 Poise"
+      },
+      {
+        "property": "Loss in Mass (Thin Film Oven Test Residue)",
+        "value": "Max 1.0 %"
+      },
+      {
+        "property": "Change in Softening Point (TFOT Residue)",
+        "value": "Max 5 °C"
+      },
+      {
+        "property": "Reduction in Penetration of Residue @ 25°C",
+        "value": "Max 35 %"
+      },
+      {
+        "property": "Elastic Recovery of Half Thread in Ductilometer @ 25°C",
+        "value": "Min 35 %"
+      },
+      {
+        "property": "Complex Modulus (G*/Sin) @ 10 rad/s (Residue)",
+        "value": "Min 2.2 kPa at 70 °C"
+      }
+    ],
+    "appData": "CRMB is extensively used in the construction of roads, highways and airport tarmac.",
+    "packaging": ["Bulk", "Packed (161.8 KG)"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Industrial Construction",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0021": {
+    "id": 408,
+    "MSDS": "CRMB_PDF",
+    "title": "Crumb Rubber Modified Bitumen (CRMB55)",
+    "subTitle": "Industrial Construction",
+    "description": "Crumb Rubber Modified Bitumen (CRMB) is a high-performance asphalt binder produced by blending bitumen with crumb rubber derived from recycled tyres along with performance additives. It enhances road durability by improving flexibility, reducing cracking and resisting deformation under heavy traffic loads and extreme temperature conditions.",
+    "specifications": [
+      {
+        "property": "Penetration @ 25°C, 100 g, 5 s",
+        "value": "30 – 60 (0.1 mm)"
+      },
+      {
+        "property": "Softening Point (Ring & Ball)",
+        "value": "Min 55 °C"
+      },
+      {
+        "property": "Flash Point (COC)",
+        "value": "Min 220 °C"
+      },
+      {
+        "property": "Elastic Recovery of Half Thread in Ductilometer @ 15°C",
+        "value": "Min 60 %"
+      },
+      {
+        "property": "Complex Modulus (G*/Sin) @ 10 rad/s",
+        "value": "Min 1.0 kPa at 64 °C"
+      },
+      {
+        "property": "Separation (Difference in Softening Point, R&B)",
+        "value": "Max 4 °C"
+      },
+      {
+        "property": "Viscosity @ 150°C",
+        "value": "4 – 8 Poise"
+      },
+      {
+        "property": "Loss in Mass (Thin Film Oven Test Residue)",
+        "value": "Max 1.0 %"
+      },
+      {
+        "property": "Change in Softening Point (TFOT Residue)",
+        "value": "Max 5 °C"
+      },
+      {
+        "property": "Reduction in Penetration of Residue @ 25°C",
+        "value": "Max 35 %"
+      },
+      {
+        "property": "Elastic Recovery of Half Thread in Ductilometer @ 25°C",
+        "value": "Min 35 %"
+      },
+      {
+        "property": "Complex Modulus (G*/Sin) @ 10 rad/s (Residue)",
+        "value": "Min 2.2 kPa at 64 °C"
+      }
+    ],
+    "appData": "CRMB is extensively used in the construction of roads, highways and airport tarmac.",
+    "packaging": ["Bulk", "Packed (161.8 KG)"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Industrial Construction",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0025": {
+    "id": 412,
+    "MSDS": "MS_Industrial_MSDS",
+    "title": "MS",
+    "subTitle": "Automotive fuel",
+    "description": "Motor Spirit (MS) is a light petroleum distillate used in spark-ignition internal combustion engines. It is produced through atmospheric distillation, catalytic reforming, isomerization and blending of various refinery streams. In India, Motor Spirit conforms to Bharat Stage VI (BS-VI) emission norms.",
+    "specifications": [
+      {
+        "property": "Density @ 15°C",
+        "value": "720.0 – 775.0 kg/m³"
+      },
+      {
+        "property": "Distillation – % Evaporated @ 70°C (E70)",
+        "value": "10.0 – 45.0 % v/v"
+      },
+      {
+        "property": "Distillation – % Evaporated @ 100°C (E100)",
+        "value": "40.0 – 70.0 % v/v"
+      },
+      {
+        "property": "Distillation – % Evaporated @ 150°C (E150)",
+        "value": "Min 75 % v/v"
+      },
+      {
+        "property": "Distillation – Final Boiling Point",
+        "value": "Max 210 °C"
+      },
+      {
+        "property": "Distillation Residue",
+        "value": "Max 2.0 %"
+      },
+      {
+        "property": "Sulphur Content",
+        "value": "Max 10 mg/kg"
+      },
+      {
+        "property": "Gum Content (Solvent Washed)",
+        "value": "Max 40 g/m³"
+      },
+      {
+        "property": "Copper Strip Corrosion (3 hr @ 50°C)",
+        "value": "Not worse than No.1"
+      }
+    ],
+    "appData": "Primarily used as an automotive fuel for passenger vehicles including cars, motorcycles and scooters. It is also used in small generators, agricultural light machinery and recreational vehicles.",
+    "packaging": ["Bulk"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Automotive fuel",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0027": {
+    "id": 414,
+    "MSDS": "SKO_Industrial_MSDS",
+    "title": "ISKO",
+    "subTitle": "Heating & cleaning",
+    "description": "Superior Kerosene Oil (SKO) is a middle distillate petroleum fraction heavier than gasoline but lighter than diesel. It is produced during atmospheric distillation of crude oil. Historically used as a domestic fuel, its usage has declined with the introduction of cleaner fuel alternatives.",
+    "specifications": [
+      {
+        "property": "Density @ 15°C",
+        "value": "To be reported"
+      },
+      {
+        "property": "Distillation – % Recovered Below 200°C",
+        "value": "Min 20 % v/v"
+      },
+      {
+        "property": "Distillation – Final Boiling Point",
+        "value": "Max 300 °C"
+      },
+      {
+        "property": "Distillation Residue",
+        "value": "Max 2.0 %"
+      },
+      {
+        "property": "Flash Point (Abel)",
+        "value": "Min 35 °C"
+      },
+      {
+        "property": "Smoke Point",
+        "value": "Min 18 mm"
+      },
+      {
+        "property": "Total Sulphur Content",
+        "value": "Max 0.1000 % m/m"
+      },
+      {
+        "property": "Copper Strip Corrosion (3 hr @ 50°C)",
+        "value": "Not worse than No.1"
+      }
+    ],
+    "appData": "Traditionally used for domestic lighting in kerosene lamps and cooking in kerosene stoves, though usage has declined. It is also used in industrial burners, solvent applications, and as fuel for small boat engines.",
+    "packaging": ["Bulk"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Heating & cleaning",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0024": {
+    "id": 411,
+    "MSDS": "Propylene_Industrial_MSDS",
+    "title": "Propylene",
+    "subTitle": "Feedstock",
+    "description": "Propylene is a light, colorless hydrocarbon and an unsaturated alkene. It is produced during crude oil refining and steam cracking of hydrocarbons.",
+    "specifications": [
+      {
+        "property": "Minimum Purity",
+        "value": "95%"
+      }
+    ],
+    "appData": "Propylene is widely used as a chemical feedstock for the production of polypropylene (PP) plastics, oxo alcohols used in plasticizers and solvents, acrylonitrile, propylene oxide and other petrochemical derivatives. It is also used as an octane enhancing component in gasoline blending.",
+    "packaging": ["Bulk"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Feedstock",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0012": {
+    "id": 18,
+    "MSDS": "VG40_Industrial_MSDS",
+    "title": "Paving Bitumen (VG40)",
+    "subTitle": "ROAD CONSTRUCTION MATERIAL",
+    "description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties.",
+    "specifications": [
+      {
+        "property": "Penetration at 25°C",
+        "value": "100 g, 5 s, 0.1 mm, Min 35"
+      },
+      {
+        "property": "Absolute viscosity at 60°C, Poises",
+        "value": "3200-4800"
+      },
+      {
+        "property": "Kinematic viscosity at 135°C",
+        "value": "cSt, Min  400"
+      },
+      {
+        "property": "Flash point (Cleveland open cup)",
+        "value": "°C, Min 220"
+      },
+      {
+        "property": "Solubility in trichloroethylene",
+        "value": "percent, Min  99.0"
+      },
+      {
+        "property": "Softening point (R&B)",
+        "value": "°C, Min 50"
+      },
+      {
+        "property": "Viscosity ratio at 60°C",
+        "value": "Max 4.0"
+      },
+      {
+        "property": "Ductility at 25°C",
+        "value": "cm, Min 25"
+      }
+    ],
+    "appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
+    "packaging": ["Bulk"],
+    "SBU": "I&C",
+    "industrial": "Construction of Roads, Highways, Tarmac",
+    "documentation": "",
+    "alternatives": ["-"],
+    "related": ["-"]
+  },
+  "HPCL-IF-0028": {
+    "id": 415,
+    "MSDS": "",
+    "title": "CBFS",
+    "subTitle": "Feedstock",
+    "description": "Carbon Black Feedstock (CBFS) is a heavy aromatic hydrocarbon oil used as the primary raw material for manufacturing carbon black. It is rich in aromatic hydrocarbons, which are essential for efficient carbon black formation in furnace-type reactors.",
+    "specifications": [
+      {
+        "property": "Density @ 15°C",
+        "value": "1.080 – 1.120 g/cc"
+      },
+      {
+        "property": "API Gravity",
+        "value": "-5.0 to 2.0"
+      },
+      {
+        "property": "Viscosity @ 100°C",
+        "value": "50 – 100 SSU"
+      },
+      {
+        "property": "Sulphur Content",
+        "value": "Max 3.5 % wt"
+      },
+      {
+        "property": "BMCI",
+        "value": "Min 120"
+      },
+      {
+        "property": "Asphaltenes",
+        "value": "1.74 % wt"
+      },
+      {
+        "property": "Water Content",
+        "value": "Max 0.50 %"
+      },
+      {
+        "property": "Flash Point",
+        "value": "100 °C"
+      },
+      {
+        "property": "n-Pentane Insolubles",
+        "value": "To be reported"
+      },
+      {
+        "property": "Toluene Insolubles",
+        "value": "To be reported"
+      },
+      {
+        "property": "Ash Content",
+        "value": "To be reported"
+      },
+      {
+        "property": "Na, C, K, H",
+        "value": "To be reported"
+      },
+      {
+        "property": "pH",
+        "value": "To be reported"
+      }
+    ],
+    "appData": "CBFS is used as a process feedstock for producing tyre-grade carbon black, rubber-grade carbon black, pigment-grade carbon black and specialty carbon black used in inks, coatings and plastics.",
+    "packaging": ["Bulk"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Feedstock",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0018": {
+    "id": 405,
+    "MSDS": "FO380_Industrial_MSDS",
+    "title": "FO 380",
+    "subTitle": "Marine Fuel",
+    "description": "FO 380 is a high-viscosity residual marine fuel primarily used in large ocean-going vessels equipped with slow-speed and medium-speed diesel engines. Traditionally supplied as High Sulfur Fuel Oil (HSFO) (up to 3.5% sulfur), its usage today is largely restricted to vessels fitted with exhaust gas cleaning systems (scrubbers) in order to comply with IMO 2020 sulfur regulations.",
+    "specifications": [
+      {
+        "property": "Kinematic Viscosity @ 50°C",
+        "value": "Max 380 mm²/s"
+      },
+      {
+        "property": "Density @ 15°C",
+        "value": "Max 991 kg/m³"
+      },
+      {
+        "property": "Calculated Carbon Aromaticity Index (CCAI)",
+        "value": "Max 870"
+      },
+      {
+        "property": "Sulfur Content",
+        "value": "Max 3.5 % mass"
+      },
+      {
+        "property": "Flash Point",
+        "value": "Min 60 °C"
+      },
+      {
+        "property": "Hydrogen Sulfide",
+        "value": "Max 2 mg/kg"
+      },
+      {
+        "property": "Acid Number",
+        "value": "Max 2.5 mg KOH/g"
+      },
+      {
+        "property": "Total Sediment (Aged)",
+        "value": "Max 0.10 % mass"
+      },
+      {
+        "property": "Carbon Residue (Micro Method)",
+        "value": "Max 18.00 % mass"
+      },
+      {
+        "property": "Pour Point (Upper)",
+        "value": "Max 30 °C (Winter) / 30 °C (Summer)"
+      },
+      {
+        "property": "Water Content",
+        "value": "Max 0.50 % volume"
+      },
+      {
+        "property": "Ash Content",
+        "value": "Max 1.00 % mass"
+      },
+      {
+        "property": "Vanadium",
+        "value": "Max 350 mg/kg"
+      },
+      {
+        "property": "Sodium",
+        "value": "Max 100 mg/kg"
+      },
+      {
+        "property": "Aluminium + Silicon",
+        "value": "Max 60 mg/kg"
+      },
+      {
+        "property": "Calcium",
+        "value": "> 30 mg/kg"
+      },
+      {
+        "property": "Zinc",
+        "value": "> 30 mg/kg"
+      },
+      {
+        "property": "Phosphorus",
+        "value": "> 15 mg/kg"
+      }
+    ],
+    "appData": "Fuel used in ocean-going vessels fitted with exhaust gas cleaning systems (scrubbers) to comply with IMO 2020 sulfur regulations.",
+    "packaging": ["Bulk"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Marine",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0020": {
+    "id": 407,
+    "MSDS": "",
+    "title": "Paving Bitumen (VG 40 Super)",
+    "subTitle": "Industrial Construction",
+    "description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid or solid consisting essentially of a complex mixture of hydrocarbons including high molecular weight compounds such as asphaltenes and lighter fractions such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour and possesses waterproofing and adhesive properties.",
+    "specifications": [
+      {
+        "property": "Penetration @ 25°C, 100 g, 5 s",
+        "value": "Min 35 (0.1 mm)"
+      },
+      {
+        "property": "Absolute Viscosity @ 60°C",
+        "value": "4000 – 4800 Poises"
+      },
+      {
+        "property": "Kinematic Viscosity @ 135°C",
+        "value": "Min 400 cSt"
+      },
+      {
+        "property": "Flash Point (Cleveland Open Cup)",
+        "value": "Min 220 °C"
+      },
+      {
+        "property": "Solubility in Trichloroethylene",
+        "value": "Min 99.0 %"
+      },
+      {
+        "property": "Softening Point (Ring & Ball)",
+        "value": "Min 50 °C"
+      },
+      {
+        "property": "Viscosity Ratio @ 60°C (RTFOT Residue)",
+        "value": "Max 4.0"
+      },
+      {
+        "property": "Ductility @ 25°C (RTFOT Residue)",
+        "value": "Min 25 cm"
+      }
+    ],
+    "appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac.",
+    "packaging": ["Bulk"],
+    "SBU": "Industrial Fuels",
+    "industrial": "Industrial Construction",
+    "documentation": "",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IF-0007": {
+    "id": 13,
+    "MSDS": "HFHSD_PDF",
+    "title": "HFHSD (High Flash High Speed Diesel - Distillate Marine Fuel )",
+    "subTitle": "MARINE FUEL",
+    "description": "High Flash High Speed Diesel (HFHSD) is a special grade of diesel fuel with flash point (Min. 66°C) significantly higher than that of HSD (Min. 35°C). It consists of hydrocarbons with carbon numbers predominantly in the range of C9 to C28, with a boiling range of approximately 150°C to 400°C. It is produced by refining middle-distillate fractions to meet stringent safety and performance specifications IS 16731(ISO 8217).",
+    "specifications": [
+      {
+        "property": "Kinematic Viscosity at 40 °C",
+        "value": "mm2 /s, 2.000-6.000"
+      },
+      {
+        "property": "Density at 15 °C",
+        "value": "kg/m3, Max 890.0"
+      },
+      {
+        "property": "Cetane Index",
+        "value": "Min 40"
+      },
+      {
+        "property": "Sulfur",
+        "value": "mass %, Max 1.00"
+      },
+      {
+        "property": "Flash point",
+        "value": "°C, Min 60"
+      },
+      {
+        "property": "Hydrogen sulfide",
+        "value": "mg/kg, Max 2.00"
+      },
+      {
+        "property": "Acid number",
+        "value": "mg KOH/g, Max 0.5"
+      },
+      {
+        "property": "Oxidation Stability",
+        "value": "g/m3, Max 25"
+      },
+      {
+        "property": "Carbon residue – Micro method on the 10 % volume distillation residue",
+        "value": "mass%, Max 0.30"
+      },
+      {
+        "property": "Cloud Point, °C",
+        "value": "Report"
+      },
+      {
+        "property": "Cold filter plugging point, °C",
+        "value": "Report"
+      },
+      {
+        "property": "Pour Point (upper)",
+        "value": "°C, Max -6 (Winter) / 0 (Summer)"
+      },
+      {
+        "property": "Appearance",
+        "value": "Visaul, Clear & Bright"
+      },
+      {
+        "property": "Ash",
+        "value": "mass%, Max 0.010"
+      },
+      {
+        "property": "Lubricity",
+        "value": "corrected wear scar diameter (WSD) at 60 °C, μm, Max 520"
+      }
+    ],
+    "appData": "HFHSD is mainly manufactured for non-automotive applications. It is mainly applicable for marine use by Indian Navy, Merchant Ships, fishing vessels etc. where a high flash point diesel is required.",
+    "packaging": ["Bulk"],
+    "SBU": "I&C/SOD",
+    "industrial": "Marine",
+    "documentation": "",
+    "alternatives": ["-"],
+    "related": ["-"]
+  },
+  "HPCL-IF-0031": {
+    "id": 2,
+    "MSDS": "",
+    "title": "BS VI B7 HSD",
+    "subTitle": "nan",
+    "description": "BS-VI B7 HSD is a biodiesel-blended variant of BS-VI High Speed Diesel, produced by blending regular BS-VI HSD with 7% biodiesel. It meets the same BS-VI performance parameters as standard HSD while reducing net carbon emissions through the renewable biodiesel component. It is supplied to customers as a part of sustainability initiatives.",
+    "specifications": [
+      {
+        "property": "Base fuel meets BS-VI HSD specification",
+        "value": "IS 1460:2017"
+      },
+      {
+        "property": "Sulphur",
+        "value": "Max 10 mg/kg"
+      },
+      {
+        "property": "Density at 15°C",
+        "value": "810-845 kg/m3"
+      },
+      {
+        "property": "Flash Point",
+        "value": "Min 35°C (Summer) / 66°C"
+      },
+      {
+        "property": "Pour Point",
+        "value": "3°C (Winter) / 15°C (Summer) - blended with 7% Biodiesel"
+      },
+      {
+        "property": "Copper Strip Corrosion for 3 h at 50°C",
+        "value": "Not worse than No. 1B"
+      },
+      {
+        "property": "Cetane Index",
+        "value": "Min 46.0"
+      }
+    ],
+    "appData": "Used as an automotive and industrial fuel for compression-ignition engines and power generation equipment (e.g. diesel gensets), functionally identical to standard BS-VI HSD, with the added benefit of a renewable biodiesel component supporting decarbonisation/sustainability goals.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0032": {
+    "id": 4,
+    "MSDS": "LDO_Industrial_MSDS",
+    "title": "HP INDUSTRIAL DIESEL OIL (LDO)",
+    "subTitle": "Black Oils",
+    "description": "HP Industrial Diesel Oil (LDO), is a middle distillate fuel. It is a non-automotive diesel fuel used in medium and slow-speed compression ignition (CI) engines running below 750 RPM and also in pwoer plants. LDO is classified as a 'Class C' petroleum product based on its flash point.",
+    "specifications": [
+      {
+        "property": "Acid Number",
+        "value": "Max 0.500 mg KOH/g"
+      },
+      {
+        "property": "Ash",
+        "value": "Max 0.020 wt%"
+      },
+      {
+        "property": "Carbon Residue (Ramsbottom)",
+        "value": "Max 1.50 wt%"
+      },
+      {
+        "property": "Pour Point (Winter, Nov-Feb)",
+        "value": "Max 12°C"
+      },
+      {
+        "property": "Copper Strip Corrosion (3h @100°C)",
+        "value": "Not worse than No. 2"
+      },
+      {
+        "property": "Flash Point (PMCC)",
+        "value": "Min 66°C"
+      },
+      {
+        "property": "Kinematic Viscosity at 40°C",
+        "value": "2.500-15.000 cSt"
+      },
+      {
+        "property": "Total Sediments",
+        "value": "Max 0.100 wt%"
+      },
+      {
+        "property": "Density at 15°C",
+        "value": "To report"
+      },
+      {
+        "property": "Total Sulphur",
+        "value": "Max 1.500 wt%"
+      },
+      {
+        "property": "Water Content",
+        "value": "Max 0.25 %vol"
+      },
+      {
+        "property": "Governing Standard",
+        "value": "IS 15770:2021"
+      }
+    ],
+    "appData": "Used as fuel in Power generation plants, stationary compression-ignition engines operating below 750 RPM, such as pumping sets and DG sets. Also used for firing boilers and in hot-mix plants for road construction.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0033": {
+    "id": 5,
+    "MSDS": "LSHS_Industrial_MSDS",
+    "title": "LSHS PREMIUM",
+    "subTitle": "Black Oils",
+    "description": "Low Sulphur Heavy Stock (LSHS) Premium is a residual fuel oil produced from processing of indigenous crude oils. It is obtained in lieu of Furnace Oil and primarily differs from FO in its sulphur content (max 1% vs up to 4.5% for FO), making it a cleaner substitute fuel where low-sulphur norms apply.",
+    "specifications": [
+      {
+        "property": "Density at 15°C",
+        "value": "To report"
+      },
+      {
+        "property": "Flash Point (PMCC)",
+        "value": "Min 66.0°C"
+      },
+      {
+        "property": "Kinematic Viscosity at 100°C",
+        "value": "Max 25 cSt (~Max 180 cSt at 50°C)"
+      },
+      {
+        "property": "Gross Calorific Value",
+        "value": "To report (typ. ~10,400–10,500 Cal/g)"
+      },
+      {
+        "property": "Pour Point (Summer)",
+        "value": "Max 27°C"
+      },
+      {
+        "property": "Sediment",
+        "value": "Max 0.25% m/m"
+      },
+      {
+        "property": "Total Sulphur",
+        "value": "Max 1.000% m/m"
+      },
+      {
+        "property": "Water Content",
+        "value": "Max 1.00% v/v"
+      },
+      {
+        "property": "Ash",
+        "value": "Max 0.1000% m/m"
+      }
+    ],
+    "appData": "Used as a low-sulphur substitute for Furnace Oil in industrial boilers and furnaces, particularly in regions/states where high-sulphur FO use is restricted or banned by pollution control authorities.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0034": {
+    "id": 6,
+    "MSDS": "FO_Indstrial_MSDS",
+    "title": "FO",
+    "subTitle": "Black Oils",
+    "description": "Furnace Oil (FO) - also known as Bunker Fuel, Fuel Oil, Heavy Fuel Oil (HFO) or Intermediate Fuel Oil (IFO) - is a dark, viscous residual fuel obtained as a heavy distillate from crude oil refining. It is supplied in LV, MV1, MV2 and HV viscosity grades.",
+    "specifications": [
+      {
+        "property": "Density at 15°C",
+        "value": "As observed"
+      },
+      {
+        "property": "Kinematic Viscosity at 50°C",
+        "value": "80-370 cSt (grade dependent - LV/MV1/MV2/HV)"
+      },
+      {
+        "property": "Flash Point (PMCC)",
+        "value": "Min 66°C"
+      },
+      {
+        "property": "Total Sulphur",
+        "value": "Max 3.5-4.5% by mass (grade dependent)"
+      },
+      {
+        "property": "Ash",
+        "value": "Max 0.1% by volume"
+      },
+      {
+        "property": "Sediment",
+        "value": "Max 0.25% by mass"
+      },
+      {
+        "property": "Water Content",
+        "value": "Max 1% by volume"
+      },
+      {
+        "property": "Gross Calorific Value",
+        "value": "Min 10,000 Cal/gm (~10,200 Kcal/kg avg)"
+      },
+      {
+        "property": "Governing Standard",
+        "value": "IS 1593:1982"
+      }
+    ],
+    "appData": "Used for steam generation, industrial furnaces and power generation. Also used as a feedstock for fertiliser manufacturing.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0035": {
+    "id": 10,
+    "MSDS": "",
+    "title": "HP TUFFBIT BITUMEN VG10-161.8",
+    "subTitle": "Bitumen",
+    "description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties. ",
+    "specifications": [
+      {
+        "property": "Penetration at 25°C, 100 g, 5 s, 0.1 mm",
+        "value": "Min 80"
+      },
+      {
+        "property": "Absolute Viscosity at 60°C",
+        "value": "800-1200 Poises"
+      },
+      {
+        "property": "Kinematic Viscosity at 135°C",
+        "value": "Min 250 cSt"
+      },
+      {
+        "property": "Flash Point (Cleveland Open Cup)",
+        "value": "Min 220°C"
+      },
+      {
+        "property": "Solubility in Trichloroethylene",
+        "value": "Min 99.0%"
+      },
+      {
+        "property": "Softening Point (R&B)",
+        "value": "Min 40°C"
+      },
+      {
+        "property": "Viscosity Ratio at 60°C (after Rolling Thin Film Oven Test)",
+        "value": "Max 4.0"
+      },
+      {
+        "property": "Ductility at 25°C (after Rolling Thin Film Oven Test)",
+        "value": "Min 75 cm"
+      }
+    ],
+    "appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac. ",
+    "packaging": ["Packed"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0036": {
+    "id": 11,
+    "MSDS": "",
+    "title": "HP TUFFBIT BITUMEN VG30-161.8",
+    "subTitle": "Bitumen",
+    "description": "Bitumen is obtained as the last residue in fractional distillation of crude petroleum. It is defined as a viscous liquid, or a solid, consisting essentially of complex mixture of hydrocarbons including high-molecular-weight compounds, such as asphaltenes, and lighter fractions, such as aromatics and saturates. It is substantially non-volatile and softens gradually when heated. It is black or brown in colour & possesses waterproofing and adhesive properties. ",
+    "specifications": [
+      {
+        "property": "Penetration at 25°C, 100 g, 5 s, 0.1 mm",
+        "value": "Min 45"
+      },
+      {
+        "property": "Absolute Viscosity at 60°C",
+        "value": "2400-3600 Poises"
+      },
+      {
+        "property": "Kinematic Viscosity at 135°C",
+        "value": "Min 350 cSt"
+      },
+      {
+        "property": "Flash Point (Cleveland Open Cup)",
+        "value": "Min 220°C"
+      },
+      {
+        "property": "Solubility in Trichloroethylene",
+        "value": "Min 99.0%"
+      },
+      {
+        "property": "Softening Point (R&B)",
+        "value": "Min 47°C"
+      },
+      {
+        "property": "Viscosity Ratio at 60°C (after Rolling Thin Film Oven Test)",
+        "value": "Max 4.0"
+      },
+      {
+        "property": "Ductility at 25°C (after Rolling Thin Film Oven Test)",
+        "value": "Min 40 cm"
+      }
+    ],
+    "appData": "Paving bitumen is extensively used in the construction of roads, highways and airport tarmac. ",
+    "packaging": ["Packed"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0037": {
+    "id": 16,
+    "MSDS": "Naptha_Industrial_MSDS",
+    "title": "NAPHTHA",
+    "subTitle": "Specialty Products",
+    "description": "Naphtha is a light petroleum distillate fraction with hydrocarbons boiling between 30°C and 200°C, generally containing 5 to 12 carbon atoms per molecule. It is primarily processed through catalytic reforming, which converts naphtha into high-octane reformate used for gasoline blending and as feedstock for aromatic petrochemicals.",
+    "specifications": [
+      {
+        "property": "Density at 15°C",
+        "value": "Max 0.735 g/cc"
+      },
+      {
+        "property": "Initial Boiling Point (IBP)",
+        "value": "Min 25°C"
+      },
+      {
+        "property": "Final Boiling Point (FBP)",
+        "value": "Max 170°C"
+      },
+      {
+        "property": "Reid Vapour Pressure (RVP) @37.8°C",
+        "value": "Max 13 psi"
+      },
+      {
+        "property": "Sulphur",
+        "value": "Max 300 ppm wt"
+      },
+      {
+        "property": "Lead",
+        "value": "Max 40 ppb"
+      },
+      {
+        "property": "Colour (Saybolt)",
+        "value": "Min +20"
+      },
+      {
+        "property": "Residue on Evaporation",
+        "value": "Max 5 mg/100 ml"
+      },
+      {
+        "property": "Calorific Value",
+        "value": "Min 10,500 kcal/kg"
+      },
+      {
+        "property": "Ramsbottom Carbon Residue",
+        "value": "Max 0.2 wt%"
+      },
+      {
+        "property": "Aromatics",
+        "value": "Max 13 vol%"
+      },
+      {
+        "property": "Paraffins",
+        "value": "Min 65 vol%"
+      },
+      {
+        "property": "Chlorides",
+        "value": "Max 1.0 mg/L"
+      },
+      {
+        "property": "Oxygenates",
+        "value": "Max 50 ppm"
+      },
+      {
+        "property": "CS₂",
+        "value": "Max 5 ppm"
+      },
+      {
+        "property": "Governing Standard",
+        "value": "BIS IS 1448 (various parts) – Typical export-grade guaranteed specification"
+      }
+    ],
+    "appData": "Used as feedstock for catalytic reforming to produce high-octane gasoline blending stock, and as a key petrochemical feedstock for steam cracking to produce olefins (ethylene, propylene) and aromatics (benzene, toluene, xylene) used in plastics manufacturing.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0038": {
+    "id": 17,
+    "MSDS": "Solvent1425_Industrial_MSDS",
+    "title": "HP SOLVENT 1425",
+    "subTitle": "Specialty Products",
+    "description": "HP Solvent 1425 is a Special Boiling Point (SBP) solvent - a fast-to-medium evaporating aliphatic hydrocarbon fluid consisting of paraffins and cycloparaffins in the C6-C10 range. It has a narrow boiling range, low aromatic content and a mild, sweet odour.",
+    "specifications": [
+      {
+        "property": "Appearance",
+        "value": "Clear and bright, free from un-dissolved water/foreign matter"
+      },
+      {
+        "property": "Colour (Saybolt)",
+        "value": "Min 25"
+      },
+      {
+        "property": "Density at 15°C",
+        "value": "To report (typ. ~0.690 g/mL)"
+      },
+      {
+        "property": "Distillation Initial Boiling Point (IBP)",
+        "value": "Min 50.0°C"
+      },
+      {
+        "property": "Distillation Dry Point",
+        "value": "Max 120.0°C"
+      },
+      {
+        "property": "Residue on Evaporation",
+        "value": "Max 5.0 mg/100 mL"
+      },
+      {
+        "property": "Copper Strip Corrosion (3 h @ 50°C)",
+        "value": "Not more than No. 1"
+      },
+      {
+        "property": "Doctor Test",
+        "value": "Negative"
+      },
+      {
+        "property": "Governing Standard",
+        "value": "IS 1745:2018 (Third Revision)"
+      }
+    ],
+    "appData": "Used for cleaning and degreasing to remove grease, oil, brake fluid and other contaminants from workshop floors, walls, vehicles and machinery; used in rubber compounding; and as a solvent in adhesives and sealants.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0039": {
+    "id": 18,
+    "MSDS": "Solvent2445_Industrial_MSDS",
+    "title": "HP MTO 2445",
+    "subTitle": "Specialty Products",
+    "description": "HP MTO 2445 is a colourless petroleum-derived Mineral Turpentine Oil (MTO), mainly comprising aliphatic hydrocarbons (C10 and above). It is chemically stable, non-corrosive, has medium evaporating characteristics, leaves no non-volatile residue on evaporation, and has a mild, sweet odour with low aromatic content.",
+    "specifications": [
+      {
+        "property": "Appearance",
+        "value": "Clear and bright, free from un-dissolved water/foreign matter"
+      },
+      {
+        "property": "Colour (Saybolt)",
+        "value": "Min 21"
+      },
+      {
+        "property": "Density at 15°C",
+        "value": "To report"
+      },
+      {
+        "property": "Copper Strip Corrosion (3 h @ 50°C)",
+        "value": "Not worse than No. 1B"
+      },
+      {
+        "property": "Distillation Initial Boiling Point (IBP)",
+        "value": "Min 125.0°C"
+      },
+      {
+        "property": "Distillation Final Boiling Point",
+        "value": "Max 240.0°C"
+      },
+      {
+        "property": "Flash Point (Abel)",
+        "value": "Min 30.0°C"
+      },
+      {
+        "property": "Residue on Evaporation",
+        "value": "Max 5.0 mg/100 mL"
+      },
+      {
+        "property": "Aromatic Content",
+        "value": "Max 40.0% v/v"
+      },
+      {
+        "property": "Governing Standard",
+        "value": "IS 1745:2018 (Third Revision)"
+      }
+    ],
+    "appData": "Used as a raw material and thinner in the paint industry, solvent for textile printing with pigment colours, dry-cleaning solvent, carrier for oil-soluble waxes and resins in polish manufacture, thinner for rust preventives, solvent for metal/machine degreasing and industrial cleaning, solvent in electrical insulating compounds and insecticidal formulations, and diluent for waterproofing/mothproofing/binding/sealing compounds.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0040": {
+    "id": 19,
+    "MSDS": "Hexane_Industrial_MSDS",
+    "title": "HP FOOD GRADE HEXANE",
+    "subTitle": "Specialty Products",
+    "description": "HP Food Grade Hexane is a colourless, volatile, flammable liquid with a gasoline-like odour and a narrow boiling range of 63-70°C. It leaves no non-volatile residue on evaporation and has a low aromatic content, making it suitable for food-grade solvent extraction applications.",
+    "specifications": [
+      {
+        "property": "Appearance",
+        "value": "Clear and bright, free from un-dissolved water/foreign matter"
+      },
+      {
+        "property": "Colour (Saybolt)",
+        "value": "Min 30"
+      },
+      {
+        "property": "Density at 20°C",
+        "value": "0.6600–0.6870 g/mL"
+      },
+      {
+        "property": "Distillation Initial Boiling Point (IBP)",
+        "value": "Min 63.0°C"
+      },
+      {
+        "property": "Distillation between 64–70°C",
+        "value": "Min 95.0% v/v"
+      },
+      {
+        "property": "Copper Strip Corrosion (3 h @ 50°C)",
+        "value": "Not more than No. 1"
+      },
+      {
+        "property": "Non-Volatile Residue",
+        "value": "Max 0.0005 g/100 mL"
+      },
+      {
+        "property": "Reaction of Non-Volatile Residue",
+        "value": "Neutral to Methyl Orange"
+      },
+      {
+        "property": "Doctor Test",
+        "value": "Negative"
+      },
+      {
+        "property": "Governing Standard",
+        "value": "IS 3470:2017 (Second Revision)"
+      }
+    ],
+    "appData": "Used as a solvent for extraction of vegetable oils (groundnut, mustard, cottonseed, soybean, rapeseed, rice bran) for edible and soap-making purposes, extraction of essential oils from flowers, preparation of rubber adhesives and sealing compounds, and as a carrier in pharmaceutical and polymer industries.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0041": {
+    "id": 20,
+    "MSDS": "JBO_Industrial_MSDS",
+    "title": "JBO",
+    "subTitle": "Specialty Products",
+    "description": "Jute Batching Oil (JBO) is a specially blended mineral oil used as a softening, lubricating and antistatic/emulsifying agent in the jute textile industry, applied to jute fibres prior to spinning to improve pliability and reduce breakage during processing.",
+    "specifications": [
+      {
+        "property": "Density at 15°C",
+        "value": "0.8250–0.9000 g/mL"
+      },
+      {
+        "property": "Colour (ASTM)",
+        "value": "Max 7.0"
+      },
+      {
+        "property": "Flash Point (PMCC)",
+        "value": "Min 100°C"
+      },
+      {
+        "property": "Kinematic Viscosity at 37.8°C",
+        "value": "Max 15.00 cSt"
+      },
+      {
+        "property": "Pour Point",
+        "value": "Max 30°C"
+      },
+      {
+        "property": "Distillation Initial Boiling Point (IBP)",
+        "value": "Min 240°C"
+      },
+      {
+        "property": "Distillation Recovery at 270°C",
+        "value": "Max 3.0% v/v"
+      },
+      {
+        "property": "Distillation Recovery at 370°C",
+        "value": "Min 95.0% v/v"
+      },
+      {
+        "property": "Distillation Residue",
+        "value": "Max 2.0% v/v"
+      },
+      {
+        "property": "Test Method",
+        "value": "IS 1448 (various parts)"
+      }
+    ],
+    "appData": "Applied as a softening, lubricating and antistatic/emulsifying agent on jute fibres before spinning, to improve fibre pliability and reduce breakage during batching and spinning.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  },
+  "HPCL-IF-0042": {
+    "id": 21,
+    "MSDS": "Sulpher_Industrial_MSDS",
+    "title": "SULPHUR",
+    "subTitle": "Specialty Products",
+    "description": "Sulphur is a by-product recovered from the desulphurisation units at HPCL's refineries (Mumbai and Visakh). It is produced at approximately 140°C with about 99.9% purity, solidifies at normal ambient temperature.",
+    "specifications": [
+      {
+        "property": "Elemental Sulphur",
+        "value": "Min ~99.9% wt"
+      },
+      {
+        "property": "Acidity",
+        "value": "Max ~0.0003% wt (as mg NaOH/g)"
+      },
+      {
+        "property": "Ash Content",
+        "value": "Max 0.04% wt"
+      },
+      {
+        "property": "Moisture Content",
+        "value": "Max 0.05% wt"
+      },
+      {
+        "property": "Organic Matter",
+        "value": "Nil"
+      },
+      {
+        "property": "Colour",
+        "value": "Bright Yellow"
+      },
+      {
+        "property": "Test Methods",
+        "value": "IS 6655, IS 1448 Part 4"
+      }
+    ],
+    "appData": "Used as a raw material for manufacturing sulphuric acid, fertilisers, fungicides and pesticides, batteries, pharmaceutical products, and for rubber vulcanisation and paint formulation.",
+    "packaging": ["Bulk"],
+    "SBU": "",
+    "industrial": "Industrial Fuels",
+    "documentation": "",
+    "alternatives": [],
+    "related": ["-"]
+  }
 }

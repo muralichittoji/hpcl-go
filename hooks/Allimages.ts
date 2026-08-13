@@ -22,4 +22,5 @@ export const ALL_IMAGES = {
 	FIRE_ICON: require("@/assets/images/icons/fire-solid.png"),
 	NATURAL_GAS_ICON: require("@/assets/images/icons/Natural_gas.png"),
 	HP_Gas_Dolfin: require("@/assets/images/HPGasDolfin.png"),
+	PETCHEM_ICON: require("@/assets/images/icons/Petchem_icon2.png"),
 };

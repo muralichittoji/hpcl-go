@@ -10,6 +10,7 @@ type Props = {
 	setOpenPdf: React.Dispatch<React.SetStateAction<boolean>>;
 	setPdfUrl: React.Dispatch<React.SetStateAction<string>>;
 	setPdfName: React.Dispatch<React.SetStateAction<string>>;
+	pageName: string;
 };
 
 const DocumentsDownloads = ({
@@ -17,6 +18,7 @@ const DocumentsDownloads = ({
 	setOpenPdf,
 	setPdfUrl,
 	setPdfName,
+	pageName,
 }: Props) => {
 	useEffect(() => {
 		console.log({ data }, data?.MSDS);
@@ -32,6 +34,10 @@ const DocumentsDownloads = ({
 		setOpenPdf(true);
 	};
 
+	const isPetrochemicals = data?.industrial === "Petrochemicals";
+	const pet_documents_with_name = [{ title: `TDS - ${data?.title}`, icon: "🛡️" }];
+	const documentsToShow = isPetrochemicals ? pet_documents_with_name : documents;
+
 	return (
 		<View style={styles.container}>
 			{/* Header */}
@@ -40,7 +46,7 @@ const DocumentsDownloads = ({
 				<Text style={styles.headerText}>Documents & Downloads</Text>
 			</View>
 
-			{documents.map((item, index) => (
+			{documentsToShow.map((item, index) => (
 				<TouchableOpacity key={index} style={styles.item} onPress={openMsdsPdf}>
 					<View style={styles.itemIcon}>
 						<Text style={styles.iconText}>{item.icon}</Text>

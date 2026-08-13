@@ -1,6 +1,5 @@
 import CommonModal from "@/components/Ui/CommonModal";
 import Header from "@/components/Ui/Header";
-import InputSearch from "@/components/Ui/InputSearch";
 import LoadingOverlay from "@/components/Ui/LoadingOverlay";
 import wholeData from "@/constants/Jsons/wholeData.json";
 import { Colors } from "@/constants/theme";
@@ -15,6 +14,7 @@ import {
 	useWindowDimensions,
 	View,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const KnowledgeCenter = () => {
 	const [loading, setLoading] = useState(false);
@@ -85,14 +85,14 @@ const KnowledgeCenter = () => {
 	};
 
 	return (
-		<View style={styles.container}>
+		<SafeAreaView style={styles.container}>
 			<Header caption={"Knowledge \n Center"} />
-			<InputSearch
+			{/* <InputSearch
 				setLoading={setLoading}
 				setSlowNet={setSlowNet}
 				placeHolder="Search"
 				mode="new"
-			/>
+			/> */}
 			<LoadingOverlay visible={loading} text="Analyzing..." />
 
 			<CommonModal
@@ -142,7 +142,7 @@ const KnowledgeCenter = () => {
 					))}
 				</View>
 			</View>
-		</View>
+		</SafeAreaView>
 	);
 };
 

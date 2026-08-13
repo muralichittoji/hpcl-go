@@ -160,3 +160,10 @@ cd android
 # for eas
 eas build --profile preview --platform android
 ```
+
+## build ios
+
+```bash
+eas build --platform ios
+eas submit --platform ios
+```

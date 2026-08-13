@@ -1,16 +1,12 @@
 import CommonModal from "@/components/Ui/CommonModal";
-import Header from "@/components/Ui/Header";
-import InputSearch from "@/components/Ui/InputSearch";
-import LoadingOverlay from "@/components/Ui/LoadingOverlay";
-import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
-
+import SubPageListView from "@/components/Ui/SubPageListView";
 import { Colors } from "@/constants/theme";
 import { MaterialIcons } from "@expo/vector-icons";
 
 import { router, useLocalSearchParams } from "expo-router";
 
-import React, { useEffect, useState } from "react";
-import { Linking, StyleSheet, Text, View } from "react-native";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { Linking, StyleSheet, Text } from "react-native";
 
 const SubPage = () => {
 	const { item } = useLocalSearchParams<{ item: string }>();
@@ -19,22 +15,97 @@ const SubPage = () => {
 
 	const rawData = parsedItem?.value;
 	const title = parsedItem?.label;
+	const bannerIcon = parsedItem?.icon;
 
 	// ✅ IMPORTANT FIX
 	const data = Array.isArray(rawData) ? rawData : null;
 
 	const [slowNet, setSlowNet] = useState(false);
-	const [loading, setLoading] = useState(false);
+
+	/* ---------------- NAVIGATION HANDLER (memoized to avoid dependency issues) ---------------- */
+	const onItemPress = useCallback(
+		(item: any) => {
+			if (item?.type === "link") {
+				const url = item.value ?? item.value;
+				if (typeof url === "string") {
+					Linking.openURL(url).catch(() => {
+						console.warn("Failed to open link:", url);
+					});
+				}
+				return;
+			}
+
+			if (typeof item === "string") {
+				router.push({
+					pathname: "/InfoScreen",
+					params: {
+						name: item,
+						pageId: parsedItem?.id,
+						pageLabel: parsedItem?.label,
+					},
+				});
+				return;
+			}
+
+			if (item?.navigation) {
+				router.push({ pathname: item.navigation });
+				return;
+			}
+
+			if (!item?.value) return;
+
+			if (Array.isArray(item.value)) {
+				// Ensure icon and iconType are included when navigating to nested pages
+				const navigationItem = {
+					...item,
+					icon: item.icon || parsedItem?.icon,
+					iconType: item.iconType || parsedItem?.iconType,
+				};
+				router.push({
+					pathname: "/SubPage",
+					params: { item: JSON.stringify(navigationItem) },
+				});
+				return;
+			}
+
+			if (typeof item.value === "string") {
+				router.push({
+					pathname: "/InfoScreen",
+					params: {
+						name: item.value,
+						pageId: parsedItem?.id,
+						pageLabel: parsedItem?.label,
+					},
+				});
+			}
+		},
+		[parsedItem?.id, parsedItem?.label, parsedItem?.icon, parsedItem?.iconType],
+	);
+
+	// Transform data into SubPageListView format
+	const listItems = useMemo(() => {
+		if (!data || !Array.isArray(data)) return [];
+
+		return data.map((item: any) => ({
+			label: item.label || "Untitled",
+			onPress: () => onItemPress(item),
+			icon: item.icon,
+			iconType: item.iconType,
+		}));
+	}, [data, onItemPress]);
 
 	/* ---------------- AUTO REDIRECT ---------------- */
 	useEffect(() => {
 		if (!rawData) return;
 
-		// ✅ If it's a FINAL PRODUCT → go to InfoScreen
 		if (typeof rawData === "string") {
 			router.replace({
 				pathname: "/InfoScreen",
-				params: { name: rawData },
+				params: {
+					name: rawData,
+					pageId: parsedItem?.id,
+					pageLabel: parsedItem?.label,
+				},
 			});
 			return;
 		}
@@ -44,63 +115,37 @@ const SubPage = () => {
 			const item = rawData[0];
 
 			if (Array.isArray(item.value)) {
+				// Ensure icon and iconType are included for nested pages
+				const navigationItem = {
+					...item,
+					icon: item.icon || parsedItem?.icon,
+					iconType: item.iconType || parsedItem?.iconType,
+				};
 				router.replace({
 					pathname: "/SubPage",
-					params: { item: JSON.stringify(item) },
+					params: { item: JSON.stringify(navigationItem) },
 				});
 			} else {
 				router.replace({
 					pathname: "/InfoScreen",
-					params: { name: item.value },
+					params: {
+						name: item.value,
+						pageId: parsedItem?.id,
+						pageLabel: parsedItem?.label,
+					},
 				});
 			}
 		}
-	}, [rawData]);
+	}, [
+		rawData,
+		parsedItem?.id,
+		parsedItem?.label,
+		parsedItem?.icon,
+		parsedItem?.iconType,
+	]);
 
-	/* ---------------- NAVIGATION ---------------- */
-	const onItemPress = (item: any) => {
-		if (item?.type === "link") {
-			const url = item.value ?? item.value;
-			if (typeof url === "string") {
-				Linking.openURL(url).catch(() => {
-					console.warn("Failed to open link:", url);
-				});
-			}
-			return;
-		}
-
-		if (typeof item === "string") {
-			router.push({
-				pathname: "/InfoScreen",
-				params: { name: item },
-			});
-			return;
-		}
-
-		if (item?.navigation) {
-			router.push({ pathname: item.navigation });
-			return;
-		}
-
-		if (!item?.value) return;
-
-		if (Array.isArray(item.value)) {
-			router.push({
-				pathname: "/SubPage",
-				params: { item: JSON.stringify(item) },
-			});
-			return;
-		}
-
-		if (typeof item.value === "string") {
-			router.push({
-				pathname: "/InfoScreen",
-				params: { name: item.value },
-			});
-		}
-	};
-
-	/* ---------------- PREVENT FLASH ---------------- */
+	/* ---------------- PREVENT FLASH & EARLY RETURNS ---------------- */
+	// Must be after all hooks
 	if (
 		typeof rawData === "string" ||
 		(Array.isArray(rawData) && rawData.length === 1)
@@ -108,21 +153,22 @@ const SubPage = () => {
 		return null;
 	}
 
-	const hasIcons =
-		Array.isArray(data) &&
-		data.some(
-			(item) => item.iconType === "image" || item.iconType === "vector",
+	if (!title) {
+		return (
+			<Text style={styles.emptyText}>
+				<MaterialIcons
+					name="priority-high"
+					size={24}
+					color={Colors.orangeDeep}
+				/>{" "}
+				Coming Soon
+			</Text>
 		);
+	}
 
 	/* ---------------- UI ---------------- */
 	return (
-		<View style={styles.container}>
-			<Header caption={title} />
-
-			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} mode="new" />
-
-			<LoadingOverlay visible={loading} text="Analyzing..." />
-
+		<>
 			<CommonModal
 				visible={slowNet}
 				title="Slow Internet"
@@ -133,14 +179,11 @@ const SubPage = () => {
 			/>
 
 			{data && data.length > 0 ? (
-				<UnifiedListMenu
-					items={data}
-					navigate={onItemPress}
-					itemHeight={170}
-					scrollable
-					bottomMinimise={60}
-					showIcons={hasIcons}
-					useItemName={!hasIcons}
+				<SubPageListView
+					title={title}
+					bannerIcon={bannerIcon}
+					items={listItems}
+					scrollable={true}
 				/>
 			) : (
 				<Text style={styles.emptyText}>
@@ -152,7 +195,7 @@ const SubPage = () => {
 					Coming Soon
 				</Text>
 			)}
-		</View>
+		</>
 	);
 };
 

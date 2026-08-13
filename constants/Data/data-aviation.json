@@ -1,7 +1,7 @@
 {
 	"HPCL-MS-0005": {
 		"id": 0,
-		"MSDS": "",
+		"MSDS": "ATF_PDF",
 		"title": "Aviation Turbine Fuel",
 		"subTitle": "nan",
 		"description": "Aviation Jet Fuel JET A-1 (JETA1) is a clear liquid hydrocarbon-based mixture designed primarily for use as a turbine engine fuel in industrial and professional aviation applications. This complex fuel has a boiling range of 130–300°C, a flash point of greater than equals to 38°C, and a freezing point of greater than equals to -47°C. It is inherently hydrophobic with very poor water solubility and evaporates slowly.",
@@ -367,7 +367,7 @@
 		"packaging": ["Bulk"],
 		"SBU": "",
 		"industrial": "Aviation",
-		"documentation": "-",
+		"documentation": "",
 		"alternatives": [],
 		"related": ["-"]
 	}

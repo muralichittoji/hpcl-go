@@ -13,10 +13,10 @@ import DropDownPicker from "react-native-dropdown-picker";
 
 import CommonModal from "@/components/Ui/CommonModal";
 import Header from "@/components/Ui/Header";
-import InputSearch from "@/components/Ui/InputSearch";
 import LoadingOverlay from "@/components/Ui/LoadingOverlay";
 import wholeData from "@/constants/Jsons/wholeData.json";
 import { Colors } from "@/constants/theme";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 /* -------------------- Types -------------------- */
 type PickerJSON = {
@@ -91,9 +91,9 @@ const ProductFinder = () => {
 
 	/* -------------------- UI -------------------- */
 	return (
-		<View style={styles.container}>
+		<SafeAreaView style={styles.container}>
 			<Header caption={"Product \n Finder"} />
-			<InputSearch setLoading={setLoading} setSlowNet={setSlowNet} mode="new" />
+			{/* <InputSearch setLoading={setLoading} setSlowNet={setSlowNet} mode="new" /> */}
 			<LoadingOverlay visible={loading} text="Analyzing..." />
 
 			<CommonModal
@@ -194,7 +194,7 @@ const ProductFinder = () => {
 					))}
 				</View>
 			</ScrollView>
-		</View>
+		</SafeAreaView>
 	);
 };
 

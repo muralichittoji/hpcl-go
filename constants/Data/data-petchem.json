@@ -1,234 +1,246 @@
 {
-	"HPCL-IF-0017": {
-		"id": 23,
-		"MSDS": "",
-		"title": "F02020-MS",
-		"subTitle": "PE Grade",
-		"description": "LLDPE grade for manufacturing of liners and agricultural films.",
-		"specifications": [
-			{
-				"property": "Density of Resin @ 23°C",
-				"value": "0.918 g/cc"
-			},
-			{
-				"property": "Melt Flow Index (190°C / 2.16 kg)",
-				"value": "2 g/10 min"
-			},
-			{
-				"property": "Tensile Strength at Yield (MD/TD)",
-				"value": "9 / 9 MPa"
-			},
-			{
-				"property": "Tensile Strength at Break (MD/TD)",
-				"value": "29 / 22 MPa"
-			},
-			{
-				"property": "Elongation at Break (MD/TD)",
-				"value": "650 / 760 %"
-			},
-			{
-				"property": "Gloss @ 60°",
-				"value": "95 GU"
-			},
-			{
-				"property": "Haze",
-				"value": "11 %"
-			},
-			{
-				"property": "Dart Impact Strength",
-				"value": "2.7 g/micron"
-			},
-			{
-				"property": "Elmendorf Tear Strength (MD/TD)",
-				"value": "5.3 / 15.2 g/micron"
-			}
-		],
-		"appData": "Used for FMCG packaging, industrial liners and agricultural film applications.",
-		"packaging": ["25 kg Raffia woven sack bags"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Petrochemicals",
-		"documentation": "",
-		"alternatives": ["Reliance S030SG"],
-		"related": []
-	},
-	"HPCL-IF-0016": {
-		"id": 22,
-		"MSDS": "LLDPE_PDF",
-		"title": "F01019S-MS",
-		"subTitle": "PE Grade",
-		"description": "LLDPE grade for manufacturing of general packaging film, multilayer films and agricultural films.",
-		"specifications": [
-			{
-				"property": "Density of Resin @ 23°C",
-				"value": "0.920 g/cc"
-			},
-			{
-				"property": "Melt Flow Index (190°C / 2.16 kg)",
-				"value": "0.96"
-			},
-			{
-				"property": "Tensile Strength at Break (MD/TD)",
-				"value": "5080 / 4120 psi"
-			},
-			{
-				"property": "Elongation (MD/TD)",
-				"value": "680 / 910 %"
-			},
-			{
-				"property": "Gloss @ 45°",
-				"value": "40"
-			},
-			{
-				"property": "Haze",
-				"value": "21 %"
-			},
-			{
-				"property": "Dart Impact",
-				"value": "130 g/mil"
-			},
-			{
-				"property": "Tear Strength (MD/TD)",
-				"value": "150 / 385 g/mil"
-			}
-		],
-		"appData": "Used for FMCG packaging, general packaging films and multilayer film applications.",
-		"packaging": ["25 kg Raffia woven sack bags"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Petrochemicals",
-		"documentation": "",
-		"alternatives": ["Reliance F19010"],
-		"related": []
-	},
-	"HPCL-IF-0014": {
-		"id": 20,
-		"MSDS": "HOMOPOLYMER_PDF",
-		"title": "HM120A-MS",
-		"subTitle": "PP Homopolymer",
-		"description": "Polypropylene grade for manufacturing of raffia woven sack fabric and bag manufacturing.",
-		"specifications": [
-			{
-				"property": "Melt Flow Rate (230°C / 2.16 kg)",
-				"value": "3.5 g/10 min"
-			},
-			{
-				"property": "Tensile Stress at Yield (23°C, 50 mm/min)",
-				"value": "33 MPa"
-			},
-			{
-				"property": "Tensile Strain at Yield (23°C, 50 mm/min)",
-				"value": "10 %"
-			},
-			{
-				"property": "Flexural Modulus",
-				"value": "1480 MPa"
-			},
-			{
-				"property": "Vicat Softening Temperature (A50)",
-				"value": "154 °C"
-			},
-			{
-				"property": "Deflection Temperature under Load (0.45 MPa, Unannealed)",
-				"value": "90 °C"
-			}
-		],
-		"appData": "Used for manufacturing raffia woven sacks such as cement bags, fertilizer bags and rice bags.",
-		"packaging": ["25 kg Raffia woven sack bags"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Petrochemicals",
-		"documentation": "",
-		"alternatives": ["Reliance F19010"],
-		"related": []
-	},
-	"HPCL-IF-0015": {
-		"id": 21,
-		"MSDS": "",
-		"title": "HR033-MS",
-		"subTitle": "PP Homopolymer Raffia",
-		"description": "Polypropylene grade for manufacturing of raffia woven sack fabric and bag manufacturing.",
-		"specifications": [
-			{
-				"property": "Melt Flow Rate (230°C / 2.16 kg)",
-				"value": "3.5 g/10 min"
-			},
-			{
-				"property": "Tensile Stress at Yield (23°C, 50 mm/min)",
-				"value": "33 MPa"
-			},
-			{
-				"property": "Tensile Strain at Yield (23°C, 50 mm/min)",
-				"value": "10 %"
-			},
-			{
-				"property": "Flexural Modulus",
-				"value": "1480 MPa"
-			},
-			{
-				"property": "Vicat Softening Temperature (A50)",
-				"value": "154 °C"
-			},
-			{
-				"property": "Deflection Temperature under Load (0.45 MPa, Unannealed)",
-				"value": "90 °C"
-			}
-		],
-		"appData": "Used for manufacturing raffia woven sacks such as cement bags, fertilizer bags and rice bags.",
-		"packaging": ["25 kg Raffia woven sack bags"],
-		"SBU": "Industrial Fuels",
-		"industrial": "Petrochemicals",
-		"documentation": "",
-		"alternatives": ["Reliance F19010"],
-		"related": []
-	},
-	"HPCL-IF-0030": {
-		"id": 22,
-		"MSDS": "",
-		"title": "M50200-MS",
-		"subTitle": "Ployethylene",
-		"description": "HP Durapol® M50200 is a butene-based High Density Polyethylene (HDPE) grade designed for high-density injection moulding applications. It offers excellent dimensional stability, superior surface finish, and enhanced aesthetics, making it ideal for a wide range of injection-moulded products",
-		"specifications": [
-			{
-				"property": "Density of Resin @23°C, g/cc",
-				"value": "0.950"
-			},
-			{
-				"property": "Melt Flow Index @190°C, 2.16 kg, g/10 min",
-				"value": "20"
-			},
-			{
-				"property": "Mechanical Properties",
-				"value": ""
-			},
-			{
-				"property": "Tensile Strength at Yield, Type IV Specimen, MPa",
-				"value": "22"
-			},
-			{
-				"property": "Tensile Elongation at Break, Type IV Specimen, %",
-				"value": "300"
-			},
-			{
-				"property": "Flexural Modulus (1% Secant), MPa",
-				"value": "900"
-			},
-			{
-				"property": "Notched Izod Impact Strength @23°C, J/m",
-				"value": "30"
-			},
-			{
-				"property": "Vicat Softening Point (10N), °C",
-				"value": "126"
-			},
-			{
-				"property": "Heat Deflection Temperature (0.455 MPa), °C",
-				"value": "78"
-			}
-		],
-		"appData": "Household articles, thin-wall injection-moulded products, food containers, and other general-purpose injection-moulded applications",
-		"packaging": ["25 kg Raffia FFS bags"],
-		"SBU": "",
-		"industrial": "Petrochemicals",
-		"documentation": "TDS of HD IM High M50200",
-		"alternatives": [],
-		"related": ["nan"]
-	}
+  "HPCL-IFpt-0000": {
+    "id": 0,
+    "MSDS": "HM120A_MS_PDF",
+    "title": "HM120A-MS",
+    "subTitle": "Polypropylene",
+    "description": "HP Durapol® HM120A is a Polypropylene Homopolymer offering excellent processability, optimum cycle times, and superior surface aesthetics. It is ideally suited for manufacturing general-purpose injection moulded components, furniture, and houseware products.",
+    "specifications": [
+      {
+        "property": "Melt Flow Rate (@230°C/2.16 kg), gm/10 min",
+        "value": "12"
+      },
+      {
+        "property": "Tensile Strength at Yield, in MPa",
+        "value": "33"
+      },
+      {
+        "property": "Tensile elongation at Yield, D638, %",
+        "value": "10"
+      },
+      {
+        "property": "Flexural Modulus, MPa",
+        "value": "1470"
+      },
+      {
+        "property": "Notch Izod Impact Strength (23°C), J/m",
+        "value": "24"
+      },
+      {
+        "property": "Heat Deflection Temperature (0.46 N/mm²), °C",
+        "value": "95"
+      }
+    ],
+    "appData": "HM120A is recommended for Injection Moulded products like Household articles, Caps & Closures, Furniture, Rigid Packaging and Compounding",
+    "packaging": ["25 kg woven sack bags or FFS Bags"],
+    "SBU": "",
+    "industrial": "Petrochemicals",
+    "documentation": "TDS of PPHP IM grade \"HM120A\"",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IFpt-0001": {
+    "id": 1,
+    "MSDS": "HR033_MS_PDF",
+    "title": "HR033-MS",
+    "subTitle": "Polypropylene",
+    "description": "HP Durapol® HR033 is a Polypropylene Homopolymer specifically designed for tape extrusion applications. It offers excellent processability and outstanding mechanical properties, making it ideal for the manufacture of high-quality woven fabric and raffia products",
+    "specifications": [
+      {
+        "property": "Melt Flow Rate (230°C/2.16 kg), gm/10 min",
+        "value": "3.5"
+      },
+      {
+        "property": "Tensile Stress at Yield (23 °C, 50 mm/min), MPa",
+        "value": "33"
+      },
+      {
+        "property": "Tensile Strain at Yield  (23 °C, 50 mm/min), %",
+        "value": "10"
+      },
+      {
+        "property": "Flexural Modulus, MPa",
+        "value": "1480"
+      },
+      {
+        "property": "Vicat Softening Temperature, (A50), °C",
+        "value": "154"
+      },
+      {
+        "property": "Deflection Temperature under Load (0.0.45MPa, Unannealed) °C",
+        "value": "90"
+      }
+    ],
+    "appData": "HR033 is recommended for Woven sacks for General Packaging, Cement, Food grains packaging, FIBC, Strapping, Ropes, yarns etc",
+    "packaging": ["25 kg woven sack bags or FFS Bags"],
+    "SBU": "",
+    "industrial": "Petrochemicals",
+    "documentation": "TDS of PP Raffia grade \"HR033\"",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IFpt-0002": {
+    "id": 2,
+    "MSDS": "F01019S_MS_PDF",
+    "title": "F01019S-MS",
+    "subTitle": "Ployethylene",
+    "description": "HP Durapol® F01019S is a linear low-density polyethylene (LLDPE) general-purpose film grade designed for blown film applications. It contains slip and antiblock additives, providing excellent slip characteristics and good film openability.",
+    "specifications": [
+      {
+        "property": "Density of resin @23°C, g/cc",
+        "value": "0.920"
+      },
+      {
+        "property": "MFI of resin (at 190 °C, 2.16 Kgs), g/10min",
+        "value": "0.96"
+      },
+      {
+        "property": "Film Properties",
+        "value": ""
+      },
+      {
+        "property": "Tensile Strength at Break (MD/TD), psi",
+        "value": "5080/4120"
+      },
+      {
+        "property": "Elongation (MD/TD), %",
+        "value": "680/910"
+      },
+      {
+        "property": "Gloss, 45°",
+        "value": "40"
+      },
+      {
+        "property": "Haze, %",
+        "value": "21"
+      },
+      {
+        "property": "Dart Impact, g/ml",
+        "value": "130"
+      },
+      {
+        "property": "Tear Strength, g/ml",
+        "value": "150/385"
+      }
+    ],
+    "appData": "Suitable for the manufacture of general-purpose films, industrial liners, garment bags, industrial packaging, and a wide range of flexible packaging applications.",
+    "packaging": ["25 kg  FFS Bags"],
+    "SBU": "",
+    "industrial": "Petrochemicals",
+    "documentation": "TDS of LL 1MI Slip grade F01019S",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IFpt-0003": {
+    "id": 3,
+    "MSDS": "F02020_MS_PDF",
+    "title": "F02020-MS",
+    "subTitle": "Ployethylene",
+    "description": "HP Durapol® F02020 is a butene-based Linear Low Density Polyethylene (LLDPE) general-purpose film grade developed for blown and cast film applications. The grade is supplied without slip and antiblock additives, providing flexibility for customized additive incorporation based on specific application requirements.",
+    "specifications": [
+      {
+        "property": "Density of resin @23°C, g/cc",
+        "value": "0.918"
+      },
+      {
+        "property": "MFI of resin at 190 °C, 2.16 Kgs, g/10 min",
+        "value": "2"
+      },
+      {
+        "property": "Film Properties",
+        "value": ""
+      },
+      {
+        "property": "Tensile Strength at Yield (MD/TD), MPa",
+        "value": "9/9"
+      },
+      {
+        "property": "Tensile Strength at Break (MD/TD), MPa",
+        "value": "29/22"
+      },
+      {
+        "property": "Elongation at break (MD/TD), %",
+        "value": "650/760"
+      },
+      {
+        "property": "Gloss, 60°, GU",
+        "value": "95"
+      },
+      {
+        "property": "Haze, %",
+        "value": "11"
+      },
+      {
+        "property": "Dart Impact Strength, g/micron",
+        "value": "2.7"
+      },
+      {
+        "property": "Elmendorf Tear Strength, g/micron",
+        "value": "5.3/15.2"
+      },
+      {
+        "property": "(*)Data is typical value and is not intended for specification purpose. Values may change without any intimation. Film properties are on 25.4 micron thik film film with 2.5 BUR, Die gap",
+        "value": "1.8mm"
+      }
+    ],
+    "appData": " Stretch wrap films, air bubble films, liners, and other general-purpose blown film applications",
+    "packaging": ["25 kg  FFS Bags"],
+    "SBU": "",
+    "industrial": "Petrochemicals",
+    "documentation": "TDS of LL 2MI NonSlip grade F02020",
+    "alternatives": [],
+    "related": []
+  },
+  "HPCL-IFpt-0004": {
+    "id": 4,
+    "MSDS": "M50200_MS_PDF",
+    "title": "M50200-MS",
+    "subTitle": "Ployethylene",
+    "description": "HP Durapol® M50200 is a butene-based High Density Polyethylene (HDPE) grade designed for high-density injection moulding applications. It offers excellent dimensional stability, superior surface finish, and enhanced aesthetics, making it ideal for a wide range of injection-moulded products",
+    "specifications": [
+      {
+        "property": "Density of Resin @23°C, g/cc",
+        "value": "0.950"
+      },
+      {
+        "property": "Melt Flow Index @190°C, 2.16 kg, g/10 min",
+        "value": "20"
+      },
+      {
+        "property": "Mechanical Properties",
+        "value": ""
+      },
+      {
+        "property": "Tensile Strength at Yield, Type IV Specimen, MPa",
+        "value": "22"
+      },
+      {
+        "property": "Tensile Elongation at Break, Type IV Specimen, %",
+        "value": "300"
+      },
+      {
+        "property": "Flexural Modulus (1% Secant), MPa",
+        "value": "900"
+      },
+      {
+        "property": "Notched Izod Impact Strength @23°C, J/m",
+        "value": "30"
+      },
+      {
+        "property": "Vicat Softening Point (10N), °C",
+        "value": "126"
+      },
+      {
+        "property": "Heat Deflection Temperature (0.455 MPa), °C",
+        "value": "78"
+      }
+    ],
+    "appData": "Household articles, thin-wall injection-moulded products, food containers, and other general-purpose injection-moulded applications",
+    "packaging": ["25 kg  FFS Bags"],
+    "SBU": "",
+    "industrial": "Petrochemicals",
+    "documentation": "TDS of HD IM High M50200",
+    "alternatives": [],
+    "related": []
+  }
 }

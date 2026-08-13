@@ -13,7 +13,7 @@ import newDevData from "@/constants/newDevData.json";
 import { rawToProduct } from "./mappers";
 import type { ProductRow } from "./types";
 
-const PRODUCTS_SEED_VERSION = "2";
+const PRODUCTS_SEED_VERSION = "1";
 
 const CATEGORY_SOURCES = [
 	{ category: "motor-fuels", data: DataMotorFuels },

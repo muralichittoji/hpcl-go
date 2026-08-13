@@ -48,10 +48,11 @@ export async function registerForPushNotifications() {
 	return null;
 }
 
-export async function showSearchCompletedNotification(
+async function showSearchNotification(
 	chatId: number,
 	title: string,
 	body: string,
+	status: "success" | "error",
 ) {
 	try {
 		await Notifications.scheduleNotificationAsync({
@@ -62,6 +63,7 @@ export async function showSearchCompletedNotification(
 				data: {
 					type: "search",
 					chatId,
+					status,
 				},
 			},
 			trigger: null,
@@ -69,6 +71,22 @@ export async function showSearchCompletedNotification(
 	} catch (e) {
 		console.log("Failed to schedule notification", e);
 	}
+}
+
+export async function showSearchCompletedNotification(
+	chatId: number,
+	title: string,
+	body: string,
+) {
+	return showSearchNotification(chatId, title, body, "success");
+}
+
+export async function showSearchFailedNotification(
+	chatId: number,
+	title: string,
+	body: string,
+) {
+	return showSearchNotification(chatId, title, body, "error");
 }
 
 export function setupNotificationNavigation(
@@ -90,6 +108,7 @@ export function setupNotificationNavigation(
 type NotificationData = {
 	chatId: number;
 	type: "search";
+	status?: "success" | "error";
 };
 
 export function getInitialNotificationChatId() {

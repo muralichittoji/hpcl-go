@@ -39,14 +39,15 @@ function useTypewriter(
 
 	onTypingRef.current = onTyping;
 	onTypingCompleteRef.current = onTypingComplete;
-
+	const hasAnimated = useRef(false);
 	useEffect(() => {
-		if (!animate) {
+		if (!animate || hasAnimated.current) {
 			setDisplayText(text);
 			setIsTyping(false);
-			onTypingCompleteRef.current?.();
 			return;
 		}
+
+		hasAnimated.current = true;
 
 		setDisplayText("");
 		setIsTyping(true);

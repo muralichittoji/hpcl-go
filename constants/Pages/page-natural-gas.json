@@ -7,7 +7,7 @@
 		{
 			"id": 1,
 			"label": "Liquified Natural Gas",
-			"value": ""
+			"value": "HPCL-NGS-0001"
 		},
 		{
 			"id": 2,
@@ -15,15 +15,15 @@
 			"value": [
 				{
 					"label": "Domestic",
-					"value": ""
+					"value": "HPCL-NGS-0002"
 				},
 				{
 					"label": "Industrial",
-					"value": ""
+					"value": "HPCL-NGS-0003"
 				},
 				{
 					"label": "Commercial",
-					"value": ""
+					"value": "HPCL-NGS-0004"
 				}
 			]
 		}

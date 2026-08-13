@@ -109,8 +109,7 @@ const UnifiedListMenu = ({
 
 	// Fetch product object from JSON
 
-	const getProductByKey = (key?: string) =>
-		key ? getProduct(key) : null;
+	const getProductByKey = (key?: string) => (key ? getProduct(key) : null);
 
 	useEffect(() => {});
 	const getDesc = (key?: string) => {
@@ -191,10 +190,12 @@ const UnifiedListMenu = ({
 							ALL_IMAGES[item.icon as ImageKey] && (
 								<Image
 									source={ALL_IMAGES[item.icon as ImageKey]}
-									style={{
-										height: last ? 65 : 95,
-										width: last ? 65 : 85,
-									}}
+									style={[
+										{
+											height: last ? 65 : 95,
+											width: last ? 65 : 95,
+										},
+									]}
 									resizeMode="contain"
 								/>
 							)}
@@ -225,7 +226,7 @@ const UnifiedListMenu = ({
 								{
 									fontSize: !useItemName
 										? Math.min(width * 0.055, 20)
-										: Math.min(width * 0.07, 23),
+										: Math.min(width * 0.07, 22),
 								},
 							]}
 						>
@@ -340,7 +341,7 @@ const UnifiedListMenu = ({
 					ref={scrollRef}
 					showsVerticalScrollIndicator={false}
 					contentContainerStyle={{
-						paddingBottom: insets.bottom + 250,
+						paddingBottom: insets.bottom + 300,
 					}}
 				>
 					{Content}

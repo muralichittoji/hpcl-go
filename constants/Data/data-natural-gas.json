@@ -1,226 +1,218 @@
 {
-    "HPCL-NGS-0001": {
-        "id": 0,
-        "MSDS": "",
-        "title": "Liquified Natural Gas",
-        "subTitle": "",
-        "description": "LNG is a clean, high-calorific cryogenic fuel produced by cooling Natural Gas (predominantly Methane, CH₄) to approximately −162 °C, condensing it into liquid form and reducing its volume by approximately 600 times for economical long-distance transport and large-scale storage. It is colourless and odourless in its natural liquid state, non-toxic, and reverts to gaseous Methane upon regasification at LNG terminals or satellite stations. LNG is produced at large-scale liquefaction plants fed by natural gas fields or associated gas streams from petroleum processing.",
-        "specifications": [
-            {
-                "property": "Composition",
-                "value": "Methane (CH₄) ≥ 87%"
-            },
-            {
-                "property": "Storage Temperature",
-                "value": "−162 °C (cryogenic)"
-            },
-            {
-                "property": "Density (Liquid)",
-                "value": "~430–470 kg/m³"
-            },
-            {
-                "property": "Gross Calorific Value",
-                "value": "~52–54 MJ/kg"
-            },
-            {
-                "property": "Wobbe Index",
-                "value": "~48–51 MJ/m³"
-            },
-            {
-                "property": "Total Sulphur",
-                "value": "≤ 5 mg/Nm³"
-            },
-            {
-                "property": "Water Content",
-                "value": "Nil (dried before liquefaction)"
-            },
-            {
-                "property": "Odourant",
-                "value": "None (added post-regasification)"
-            },
-            {
-                "property": "Compliance",
-                "value": "IS 15842 / ISO 6976"
-            }
-        ],
-        "appData": "•\tFuel for LNG-powered mining fleets and ships (bunkering)\n•\tPeak shaving & regasification for city gas pipeline networks\n•\tIndustrial fuel for large captive power plants & process industries\n•\tSatellite LNG supply to remote areas lacking pipeline connectivity\n•\tFeedstock for petrochemical & fertiliser plants",
-        "packaging": [
-            "•\tISO LNG cryogenic road tankers (10–40 KL)\n•\tCryogenic storage tanks at satellite stations\n•\tLNG terminal bulk above-ground storage tanks\n•\tPipeline regasified supply post-terminal"
-        ],
-        "SBU": "Natural Gas",
-        "industrial": " Liquified Natural Gas",
-        "documentation": "",
-        "alternatives": [],
-        "related": [
-            "•\tHPLNG ( selling through natural gas SBU)"
-        ]
-    },
-    "HPCL-NGS-0004": {
-        "id": 3,
-        "MSDS": "",
-        "title": "Commercial",
-        "subTitle": "",
-        "description": "PNG-C is a clean, efficient, and high-calorific gaseous fuel comprising predominantly Methane (CH₄), supplied continuously through a dedicated underground pipeline network to commercial consumers. It is colourless and odourless in its natural form (odorised with Ethyl Mercaptan for safety and leak detection), non-toxic, and lighter than air. PNG-C eliminates cylinder dependency for commercial kitchens and catering operations, offering uninterrupted supply through metered connections. It is sourced from natural gas fields or regasified LNG through City Gas Distribution (CGD) networks authorised by PNGRB.",
-        "specifications": [
-            {
-                "property": "Composition",
-                "value": "Methane (CH₄) ≥ 90%"
-            },
-            {
-                "property": "Delivery Pressure",
-                "value": "Medium pressure (100–200 mbar)"
-            },
-            {
-                "property": "Gross Calorific Value",
-                "value": "~35–36 MJ/Sm³"
-            },
-            {
-                "property": "Wobbe Index",
-                "value": "~48–51 MJ/Sm³"
-            },
-            {
-                "property": "Total Sulphur",
-                "value": "≤ 10 mg/Sm³"
-            },
-            {
-                "property": "H₂S Content",
-                "value": "≤ 5 mg/Sm³"
-            },
-            {
-                "property": "Moisture / Free Water",
-                "value": "Nil"
-            },
-            {
-                "property": "Odourant",
-                "value": "Ethyl Mercaptan"
-            },
-            {
-                "property": "Compliance",
-                "value": "IS 15958 / PNGRB CGD norms"
-            }
-        ],
-        "appData": "•\tCooking, baking & food processing in commercial kitchens\n•\tSpace heating & water heating in hotels & hospitals\n•\tLaundry & steam generation for commercial facilities\n•\tCanteen & mess operations in institutions\n•\tAir-conditioning via gas-fired absorption chillers",
-        "packaging": [
-            "•\tUnderground pipeline with metered connection at premises\n•\tPressure regulator & meter installed at consumer end\n•\tSCADA-monitored CGD network\n•\t24×7 continuous uninterrupted supply\n"
-        ],
-        "SBU": "Natural Gas",
-        "industrial": "Piped Natural Gas",
-        "documentation": "",
-        "alternatives": [],
-        "related": [
-            "HPOIL Gas Private Limited (HOGPL) Aavantika Gas Limited (AGL): Bhagyanagar Gas Limited (BGL) Godavari Gas Private Limited (GGPL)"
-        ]
-    },
-    "HPCL-NGS-0002": {
-        "id": 1,
-        "MSDS": "",
-        "title": "Domestic",
-        "subTitle": "",
-        "description": "PNG-D is a clean, safe, and economical gaseous fuel consisting predominantly of Methane (CH₄), delivered directly to residential households through an underground pipeline network at low pressure. It is colourless and odourless in natural form (odorised with Ethyl Mercaptan for leak detection), non-toxic, and lighter than air, ensuring natural dissipation in case of leakage. PNG-D completely eliminates the need for LPG cylinder storage, booking, and handling  offering an uninterrupted metered supply billed on actual consumption. It is produced from domestic natural gas fields or via regasification of LNG, distributed through PNGRB-authorised City Gas Distribution (CGD) networks.",
-        "specifications": [
-            {
-                "property": "Composition",
-                "value": "Methane (CH₄) ≥ 90%"
-            },
-            {
-                "property": "Delivery Pressure",
-                "value": "Low pressure (21 mbar typical)"
-            },
-            {
-                "property": "Gross Calorific Value",
-                "value": "~35–36 MJ/Sm³"
-            },
-            {
-                "property": "Wobbe Index",
-                "value": "~48–51 MJ/Sm³"
-            },
-            {
-                "property": "Total Sulphur",
-                "value": "≤ 10 mg/Sm³"
-            },
-            {
-                "property": "H₂S Content",
-                "value": "≤ 5 mg/Sm³"
-            },
-            {
-                "property": "Moisture / Free Water",
-                "value": "Nil"
-            },
-            {
-                "property": "Odourant",
-                "value": "Ethyl Mercaptan"
-            },
-            {
-                "property": "Compliance",
-                "value": "IS 15958 / PNGRB CGD norms"
-            }
-        ],
-        "appData": "•\tDomestic cooking on PNG-compatible gas burners & hobs\n•\tWater heating via gas geysers & boilers\n•\tSpace heating in colder regions\n•\tBackup power through small residential gas gensets",
-        "packaging": [
-            "•\tUnderground pipeline at domestic low pressure\n•\tMeter board connection installed at flat / home\n•\tOnline meter reading & digital billing\n•\t24×7 uninterrupted supply — no cylinder or refill wait"
-        ],
-        "SBU": "Natural Gas",
-        "industrial": "Piped Natural Gas",
-        "documentation": "",
-        "alternatives": [],
-        "related": [
-            "HPOIL Gas Private Limited (HOGPL) Aavantika Gas Limited (AGL): Bhagyanagar Gas Limited (BGL) Godavari Gas Private Limited (GGPL)"
-        ]
-    },
-    "HPCL-NGS-0003": {
-        "id": 2,
-        "MSDS": "",
-        "title": "Industrial",
-        "subTitle": "",
-        "description": "PNG-I is a clean, high-calorific, and cost-efficient gaseous fuel comprising predominantly Methane (CH₄), delivered through a dedicated high-pressure pipeline network to industrial consumers for large-scale process heating, power generation, and manufacturing operations. It is colourless and odourless in its natural form (odorised in applicable pressure zones for safety), non-toxic, and produces significantly lower emissions compared to coal, furnace oil, or diesel. PNG-I enables industries to achieve higher thermal efficiency, reduce maintenance costs of combustion equipment, and meet environmental compliance norms. It is sourced from national gas grids (HVJ, DVPL, GREP pipelines) or LNG regasification terminals through authorised CGD and direct pipeline connections.",
-        "specifications": [
-            {
-                "property": "Composition",
-                "value": "Methane (CH₄) ≥ 87%"
-            },
-            {
-                "property": "Delivery Pressure",
-                "value": "High pressure (1–70 bar, as agreed)"
-            },
-            {
-                "property": "Gross Calorific Value",
-                "value": "~35–50 MJ/Sm³"
-            },
-            {
-                "property": "Wobbe Index",
-                "value": "~48–52 MJ/Sm³"
-            },
-            {
-                "property": "Total Sulphur",
-                "value": "≤ 10 mg/Sm³"
-            },
-            {
-                "property": "H₂S Content",
-                "value": "≤ 5 mg/Sm³"
-            },
-            {
-                "property": "Moisture / Free Water",
-                "value": "Nil (dried to dew point spec)"
-            },
-            {
-                "property": "CO₂ Content",
-                "value": "≤ 2% (mol)"
-            },
-            {
-                "property": "Compliance",
-                "value": "IS 15958 / PNGRB / OISD norms"
-            }
-        ],
-        "appData": "•\tProcess heating, drying & calcination in kilns & furnaces\n•\tCaptive power generation via gas turbines & reciprocating engines\n•\tSteam generation in industrial boilers\n•\tMetal reheating, annealing & heat treatment furnaces\n•\tGlass melting, ceramics firing & brick kilns\n•\tTextile processing (stenters), rubber curing & tyre manufacturing\n•\tFeedstock for fertiliser (ammonia synthesis) & petrochemical plants\n",
-        "packaging": [
-            "•\tDedicated high-pressure pipeline (direct industrial connection)\n•\tSCADA-monitored custody transfer metering stations\n•\tPressure regulation at battery limit of plant\n•\tLong-term Gas Supply Agreements (GSA)"
-        ],
-        "SBU": "Natural Gas",
-        "industrial": "Piped Natural Gas",
-        "documentation": "",
-        "alternatives": [],
-        "related": [
-            "HPOIL Gas Private Limited (HOGPL) Aavantika Gas Limited (AGL): Bhagyanagar Gas Limited (BGL) Godavari Gas Private Limited (GGPL)"
-        ]
-    }
+	"HPCL-NGS-0001": {
+		"id": 0,
+		"MSDS": "",
+		"title": "Liquified Natural Gas",
+		"subTitle": "",
+		"description": "LNG is a clean, high-calorific cryogenic fuel produced by cooling Natural Gas (predominantly Methane, CH₄) to approximately −162 °C, condensing it into liquid form and reducing its volume by approximately 600 times for economical long-distance transport and large-scale storage. It is colourless and odourless in its natural liquid state, non-toxic, and reverts to gaseous Methane upon regasification at LNG terminals or satellite stations. LNG is produced at large-scale liquefaction plants fed by natural gas fields or associated gas streams from petroleum processing.",
+		"specifications": [
+			{
+				"property": "Composition",
+				"value": "Methane (CH₄) ≥ 87%"
+			},
+			{
+				"property": "Storage Temperature",
+				"value": "−162 °C (cryogenic)"
+			},
+			{
+				"property": "Density (Liquid)",
+				"value": "~430–470 kg/m³"
+			},
+			{
+				"property": "Gross Calorific Value",
+				"value": "~52–54 MJ/kg"
+			},
+			{
+				"property": "Wobbe Index",
+				"value": "~48–51 MJ/m³"
+			},
+			{
+				"property": "Total Sulphur",
+				"value": "≤ 5 mg/Nm³"
+			},
+			{
+				"property": "Water Content",
+				"value": "Nil (dried before liquefaction)"
+			},
+			{
+				"property": "Odourant",
+				"value": "None (added post-regasification)"
+			},
+			{
+				"property": "Compliance",
+				"value": "IS 15842 / ISO 6976"
+			}
+		],
+		"appData": "•\tFuel for LNG-powered mining fleets and ships (bunkering)\n•\tPeak shaving & regasification for city gas pipeline networks\n•\tIndustrial fuel for large captive power plants & process industries\n•\tSatellite LNG supply to remote areas lacking pipeline connectivity\n•\tFeedstock for petrochemical & fertiliser plants",
+		"packaging": [
+			"•\tISO LNG cryogenic road tankers (10–40 KL)\n•\tCryogenic storage tanks at satellite stations\n•\tLNG terminal bulk above-ground storage tanks\n•\tPipeline regasified supply post-terminal"
+		],
+		"SBU": "Natural Gas",
+		"industrial": " Liquified Natural Gas",
+		"documentation": "",
+		"alternatives": [],
+		"related": [""]
+	},
+	"HPCL-NGS-0004": {
+		"id": 3,
+		"MSDS": "",
+		"title": "Commercial",
+		"subTitle": "",
+		"description": "PNG-C is a clean, efficient, and high-calorific gaseous fuel comprising predominantly Methane (CH₄), supplied continuously through a dedicated underground pipeline network to commercial consumers. It is colourless and odourless in its natural form (odorised with Ethyl Mercaptan for safety and leak detection), non-toxic, and lighter than air. PNG-C eliminates cylinder dependency for commercial kitchens and catering operations, offering uninterrupted supply through metered connections. It is sourced from natural gas fields or regasified LNG through City Gas Distribution (CGD) networks authorised by PNGRB.",
+		"specifications": [
+			{
+				"property": "Composition",
+				"value": "Methane (CH₄) ≥ 90%"
+			},
+			{
+				"property": "Delivery Pressure",
+				"value": "Medium pressure (100–200 mbar)"
+			},
+			{
+				"property": "Gross Calorific Value",
+				"value": "~35–36 MJ/Sm³"
+			},
+			{
+				"property": "Wobbe Index",
+				"value": "~48–51 MJ/Sm³"
+			},
+			{
+				"property": "Total Sulphur",
+				"value": "≤ 10 mg/Sm³"
+			},
+			{
+				"property": "H₂S Content",
+				"value": "≤ 5 mg/Sm³"
+			},
+			{
+				"property": "Moisture / Free Water",
+				"value": "Nil"
+			},
+			{
+				"property": "Odourant",
+				"value": "Ethyl Mercaptan"
+			},
+			{
+				"property": "Compliance",
+				"value": "IS 15958 / PNGRB CGD norms"
+			}
+		],
+		"appData": "•\tCooking, baking & food processing in commercial kitchens\n•\tSpace heating & water heating in hotels & hospitals\n•\tLaundry & steam generation for commercial facilities\n•\tCanteen & mess operations in institutions\n•\tAir-conditioning via gas-fired absorption chillers",
+		"packaging": [
+			"•\tUnderground pipeline with metered connection at premises\n•\tPressure regulator & meter installed at consumer end\n•\tSCADA-monitored CGD network\n•\t24×7 continuous uninterrupted supply\n"
+		],
+		"SBU": "Natural Gas",
+		"industrial": "Piped Natural Gas",
+		"documentation": "",
+		"alternatives": [],
+		"related": [""]
+	},
+	"HPCL-NGS-0002": {
+		"id": 1,
+		"MSDS": "",
+		"title": "Domestic",
+		"subTitle": "",
+		"description": "PNG-D is a clean, safe, and economical gaseous fuel consisting predominantly of Methane (CH₄), delivered directly to residential households through an underground pipeline network at low pressure. It is colourless and odourless in natural form (odorised with Ethyl Mercaptan for leak detection), non-toxic, and lighter than air, ensuring natural dissipation in case of leakage. PNG-D completely eliminates the need for LPG cylinder storage, booking, and handling  offering an uninterrupted metered supply billed on actual consumption. It is produced from domestic natural gas fields or via regasification of LNG, distributed through PNGRB-authorised City Gas Distribution (CGD) networks.",
+		"specifications": [
+			{
+				"property": "Composition",
+				"value": "Methane (CH₄) ≥ 90%"
+			},
+			{
+				"property": "Delivery Pressure",
+				"value": "Low pressure (21 mbar typical)"
+			},
+			{
+				"property": "Gross Calorific Value",
+				"value": "~35–36 MJ/Sm³"
+			},
+			{
+				"property": "Wobbe Index",
+				"value": "~48–51 MJ/Sm³"
+			},
+			{
+				"property": "Total Sulphur",
+				"value": "≤ 10 mg/Sm³"
+			},
+			{
+				"property": "H₂S Content",
+				"value": "≤ 5 mg/Sm³"
+			},
+			{
+				"property": "Moisture / Free Water",
+				"value": "Nil"
+			},
+			{
+				"property": "Odourant",
+				"value": "Ethyl Mercaptan"
+			},
+			{
+				"property": "Compliance",
+				"value": "IS 15958 / PNGRB CGD norms"
+			}
+		],
+		"appData": "•\tDomestic cooking on PNG-compatible gas burners & hobs\n•\tWater heating via gas geysers & boilers\n•\tSpace heating in colder regions\n•\tBackup power through small residential gas gensets",
+		"packaging": [
+			"•\tUnderground pipeline at domestic low pressure\n•\tMeter board connection installed at flat / home\n•\tOnline meter reading & digital billing\n•\t24×7 uninterrupted supply — no cylinder or refill wait"
+		],
+		"SBU": "Natural Gas",
+		"industrial": "Piped Natural Gas",
+		"documentation": "",
+		"alternatives": [],
+		"related": [""]
+	},
+	"HPCL-NGS-0003": {
+		"id": 2,
+		"MSDS": "",
+		"title": "Industrial",
+		"subTitle": "",
+		"description": "PNG-I is a clean, high-calorific, and cost-efficient gaseous fuel comprising predominantly Methane (CH₄), delivered through a dedicated high-pressure pipeline network to industrial consumers for large-scale process heating, power generation, and manufacturing operations. It is colourless and odourless in its natural form (odorised in applicable pressure zones for safety), non-toxic, and produces significantly lower emissions compared to coal, furnace oil, or diesel. PNG-I enables industries to achieve higher thermal efficiency, reduce maintenance costs of combustion equipment, and meet environmental compliance norms. It is sourced from national gas grids (HVJ, DVPL, GREP pipelines) or LNG regasification terminals through authorised CGD and direct pipeline connections.",
+		"specifications": [
+			{
+				"property": "Composition",
+				"value": "Methane (CH₄) ≥ 87%"
+			},
+			{
+				"property": "Delivery Pressure",
+				"value": "High pressure (1–70 bar, as agreed)"
+			},
+			{
+				"property": "Gross Calorific Value",
+				"value": "~35–50 MJ/Sm³"
+			},
+			{
+				"property": "Wobbe Index",
+				"value": "~48–52 MJ/Sm³"
+			},
+			{
+				"property": "Total Sulphur",
+				"value": "≤ 10 mg/Sm³"
+			},
+			{
+				"property": "H₂S Content",
+				"value": "≤ 5 mg/Sm³"
+			},
+			{
+				"property": "Moisture / Free Water",
+				"value": "Nil (dried to dew point spec)"
+			},
+			{
+				"property": "CO₂ Content",
+				"value": "≤ 2% (mol)"
+			},
+			{
+				"property": "Compliance",
+				"value": "IS 15958 / PNGRB / OISD norms"
+			}
+		],
+		"appData": "•\tProcess heating, drying & calcination in kilns & furnaces\n•\tCaptive power generation via gas turbines & reciprocating engines\n•\tSteam generation in industrial boilers\n•\tMetal reheating, annealing & heat treatment furnaces\n•\tGlass melting, ceramics firing & brick kilns\n•\tTextile processing (stenters), rubber curing & tyre manufacturing\n•\tFeedstock for fertiliser (ammonia synthesis) & petrochemical plants\n",
+		"packaging": [
+			"•\tDedicated high-pressure pipeline (direct industrial connection)\n•\tSCADA-monitored custody transfer metering stations\n•\tPressure regulation at battery limit of plant\n•\tLong-term Gas Supply Agreements (GSA)"
+		],
+		"SBU": "Natural Gas",
+		"industrial": "Piped Natural Gas",
+		"documentation": "",
+		"alternatives": [],
+		"related": [""]
+	}
 }

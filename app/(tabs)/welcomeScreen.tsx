@@ -12,6 +12,7 @@ import { rf } from "@/utils/responsive";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { router } from "expo-router";
 import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const { width } = Dimensions.get("window");
 
@@ -26,7 +27,7 @@ const WelcomeScreen = () => {
 		});
 	};
 	return (
-		<View style={styles.container}>
+		<SafeAreaView style={styles.container}>
 			<Header caption="" screen="Login" />
 
 			<View style={styles.subContainer}>
@@ -49,7 +50,7 @@ const WelcomeScreen = () => {
 					<Text style={styles.loginText}>FOR SALES OFFICERS {"->"} LOGIN</Text>
 				</TouchableOpacity> */}
 			</View>
-		</View>
+		</SafeAreaView>
 	);
 };
 

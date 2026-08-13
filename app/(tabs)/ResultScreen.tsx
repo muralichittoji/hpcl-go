@@ -1,28 +1,27 @@
 import Header from "@/components/Ui/Header";
-import { ProductData } from "@/hooks/types";
-import { getProduct } from "@/lib/products";
-
 import InputSearch from "@/components/Ui/InputSearch";
 import LoadingOverlay from "@/components/Ui/LoadingOverlay";
 import { Colors } from "@/constants/theme";
 import { ALL_IMAGES } from "@/hooks/Allimages";
 import {
-	addMessage,
 	deleteMessage,
 	getOlderMessagesPage,
 	getPreviousUserMessage,
 	getRecentMessagesPage,
 	Message,
-	updateChatId,
 	updateMessage,
 } from "@/lib/chat";
-import { addNotification } from "@/lib/notification";
-import { showSearchCompletedNotification } from "@/lib/pushNotifications";
-import { getApiErrorMessage, isAbortError } from "@/utils/apiErrors";
+import {
+	getSearchTask,
+	runSearchTask,
+	searchTaskEmitter,
+	stopSearchTask,
+} from "@/lib/searchRunner";
+import { getApiErrorMessage } from "@/utils/apiErrors";
 import { getAnswer } from "@/utils/authService";
 import { safeParse } from "@/utils/jsonUtils";
 import { useNetwork } from "@/utils/NetworkProvider";
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { router, useLocalSearchParams } from "expo-router";
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
@@ -31,9 +30,12 @@ import {
 	FlatList,
 	Image,
 	KeyboardAvoidingView,
+	NativeScrollEvent,
+	NativeSyntheticEvent,
 	Platform,
 	StyleSheet,
 	Text,
+	TouchableOpacity,
 	View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -57,13 +59,13 @@ const ResultScreen = () => {
 	const { isOnline } = useNetwork();
 	const scrollRef = useRef<FlatList<Message>>(null);
 	const scrollY = useRef(new Animated.Value(0)).current;
-
+	const isEditingRef = useRef(false);
+	const lastProcessedUserId = useRef<number | null>(null);
 	const [loading, setLoading] = useState(false);
 	const [, setSlowNet] = useState(false);
-	const isAsking = useRef(false);
-	const lastUserMessageRef = useRef<string | null>(null);
-	const lastAskedMessageIdRef = useRef<number | null>(null);
-	const abortControllerRef = useRef<AbortController | null>(null);
+	const [animatedAssistantId, setAnimatedAssistantId] = useState<number | null>(
+		null,
+	);
 
 	const chatLocalId = Number(params.chatLocalId);
 
@@ -76,21 +78,21 @@ const ResultScreen = () => {
 	);
 	const [editDraft, setEditDraft] = useState<string | null>(null);
 	const [regenerateError, setRegenerateError] = useState<string | null>(null);
+	const [showScrollToLatest, setShowScrollToLatest] = useState(false);
+	const latestSearchFailureRef = useRef<SearchFailure | null>(null);
 
-	const getLastUserMessage = () => {
+	const getLastUserMessage = useCallback(() => {
 		if (!messages.length) return null;
 
 		const last = messages[messages.length - 1];
 
 		return last.role === "user" ? last : null;
-	};
+	}, [messages]);
 
-	const askQuestion = async () => {
+	const askQuestion = useCallback(async () => {
 		const userMessage = getLastUserMessage();
 
-		if (!userMessage || isAsking.current) return;
-
-		if (lastAskedMessageIdRef.current === userMessage.id) return;
+		if (!userMessage) return;
 
 		if (!isOnline) {
 			setSearchFailure({
@@ -102,166 +104,39 @@ const ResultScreen = () => {
 			return;
 		}
 
-		lastUserMessageRef.current = userMessage.text;
-		lastAskedMessageIdRef.current = userMessage.id;
-		isAsking.current = true;
-		setIsTyping(true);
 		setSearchFailure(null);
 		setRegenerateError(null);
 
-		abortControllerRef.current?.abort();
-		abortControllerRef.current = new AbortController();
-
-		try {
-			const res = await getAnswer({
-				question: userMessage.text,
-				signal: abortControllerRef.current.signal,
-			});
-
-			const rawAnswer = res?.results?.[0]?.answer;
-
-			if (!rawAnswer) {
-				const errorMsg = "No answer received from server.";
-				console.log(errorMsg);
-				lastAskedMessageIdRef.current = null;
-				setSearchFailure({
-					type: "error",
-					message: "Network Failure, Please wait or try again later",
-					userMessageId: userMessage.id,
-					userMessageText: userMessage.text,
-				});
-				return;
-			}
-
-			// Validate response is JSON-like, not HTML
-			if (typeof rawAnswer === "string" && rawAnswer.trim().startsWith("<")) {
-				const errorMsg =
-					"Server error: Invalid response format. Please try again.";
-				console.log(
-					"HTML Response received instead of JSON:",
-					rawAnswer.substring(0, 100),
-				);
-				lastAskedMessageIdRef.current = null;
-				setSearchFailure({
-					type: "error",
-					message: errorMsg,
-					userMessageId: userMessage.id,
-					userMessageText: userMessage.text,
-				});
-				return;
-			}
-
-			const parsed = safeParse(rawAnswer);
-
-			const finalResponse =
-				parsed?.response ?? rawAnswer ?? "No response available";
-
-			const productCode = parsed?.app_product_code ?? null;
-
-			// Save assistant message
-			addMessage(
-				chatLocalId,
-				"assistant",
-				finalResponse,
-				productCode,
-				res?.results?.[0]?.queryId ?? null,
-			);
-
-			addNotification(
-				chatLocalId,
-				"Search Complete",
-				userMessage.text,
-				"success",
-			);
-
-			showSearchCompletedNotification(
-				chatLocalId,
-				"Search Complete",
-				userMessage.text,
-			);
-
-			// Save server chat id if available
-			if (res?.chatId) {
-				updateChatId(chatLocalId, res.chatId);
-			}
-
-			// Refresh UI
-			loadRecentMessages();
-		} catch (e: unknown) {
-			if (isAbortError(e)) {
-				lastAskedMessageIdRef.current = null;
-				setSearchFailure({
-					type: "stopped",
-					message: "Search stopped by user.",
-					userMessageId: userMessage.id,
-					userMessageText: userMessage.text,
-				});
-				return;
-			}
-
-			const errorMsg = getApiErrorMessage(e, isOnline);
-			console.log("Search Error:", e);
-			lastAskedMessageIdRef.current = null;
-			setSearchFailure({
-				type: "error",
-				message: errorMsg,
-				userMessageId: userMessage.id,
-				userMessageText: userMessage.text,
-			});
-		} finally {
-			setIsTyping(false);
-			isAsking.current = false;
-			abortControllerRef.current = null;
-		}
-	};
+		await runSearchTask({
+			chatId: chatLocalId,
+			userMessageId: userMessage.id,
+			question: userMessage.text,
+			isOnline,
+		});
+	}, [chatLocalId, getLastUserMessage, isOnline]);
 
 	const handleStopSearch = () => {
-		abortControllerRef.current?.abort();
+		stopSearchTask(chatLocalId);
 	};
 
 	const handleRetry = async () => {
 		setSearchFailure(null);
-		lastAskedMessageIdRef.current = null;
 		await askQuestion();
 	};
 
 	const handleEdit = () => {
 		if (!searchFailure) return;
+		isEditingRef.current = true;
 
 		setEditDraft(searchFailure.userMessageText);
 		deleteMessage(searchFailure.userMessageId);
-		lastAskedMessageIdRef.current = null;
 		setSearchFailure(null);
 		loadRecentMessages();
 	};
 
-	// Ask whenever the latest message is an unanswered user message.
 	useEffect(() => {
-		const lastUser = getLastUserMessage();
-		if (!lastUser) return;
-
-		if (searchFailure && lastUser.id !== searchFailure.userMessageId) {
-			setSearchFailure(null);
-		}
-
-		if (searchFailure) return;
-		if (isAsking.current) return;
-		if (lastUser.id === lastAskedMessageIdRef.current) return;
-
-		askQuestion();
-	}, [messages, searchFailure, isOnline]);
-
-	useEffect(() => {
-		abortControllerRef.current?.abort();
-		abortControllerRef.current = null;
-		isAsking.current = false;
-		lastAskedMessageIdRef.current = null;
-		lastUserMessageRef.current = null;
-		setSearchFailure(null);
-		setEditDraft(null);
-		setRegenerateError(null);
-		setIsTyping(false);
-	}, [chatLocalId]);
+		latestSearchFailureRef.current = searchFailure;
+	}, [searchFailure]);
 
 	const loadRecentMessages = useCallback(() => {
 		if (!chatLocalId) return [];
@@ -273,6 +148,145 @@ const ResultScreen = () => {
 
 		return items;
 	}, [chatLocalId]);
+
+	// Keep this screen in sync with shared background task state.
+	useEffect(() => {
+		if (isEditingRef.current) {
+			isEditingRef.current = false;
+			return;
+		}
+		const syncTaskState = () => {
+			const task = getSearchTask(chatLocalId);
+			const lastUser = getLastUserMessage();
+			const currentFailure = latestSearchFailureRef.current;
+			const nextIsTyping = task?.status === "running";
+
+			setIsTyping((prev) => (prev === nextIsTyping ? prev : nextIsTyping));
+
+			if (!task || !lastUser || task.userMessageId !== lastUser.id) {
+				if (
+					currentFailure &&
+					lastUser &&
+					lastUser.id !== currentFailure.userMessageId
+				) {
+					setSearchFailure(null);
+				}
+				return;
+			}
+
+			if (task.status === "success") {
+				if (currentFailure) {
+					setSearchFailure(null);
+				}
+
+				const items = loadRecentMessages();
+
+				const lastAssistant = [...items]
+					.reverse()
+					.find((m) => m.role === "assistant");
+
+				if (lastAssistant) {
+					setAnimatedAssistantId(lastAssistant.id);
+				}
+
+				return;
+			}
+
+			if (task.status === "error") {
+				const nextFailure: SearchFailure = {
+					type: "error",
+					message:
+						task.errorMessage ??
+						"Request Failed, Please retry or try again later",
+					userMessageId: task.userMessageId,
+					userMessageText: task.question,
+				};
+
+				if (
+					!currentFailure ||
+					currentFailure.type !== nextFailure.type ||
+					currentFailure.userMessageId !== nextFailure.userMessageId ||
+					currentFailure.message !== nextFailure.message ||
+					currentFailure.userMessageText !== nextFailure.userMessageText
+				) {
+					setSearchFailure(nextFailure);
+				}
+				return;
+			}
+
+			if (task.status === "stopped") {
+				const nextFailure: SearchFailure = {
+					type: "stopped",
+					message: task.errorMessage ?? "Search stopped by user.",
+					userMessageId: task.userMessageId,
+					userMessageText: task.question,
+				};
+
+				if (
+					!currentFailure ||
+					currentFailure.type !== nextFailure.type ||
+					currentFailure.userMessageId !== nextFailure.userMessageId ||
+					currentFailure.message !== nextFailure.message ||
+					currentFailure.userMessageText !== nextFailure.userMessageText
+				) {
+					setSearchFailure(nextFailure);
+				}
+				return;
+			}
+
+			if (currentFailure) {
+				setSearchFailure(null);
+			}
+		};
+
+		syncTaskState();
+
+		const update = (updatedChatId?: number) => {
+			if (updatedChatId === chatLocalId) {
+				syncTaskState();
+			}
+		};
+
+		searchTaskEmitter.on("changed", update);
+
+		return () => {
+			searchTaskEmitter.off("changed", update);
+		};
+	}, [chatLocalId, getLastUserMessage, loadRecentMessages]);
+
+	useEffect(() => {
+		setSearchFailure(null);
+		setEditDraft(null);
+		setRegenerateError(null);
+		setIsTyping(getSearchTask(chatLocalId)?.status === "running");
+	}, [chatLocalId]);
+
+	// Start shared search whenever the latest message is an unanswered user message.
+	useEffect(() => {
+		const lastUser = getLastUserMessage();
+		const lastMessage = messages[messages.length - 1];
+
+		if (!lastUser) return;
+		if (lastMessage?.role !== "user") return;
+
+		// Already handled this message
+		if (lastProcessedUserId.current === lastUser.id) {
+			return;
+		}
+
+		lastProcessedUserId.current = lastUser.id;
+
+		const task = getSearchTask(chatLocalId);
+
+		if (task?.userMessageId === lastUser.id) {
+			if (task.status === "running") {
+				setIsTyping(true);
+			}
+			return;
+		}
+
+		void askQuestion();
+	}, [messages]);
 
 	const loadOlderMessages = useCallback(() => {
 		if (
@@ -304,24 +318,87 @@ const ResultScreen = () => {
 		loadRecentMessages();
 	}, [loadRecentMessages]);
 
-	const getProductByCode = (key?: string): ProductData | null => {
-		if (!key) return null;
-		return getProduct(key);
-	};
-
 	const previousCount = useRef(0);
+	const typingScrollTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
+		null,
+	);
+	const shouldAutoScrollRef = useRef(true);
+	const contentHeightRef = useRef(0);
+	const layoutHeightRef = useRef(0);
+	const scrollOffsetYRef = useRef(0);
+	const AUTO_SCROLL_BOTTOM_THRESHOLD = 140;
+
+	const getDistanceFromBottom = useCallback(() => {
+		return (
+			contentHeightRef.current -
+			(layoutHeightRef.current + scrollOffsetYRef.current)
+		);
+	}, []);
+
+	const syncAutoScrollStateFromPosition = useCallback(() => {
+		const isNearBottom =
+			getDistanceFromBottom() <= AUTO_SCROLL_BOTTOM_THRESHOLD;
+		shouldAutoScrollRef.current = isNearBottom;
+		setShowScrollToLatest(!isNearBottom && contentHeightRef.current > 0);
+	}, [getDistanceFromBottom]);
+
+	const scrollToConversationEnd = useCallback(
+		(animated = true, force = false) => {
+			if (!force && !shouldAutoScrollRef.current) return;
+
+			shouldAutoScrollRef.current = true;
+			setShowScrollToLatest(false);
+
+			setTimeout(() => {
+				requestAnimationFrame(() => {
+					scrollRef.current?.scrollToEnd({
+						animated: false,
+					});
+				});
+			}, 50);
+		},
+		[],
+	);
+
+	const handleAssistantTyping = useCallback(() => {
+		if (!shouldAutoScrollRef.current) return;
+		if (typingScrollTimeoutRef.current) return;
+
+		typingScrollTimeoutRef.current = setTimeout(() => {
+			typingScrollTimeoutRef.current = null;
+			if (!shouldAutoScrollRef.current) return;
+			scrollRef.current?.scrollToEnd({ animated: false });
+		}, 80);
+	}, []);
+
+	const handleAssistantTypingComplete = useCallback(() => {
+		if (typingScrollTimeoutRef.current) {
+			clearTimeout(typingScrollTimeoutRef.current);
+			typingScrollTimeoutRef.current = null;
+		}
+
+		scrollToConversationEnd(true);
+	}, [scrollToConversationEnd]);
+
+	const handleScrollToLatestPress = useCallback(() => {
+		scrollToConversationEnd(true, true);
+	}, [scrollToConversationEnd]);
 
 	useEffect(() => {
 		if (messages.length > previousCount.current) {
-			setTimeout(() => {
-				scrollRef.current?.scrollToEnd({
-					animated: true,
-				});
-			}, 50);
+			scrollToConversationEnd(true);
 		}
 
 		previousCount.current = messages.length;
-	}, [messages]);
+	}, [messages, scrollToConversationEnd]);
+
+	useEffect(() => {
+		return () => {
+			if (typingScrollTimeoutRef.current) {
+				clearTimeout(typingScrollTimeoutRef.current);
+			}
+		};
+	}, []);
 
 	const regenerate = async (assistantMessage: Message) => {
 		try {
@@ -421,6 +498,19 @@ const ResultScreen = () => {
 							paddingTop: 10,
 							paddingBottom: 120,
 						}}
+						onLayout={(event) => {
+							layoutHeightRef.current = event.nativeEvent.layout.height;
+							syncAutoScrollStateFromPosition();
+						}}
+						onContentSizeChange={() => {
+							if (!shouldAutoScrollRef.current) return;
+
+							setTimeout(() => {
+								requestAnimationFrame(() => {
+									scrollRef.current?.scrollToEnd({ animated: true });
+								});
+							}, 0);
+						}}
 						onScroll={Animated.event(
 							[
 								{
@@ -433,6 +523,14 @@ const ResultScreen = () => {
 							],
 							{
 								useNativeDriver: false,
+								listener: (event: NativeSyntheticEvent<NativeScrollEvent>) => {
+									scrollOffsetYRef.current = event.nativeEvent.contentOffset.y;
+									layoutHeightRef.current =
+										event.nativeEvent.layoutMeasurement.height;
+									contentHeightRef.current =
+										event.nativeEvent.contentSize.height;
+									syncAutoScrollStateFromPosition();
+								},
 							},
 						)}
 						renderItem={({ item, index }) => {
@@ -440,15 +538,20 @@ const ResultScreen = () => {
 								return <UserMessage question={item.text} />;
 							}
 
-							const product = item.productCode
-								? getProductByCode(item.productCode)
-								: null;
-
 							return (
 								<View>
 									<AIMessage
 										answer={item.text}
-										animate={index === messages.length - 1}
+										animate={item.id === animatedAssistantId}
+										onTyping={
+											index === messages.length - 1
+												? handleAssistantTyping
+												: undefined
+										}
+										onTypingComplete={() => {
+											setAnimatedAssistantId(null);
+											handleAssistantTypingComplete();
+										}}
 										onProductPress={(productCode) =>
 											router.push({
 												pathname: "/InfoScreen",
@@ -515,6 +618,17 @@ const ResultScreen = () => {
 						}
 					/>
 				</View>
+				{showScrollToLatest && (
+					<TouchableOpacity
+						style={styles.scrollToLatestButton}
+						onPress={handleScrollToLatestPress}
+						accessibilityRole="button"
+						accessibilityLabel="Scroll to latest message"
+					>
+						<MaterialIcons name="south" size={22} color={Colors.white} />
+						<Text style={styles.scrollToLatestText}>Latest</Text>
+					</TouchableOpacity>
+				)}
 				<LoadingOverlay visible={loading} text="Thinking..." />
 				<InputSearch
 					mode="continue"
@@ -524,6 +638,7 @@ const ResultScreen = () => {
 					}}
 					setLoading={setLoading}
 					setSlowNet={setSlowNet}
+					isOnline={isOnline}
 					isSearching={isTyping}
 					onStop={handleStopSearch}
 					draftText={editDraft}
@@ -583,5 +698,28 @@ const styles = StyleSheet.create({
 		fontSize: 13,
 		color: "#DC2626",
 		flex: 1,
+	},
+	scrollToLatestButton: {
+		position: "absolute",
+		right: 18,
+		bottom: 132,
+		flexDirection: "row",
+		alignItems: "center",
+		gap: 6,
+		backgroundColor: Colors.blueDeep,
+		paddingHorizontal: 14,
+		height: 46,
+		borderRadius: 23,
+		shadowColor: "#000",
+		shadowOffset: { width: 0, height: 4 },
+		shadowOpacity: 0.22,
+		shadowRadius: 10,
+		elevation: 6,
+		zIndex: 20,
+	},
+	scrollToLatestText: {
+		color: Colors.white,
+		fontSize: 14,
+		fontWeight: "700",
 	},
 });
