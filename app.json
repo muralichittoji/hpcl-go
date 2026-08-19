@@ -1,85 +1,85 @@
 {
-  "expo": {
-    "name": "HPCL",
-    "slug": "HpclDev",
-    "version": "1.2.7",
-    "orientation": "portrait",
-    "icon": "./assets/app_icon.png",
-    "scheme": "hpcl",
-    "userInterfaceStyle": "automatic",
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.muralisreekrishnac.HPCL",
-      "buildNumber": "27",
-      "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
-      }
-    },
+	"expo": {
+		"name": "HPCL",
+		"slug": "HpclDev",
+		"version": "1.2.9",
+		"orientation": "portrait",
+		"icon": "./assets/app_icon.png",
+		"scheme": "hpcl",
+		"userInterfaceStyle": "automatic",
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.muralisreekrishnac.HPCL",
+			"buildNumber": "29",
+			"infoPlist": {
+				"ITSAppUsesNonExemptEncryption": false
+			}
+		},
 
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/app_icon.png"
-      },
-      "permissions": [
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
-        "POST_NOTIFICATIONS"
-      ],
-      "predictiveBackGestureEnabled": false,
-      "package": "com.muralisreekrishnac.HPCL"
-    },
-    "splash": {
-      "image": "./assets/images/Master_Logo.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#E6F4FE"
-    },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/Master_Logo.png"
-    },
-    "plugins": [
-      "expo-router",
+		"android": {
+			"adaptiveIcon": {
+				"backgroundColor": "#E6F4FE",
+				"foregroundImage": "./assets/app_icon.png"
+			},
+			"permissions": [
+				"READ_EXTERNAL_STORAGE",
+				"WRITE_EXTERNAL_STORAGE",
+				"POST_NOTIFICATIONS"
+			],
+			"predictiveBackGestureEnabled": false,
+			"package": "com.muralisreekrishnac.HPCL"
+		},
+		"splash": {
+			"image": "./assets/images/Master_Logo.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#E6F4FE"
+		},
+		"web": {
+			"output": "static",
+			"favicon": "./assets/images/Master_Logo.png"
+		},
+		"plugins": [
+			"expo-router",
 
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/Master_Logo.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#FFFFFF"
-          }
-        }
-      ],
+			[
+				"expo-splash-screen",
+				{
+					"image": "./assets/images/Master_Logo.png",
+					"imageWidth": 200,
+					"resizeMode": "contain",
+					"backgroundColor": "#ffffff",
+					"dark": {
+						"backgroundColor": "#FFFFFF"
+					}
+				}
+			],
 
-      [
-        "expo-notifications",
-        {
-          "icon": "./assets/notification.png",
-          "color": "#ffffff"
-        }
-      ],
+			[
+				"expo-notifications",
+				{
+					"icon": "./assets/notification.png",
+					"color": "#ffffff"
+				}
+			],
 
-      "expo-mail-composer",
-      "expo-secure-store",
-      "expo-asset",
-      "expo-font",
-      "expo-image",
-      "expo-sharing",
-      "expo-web-browser",
-      "expo-sqlite"
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    },
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "1929e595-9ff8-4ca7-a545-5e0ef4ee39d0"
-      }
-    }
-  }
+			"expo-mail-composer",
+			"expo-secure-store",
+			"expo-asset",
+			"expo-font",
+			"expo-image",
+			"expo-sharing",
+			"expo-web-browser",
+			"expo-sqlite"
+		],
+		"experiments": {
+			"typedRoutes": true,
+			"reactCompiler": true
+		},
+		"extra": {
+			"router": {},
+			"eas": {
+				"projectId": "1929e595-9ff8-4ca7-a545-5e0ef4ee39d0"
+			}
+		}
+	}
 }

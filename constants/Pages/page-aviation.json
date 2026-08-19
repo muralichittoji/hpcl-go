@@ -2,7 +2,8 @@
 	"id": 5,
 	"label": "Aviation Turbine Fuel",
 	"iconType": "image",
-	"icon": "WATER_ICON",
+	"icon": "Air_ICON",
+	"icon_back": "WATER_ICON_BACK",
 	"value": [
 		{ "id": 1, "label": "Aviation Turbine OIL", "value": "HPCL-MS-0005" }
 	]

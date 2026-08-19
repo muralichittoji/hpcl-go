@@ -1,7 +1,7 @@
 // Common UI components
-import Header from "@/components/Ui/Header";
+import Footer from "@/components/Ui/Footer";
+import HomeHeader from "@/components/Ui/HomeHeader";
 import LoadingOverlay from "@/components/Ui/LoadingOverlay";
-import ScrollComponent from "@/components/Ui/ScrollComponent";
 import UnifiedListMenu from "@/components/Ui/UnifiedListMenu";
 
 // Static home screen data
@@ -12,9 +12,9 @@ import { Colors } from "@/constants/theme";
 // Routing
 import { router } from "expo-router";
 
-import React, { useState } from "react";
+import { countCatalogueItems } from "@/utils/catalogueItems";
+import React, { useMemo, useState } from "react";
 import { Dimensions, StyleSheet, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 // Screen width for layout calculations
 const { width } = Dimensions.get("window");
@@ -55,55 +55,50 @@ const HomeScreen = () => {
 	const [loading, setLoading] = useState(false);
 	const [slowNet, setSlowNet] = useState(false);
 
+	const homeItems = useMemo(() => {
+		const categories = (wholeData?.homeScreen ?? []).map((category, index) => ({
+			...category,
+			itemCount: countCatalogueItems(category),
+			categoryIndex: index,
+		}));
+
+		return [...categories];
+	}, []);
+
+	const columns = 2;
+	const [listHeight, setListHeight] = useState(0);
+	const rows = Math.ceil(homeItems.length / columns);
+	const itemGap = 12;
+	const itemHeight =
+		listHeight > 0 && rows > 0
+			? Math.max(72, (listHeight - itemGap * (rows - 1) - 10) / rows)
+			: 90;
+
 	/* ---------------------------------------------------------------------- */
 	/*                                  Render                                  */
 	/* ---------------------------------------------------------------------- */
 	return (
-		<SafeAreaView style={styles.container}>
-			{/* App header */}
-			<Header caption={"Product \nCatalogue"} />
+		<View style={styles.container}>
+			<HomeHeader />
 
-			{/* Global search input */}
-			{/* <InputSearch setLoading={setLoading} setSlowNet={setSlowNet} mode="new" /> */}
+			<View
+				style={styles.body}
+				onLayout={(event) => setListHeight(event.nativeEvent.layout.height)}
+			>
+				<UnifiedListMenu
+					items={homeItems}
+					navigate={onItemPress}
+					showIcons
+					bottomMinimise={0}
+					itemHeight={itemHeight}
+					columns={columns}
+				/>
+			</View>
 
-			{/* Main content */}
-			<ScrollComponent>
-				{/* Product categories */}
-				<View>
-					<UnifiedListMenu
-						items={wholeData?.homeScreen}
-						navigate={onItemPress}
-						showIcons
-						bottomMinimise={60}
-						itemHeight={170}
-					/>
-				</View>
+			<Footer screen="welcome" height={148} />
 
-				{/* Quick help section */}
-				{/* <View>
-					<Text style={styles.content}>Quick Help</Text>
-
-					<UnifiedListMenu
-						items={wholeData?.quickHelp}
-						bottomMinimise={0}
-						navigate={onItemPress}
-						itemHeight={70}
-					/>
-				</View> */}
-
-				{/* Explore More CTA (kept for future use) */}
-				{/*
-				<TouchableOpacity onPress={() => navigate("Explore More")}>
-					<Text style={styles.exploreBtn}>Explore More {"->"}</Text>
-				</TouchableOpacity>
-				*/}
-			</ScrollComponent>
-
-			{/* Loading overlay */}
 			<LoadingOverlay visible={loading} text="Thinking..." />
-
-			{/* Slow internet modal */}
-		</SafeAreaView>
+		</View>
 	);
 };
 
@@ -115,6 +110,11 @@ export default HomeScreen;
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		backgroundColor: "#fff",
+	},
+	body: {
+		flex: 1,
+		justifyContent: "flex-start",
 	},
 
 	subContainer: {

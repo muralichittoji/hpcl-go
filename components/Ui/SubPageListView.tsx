@@ -1,6 +1,6 @@
 import { Colors } from "@/constants/theme";
 import { ALL_IMAGES } from "@/hooks/Allimages";
-import { MaterialIcons } from "@expo/vector-icons";
+import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import React, { useRef } from "react";
 import {
@@ -20,9 +20,11 @@ import LoadingOverlay from "./LoadingOverlay";
 type SubPageListViewProps = {
 	title: string;
 	bannerIcon?: string;
+	centerBanner?: boolean;
 	items: {
 		label: string;
 		onPress: () => void;
+		hasValue?: boolean;
 		icon?: string;
 		iconType?: "image" | "vector";
 	}[];
@@ -37,6 +39,7 @@ type SubPageListViewProps = {
 const SubPageListView: React.FC<SubPageListViewProps> = ({
 	title,
 	bannerIcon,
+	centerBanner = false,
 	items,
 	loading = false,
 	loadingText = "Loading...",
@@ -51,60 +54,40 @@ const SubPageListView: React.FC<SubPageListViewProps> = ({
 	/* ------ Content Renderer ------ */
 	const ListContent = (
 		<View style={styles.content}>
-			{/* Banner Section */}
 			{bannerIcon && (ALL_IMAGES as any)[bannerIcon] && (
-				<View style={styles.bannerContainer}>
+				<View
+					style={[
+						styles.bannerContainer,
+						centerBanner && styles.bannerContainerCentered,
+					]}
+				>
 					<Image
 						source={(ALL_IMAGES as any)[bannerIcon]}
-						style={styles.bannerImage}
-						resizeMode="contain"
+						style={centerBanner ? styles.bannerIcon : styles.bannerImage}
+						resizeMode={centerBanner ? "contain" : "cover"}
 					/>
 				</View>
 			)}
 
-			{/* List Items */}
 			<View style={styles.listContainer}>
-				{items.map((item, index) => {
-					const isImageIcon = item.iconType === "image" && item.icon;
-					const imageSource = isImageIcon
-						? (ALL_IMAGES as any)[item.icon!]
-						: undefined;
-
-					return (
-						<TouchableOpacity
-							key={index}
-							style={[styles.listItem, isImageIcon && styles.listItemWithImage]}
-							activeOpacity={0.9}
-							onPress={item.onPress}
-						>
-							{isImageIcon && imageSource ? (
-								<Image
-									source={imageSource}
-									style={styles.itemImage}
-									resizeMode="contain"
-								/>
-							) : (
-								<View style={styles.itemContent}>
-									{item.icon && !isImageIcon && (
-										<MaterialIcons
-											name={item.icon as any}
-											size={20}
-											color={Colors.blueDeep}
-											style={styles.itemIcon}
-										/>
-									)}
-									<Text style={styles.itemLabel}>{item.label}</Text>
-								</View>
-							)}
+				{items.map((item, index) => (
+					<TouchableOpacity
+						key={index}
+						style={styles.listItem}
+						activeOpacity={item.hasValue === false ? 1 : 0.9}
+						onPress={item.hasValue === false ? undefined : item.onPress}
+						disabled={item.hasValue === false}
+					>
+						<Text style={styles.itemLabel}>{item.label}</Text>
+						{item.hasValue !== false && (
 							<MaterialIcons
 								name="chevron-right"
-								size={24}
+								size={28}
 								color={Colors.blueDeep}
-								style={isImageIcon && styles.chevronWithImage}
 							/>
-						</TouchableOpacity>
-					);
-				})}
+						)}
+					</TouchableOpacity>
+				))}
 			</View>
 		</View>
 	);
@@ -120,12 +103,29 @@ const SubPageListView: React.FC<SubPageListViewProps> = ({
 				>
 					<MaterialIcons
 						name="chevron-left"
-						size={32}
+						size={38}
 						color={Colors.blueDeep}
 					/>
 				</TouchableOpacity>
-				<Text style={styles.headerTitle}>{title}</Text>
-				<View style={{ width: 32 }} />
+				<View
+					style={{
+						width: "90%",
+						flexDirection: "row",
+						alignItems: "center",
+						justifyContent: "space-between",
+					}}
+				>
+					<Text style={styles.headerTitle}>{title}</Text>
+					<TouchableOpacity
+						style={styles.searchButton}
+						onPress={() => router.push("/SearchScreen")}
+						hitSlop={10}
+						accessibilityRole="button"
+						accessibilityLabel="Search products"
+					>
+						<Ionicons name="search" size={24} color={Colors.blueDark} />
+					</TouchableOpacity>
+				</View>
 			</View>
 
 			{/* Scrollable Content or Static Content */}
@@ -154,7 +154,7 @@ export default SubPageListView;
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: Colors.light.background,
+		backgroundColor: "#f4f6f8",
 	},
 	header: {
 		flexDirection: "row",
@@ -162,19 +162,25 @@ const styles = StyleSheet.create({
 		justifyContent: "space-between",
 		paddingHorizontal: 16,
 		paddingVertical: 16,
-		borderBottomWidth: 1,
-		borderBottomColor: "#e0e0e0",
+		backgroundColor: "#fff",
 	},
 	backButton: {
-		padding: 8,
+		padding: 4,
 		marginLeft: -8,
 	},
 	headerTitle: {
-		fontSize: 20,
+		fontSize: 24,
 		fontWeight: "600",
 		color: Colors.blueDeep,
 		flex: 1,
 		textAlign: "center",
+	},
+	searchButton: {
+		width: 40,
+		height: 40,
+		borderRadius: 20,
+		alignItems: "center",
+		justifyContent: "center",
 	},
 	scrollView: {
 		flex: 1,
@@ -183,64 +189,47 @@ const styles = StyleSheet.create({
 		flex: 1,
 	},
 	bannerContainer: {
-		width: "100%",
-		height: 200,
+		marginHorizontal: 16,
+		marginTop: 12,
+		height: 180,
+		borderRadius: 14,
 		overflow: "hidden",
-		backgroundColor: "#f0f0f0",
+		backgroundColor: "#fff",
 	},
 	bannerImage: {
 		width: "100%",
 		height: "100%",
-		backgroundColor: Colors.blueDark,
+	},
+	bannerContainerCentered: {
+		alignItems: "center",
+		justifyContent: "center",
+	},
+	bannerIcon: {
+		width: 140,
+		height: 140,
+		alignSelf: "center",
 	},
 	listContainer: {
 		paddingHorizontal: 16,
-		paddingTop: 12,
+		paddingTop: 16,
 		paddingBottom: 20,
-		gap: 5,
+		gap: 12,
 	},
 	listItem: {
 		flexDirection: "row",
 		alignItems: "center",
 		justifyContent: "space-between",
-		paddingVertical: 16,
-		paddingHorizontal: 12,
-		marginVertical: 6,
 		backgroundColor: "#fff",
-		borderRadius: 8,
-		shadowColor: "#000",
-		shadowOpacity: 0.1,
-		shadowRadius: 3,
-		shadowOffset: { width: 0, height: 1 },
-		elevation: 2,
-	},
-	itemContent: {
-		flexDirection: "row",
-		alignItems: "center",
-		flex: 1,
-	},
-	itemIcon: {
-		marginRight: 12,
+		paddingVertical: 18,
+		paddingHorizontal: 16,
+		borderRadius: 14,
+		minHeight: 64,
 	},
 	itemLabel: {
+		flex: 1,
 		fontSize: 16,
 		fontWeight: "700",
 		color: Colors.blueDeep,
-	},
-	listItemWithImage: {
-		flexDirection: "column",
-		paddingVertical: 12,
-		paddingHorizontal: 8,
-		gap: 8,
-	},
-	itemImage: {
-		width: "100%",
-		height: 80,
-		marginBottom: 8,
-	},
-	chevronWithImage: {
-		position: "absolute",
-		top: 8,
-		right: 8,
+		paddingRight: 8,
 	},
 });

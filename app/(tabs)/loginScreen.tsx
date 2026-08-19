@@ -1,4 +1,5 @@
-import Header from "@/components/Ui/Header";
+import Footer from "@/components/Ui/Footer";
+import HomeHeader from "@/components/Ui/HomeHeader";
 import ScrollComponent from "@/components/Ui/ScrollComponent";
 import { Colors } from "@/constants/theme";
 import { AdloginUser } from "@/utils/authService";
@@ -16,7 +17,6 @@ import {
 	useWindowDimensions,
 	View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 const LoginScreen = () => {
 	// Get current screen width (updates on orientation change / font scaling)
@@ -49,25 +49,16 @@ const LoginScreen = () => {
 	};
 
 	return (
-		// KeyboardAvoidingView shifts UI when keyboard opens
-		<KeyboardAvoidingView
-			style={{ flex: 1 }} // Must be flex:1, height breaks keyboard behavior
-			behavior={Platform.OS === "ios" ? "padding" : "height"} // iOS uses padding, Android uses height
-			keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0} // Offset for Header height (important!)
-		>
-			{/* ScrollView allows content to move when keyboard opens */}
-			<ScrollComponent>
-				<SafeAreaView style={[styles.container, { width }]}>
-					{/* App header */}
-					<Header caption="" screen="Login" />
+		<View style={styles.container}>
+			<HomeHeader title="Welcome to Login" />
 
-					{/* Screen title */}
-					<Text style={styles.content}>Welcome to Login</Text>
-
-					{/* Main form container */}
+			<KeyboardAvoidingView
+				style={{ flex: 1 }}
+				behavior={Platform.OS === "ios" ? "padding" : "height"}
+			>
+				<ScrollComponent bg="#fff" bottom={20}>
 					<View style={styles.subContainer}>
 						<View style={{ width }}>
-							{/* Username / Email input */}
 							<TextInput
 								placeholder="Username/email"
 								placeholderTextColor={Colors.grayDeep}
@@ -76,26 +67,20 @@ const LoginScreen = () => {
 								style={styles.input}
 							/>
 
-							{/* Password input */}
 							<TextInput
 								placeholder="Password"
 								placeholderTextColor={Colors.grayDeep}
 								value={password}
 								onChangeText={setPassword}
 								style={styles.input}
-								secureTextEntry // Hides password text
+								secureTextEntry
 							/>
 
-							{/* Login button */}
 							<TouchableOpacity style={styles.logBtn} onPress={handleLogin}>
 								<Text style={styles.logText}>Login</Text>
 							</TouchableOpacity>
 						</View>
 
-						{/* Forgot password action */}
-						{/* <TouchableOpacity style={styles.forgBtn}>
-							<Text style={styles.forgText}>Forgot Password ?</Text>
-							</TouchableOpacity> */}
 						<TouchableOpacity
 							style={styles.guestBtn}
 							onPress={handleGuestLogin}
@@ -103,9 +88,11 @@ const LoginScreen = () => {
 							<Text style={styles.guestText}>Continue as guest</Text>
 						</TouchableOpacity>
 					</View>
-				</SafeAreaView>
-			</ScrollComponent>
-		</KeyboardAvoidingView>
+				</ScrollComponent>
+			</KeyboardAvoidingView>
+
+			<Footer screen="welcome" />
+		</View>
 	);
 };
 
@@ -117,6 +104,7 @@ export default LoginScreen;
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		backgroundColor: "#fff",
 	},
 
 	// Page title

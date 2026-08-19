@@ -1,3 +1,9 @@
+import Header from "@/components/Ui/Header";
+import { Colors } from "@/constants/theme";
+import { rf } from "@/utils/responsive";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { router } from "expo-router";
+import React from "react";
 import {
 	Dimensions,
 	StyleSheet,
@@ -5,51 +11,41 @@ import {
 	TouchableOpacity,
 	View,
 } from "react-native";
-
-import Header from "@/components/Ui/Header";
-import { Colors } from "@/constants/theme";
-import { rf } from "@/utils/responsive";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { router } from "expo-router";
-import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const { width } = Dimensions.get("window");
 
 const WelcomeScreen = () => {
 	const handleNavigation = () => {
-		AsyncStorage.getItem("user_details").then((userDetails) => {
-			if (userDetails) {
-				router.push("/homeScreen");
-			} else {
-				router.push("/loginScreen");
-			}
+		AsyncStorage.setItem(
+			"user_details",
+			JSON.stringify({ email: "guest" }),
+		).then(() => {
+			router.push("/homeScreen");
 		});
 	};
 	return (
-		<SafeAreaView style={styles.container}>
+		<SafeAreaView edges={["bottom", "left", "right"]} style={styles.container}>
 			<Header caption="" screen="Login" />
 
 			<View style={styles.subContainer}>
-				<View>
+				<View style={styles.copyBlock}>
 					<Text style={styles.content}>Your Product Catalogue</Text>
 
 					<Text style={styles.description}>
 						Explore Motor Fuels, LPG, Lubricants, Industrial Fuels and more
 					</Text>
-
-					<TouchableOpacity
-						style={styles.enterBtn}
-						onPress={() => handleNavigation()}
-					>
-						<Text style={styles.enterText}>ENTER</Text>
-					</TouchableOpacity>
 				</View>
-				{/* LOGIN BUTTON
-				<TouchableOpacity onPress={() => router.push("/loginScreen")}>
-					<Text style={styles.loginText}>FOR SALES OFFICERS {"->"} LOGIN</Text>
-				</TouchableOpacity> */}
+
+				<TouchableOpacity
+					style={styles.enterBtn}
+					onPress={() => handleNavigation()}
+				>
+					<Text style={styles.enterText}>ENTER</Text>
+				</TouchableOpacity>
 			</View>
+
+			{/* <Footer screen="welcome" /> */}
 		</SafeAreaView>
 	);
 };
@@ -58,7 +54,8 @@ export default WelcomeScreen;
 
 const styles = StyleSheet.create({
 	container: {
-		height: "100%",
+		flex: 1,
+		backgroundColor: "#fff",
 	},
 	content: {
 		textAlign: "center",
@@ -76,7 +73,6 @@ const styles = StyleSheet.create({
 	},
 	enterBtn: {
 		width: width - 40,
-		marginVertical: 60,
 		alignSelf: "center",
 		height: 70,
 		backgroundColor: Colors.blueDeep,
@@ -89,67 +85,15 @@ const styles = StyleSheet.create({
 		fontSize: rf(25),
 		fontWeight: "600",
 	},
-	loginText: {
-		textAlign: "center",
-		color: Colors.blueDark,
-		fontSize: 20,
-		fontWeight: "400",
-	},
-	changeLangText: {
-		marginTop: 10,
-		fontSize: 16,
-		color: Colors.blueDeep,
-		textDecorationLine: "underline",
-	},
 	subContainer: {
-		width: width,
-		height: "70%",
-		justifyContent: "space-around",
-		alignItems: "center",
-	},
-
-	/* ===== MODAL STYLES ===== */
-	modalOverlay: {
 		flex: 1,
-		backgroundColor: "rgba(0,0,0,0.4)",
-		justifyContent: "center",
-		alignItems: "center",
-	},
-	modalBox: {
-		width: 260,
-		backgroundColor: "#fff",
-		borderRadius: 12,
-		padding: 20,
-		alignItems: "center",
-	},
-	modalTitle: {
-		fontSize: 18,
-		fontWeight: "600",
-		marginBottom: 15,
-		color: Colors.blueDark,
-	},
-	langOption: {
 		width: "100%",
-		paddingVertical: 12,
+		justifyContent: "space-evenly",
 		alignItems: "center",
-		borderRadius: 8,
-		marginVertical: 6,
-		borderWidth: 1,
-		borderColor: "#ccc",
+		paddingHorizontal: 16,
 	},
-	activeLang: {
-		backgroundColor: Colors.blueLight,
-		borderColor: Colors.blueDeep,
-	},
-	langText: {
-		fontSize: 16,
-		color: Colors.black,
-	},
-	closeBtn: {
-		marginTop: 10,
-	},
-	closeText: {
-		color: "#888",
-		fontSize: 14,
+	copyBlock: {
+		width: "100%",
+		alignItems: "center",
 	},
 });

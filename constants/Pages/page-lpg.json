@@ -1,21 +1,30 @@
 {
 	"id": 3,
 	"iconType": "image",
-	"icon": "CYLINDER_ICON",
+	"icon": "CYLINDER2_ICON",
+	"icon_back": "CYLINDER_ICON_BACK",
 	"label": "LPG",
 	"screen": "LpgScreen",
 	"value": [
-		{ "id": 1, "label": "LPG Domestic", "value": "HPCL-LPG-0003" },
+		{
+			"id": 1,
+			"label": "Packed LPG",
+			"value": [
+				{ "label": "LPG Domestic", "value": "HPCL-LPG-0003" },
+				{ "label": "Non Domestic Packed", "value": "" }
+			]
+		},
 		{
 			"id": 2,
-			"label": "LPG Industrial",
+			"label": "Bulk LPG",
+
 			"value": [
 				{
-					"label": "HP Gas Razor",
+					"label": "HP GAS RAZOR",
 					"value": "HPCL-LPG-0006"
 				},
 				{
-					"label": "HP Gas Flame Plus",
+					"label": "HP GAS FLAME PLUS",
 					"value": "HPCL-LPG-0004"
 				},
 				{
@@ -23,8 +32,8 @@
 					"label": "HP GAS DOLPHIN",
 					"value": "HPCL-LPG-0007"
 				},
-				{ "label": "Butane ", "value": "HPCL-LPG-0001" },
-				{ "label": "Propane", "value": "HPCL-LPG-0002" }
+				{ "label": "BUTANE ", "value": "HPCL-LPG-0001" },
+				{ "label": "PROPANE", "value": "HPCL-LPG-0002" }
 			]
 		}
 	]

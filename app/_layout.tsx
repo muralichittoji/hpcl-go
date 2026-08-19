@@ -1,5 +1,9 @@
 import { initDatabase } from "@/lib/database";
-import { getInitialNotificationChatId, registerForPushNotifications, setupNotificationNavigation } from "@/lib/pushNotifications";
+import {
+	getInitialNotificationChatId,
+	registerForPushNotifications,
+	setupNotificationNavigation,
+} from "@/lib/pushNotifications";
 import { NetworkProvider } from "@/utils/NetworkProvider";
 import * as Notifications from "expo-notifications";
 import { Stack, router } from "expo-router";
@@ -8,7 +12,6 @@ import { useEffect } from "react";
 import { Text, TextInput } from "react-native";
 import { CopilotProvider } from "react-native-copilot";
 import "react-native-reanimated";
-import { SafeAreaProvider } from "react-native-safe-area-context";
 
 // disable font scaling globally (TS safe)
 (Text as any).defaultProps = (Text as any).defaultProps || {};
@@ -70,20 +73,18 @@ export default function RootLayout() {
 	}, []);
 
 	return (
-		<SafeAreaProvider style={{ flex: 1 }}>
-			<CopilotProvider>
-				<NetworkProvider>
-					<Stack>
-						<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-						<Stack.Screen
-							name="modal"
-							options={{ presentation: "modal", title: "Modal" }}
-						/>
-						<Stack.Screen name="pdf-preview" options={{ headerShown: false }} />
-					</Stack>
-					<StatusBar style="light" />
-				</NetworkProvider>
-			</CopilotProvider>
-		</SafeAreaProvider>
+		<CopilotProvider>
+			<NetworkProvider>
+				<Stack>
+					<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+					<Stack.Screen
+						name="modal"
+						options={{ presentation: "modal", title: "Modal" }}
+					/>
+					<Stack.Screen name="pdf-preview" options={{ headerShown: false }} />
+				</Stack>
+				<StatusBar style="light" />
+			</NetworkProvider>
+		</CopilotProvider>
 	);
 }

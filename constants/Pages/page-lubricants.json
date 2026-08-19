@@ -2,6 +2,7 @@
 	"id": 2,
 	"iconType": "image",
 	"icon": "OIL_ICON",
+	"icon_back": "OIL_ICON_BACK",
 	"label": "Lubricants",
 	"screen": "LubricantsScreen",
 	"value": [
@@ -12,7 +13,7 @@
 					"label": "Premium (FuturX)",
 					"value": [
 						{
-							"label": "HP Milcy  Futur-X 15W-40",
+							"label": "HP MILCY  FUTUR-X 15W-40",
 							"value": "HPCL-FTX-0001"
 						},
 						{
@@ -40,7 +41,7 @@
 							"value": "HPCL-FTX-0007"
 						},
 						{
-							"label": "HP Racer Futur-X Skutex Pro SP",
+							"label": "HP RACER FUTUR-X SKUTEX PRO SP",
 							"value": "HPCL-FTX-0008"
 						}
 					]
@@ -1279,7 +1280,7 @@
 			"value": ""
 		},
 		{
-			"label": "Genuine OIL",
+			"label": "Genuine Oil",
 			"value": [
 				{ "label": "Bajaj", "value": "" },
 				{ "label": "JCB", "value": "" },
@@ -1288,7 +1289,7 @@
 			]
 		},
 		{
-			"label": "Marine OILS",
+			"label": "Marine Oils",
 			"value": ""
 		},
 		{

@@ -6,11 +6,8 @@ import Header from "@/components/Ui/Header";
 import AppIndustries from "@/components/Ui/Info/AppIndustries";
 import ComparisonCard from "@/components/Ui/Info/ComparisonCard";
 import DocumentsDownloads from "@/components/Ui/Info/DocumentsDownloads";
-import EnquiryShare from "@/components/Ui/Info/EnquiryShare";
 import PackagingSupply from "@/components/Ui/Info/PackagingSupply";
-import RelatedProducts from "@/components/Ui/Info/RelatedProducts";
 import SpecificationsCard from "@/components/Ui/Info/SpecificationsCard";
-
 // Info screen sections
 import ProductPreviewModal from "@/components/Ui/ProductPreviewModal";
 import SafeSheet from "@/components/Ui/SafeSheet";
@@ -31,19 +28,12 @@ import {
 	View,
 } from "react-native";
 
-import {
-	SafeAreaView,
-	useSafeAreaInsets,
-} from "react-native-safe-area-context";
 import PdfViewerContent from "../PdfViewerContent";
 
 /* -------------------------------------------------------------------------- */
 /*                                Info Screen                                 */
 /* -------------------------------------------------------------------------- */
 const InfoScreen = ({ route }: any) => {
-	// Safe area values (bottom inset varies on iOS/Android)
-	const insets = useSafeAreaInsets();
-
 	const scrollY = useRef(new Animated.Value(0)).current;
 
 	// Read product name from route params
@@ -102,7 +92,7 @@ const InfoScreen = ({ route }: any) => {
 			behavior={Platform.OS === "ios" ? "padding" : "height"}
 			keyboardVerticalOffset={Platform.OS === "ios" ? 0 : 20}
 		>
-			<SafeAreaView style={{ flex: 1 }}>
+			<View style={{ flex: 1 }}>
 				<Header caption={data.title} scrollY={scrollY} />
 				{/* subCaption={data.subTitle} */}
 				{/* Scrollable content */}
@@ -129,7 +119,6 @@ const InfoScreen = ({ route }: any) => {
 					<View style={{ paddingHorizontal: 20 }}>
 						{/* Divider */}
 						<View style={styles.divider} />
-
 						{/* Product description */}
 						<View style={{ margin: 5 }}>
 							{/* {data.title === "HP GAS DOLPHIN" && (
@@ -140,7 +129,6 @@ const InfoScreen = ({ route }: any) => {
 							)} */}
 							<Text style={styles.description}>{data.description}</Text>
 						</View>
-
 						{/* Specifications */}
 						<View>
 							{isComparison ? (
@@ -149,17 +137,14 @@ const InfoScreen = ({ route }: any) => {
 								<SpecificationsCard data={data.specifications} />
 							)}
 						</View>
-
 						{/* Applicable industries */}
 						<View>
 							<AppIndustries data={data.appData} />
 						</View>
-
 						{/* Packaging & supply details */}
 						<View style={{ margin: 10 }}>
 							<PackagingSupply data={data.packaging} />
 						</View>
-
 						{/* Document downloads */}
 						<View>
 							<DocumentsDownloads
@@ -170,20 +155,19 @@ const InfoScreen = ({ route }: any) => {
 								pageName={pageLabel ?? ""}
 							/>
 						</View>
-
-						{/* Related products */}
+						{/* Related products
 						<View>
 							<RelatedProducts Packages={data.related} />
-						</View>
-
+						</View> */}
 						{/* Share & enquiry CTA */}
-						<View>
+						{/* <View>
 							<EnquiryShare
 								data={data}
 								openEnquire={setEnquireOpen}
 								setOpenPreview={setOpenPreview}
 							/>
-						</View>
+						</View> */}
+						<View style={{ height: 50 }} />
 					</View>
 				</Animated.ScrollView>
 				{/* Bottom Sheet */}
@@ -215,7 +199,7 @@ const InfoScreen = ({ route }: any) => {
 						onClose={() => setOpenPreview(false)}
 					/>
 				)}
-			</SafeAreaView>
+			</View>
 		</KeyboardAvoidingView>
 	);
 };

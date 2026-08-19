@@ -8,6 +8,13 @@ import { router, useLocalSearchParams } from "expo-router";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Linking, StyleSheet, Text } from "react-native";
 
+const hasItemValue = (value: any) => {
+	if (value == null) return false;
+	if (typeof value === "string") return value.trim().length > 0;
+	if (Array.isArray(value)) return value.length > 0;
+	return true;
+};
+
 const SubPage = () => {
 	const { item } = useLocalSearchParams<{ item: string }>();
 
@@ -15,7 +22,14 @@ const SubPage = () => {
 
 	const rawData = parsedItem?.value;
 	const title = parsedItem?.label;
-	const bannerIcon = parsedItem?.icon;
+	const useWideBanner = [
+		"FUEL_ICON",
+		"INDUSTRIAL_ICON",
+		"PETCHEM_ICON",
+	].includes(parsedItem?.icon);
+	const bannerIcon = useWideBanner
+		? parsedItem?.icon_back || parsedItem?.icon
+		: parsedItem?.icon;
 
 	// ✅ IMPORTANT FIX
 	const data = Array.isArray(rawData) ? rawData : null;
@@ -55,11 +69,12 @@ const SubPage = () => {
 			if (!item?.value) return;
 
 			if (Array.isArray(item.value)) {
-				// Ensure icon and iconType are included when navigating to nested pages
 				const navigationItem = {
 					...item,
 					icon: item.icon || parsedItem?.icon,
+					icon_back: item.icon_back || parsedItem?.icon_back,
 					iconType: item.iconType || parsedItem?.iconType,
+					categoryIndex: item.categoryIndex ?? parsedItem?.categoryIndex,
 				};
 				router.push({
 					pathname: "/SubPage",
@@ -79,18 +94,16 @@ const SubPage = () => {
 				});
 			}
 		},
-		[parsedItem?.id, parsedItem?.label, parsedItem?.icon, parsedItem?.iconType],
+		[parsedItem?.id, parsedItem?.label, parsedItem?.icon, parsedItem?.icon_back, parsedItem?.iconType, parsedItem?.categoryIndex],
 	);
 
-	// Transform data into SubPageListView format
 	const listItems = useMemo(() => {
 		if (!data || !Array.isArray(data)) return [];
 
 		return data.map((item: any) => ({
 			label: item.label || "Untitled",
 			onPress: () => onItemPress(item),
-			icon: item.icon,
-			iconType: item.iconType,
+			hasValue: hasItemValue(item.value),
 		}));
 	}, [data, onItemPress]);
 
@@ -115,11 +128,12 @@ const SubPage = () => {
 			const item = rawData[0];
 
 			if (Array.isArray(item.value)) {
-				// Ensure icon and iconType are included for nested pages
 				const navigationItem = {
 					...item,
 					icon: item.icon || parsedItem?.icon,
+					icon_back: item.icon_back || parsedItem?.icon_back,
 					iconType: item.iconType || parsedItem?.iconType,
+					categoryIndex: item.categoryIndex ?? parsedItem?.categoryIndex,
 				};
 				router.replace({
 					pathname: "/SubPage",
@@ -141,7 +155,9 @@ const SubPage = () => {
 		parsedItem?.id,
 		parsedItem?.label,
 		parsedItem?.icon,
+		parsedItem?.icon_back,
 		parsedItem?.iconType,
+		parsedItem?.categoryIndex,
 	]);
 
 	/* ---------------- PREVENT FLASH & EARLY RETURNS ---------------- */
@@ -182,6 +198,7 @@ const SubPage = () => {
 				<SubPageListView
 					title={title}
 					bannerIcon={bannerIcon}
+					centerBanner={!useWideBanner}
 					items={listItems}
 					scrollable={true}
 				/>

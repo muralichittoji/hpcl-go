@@ -14,10 +14,10 @@ export default {
 		pageLpg,
 		pageAviation,
 		pageNaturalGas,
-		pageLubricants,
 		pageIndustrialFules,
-		pageRdProducts,
+		pageLubricants,
 		pagePetchem,
+		pageRdProducts,
 	],
 	quickHelp: pageQuickHelp.quickHelp,
 };

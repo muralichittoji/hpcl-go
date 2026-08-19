@@ -1,3 +1,4 @@
+import { getCategoryBackground } from "@/utils/categoryStyle";
 // Product data from SQLite
 import { getProduct } from "@/lib/products";
 
@@ -8,7 +9,7 @@ import { Colors } from "@/constants/theme";
 import { ALL_IMAGES } from "@/hooks/Allimages";
 
 // Vector icons
-import { FontAwesome } from "@expo/vector-icons";
+import { FontAwesome, MaterialIcons } from "@expo/vector-icons";
 
 import React, { useEffect, useRef, useState } from "react";
 import {
@@ -41,6 +42,7 @@ type UnifiedListMenuProps = {
 	getIcons?: (item: any) => any; // Optional icon resolver
 	showInfo?: boolean; // Show info modal button
 	useItemName?: boolean; // Controls font sizing logic
+	columns?: number; // Optional column count override
 };
 
 /* -------------------------------------------------------------------------- */
@@ -56,6 +58,7 @@ const UnifiedListMenu = ({
 	getIcons,
 	showInfo = false,
 	useItemName = false,
+	columns: columnsProp,
 }: UnifiedListMenuProps) => {
 	// Safe-area padding
 	const insets = useSafeAreaInsets();
@@ -70,38 +73,15 @@ const UnifiedListMenu = ({
 	// Screen width for responsive layout
 	const { width } = useWindowDimensions();
 
-	// Layout constants
-	const MIN_ITEM_WIDTH = 160;
-	const SPACING = 15;
+	const SPACING = 12;
+	const H_PADDING = 16;
 
-	// Calculate number of columns based on screen width
-	const columns = Math.max(2, Math.floor(width / MIN_ITEM_WIDTH));
+	const columns =
+		columnsProp ?? (width < 400 ? 1 : width < 600 ? 2 : width < 1200 ? 3 : 4);
 
-	// Calculate item width dynamically
-	const itemWidth = (width - SPACING * (columns + 1)) / columns;
+	const itemWidth = (width - H_PADDING * 2 - SPACING * (columns - 1)) / columns;
 
-	/* ---------------------------- Background Colors --------------------------- */
-	const backgroundColorSet = [
-		Colors.blueLight,
-		Colors.greenLight,
-		Colors.orangeLight,
-		Colors.blueDeep,
-		Colors.orangeRed,
-		Colors.purple,
-	];
-
-	// Valid image keys from ALL_IMAGES
 	type ImageKey = keyof typeof ALL_IMAGES;
-
-	// Rotate background colors
-	const getBackgroundColor = (index: number) =>
-		backgroundColorSet[index % backgroundColorSet.length];
-
-	/* ---------------------- Odd item → full width logic ----------------------- */
-	const shouldPopup = items.length % 2 !== 0;
-
-	const isLastItem = (index: number) =>
-		shouldPopup && index === items.length - 1;
 
 	/* -------------------------------------------------------------------------- */
 	/*                           Modal helper functions                           */
@@ -146,13 +126,8 @@ const UnifiedListMenu = ({
 	const Content = (
 		<View style={styles.row}>
 			{items.map((item: any, index: number) => {
-				const last = isLastItem(index);
-				const png = item.iconType === "image";
-
-				// Label text
 				const label = useItemName ? item.label : item.label;
 
-				// Decide navigation payload
 				const navigatePlace = item?.navigation
 					? item.label
 					: showInfo
@@ -167,49 +142,30 @@ const UnifiedListMenu = ({
 						style={[
 							styles.item,
 							{
-								// Full-width layout for last odd item
-								height: last ? itemHeight - bottomMinimise : itemHeight,
-								width: last ? width - 30 : itemWidth,
-								paddingHorizontal: 15,
-								backgroundColor: getBackgroundColor(index),
-								padding: showIcons ? 10 : 3,
-
-								// Image tiles stack vertically
-								flexDirection: png && !last ? "column" : "row",
-								gap: png ? 10 : 5,
-
-								justifyContent: "center",
-								alignItems: "center",
-								alignSelf: last ? "center" : "auto",
+								width: itemWidth,
+								height: itemHeight,
+								minHeight: itemHeight,
+								backgroundColor: getCategoryBackground(index),
 							},
 						]}
 					>
-						{/* -------------------------- Image Icon -------------------------- */}
 						{item.iconType === "image" &&
 							item.icon &&
 							ALL_IMAGES[item.icon as ImageKey] && (
 								<Image
 									source={ALL_IMAGES[item.icon as ImageKey]}
-									style={[
-										{
-											height: last ? 65 : 95,
-											width: last ? 65 : 95,
-										},
-									]}
+									style={styles.itemImage}
 									resizeMode="contain"
 								/>
 							)}
 
-						{/* -------------------------- Vector Icon ------------------------- */}
 						{item.iconType === "vector" && typeof item.icon === "string" && (
-							<FontAwesome name={item.icon} color="#fff" size={25} />
+							<FontAwesome name={item.icon} color={Colors.blueDeep} size={28} />
 						)}
 
-						{/* -------------------------- Info Button ------------------------- */}
 						{!item.icon && (
 							<Pressable
 								onPress={() => openInfo(item)}
-								// Prevent navigation trigger
 								onPressIn={(e) => e.stopPropagation()}
 								style={styles.infoBtn}
 							>
@@ -217,21 +173,37 @@ const UnifiedListMenu = ({
 							</Pressable>
 						)}
 
-						{/* -------------------------- Label Text -------------------------- */}
-						<Text
-							numberOfLines={4} // allow up to 4 lines
-							ellipsizeMode="tail"
-							style={[
-								styles.text,
-								{
-									fontSize: !useItemName
-										? Math.min(width * 0.055, 20)
-										: Math.min(width * 0.07, 22),
-								},
-							]}
-						>
-							{label}
-						</Text>
+						<View style={styles.labelWrap}>
+							<Text numberOfLines={3} ellipsizeMode="tail" style={styles.text}>
+								{label}
+							</Text>
+							{typeof item.itemCount === "number" && (
+								<View
+									style={{
+										width: "100%",
+										flexDirection: "row",
+										alignItems: "center",
+										justifyContent: "center",
+										gap: 20,
+									}}
+								>
+									<Text style={styles.countText}>
+										{item.itemCount - 1 !== 0 ? item.itemCount - 1 : ""}
+										{item.itemCount === 1 ? "1" : "+"}{" "}
+										{item.itemCount === 1 ? "Product" : "Products"}
+									</Text>
+									{item.itemCount > 0 && (
+										<View style={{ marginTop: 5, alignSelf: "flex-end" }}>
+											<MaterialIcons
+												name="chevron-right"
+												size={14}
+												color={Colors.blueDeep}
+											/>
+										</View>
+									)}
+								</View>
+							)}
+						</View>
 					</TouchableOpacity>
 				);
 			})}
@@ -387,8 +359,10 @@ const styles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "flex-start",
 		flexWrap: "wrap",
-		marginHorizontal: 10,
-		marginBottom: 10,
+		paddingHorizontal: 16,
+		paddingTop: 4,
+		marginBottom: 0,
+		gap: 12,
 	},
 
 	// listItem: {
@@ -464,21 +438,40 @@ const styles = StyleSheet.create({
 	},
 
 	item: {
+		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
-		margin: 5,
-		borderRadius: 12,
-		padding: 10,
-		shadowColor: "#444",
-		shadowOpacity: 0.3,
-		shadowRadius: 3,
-		shadowOffset: { width: 1, height: 1 },
+		gap: 2,
+		borderRadius: 16,
+		paddingVertical: 10,
+		paddingHorizontal: 10,
+	},
+
+	itemImage: {
+		width: 100,
+		height: 75,
+	},
+
+	labelWrap: {
+		flex: 1,
+		flexDirection: "column",
+		alignItems: "flex-start",
+		justifyContent: "center",
 	},
 
 	text: {
-		color: "white",
+		color: Colors.blueDark,
 		fontWeight: "600",
+		fontSize: 12,
 		textAlign: "center",
+		alignSelf: "center",
+	},
+
+	countText: {
+		color: Colors.grayDeep,
+		fontWeight: "500",
+		fontSize: 10,
+		marginTop: 4,
 	},
 
 	icons: {
@@ -494,7 +487,7 @@ const styles = StyleSheet.create({
 		height: 26,
 		width: 26,
 		borderRadius: 13,
-		backgroundColor: "rgba(255,255,255,0.9)",
+		backgroundColor: "rgba(0,0,0,0.9)",
 		justifyContent: "center",
 		alignItems: "center",
 		zIndex: 10,
@@ -544,7 +537,7 @@ const styles = StyleSheet.create({
 	},
 
 	closeText: {
-		color: "#fff",
+		color: "#000",
 		fontWeight: "600",
 	},
 

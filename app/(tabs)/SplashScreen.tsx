@@ -68,7 +68,11 @@ export default function SplashScreen() {
 				console.log("Web platform detected — skipping getDeviceUUID");
 			}
 
-			// 📊 Progress bar animation
+			await AsyncStorage.setItem(
+				"user_details",
+				JSON.stringify({ email: "guest" }),
+			);
+			handleLogin();
 			progressInterval = setInterval(() => {
 				setProgress((prev) => {
 					const next = prev + 0.01;
@@ -84,7 +88,6 @@ export default function SplashScreen() {
 		};
 
 		checkSpeedAndStart();
-		handleLogin();
 
 		return () => clearInterval(progressInterval);
 	}, []);

@@ -6,6 +6,7 @@ export default function HomeLayout() {
 			<Stack.Screen name="SplashScreen" />
 			<Stack.Screen name="welcomeScreen" />
 			<Stack.Screen name="homeScreen" />
+			<Stack.Screen name="SearchScreen" />
 			<Stack.Screen name="loginScreen" />
 			<Stack.Screen name="KnowledgeCenter" />
 			<Stack.Screen name="ProductFinder" />

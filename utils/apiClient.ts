@@ -1,5 +1,4 @@
 import axios from "axios";
-import { router } from "expo-router";
 import { getToken, removeToken } from "./authStorage";
 
 const api = axios.create({
@@ -50,9 +49,6 @@ api.interceptors.response.use(
 
 		if (status === 401) {
 			await removeToken();
-
-			// ✅ Use correct Expo Router path here
-			router.replace("/(auth)/login" as any);
 		}
 
 		if (status === 502) {
